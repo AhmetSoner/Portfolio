@@ -23,6 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 7. Estetik Havacılık Geometrik Animasyon (Plexus/Constellation)
     initAestheticAnimation();
+
+    // 8. Lucide İkonlarını Yeniden Tara ve Oluştur
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
 });
 
 /* ==========================================================================

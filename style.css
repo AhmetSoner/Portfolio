@@ -588,9 +588,13 @@ section {
     transform: translateY(-2px);
 }
 
+.profile-socials-hud a i,
 .profile-socials-hud a svg {
     width: 18px;
     height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-info-hud {
