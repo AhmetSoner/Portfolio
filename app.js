@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6. Sistem Saati Güncelleyici
     initSystemClock();
 
+    // 7. Estetik Havacılık Geometrik Animasyon (Plexus/Constellation)
+    initAestheticAnimation();
 });
 
 /* ==========================================================================
@@ -545,6 +547,141 @@ function initSystemClock() {
     
     updateClock();
     setInterval(updateClock, 1000);
+}
+
+/* ==========================================================================
+   7. ESTETİK HAVACILIK GEOMETRİK ANİMASYON (PLEXUS / 3D CONSTELLATION)
+   ========================================================================== */
+function initAestheticAnimation() {
+    const canvas = document.getElementById("aesthetic-canvas");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+
+    let particles = [];
+    const particleCount = 42;
+    const maxDistance = 65;
+    const focalLength = 180;
+
+    // 3D Noktalar Oluştur
+    for (let i = 0; i < particleCount; i++) {
+        particles.push({
+            x: (Math.random() - 0.5) * 220,
+            y: (Math.random() - 0.5) * 120,
+            z: (Math.random() - 0.5) * 220,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4,
+            vz: (Math.random() - 0.5) * 0.4,
+            radius: Math.random() * 1.5 + 0.8
+        });
+    }
+
+    // 3D Rotasyon Matrisleri
+    let angleY = 0.002;
+    let angleX = 0.001;
+
+    function rotateY(p, angle) {
+        const cos = Math.cos(angle);
+        const sin = Math.sin(angle);
+        const x1 = p.x * cos - p.z * sin;
+        const z1 = p.z * cos + p.x * sin;
+        p.x = x1;
+        p.z = z1;
+    }
+
+    function rotateX(p, angle) {
+        const cos = Math.cos(angle);
+        const sin = Math.sin(angle);
+        const y1 = p.y * cos - p.z * sin;
+        const z1 = p.z * cos + p.y * sin;
+        p.y = y1;
+        p.z = z1;
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const cx = canvas.width / 2;
+        const cy = canvas.height / 2;
+
+        // Parçacıkları Güncelle ve Döndür
+        particles.forEach(p => {
+            // Hareket
+            p.x += p.vx;
+            p.y += p.vy;
+            p.z += p.vz;
+
+            // Sınır kontrolü (kutu içinde geri yansıma)
+            if (Math.abs(p.x) > 130) p.vx *= -1;
+            if (Math.abs(p.y) > 70) p.vy *= -1;
+            if (Math.abs(p.z) > 130) p.vz *= -1;
+
+            // Döndür
+            rotateY(p, angleY);
+            rotateX(p, angleX);
+        });
+
+        // 3D Projeksiyon hesaplama
+        const projected = particles.map(p => {
+            const scale = focalLength / (focalLength + p.z);
+            return {
+                x: cx + p.x * scale,
+                y: cy + p.y * scale,
+                z: p.z,
+                radius: p.radius * scale,
+                scale: scale
+            };
+        });
+
+        // Bağlantı Çizgilerini Çiz (Mesafe Kontrolü ile)
+        for (let i = 0; i < projected.length; i++) {
+            const pi = particles[i];
+            const projI = projected[i];
+
+            for (let j = i + 1; j < projected.length; j++) {
+                const pj = particles[j];
+                const projJ = projected[j];
+
+                // 3D Mesafe hesapla
+                const dx = pi.x - pj.x;
+                const dy = pi.y - pj.y;
+                const dz = pi.z - pj.z;
+                const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
+
+                if (dist < maxDistance) {
+                    const alpha = (1 - dist / maxDistance) * 0.45;
+                    ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
+                    ctx.lineWidth = (1 - dist / maxDistance) * 0.75;
+                    ctx.beginPath();
+                    ctx.moveTo(projI.x, projI.y);
+                    ctx.lineTo(projJ.x, projJ.y);
+                    ctx.stroke();
+                }
+            }
+        }
+
+        // Parçacık Noktalarını Çiz
+        projected.forEach(p => {
+            // Z derinliğine göre parlaklık (uzaktakiler soluk, yakındakiler parlak yeşil)
+            const alpha = (p.z + 130) / 260; // 0 ile 1 arası
+            ctx.fillStyle = `rgba(57, 255, 20, ${alpha * 0.8 + 0.2})`;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fill();
+
+            // En yakındaki 8 noktaya küçük haleler ekle (parlama efekti)
+            if (p.z < -60) {
+                ctx.strokeStyle = `rgba(0, 240, 255, ${(1 - (p.z + 130)/130) * 0.25})`;
+                ctx.lineWidth = 0.5;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius * 3.5, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+        });
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
 }
 
 
