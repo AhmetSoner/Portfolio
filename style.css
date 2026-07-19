@@ -149,8 +149,8 @@ body {
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    width: 95%;
-    max-width: 1400px;
+    width: 90%;
+    max-width: 1080px; /* Genişlik daraltılarak elemanlar birbirine yaklaştırıldı */
     height: 70px;
     background-color: var(--bg-panel);
     backdrop-filter: blur(10px);
