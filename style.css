@@ -423,8 +423,8 @@ section {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
     width: 100%;
-    max-width: 440px;
-    height: 240px;
+    max-width: 640px;
+    height: 340px;
     padding: 10px;
     position: relative;
     border-radius: 4px;

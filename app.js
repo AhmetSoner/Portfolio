@@ -550,37 +550,75 @@ function initSystemClock() {
 }
 
 /* ==========================================================================
-   7. ESTETİK GPS UYDU VE YÖRÜNGE ANİMASYONU (GPS CONSTELLATION SIMULATION)
+   7. ESTETİK GPS UYDU VE YÖRÜNGE ANİMASYONU (GPS CONSTELLATION SIMULATION - SCALED)
    ========================================================================== */
 function initAestheticAnimation() {
     const canvas = document.getElementById("aesthetic-canvas");
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
 
-    const satelliteCount = 18; // Toplam uydu sayısı (3 yörünge düzlemi x 6 uydu)
-    const orbitRadius = 78;   // Yörünge yarıçapı
-    const earthRadius = 26;    // Dünya yarıçapı
-    const focalLength = 220;   // Perspektif derinliği
+    const satelliteCount = 18;  // Toplam uydu sayısı
+    const orbitRadius = 117;    // Yörünge yarıçapı (78 x 1.5)
+    const earthRadius = 39;     // Dünya yarıçapı (26 x 1.5)
+    const focalLength = 300;    // Perspektif derinliği
 
-    // Yörünge parametreleri
+    // Yörünge düzlemleri (55 derece eğiklik)
     const planes = [
         { inc: 55 * Math.PI / 180, rot: 0 },
         { inc: 55 * Math.PI / 180, rot: 120 * Math.PI / 180 },
         { inc: 55 * Math.PI / 180, rot: 240 * Math.PI / 180 }
     ];
 
-    // 3 Boyutlu Rotasyon Fonksiyonu
+    // Basitleştirilmiş 3D Dünya Kıtaları Koordinatları (Enlem / Boylam)
+    const continents = [
+        // Avrasya & Afrika
+        [
+            {lat: 70, lon: 20}, {lat: 60, lon: 10}, {lat: 45, lon: -5},
+            {lat: 30, lon: 15}, {lat: 15, lon: 30}, {lat: -25, lon: 30},
+            {lat: -30, lon: 25}, {lat: -15, lon: 40}, {lat: 10, lon: 55},
+            {lat: 5, lon: 80}, {lat: 25, lon: 90}, {lat: 45, lon: 120},
+            {lat: 60, lon: 140}, {lat: 65, lon: 100}, {lat: 50, lon: 60},
+            {lat: 65, lon: 40}
+        ],
+        // Kuzey & Güney Amerika
+        [
+            {lat: 70, lon: -100}, {lat: 55, lon: -120}, {lat: 40, lon: -125},
+            {lat: 30, lon: -115}, {lat: 20, lon: -100}, {lat: 15, lon: -95},
+            {lat: 8, lon: -80}, {lat: -5, lon: -75}, {lat: -15, lon: -80},
+            {lat: -35, lon: -70}, {lat: -53, lon: -70}, {lat: -45, lon: -50},
+            {lat: -25, lon: -45}, {lat: -5, lon: -35}, {lat: 5, lon: -50},
+            {lat: 10, lon: -75}, {lat: 25, lon: -80}, {lat: 35, lon: -75},
+            {lat: 50, lon: -60}, {lat: 60, lon: -60}, {lat: 70, lon: -75}
+        ],
+        // Avustralya
+        [
+            {lat: -15, lon: 115}, {lat: -20, lon: 115}, {lat: -30, lon: 115},
+            {lat: -35, lon: 135}, {lat: -30, lon: 145}, {lat: -20, lon: 150},
+            {lat: -15, lon: 140}
+        ]
+    ];
+
+    // Kıta Noktalarını 3D Kartezyen Koordinatlara Çevir
+    const earthPoints = continents.map(cont => {
+        return cont.map(pt => {
+            const latRad = pt.lat * Math.PI / 180;
+            const lonRad = pt.lon * Math.PI / 180;
+            return {
+                x: earthRadius * Math.cos(latRad) * Math.sin(lonRad),
+                y: -earthRadius * Math.sin(latRad),
+                z: earthRadius * Math.cos(latRad) * Math.cos(lonRad)
+            };
+        });
+    });
+
+    // 3 Boyutlu Perspektif İzdüşüm
     function project3D(x, y, z, cx, cy, globalRot) {
-        // 1. Yörünge eğikliğine (inclination) göre X ekseninde döndür (Planes parametresi içinde)
-        // Bu işlem her düzlem için çizim anında yapılır.
-        
-        // 2. Global sistem rotasyonu (Y ekseni etrafında yavaş dönme)
+        // Y ekseni etrafında yavaş dönme (Dünya ve yörüngelerin dönüşü)
         const cosY = Math.cos(globalRot);
         const sinY = Math.sin(globalRot);
         const x1 = x * cosY - z * sinY;
         const z1 = z * cosY + x * sinY;
 
-        // 3. Perspektif izdüşüm
         const scale = focalLength / (focalLength + z1);
         return {
             x: cx + x1 * scale,
@@ -598,43 +636,60 @@ function initAestheticAnimation() {
 
         const cx = canvas.width / 2;
         const cy = canvas.height / 2;
-        const globalRot = frame * 0.004; // Yörüngelerin ve dünyanın yavaş dönüşü
+        
+        // HAREKETLER YAVAŞLATILDI: 0.004 -> 0.0015 (Dünya dönüşü), 0.0055 -> 0.002 (Uydular)
+        const globalRot = frame * 0.0015; 
+        const satMoveAngle = frame * 0.002;
 
         // ==================================================================
-        // 1. ARKA PLAN AURASI VE DÜNYA (EARTH GLOBE)
+        // 1. DÜNYA VE COĞRAFİ KATMANLAR (EARTH GLOBE)
         // ==================================================================
-        // Atmosferik parlama
-        const aura = ctx.createRadialGradient(cx, cy, 2, cx, cy, earthRadius * 1.5);
-        aura.addColorStop(0, "rgba(12, 43, 77, 0.4)");
-        aura.addColorStop(0.6, "rgba(0, 240, 255, 0.08)");
+        // Atmosferik parlama aurası
+        const aura = ctx.createRadialGradient(cx, cy, 2, cx, cy, earthRadius * 1.6);
+        aura.addColorStop(0, "rgba(12, 43, 77, 0.45)");
+        aura.addColorStop(0.6, "rgba(0, 240, 255, 0.1)");
         aura.addColorStop(1, "rgba(0, 0, 0, 0)");
         ctx.fillStyle = aura;
         ctx.beginPath();
-        ctx.arc(cx, cy, earthRadius * 1.5, 0, Math.PI * 2);
+        ctx.arc(cx, cy, earthRadius * 1.6, 0, Math.PI * 2);
         ctx.fill();
 
-        // Dünya Küresi Outline
+        // Dünya Küresi Dış Outline
         ctx.strokeStyle = "rgba(0, 240, 255, 0.35)";
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.arc(cx, cy, earthRadius, 0, Math.PI * 2);
         ctx.stroke();
 
-        // Dünya Ekvator / Enlem Çizgileri
-        ctx.strokeStyle = "rgba(0, 240, 255, 0.12)";
-        for (let r = 8; r < earthRadius; r += 8) {
+        // 3D Kıtaların Çizilmesi (Dönen Dünya Görünümü)
+        earthPoints.forEach(cont => {
+            ctx.beginPath();
+            let first = true;
+            cont.forEach(pt => {
+                const ptProj = project3D(pt.x, pt.y, pt.z, cx, cy, globalRot);
+                
+                if (first) {
+                    ctx.moveTo(ptProj.x, ptProj.y);
+                    first = false;
+                } else {
+                    ctx.lineTo(ptProj.x, ptProj.y);
+                }
+            });
+            ctx.closePath();
+
+            // Holografik kıta dolgu ve kenarlığı (Z derinliğine göre şeffaflık)
+            ctx.fillStyle = "rgba(0, 240, 255, 0.05)";
+            ctx.strokeStyle = "rgba(0, 240, 255, 0.2)";
+            ctx.lineWidth = 0.8;
+            ctx.fill();
+            ctx.stroke();
+        });
+
+        // Dünya Enlem/Boylam Izgarası
+        ctx.strokeStyle = "rgba(0, 240, 255, 0.08)";
+        for (let r = 10; r < earthRadius; r += 10) {
             ctx.beginPath();
             ctx.ellipse(cx, cy, earthRadius, r * 0.5, 0, 0, Math.PI * 2);
-            ctx.stroke();
-        }
-
-        // Boylam Çizgileri (Dönen)
-        ctx.strokeStyle = "rgba(0, 240, 255, 0.15)";
-        for (let i = 0; i < 4; i++) {
-            const rot = globalRot + (i * Math.PI / 4);
-            const w = earthRadius * Math.abs(Math.sin(rot));
-            ctx.beginPath();
-            ctx.ellipse(cx, cy, w, earthRadius, 0, 0, Math.PI * 2);
             ctx.stroke();
         }
 
@@ -642,31 +697,27 @@ function initAestheticAnimation() {
         // 2. YÖRÜNGE HATLARI (ORBIT TRACKS)
         // ==================================================================
         planes.forEach((plane) => {
-            ctx.strokeStyle = "rgba(0, 240, 255, 0.08)";
+            ctx.strokeStyle = "rgba(0, 240, 255, 0.06)";
             ctx.lineWidth = 0.8;
             ctx.beginPath();
 
-            const points = 72; // Elips netliği
+            const points = 72;
             for (let i = 0; i <= points; i++) {
                 const theta = (i / points) * 2 * Math.PI;
 
-                // 2D yörünge düzleminde koordinat
                 const x0 = orbitRadius * Math.cos(theta);
                 const y0 = orbitRadius * Math.sin(theta);
                 const z0 = 0;
 
-                // 3D Eğiklik rotasyonu (Inclination & Node Rotation)
                 const cosInc = Math.cos(plane.inc);
                 const sinInc = Math.sin(plane.inc);
                 const cosRot = Math.cos(plane.rot);
                 const sinRot = Math.sin(plane.rot);
 
-                // Eksen rotasyon matrisi çarpımı
                 const x1 = x0 * cosRot - y0 * sinRot * cosInc;
                 const y1 = x0 * sinRot + y0 * cosRot * cosInc;
                 const z1 = y0 * sinInc;
 
-                // Kamera/Global dönme matrisine gönder
                 const pt = project3D(x1, y1, z1, cx, cy, globalRot);
 
                 if (i === 0) {
@@ -679,21 +730,19 @@ function initAestheticAnimation() {
         });
 
         // ==================================================================
-        // 3. UYDUNUN KENDİ VE DÜNYA İLİŞKİSİ (SATELLITE POSITIONING)
+        // 3. UYDU KONUMLANDIRMA (SATELLITE POSITIONING)
         // ==================================================================
         const satellites = [];
 
         planes.forEach((plane, pIdx) => {
             for (let sIdx = 0; sIdx < 6; sIdx++) {
-                // Her düzlemde 6 uydu, eşit aralıklarla yerleştirilmiş
-                // Sürekli akan animasyon açısı (frame * hız ile loop eder)
-                const theta = (sIdx / 6) * 2 * Math.PI + frame * 0.0055;
+                // Yavaşlatılmış uydu hareketi
+                const theta = (sIdx / 6) * 2 * Math.PI + satMoveAngle;
 
                 const x0 = orbitRadius * Math.cos(theta);
                 const y0 = orbitRadius * Math.sin(theta);
                 const z0 = 0;
 
-                // 3D Düzlem Dönüşü
                 const cosInc = Math.cos(plane.inc);
                 const sinInc = Math.sin(plane.inc);
                 const cosRot = Math.cos(plane.rot);
@@ -703,11 +752,9 @@ function initAestheticAnimation() {
                 const y1 = x0 * sinRot + y0 * cosRot * cosInc;
                 const z1 = y0 * sinInc;
 
-                // İzdüşüm
                 const pt = project3D(x1, y1, z1, cx, cy, globalRot);
-
-                // Uydunun benzersiz kimliği (ID)
                 const id = pIdx * 6 + sIdx + 1;
+
                 satellites.push({
                     x: pt.x,
                     y: pt.y,
@@ -723,19 +770,20 @@ function initAestheticAnimation() {
         // 4. UYDULAR ARASI VERİ AĞI (INTER-SATELLITE LINKS - PLEXUS EFFECT)
         // ==================================================================
         ctx.lineWidth = 0.5;
+        // Büyüyen ekrana göre bağlantı mesafesi artırıldı: 55 -> 82.5
+        const maxDistance = 82.5; 
+
         for (let i = 0; i < satellites.length; i++) {
             for (let j = i + 1; j < satellites.length; j++) {
                 const s1 = satellites[i];
                 const s2 = satellites[j];
 
-                // 2D ekrandaki mesafe üzerinden bağlantı çizgileri
                 const dx = s1.x - s2.x;
                 const dy = s1.y - s2.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
 
-                // Eğer uydular birbirine belirli yakınlıktaysa veri bağı çiz
-                if (dist < 55) {
-                    const alpha = (1 - dist / 55) * 0.22;
+                if (dist < maxDistance) {
+                    const alpha = (1 - dist / maxDistance) * 0.2;
                     ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
                     ctx.beginPath();
                     ctx.moveTo(s1.x, s1.y);
@@ -746,52 +794,48 @@ function initAestheticAnimation() {
         }
 
         // ==================================================================
-        // 5. RADYAL TARAMA / YER İSTASYONU BAĞLANTILARI
+        // 5. RADYAL TARAMA / YER BAĞLANTILARI & UYDU HUD BİLGİLERİ
         // ==================================================================
         satellites.forEach((sat) => {
-            // Dünya yüzeyine düşüm kılavuzu (Merkeze doğru lazer hatları)
-            // Sadece önde duran uydulardan dünyaya lazer insin (z < 0 olanlar)
+            // Sadece ön yüzdeki uydulardan dünyaya lazer taraması insin
             if (sat.z < 0) {
-                const alpha = (1 - Math.abs(sat.z) / 100) * 0.12;
+                const alpha = (1 - Math.abs(sat.z) / 150) * 0.12;
                 ctx.strokeStyle = `rgba(57, 255, 20, ${alpha})`;
                 ctx.lineWidth = 0.5;
                 ctx.beginPath();
                 ctx.moveTo(sat.x, sat.y);
-                ctx.lineTo(cx, cy); // Dünyanın merkezi
+                ctx.lineTo(cx, cy);
                 ctx.stroke();
             }
 
-            // ==============================================================
-            // 6. UYDU NOKTALARININ ÇİZİMİ VE HUD KOORDİNAT VERİLERİ (NO TEXT FIELDS)
-            // ==============================================================
-            // Z derinliğine göre nokta boyutu
-            const size = (sat.z < 0) ? sat.scale * 3.5 : sat.scale * 2.2;
-            
-            // Parlak uydu çekirdeği (Yeşil)
+            // Derinlik ölçeğine göre uydu boyutu
+            const size = (sat.z < 0) ? sat.scale * 4.5 : sat.scale * 2.8;
+
+            // Parlak çekirdek (Yeşil)
             ctx.fillStyle = sat.z < 0 ? "#39ff14" : "rgba(57, 255, 20, 0.4)";
             ctx.beginPath();
             ctx.arc(sat.x, sat.y, size / 2, 0, Math.PI * 2);
             ctx.fill();
 
-            // Öndeki uydulardan fütüristik tarama çerçeveleri ve koordinat akışları
-            if (sat.z < -20) {
-                // Mini Hedef Kutusu (Aesthetic brackets)
-                ctx.strokeStyle = "rgba(0, 240, 255, 0.4)";
+            // Öndeki uydulara fütüristik çerçeveler ve koordinat ekleme
+            if (sat.z < -30) {
+                // Mini Hedefleme Kutusu
+                ctx.strokeStyle = "rgba(0, 240, 255, 0.45)";
                 ctx.lineWidth = 0.5;
                 ctx.strokeRect(sat.x - size - 1, sat.y - size - 1, size * 2 + 2, size * 2 + 2);
 
-                // Dinamik Uydudan Türetilen Koordinatlar (Tamamen döngüsel ve estetik matematiksel veriler)
+                // Matematiksel enlem ve boylam simülasyonu
                 const pseudoLat = (Math.sin(sat.theta + sat.id) * 90);
                 const pseudoLon = ((sat.theta * 180 / Math.PI + sat.id * 30) % 360) - 180;
-                
-                // Küçük HUD Yazıları (Sadece uydunun yanında küçük estetik veriler)
-                ctx.fillStyle = "rgba(57, 255, 20, 0.7)";
-                ctx.font = "6px monospace";
-                ctx.textAlign = "left";
-                ctx.fillText(`SV-${String(sat.id).padStart(2, '0')}`, sat.x + size + 3, sat.y - 2);
 
-                ctx.fillStyle = "rgba(0, 240, 255, 0.55)";
-                ctx.fillText(`${pseudoLat.toFixed(1)}°${pseudoLat >= 0 ? 'N' : 'S'}`, sat.x + size + 3, sat.y + 4);
+                // Fütüristik HUD verileri
+                ctx.fillStyle = "rgba(57, 255, 20, 0.75)";
+                ctx.font = "7px monospace";
+                ctx.textAlign = "left";
+                ctx.fillText(`SV-${String(sat.id).padStart(2, '0')}`, sat.x + size + 4, sat.y - 2);
+
+                ctx.fillStyle = "rgba(0, 240, 255, 0.6)";
+                ctx.fillText(`${pseudoLat.toFixed(1)}°${pseudoLat >= 0 ? 'N' : 'S'}`, sat.x + size + 4, sat.y + 5);
             }
         });
 
