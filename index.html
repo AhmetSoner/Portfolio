@@ -67,11 +67,46 @@
                 <p id="hero-subtitle" class="hero-lead">Aviyonik, gömülü sistemler ve donanım tasarımı şablonu.</p>
                 
                 <!-- HUD Gösterge Paneli Mockup -->
-                <div class="hud-dashboard">
-                    <div class="hud-panel">
-                        <div class="panel-header"><i data-lucide="activity"></i> PRIMARY FLIGHT DISPLAY (PFD)</div>
-                        <div class="panel-body pfd-container">
-                            <canvas id="pfd-canvas" width="320" height="240"></canvas>
+                <!-- Basit ve Şık Sistem & Lisans Paneli (Abartı Olmayan) -->
+                <div class="status-dashboard-panel">
+                    <div class="corner-t-l"></div>
+                    <div class="corner-b-r"></div>
+                    
+                    <div class="status-sub-panel">
+                        <h3 class="status-panel-title"><i data-lucide="shield-check"></i> SHY-66 / EASA PART-66 LİSANS MODÜLLERİ</h3>
+                        <div class="module-status-list">
+                            <div class="module-status-item">
+                                <span class="mod-code">Modül 3</span>
+                                <span class="mod-name">Elektrik Temelleri</span>
+                                <span class="mod-badge badge-passed">TAMAMLANDI</span>
+                            </div>
+                            <div class="module-status-item">
+                                <span class="mod-code">Modül 4</span>
+                                <span class="mod-name">Elektronik Temelleri</span>
+                                <span class="mod-badge badge-passed">TAMAMLANDI</span>
+                            </div>
+                            <div class="module-status-item">
+                                <span class="mod-code">Modül 5</span>
+                                <span class="mod-name">Dijital Teknikler / Kokpit Ekranları</span>
+                                <span class="mod-badge badge-passed">TAMAMLANDI</span>
+                            </div>
+                            <div class="module-status-item">
+                                <span class="mod-code">Modül 11A</span>
+                                <span class="mod-name">Türbinli Uçak Yapı ve Sistemleri</span>
+                                <span class="mod-badge badge-process">DEVAM EDİYOR</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="status-divider"></div>
+
+                    <div class="status-sub-panel">
+                        <h3 class="status-panel-title"><i data-lucide="terminal"></i> SİSTEM VERİLERİ & ACARS LOG</h3>
+                        <div class="acars-terminal">
+                            <div class="terminal-line"><span class="term-time">[12:42:05]</span> SYS_INIT: UÇAK BAKIM PORTFOLYOSU YÜKLENDİ</div>
+                            <div class="terminal-line"><span class="term-time">[12:42:06]</span> DIAGNOSTICS: AVİYONİK VE DONANIM SİSTEMLERİ AKTİF</div>
+                            <div class="terminal-line"><span class="term-time">[12:42:07]</span> B1/B2 LİSANS HEDEFİ: A320/A330 SERİSİ</div>
+                            <div class="terminal-line"><span class="term-time">[12:42:08]</span> STATUS: YENİ GÖREVLERE VE STAJLARA HAZIR</div>
                         </div>
                     </div>
                 </div>

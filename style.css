@@ -418,23 +418,23 @@ section {
 }
 
 /* Dashboard Mockup Panels */
-.hud-dashboard {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.hud-panel {
+/* Clean Status Dashboard Panel (Abartı Olmayan) */
+.status-dashboard-panel {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
-    padding: 15px;
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1.1fr 1px 0.9fr;
+    gap: 30px;
     position: relative;
     border-radius: 4px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
-.hud-panel::before {
+.status-dashboard-panel::before {
     content: '';
     position: absolute;
     top: 0;
@@ -444,72 +444,112 @@ section {
     background-color: var(--primary);
 }
 
-.panel-header {
+.status-sub-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.status-panel-title {
     font-family: var(--font-header);
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
     color: var(--primary);
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 15px;
     border-bottom: 1px solid rgba(0, 240, 255, 0.1);
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
 }
 
-.panel-header i {
-    width: 14px;
-    height: 14px;
+.status-panel-title i {
+    width: 16px;
+    height: 16px;
+    color: var(--primary);
 }
 
-/* Simulator animations */
-.pfd-container {
-    height: 240px;
-    width: 320px;
-    position: relative;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px dashed rgba(0, 240, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#pfd-canvas {
-    width: 100%;
+.status-divider {
+    background: rgba(0, 240, 255, 0.1);
+    width: 1px;
     height: 100%;
-    display: block;
 }
 
-.engine-telemetry-sim {
-    height: 150px;
+/* Modules Checklist */
+.module-status-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 16px;
+    gap: 10px;
 }
 
-.telemetry-item {
+.module-status-item {
     display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    border-bottom: 1px dashed rgba(0, 240, 255, 0.05);
-    padding-bottom: 3px;
+    align-items: center;
+    font-size: 0.95rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+    border: 1px solid rgba(0, 240, 255, 0.05);
+    border-radius: 3px;
 }
 
-.telemetry-item:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.telemetry-label {
-    color: var(--text-muted);
-}
-
-.telemetry-value {
+.mod-code {
     font-family: var(--font-header);
-    color: var(--accent);
+    font-size: 0.8rem;
+    color: var(--primary);
     font-weight: 700;
+    width: 75px;
+}
+
+.mod-name {
+    flex-grow: 1;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.mod-badge {
+    font-family: var(--font-header);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.badge-passed {
+    background: rgba(57, 255, 20, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(57, 255, 20, 0.3);
+}
+
+.badge-process {
+    background: rgba(255, 170, 0, 0.1);
+    color: var(--warning);
+    border: 1px solid rgba(255, 170, 0, 0.3);
+}
+
+/* ACARS Log Terminal */
+.acars-terminal {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 240, 255, 0.1);
+    padding: 15px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    min-height: 140px;
+    justify-content: center;
+}
+
+.terminal-line {
+    line-height: 1.4;
+}
+
+.term-time {
+    color: var(--primary);
 }
 
 /* Buttons HUD style */
