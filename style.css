@@ -465,8 +465,8 @@ section {
 
 /* Simulator animations */
 .pfd-container {
-    height: 80px;
-    width: 220px;
+    height: 150px;
+    width: 240px;
     position: relative;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.4);
@@ -483,11 +483,11 @@ section {
 }
 
 .engine-telemetry-sim {
-    height: 80px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6px;
+    gap: 16px;
 }
 
 .telemetry-item {
