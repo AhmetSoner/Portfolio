@@ -558,6 +558,41 @@ section {
     border: 1px solid rgba(0, 240, 255, 0.1);
 }
 
+.profile-socials-hud {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.profile-socials-hud a {
+    color: var(--text-muted);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: rgba(0, 240, 255, 0.02);
+}
+
+.profile-socials-hud a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 12px var(--primary-glow);
+    background: rgba(0, 240, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+.profile-socials-hud a svg {
+    width: 18px;
+    height: 18px;
+}
+
 .profile-info-hud {
     width: 100%;
     border-top: 1px solid rgba(0, 240, 255, 0.1);

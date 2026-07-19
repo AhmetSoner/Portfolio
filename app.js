@@ -44,11 +44,13 @@ function initPortfolioData() {
     document.getElementById("profile-about").innerHTML = data.profile.about.replace(/\n/g, '<br>');
 
     // İletişim Bilgileri
-    document.getElementById("profile-github").href = data.profile.socials.github;
-    document.getElementById("profile-github").querySelector("span").textContent = data.profile.socials.github.replace("https://", "");
+    if (document.getElementById("profile-card-github")) {
+        document.getElementById("profile-card-github").href = data.profile.socials.github;
+    }
     
-    document.getElementById("profile-linkedin").href = data.profile.socials.linkedin;
-    document.getElementById("profile-linkedin").querySelector("span").textContent = data.profile.socials.linkedin.replace("https://", "");
+    if (document.getElementById("profile-card-linkedin")) {
+        document.getElementById("profile-card-linkedin").href = data.profile.socials.linkedin;
+    }
     
     document.getElementById("profile-email").href = data.profile.socials.email;
     document.getElementById("profile-email").querySelector("span").textContent = data.profile.socials.email.replace("mailto:", "");
