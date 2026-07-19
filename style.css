@@ -777,10 +777,10 @@ section {
 }
 
 .node-gpa {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-left: 8px;
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-left: 15px; /* Başlık ile arasına nefes alma boşluğu */
 }
 
 .node-date {
