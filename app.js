@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 7. Uçak ve Motor Telemetri Simülasyonu
     initEngineTelemetrySimulation();
+
+    // 8. Navigasyon Ekranı (ND) Simülasyonu
+    initNavigationDisplaySimulation();
 });
 
 /* ==========================================================================
@@ -574,4 +577,142 @@ function initEngineTelemetrySimulation() {
 
     // Her 1.5 saniyede bir güncelle
     setInterval(updateTelemetry, 1500);
+}
+
+/* ==========================================================================
+   8. NAVİGASYON EKRANI (ND) SİMÜLASYONU
+   ========================================================================== */
+function initNavigationDisplaySimulation() {
+    const canvas = document.getElementById("nd-canvas");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+
+    let currentHdg = 325;
+    let gs = 240;
+    let waypoints = [
+        { name: "LTAF", x: 80, y: 15 },
+        { name: "LTBA", x: 145, y: -30 }
+    ];
+
+    function drawND() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Değerleri ufakça dalgalandıralım
+        currentHdg += (Math.random() - 0.5) * 0.1;
+        if (currentHdg > 360) currentHdg -= 360;
+        if (currentHdg < 0) currentHdg += 360;
+
+        gs += (Math.random() - 0.5) * 0.05;
+        if (gs < 235) gs = 235;
+        if (gs > 245) gs = 245;
+
+        const centerX = 110;
+        const centerY = 95;
+        const radius = 80;
+
+        // 1. Pusula Yayı ve Derece İşaretlerini Çiz
+        ctx.strokeStyle = "rgba(0, 240, 255, 0.4)";
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, Math.PI * 1.25, Math.PI * 1.75);
+        ctx.stroke();
+
+        for (let h = Math.floor((currentHdg - 30) / 5) * 5; h <= currentHdg + 30; h += 5) {
+            let normH = (h + 360) % 360;
+            let angleRad = Math.PI * 1.5 + (h - currentHdg) * (Math.PI / 180);
+
+            if (angleRad >= Math.PI * 1.25 && angleRad <= Math.PI * 1.75) {
+                let isMajor = normH % 10 === 0;
+                let tickLen = isMajor ? 8 : 4;
+
+                let x1 = centerX + Math.cos(angleRad) * radius;
+                let y1 = centerY + Math.sin(angleRad) * radius;
+                let x2 = centerX + Math.cos(angleRad) * (radius - tickLen);
+                let y2 = centerY + Math.sin(angleRad) * (radius - tickLen);
+
+                ctx.beginPath();
+                ctx.moveTo(x1, y1);
+                ctx.lineTo(x2, y2);
+                ctx.strokeStyle = "rgba(0, 240, 255, 0.5)";
+                ctx.stroke();
+
+                if (isMajor) {
+                    let label = normH === 0 ? "N" : normH === 90 ? "E" : normH === 180 ? "S" : normH === 270 ? "W" : String(normH / 10).padStart(2, '0');
+                    ctx.fillStyle = "#00f0ff";
+                    ctx.font = "8px Orbitron";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    let tx = centerX + Math.cos(angleRad) * (radius - 13);
+                    let ty = centerY + Math.sin(angleRad) * (radius - 13);
+                    ctx.fillText(label, tx, ty);
+                }
+            }
+        }
+
+        // 2. Aktif Rota Çizgisi (Dashed Green)
+        ctx.strokeStyle = "rgba(57, 255, 20, 0.5)";
+        ctx.setLineDash([3, 3]);
+        ctx.beginPath();
+        ctx.moveTo(centerX, 64);
+        ctx.lineTo(centerX, 15);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // 3. Uçak Sembolü (Electric Green)
+        ctx.strokeStyle = "#39ff14";
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(centerX, 60);
+        ctx.lineTo(centerX, 74);
+        ctx.moveTo(centerX - 10, 69);
+        ctx.lineTo(centerX + 10, 69);
+        ctx.moveTo(centerX - 4, 72);
+        ctx.lineTo(centerX + 4, 72);
+        ctx.stroke();
+
+        // 4. Uçuş Noktalarını (Waypoints) Hareket Ettir ve Çiz
+        waypoints.forEach(wp => {
+            wp.y += gs * 0.0008; // Hıza bağlı kayma miktarı
+            if (wp.y > 80) {
+                wp.y = -20;
+                wp.x = centerX - 60 + Math.random() * 120;
+            }
+
+            // Waypoint Üçgen Sembolü (Magenta)
+            ctx.strokeStyle = "#ff00ff";
+            ctx.fillStyle = "#ff00ff";
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(wp.x, wp.y - 4);
+            ctx.lineTo(wp.x + 4, wp.y + 3);
+            ctx.lineTo(wp.x - 4, wp.y + 3);
+            ctx.closePath();
+            ctx.stroke();
+
+            // Rota Çizgisi (Waypoint ile Uçak Arası - Yarı Saydam Pembe)
+            ctx.strokeStyle = "rgba(255, 0, 255, 0.25)";
+            ctx.beginPath();
+            ctx.moveTo(centerX, 60);
+            ctx.lineTo(wp.x, wp.y);
+            ctx.stroke();
+
+            // Etiket
+            ctx.fillStyle = "#ff00ff";
+            ctx.font = "8px Rajdhani";
+            ctx.textAlign = "left";
+            ctx.fillText(wp.name, wp.x + 6, wp.y + 2);
+        });
+
+        // 5. Bilgi Metinleri (HDG ve GS)
+        ctx.fillStyle = "#00f0ff";
+        ctx.font = "9px Orbitron";
+        ctx.textAlign = "left";
+        ctx.fillText(`HDG: ${Math.round(currentHdg)}°`, 6, 12);
+        ctx.textAlign = "right";
+        ctx.fillText(`GS: ${Math.round(gs)}KT`, canvas.width - 6, 12);
+
+        requestAnimationFrame(drawND);
+    }
+
+    drawND();
 }

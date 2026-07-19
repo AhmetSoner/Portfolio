@@ -464,55 +464,23 @@ section {
 }
 
 /* Simulator animations */
-.pitch-roll-sim {
+.nd-container {
     height: 80px;
+    width: 220px;
     position: relative;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     border: 1px dashed rgba(0, 240, 255, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.crosshair {
-    width: 12px;
-    height: 12px;
-    border: 1px solid var(--accent);
-    border-radius: 50%;
-    position: absolute;
-    z-index: 3;
+#nd-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
-
-.crosshair::before, .crosshair::after {
-    content: '';
-    position: absolute;
-    background-color: var(--accent);
-}
-.crosshair::before { top: 50%; left: -6px; width: 24px; height: 1px; }
-.crosshair::after { left: 50%; top: -6px; height: 24px; width: 1px; }
-
-.horizon-line {
-    width: 150%;
-    height: 1px;
-    background-color: var(--primary);
-    transform: rotate(-0.4deg) translateY(1px);
-    box-shadow: 0 0 5px var(--primary-glow);
-    animation: flight-horizon 5s ease-in-out infinite alternate;
-}
-
-@keyframes flight-horizon {
-    0% { transform: rotate(-2deg) translateY(5px); }
-    100% { transform: rotate(2.5deg) translateY(-4px); }
-}
-
-.pitch-val, .roll-val {
-    position: absolute;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-}
-.pitch-val { top: 5px; right: 8px; }
-.roll-val { bottom: 5px; right: 8px; }
 
 .engine-telemetry-sim {
     height: 80px;

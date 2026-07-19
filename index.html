@@ -69,12 +69,9 @@
                 <!-- HUD Gösterge Paneli Mockup -->
                 <div class="hud-dashboard">
                     <div class="hud-panel">
-                        <div class="panel-header"><i data-lucide="navigation"></i> PITCH / ROLL ANGLE</div>
-                        <div class="panel-body pitch-roll-sim">
-                            <div class="crosshair"></div>
-                            <div class="horizon-line"></div>
-                            <span class="pitch-val">PITCH: +1.2°</span>
-                            <span class="roll-val">ROLL: -0.4°</span>
+                        <div class="panel-header"><i data-lucide="compass"></i> NAVIGATION DISPLAY (ND)</div>
+                        <div class="panel-body nd-container">
+                            <canvas id="nd-canvas" width="220" height="80"></canvas>
                         </div>
                     </div>
                     <div class="hud-panel">
