@@ -28,7 +28,8 @@ const PORTFOLIO_DATA = {
       institution: "Eskişehir Teknik Üniversitesi",
       degree: "Uçak Bakım Mühendisi / Aviyonik",
       duration: "Eylül 2020 - Mezun",
-      details: "GPA: 3.05. Gaz Türbinli Motorlar, Modern Aviyonik Sistemler, Mikroişlemciler, Elektrik ve Elektronik Sistemler, Otomatik Uçuş Sistemleri, Navigasyon Sistemleri, Uçak Aerodinamiği, Tahribatsız Muayene Yöntemleri (NDT) gibi konularda teorik ve laboratuvar eğitimi. Üniversite bünyesindeki SHY-145 onaylı uçak bakım tesislerinde pratik/uygulamalı deneyim."
+      gpa: "3.05",
+      details: "Gaz Türbinli Motorlar, Modern Aviyonik Sistemler, Mikroişlemciler, Elektrik ve Elektronik Sistemler, Otomatik Uçuş Sistemleri, Navigasyon Sistemleri, Uçak Aerodinamiği, Tahribatsız Muayene Yöntemleri (NDT) gibi konularda teorik ve laboratuvar eğitimi. Üniversite bünyesindeki SHY-145 onaylı uçak bakım tesislerinde pratik/uygulamalı deneyim."
     }
   ],
   experience: [

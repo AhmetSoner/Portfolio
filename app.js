@@ -75,7 +75,7 @@ function initPortfolioData() {
             <div class="node-header">
                 <div>
                     <h4 class="node-title">${edu.institution}</h4>
-                    <span class="node-subtitle">${edu.degree}</span>
+                    <span class="node-subtitle">${edu.degree} ${edu.gpa ? `<span class="node-gpa">// GPA: ${edu.gpa}</span>` : ''}</span>
                 </div>
                 <span class="node-date">${edu.duration}</span>
             </div>

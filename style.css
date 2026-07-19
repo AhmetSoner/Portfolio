@@ -776,6 +776,13 @@ section {
     font-weight: 600;
 }
 
+.node-gpa {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
 .node-date {
     font-family: var(--font-header);
     font-size: 0.8rem;
