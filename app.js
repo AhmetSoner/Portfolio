@@ -264,6 +264,7 @@ let soundEnabled = false;
 
 function initSoundSystem() {
     const toggleBtn = document.getElementById("sound-toggle");
+    if (!toggleBtn) return;
     
     toggleBtn.addEventListener("click", () => {
         soundEnabled = !soundEnabled;
