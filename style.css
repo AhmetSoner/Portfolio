@@ -586,6 +586,29 @@ section {
     text-shadow: 0 0 5px var(--accent-glow);
 }
 
+.hud-cv-wrapper {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cv-download-btn {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    background-color: rgba(57, 255, 20, 0.03);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.05);
+    text-shadow: 0 0 5px var(--accent-glow);
+}
+
+.cv-download-btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    box-shadow: 0 0 20px var(--accent-glow);
+    text-shadow: none;
+}
+
 .about-text-panel {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
