@@ -3,88 +3,130 @@ const PORTFOLIO_DATA = {
     name: "Ahmet Soner Güleç",
     title: "Uçak Bakım Mühendisi",
     subTitle: "Aviyonik Sistemler | Hava Aracı Bakımı | Sistem ve Donanım Tasarımı",
-    about: "Havacılık ve uzay teknolojilerine meraklı, aviyonik sistemler, uçuş sistemleri bakımı, sistem ve donanım tasarımı konularında kendimi geliştiren bir Uçak Bakım Mühendisiyim. TEKNOFEST gibi yarışmalarda aktif rol alarak takım çalışması ve aviyonik sistemler üzerinde deneyim kazandım.",
-    avatar: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=300&h=300",
+    about: "Eskişehir Teknik Üniversitesi Havacılık Elektrik-Elektronik Bölümü mezunuyum. Eğitimim boyunca Gaz Türbinli Motorlar, Modern Aviyonik Sistemler, Mikroişlemciler, Otomatik Uçuş Kontrol ve Navigasyon Sistemleri, Aerodinamik ile Tahribatsız Muayene Yöntemleri (NDT) gibi kritik alanlarda hem teorik hem de fakültemiz bünyesindeki SHY-145 onaylı hava aracı bakım tesislerinde pratik ve uygulamalı eğitimler aldım.\n\nÜniversite hayatımın başından itibaren havacılık ve uzay teknolojilerine duyduğum derin merak ve hevesle kendimi sürekli geliştirerek; aviyonik sistemler, uçuş kontrol yazılımları, sistem ve donanım tasarımı konularında uzmanlaştım. Vilnius Gediminas Teknik Üniversitesi bünyesindeki stajyerlik sürecimde Airbus A320 ve Cessna 172 uçaklarının navigasyon, otopilot ve kokpit gösterge sistemlerinin bakım ve test prosedürlerinde aktif rol aldım. Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı'nda İHA sistem tasarımı ve donanım geliştirme projeleri yürüttüm.\n\nYönetici ve üye olarak katlığım takımlarla birlikte TEKNOFEST, Shell Eco-marathon, Boeing Havacılığın Geleceği Yarışması ve THY/Turkish Technic Hackathon gibi prestijli organizasyonlarda ikincilikler ve finalistlikler dahil olmak üzere birçok önemli başarıya imza attım. Altium Designer, MATLAB/Simulink, SolidWorks, COMSOL Multiphysics ve Ansys gibi elektrik, elektronik ve mekanik analiz/çizim programlarını profesyonel seviyede kullanarak aviyonik kart tasarımları, otopilot sistemleri ve 3D mekanik modellemeler gerçekleştiren, çok disiplinli çalışma yeteneğine sahip vizyoner bir Uçak Bakım Mühendisiyim.",
+    avatar: "Foto.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      email: "mailto:ornek@eposta.com"
+      github: "https://github.com/AhmetSoner",
+      linkedin: "https://www.linkedin.com/in/ahmet-soner-g%C3%BCle%C3%A7-1a0525227/",
+      email: "mailto:ahmetsonergulec@hotmail.com"
     }
   },
   skills: [
-    { name: "C / C++", category: "Yazılım", level: 90 },
-    { name: "Python", category: "Yazılım", level: 80 },
-    { name: "Altium Designer", category: "Donanım", level: 85 },
-    { name: "STM32 & ARM Cortex", category: "Gömülü Sistem", level: 85 },
-    { name: "MATLAB / Simulink", category: "Analiz", level: 75 },
-    { name: "Aviyonik Haberleşme (CAN, SPI, UART)", category: "Haberleşme", level: 90 },
-    { name: "RTOS (Real-Time OS)", category: "Gömülü Sistem", level: 70 },
-    { name: "Lehimleme & Laboratuvar Cihazları", category: "Pratik", level: 95 }
+    { name: "MATLAB / Simulink", category: "Yazılım & Simülasyon", level: 90 },
+    { name: "Python / Gömülü C", category: "Yazılım & Simülasyon", level: 85 },
+    { name: "PSIM", category: "Yazılım & Simülasyon", level: 75 },
+    { name: "Altium Designer", category: "Donanım & Tasarım", level: 95 },
+    { name: "LTspice / PSpice", category: "Donanım & Tasarım", level: 85 },
+    { name: "Ansys", category: "Donanım & Tasarım", level: 70 },
+    { name: "SolidWorks", category: "Havacılık & Analiz", level: 90 },
+    { name: "COMSOL Multiphysics", category: "Havacılık & Analiz", level: 80 },
+    { name: "XFLR5 (Aerodinamik)", category: "Havacılık & Analiz", level: 75 }
   ],
   education: [
     {
-      institution: "Havacılık ve Uzay Bilimleri Üniversitesi",
-      degree: "Havacılık Elektrik-Elektronik Mühendisliği (Lisans)",
-      duration: "2023 - Devam Ediyor",
-      details: "Gömülü sistemler, uçuş kontrol teorisi, haberleşme sistemleri ve elektromanyetik teorileri üzerine yoğunlaşan akademik eğitim."
+      institution: "Eskişehir Teknik Üniversitesi",
+      degree: "Havacılık Elektrik Elektroniği (Lisans)",
+      duration: "Eylül 2020 - Haziran 2026",
+      details: "GPA: 3.1. Gaz Türbinli Motorlar, Modern Aviyonik Sistemler, Mikroişlemciler, Otomatik Uçuş ve Seyrüsefer Sistemleri, Uçak Aerodinamiği, Tahribatsız Muayene Yöntemleri (NDT) gibi konularda teorik ve laboratuvar eğitimi. Fakülte bünyesindeki SHY-145 onaylı hava aracı bakım tesislerinde pratik/uygulamalı eğitimler."
     }
   ],
   experience: [
     {
-      title: "Aviyonik Takım Kaptanı / Donanım Tasarımcısı",
-      company: "TEKNOFEST İHA Takımı",
-      duration: "2024 - Devam Ediyor",
-      details: "İnsansız Hava Aracının (İHA) uçuş kontrol kartı (Autopilot) ve güç dağıtım ünitesi (PDB) tasarımlarının yapılması, STM32 mikrodenetleyici tabanlı gömülü kodların yazılması."
+      title: "Proje Görevlisi",
+      company: "Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı",
+      duration: "Ekim 2024 - Devam Ediyor",
+      details: "İnsansız hava araçları ve aviyonik sistemler için uçuş kontrol algoritmaları geliştirmek; sensör verilerinin işlenmesi ve otonom karar mekanizmalarını yönetmek. MATLAB/Simulink ve Python ortamlarını kullanarak modelleme, simülasyon ve sanal test analizleri yapmak. Yapay zeka sistemlerini destekleyecek PCB (Altium Designer) tasarımlarını yürütmek."
     },
     {
-      title: "Gömülü Sistemler Stajyeri",
-      company: "Savunma Sanayii / Havacılık Firması",
-      duration: "Temmuz 2025 - Ağustos 2025",
-      details: "Aviyonik haberleşme protokolleri (CAN Bus, ARINC 429) üzerinde çalışma, telemetri verilerinin görselleştirilmesi için arayüz geliştirilmesi."
+      title: "Uçak Bakım Mühendisliği Stajyeri",
+      company: "Vilnius Gediminas Teknik Üniversitesi (Vilnius, Litvanya)",
+      duration: "Ekim 2023 - Nisan 2024",
+      details: "Airbus A320 ve Cessna 172 uçaklarında navigasyon, otopilot ve uçuş gösterge sistemlerinin söküm, montaj ve test prosedürlerinin uygulanması. SolidWorks ile quadcopter drone mekanik tasarımı, XFLR5 ile sabit kanatlı İHA airfoil analizi. MATLAB ve COMSOL kullanarak ısıl davranış ve sistem performansı doğrulama simülasyonları."
     }
   ],
   projects: [
     {
       id: "project-1",
-      title: "STM32 Tabanlı İHA Uçuş Kontrol Kartı (Otopilot)",
-      category: "donanim",
-      summary: "6 eksenli IMU, barometrik basınç sensörü ve GPS modülünü bir araya getiren özgün aviyonik kart tasarımı.",
-      description: "İHA'ların otopilot yazılımlarını çalıştırabilmesi için Altium Designer kullanılarak 4 katmanlı bir PCB tasarlanmıştır. Güç beslemesindeki parazitleri engellemek için filtreler eklenmiş ve RF haberleşme modülü için empedans uyumlulaması yapılmıştır. Kart üzerinde STM32F4 serisi MCU bulunmaktadır.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
-      tags: ["Altium Designer", "STM32", "PCB Tasarımı", "Aviyonik"],
+      title: "TUSAŞ LIFT-UP: Uçuş Performans Modellemesi",
+      category: "yazilim",
+      summary: "Muharip bir hava aracının performans veri setinin makine öğrenmesi yöntemleriyle modellenmesi.",
+      description: "Muharip bir hava aracına ait uçuş performans veri seti, Python ve makine öğrenmesi yöntemleri kullanılarak modellenmiş ve farklı algoritmalarla kıyaslanmıştır. Bu proje TÜBİTAK 2209-B kapsamında desteklenmektedir.",
+      image: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=600",
+      tags: ["Python", "Makine Öğrenmesi", "TUSAŞ", "TÜBİTAK 2209-B"],
       specs: [
-        { name: "MCU", value: "STM32F407VGT6" },
-        { name: "Sensörler", value: "MPU6050 (IMU), MS5611 (Barometre)" },
-        { name: "Katman Sayısı", value: "4 Katmanlı PCB" },
-        { name: "Protokoller", value: "SPI, I2C, UART, CAN" }
+        { name: "Veri Kümesi", value: "Muharip Uçak Uçuş Verileri" },
+        { name: "Dil / Kütüphane", value: "Python / Scikit-learn, Pandas" },
+        { name: "Destek", value: "TÜBİTAK 2209-B / TUSAŞ" }
       ]
     },
     {
       id: "project-2",
-      title: "Yer Kontrol İstasyonu Telemetri Arayüzü",
+      title: "TÜBİTAK 2209-A: Derin Öğrenme Tabanlı Kuş Tespit ve Uyarı Sistemi",
       category: "yazilim",
-      summary: "Uçuş telemetri verilerini gerçek zamanlı olarak gösteren ve haritada iz takibi yapan Python-Qt arayüzü.",
-      description: "İHA'dan gelen telemetri paketlerini çözerek (hız, irtifa, batarya seviyesi, yönelim, konum vb.) yer kontrol bilgisayarında görselleştiren yazılımdır. Gelen verileri SQLite veritabanına kaydeder ve uçuş sonrasında geriye dönük grafik analiz imkanı sunar.",
-      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600",
-      tags: ["Python", "PyQt5", "Seri Haberleşme", "Veri Analizi"],
+      summary: "Kuş çarpmalarının havacılık endüstrisine etkilerini azaltmak için derin öğrenme modeli.",
+      description: "Havaalanlarında kuş çarpmalarını engellemek amacıyla derin öğrenme tabanlı nesne tespiti yapan, gerçek zamanlı görüntü işleme ve erken uyarı sistemidir. TÜBİTAK 2209-A kapsamında geliştirilmiştir.",
+      image: "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
+      tags: ["Derin Öğrenme", "Python", "Görüntü İşleme", "TÜBİTAK 2209-A"],
       specs: [
-        { name: "Haberleşme", value: "RF Telemetri (433MHz / 57600bps)" },
-        { name: "Grafik Kütüphanesi", value: "PyQtGraph & Matplotlib" },
-        { name: "Veri Tabanı", value: "SQLite" }
+        { name: "Yöntem", value: "CNN / YOLO Nesne Tespiti" },
+        { name: "Haberleşme", value: "UART / Wi-Fi Arayüzü" },
+        { name: "Destek", value: "TÜBİTAK 2209-A" }
       ]
     },
     {
       id: "project-3",
-      title: "Akıllı Batarya Yönetim Modülü (BMS)",
+      title: "INFLOBOT: Yapay Zeka Destekli MRO Robotu",
       category: "gomulu",
-      summary: "4S LiPo piller için hücre dengeleme, akım/voltaj takibi ve CAN Bus üzerinden durum raporlama kartı.",
-      description: "Uçuş güvenliği için kritik olan batarya sağlığını izlemek amacıyla tasarlanmış gömülü sistem projesidir. MCU, pillerin anlık akım ve sıcaklık değerlerini ADC üzerinden okuyup koruma algoritmalarını işletir. Kritik durumlarda gücü keser ve CAN veri yolu üzerinden otopilota uyarı gönderir.",
-      image: "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
-      tags: ["Gömülü C", "STM32", "LiPo BMS", "Güç Elektroniği"],
+      summary: "Havacılık MRO (Bakım-Onarım-Revizyon) sektörü için yapay zeka tabanlı yumuşak robotik sistem.",
+      description: "Uçak bileşenlerinin dar alanlarındaki muayene ve bakım işlemleri için geliştirilmiş, yapay zeka destekli, esnek ve yumuşak robotik koldan oluşan MRO asistan sistemidir.",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600",
+      tags: ["Yapay Zeka", "Robotik", "MRO Havacılık", "STM32"],
       specs: [
-        { name: "Desteklenen Pil", value: "4S - 6S LiPo" },
-        { name: "Güvenlik Limitleri", value: "Aşırı Akım, Kısa Devre, Aşırı Sıcaklık" },
-        { name: "İletişim Hızı", value: "CAN Bus 250 Kbps" }
+        { name: "Denetleyici", value: "STM32F4 / ARM Cortex" },
+        { name: "Uygulama Alanı", value: "Dar Alan Muayenesi (MRO)" },
+        { name: "Algoritmalar", value: "Yumuşak Robotik Kinematiği" }
+      ]
+    },
+    {
+      id: "project-4",
+      title: "BLDC Motor Sürücü Kartı (2KW / 48V / 42A)",
+      category: "donanim",
+      summary: "%97.15 verimlilik oranına ve FOC algoritmasına sahip yüksek güçlü motor sürücüsü.",
+      description: "İHA ve robotik sistemlerde kullanılmak üzere tasarlanmış, Field Oriented Control (FOC) algoritmasını destekleyen, Altium Designer ile çizilmiş 4 katmanlı güç elektroniği kartıdır.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+      tags: ["Altium Designer", "FOC Kontrol", "BLDC Sürücü", "PCB Tasarımı"],
+      specs: [
+        { name: "Güç Değerleri", value: "2KW / 48V / 42A" },
+        { name: "Verimlilik", value: "97.15%" },
+        { name: "Yazılım Arayüzü", value: "STM32 FOC SDK" }
+      ]
+    },
+    {
+      id: "project-5",
+      title: "Akıllı Batarya Yönetim Sistemi (BMS)",
+      category: "gomulu",
+      summary: "13S8P konfigürasyonundaki 48V-50A batarya paketi için BQ76940 tabanlı koruma kartı.",
+      description: "Coulomb Counter ile yüksek hassasiyetli akım takibi yapabilen, pasif dengelemeli ve aşırı sıcaklık/akım koruma algoritmalarına sahip akıllı batarya yönetim kartıdır.",
+      image: "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
+      tags: ["Gömülü Sistem", "BMS", "BQ76940", "Güç Yönetimi"],
+      specs: [
+        { name: "Konfigürasyon", value: "13S8P Li-ion / LiPo" },
+        { name: "Haberleşme", value: "I2C / CAN Bus" },
+        { name: "Akım Hassasiyeti", value: "Coulomb Counting" }
+      ]
+    },
+    {
+      id: "project-6",
+      title: "Hassas İzolasyon İzleme Sistemi",
+      category: "donanim",
+      summary: "Pozitif ve negatif elektrik hatlarındaki izolasyon dirençlerini anlık takip eden donanım.",
+      description: "Elektrikli ve hibrit araç/havacılık güç hatlarındaki kaçakları tespit etmek amacıyla, hassas fark yükselteçleri kullanılarak tasarlanmış yüksek voltaj güvenlik kartıdır.",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600",
+      tags: ["Altium Designer", "Analog Tasarım", "İzolasyon Takip", "Güvenlik"],
+      specs: [
+        { name: "Hassasiyet", value: "MΩ Düzeyi Kaçak Tespiti" },
+        { name: "Devre Elemanları", value: "Hassas Op-Amp / Fark Yükselteç" },
+        { name: "Çıkış", value: "Analog / CAN Bildirim" }
       ]
     }
   ]

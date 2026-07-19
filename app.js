@@ -41,7 +41,7 @@ function initPortfolioData() {
     document.getElementById("hero-title").textContent = data.profile.title;
     document.getElementById("hero-subtitle").textContent = data.profile.subTitle;
     document.getElementById("profile-avatar").src = data.profile.avatar;
-    document.getElementById("profile-about").textContent = data.profile.about;
+    document.getElementById("profile-about").innerHTML = data.profile.about.replace(/\n/g, '<br>');
 
     // İletişim Bilgileri
     document.getElementById("profile-github").href = data.profile.socials.github;
