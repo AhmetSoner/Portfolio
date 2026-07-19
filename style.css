@@ -150,7 +150,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    max-width: 1080px; /* Genişlik daraltılarak elemanlar birbirine yaklaştırıldı */
+    max-width: 1080px;
     height: 70px;
     background-color: var(--bg-panel);
     backdrop-filter: blur(10px);
@@ -158,8 +158,9 @@ body {
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Elemanlar ortalandı */
     align-items: center;
+    gap: 30px; /* Logo, linkler ve butonlar arasındaki boşluk eşitlendi */
     padding: 0 30px;
     z-index: 999;
 }
@@ -1297,6 +1298,7 @@ section {
 @media (max-width: 768px) {
     .hud-nav {
         padding: 0 15px;
+        justify-content: space-between; /* Mobilde köşelere yaslama korundu */
     }
     
     .nav-links {
