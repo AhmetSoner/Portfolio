@@ -21,10 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6. Sistem Saati Güncelleyici
     initSystemClock();
 
-    // 7. Uçak ve Motor Telemetri Simülasyonu
-    initEngineTelemetrySimulation();
-
-    // 8. Birincil Uçuş Göstergesi (PFD) Simülasyonu
+    // 7. Birincil Uçuş Göstergesi (PFD) Simülasyonu
     initPrimaryFlightDisplaySimulation();
 });
 
@@ -583,7 +580,7 @@ function initEngineTelemetrySimulation() {
    8. BİRİNCİL UÇUŞ GÖSTERGESİ (PFD) SİMÜLASYONU
    ========================================================================== */
 /* ==========================================================================
-   8. BİRİNCİL UÇUŞ GÖSTERGESİ (PFD) SİMÜLASYONU (A320 STYLE)
+   7. BİRİNCİL UÇUŞ GÖSTERGESİ (PFD) SİMÜLASYONU (A320 STYLE - 320x240)
    ========================================================================== */
 function initPrimaryFlightDisplaySimulation() {
     const canvas = document.getElementById("pfd-canvas");
@@ -592,9 +589,9 @@ function initPrimaryFlightDisplaySimulation() {
 
     let pitch = 0.5;    // dereceler (pitch)
     let roll = 0.0;     // dereceler (roll)
-    let speed = 142.0;  // knot (Airbus A320 yaklaşma hızı civarı)
-    let alt = 3720.0;   // feet (yaklaşma irtifası)
-    let heading = 265;  // derece (pist doğrultusu)
+    let speed = 142.0;  // knot (Airspeed)
+    let alt = 3720.0;   // feet (Altitude)
+    let heading = 265;  // derece (Heading)
     
     // Flight Director (FD) sapmaları
     let fdX = 0;
@@ -603,15 +600,15 @@ function initPrimaryFlightDisplaySimulation() {
     function drawPFD() {
         const time = Date.now();
         
-        // 1. Değerleri Gerçekçi Dalgalandır (Smooth Uçuş Simülasyonu)
-        roll = Math.sin(time / 3000) * 8; // -8 ila +8 derece yatış
-        pitch = Math.cos(time / 4000) * 4 + 1.2; // -2.8 ila +5.2 derece yunuslama
+        // Değerleri dalgalandır (Uçuş hissi ver)
+        roll = Math.sin(time / 2800) * 10; 
+        pitch = Math.cos(time / 3600) * 4 + 1.2; 
         
         speed += (Math.random() - 0.5) * 0.1;
         if (speed < 138) speed = 138;
         if (speed > 146) speed = 146;
 
-        alt += (Math.random() - 0.5) * 1.2;
+        alt += (Math.random() - 0.5) * 1.5;
         if (alt < 3680) alt = 3680;
         if (alt > 3760) alt = 3760;
 
@@ -619,246 +616,242 @@ function initPrimaryFlightDisplaySimulation() {
         if (heading > 360) heading -= 360;
         if (heading < 0) heading += 360;
 
-        // FD Çaprazı Yavaşça Hareket Etsin
-        fdX = Math.sin(time / 1800) * 6;
-        fdY = Math.cos(time / 2200) * 4;
+        fdX = Math.sin(time / 1800) * 8;
+        fdY = Math.cos(time / 2200) * 5;
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        const cx = 120;       // Merkez X
-        const cy = 75;        // Merkez Y (AI küresi için)
-        const radius = 38;    // Yapay Ufuk Küre Yarıçapı
+        const cx = 160;       // Merkez X (Canvas genişliği 320)
+        const cy = 120;       // Merkez Y (Canvas yüksekliği 240)
+        const cy_ai = 115;    // Yapay ufuk merkez Y
+        const radius = 52;    // Yapay Ufuk Küre Yarıçapı
 
         // ==================================================================
         // A. YAPAY UFUK KÜRESİ (ATTITUDE INDICATOR)
         // ==================================================================
         ctx.save();
         ctx.beginPath();
-        ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+        ctx.arc(cx, cy_ai, radius, 0, Math.PI * 2);
         ctx.clip(); // Küre dışına taşanları kırp
 
-        ctx.translate(cx, cy);
+        ctx.translate(cx, cy_ai);
         ctx.rotate(roll * Math.PI / 180);
         
-        // 1 derece pitch = 3.2 piksel dikey kayma olsun
-        const pitchOffset = pitch * 3.2;
+        // Dikey pitch kayması (1 derece = 4.2 piksel)
+        const pitchOffset = pitch * 4.2;
 
-        // Gökyüzü (HUD Mavi)
-        ctx.fillStyle = "#0c2b4d"; // Tema rengi koyu mavi
-        ctx.fillRect(-100, -100, 200, 100 + pitchOffset);
+        // Gökyüzü (Koyu HUD Mavisi)
+        ctx.fillStyle = "#0c2b4d";
+        ctx.fillRect(-120, -120, 240, 120 + pitchOffset);
 
-        // Yeryüzü (HUD Kahve/Toprak)
-        ctx.fillStyle = "#3a2512"; // Tema rengi koyu toprak
-        ctx.fillRect(-100, pitchOffset, 200, 100 - pitchOffset);
+        // Yeryüzü (Koyu Toprak Kahvesi)
+        ctx.fillStyle = "#3a2512";
+        ctx.fillRect(-120, pitchOffset, 240, 120 - pitchOffset);
 
         // Beyaz Ufuk Çizgisi
         ctx.strokeStyle = "#ffffff";
         ctx.lineWidth = 1.5;
         ctx.beginPath();
-        ctx.moveTo(-100, pitchOffset);
-        ctx.lineTo(100, pitchOffset);
+        ctx.moveTo(-120, pitchOffset);
+        ctx.lineTo(120, pitchOffset);
         ctx.stroke();
 
         // Yunuslama Merdiveni (Pitch Ladder)
         ctx.strokeStyle = "rgba(255, 255, 255, 0.4)";
-        ctx.fillStyle = "rgba(0, 240, 255, 0.8)"; // Neon Cyan etiketler
-        ctx.font = "7px Orbitron";
+        ctx.fillStyle = "rgba(0, 240, 255, 0.85)";
+        ctx.font = "8px Orbitron";
         ctx.lineWidth = 0.8;
         ctx.textAlign = "left";
         ctx.textBaseline = "middle";
 
         const pitchLevels = [-20, -10, 10, 20];
         pitchLevels.forEach(level => {
-            const y = pitchOffset - (level * 3.2);
+            const y = pitchOffset - (level * 4.2);
             if (y > -radius && y < radius) {
                 ctx.beginPath();
-                ctx.moveTo(-12, y);
-                ctx.lineTo(12, y);
+                ctx.moveTo(-15, y);
+                ctx.lineTo(15, y);
                 ctx.stroke();
 
-                // Küçük tırnaklar (uçlar)
+                // Küçük tırnaklar
                 ctx.beginPath();
-                ctx.moveTo(-12, y);
-                ctx.lineTo(-12, y + (level > 0 ? 3 : -3));
-                ctx.moveTo(12, y);
-                ctx.lineTo(12, y + (level > 0 ? 3 : -3));
+                ctx.moveTo(-15, y);
+                ctx.lineTo(-15, y + (level > 0 ? 3 : -3));
+                ctx.moveTo(15, y);
+                ctx.lineTo(15, y + (level > 0 ? 3 : -3));
                 ctx.stroke();
 
-                ctx.fillText(Math.abs(level), 15, y);
+                ctx.fillText(Math.abs(level), 19, y);
             }
         });
 
         ctx.restore();
 
         // ==================================================================
-        // B. FLIGHT DIRECTOR (FD) ÇAPRAZI (Eletrik Yeşil)
+        // B. FLIGHT DIRECTOR (FD) ÇAPRAZI (Yeşil)
         // ==================================================================
         ctx.save();
         ctx.beginPath();
-        ctx.arc(cx, cy, radius, 0, Math.PI * 2);
-        ctx.clip(); // Sadece kürenin içinde göster
+        ctx.arc(cx, cy_ai, radius, 0, Math.PI * 2);
+        ctx.clip();
 
-        ctx.strokeStyle = "#39ff14"; // Electric Green
-        ctx.lineWidth = 1;
+        ctx.strokeStyle = "#39ff14";
+        ctx.lineWidth = 1.2;
         
-        // Dikey FD Çizgisi
+        // Dikey Çizgi
         ctx.beginPath();
-        ctx.moveTo(cx + fdX, cy - radius);
-        ctx.lineTo(cx + fdX, cy + radius);
+        ctx.moveTo(cx + fdX, cy_ai - radius);
+        ctx.lineTo(cx + fdX, cy_ai + radius);
         ctx.stroke();
 
-        // Yatay FD Çizgisi
+        // Yatay Çizgi
         ctx.beginPath();
-        ctx.moveTo(cx - radius, cy + fdY);
-        ctx.lineTo(cx + radius, cy + fdY);
+        ctx.moveTo(cx - radius, cy_ai + fdY);
+        ctx.lineTo(cx + radius, cy_ai + fdY);
         ctx.stroke();
         ctx.restore();
 
         // ==================================================================
-        // C. SABİT UÇAK REFERANS SEMBOLÜ (Airbus Tarzı Kalın Siyah/Amber Kanatlar)
+        // C. SABİT UÇAK REFERANS SEMBOLÜ (Airbus Amber Çerçeve)
         // ==================================================================
-        ctx.strokeStyle = "#000000"; // Kalın dış çerçeve
-        ctx.lineWidth = 4;
-        drawAircraftWings(ctx, cx, cy);
+        ctx.strokeStyle = "#000000";
+        ctx.lineWidth = 4.5;
+        drawAircraftWings(ctx, cx, cy_ai);
         
-        ctx.strokeStyle = "#ff9900"; // Amber iç çizgi
-        ctx.lineWidth = 2;
-        drawAircraftWings(ctx, cx, cy);
+        ctx.strokeStyle = "#ff9900";
+        ctx.lineWidth = 2.2;
+        drawAircraftWings(ctx, cx, cy_ai);
 
-        // Küre Çerçevesi (Beyaz dairesel sınır)
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+        // Küre Dış Çerçevesi
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.25)";
         ctx.lineWidth = 1.5;
         ctx.beginPath();
-        ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+        ctx.arc(cx, cy_ai, radius, 0, Math.PI * 2);
         ctx.stroke();
 
         // ==================================================================
         // D. HIZ ŞERİDİ (AIRSPEED TAPE - SOL BÖLÜM)
         // ==================================================================
-        const speedX = 6;
-        const speedW = 38;
-        const tapeH = 96;
-        const tapeY = 28;
+        const speedX = 8;
+        const speedW = 46;
+        const tapeH = 155;
+        const tapeY = 30;
 
-        // Arka Plan
-        ctx.fillStyle = "rgba(20, 30, 50, 0.6)";
+        ctx.fillStyle = "rgba(20, 30, 50, 0.65)";
         ctx.fillRect(speedX, tapeY, speedW, tapeH);
         ctx.strokeStyle = "rgba(0, 240, 255, 0.4)";
         ctx.strokeRect(speedX, tapeY, speedW, tapeH);
 
-        // Tırtıklar ve Sayılar
         ctx.save();
         ctx.beginPath();
         ctx.rect(speedX, tapeY + 1, speedW, tapeH - 2);
         ctx.clip();
 
         ctx.fillStyle = "#d1dbed";
-        ctx.font = "8px Orbitron";
+        ctx.font = "8.5px Orbitron";
         ctx.textAlign = "right";
         ctx.textBaseline = "middle";
 
-        const startSpeed = Math.floor((speed - 30) / 10) * 10;
-        const endSpeed = speed + 30;
+        const startSpeed = Math.floor((speed - 40) / 10) * 10;
+        const endSpeed = speed + 40;
 
         for (let s = startSpeed; s <= endSpeed; s += 10) {
             if (s < 0) continue;
-            // 1 knot = 1.2 piksel kayma
-            const y = (tapeY + tapeH/2) - (s - speed) * 1.2;
-            ctx.strokeStyle = "rgba(0, 240, 255, 0.3)";
+            // 1 knot = 1.6 piksel kayma
+            const y = (tapeY + tapeH/2) - (s - speed) * 1.6;
+            ctx.strokeStyle = "rgba(0, 240, 255, 0.35)";
             ctx.beginPath();
-            ctx.moveTo(speedX + speedW - 8, y);
+            ctx.moveTo(speedX + speedW - 10, y);
             ctx.lineTo(speedX + speedW, y);
             ctx.stroke();
 
-            ctx.fillText(s, speedX + speedW - 10, y);
+            ctx.fillText(s, speedX + speedW - 13, y);
         }
         ctx.restore();
 
-        // Hız Okuma Kutusu ve Pointer (Cyan)
+        // Hız Okuma Gösterge Kutusu (Cyan)
         ctx.fillStyle = "#000000";
         ctx.strokeStyle = "#00f0ff";
         ctx.lineWidth = 1.5;
         ctx.beginPath();
-        ctx.moveTo(speedX + speedW - 4, cy - 6);
-        ctx.lineTo(speedX + speedW - 8, cy - 6);
-        ctx.lineTo(speedX + speedW - 12, cy);
-        ctx.lineTo(speedX + speedW - 8, cy + 6);
-        ctx.lineTo(speedX + speedW - 4, cy + 6);
+        ctx.moveTo(speedX + speedW - 4, cy_ai - 7);
+        ctx.lineTo(speedX + speedW - 8, cy_ai - 7);
+        ctx.lineTo(speedX + speedW - 13, cy_ai);
+        ctx.lineTo(speedX + speedW - 8, cy_ai + 7);
+        ctx.lineTo(speedX + speedW - 4, cy_ai + 7);
         ctx.closePath();
         ctx.fill();
         ctx.stroke();
 
-        ctx.fillRect(speedX + 2, cy - 8, speedW - 14, 16);
-        ctx.strokeRect(speedX + 2, cy - 8, speedW - 14, 16);
+        ctx.fillRect(speedX + 2, cy_ai - 9, speedW - 16, 18);
+        ctx.strokeRect(speedX + 2, cy_ai - 9, speedW - 16, 18);
         
-        ctx.fillStyle = "#39ff14"; // Electric Green dijital okuma
-        ctx.font = "bold 9px Orbitron";
+        ctx.fillStyle = "#39ff14";
+        ctx.font = "bold 10px Orbitron";
         ctx.textAlign = "center";
-        ctx.fillText(Math.round(speed), speedX + (speedW - 10)/2, cy);
+        ctx.fillText(Math.round(speed), speedX + (speedW - 12)/2, cy_ai + 1);
 
         // ==================================================================
-        // E. İRTİFA ŞERİDİ (ALTITUDE TAPE - SAĞ BÖLÜM)
+        // E. SAĞ İRTİFA ŞERİDİ (ALTITUDE TAPE)
         // ==================================================================
-        const altX = canvas.width - 44;
-        const altW = 38;
+        const altX = canvas.width - 64;
+        const altW = 55;
 
-        // Arka Plan
-        ctx.fillStyle = "rgba(20, 30, 50, 0.6)";
+        ctx.fillStyle = "rgba(20, 30, 50, 0.65)";
         ctx.fillRect(altX, tapeY, altW, tapeH);
         ctx.strokeStyle = "rgba(0, 240, 255, 0.4)";
         ctx.strokeRect(altX, tapeY, altW, tapeH);
 
-        // Tırtıklar
         ctx.save();
         ctx.beginPath();
         ctx.rect(altX, tapeY + 1, altW, tapeH - 2);
         ctx.clip();
 
         ctx.fillStyle = "#d1dbed";
-        ctx.font = "8px Orbitron";
+        ctx.font = "8.5px Orbitron";
         ctx.textAlign = "left";
         ctx.textBaseline = "middle";
 
-        const startAlt = Math.floor((alt - 300) / 100) * 100;
-        const endAlt = alt + 300;
+        const startAlt = Math.floor((alt - 400) / 100) * 100;
+        const endAlt = alt + 400;
 
         for (let a = startAlt; a <= endAlt; a += 100) {
             if (a < 0) continue;
-            // 10 feet = 0.15 piksel dikey kayma
-            const y = (tapeY + tapeH/2) - (a - alt) * 0.15;
-            ctx.strokeStyle = "rgba(0, 240, 255, 0.3)";
+            // 10 feet = 0.22 piksel kayma
+            const y = (tapeY + tapeH/2) - (a - alt) * 0.22;
+            ctx.strokeStyle = "rgba(0, 240, 255, 0.35)";
             ctx.beginPath();
             ctx.moveTo(altX, y);
-            ctx.lineTo(altX + 8, y);
+            ctx.lineTo(altX + 10, y);
             ctx.stroke();
 
-            ctx.fillText(a, altX + 11, y);
+            ctx.fillText(a, altX + 14, y);
         }
         ctx.restore();
 
-        // İrtifa Okuma Kutusu (Yeşil çerçeveli Airbus kutusu)
+        // İrtifa Okuma Kutusu
         ctx.fillStyle = "#000000";
         ctx.strokeStyle = "#39ff14";
         ctx.lineWidth = 1.5;
         ctx.beginPath();
-        ctx.rect(altX - 6, cy - 8, altW + 4, 16);
+        ctx.rect(altX - 8, cy_ai - 9, altW + 6, 18);
         ctx.fill();
         ctx.stroke();
 
         ctx.fillStyle = "#39ff14";
-        ctx.font = "bold 9px Orbitron";
+        ctx.font = "bold 10px Orbitron";
         ctx.textAlign = "center";
-        ctx.fillText(Math.round(alt), altX + altW/2 - 2, cy);
+        ctx.fillText(Math.round(alt), altX + altW/2 - 3, cy_ai + 1);
 
         // ==================================================================
-        // F. YATAY PUSULA ŞERİDİ (HEADING TAPE - ALT BÖLÜM)
+        // F. YATAY PUSULA ŞERİDİ (HEADING TAPE)
         // ==================================================================
-        const hdgY = 134;
-        const hdgW = 120;
+        const hdgY = 202;
+        const hdgW = 180;
         const hdgX = cx - hdgW/2;
-        const hdgH = 14;
+        const hdgH = 16;
 
-        ctx.fillStyle = "rgba(20, 30, 50, 0.6)";
+        ctx.fillStyle = "rgba(20, 30, 50, 0.65)";
         ctx.fillRect(hdgX, hdgY, hdgW, hdgH);
         ctx.strokeStyle = "rgba(0, 240, 255, 0.4)";
         ctx.strokeRect(hdgX, hdgY, hdgW, hdgH);
@@ -869,31 +862,31 @@ function initPrimaryFlightDisplaySimulation() {
         ctx.clip();
 
         ctx.fillStyle = "#d1dbed";
-        ctx.font = "7.5px Orbitron";
+        ctx.font = "8px Orbitron";
         ctx.textAlign = "center";
         
-        const startHdg = Math.floor((heading - 15) / 5) * 5;
-        const endHdg = heading + 15;
+        const startHdg = Math.floor((heading - 25) / 5) * 5;
+        const endHdg = heading + 25;
 
         for (let h = startHdg; h <= endHdg; h += 5) {
             let normH = (h + 360) % 360;
-            // 1 derece = 3 piksel yatay kayma
-            const x = cx - (heading - h) * 3;
-            ctx.strokeStyle = "rgba(0, 240, 255, 0.3)";
+            // 1 derece = 3.6 piksel yatay kayma
+            const x = cx - (heading - h) * 3.6;
+            ctx.strokeStyle = "rgba(0, 240, 255, 0.35)";
             ctx.beginPath();
             ctx.moveTo(x, hdgY);
-            ctx.lineTo(x, hdgY + 4);
+            ctx.lineTo(x, hdgY + 5);
             ctx.stroke();
 
             if (normH % 10 === 0) {
                 let lbl = String(normH / 10).padStart(2, '0');
                 if (normH === 0) lbl = "N";
-                ctx.fillText(lbl, x, hdgY + 11);
+                ctx.fillText(lbl, x, hdgY + 13);
             }
         }
         ctx.restore();
 
-        // Sabit Pusula Index İşaretçisi (Sarı dikey çizgi ve yeşil elmas)
+        // Sabit Pusula Index İşaretçisi
         ctx.strokeStyle = "#ffaa00";
         ctx.lineWidth = 1.5;
         ctx.beginPath();
@@ -905,51 +898,47 @@ function initPrimaryFlightDisplaySimulation() {
         ctx.fillStyle = "#39ff14";
         ctx.beginPath();
         ctx.moveTo(cx, hdgY + 6);
-        ctx.lineTo(cx + 3, hdgY + 9);
-        ctx.lineTo(cx, hdgY + 12);
-        ctx.lineTo(cx - 3, hdgY + 9);
+        ctx.lineTo(cx + 4, hdgY + 10);
+        ctx.lineTo(cx, hdgY + 14);
+        ctx.lineTo(cx - 4, hdgY + 10);
         ctx.closePath();
         ctx.stroke();
 
         // ==================================================================
-        // G. FMA BİLGİ ALANI (FLIGHT MODE ANNUNCIATOR - ÜST PANEL)
+        // G. FMA BİLGİLERİ (FLIGHT MODE ANNUNCIATOR - ÜST PANEL)
         // ==================================================================
-        ctx.fillStyle = "#39ff14"; // Electric Green
-        ctx.font = "7px Orbitron";
+        ctx.fillStyle = "#39ff14";
+        ctx.font = "8px Orbitron";
         ctx.textAlign = "left";
-        ctx.fillText("SPEED", 8, 12);
+        ctx.fillText("SPEED", 12, 16);
         
-        ctx.fillStyle = "#00f0ff"; // Cyan
-        ctx.fillText("G/S", 55, 12);
-        ctx.fillText("LOC", 90, 12);
+        ctx.fillStyle = "#00f0ff";
+        ctx.fillText("G/S", 75, 16);
+        ctx.fillText("LOC", 120, 16);
 
         ctx.fillStyle = "#ffffff";
-        ctx.fillText("CAT 3", 130, 9);
-        ctx.fillText("DUAL", 130, 17);
+        ctx.fillText("CAT 3", 175, 11);
+        ctx.fillText("DUAL", 175, 21);
 
-        ctx.fillText("AP1+2", 175, 9);
-        ctx.fillText("1 FD 2", 175, 17);
+        ctx.fillText("AP1+2", 235, 11);
+        ctx.fillText("1 FD 2", 235, 21);
         ctx.fillStyle = "#00f0ff";
-        ctx.fillText("A/THR", 175, 25);
+        ctx.fillText("A/THR", 235, 31);
 
         requestAnimationFrame(drawPFD);
     }
 
-    // Airbus Uçak Kanadı Çizici Yardımcı Fonksiyonu
     function drawAircraftWings(c, x, y) {
         c.beginPath();
-        // Sol kanat bracket'ı
-        c.moveTo(x - 22, y - 5);
-        c.lineTo(x - 12, y - 5);
-        c.lineTo(x - 12, y);
+        c.moveTo(x - 30, y - 5);
+        c.lineTo(x - 15, y - 5);
+        c.lineTo(x - 15, y + 2);
         
-        // Sağ kanat bracket'ı
-        c.moveTo(x + 22, y - 5);
-        c.lineTo(x + 12, y - 5);
-        c.lineTo(x + 12, y);
+        c.moveTo(x + 30, y - 5);
+        c.lineTo(x + 15, y - 5);
+        c.lineTo(x + 15, y + 2);
         
-        // Merkez küçük kare
-        c.rect(x - 1.5, y - 6.5, 3, 3);
+        c.rect(x - 2, y - 7, 4, 4);
         c.stroke();
     }
 
