@@ -26,7 +26,7 @@
             <span class="status-text">SYS_ACTIVE // TELEMETRY: ONLINE</span>
         </div>
         <div class="status-center">
-            AVIATION ELECTRICAL ELECTRONICS PORTFOLIO v1.0.0
+            
         </div>
         <div class="status-right" id="system-time">
             UTC: 00:00:00
@@ -37,7 +37,7 @@
     <nav class="hud-nav">
         <div class="nav-logo">
             <i data-lucide="plane-takeoff" class="logo-icon"></i>
-            <span class="logo-text">AVIONICS_PORTFOLIO</span>
+            
         </div>
         <ul class="nav-links">
             <li><a href="#hero" class="active"><span class="nav-num">01.</span> ANASAYFA</a></li>
@@ -78,14 +78,19 @@
                         </div>
                     </div>
                     <div class="hud-panel">
-                        <div class="panel-header"><i data-lucide="activity"></i> BUS LOAD (CAN/SPI)</div>
-                        <div class="panel-body bus-load-sim">
-                            <div class="bar-container">
-                                <div class="bar-fill" style="width: 42%"></div>
+                        <div class="panel-header"><i data-lucide="wrench"></i> ENGINE & SYSTEMS TELEMETRY</div>
+                        <div class="panel-body engine-telemetry-sim">
+                            <div class="telemetry-item">
+                                <span class="telemetry-label">ENG 1 N1:</span>
+                                <span class="telemetry-value" id="telemetry-n1">91.4%</span>
                             </div>
-                            <div class="bus-stats">
-                                <span>CAN: 42%</span>
-                                <span>SPI: 8.4 Mbps</span>
+                            <div class="telemetry-item">
+                                <span class="telemetry-label">EGT TEMP:</span>
+                                <span class="telemetry-value" id="telemetry-egt">620°C</span>
+                            </div>
+                            <div class="telemetry-item">
+                                <span class="telemetry-label">HYD PRESS:</span>
+                                <span class="telemetry-value" id="telemetry-hyd">3015 PSI</span>
                             </div>
                         </div>
                     </div>

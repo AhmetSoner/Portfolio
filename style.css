@@ -514,41 +514,35 @@ section {
 .pitch-val { top: 5px; right: 8px; }
 .roll-val { bottom: 5px; right: 8px; }
 
-.bus-load-sim {
+.engine-telemetry-sim {
     height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
+    gap: 6px;
 }
 
-.bar-container {
-    width: 100%;
-    height: 14px;
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 240, 255, 0.2);
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    box-shadow: 0 0 10px var(--primary-glow);
-    animation: bar-fluctuate 3s ease-in-out infinite alternate;
-}
-
-@keyframes bar-fluctuate {
-    0% { width: 35%; }
-    50% { width: 52%; }
-    100% { width: 40%; }
-}
-
-.bus-stats {
+.telemetry-item {
     display: flex;
     justify-content: space-between;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    border-bottom: 1px dashed rgba(0, 240, 255, 0.05);
+    padding-bottom: 3px;
+}
+
+.telemetry-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.telemetry-label {
     color: var(--text-muted);
+}
+
+.telemetry-value {
+    font-family: var(--font-header);
+    color: var(--accent);
+    font-weight: 700;
 }
 
 /* Buttons HUD style */

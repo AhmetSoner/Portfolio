@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 6. Sistem Saati Güncelleyici
     initSystemClock();
+
+    // 7. Uçak ve Motor Telemetri Simülasyonu
+    initEngineTelemetrySimulation();
 });
 
 /* ==========================================================================
@@ -544,4 +547,31 @@ function initSystemClock() {
     
     updateClock();
     setInterval(updateClock, 1000);
+}
+
+/* ==========================================================================
+   7. UÇAK VE MOTOR TELEMETRİ SİMÜLASYONU
+   ========================================================================== */
+function initEngineTelemetrySimulation() {
+    const n1Display = document.getElementById("telemetry-n1");
+    const egtDisplay = document.getElementById("telemetry-egt");
+    const hydDisplay = document.getElementById("telemetry-hyd");
+
+    if (!n1Display || !egtDisplay || !hydDisplay) return;
+
+    function updateTelemetry() {
+        // N1 RPM: 90.5% - 92.5% arası dalgalansın
+        const n1 = (90.5 + Math.random() * 2).toFixed(1);
+        // EGT Sıcaklık: 615 - 625 °C arası dalgalansın
+        const egt = Math.round(615 + Math.random() * 10);
+        // Hidrolik Basınç: 2980 - 3020 PSI arası dalgalansın
+        const hyd = Math.round(2980 + Math.random() * 40);
+
+        n1Display.textContent = `${n1}%`;
+        egtDisplay.textContent = `${egt}°C`;
+        hydDisplay.textContent = `${hyd} PSI`;
+    }
+
+    // Her 1.5 saniyede bir güncelle
+    setInterval(updateTelemetry, 1500);
 }

@@ -1,9 +1,9 @@
 const PORTFOLIO_DATA = {
   profile: {
     name: "Adınız Soyadınız",
-    title: "Havacılık Elektrik-Elektronik Mühendisliği Öğrencisi",
-    subTitle: "Aviyonik Sistemler | Gömülü Yazılım | Donanım Tasarımı",
-    about: "Havacılık ve uzay teknolojilerine meraklı, aviyonik sistemler, gömülü yazılım ve donanım tasarımı konularında kendimi geliştiren bir Havacılık Elektrik-Elektronik Mühendisliği öğrencisiyim. TEKNOFEST gibi yarışmalarda aktif rol alarak takım çalışması ve gerçek zamanlı sistemler üzerinde deneyim kazandım.",
+    title: "Uçak Bakım Mühendisi",
+    subTitle: "Aviyonik Sistemler | Uçak Bakımı | Sistem ve Donanım Tasarımı",
+    about: "Havacılık ve uzay teknolojilerine meraklı, aviyonik sistemler, uçuş sistemleri bakımı, sistem ve donanım tasarımı konularında kendimi geliştiren bir Uçak Bakım Mühendisiyim. TEKNOFEST gibi yarışmalarda aktif rol alarak takım çalışması ve aviyonik sistemler üzerinde deneyim kazandım.",
     avatar: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=300&h=300",
     socials: {
       github: "https://github.com",
