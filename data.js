@@ -8,7 +8,8 @@ const PORTFOLIO_DATA = {
     socials: {
       github: "https://github.com/AhmetSoner",
       linkedin: "https://www.linkedin.com/in/ahmet-soner-gulec",
-      email: "mailto:ahmetsonergulec@hotmail.com"
+      email: "mailto:ahmetsonergulec@hotmail.com",
+      phone: "+90 553 715 41 69"
     }
   },
   skills: [

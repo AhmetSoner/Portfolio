@@ -52,6 +52,11 @@ function initPortfolioData() {
     
     document.getElementById("profile-email").href = data.profile.socials.email;
     document.getElementById("profile-email").querySelector("span").textContent = data.profile.socials.email.replace("mailto:", "");
+    
+    if (document.getElementById("profile-phone")) {
+        document.getElementById("profile-phone").href = "tel:" + data.profile.socials.phone.replace(/\s+/g, "");
+        document.getElementById("profile-phone").querySelector("span").textContent = data.profile.socials.phone;
+    }
 
     // Eğitim Zaman Tüneli
     const eduTimeline = document.getElementById("education-timeline");
