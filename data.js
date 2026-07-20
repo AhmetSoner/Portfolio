@@ -330,7 +330,7 @@ const PORTFOLIO_DATA = {
             "id": "project-6",
             "title": "Muharip Hava Araçlarında Uçuş Performansı Veri Setinin Makine Öğrenmesi Yöntemleriyle Modellenmesi ve Kıyaslanması",
             "category": "gomulu",
-            "summary": "TUSAŞ LIFT UP Programı kapsamında Milli Muharip Uçak (KAAN) aviyonik sistemleri için U-Net ve OCR ile dijitalleştirilen AFM nomogram verilerinden Kübik İnterpolasyon, XGBoost ve Tabular Transformer (FT-Transformer) modellerinin Raspberry Pi 3 hedef ortamındaki donanım ve doğruluk benchmark analizi.",
+            "summary": "Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ) LIFT UP Programı ve TÜBİTAK 2209-B Sanayi Odaklı Araştırma Projeleri Destek Programı (Proje No: 1999B212502693 / LIFTUP-2025-2026) kapsamında Milli Muharip Uçak (KAAN) aviyonik seyrüsefer sistemleri için yürütülen bu çalışmada; U-Net CNN ve Optik Karakter Tanıma (OCR) ile dijitalleştirilen Uçuş El Kitabı (AFM) nomogram verileri üzerinde Kübik İnterpolasyon, XGBoost ve Tabular Transformer (FT-Transformer) modellerinin Raspberry Pi 3 gömülü hedef ortamındaki çıkarım hızı, bellek ayak izi ve tahmin doğruluğu benchmark analizleri gerçekleştirilmiştir.",
             "description": "TUSAŞ (Türk Havacılık ve Uzay Sanayii A.Ş.) LIFT UP Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında yürütülen bu çalışmada, muharip hava araçlarında kritik uçuş performans parametrelerinin (Özgül Menzil, İrtifa, Mach Sayısı, Yakıt Akışı, Sürükleme İndeksi vb.) hesaplanmasında kullanılan geleneksel kübik interpolasyon arama tablosu yöntemi ile yapay zeka modelleri (XGBoost ve Tabular Transformer) doğrusal olmayan davranışlar, çıkarım hızı, bellek ayak izi ve işlemci yükü açısından karşılaştırılmıştır.",
             "image": "kaan.jpg",
             "tags": [
@@ -341,7 +341,7 @@ const PORTFOLIO_DATA = {
                   "Raspberry Pi 3 Edge Benchmark",
                   "U-Net / OCR"
             ],
-            "specs": [
+            "specs": [{"name": "Kurum / Sanayi Ortağı", "value": "Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ)"}, {"name": "Destek Programları", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Programı"}, {"name": "TÜBİTAK Proje No", "value": "1999B212502693"}, {"name": "TUSAŞ Proje Kodu", "value": "LIFTUP-2025-2026-AV-06"}, {"name": "Sanayi Danışmanı", "value": "Zeynel Abidin AYDOĞAN (TUSAŞ - Havacılık Müh.)"}, {"name": "Akademik Danışman", "value": "Doç. Dr. Aziz KABA (ESTÜ Pilotaj)"}, {"name": "Proje Ekibi", "value": "Ahmet Soner GÜLEÇ (Lider), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"}, {"name": "En İyi Modeller", "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"}, {"name": "Çıkarım Gecikmesi (p95)", "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"}, {"name": "Hedef Donanım", "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"}],
                   {
                         "name": "Sanayi Danışmanı",
                         "value": "Zeynel Abidin AYDOĞAN (TUSAŞ)"
@@ -729,7 +729,7 @@ const PORTFOLIO_DATA = {
             "id": "project-6",
             "title": "Modeling and Comparing the Performance Dataset of a Combat Aircraft Using Machine Learning Methods",
             "category": "gomulu",
-            "summary": "Hardware and accuracy benchmark analysis of Cubic Interpolation, XGBoost, and Tabular Transformer (FT-Transformer) models on Raspberry Pi 3 edge deployment for National Combat Aircraft (KAAN) avionics systems digitized via U-Net & OCR under the TUSAŞ LIFT UP Program.",
+            "summary": "Conducted under the Turkish Aerospace Industries (TUSAŞ) LIFT UP Program and TÜBİTAK 2209-B Industry-Oriented Research Projects Support Program (Project No: 1999B212502693 / LIFTUP-2025-2026) for the National Combat Aircraft (KAAN) avionics navigation systems; this project performs hardware latency, memory footprint, and non-linear accuracy benchmark analyses of Cubic Interpolation, XGBoost, and Tabular Transformer (FT-Transformer) models on Raspberry Pi 3 edge deployment targets using Aircraft Flight Manual (AFM) nomogram data digitized via U-Net CNN and OCR.",
             "description": "In this study conducted within the TUSAŞ (Turkish Aerospace Industries) LIFT UP Industry-Oriented Graduation Project Program, traditional cubic interpolation lookup table methods used for computing critical flight performance parameters (Specific Range, Altitude, Mach Number, Fuel Flow, Drag Index) in combat aircraft were benchmarked against machine learning models (XGBoost and Tabular Transformer) in terms of non-linear accuracy, inference latency, memory footprint, and CPU utilization.",
             "image": "kaan.jpg",
             "tags": [
@@ -740,7 +740,7 @@ const PORTFOLIO_DATA = {
                   "Raspberry Pi 3 Edge Benchmark",
                   "U-Net / OCR"
             ],
-            "specs": [
+            "specs": [{"name": "Host Institution / Partner", "value": "Turkish Aerospace Industries (TUSAŞ)"}, {"name": "Grant Programs", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Program"}, {"name": "TÜBİTAK Project No", "value": "1999B212502693"}, {"name": "TUSAŞ Project Code", "value": "LIFTUP-2025-2026-AV-06"}, {"name": "Industry Advisor", "value": "Zeynel Abidin AYDOĞAN (TUSAŞ - Aerospace Eng.)"}, {"name": "Academic Advisor", "value": "Assoc. Prof. Dr. Aziz KABA (ESTÜ Pilotage)"}, {"name": "Project Team", "value": "Ahmet Soner GÜLEÇ (Lead), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"}, {"name": "Best Models", "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"}, {"name": "Inference Latency (p95)", "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"}, {"name": "Target Hardware", "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"}],
                   {
                         "name": "Industry Advisor",
                         "value": "Zeynel Abidin AYDOĞAN (TUSAŞ)"

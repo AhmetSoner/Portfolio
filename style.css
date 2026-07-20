@@ -1681,6 +1681,7 @@ section {
     color: var(--text-main);
     font-size: 1.02rem;
     line-height: 1.7;
+    text-align: justify;
 }
 
 /* Subsystems Grid */
