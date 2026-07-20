@@ -341,31 +341,17 @@ const PORTFOLIO_DATA = {
                   "Raspberry Pi 3 Edge Benchmark",
                   "U-Net / OCR"
             ],
-            "specs": [{"name": "Kurum / Sanayi Ortağı", "value": "Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ)"}, {"name": "Destek Programları", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Programı"}, {"name": "TÜBİTAK Proje No", "value": "1999B212502693"}, {"name": "TUSAŞ Proje Kodu", "value": "LIFTUP-2025-2026-AV-06"}, {"name": "Sanayi Danışmanı", "value": "Zeynel Abidin AYDOĞAN (TUSAŞ - Havacılık Müh.)"}, {"name": "Akademik Danışman", "value": "Doç. Dr. Aziz KABA (ESTÜ Pilotaj)"}, {"name": "Proje Ekibi", "value": "Ahmet Soner GÜLEÇ (Lider), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"}, {"name": "En İyi Modeller", "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"}, {"name": "Çıkarım Gecikmesi (p95)", "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"}, {"name": "Hedef Donanım", "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"}],
-                  {
-                        "name": "Sanayi Danışmanı",
-                        "value": "Zeynel Abidin AYDOĞAN (TUSAŞ)"
-                  },
-                  {
-                        "name": "Akademik Danışman",
-                        "value": "Dr. Aziz KABA (ESTÜ Pilotaj)"
-                  },
-                  {
-                        "name": "Proje Ekibi",
-                        "value": "Ahmet Soner GÜLEÇ, Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"
-                  },
-                  {
-                        "name": "En İyi Modeller",
-                        "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"
-                  },
-                  {
-                        "name": "Çıkarım Gecikmesi (p95)",
-                        "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"
-                  },
-                  {
-                        "name": "Hedef Donanım",
-                        "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"
-                  }
+            "specs": [
+                  {"name": "Kurum / Sanayi Ortağı", "value": "Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ)"},
+                  {"name": "Destek Programları", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Programı"},
+                  {"name": "TÜBİTAK Proje No", "value": "1999B212502693"},
+                  {"name": "TUSAŞ Proje Kodu", "value": "LIFTUP-2025-2026-AV-06"},
+                  {"name": "Sanayi Danışmanı", "value": "Zeynel Abidin AYDOĞAN (TUSAŞ - Havacılık Müh.)"},
+                  {"name": "Akademik Danışman", "value": "Doç. Dr. Aziz KABA (ESTÜ Pilotaj)"},
+                  {"name": "Proje Ekibi", "value": "Ahmet Soner GÜLEÇ (Lider), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"},
+                  {"name": "En İyi Modeller", "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"},
+                  {"name": "Çıkarım Gecikmesi (p95)", "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"},
+                  {"name": "Hedef Donanım", "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"}
             ],
             "overview": "\n<strong>A. GENEL BİLGİLER VE ARAŞTIRMA ÖNERİSİ ÖZETİ</strong><br>\n• <strong>Başvuru Sahibi:</strong> Ahmet Soner GÜLEÇ (Lisans Tez Öğrencisi - Eskişehir Teknik Üniversitesi, Havacılık Elektrik Elektroniği)<br>\n• <strong>Akademik Danışman:</strong> Doç. Dr. Aziz KABA (Eskişehir Teknik Üniversitesi - Pilotaj Bölümü)<br>\n• <strong>Sanayi Danışmanı:</strong> Zeynel Abidin AYDOĞAN (TUSAŞ - Türk Havacılık ve Uzay Sanayii A.Ş., Havacılık Mühendisliği)<br>\n• <strong>Araştırmanın Yürütüleceği Kurum:</strong> Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ) / ESTÜ Havacılık Araştırma Laboratuvarı<br>\n• <strong>Destek Programı:</strong> TÜBİTAK 2209-B Üniversite Öğrencileri Sanayiye Yönelik Araştırma Projeleri Destek Programı (2025/2. Dönem)<br><br>\n\n<strong>Özet:</strong><br>\nProje, Muharip hava araçlarının (örn: MMU KAAN, F-18) aviyonik sistemlerinde uçuş performans verilerinin depolanması ve hesaplanması amacıyla kullanılan Arama Tablosu (Lookup Table - LUT) yönteminin yarattığı doğruluk kaybı ile aşırı donanım kaynağı tüketimi arasındaki teknik ikilemi; donanım verimliliği yüksek XGBoost ve Tabular Transformer modelleri ile aşmayı hedeflemektedir. Çalışmanın özgün değeri, bu modelleri standart eğitim süreçlerinin ötesine taşıyarak, Sürü Zekası (PSO) tabanlı meta-sezgisel algoritmalar aracılığıyla tahmin doğruluğu ve kaynak verimliliği hedefleri doğrultusunda eş zamanlı optimize eden yenilikçi bir metodoloji sunmasında yatmaktadır.<br><br>\nKAAN için bir vekil platform olarak seçilen F-18 uçağına ait nomogramlar, geliştirilen özelleştirilmiş MATLAB (`DigitizeGraph.m`) ve Python tabanlı çok değişkenli enterpolasyon yöntemleriyle işlenerek kapsamlı bir eğitim veri setine dönüştürülecektir. Elde edilen bu veri seti ile referans Nümerik modelin yanı sıra, PSO ile optimize edilmiş XGBoost ve Transformer modelleri geliştirilecektir. Son aşamada bu modeller; Raspberry Pi 3 ve NVIDIA Jetson gibi endüstriyel gömülü sistemler ile Docker simülasyonları üzerinde doğruluk, hız, bellek kullanımı ve model boyutu metriklerine göre kapsamlı kıyaslama testlerine tabi tutulacaktır.\n",
             "scientificMerit": "\n<strong>1. ARAŞTIRMA ÖNERİSİNİN BİLİMSEL NİTELİĞİ</strong><br><br>\n\n<strong>1.1. Amaç ve Hedefler:</strong><br>\nMuharip hava araçlarının uçuş performans verilerinin sayısal modellenmesi sürecinde karşılaşılan temel problem, aviyonik sistemlerin doğası gereği sahip olduğu sınırlı işlem gücü ve bellek kapasitesi gibi donanımsal kısıtlamalardır. Bu kısıtlı ortam, Hava Aracı Uçuş El Kitabı (AFM) dokümanlarındaki grafiksel verilerin entegrasyonunu zorlaştırmaktadır; zira geleneksel enterpolasyon yöntemleri kabul edilemez doğruluk kayıplarına yol açarken, daha karmaşık modellerin entegrasyonu sistemin donanım sınırlarını aşmaktadır.<br>\nBu teknik kısıtı gidermek amacıyla proje; nomogramlardan çok boyutlu veri setleri oluşturulmasını ve bu verilerle XGBoost, Tabular Transformer ve Nümerik yöntemlere dayalı üç farklı modelin geliştirilmesini hedeflemektedir. Kritik bir adım olarak; bu modeller Sürü Zekası (PSO) tabanlı algoritmalarla optimize edilecek, böylece maksimum tahmin doğruluğu ile minimum işlem yükü arasındaki ideal denge sağlanacaktır.<br><br>\n\n<strong>1.2. Yenilikçi Yönü ve Teknolojik Değeri:</strong><br>\nMevcut aviyonik sistemlerde uçuş performansı çoğunlukla arama tabloları veya düşük dereceli polinomsal enterpolasyon yöntemleri kullanılarak yönetilmektedir. Bu yöntemler karmaşık doğrusal olmayan ilişkileri modellemekte yetersiz kalmakta ve doğruluktan ödün vermektedir. Benzerlerinden farklı olarak bu çalışmada modern derin öğrenme mimarileri (Tabular Transformer) ile endüstri standardı XGBoost ve Nümerik yöntemler, tek bir veri seti üzerinde hem doğruluk hem de donanım kaynak tüketimi (çıkarım hızı ms, bellek ayak izi MB) açısından bütüncül bir şekilde kıyaslanmaktadır.<br>\nProje, Türkiye'nin 2030 Sanayi ve Teknoloji Stratejisi’nde “Milli Teknoloji Hamlesi” vizyonu altında tanımlanan Havacılık ve Savunma Sanayii'nin dijital dönüşümü konusunda yer almaktadır. Tasarlanacak modellerin gömülü sistemlerde çalıştırılabilmesi kabiliyetini araştırarak yerli muharip uçakların (TF-X / KAAN) operasyonel çevikliğini artırmayı ve aviyonik yazılım alanında dışa bağımlılığı azaltacak milli bir teknik bilgi birikimi sağlamayı hedeflemektedir.\n",
@@ -740,31 +726,17 @@ const PORTFOLIO_DATA = {
                   "Raspberry Pi 3 Edge Benchmark",
                   "U-Net / OCR"
             ],
-            "specs": [{"name": "Host Institution / Partner", "value": "Turkish Aerospace Industries (TUSAŞ)"}, {"name": "Grant Programs", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Program"}, {"name": "TÜBİTAK Project No", "value": "1999B212502693"}, {"name": "TUSAŞ Project Code", "value": "LIFTUP-2025-2026-AV-06"}, {"name": "Industry Advisor", "value": "Zeynel Abidin AYDOĞAN (TUSAŞ - Aerospace Eng.)"}, {"name": "Academic Advisor", "value": "Assoc. Prof. Dr. Aziz KABA (ESTÜ Pilotage)"}, {"name": "Project Team", "value": "Ahmet Soner GÜLEÇ (Lead), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"}, {"name": "Best Models", "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"}, {"name": "Inference Latency (p95)", "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"}, {"name": "Target Hardware", "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"}],
-                  {
-                        "name": "Industry Advisor",
-                        "value": "Zeynel Abidin AYDOĞAN (TUSAŞ)"
-                  },
-                  {
-                        "name": "Academic Advisor",
-                        "value": "Dr. Aziz KABA (ESTÜ Pilotage)"
-                  },
-                  {
-                        "name": "Project Team",
-                        "value": "Ahmet Soner GÜLEÇ, Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"
-                  },
-                  {
-                        "name": "Best Models",
-                        "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"
-                  },
-                  {
-                        "name": "Inference Latency (p95)",
-                        "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"
-                  },
-                  {
-                        "name": "Target Hardware",
-                        "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"
-                  }
+            "specs": [
+                  {"name": "Host Institution / Partner", "value": "Turkish Aerospace Industries (TUSAŞ)"},
+                  {"name": "Grant Programs", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Program"},
+                  {"name": "TÜBİTAK Project No", "value": "1999B212502693"},
+                  {"name": "TUSAŞ Project Code", "value": "LIFTUP-2025-2026-AV-06"},
+                  {"name": "Industry Advisor", "value": "Zeynel Abidin AYDOĞAN (TUSAŞ - Aerospace Eng.)"},
+                  {"name": "Academic Advisor", "value": "Assoc. Prof. Dr. Aziz KABA (ESTÜ Pilotage)"},
+                  {"name": "Project Team", "value": "Ahmet Soner GÜLEÇ (Lead), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"},
+                  {"name": "Best Models", "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"},
+                  {"name": "Inference Latency (p95)", "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"},
+                  {"name": "Target Hardware", "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"}
             ],
             "overview": "\n<strong>A. GENERAL INFORMATION & EXECUTIVE SUMMARY</strong><br>\n• <strong>Lead Applicant:</strong> Ahmet Soner GÜLEÇ (Student - Eskişehir Technical University, Avionics Engineering)<br>\n• <strong>Academic Advisor:</strong> Assoc. Prof. Dr. Aziz KABA (Eskişehir Technical University - Dept. of Pilotage)<br>\n• <strong>Industry Advisor:</strong> Zeynel Abidin AYDOĞAN (TUSAŞ - Turkish Aerospace Industries, Aerospace Eng.)<br>\n• <strong>Host Institution:</strong> Turkish Aerospace Industries (TUSAŞ) / ESTÜ Avionics Research Lab<br>\n• <strong>Grant Program:</strong> TÜBİTAK 2209-B Industry-Oriented Research Projects Support Program (2025/2nd Term)<br><br>\n\n<strong>Executive Summary:</strong><br>\nThe project aims to overcome the technical dilemma between accuracy loss and excessive hardware consumption caused by traditional Lookup Table (LUT) methods in fighter aircraft avionics using hardware-efficient XGBoost and Tabular Transformer models. The novelty lies in optimizing these models simultaneously for accuracy and resource efficiency via Particle Swarm Optimization (PSO) multi-objective algorithms.<br><br>\nNomograms of the F-18 aircraft (acting as surrogate for KAAN) are processed using MATLAB (`DigitizeGraph.m`) and Python multi-variable interpolation into a comprehensive training dataset. XGBoost and FT-Transformer models are benchmarked on Raspberry Pi 3, NVIDIA Jetson, and Docker simulation environments across accuracy, latency, RAM, and model size.\n",
             "scientificMerit": "\n<strong>1. SCIENTIFIC MERIT & INNOVATIVE VALUE</strong><br><br>\n\n<strong>1.1. Objectives & Goals:</strong><br>\nFighter aircraft avionics operate under strict hardware constraints (limited CPU power and memory). This project constructs multi-dimensional datasets from AFM nomograms, developing XGBoost, Tabular Transformer, and Numerical baseline models optimized via Particle Swarm Optimization (PSO) to establish the optimal balance between maximum accuracy and minimum computational load.<br><br>\n\n<strong>1.2. Innovation & Technological Value:</strong><br>\nUnlike literature focusing solely on accuracy (RMSE), this study evaluates inference latency (ms), RAM footprint (MB), and accuracy holistically. Aligned with Turkey's 2030 National Technology Initiative in Aerospace & Defense, it enhances operational agility for domestic fighter aircraft (KAAN / TF-X) while building national avionics software expertise.\n",

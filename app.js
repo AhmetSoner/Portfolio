@@ -9,7 +9,9 @@ function applyLanguage(lang) {
     localStorage.setItem("portfolio_lang", lang);
     
     // Verileri yükle
-    initPortfolioData();
+    if (document.getElementById("hero-name")) {
+        initPortfolioData();
+    }
     
     // HTML'deki data-translate etiketli statik metinleri çevir
     document.querySelectorAll("[data-translate]").forEach(el => {
@@ -399,6 +401,7 @@ function playSynthSound(type) {
    ========================================================================== */
 function renderProjects(projectsList) {
     const container = document.getElementById("projects-container");
+    if (!container) return;
     container.innerHTML = "";
 
     projectsList.forEach(proj => {
