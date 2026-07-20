@@ -137,9 +137,48 @@ function initRadarCanvas() {
     let width = canvas.width = window.innerWidth;
     let height = canvas.height = window.innerHeight;
 
+    // Yan boşluklar için Plexus (Parçacık) verisi
+    const sideParticles = [];
+    const particleCount = 14; // Her bir kenar için parçacık sayısı
+
+    function initSideParticles() {
+        sideParticles.length = 0;
+        const marginWidth = Math.max(80, (window.innerWidth - 1200) / 2);
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        // Sol taraf parçacıkları
+        for (let i = 0; i < particleCount; i++) {
+            sideParticles.push({
+                x: Math.random() * marginWidth,
+                y: Math.random() * h,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+                radius: Math.random() * 2 + 1,
+                side: 'left'
+            });
+        }
+
+        // Sağ taraf parçacıkları
+        for (let i = 0; i < particleCount; i++) {
+            sideParticles.push({
+                x: w - (Math.random() * marginWidth),
+                y: Math.random() * h,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+                radius: Math.random() * 2 + 1,
+                side: 'right'
+            });
+        }
+    }
+
+    // İlk yüklemede parçacıkları oluştur
+    initSideParticles();
+
     window.addEventListener("resize", () => {
         width = canvas.width = window.innerWidth;
         height = canvas.height = window.innerHeight;
+        initSideParticles();
     });
 
     // Radar Parametreleri
@@ -257,92 +296,55 @@ function initRadarCanvas() {
             }
         });
 
-        // 5. HUD Kenar Teypleri Çizimi (Sadece geniş ekranlarda: width > 768)
-        if (width > 768) {
+        // 5. Yan Boşluklar İçin Plexus (Parçacık & Bağ) Animasyonu
+        const marginWidth = (width - 1200) / 2;
+        if (width > 800 && marginWidth > 50) {
             ctx.save();
-            ctx.strokeStyle = "rgba(0, 240, 255, 0.7)";
-            ctx.fillStyle = "rgba(0, 240, 255, 0.7)";
-            ctx.lineWidth = 1;
-            ctx.font = "10px Orbitron";
-            ctx.textAlign = "center";
+            ctx.lineWidth = 0.6;
 
-            const timeFactor = Date.now() * 0.0005;
+            // Parçacıkları güncelle ve çiz
+            sideParticles.forEach((p, index) => {
+                // Pozisyon güncelleme
+                p.x += p.vx;
+                p.y += p.vy;
 
-            // --- SOL TEYP (HIZ / IAS TAPE) ---
-            const leftX = 25;
-            // Dikey çizgi
-            ctx.beginPath();
-            ctx.moveTo(leftX, centerY - 150);
-            ctx.lineTo(leftX, centerY + 150);
-            ctx.stroke();
-
-            // Kayma miktarını hesapla (yavaşça yukarı/aşağı salınım)
-            const speedOffset = (Math.sin(timeFactor) * 50) % 20;
-            const centerSpeed = 160 + Math.sin(timeFactor) * 50;
-
-            for (let i = -8; i <= 8; i++) {
-                const y = centerY + i * 20 - speedOffset;
-                if (y < centerY - 150 || y > centerY + 150) continue;
-
-                // Ticks
-                ctx.beginPath();
-                ctx.moveTo(leftX, y);
-                ctx.lineTo(leftX - (i % 2 === 0 ? 10 : 5), y);
-                ctx.stroke();
-
-                // Değerler
-                if (i % 2 === 0) {
-                    const speedVal = Math.round(centerSpeed - i * 5);
-                    ctx.fillText(speedVal, leftX - 22, y + 4);
+                // Sınır kontrolü (kendi kenar boşluğunda kalması için) ve kelepçeleme
+                if (p.side === 'left') {
+                    if (p.x < 0) { p.x = 0; p.vx *= -1; }
+                    if (p.x > marginWidth) { p.x = marginWidth; p.vx *= -1; }
+                } else {
+                    if (p.x < width - marginWidth) { p.x = width - marginWidth; p.vx *= -1; }
+                    if (p.x > width) { p.x = width; p.vx *= -1; }
                 }
-            }
+                
+                if (p.y < 0) { p.y = 0; p.vy *= -1; }
+                if (p.y > height) { p.y = height; p.vy *= -1; }
 
-            // Merkez Göstergesi (Arrow)
-            ctx.beginPath();
-            ctx.moveTo(leftX, centerY);
-            ctx.lineTo(leftX + 8, centerY - 5);
-            ctx.lineTo(leftX + 8, centerY + 5);
-            ctx.closePath();
-            ctx.fill();
-            ctx.fillText("IAS", leftX - 10, centerY - 160);
-
-            // --- SAĞ TEYP (ALTITUDE / ALT TAPE) ---
-            const rightX = width - 25;
-            // Dikey çizgi
-            ctx.beginPath();
-            ctx.moveTo(rightX, centerY - 150);
-            ctx.lineTo(rightX, centerY + 150);
-            ctx.stroke();
-
-            const altOffset = (Math.cos(timeFactor * 0.7) * 80) % 20;
-            const centerAlt = 3200 + Math.cos(timeFactor * 0.7) * 200;
-
-            for (let i = -8; i <= 8; i++) {
-                const y = centerY + i * 20 - altOffset;
-                if (y < centerY - 150 || y > centerY + 150) continue;
-
-                // Ticks
+                // Parçacık noktasını çiz
+                ctx.fillStyle = "rgba(0, 240, 255, 0.7)";
                 ctx.beginPath();
-                ctx.moveTo(rightX, y);
-                ctx.lineTo(rightX + (i % 2 === 0 ? 10 : 5), y);
-                ctx.stroke();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fill();
 
-                // Değerler
-                if (i % 2 === 0) {
-                    const altVal = Math.round(centerAlt - i * 10);
-                    ctx.fillText(altVal, rightX + 25, y + 4);
+                // Diğer parçacıklarla yakınlık çizgilerini çiz
+                for (let j = index + 1; j < sideParticles.length; j++) {
+                    const p2 = sideParticles[j];
+                    if (p.side !== p2.side) continue; // Farklı taraftakileri bağlama
+
+                    const dx = p2.x - p.x;
+                    const dy = p2.y - p.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < 180) {
+                        const alpha = (1 - dist / 180) * 0.45;
+                        ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
                 }
-            }
-
-            // Merkez Göstergesi (Arrow)
-            ctx.beginPath();
-            ctx.moveTo(rightX, centerY);
-            ctx.lineTo(rightX - 8, centerY - 5);
-            ctx.lineTo(rightX - 8, centerY + 5);
-            ctx.closePath();
-            ctx.fill();
-            ctx.fillText("ALT", rightX + 10, centerY - 160);
-
+            });
             ctx.restore();
         }
 
