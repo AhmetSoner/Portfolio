@@ -1106,6 +1106,7 @@ section {
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 40px;
+    align-items: start;
 }
 
 .contact-info-panel {
@@ -1113,6 +1114,8 @@ section {
     border: 1px solid var(--border-color);
     padding: 40px;
     position: relative;
+    height: fit-content;
+    align-self: start;
 }
 
 .contact-info-panel h3 {
