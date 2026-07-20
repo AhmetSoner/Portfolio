@@ -1793,6 +1793,23 @@ section {
     gap: 20px;
 }
 
+.project-figure-grid.result-paper-flow {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.project-figure-grid.result-paper-flow .project-figure-card {
+    max-width: 760px;
+    width: min(100%, 760px);
+    margin-inline: auto;
+}
+
+.project-figure-grid.result-paper-flow .project-figure-card img {
+    max-height: 360px;
+    background: transparent;
+    padding: 10px;
+}
+
 .project-figure-card {
     margin: 0;
     border: 1px solid rgba(0, 240, 255, 0.18);

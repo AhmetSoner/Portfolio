@@ -1491,9 +1491,46 @@ ${liftUpPaperFigures}
 
   liftUpContent.tr.analysis = `
 <strong>4. Test, Simülasyon ve Doğrulama Sonuçları</strong><br><br>
-Lift-UP 2. Aşama Sonuç PDF’i, projenin üç ana yaklaşımını aynı deneysel çerçevede karşılaştırır: referans interpolasyon, XGBoost ve FT-Transformer. Değerlendirme yalnızca doğruluk metriklerine indirgenmemiştir; p95 gecikme, Peak RSS bellek kullanımı, CPU maliyeti, model boyutu, yorumlanabilirlik, kurulum kolaylığı, canlı demo uygunluğu ve edge deployment gerçekçiliği birlikte okunmuştur.<br><br>
-Doğruluk tarafında XGBoost, RMSE, MAE ve MAPE metriklerinde FT-Transformer’a göre daha düşük hata üretmiştir. Her iki modelin R² değeri yüksek olduğu için genel varyans yakalanmıştır; fakat tekil tahmin yapan bir arayüzde MAE ve MAPE farkı kullanıcı güvenini doğrudan etkilediğinden XGBoost pratik tahmin modeli olarak öne çıkmıştır. Hız tarafında XGBoost en düşük p95 gecikmeye sahiptir; FT-Transformer ikinci sıradadır. Bellek tarafında interpolasyon en düşük Peak RSS değerine sahipken, FT-Transformer PyTorch runtime maliyeti nedeniyle daha yüksek bellek izi üretmiştir.<br><br>
-Karar matrisi ve radar grafiği bu sonucu tek bir “mutlak kazanan” olarak değil, rol dağılımı olarak yorumlar. İnterpolasyon; kaynak veriye sadık, açıklanabilir ve deterministik referans ailesidir. XGBoost; doğruluk, hız ve demo uygunluğu açısından en dengeli pratik ML modelidir. FT-Transformer; mevcut ölçümde XGBoost’u geçmese de feature tokenizer, transformer encoder ve self-attention yapısıyla akademik mimari değer taşır. Bu nedenle final sistem önerisi üç yaklaşımı birlikte korur: interpolasyon referans değer üretimi, XGBoost hızlı tahmin, FT-Transformer ileri araştırma mimarisi olarak konumlandırılır.
+Lift-UP 2. Aşama Sonuç PDF’i, proje boyunca geliştirilen üç yöntemi uçtan uca karşılaştırmak için hazırlanmıştır: interpolasyon, XGBoost ve FT-Transformer. Değerlendirme yalnızca doğruluk metrikleriyle sınırlı tutulmamış; hız, RAM, CPU, model boyutu, yorumlanabilirlik, kurulum zorluğu, demo uygunluğu, akademik değer ve edge deployment beklentileri birlikte ele alınmıştır. Genel sonuç üçlü rol dağılımı şeklindedir: interpolasyon veri tablosuna sadık deterministik referans ailesi, XGBoost pratik uygulama ve demo için en dengeli ML modeli, FT-Transformer ise projenin ana akademik mimari odağıdır.<br><br>
+
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="lift-up-result-transparent-02-stage2_result-p1-i2-687x97.png" alt="Yöntemlerin rol karşılaştırması"><figcaption>Şekil 4.1. Raporun yöntem rol tablosu: interpolasyon referans üretimi, XGBoost güçlü tabular ML tahmini, FT-Transformer ise ileri mimari araştırma adayıdır.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-result-transparent-03-stage2_result-p1-i3-834x88.png" alt="Uçtan uca benchmark ölçüm tablosu"><figcaption>Şekil 4.2. Ana benchmark tablosu; p95 gecikme, Peak RSS, CPU ortalaması, model boyutu ve hata metrikleri aynı değerlendirme çerçevesinde okunmuştur.</figcaption></figure>
+</div>
+
+Raporun problem tanımı, Specific Range tahminini <code>altitude</code>, <code>gross_weight</code>, <code>drag_index</code>, <code>mach</code>, <code>fuel_flow</code> ve <code>engine_type</code> girdilerinden üretilen doğrusal olmayan bir regresyon problemi olarak ele alır. Bu problemde davranış irtifa, motor konfigürasyonu ve Mach rejimlerine göre değiştiği için yalnızca tek bir hata metriğiyle karar vermek yeterli değildir. Bu nedenle üç yöntemin rolü ayrıştırılmıştır: interpolasyon tahmini gerçek/referans üretimi için, XGBoost pratik ve hızlı tahmin için, FT-Transformer ise değişkenler arası etkileşimleri attention tabanlı öğrenen araştırma modeli olarak kullanılmıştır.<br><br>
+
+<strong>4.1. Doğruluk Analizi</strong><br>
+Doğruluk analizinde XGBoost, FT-Transformer’a göre daha düşük RMSE, MAE ve MAPE üretmiştir. Her iki modelde de R² değerinin oldukça yüksek olması, modellerin genel varyansı başarıyla yakaladığını gösterir. Ancak tekil tahmin döndüren bir arayüzde ortalama mutlak hata ve yüzde hata, kullanıcının model güvenilirliğini doğrudan algıladığı metriklerdir. Bu yüzden XGBoost’un MAE ve MAPE avantajı pratik kullanım açısından önemlidir. FT-Transformer’ın doğruluk seviyesi yine güçlüdür; fakat mevcut veri büyüklüğü ve eğitim koşullarında XGBoost’un tabular veri üzerindeki güçlü inductive bias’ı daha dengeli sonuç üretmiştir.<br><br>
+
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="lift-up-result-transparent-04-stage2_result-p2-i2-542x206.png" alt="XGBoost ve FT-Transformer doğruluk karşılaştırması"><figcaption>Şekil 4.3. Doğruluk karşılaştırması: XGBoost, RMSE, MAE ve MAPE metriklerinde daha düşük hata üretirken iki modelin R² değeri birbirine yakın ve yüksektir.</figcaption></figure>
+</div>
+
+<strong>4.2. Hız ve Kaynak Analizi</strong><br>
+Hız tarafında XGBoost en düşük p95 gecikmeye sahip yöntemdir. FT-Transformer ikinci sırada gelir; interpolasyon ise cache optimizasyonundan sonra makul seviyeye inse de XGBoost’un gerisinde kalır. RAM tarafında interpolasyon en düşük Peak RSS değerini verir; çünkü çalışması için büyük bir runtime bağımlılığına ihtiyaç duymaz. FT-Transformer’ın model dosyası küçük olsa da PyTorch tabanlı inference yolu bellek ayak izini artırır. Bu gözlem raporun önemli çıkarımlarından biridir: edge deployment için yalnızca model dosya boyutu değil, modelin gerçek çalıştırma yolunun RAM ve CPU davranışı da değerlendirilmelidir.<br><br>
+
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="lift-up-result-transparent-05-stage2_result-p2-i3-562x326.png" alt="Runtime maliyet bileşenleri"><figcaption>Şekil 4.4. Runtime maliyet bileşenleri: latency, memory ve CPU normalize edilerek üç yöntemin gömülü sistem davranışı birlikte karşılaştırılmıştır.</figcaption></figure>
+</div>
+
+<strong>4.3. Karar Matrisi</strong><br>
+Karar matrisi yalnızca ham metrikleri değil, mühendislik kullanım değerini de dikkate alır. İnterpolasyon yorumlanabilirlikte çok güçlüdür; ancak referans ailesi olduğu için ML modelleriyle aynı doğruluk yarışına sokulması doğru değildir. XGBoost doğruluk, hız, kurulum kolaylığı ve pratik demo dengesiyle öne çıkar. FT-Transformer ise akademik değer ve modelleme potansiyeli açısından güçlüdür; özellikle daha büyük veri, daha uzun eğitim, PSO destekli hiperparametre araması, kuantizasyon ve ONNX/TensorRT dönüşümü gibi iyileştirmelerle ileri çalışmalara açık bir mimari sunar.<br><br>
+
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="lift-up-result-transparent-07-stage2_result-p3-i3-687x367.png" alt="Genel karar matrisi"><figcaption>Şekil 4.5. Genel karar matrisi: doğruluk, hız, RAM, model boyutu, yorumlanabilirlik, kurulum kolaylığı ve edge uygunluğu 1-5 mühendislik skoru ile değerlendirilmiştir.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-result-transparent-06-stage2_result-p3-i2-538x464.png" alt="Genel profil radar grafiği"><figcaption>Şekil 4.6. Genel profil radar grafiği: XGBoost dengeli profil verirken, FT-Transformer araştırma değeri ve küçük model boyutu; interpolasyon ise düşük RAM ve yorumlanabilirlik avantajı taşır.</figcaption></figure>
+</div>
+
+<strong>4.4. Alan Bazlı Kazananlar ve Yöntem Yorumu</strong><br>
+Raporun alan bazlı değerlendirmesinde doğruluk ve hız kategorilerinde XGBoost öne çıkar. RAM kullanımında interpolasyon, model dosyası boyutunda FT-Transformer, yorumlanabilirlikte interpolasyon, pratik demoda XGBoost, araştırma değerinde ise FT-Transformer güçlü yöntem olarak belirlenmiştir. Bu sonuç, projede tek bir yöntemi mutlak kazanan ilan etmek yerine her yöntemi doğru bağlamda konumlandırmanın daha doğru olduğunu gösterir. İnterpolasyon kaynak verinin üretim mantığına en yakın yöntemdir ve custom input ekranında “tahmini gerçek” değer olarak kullanılabilir. XGBoost canlı demo, hızlı yanıt ve edge senaryosunda güvenli varsayılan modeldir. FT-Transformer ise mevcut ölçümde XGBoost’u geçmese bile tabular transformer yaklaşımının uçuş verisi için nasıl kurulabileceğini gösteren akademik çekirdektir.<br><br>
+
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="lift-up-result-transparent-08-stage2_result-p4-i2-782x167.png" alt="Alan bazlı kazananlar tablosu"><figcaption>Şekil 4.7. Alan bazlı kazananlar: her yöntemin güçlü olduğu alan ayrı ele alınarak sistem önerisinin rol bazlı kurulması sağlanmıştır.</figcaption></figure>
+</div>
+
+<strong>4.5. Nihai Değerlendirme ve Sonraki İyileştirmeler</strong><br>
+Nihai değerlendirmede XGBoost, pratik sistem açısından en güçlü model olarak konumlanır; FT-Transformer akademik mimari odağı olarak korunur; interpolasyon ise referans üretim ailesi olarak sistemde kalır. Final arayüzünde interpolasyonun kaynak tabloya sadık referans değer üretmesi, XGBoost’un hızlı ve güvenilir ML tahmini sağlaması, FT-Transformer’ın ise ileri modelleme adayını temsil etmesi önerilmiştir. Sonraki iyileştirmeler için cold start ve model yükleme süresi ölçümleri, batch-size senaryoları, hata dağılım histogramları, irtifa ve <code>engine_type</code> kırılımlı metrikler, FT-Transformer için daha uzun eğitim ve PSO araması, daha küçük mimari varyantlar, quantization, ONNX export ve XGBoost için model sıkıştırma ile CPU-thread optimizasyonları önerilmiştir. Böylece proje yalnızca mevcut sonuçları raporlamakla kalmamış, gömülü aviyonik kullanım için sürdürülebilir bir geliştirme yol haritası da üretmiştir.
 `;
 
   Object.entries(liftUpContent).forEach(([lang, content]) => {
