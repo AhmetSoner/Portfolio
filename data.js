@@ -321,7 +321,7 @@ const UI_TRANSLATIONS = {
     form_email: "E-POSTA ADRESİ",
     form_message: "MESAJINIZ",
     form_send: "MESAJ GÖNDER",
-    footer_text: "© 2026 // AHMET SONER GÜLEÇ. TÜM SİSTEMLER AKTİF.",
+    footer_text: "© 2026 // AHMET SONER GÜLEÇ",
     modal_specs: "// TEKNİK ÖZELLİKLER",
     modal_close: "Kapat"
   },
@@ -368,7 +368,7 @@ const UI_TRANSLATIONS = {
     form_email: "YOUR E-MAIL ADDRESS",
     form_message: "YOUR MESSAGE",
     form_send: "SEND MESSAGE",
-    footer_text: "© 2026 // AHMET SONER GULEC. ALL SYSTEMS ACTIVE.",
+    footer_text: "© 2026 // AHMET SONER GULEC",
     modal_specs: "// TECHNICAL SPECIFICATIONS",
     modal_close: "Close"
   }
