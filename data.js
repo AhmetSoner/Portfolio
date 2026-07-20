@@ -221,7 +221,7 @@ const PORTFOLIO_DATA = {
       {
             "id": "project-4",
             "title": "TÜBİTAK 2209-A Görüntü Tabanlı Kuş Tanıma Sistemi",
-            "category": "yazilim",
+            "category": "gomulu",
             "summary": "Kuş çarpmalarını önlemek amacıyla derin öğrenme tabanlı nesne tespiti yapan yazılım.",
             "description": "Kuş çarpmalarının havacılık endüstrisine etkilerini azaltarak uçuş güvenliğini artırmayı amaçlayan araştırma projesidir. Mevcut radar tabanlı sistemlerin sınırlarını aşarak kuşları ayrıntılı tespit etmek amacıyla YOLOv8 ve MobileNetV2 nesne tanıma modelleri kullanılarak görüntü işleme tabanlı bir tespit ve tür tanımlama sistemi geliştirilmiştir. Proje TÜBİTAK tarafından desteklenmiştir.",
             "image": "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
@@ -550,7 +550,7 @@ const PORTFOLIO_DATA = {
       {
             "id": "project-4",
             "title": "TÜBİTAK 2209-A Image-Based Bird Recognition System",
-            "category": "yazilim",
+            "category": "gomulu",
             "summary": "Software using deep learning-based object detection to prevent bird strikes in aviation.",
             "description": "A research project aimed at increasing flight safety by reducing the impact of bird strikes on the aviation industry. Exceeding the limits of existing radar-based systems to detect birds in detail, an image processing-based detection and species identification system was developed using YOLOv8 and MobileNetV2 object recognition models. The project was supported by TÜBİTAK.",
             "image": "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
