@@ -1747,7 +1747,7 @@ section {
     margin: 12px 0 4px;
     color: var(--primary);
     font-family: var(--font-header);
-    font-size: 1rem;
+    font-size: 0.92rem;
     letter-spacing: 0.01em;
 }
 
@@ -1844,7 +1844,7 @@ section {
     margin: 18px 0 8px;
     color: var(--primary);
     font-family: var(--font-header);
-    font-size: clamp(0.98rem, 1.35vw, 1.06rem);
+    font-size: clamp(0.9rem, 1.18vw, 0.98rem);
     letter-spacing: 0.02em;
 }
 
@@ -1853,7 +1853,7 @@ section {
     margin: 14px 0 4px;
     color: var(--primary);
     font-family: var(--font-header);
-    font-size: clamp(0.96rem, 1.25vw, 1.04rem);
+    font-size: clamp(0.88rem, 1.1vw, 0.96rem);
     letter-spacing: 0.01em;
 }
 
