@@ -119,7 +119,6 @@ function initPortfolioData() {
             <div class="skill-progress-outer">
                 <div class="skill-progress-inner" data-level="${skill.level}"></div>
             </div>
-            <span class="skill-cat-tag">// ${skill.category}</span>
         `;
         skillsContainer.appendChild(card);
     });

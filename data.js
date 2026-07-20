@@ -13,15 +13,15 @@ const PORTFOLIO_DATA = {
     }
   },
   skills: [
-    { name: "MATLAB / Simulink", category: "Yazılım & Simülasyon", level: 90 },
-    { name: "Python / Gömülü C", category: "Yazılım & Simülasyon", level: 85 },
-    { name: "PSIM", category: "Yazılım & Simüsin", level: 75 },
-    { name: "Altium Designer", category: "Donanım & Tasarım", level: 95 },
-    { name: "LTspice / PSpice", category: "Donanım & Tasarım", level: 88 },
-    { name: "Ansys", category: "Donanım & Tasarım", level: 70 },
-    { name: "SolidWorks", category: "Havacılık & Analiz", level: 90 },
-    { name: "COMSOL Multiphysics", category: "Havacılık & Analiz", level: 82 },
-    { name: "XFLR5 (Aerodinamik)", category: "Havacılık & Analiz", level: 78 }
+    { name: "MATLAB / Simulink", category: "Yazılım & Simülasyon", level: 80 },
+    { name: "Python / Gömülü C", category: "Yazılım & Simülasyon", level: 50 },
+    { name: "PSIM", category: "Yazılım & Simülasyon", level: 80 },
+    { name: "Altium Designer", category: "Donanım & Tasarım", level: 90 },
+    { name: "LTspice / PSpice", category: "Donanım & Tasarım", level: 90 },
+    { name: "Ansys", category: "Donanım & Tasarım", level: 60 },
+    { name: "SolidWorks", category: "Havacılık & Analiz", level: 60 },
+    { name: "COMSOL Multiphysics", category: "Havacılık & Analiz", level: 60 },
+    { name: "XFLR5 (Aerodinamik)", category: "Havacılık & Analiz", level: 50 }
   ],
   education: [
     {
