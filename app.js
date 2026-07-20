@@ -891,7 +891,7 @@ function initAestheticAnimation() {
 }
 
 /* ==========================================================================
-   8. SOL / SAĞ KENAR PLEXUS ANİMASYONU (BAĞIMSIZ CANVAS)
+   8. SOL / SAĞ KENAR PLEXUS ANİMASYONU (BAĞIMSIZ CANVAS + FARE ETKİLEŞİMİ)
    ========================================================================== */
 function initMarginAnimation() {
     const canvas = document.getElementById("margin-canvas");
@@ -901,9 +901,18 @@ function initMarginAnimation() {
     let W = canvas.width  = window.innerWidth;
     let H = canvas.height = window.innerHeight;
 
-    // Her kenar için parçacık sayısı
     const COUNT = 18;
     let particles = [];
+
+    // Fare konumu (window genelinde izle — canvas pointer-events: none olduğundan)
+    let mouse = { x: -9999, y: -9999, active: false };
+
+    window.addEventListener("mousemove", (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+        mouse.active = true;
+    });
+    window.addEventListener("mouseleave", () => { mouse.active = false; });
 
     function marginWidth() {
         return Math.max(0, (W - 1200) / 2);
@@ -912,30 +921,32 @@ function initMarginAnimation() {
     function spawnParticles() {
         particles = [];
         const mw = marginWidth();
-        if (mw < 40) return; // Dar ekranda gösterme
+        if (mw < 40) return;
 
         for (let i = 0; i < COUNT; i++) {
-            // Sol kenar
             particles.push({
                 x: Math.random() * mw,
                 y: Math.random() * H,
                 vx: (Math.random() - 0.5) * 0.35,
                 vy: (Math.random() - 0.5) * 0.35,
+                baseVx: 0, baseVy: 0,
                 r: Math.random() * 1.5 + 0.5,
                 side: 'L',
-                phase: Math.random() * Math.PI * 2  // parlama fazı
+                phase: Math.random() * Math.PI * 2
             });
-            // Sağ kenar
             particles.push({
                 x: W - mw + Math.random() * mw,
                 y: Math.random() * H,
                 vx: (Math.random() - 0.5) * 0.35,
                 vy: (Math.random() - 0.5) * 0.35,
+                baseVx: 0, baseVy: 0,
                 r: Math.random() * 1.5 + 0.5,
                 side: 'R',
                 phase: Math.random() * Math.PI * 2
             });
         }
+        // baseVx/baseVy = ilk hızı sakla
+        particles.forEach(p => { p.baseVx = p.vx; p.baseVy = p.vy; });
     }
 
     window.addEventListener("resize", () => {
@@ -947,40 +958,79 @@ function initMarginAnimation() {
     spawnParticles();
 
     let tick = 0;
+    const REPEL_RADIUS = 120;   // fare itme yarıçapı (px)
+    const REPEL_STRENGTH = 2.2; // itme kuvveti çarpanı
+    const LINE_RADIUS = 160;    // fareye bağ çizgisi yarıçapı
 
     function draw() {
         ctx.clearRect(0, 0, W, H);
         tick++;
 
         const mw = marginWidth();
-        if (mw < 40) {
-            requestAnimationFrame(draw);
-            return;
-        }
+        if (mw < 40) { requestAnimationFrame(draw); return; }
 
-        // --- Dikey ince kenar çizgileri (içerik sınırı belirteci) ---
+        // --- Farenin hangi kenarda olduğunu belirle ---
+        const mouseInLeft  = mouse.active && mouse.x < mw;
+        const mouseInRight = mouse.active && mouse.x > W - mw;
+        const mouseInMargin = mouseInLeft || mouseInRight;
+
+        // --- Dikey ince kenar çizgisi (içerik sınırı) ---
         ctx.save();
         ctx.strokeStyle = "rgba(0, 240, 255, 0.06)";
         ctx.lineWidth = 1;
         ctx.setLineDash([4, 10]);
-        // Sol
-        ctx.beginPath();
-        ctx.moveTo(mw, 0);
-        ctx.lineTo(mw, H);
-        ctx.stroke();
-        // Sağ
-        ctx.beginPath();
-        ctx.moveTo(W - mw, 0);
-        ctx.lineTo(W - mw, H);
-        ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(mw, 0); ctx.lineTo(mw, H); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(W - mw, 0); ctx.lineTo(W - mw, H); ctx.stroke();
         ctx.setLineDash([]);
         ctx.restore();
 
-        // --- Parçacık hareketi ve çizimi ---
+        // --- Fare halka efekti (sadece margin bölgesindeyken) ---
+        if (mouseInMargin) {
+            const pulse = 0.5 + 0.25 * Math.sin(tick * 0.08);
+            const outerR = REPEL_RADIUS * 0.45;
+
+            // İç nokta
+            ctx.beginPath();
+            ctx.arc(mouse.x, mouse.y, 2.5, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0, 240, 255, ${0.7 + pulse * 0.3})`;
+            ctx.fill();
+
+            // Halka
+            ctx.beginPath();
+            ctx.arc(mouse.x, mouse.y, outerR, 0, Math.PI * 2);
+            ctx.strokeStyle = `rgba(0, 240, 255, ${0.2 + pulse * 0.15})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+
+            // İkinci dış halka (daha soluk)
+            ctx.beginPath();
+            ctx.arc(mouse.x, mouse.y, outerR * 1.6, 0, Math.PI * 2);
+            ctx.strokeStyle = `rgba(0, 240, 255, ${0.06 + pulse * 0.05})`;
+            ctx.lineWidth = 0.6;
+            ctx.stroke();
+        }
+
+        // --- Parçacık döngüsü ---
         ctx.save();
 
         for (let i = 0; i < particles.length; i++) {
             const p = particles[i];
+
+            // Fare itme kuvveti
+            if (mouseInMargin) {
+                const dx = p.x - mouse.x;
+                const dy = p.y - mouse.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < REPEL_RADIUS && dist > 0.5) {
+                    const force = (1 - dist / REPEL_RADIUS) * REPEL_STRENGTH;
+                    p.vx += (dx / dist) * force * 0.06;
+                    p.vy += (dy / dist) * force * 0.06;
+                }
+            }
+
+            // Hızı yumuşakça taban hıza geri döndür (sürtünme)
+            p.vx *= 0.985;
+            p.vy *= 0.985;
 
             // Hareket
             p.x += p.vx;
@@ -988,34 +1038,47 @@ function initMarginAnimation() {
 
             // Sınır yansıması
             if (p.side === 'L') {
-                if (p.x < 0)   { p.x = 0;   p.vx *= -1; }
-                if (p.x > mw)  { p.x = mw;  p.vx *= -1; }
+                if (p.x < 0)  { p.x = 0;  p.vx = Math.abs(p.vx) * 0.6; }
+                if (p.x > mw) { p.x = mw; p.vx = -Math.abs(p.vx) * 0.6; }
             } else {
-                if (p.x < W - mw) { p.x = W - mw; p.vx *= -1; }
-                if (p.x > W)      { p.x = W;       p.vx *= -1; }
+                if (p.x < W - mw) { p.x = W - mw; p.vx = Math.abs(p.vx) * 0.6; }
+                if (p.x > W)      { p.x = W;       p.vx = -Math.abs(p.vx) * 0.6; }
             }
-            if (p.y < 0) { p.y = 0; p.vy *= -1; }
-            if (p.y > H) { p.y = H; p.vy *= -1; }
+            if (p.y < 0) { p.y = 0; p.vy = Math.abs(p.vy) * 0.6; }
+            if (p.y > H) { p.y = H; p.vy = -Math.abs(p.vy) * 0.6; }
 
-            // Parçacık parlama: sinüs dalgasıyla hafif titreşim
-            const glow = 0.45 + 0.3 * Math.sin(tick * 0.025 + p.phase);
+            // Fareye yakınlığa göre ekstra parlaklık
+            const distToMouse = Math.sqrt((p.x - mouse.x) ** 2 + (p.y - mouse.y) ** 2);
+            const mousePull   = mouseInMargin && distToMouse < LINE_RADIUS
+                ? (1 - distToMouse / LINE_RADIUS) * 0.5
+                : 0;
+            const glow = 0.45 + 0.3 * Math.sin(tick * 0.025 + p.phase) + mousePull;
 
-            // Nokta
+            // Parçacık noktası
             ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(0, 240, 255, ${glow})`;
+            ctx.arc(p.x, p.y, p.r + mousePull * 1.5, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0, 240, 255, ${Math.min(glow, 1)})`;
             ctx.fill();
 
-            // Bağlantı çizgileri (aynı taraf, yakın parçacıklar)
+            // Fareye bağlantı çizgisi
+            if (mouseInMargin && distToMouse < LINE_RADIUS) {
+                const lineAlpha = (1 - distToMouse / LINE_RADIUS) * 0.55;
+                ctx.strokeStyle = `rgba(0, 240, 255, ${lineAlpha})`;
+                ctx.lineWidth = 0.8;
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(mouse.x, mouse.y);
+                ctx.stroke();
+            }
+
+            // Parçacıklar arası bağlantı
             for (let j = i + 1; j < particles.length; j++) {
                 const q = particles[j];
                 if (p.side !== q.side) continue;
-
                 const dx = q.x - p.x;
                 const dy = q.y - p.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
-
-                const maxDist = mw * 1.4;  // kenar genişliğine orantılı bağlantı menzili
+                const maxDist = mw * 1.4;
                 if (dist < maxDist) {
                     const alpha = (1 - dist / maxDist) * 0.3;
                     ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
