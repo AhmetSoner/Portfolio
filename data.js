@@ -42,7 +42,7 @@ const PORTFOLIO_DATA = {
     {
       title: "Elektrik ve Elektronik Birimi Üyesi",
       company: "Hidroana Proje Takımı",
-      duration: "Eylül 2022 - Devam Ediyor",
+      duration: "Eylül 2022 - Eylül 2025",
       details: "Hidrojen-elektrik hibrit teknolojisiyle alternatif enerjili araçlar geliştiren Ar-Ge proje takımı Hidroana bünyesinde, Elektrik ve Elektronik Birimi Üyesi olarak DORLION ve MIDAS araçlarının tüm elektrik-elektronik sistem tasarım süreçlerinde görev aldım. Sistem mühendisliği yaklaşımıyla alt sistemlerin entegrasyonu, teknik gereksinim analizleri ve görev tanımlarının oluşturulması süreçlerini yürüttüm. Ayrıca elektronik kart tasarımı, şematik çizim, PCB üretimi ile güç ve sinyal devrelerine yönelik benzetim (simülasyon) çalışmaları gerçekleştirdim. Araçların enerji verimliliğini artırma, sistem güvenilirliğini sağlama ve kararlı performans hedeflerine yönelik yürüttüğüm bu çalışmalar neticesinde, TEKNOFEST Verimlilik Yarışması'nda Türkiye İkinciliği ve 'Elektronik Sistemler Özel Jüri Ödülü' başarılarını kazandık. <br><a href='https://hidroana.com' target='_blank' class='timeline-link'>hidroana.com</a>"
     },
     {
