@@ -328,11 +328,11 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-6",
-            "title": "TUSAŞ LIFT-UP: MMU KAAN Görev Bilgisayarı Yapay Zeka Entegrasyonu",
+            "title": "TUSAŞ LIFT-UP: Muharip Uçaklarda Performans Hesaplama Algoritmaları ile Yapay Zeka Modellerinin Karşılaştırmalı Analizi ve Doğrulanması",
             "category": "gomulu",
-            "summary": "Milli Muharip Uçak KAAN görev bilgisayarı için uçuş performans verilerinin YSA ve Pekiştirmeli Öğrenme ile modellenmesi projesi.",
-            "description": "TUSAŞ LIFT-UP Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında Milli Muharip Uçak KAAN platformu için geliştirilmiş yapay zeka tabanlı uçuş performans modelleme projesidir. Uçak Uçuş El Kitabı (AFM) nomogram verileri PyTorch kullanılarak Yapay Sinir Ağları (YSA), Curve Fitting ve Pekiştirmeli Öğrenme (RL) algoritmaları ile modellenmiş; aviyonik donanım bellek ve işlemci kısıtları altında doğrulanmıştır.",
-            "image": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&q=80&w=600",
+            "summary": "Milli Muharip Uçak KAAN görev bilgisayarı için uçuş el kitabı geleneksel hesaplama algoritmalarının Yapay Zeka (YSA & RL) modelleri ile modellenmesi ve karşılaştırmalı doğruluk analizi.",
+            "description": "TUSAŞ LIFT-UP Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında Milli Muharip Uçak KAAN platformu için geliştirilmiş yapay zeka tabanlı uçuş performans karşılaştırma ve modelleme projesidir. Uçak Uçuş El Kitabı (AFM) nomogramlarındaki geleneksel aerodinamik hesaplama yöntemleri ve algoritmaları PyTorch kullanılarak Yapay Sinir Ağları (YSA), Curve Fitting ve Pekiştirmeli Öğrenme (RL) modelleri ile ikame edilmiş; aviyonik görev bilgisayarı bellek/işlemci kısıtları altında geleneksel algoritmalarla karşılaştırmalı doğruluk analizleri gerçekleştirilmiştir.",
+            "image": "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=800",
             "tags": [
                   "TUSAŞ LIFT-UP",
                   "KAAN MMU",
@@ -712,11 +712,11 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-6",
-            "title": "TUSAŞ LIFT-UP: MMU KAAN Mission Computer AI Integration",
+            "title": "TUSAŞ LIFT-UP: Comparative Analysis & Verification of Traditional Calculation Algorithms vs. AI Models in Combat Aircraft",
             "category": "gomulu",
-            "summary": "Modeling flight performance data for National Combat Aircraft KAAN mission computer using ANN and Reinforcement Learning.",
-            "description": "An AI-based flight performance modeling project developed for the National Combat Aircraft KAAN platform within the TUSAŞ LIFT-UP Industry-Oriented Graduation Project Program. Aircraft Flight Manual (AFM) nomogram data were modeled using PyTorch with Artificial Neural Networks (ANN), Curve Fitting, and Reinforcement Learning (RL) algorithms, validated under avionics hardware memory and processor constraints.",
-            "image": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&q=80&w=600",
+            "summary": "Modeling Flight Manual traditional performance calculation algorithms using AI (ANN & RL) models for National Combat Aircraft KAAN mission computer and comparative accuracy verification.",
+            "description": "An AI-based flight performance modeling and benchmarking project developed for the National Combat Aircraft KAAN platform within the TUSAŞ LIFT-UP Industry Program. Traditional calculation methods and algorithms from Aircraft Flight Manual (AFM) nomograms were modeled using PyTorch with Artificial Neural Networks (ANN), Curve Fitting, and Reinforcement Learning (RL) models, followed by comparative accuracy analysis under avionics mission computer memory and processor constraints.",
+            "image": "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=800",
             "tags": [
                   "TUSAŞ LIFT-UP",
                   "KAAN MMU",
