@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css?v=49">
+    <link rel="stylesheet" href="style.css?v=50">
 </head>
 <body>
     <!-- Radar Sweep Canvas Arka Planı -->
@@ -47,20 +47,25 @@
         <div class="status-center">
             
         </div>
-        <div class="status-right" id="system-time">
-            UTC: 00:00:00
+        <div class="status-right">
+            <span class="lang-selector">
+                <button class="lang-btn active" data-lang="tr">TR</button>
+                <span class="lang-divider">//</span>
+                <button class="lang-btn" data-lang="en">ENG</button>
+            </span>
+            <span id="system-time">UTC: 00:00:00</span>
         </div>
     </div>
 
     <!-- Navigasyon Arayüzü (HUD Tarzı) -->
     <nav class="hud-nav">
         <ul class="nav-links">
-            <li><a href="#hero" class="active"><span class="nav-num">01.</span> ANASAYFA</a></li>
-            <li><a href="#about"><span class="nav-num">02.</span> HAKKIMDA</a></li>
-            <li><a href="#experience"><span class="nav-num">03.</span> DENEYİM</a></li>
-            <li><a href="#skills"><span class="nav-num">04.</span> YETENEKLER</a></li>
-            <li><a href="#projects"><span class="nav-num">05.</span> PROJELER</a></li>
-            <li><a href="#contact"><span class="nav-num">06.</span> İLETİŞİM</a></li>
+            <li><a href="#hero" class="active"><span class="nav-num">01.</span> <span data-translate="nav_home">ANASAYFA</span></a></li>
+            <li><a href="#about"><span class="nav-num">02.</span> <span data-translate="nav_about">HAKKIMDA</span></a></li>
+            <li><a href="#experience"><span class="nav-num">03.</span> <span data-translate="nav_experience">DENEYİM</span></a></li>
+            <li><a href="#skills"><span class="nav-num">04.</span> <span data-translate="nav_skills">YETENEKLER</span></a></li>
+            <li><a href="#projects"><span class="nav-num">05.</span> <span data-translate="nav_projects">PROJELER</span></a></li>
+            <li><a href="#contact"><span class="nav-num">06.</span> <span data-translate="nav_contact">İLETİŞİM</span></a></li>
         </ul>
     </nav>
 
@@ -71,7 +76,7 @@
         <section id="hero" class="hero-section">
             <div class="hero-content">
                 <div class="hud-scanner-line"></div>
-                <div class="hud-header-prefix">INITIALIZING SYSTEM DATA...</div>
+                <div class="hud-header-prefix" data-translate="hero_prefix">INITIALIZING SYSTEM DATA...</div>
                 <h1 id="hero-name" class="glow-text">YÜKLENİYOR...</h1>
                 <h2 id="hero-title" class="sub-glow-text">YÜKLENİYOR...</h2>
                 <p id="hero-subtitle" class="hero-lead">Aviyonik, gömülü sistemler ve donanım tasarımı şablonu.</p>
@@ -87,10 +92,10 @@
                 <div class="hero-actions">
                     <a href="#projects" class="hud-btn primary-btn">
                         <span class="btn-scan-line"></span>
-                        PROJELERİ İNCELE <i data-lucide="terminal"></i>
+                        <span data-translate="hero_btn_projects">PROJELERİ İNCELE</span> <i data-lucide="terminal"></i>
                     </a>
                     <a href="#contact" class="hud-btn secondary-btn">
-                        BAĞLANTI KUR <i data-lucide="mail"></i>
+                        <span data-translate="hero_btn_contact">BAĞLANTI KUR</span> <i data-lucide="mail"></i>
                     </a>
                 </div>
             </div>
@@ -99,8 +104,8 @@
         <!-- HAKKIMDA BÖLÜMÜ -->
         <section id="about" class="about-section scroll-reveal">
             <div class="section-title-wrap">
-                <span class="section-tag">SYS_02 // SEARCH_PROFILE</span>
-                <h2 class="section-title">HAKKIMDA</h2>
+                <span class="section-tag" data-translate="tag_about">SYS_02 // SEARCH_PROFILE</span>
+                <h2 class="section-title" data-translate="title_about">HAKKIMDA</h2>
             </div>
             
             <div class="about-grid">
@@ -123,29 +128,29 @@
                     </div>
                     <div class="profile-info-hud">
                         <div class="hud-stat-row">
-                            <span class="stat-lbl">DURUM:</span>
-                            <span class="stat-val active-status">GÖREVE HAZIR</span>
+                            <span class="stat-lbl" data-translate="stat_status">DURUM:</span>
+                            <span class="stat-val active-status" data-translate="stat_status_val">GÖREVE HAZIR</span>
                         </div>
                         <div class="hud-stat-row">
-                            <span class="stat-lbl">ROL:</span>
-                            <span class="stat-val font-accent" id="profile-title-short">UÇAK BAKIM MÜH.</span>
+                            <span class="stat-lbl" data-translate="stat_role">ROL:</span>
+                            <span class="stat-val font-accent" id="profile-title-short" data-translate="stat_role_val">UÇAK BAKIM MÜH.</span>
                         </div>
                         <div class="hud-stat-row">
-                            <span class="stat-lbl">DOĞUM TARİHİ:</span>
-                            <span class="stat-val">20 Eylül 2001</span>
+                            <span class="stat-lbl" data-translate="stat_birth">DOĞUM TARİHİ:</span>
+                            <span class="stat-val" data-translate="stat_birth_val">20 Eylül 2001</span>
                         </div>
                         <div class="hud-stat-row">
-                            <span class="stat-lbl">LOKASYON:</span>
-                            <span class="stat-val">Kocaeli, Türkiye</span>
+                            <span class="stat-lbl" data-translate="stat_location">LOKASYON:</span>
+                            <span class="stat-val" data-translate="stat_location_val">Kocaeli, Türkiye</span>
                         </div>
                         <div class="hud-stat-row">
-                            <span class="stat-lbl">YABANCI DİL:</span>
-                            <span class="stat-val">İngilizce</span>
+                            <span class="stat-lbl" data-translate="stat_lang">YABANCI DİL:</span>
+                            <span class="stat-val" data-translate="stat_lang_val">İngilizce</span>
                         </div>
                         <div class="hud-cv-wrapper">
                             <a href="001-[Ahmet Soner]-[Güleç].pdf" target="_blank" class="hud-btn cv-download-btn">
                                 <span class="btn-scan-line"></span>
-                                ÖZGEÇMİŞİ İNDİR <i data-lucide="download"></i>
+                                <span data-translate="btn_cv">ÖZGEÇMİŞİ İNDİR</span> <i data-lucide="download"></i>
                             </a>
                         </div>
                     </div>
@@ -164,14 +169,14 @@
         <!-- DENEYİM & EĞİTİM BÖLÜMÜ -->
         <section id="experience" class="experience-section scroll-reveal">
             <div class="section-title-wrap">
-                <span class="section-tag">SYS_03 // HISTORY_LOG</span>
-                <h2 class="section-title">EĞİTİM & DENEYİM</h2>
+                <span class="section-tag" data-translate="tag_experience">SYS_03 // HISTORY_LOG</span>
+                <h2 class="section-title" data-translate="title_experience">EĞİTİM & DENEYİM</h2>
             </div>
             
             <div class="timeline-container">
                 <!-- Eğitim Tüneli -->
                 <div class="timeline-column">
-                    <h3 class="column-title"><i data-lucide="graduation-cap"></i> EĞİTİM</h3>
+                    <h3 class="column-title"><i data-lucide="graduation-cap"></i> <span data-translate="col_education">EĞİTİM</span></h3>
                     <div class="timeline-tree" id="education-timeline">
                         <!-- JS ile doldurulacak -->
                     </div>
@@ -179,7 +184,7 @@
                 
                 <!-- Deneyim Tüneli -->
                 <div class="timeline-column">
-                    <h3 class="column-title"><i data-lucide="briefcase"></i> DENEYİM & TAKIMLAR</h3>
+                    <h3 class="column-title"><i data-lucide="briefcase"></i> <span data-translate="col_experience">DENEYİM & TAKIMLAR</span></h3>
                     <div class="timeline-tree" id="experience-timeline">
                         <!-- JS ile doldurulacak -->
                     </div>
@@ -190,8 +195,8 @@
         <!-- YETENEKLER BÖLÜMÜ -->
         <section id="skills" class="skills-section scroll-reveal">
             <div class="section-title-wrap">
-                <span class="section-tag">SYS_04 // CALIBRATION_DATA</span>
-                <h2 class="section-title">TEKNİK YETENEKLER</h2>
+                <span class="section-tag" data-translate="tag_skills">SYS_04 // CALIBRATION_DATA</span>
+                <h2 class="section-title" data-translate="title_skills">TEKNİK YETENEKLER</h2>
             </div>
             
             <div class="skills-grid" id="skills-container">
@@ -202,23 +207,23 @@
         <!-- PROJELER BÖLÜMÜ -->
         <section id="projects" class="projects-section scroll-reveal">
             <div class="section-title-wrap">
-                <span class="section-tag">SYS_05 // RECORDED_MISSIONS</span>
-                <h2 class="section-title">PROJELER</h2>
+                <span class="section-tag" data-translate="tag_projects">SYS_05 // RECORDED_MISSIONS</span>
+                <h2 class="section-title" data-translate="title_projects">PROJELER</h2>
             </div>
 
             <!-- Proje Filtreleri -->
             <div class="filter-controls">
                 <button class="filter-btn active" data-filter="hepsi">
-                    <span class="bracket">[</span> <span class="btn-txt">HEPSİ</span> <span class="bracket">]</span>
+                    <span class="bracket">[</span> <span class="btn-txt" data-translate="filter_all">HEPSİ</span> <span class="bracket">]</span>
                 </button>
                 <button class="filter-btn" data-filter="donanim">
-                    <span class="bracket">[</span> <span class="btn-txt">DONANIM</span> <span class="bracket">]</span>
+                    <span class="bracket">[</span> <span class="btn-txt" data-translate="filter_hardware">DONANIM</span> <span class="bracket">]</span>
                 </button>
                 <button class="filter-btn" data-filter="gomulu">
-                    <span class="bracket">[</span> <span class="btn-txt">GÖMÜLÜ</span> <span class="bracket">]</span>
+                    <span class="bracket">[</span> <span class="btn-txt" data-translate="filter_embedded">GÖMÜLÜ</span> <span class="bracket">]</span>
                 </button>
                 <button class="filter-btn" data-filter="yazilim">
-                    <span class="bracket">[</span> <span class="btn-txt">YAZILIM</span> <span class="bracket">]</span>
+                    <span class="bracket">[</span> <span class="btn-txt" data-translate="filter_software">YAZILIM</span> <span class="bracket">]</span>
                 </button>
             </div>
 
@@ -231,16 +236,16 @@
         <!-- İLETİŞİM BÖLÜMÜ -->
         <section id="contact" class="contact-section scroll-reveal">
             <div class="section-title-wrap">
-                <span class="section-tag">SYS_06 // OPEN_CHANNEL</span>
-                <h2 class="section-title">İLETİŞİM BAĞLANTISI</h2>
+                <span class="section-tag" data-translate="tag_contact">SYS_06 // OPEN_CHANNEL</span>
+                <h2 class="section-title" data-translate="title_contact">İLETİŞİM BAĞLANTISI</h2>
             </div>
             
             <div class="contact-grid">
                 <div class="contact-info-panel">
                     <div class="corner-t-l"></div>
                     <div class="corner-b-r"></div>
-                    <h3>// SİNYAL GÖNDER</h3>
-                    <p class="contact-desc">Benimle projeler, staj imkanları veya iş birlikleri hakkında görüşmek için aşağıdaki kanalları kullanabilir veya doğrudan mesaj gönderebilirsiniz.</p>
+                    <h3 data-translate="contact_send_signal">// SİNYAL GÖNDER</h3>
+                    <p class="contact-desc" data-translate="contact_desc">Benimle projeler, staj imkanları veya iş birlikleri hakkında görüşmek için aşağıdaki kanalları kullanabilir veya doğrudan mesaj gönderebilirsiniz.</p>
                     
                     <ul class="contact-links-list">
                         <li>
@@ -259,25 +264,25 @@
                 </div>
                 
                 <div class="contact-form-panel">
-                    <form id="hud-contact-form" onsubmit="event.preventDefault(); alert('Şablon Modu: İletişim formu verileri simüle edildi!');">
+                    <form id="hud-contact-form" onsubmit="event.preventDefault(); alert(currentLang === 'tr' ? 'Şablon Modu: İletişim formu verileri simüle edildi!' : 'Template Mode: Contact form data simulated!');">
                         <div class="input-group">
                             <input type="text" id="form-name" required placeholder=" ">
-                            <label for="form-name"><span class="input-prefix">//</span> İSİM / SOYİSİM</label>
+                            <label for="form-name"><span class="input-prefix">//</span> <span data-translate="form_name">İSİM / SOYİSİM</span></label>
                             <div class="input-glow-bar"></div>
                         </div>
                         <div class="input-group">
                             <input type="email" id="form-email" required placeholder=" ">
-                            <label for="form-email"><span class="input-prefix">//</span> E-POSTA ADRESİ</label>
+                            <label for="form-email"><span class="input-prefix">//</span> <span data-translate="form_email">E-POSTA ADRESİ</span></label>
                             <div class="input-glow-bar"></div>
                         </div>
                         <div class="input-group">
                             <textarea id="form-message" required rows="5" placeholder=" "></textarea>
-                            <label for="form-message"><span class="input-prefix">//</span> MESAJINIZ (SİNYAL)</label>
+                            <label for="form-message"><span class="input-prefix">//</span> <span data-translate="form_message">MESAJINIZ (SİNYAL)</span></label>
                             <div class="input-glow-bar"></div>
                         </div>
                         <button type="submit" class="hud-btn primary-btn form-submit-btn">
                             <span class="btn-scan-line"></span>
-                            SİNYALİ GÖNDER <i data-lucide="send"></i>
+                            <span data-translate="form_send">SİNYALİ GÖNDER</span> <i data-lucide="send"></i>
                         </button>
                     </form>
                 </div>
@@ -295,7 +300,7 @@
             <div class="corner-b-l"></div>
             <div class="corner-b-r"></div>
             
-            <button class="modal-close" onclick="closeProjectModal()" title="Kapat">
+            <button class="modal-close" onclick="closeProjectModal()" title="Kapat" data-translate="modal_close">
                 <i data-lucide="x"></i>
             </button>
             
@@ -310,7 +315,7 @@
                     
                     <!-- Teknik Özellikler Tablosu (HUD Tarzı) -->
                     <div class="modal-specs-wrap">
-                        <h4>// TEKNİK ÖZELLİKLER</h4>
+                        <h4 data-translate="modal_specs">// TEKNİK ÖZELLİKLER</h4>
                         <div class="specs-table" id="modal-specs-table">
                             <!-- JS ile doldurulacak -->
                         </div>
@@ -327,11 +332,11 @@
 
     <!-- Alt Bilgi / Footer -->
     <footer class="hud-footer">
-        <p>© 2026 // KULLANICI PORTFOLYO TASARIMI. TÜM SİSTEMLER AKTİF.</p>
+        <p data-translate="footer_text">© 2026 // KULLANICI PORTFOLYO TASARIMI. TÜM SİSTEMLER AKTİF.</p>
     </footer>
 
     <!-- Proje Verisi ve Ana Kontrolcü -->
-    <script src="data.js?v=49"></script>
-    <script src="app.js?v=49"></script>
+    <script src="data.js?v=50"></script>
+    <script src="app.js?v=50"></script>
 </body>
 </html>

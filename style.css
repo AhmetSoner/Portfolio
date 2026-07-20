@@ -1462,3 +1462,44 @@ section {
         border-bottom: none;
     }
 }
+
+/* Dil Seçici (TR - ENG) Arayüz Stilleri */
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    margin-right: 15px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-header);
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2px 4px;
+    letter-spacing: 0.05em;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    color: var(--primary);
+    text-shadow: 0 0 5px var(--primary-glow);
+}
+
+.lang-btn.active {
+    color: var(--primary);
+    font-weight: 800;
+    text-shadow: 0 0 6px var(--primary-glow);
+}
+
+.lang-divider {
+    color: rgba(0, 240, 255, 0.25);
+    font-family: var(--font-header);
+    font-size: 0.72rem;
+    pointer-events: none;
+    user-select: none;
+}
+

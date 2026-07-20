@@ -2,9 +2,50 @@
    AVIATION HUD PORTFOLIO MAIN CONTROLLER (app.js)
    ========================================================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
-    // 1. Verileri Yükle ve DOM Elemanlarını Doldur
+let currentLang = localStorage.getItem("portfolio_lang") || "tr";
+
+function applyLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem("portfolio_lang", lang);
+    
+    // Verileri yükle
     initPortfolioData();
+    
+    // HTML'deki data-translate etiketli statik metinleri çevir
+    document.querySelectorAll("[data-translate]").forEach(el => {
+        const key = el.getAttribute("data-translate");
+        if (typeof UI_TRANSLATIONS !== 'undefined' && UI_TRANSLATIONS[lang] && UI_TRANSLATIONS[lang][key]) {
+            el.innerHTML = UI_TRANSLATIONS[lang][key];
+        }
+    });
+
+    // Dil seçici butonların aktiflik durumunu güncelle
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        if (btn.getAttribute("data-lang") === lang) {
+            btn.classList.add("active");
+        } else {
+            btn.classList.remove("active");
+        }
+    });
+    
+    // Lucide ikonlarını yeniden oluştur (çevrilen içerikler ikon içerebilir)
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Dil sistemini başlat (Bu otomatik olarak initPortfolioData'yı çağıracaktır)
+    applyLanguage(currentLang);
+
+    // Dil değiştirme butonlarına olay dinleyicisi ekle
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const selectedLang = btn.getAttribute("data-lang");
+            applyLanguage(selectedLang);
+        });
+    });
 
     // 2. Radar Canvas Animasyonunu Başlat
     initRadarCanvas();
@@ -23,11 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 7. Estetik Havacılık Geometrik Animasyon (Plexus/Constellation)
     initAestheticAnimation();
-
-    // 8. Lucide İkonlarını Yeniden Tara ve Oluştur
-    if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-    }
 });
 
 /* ==========================================================================
@@ -39,7 +75,7 @@ function initPortfolioData() {
         return;
     }
 
-    const data = PORTFOLIO_DATA;
+    const data = PORTFOLIO_DATA[currentLang];
 
     // Profil Bilgileri
     document.getElementById("hero-name").textContent = data.profile.name;
@@ -474,6 +510,10 @@ function renderProjects(projectsList) {
         card.dataset.category = proj.category;
         card.addEventListener("click", () => openProjectModal(proj));
 
+        const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
+                        proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
+                        (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
+
         card.innerHTML = `
             <div class="corner-t-l"></div>
             <div class="corner-t-r"></div>
@@ -481,7 +521,7 @@ function renderProjects(projectsList) {
             <div class="corner-b-r"></div>
             <div class="project-img-wrap">
                 <img src="${proj.image}" alt="${proj.title}" loading="lazy">
-                <div class="project-overlay-hud">// SYS_${proj.category.toUpperCase()}</div>
+                <div class="project-overlay-hud">// SYS_${catName}</div>
             </div>
             <div class="project-body">
                 <h3>${proj.title}</h3>
@@ -490,7 +530,7 @@ function renderProjects(projectsList) {
                     ${proj.tags.map(t => `<span class="project-tag">${t}</span>`).join("")}
                 </div>
                 <div class="project-action-hint">
-                    AYRINTILARI AÇ <i data-lucide="arrow-right"></i>
+                    ${currentLang === 'tr' ? 'AYRINTILARI AÇ' : 'OPEN DETAILS'} <i data-lucide="arrow-right"></i>
                 </div>
             </div>
         `;
@@ -534,7 +574,12 @@ function openProjectModal(proj) {
     const modal = document.getElementById("project-modal");
     
     document.getElementById("modal-img").src = proj.image;
-    document.getElementById("modal-cat").textContent = proj.category.toUpperCase();
+    
+    const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
+                    proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
+                    (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
+                    
+    document.getElementById("modal-cat").textContent = catName;
     document.getElementById("modal-title").textContent = proj.title;
     document.getElementById("modal-desc").textContent = proj.description;
 
