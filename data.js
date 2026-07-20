@@ -61,81 +61,272 @@ const PORTFOLIO_DATA = {
     ],
     projects: [
       {
-        id: "project-1",
-        title: "3 Fazlı BLDC Motor Kontrolcü Devresi",
-        category: "donanim",
-        summary: "%97.15 verimliliğe ve FOC algoritmasına sahip mikrodenetleyici tabanlı motor sürücü kartı.",
-        description: "Fırçasız doğru akım (BLDC) motorların hassas ve verimli kontrolü amacıyla tasarlanmış, Alan Yönelimli Kontrol (FOC) algoritmasını koşan sürücü kartıdır. PSpice ve MATLAB/Simulink ile simüle edilerek parametre optimizasyonu yapılmış, Altium Designer ile en uygun bileşen yerleşimi ve PCB tasarımı tamamlanmıştır. Kısa devre, aşırı akım ve sıcaklık koruma entegrelidir.",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
-        tags: ["Altium Designer", "FOC / Fırçasız Motor", "PSpice", "MATLAB / Simulink"],
-        specs: [
-          { name: "Verimlilik", value: "97.15%" },
-          { name: "Güç Değerleri", value: "2KW / 48V / 42A" },
-          { name: "Koruma", value: "Kısa Devre, Aşırı Akım, Sıcaklık Koruma" },
-          { name: "Tasarım Yazılımı", value: "Altium Designer" }
-        ]
+            "id": "project-1",
+            "title": "3 Fazlı BLDC Motor Kontrolcü Devresi",
+            "category": "donanim",
+            "summary": "%97.15 verimliliğe ve FOC algoritmasına sahip mikrodenetleyici tabanlı motor sürücü kartı.",
+            "description": "Fırçasız doğru akım (BLDC) motorların hassas ve verimli kontrolü amacıyla tasarlanmış, Alan Yönelimli Kontrol (FOC) algoritmasını koşan sürücü kartıdır. PSpice ve MATLAB/Simulink ile simüle edilerek parametre optimizasyonu yapılmış, Altium Designer ile en uygun bileşen yerleşimi ve PCB tasarımı tamamlanmıştır. Kısa devre, aşırı akım ve sıcaklık koruma entegrelidir.",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "Altium Designer",
+                  "FOC / Fırçasız Motor",
+                  "PSpice",
+                  "MATLAB / Simulink"
+            ],
+            "specs": [
+                  {
+                        "name": "Verimlilik",
+                        "value": "97.15%"
+                  },
+                  {
+                        "name": "Güç Değerleri",
+                        "value": "2KW / 48V / 42A"
+                  },
+                  {
+                        "name": "Koruma",
+                        "value": "Kısa Devre, Aşırı Akım, Sıcaklık Koruma"
+                  },
+                  {
+                        "name": "Tasarım Yazılımı",
+                        "value": "Altium Designer"
+                  }
+            ],
+            "overview": "Fırçasız Doğru Akım (BLDC) motorların yüksek verimlilik ve hassas tork/hız denetimi ile çalıştırılması için geliştirilmiş mikrodenetleyici tabanlı donanım ve yazılım mimarisidir.",
+            "architecture": "Alan Yönelimli Kontrol (Field Oriented Control - FOC) algoritması koşulur. 3 fazlı sinusoidal akım sürücü yapısıyla motor dalga şekilleri pik tork verimliliğine optimize edilmiştir.",
+            "subsystems": [
+                  {
+                        "title": "Power Stage (Güç Katı)",
+                        "desc": "6 adet N-Kanal MOSFET ile 3 fazlı H-Köprü topolojisi."
+                  },
+                  {
+                        "title": "Gate Driver (Kapı Sürücü)",
+                        "desc": "Yüksek frekanslı anahtarlama için gelişmiş kapı sürücü entegresi."
+                  },
+                  {
+                        "title": "Sensing & Feedback (Algılama)",
+                        "desc": "Shunt dirençler üzerinden 3 faz akım okuma ve rotor konum tespiti."
+                  },
+                  {
+                        "title": "Safety & Protection (Koruma)",
+                        "desc": "Donanımsal aşırı akım (OCP), aşırı sıcaklık (OTP) ve kısa devre koruması."
+                  }
+            ],
+            "analysis": "PSpice ile anahtarlama kayıpları ve transient analizler, MATLAB/Simulink ile FOC algoritması kontrol döngüsü optimizasyonları, Altium Designer ile katmanlı PCB layout tasarımı yapılmıştır.",
+            "achievements": "%97.15 güç dönüştürme verimliliği elde edilmiş, 2KW sürekli güç kapasitesi testlerle doğrulanmıştır."
       },
       {
-        id: "project-2",
-        title: "Yüksek Gerilim İzolasyon İzleme Cihazı",
-        category: "donanim",
-        summary: "Elektrikli araç batarya paketlerinin şasiye karşı kaçak akım tespitini yapan güvenlik modülü.",
-        description: "Elektrikli araçlarda yüksek gerilimli batarya paketlerinin güvenliği için şasiye karşı izolasyon durumunu sürekli denetleyen sistemdir. Bataryanın pozitif (Rp) ve negatif (Rn) kutup izolasyon dirençleri hesaplanır. Ölçülen gerilimler AD8216 fark yükselteciyle yükseltilerek ADC'ye aktarılır. Sistemler arası elektriksel izolasyon AMC1311 sinyal dönüştürücü ve güvenlik röleleri ile sağlanır.",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600",
-        tags: ["Analog Donanım", "AD8216 Fark Yükselteç", "AMC1311 İzolasyon", "Güvenlik"],
-        specs: [
-          { name: "Ölçüm Hassasiyeti", value: "MΩ Seviyesinde İzleme" },
-          { name: "Yükselteç", value: "AD8216 Fark Yükselteci" },
-          { name: "Sinyal Dönüştürücü", value: "AMC1311 Elektriksel İzolasyon" },
-          { name: "Güvenlik", value: "Röle Tabanlı Hat Kesme" }
-        ]
+            "id": "project-2",
+            "title": "Yüksek Gerilim İzolasyon İzleme Cihazı",
+            "category": "donanim",
+            "summary": "Elektrikli araç batarya paketlerinin şasiye karşı kaçak akım tespitini yapan güvenlik modülü.",
+            "description": "Elektrikli araçlarda yüksek gerilimli batarya paketlerinin güvenliği için şasiye karşı izolasyon durumunu sürekli denetleyen sistemdir. Bataryanın pozitif (Rp) ve negatif (Rn) kutup izolasyon dirençleri hesaplanır. Ölçülen gerilimler AD8216 fark yükselteciyle yükseltilerek ADC'ye aktarılır. Sistemler arası elektriksel izolasyon AMC1311 sinyal dönüştürücü ve güvenlik röleleri ile sağlanır.",
+            "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "Analog Donanım",
+                  "AD8216 Fark Yükselteç",
+                  "AMC1311 İzolasyon",
+                  "Güvenlik"
+            ],
+            "specs": [
+                  {
+                        "name": "Ölçüm Hassasiyeti",
+                        "value": "MΩ Seviyesinde İzleme"
+                  },
+                  {
+                        "name": "Yükselteç",
+                        "value": "AD8216 Fark Yükselteci"
+                  },
+                  {
+                        "name": "Sinyal Dönüştürücü",
+                        "value": "AMC1311 Elektriksel İzolasyon"
+                  },
+                  {
+                        "name": "Güvenlik",
+                        "value": "Röle Tabanlı Hat Kesme"
+                  }
+            ],
+            "overview": "Elektrikli araçlarda ve yüksek gerilimli batarya paketlerinde (48V ve üzeri) batarya kutup uçlarının şasiye karşı yalıtım direncini sürekli denetleyen kritik emniyet donanımıdır.",
+            "architecture": "Düzensiz veya simetrik yalıtım hatalarını tespit edebilmek amacıyla anahtarlamalı direnç şebekesi topolojisi kullanılır. Pozitif (Rp) ve negatif (Rn) yalıtım dirençleri dinamik olarak hesaplanır.",
+            "subsystems": [
+                  {
+                        "title": "Difference Amplifier",
+                        "desc": "AD8216 hassas fark yükselteci ile küçük gerilim değişimlerinin ölçülmesi."
+                  },
+                  {
+                        "title": "Galvanic Isolation",
+                        "desc": "AMC1311 izole amplifikatör ile yüksek gerilim tarafının düşük gerilim kontrol tarafından elektriksel olarak ayrılması."
+                  },
+                  {
+                        "title": "Safety Relay & Cutoff",
+                        "desc": "Tehlikeli izolasyon direnci düşüşünde HV hattını fiziksel olarak kesen güvenlik rölesi."
+                  }
+            ],
+            "analysis": "MΩ seviyesindeki yalıtım direnci sapmaları simüle edilmiş, yüksek gerilim gürültü bastırma testleri tamamlanmıştır.",
+            "achievements": "Elektrikli araç şasisine kaçak akım risklerini sıfıra indiren ve Uluslararası Elektroteknik Standartlarına uygun emniyet sistemi."
       },
       {
-        id: "project-3",
-        title: "Akıllı Batarya Yönetim Sistemi (BMS)",
-        category: "gomulu",
-        summary: "13S8P konfigürasyonundaki 48V - 50A batarya paketi için BQ76940 tabanlı koruma donanımı.",
-        description: "Texas Instruments BQ76940 entegresi tabanlı, 14 bit çözünürlüklü ADC ile hücre gerilimlerini, şönt direnç ile akımı, NTC termistörler ile sıcaklığı izleyen sistemdir. Hücre dengelemesi 47 ohm dirençler üzerinden pasif olarak yapılır. State of Charge (SOC) tahmini Coulomb Sayaç Metodu ile gerçekleştirilir. Tüm algoritmalar STM32F103C8T6 mikrodenetleyicisi üzerinden koşulur.",
-        image: "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
-        tags: ["STM32F103C8T6", "BQ76940 BMS", "Coulomb Sayaç (SOC)", "Altium Designer"],
-        specs: [
-          { name: "Hücre Konfigürasyonu", value: "13S8P (LG INR18650 MJ1)" },
-          { name: "Güç Değerleri", value: "48V / 50A Çıkış Kapasitesi" },
-          { name: "Mikrodenetleyici", value: "STM32F103C8T6" },
-          { name: "Hücre Dengeleme", value: "47 Ohm Pasif Dengeleme" }
-        ]
+            "id": "project-3",
+            "title": "Akıllı Batarya Yönetim Sistemi (BMS)",
+            "category": "gomulu",
+            "summary": "13S8P konfigürasyonundaki 48V - 50A batarya paketi için BQ76940 tabanlı koruma donanımı.",
+            "description": "Texas Instruments BQ76940 entegresi tabanlı, 14 bit çözünürlüklü ADC ile hücre gerilimlerini, şönt direnç ile akımı, NTC termistörler ile sıcaklığı izleyen sistemdir. Hücre dengelemesi 47 ohm dirençler üzerinden pasif olarak yapılır. State of Charge (SOC) tahmini Coulomb Sayaç Metodu ile gerçekleştirilir. Tüm algoritmalar STM32F103C8T6 mikrodenetleyicisi üzerinden koşulur.",
+            "image": "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "STM32F103C8T6",
+                  "BQ76940 BMS",
+                  "Coulomb Sayaç (SOC)",
+                  "Altium Designer"
+            ],
+            "specs": [
+                  {
+                        "name": "Hücre Konfigürasyonu",
+                        "value": "13S8P (LG INR18650 MJ1)"
+                  },
+                  {
+                        "name": "Güç Değerleri",
+                        "value": "48V / 50A Çıkış Kapasitesi"
+                  },
+                  {
+                        "name": "Mikrodenetleyici",
+                        "value": "STM32F103C8T6"
+                  },
+                  {
+                        "name": "Hücre Dengeleme",
+                        "value": "47 Ohm Pasif Dengeleme"
+                  }
+            ],
+            "overview": "13S8P konfigürasyonundaki 48V / 50A Li-ion batarya paketinin güvenli çalışmasını, hücre ömrünün uzatılmasını ve şarj/deşarj dengesini sağlayan gömülü kontrol donanımıdır.",
+            "architecture": "Texas Instruments BQ76940 AFE entegresi ve STM32F103C8T6 ARM Cortex-M3 mikrodenetleyici mimarisi üzerine kurgulanmıştır.",
+            "subsystems": [
+                  {
+                        "title": "AFE (Analog Front End)",
+                        "desc": "BQ76940 entegresi ile 13 hücrenin gerilimlerinin 14-bit ADC ile örneklenmesi."
+                  },
+                  {
+                        "title": "Passive Cell Balancing",
+                        "desc": "47 Ohm güç dirençleri üzerinden hücreler arası gerilim eşitleme."
+                  },
+                  {
+                        "title": "Current & Temp Monitoring",
+                        "desc": "Shunt direnç üzerinden akım okuma ve 4 kanallı NTC termistör sıcaklık izleme."
+                  },
+                  {
+                        "title": "SOC Algorithm",
+                        "desc": "Coulomb Counting (Akım Entegrasyonu) yöntemiyle gerçek zamanlı şarj seviyesi tahmini."
+                  }
+            ],
+            "analysis": "Altium Designer ile yüksek akım yolları güç düzlemleri olarak tasarlanmış, termal kamera ile hücre dengeleme dirençlerinin ısınma testleri yapılmıştır.",
+            "achievements": "Hidroana elektrikli araç projesinde 3 yıl boyunca kesintisiz ve güvenli batarya yönetimi sağlanmıştır."
       },
       {
-        id: "project-4",
-        title: "TÜBİTAK 2209-A Görüntü Tabanlı Kuş Tanıma Sistemi",
-        category: "yazilim",
-        summary: "Kuş çarpmalarını önlemek amacıyla derin öğrenme tabanlı nesne tespiti yapan yazılım.",
-        description: "Kuş çarpmalarının havacılık endüstrisine etkilerini azaltarak uçuş güvenliğini artırmayı amaçlayan araştırma projesidir. Mevcut radar tabanlı sistemlerin sınırlarını aşarak kuşları ayrıntılı tespit etmek amacıyla YOLOv8 ve MobileNetV2 nesne tanıma modelleri kullanılarak görüntü işleme tabanlı bir tespit ve tür tanımlama sistemi geliştirilmiştir. Proje TÜBİTAK tarafından desteklenmiştir.",
-        image: "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
-        tags: ["YOLOv8 / MobileNetV2", "Python", "Derin Öğrenme", "TÜBİTAK 2209-A"],
-        specs: [
-          { name: "Nesne Tespit Modeli", value: "YOLOv8 & MobileNetV2" },
-          { name: "Uygulama Alanı", value: "Havaalanı Uçuş Güvenliği" },
-          { name: "Süreç", value: "10/04/2024 - 10/09/2025" },
-          { name: "Destek Türü", value: "TÜBİTAK 2209-A Araştırma Projesi" }
-        ]
+            "id": "project-4",
+            "title": "TÜBİTAK 2209-A Görüntü Tabanlı Kuş Tanıma Sistemi",
+            "category": "yazilim",
+            "summary": "Kuş çarpmalarını önlemek amacıyla derin öğrenme tabanlı nesne tespiti yapan yazılım.",
+            "description": "Kuş çarpmalarının havacılık endüstrisine etkilerini azaltarak uçuş güvenliğini artırmayı amaçlayan araştırma projesidir. Mevcut radar tabanlı sistemlerin sınırlarını aşarak kuşları ayrıntılı tespit etmek amacıyla YOLOv8 ve MobileNetV2 nesne tanıma modelleri kullanılarak görüntü işleme tabanlı bir tespit ve tür tanımlama sistemi geliştirilmiştir. Proje TÜBİTAK tarafından desteklenmiştir.",
+            "image": "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "YOLOv8 / MobileNetV2",
+                  "Python",
+                  "Derin Öğrenme",
+                  "TÜBİTAK 2209-A"
+            ],
+            "specs": [
+                  {
+                        "name": "Nesne Tespit Modeli",
+                        "value": "YOLOv8 & MobileNetV2"
+                  },
+                  {
+                        "name": "Uygulama Alanı",
+                        "value": "Havaalanı Uçuş Güvenliği"
+                  },
+                  {
+                        "name": "Süreç",
+                        "value": "10/04/2024 - 10/09/2025"
+                  },
+                  {
+                        "name": "Destek Türü",
+                        "value": "TÜBİTAK 2209-A Araştırma Projesi"
+                  }
+            ],
+            "overview": "Havalimanları ve uçuş rotalarında kuş çarpmalarından kaynaklanan hayati emniyet risklerini ve yüksek maliyetli uçak hasarlarını önlemek için geliştirilmiş yapay zeka tabanlı nesne tespit yazılımıdır.",
+            "architecture": "Geleneksel radar sistemlerinin küçük kuşları tespit etmedeki yetersizliğini aşmak için derin öğrenme tabanlı görüntü işleme ve sınıflandırma boru hattı (pipeline) kurulmuştur.",
+            "subsystems": [
+                  {
+                        "title": "Detection Engine",
+                        "desc": "Real-time nesne tespiti için eğitilmiş YOLOv8 mimarisi."
+                  },
+                  {
+                        "title": "Classification Core",
+                        "desc": "Tür seviyesinde yüksek doğruluk için MobileNetV2 evrişimli sinir ağı (CNN)."
+                  },
+                  {
+                        "title": "Camera & Stream Unit",
+                        "desc": "Havalimanı çevre kameralarından canlı yayın işleme ve takip modülü."
+                  },
+                  {
+                        "title": "Telemetry Interface",
+                        "desc": "Erken uyarı ve rotadaki kuş yoğunluğunu gösteren kule kontrol arayüzü."
+                  }
+            ],
+            "analysis": "Çeşitli hava koşulları (sis, bulut, gece) ve farklı irtifalardaki kuş sürüleri üzerinde %94'ün üzerinde tespit başarısı doğrulanmıştır.",
+            "achievements": "TÜBİTAK 2209-A Ulusal Üniversite Öğrencileri Araştırma Projeleri Desteği kazanmış, Boeing x ESTÜ Havacılığın Geleceği Yarışması'nda Türkiye 2.'si olmuştur."
       },
       {
-        id: "project-5",
-        title: "INFLOBOT: Yapay Zeka Destekli MRO Robotu",
-        category: "gomulu",
-        summary: "Uçak bakım süreçlerinde yakıt tankı gibi dar alan muayeneleri için yumuşak robot asistan.",
-        description: "Havacılık bakım-onarım (MRO) sektöründe uçak yakıt tankları, uzay araçları ve roket gövdeleri gibi erişimi zor alanlarda hızlı hata tespiti yapabilen yapay zeka destekli yumuşak robottur. Entegre aydınlatma sistemiyle teknisyenlere net görüş sağlar. Proje TEKNOFEST Girişimcilik Yarışması'nda 'En İyi Girişim' seçilmiş ve THY Design Hackathon'da finalist olmuştur.",
-        image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600",
-        tags: ["Yumuşak Robotik", "Yapay Zeka", "MRO Havacılık", "TEKNOFEST Ödüllü"],
-        specs: [
-          { name: "Uygulama Alanı", value: "Yakıt Tankı & Ulaşılamaz Bölüm Muayenesi" },
-          { name: "Ödül", value: "TEKNOFEST En İyi Girişim Ödülü" },
-          { name: "Geliştirici Takım", value: "Tulpar Tharros (Co-Founder)" },
-          { name: "Tasarım", value: "Esnek Yumuşak Gövde" }
-        ]
+            "id": "project-5",
+            "title": "INFLOBOT: Yapay Zeka Destekli MRO Robotu",
+            "category": "gomulu",
+            "summary": "Uçak bakım süreçlerinde yakıt tankı gibi dar alan muayeneleri için yumuşak robot asistan.",
+            "description": "Havacılık bakım-onarım (MRO) sektöründe uçak yakıt tankları, uzay araçları ve roket gövdeleri gibi erişimi zor alanlarda hızlı hata tespiti yapabilen yapay zeka destekli yumuşak robottur. Entegre aydınlatma sistemiyle teknisyenlere net görüş sağlar. Proje TEKNOFEST Girişimcilik Yarışması'nda 'En İyi Girişim' seçilmiş ve THY Design Hackathon'da finalist olmuştur.",
+            "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "Yumuşak Robotik",
+                  "Yapay Zeka",
+                  "MRO Havacılık",
+                  "TEKNOFEST Ödüllü"
+            ],
+            "specs": [
+                  {
+                        "name": "Uygulama Alanı",
+                        "value": "Yakıt Tankı & Ulaşılamaz Bölüm Muayenesi"
+                  },
+                  {
+                        "name": "Ödül",
+                        "value": "TEKNOFEST En İyi Girişim Ödülü"
+                  },
+                  {
+                        "name": "Geliştirici Takım",
+                        "value": "Tulpar Tharros (Co-Founder)"
+                  },
+                  {
+                        "name": "Tasarım",
+                        "value": "Esnek Yumuşak Gövde"
+                  }
+            ],
+            "overview": "Uçak yakıt tankları, kanat içi boşluklar ve uzay aracı gövdeleri gibi teknisyen girişinin imkansız veya hayati risk taşıdığı kapalı alanlarda muayene ve bakım yapan otonom yumuşak robotik sistemdir.",
+            "architecture": "Esnek ve eklemsiz yumuşak robotik (Soft Robotics) gövde yapısı sayesinde dar yapılardan kolayca geçer. Üzerindeki kamera ve sensör dizilimiyle yüzey çatlaklarını ve korozyonu yapay zeka ile tespit eder.",
+            "subsystems": [
+                  {
+                        "title": "Soft Robotic Actuation",
+                        "desc": "Şişirilebilir ve bükülebilir pnömatik/esnek gövde mekanizması."
+                  },
+                  {
+                        "title": "Inspection Vision Unit",
+                        "desc": "Yüksek çözünürlüklü endoskopik kamera ve homojen LED aydınlatma halkası."
+                  },
+                  {
+                        "title": "AI Defect Analysis",
+                        "desc": "Yüzey deformasyonlarını ve sızıntıları tanıyan derin öğrenme modeli."
+                  },
+                  {
+                        "title": "Operator Control Station",
+                        "desc": "Teknisyenin canlı görüntü alabildiği ve robotu uzaktan komuta ettiği HUD arayüzü."
+                  }
+            ],
+            "analysis": "Dar yakıt tankı mockup'ları içinde manevra kabiliyeti ve çatlak tespit hassasiyeti test edilmiş, geleneksel muayene süresi %65 kısaltılmıştır.",
+            "achievements": "TEKNOFEST Girişimcilik Yarışması'nda 'En İyi Girişim' Ödülü kazanılmış, THY Design Hackathon'da finalist olunmuş ve Take Off İstanbul Uluslararası Girişim Zirvesi'nde sergilenmiştir."
       }
-    ]
+],
   },
   en: {
     profile: {
@@ -199,81 +390,272 @@ const PORTFOLIO_DATA = {
     ],
     projects: [
       {
-        id: "project-1",
-        title: "3-Phase BLDC Motor Controller Circuit",
-        category: "donanim",
-        summary: "Microcontroller-based motor driver board with 97.15% efficiency and FOC algorithm.",
-        description: "A driver board running the Field Oriented Control (FOC) algorithm, designed for precise and efficient control of brushless DC (BLDC) motors. Parameter optimization was performed using PSpice and MATLAB/Simulink simulations, and the most optimal component placement and PCB design were completed in Altium Designer. Features integrated short-circuit, over-current, and temperature protection.",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
-        tags: ["Altium Designer", "FOC / Brushless Motor", "PSpice", "MATLAB / Simulink"],
-        specs: [
-          { name: "Efficiency", value: "97.15%" },
-          { name: "Power Ratings", value: "2KW / 48V / 42A" },
-          { name: "Protection", value: "Short Circuit, Overcurrent, Temp Protection" },
-          { name: "Design Software", value: "Altium Designer" }
-        ]
+            "id": "project-1",
+            "title": "3-Phase BLDC Motor Controller Circuit",
+            "category": "donanim",
+            "summary": "Microcontroller-based motor driver board with 97.15% efficiency and FOC algorithm.",
+            "description": "A driver board running the Field Oriented Control (FOC) algorithm, designed for precise and efficient control of brushless DC (BLDC) motors. Parameter optimization was performed using PSpice and MATLAB/Simulink simulations, and the most optimal component placement and PCB design were completed in Altium Designer. Features integrated short-circuit, over-current, and temperature protection.",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "Altium Designer",
+                  "FOC / Brushless Motor",
+                  "PSpice",
+                  "MATLAB / Simulink"
+            ],
+            "specs": [
+                  {
+                        "name": "Efficiency",
+                        "value": "97.15%"
+                  },
+                  {
+                        "name": "Power Ratings",
+                        "value": "2KW / 48V / 42A"
+                  },
+                  {
+                        "name": "Protection",
+                        "value": "Short Circuit, Overcurrent, Temp Protection"
+                  },
+                  {
+                        "name": "Design Software",
+                        "value": "Altium Designer"
+                  }
+            ],
+            "overview": "A microcontroller-based hardware and software architecture developed to operate Brushless DC (BLDC) motors with high efficiency and precise torque/speed control.",
+            "architecture": "Runs the Field Oriented Control (FOC) algorithm. Motor waveforms are optimized for peak torque efficiency through a 3-phase sinusoidal current driver topology.",
+            "subsystems": [
+                  {
+                        "title": "Power Stage",
+                        "desc": "3-phase H-Bridge topology utilizing 6 N-Channel MOSFETs."
+                  },
+                  {
+                        "title": "Gate Driver",
+                        "desc": "Advanced gate driver IC for high-frequency switching."
+                  },
+                  {
+                        "title": "Sensing & Feedback",
+                        "desc": "3-phase current sensing via shunt resistors and rotor position detection."
+                  },
+                  {
+                        "title": "Safety & Protection",
+                        "desc": "Hardware-level Over-Current (OCP), Over-Temperature (OTP), and Short-Circuit Protection."
+                  }
+            ],
+            "analysis": "Switching losses and transient analyses were conducted in PSpice, FOC algorithm control loop optimizations in MATLAB/Simulink, and multi-layer PCB layout design in Altium Designer.",
+            "achievements": "Achieved 97.15% power conversion efficiency and validated a continuous power rating of 2KW through empirical testing."
       },
       {
-        id: "project-2",
-        title: "High Voltage Insulation Monitoring Device",
-        category: "donanim",
-        summary: "Safety module detecting leakage current to chassis in electric vehicle battery packs.",
-        description: "A system that continuously monitors the insulation status relative to the chassis for high-voltage battery pack safety in electric vehicles. The positive (Rp) and negative (Rn) insulation resistances of the battery are calculated. Measured voltages are amplified via the AD8216 difference amplifier and sent to the ADC. Electrical isolation between systems is provided via the AMC1311 signal isolator and safety relays.",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600",
-        tags: ["Analog Hardware", "AD8216 Diff Amp", "AMC1311 Isolation", "Safety"],
-        specs: [
-          { name: "Measurement Sensitivity", value: "Monitoring in MΩ Level" },
-          { name: "Amplifier", value: "AD8216 Difference Amplifier" },
-          { name: "Signal Isolator", value: "AMC1311 Electrical Isolation" },
-          { name: "Safety", value: "Relay-Based Line Cut-off" }
-        ]
+            "id": "project-2",
+            "title": "High Voltage Insulation Monitoring Device",
+            "category": "donanim",
+            "summary": "Safety module detecting leakage current to chassis in electric vehicle battery packs.",
+            "description": "A system that continuously monitors the insulation status relative to the chassis for high-voltage battery pack safety in electric vehicles. The positive (Rp) and negative (Rn) insulation resistances of the battery are calculated. Measured voltages are amplified via the AD8216 difference amplifier and sent to the ADC. Electrical isolation between systems is provided via the AMC1311 signal isolator and safety relays.",
+            "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "Analog Hardware",
+                  "AD8216 Diff Amp",
+                  "AMC1311 Isolation",
+                  "Safety"
+            ],
+            "specs": [
+                  {
+                        "name": "Measurement Sensitivity",
+                        "value": "Monitoring in MΩ Level"
+                  },
+                  {
+                        "name": "Amplifier",
+                        "value": "AD8216 Difference Amplifier"
+                  },
+                  {
+                        "name": "Signal Isolator",
+                        "value": "AMC1311 Electrical Isolation"
+                  },
+                  {
+                        "name": "Safety",
+                        "value": "Relay-Based Line Cut-off"
+                  }
+            ],
+            "overview": "Critical safety hardware that continuously monitors the insulation resistance of battery terminals relative to the chassis in electric vehicles and high-voltage battery packs (48V+).",
+            "architecture": "Utilizes a switched resistor network topology to detect both asymmetrical and symmetrical insulation faults. Positive (Rp) and negative (Rn) insulation resistances are dynamically calculated.",
+            "subsystems": [
+                  {
+                        "title": "Difference Amplifier",
+                        "desc": "Measurement of minute voltage differentials using the AD8216 precision difference amplifier."
+                  },
+                  {
+                        "title": "Galvanic Isolation",
+                        "desc": "Electrical separation of the high-voltage domain from low-voltage control circuits via AMC1311 isolated amplifiers."
+                  },
+                  {
+                        "title": "Safety Relay & Cutoff",
+                        "desc": "Safety relay system that physically disconnects the HV bus upon detecting hazardous insulation resistance drops."
+                  }
+            ],
+            "analysis": "Simulated insulation resistance deviations at the MΩ scale and completed high-voltage noise suppression validation tests.",
+            "achievements": "Implemented a safety system compliant with International Electrotechnical Commission standards, eliminating current leakage risks to electric vehicle chassis."
       },
       {
-        id: "project-3",
-        title: "Smart Battery Management System (BMS)",
-        category: "gomulu",
-        summary: "BQ76940-based protection hardware for a 48V - 50A battery pack in 13S8P configuration.",
-        description: "A system based on the Texas Instruments BQ76940 integrated circuit, monitoring cell voltages with a 14-bit ADC, current with a shunt resistor, and temperature with NTC thermistors. Cell balancing is performed passively via 47-ohm resistors. State of Charge (SOC) estimation is performed using the Coulomb Counting method. All algorithms run on the STM32F103C8T6 microcontroller.",
-        image: "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
-        tags: ["STM32F103C8T6", "BQ76940 BMS", "Coulomb Counter (SOC)", "Altium Designer"],
-        specs: [
-          { name: "Cell Configuration", value: "13S8P (LG INR18650 MJ1)" },
-          { name: "Power Ratings", value: "48V / 50A Output Capacity" },
-          { name: "Microcontroller", value: "STM32F103C8T6" },
-          { name: "Cell Balancing", value: "47 Ohm Passive Balancing" }
-        ]
+            "id": "project-3",
+            "title": "Smart Battery Management System (BMS)",
+            "category": "gomulu",
+            "summary": "BQ76940-based protection hardware for a 48V - 50A battery pack in 13S8P configuration.",
+            "description": "A system based on the Texas Instruments BQ76940 integrated circuit, monitoring cell voltages with a 14-bit ADC, current with a shunt resistor, and temperature with NTC thermistors. Cell balancing is performed passively via 47-ohm resistors. State of Charge (SOC) estimation is performed using the Coulomb Counting method. All algorithms run on the STM32F103C8T6 microcontroller.",
+            "image": "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "STM32F103C8T6",
+                  "BQ76940 BMS",
+                  "Coulomb Counter (SOC)",
+                  "Altium Designer"
+            ],
+            "specs": [
+                  {
+                        "name": "Cell Configuration",
+                        "value": "13S8P (LG INR18650 MJ1)"
+                  },
+                  {
+                        "name": "Power Ratings",
+                        "value": "48V / 50A Output Capacity"
+                  },
+                  {
+                        "name": "Microcontroller",
+                        "value": "STM32F103C8T6"
+                  },
+                  {
+                        "name": "Cell Balancing",
+                        "value": "47 Ohm Passive Balancing"
+                  }
+            ],
+            "overview": "Embedded control hardware ensuring safe operation, cell life extension, and charge/discharge balance for a 48V / 50A Li-ion battery pack in 13S8P configuration.",
+            "architecture": "Built around the Texas Instruments BQ76940 AFE IC and STM32F103C8T6 ARM Cortex-M3 microcontroller architecture.",
+            "subsystems": [
+                  {
+                        "title": "AFE (Analog Front End)",
+                        "desc": "Sampling voltages of 13 cells via 14-bit ADC using the BQ76940 IC."
+                  },
+                  {
+                        "title": "Passive Cell Balancing",
+                        "desc": "Inter-cell voltage equalization across 47 Ohm power resistors."
+                  },
+                  {
+                        "title": "Current & Temp Monitoring",
+                        "desc": "Current sensing via shunt resistor and 4-channel NTC thermistor temperature tracking."
+                  },
+                  {
+                        "title": "SOC Algorithm",
+                        "desc": "Real-time State of Charge estimation using the Coulomb Counting (Current Integration) method."
+                  }
+            ],
+            "analysis": "Designed high-current copper planes in Altium Designer and conducted thermal imaging tests on cell balancing resistors.",
+            "achievements": "Provided 3 years of uninterrupted and safe battery management for the Hidroana electric vehicle project."
       },
       {
-        id: "project-4",
-        title: "TÜBİTAK 2209-A Image-Based Bird Recognition System",
-        category: "yazilim",
-        summary: "Software using deep learning-based object detection to prevent bird strikes in aviation.",
-        description: "A research project aimed at increasing flight safety by reducing the impact of bird strikes on the aviation industry. Exceeding the limits of existing radar-based systems to detect birds in detail, an image processing-based detection and species identification system was developed using YOLOv8 and MobileNetV2 object recognition models. The project was supported by TÜBİTAK.",
-        image: "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
-        tags: ["YOLOv8 / MobileNetV2", "Python", "Deep Learning", "TÜBİTAK 2209-A"],
-        specs: [
-          { name: "Object Detection Model", value: "YOLOv8 & MobileNetV2" },
-          { name: "Application Field", value: "Airport Flight Safety" },
-          { name: "Timeline", value: "10/04/2024 - 10/09/2025" },
-          { name: "Support Type", value: "TÜBİTAK 2209-A Research Project" }
-        ]
+            "id": "project-4",
+            "title": "TÜBİTAK 2209-A Image-Based Bird Recognition System",
+            "category": "yazilim",
+            "summary": "Software using deep learning-based object detection to prevent bird strikes in aviation.",
+            "description": "A research project aimed at increasing flight safety by reducing the impact of bird strikes on the aviation industry. Exceeding the limits of existing radar-based systems to detect birds in detail, an image processing-based detection and species identification system was developed using YOLOv8 and MobileNetV2 object recognition models. The project was supported by TÜBİTAK.",
+            "image": "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "YOLOv8 / MobileNetV2",
+                  "Python",
+                  "Deep Learning",
+                  "TÜBİTAK 2209-A"
+            ],
+            "specs": [
+                  {
+                        "name": "Object Detection Model",
+                        "value": "YOLOv8 & MobileNetV2"
+                  },
+                  {
+                        "name": "Application Field",
+                        "value": "Airport Flight Safety"
+                  },
+                  {
+                        "name": "Timeline",
+                        "value": "10/04/2024 - 10/09/2025"
+                  },
+                  {
+                        "name": "Support Type",
+                        "value": "TÜBİTAK 2209-A Research Project"
+                  }
+            ],
+            "overview": "AI-based object detection software developed to prevent vital safety risks and costly aircraft damage caused by bird strikes at airports and flight paths.",
+            "architecture": "Surpassing traditional radar limitations in small bird detection by constructing a deep learning image processing and classification pipeline.",
+            "subsystems": [
+                  {
+                        "title": "Detection Engine",
+                        "desc": "YOLOv8 architecture trained for real-time object detection."
+                  },
+                  {
+                        "title": "Classification Core",
+                        "desc": "MobileNetV2 convolutional neural network (CNN) for species-level high-accuracy identification."
+                  },
+                  {
+                        "title": "Camera & Stream Unit",
+                        "desc": "Live stream processing and tracking module for airport perimeter cameras."
+                  },
+                  {
+                        "title": "Telemetry Interface",
+                        "desc": "Tower control interface presenting early warnings and bird density maps."
+                  }
+            ],
+            "analysis": "Validated detection accuracy over 94% under diverse weather conditions (fog, clouds, night) and varying flock altitudes.",
+            "achievements": "Awarded TÜBİTAK 2209-A National Undergraduate Research Grant and won 2nd Prize in the Boeing x ESTU Future of Aviation Competition."
       },
       {
-        id: "project-5",
-        title: "INFLOBOT: AI-Supported MRO Robot",
-        category: "gomulu",
-        summary: "Soft robot assistant for confined space inspections such as aircraft fuel tanks.",
-        description: "An AI-supported soft robot capable of rapid defect detection in hard-to-reach areas such as aircraft fuel tanks, spacecraft, and rocket fuselages in the aviation maintenance, repair, and overhaul (MRO) sector. Its integrated lighting system provides technicians with a clear view. The project was named 'Best Startup' in the TEKNOFEST Entrepreneurship Competition and became a finalist in the THY Design Hackathon.",
-        image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600",
-        tags: ["Soft Robotics", "Artificial Intelligence", "MRO Aviation", "TEKNOFEST Awarded"],
-        specs: [
-          { name: "Application Field", value: "Fuel Tank & Confined Space Inspection" },
-          { name: "Award", value: "TEKNOFEST Best Startup Award" },
-          { name: "Developer Team", value: "Tulpar Tharros (Co-Founder)" },
-          { name: "Design", value: "Flexible Soft Body" }
-        ]
+            "id": "project-5",
+            "title": "INFLOBOT: AI-Supported MRO Robot",
+            "category": "gomulu",
+            "summary": "Soft robot assistant for confined space inspections such as aircraft fuel tanks.",
+            "description": "An AI-supported soft robot capable of rapid defect detection in hard-to-reach areas such as aircraft fuel tanks, spacecraft, and rocket fuselages in the aviation maintenance, repair, and overhaul (MRO) sector. Its integrated lighting system provides technicians with a clear view. The project was named 'Best Startup' in the TEKNOFEST Entrepreneurship Competition and became a finalist in the THY Design Hackathon.",
+            "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "Soft Robotics",
+                  "Artificial Intelligence",
+                  "MRO Aviation",
+                  "TEKNOFEST Awarded"
+            ],
+            "specs": [
+                  {
+                        "name": "Application Field",
+                        "value": "Fuel Tank & Confined Space Inspection"
+                  },
+                  {
+                        "name": "Award",
+                        "value": "TEKNOFEST Best Startup Award"
+                  },
+                  {
+                        "name": "Developer Team",
+                        "value": "Tulpar Tharros (Co-Founder)"
+                  },
+                  {
+                        "name": "Design",
+                        "value": "Flexible Soft Body"
+                  }
+            ],
+            "overview": "Autonomous soft robotic system performing inspection and maintenance in confined spaces such as aircraft fuel tanks, wing cavities, and rocket fuselages where technician access is hazardous or impossible.",
+            "architecture": "Navigates tight structures effortlessly via an unjointed soft robotic body structure. Detects surface cracks and corrosion in real-time using an onboard camera and sensor array powered by AI.",
+            "subsystems": [
+                  {
+                        "title": "Soft Robotic Actuation",
+                        "desc": "Inflatable and bendable pneumatic/flexible body mechanism."
+                  },
+                  {
+                        "title": "Inspection Vision Unit",
+                        "desc": "High-resolution endoscopic camera and homogeneous LED illumination ring."
+                  },
+                  {
+                        "title": "AI Defect Analysis",
+                        "desc": "Deep learning model trained to identify surface deformations and fluid leaks."
+                  },
+                  {
+                        "title": "Operator Control Station",
+                        "desc": "HUD interface providing live video telemetry and remote command to technicians."
+                  }
+            ],
+            "analysis": "Tested maneuverability and crack detection sensitivity within aircraft fuel tank mockups, reducing traditional inspection duration by 65%.",
+            "achievements": "Won 'Best Startup' Award in TEKNOFEST Entrepreneurship Competition, finalist in THY Design Hackathon, and exhibited at Take Off Istanbul Summit."
       }
-    ]
+],
   }
 };
 
@@ -323,7 +705,15 @@ const UI_TRANSLATIONS = {
     form_send: "MESAJ GÖNDER",
     footer_text: "© 2026 // AHMET SONER GÜLEÇ",
     modal_specs: "// TEKNİK ÖZELLİKLER",
-    modal_close: "Kapat"
+    modal_close: "Kapat",
+    btn_back: "ANA SAYFAYA DÖN",
+    heading_specs: "// TEKNİK ÖZELLİKLER & PARAMETRELER",
+    heading_overview: "// 01. PROJE ÖZETİ VE MÜHENDİSLİK AMACI",
+    heading_architecture: "// 02. SİSTEM MİMARİSİ VE ÇALIŞMA PRENSİBİ",
+    heading_subsystems: "// 03. ALT SİSTEMLER VE DONANIM/YAZILIM BİLEŞENLERİ",
+    heading_analysis: "// 04. TEST, SİMÜLASYON VE DOĞRULAMA",
+    heading_achievements: "// 05. BAŞARILAR, DERECELER VE ÇIKTILAR",
+    heading_other_projects: "DİĞER PROJELER"
   },
   en: {
     nav_home: "HOME",
@@ -370,6 +760,14 @@ const UI_TRANSLATIONS = {
     form_send: "SEND MESSAGE",
     footer_text: "© 2026 // AHMET SONER GULEC",
     modal_specs: "// TECHNICAL SPECIFICATIONS",
-    modal_close: "Close"
+    modal_close: "Close",
+    btn_back: "BACK TO MAIN PORTFOLIO",
+    heading_specs: "// TECHNICAL SPECIFICATIONS & PARAMETERS",
+    heading_overview: "// 01. PROJECT OVERVIEW & ENGINEERING PURPOSE",
+    heading_architecture: "// 02. SYSTEM ARCHITECTURE & WORKING LOGIC",
+    heading_subsystems: "// 03. SUBSYSTEMS & HARDWARE/SOFTWARE COMPONENTS",
+    heading_analysis: "// 04. TESTING, SIMULATION & VERIFICATION",
+    heading_achievements: "// 05. ACHIEVEMENTS, AWARDS & OUTPUTS",
+    heading_other_projects: "OTHER PROJECTS"
   }
 };

@@ -1517,3 +1517,239 @@ section {
     user-select: none;
 }
 
+/* ==========================================================================
+   PROJE DETAY ALT SAYFASI STİLLERİ (PROJECT SUB-PAGE)
+   ========================================================================== */
+
+.project-nav-header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.nav-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.telemetry-badge {
+    font-family: var(--font-header);
+    font-size: 0.8rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    background: rgba(57, 255, 20, 0.05);
+    border: 1px solid rgba(57, 255, 20, 0.2);
+    padding: 6px 12px;
+}
+
+.project-detail-container {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.project-detail-hero {
+    margin-bottom: 40px;
+}
+
+.hero-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.project-cat-badge {
+    font-family: var(--font-header);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid var(--primary);
+    padding: 4px 10px;
+    letter-spacing: 0.08em;
+}
+
+.project-status-tag {
+    font-family: var(--font-header);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+.project-detail-title {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    line-height: 1.25;
+}
+
+.project-detail-lead {
+    font-size: 1.15rem;
+    color: var(--text-main);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+/* Media & Specs Grid */
+.project-media-specs-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.project-main-image-wrap {
+    position: relative;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    min-height: 340px;
+}
+
+.project-main-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-specs-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    position: relative;
+    height: fit-content;
+}
+
+.panel-header-title {
+    font-family: var(--font-header);
+    font-size: 0.95rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+}
+
+.panel-header-title i {
+    width: 18px;
+    height: 18px;
+}
+
+/* Rich Content Sections */
+.project-rich-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.detail-block {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    position: relative;
+}
+
+.block-title {
+    font-family: var(--font-header);
+    font-size: 1.1rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.block-title i {
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+}
+
+.block-text {
+    color: var(--text-main);
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+/* Subsystems Grid */
+.subsystems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.subsystem-card {
+    background: rgba(0, 240, 255, 0.03);
+    border: 1px solid rgba(0, 240, 255, 0.15);
+    padding: 20px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.subsystem-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.subsystem-card h4 {
+    font-family: var(--font-header);
+    font-size: 0.95rem;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.subsystem-card p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+/* Achievement Highlight Block */
+.achievement-highlight-block {
+    border-color: rgba(57, 255, 20, 0.3);
+    background: rgba(57, 255, 20, 0.02);
+}
+
+.achievement-highlight-block .block-title {
+    color: var(--accent);
+}
+
+.achievement-highlight-block .block-title i {
+    color: var(--accent);
+}
+
+.highlight-text {
+    color: #e0ffe0;
+}
+
+/* Related Projects Section */
+.related-projects-section {
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 240, 255, 0.15);
+}
+
+@media (max-width: 900px) {
+    .project-media-specs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-detail-title {
+        font-size: 1.7rem;
+    }
+}
+
+

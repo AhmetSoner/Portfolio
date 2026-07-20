@@ -405,7 +405,9 @@ function renderProjects(projectsList) {
         const card = document.createElement("div");
         card.className = "project-card";
         card.dataset.category = proj.category;
-        card.addEventListener("click", () => openProjectModal(proj));
+        card.addEventListener("click", () => {
+            window.location.href = `project.html?id=${proj.id}`;
+        });
 
         const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
                         proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Proje Detayları // Ahmet Soner Güleç</title>
+    
+    <!-- Meta Etiketleri -->
+    <meta name="description" content="Aviyonik, Gömülü Sistemler ve Donanım Tasarımı Proje Detay Sayfası.">
+    <meta name="author" content="Ahmet Soner Güleç">
+    
+    <!-- Google Fonts & Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css?v=56">
+</head>
+<body>
+    <!-- Radar Sweep Canvas Arka Planı -->
+    <canvas id="radar-canvas"></canvas>
+
+    <!-- Kenar Boşlukları Plexus Animasyonu -->
+    <canvas id="margin-canvas"></canvas>
+
+    <!-- HUD Grid Overlay -->
+    <div class="hud-grid-overlay"></div>
+
+    <!-- Sistem Durumu / Üst Bilgi Şeridi -->
+    <div class="system-status-bar">
+        <div class="status-left">
+            <span class="pulse-indicator"></span>
+            <span class="status-text">SYS_ACTIVE // TELEMETRY: ONLINE</span>
+        </div>
+        <div class="status-center"></div>
+        <div class="status-right">
+            <span class="lang-selector">
+                <button class="lang-btn active" data-lang="tr">TR</button>
+                <span class="lang-divider">//</span>
+                <button class="lang-btn" data-lang="en">ENG</button>
+            </span>
+            <span id="system-time">UTC: 00:00:00</span>
+        </div>
+    </div>
+
+    <!-- Sub-Page Navigation Header -->
+    <header class="project-nav-header">
+        <div class="main-container nav-header-inner">
+            <a href="index.html#projects" class="hud-btn secondary-btn back-btn">
+                <i data-lucide="arrow-left"></i>
+                <span data-translate="btn_back">ANA SAYFAYA DÖN</span>
+            </a>
+            <div class="nav-telemetry">
+                <span class="telemetry-badge" id="telemetry-id">// MISSION_FILE: LOADING...</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN PROJECT DETAIL CONTAINER -->
+    <main class="main-container project-detail-container">
+
+        <!-- PROJECT HERO BLOCK -->
+        <section class="project-detail-hero">
+            <div class="hero-badge-row">
+                <span class="project-cat-badge" id="project-category">DONANIM</span>
+                <span class="project-status-tag" id="project-status-tag">// STATUS: ACTIVE_FILE</span>
+            </div>
+            <h1 class="project-detail-title glow-text" id="project-title">YÜKLENİYOR...</h1>
+            <p class="project-detail-lead" id="project-summary">Proje özeti yükleniyor...</p>
+            
+            <div class="project-tags-row" id="project-tags">
+                <!-- Etiketler dinamik eklenecek -->
+            </div>
+        </section>
+
+        <!-- MEDIA & SPECS GRID -->
+        <section class="project-media-specs-grid">
+            <div class="project-main-image-wrap">
+                <div class="corner-t-l"></div>
+                <div class="corner-t-r"></div>
+                <div class="corner-b-l"></div>
+                <div class="corner-b-r"></div>
+                <img id="project-image" src="" alt="Project Image">
+                <div class="project-overlay-hud" id="project-img-hud">// TELEMETRY_STREAM_ACTIVE</div>
+            </div>
+
+            <div class="project-specs-panel">
+                <div class="corner-t-l"></div>
+                <div class="corner-b-r"></div>
+                <h3 class="panel-header-title">
+                    <i data-lucide="cpu"></i>
+                    <span data-translate="heading_specs">// TEKNİK ÖZELLİKLER & PARAMETRELER</span>
+                </h3>
+                <div class="specs-table" id="project-specs-table">
+                    <!-- Dinamik tablo -->
+                </div>
+            </div>
+        </section>
+
+        <!-- RICH TECHNICAL BREAKDOWN SECTIONS -->
+        <section class="project-rich-content">
+
+            <!-- 1. OVERVIEW & PURPOSE -->
+            <div class="detail-block">
+                <div class="corner-t-l"></div>
+                <h2 class="block-title">
+                    <i data-lucide="target"></i>
+                    <span data-translate="heading_overview">// 01. PROJE ÖZETİ VE MÜHENDİSLİK AMACI</span>
+                </h2>
+                <p id="project-overview" class="block-text">Yükleniyor...</p>
+            </div>
+
+            <!-- 2. ARCHITECTURE & WORKING LOGIC -->
+            <div class="detail-block">
+                <div class="corner-t-l"></div>
+                <h2 class="block-title">
+                    <i data-lucide="git-merge"></i>
+                    <span data-translate="heading_architecture">// 02. SİSTEM MİMARİSİ VE ÇALIŞMA PRENSİBİ</span>
+                </h2>
+                <p id="project-architecture" class="block-text">Yükleniyor...</p>
+            </div>
+
+            <!-- 3. SUBSYSTEMS GRID -->
+            <div class="detail-block">
+                <div class="corner-t-l"></div>
+                <h2 class="block-title">
+                    <i data-lucide="layers"></i>
+                    <span data-translate="heading_subsystems">// 03. ALT SİSTEMLER VE DONANIM/YAZILIM BİLEŞENLERİ</span>
+                </h2>
+                <div class="subsystems-grid" id="project-subsystems">
+                    <!-- Dinamik alt sistem kartları -->
+                </div>
+            </div>
+
+            <!-- 4. SIMULATION, TESTING & VERIFICATION -->
+            <div class="detail-block">
+                <div class="corner-t-l"></div>
+                <h2 class="block-title">
+                    <i data-lucide="activity"></i>
+                    <span data-translate="heading_analysis">// 04. TEST, SİMÜLASYON VE DOĞRULAMA</span>
+                </h2>
+                <p id="project-analysis" class="block-text">Yükleniyor...</p>
+            </div>
+
+            <!-- 5. ACHIEVEMENTS & AWARDS -->
+            <div class="detail-block achievement-highlight-block">
+                <div class="corner-t-l"></div>
+                <div class="corner-b-r"></div>
+                <h2 class="block-title">
+                    <i data-lucide="trophy"></i>
+                    <span data-translate="heading_achievements">// 05. BAŞARILAR, DERECELER VE ÇIKTILAR</span>
+                </h2>
+                <p id="project-achievements" class="block-text highlight-text">Yükleniyor...</p>
+            </div>
+
+        </section>
+
+        <!-- OTHER PROJECTS CAROUSEL / GRID -->
+        <section class="related-projects-section">
+            <div class="section-title-wrap">
+                <span class="section-tag">// OTHER_MISSIONS</span>
+                <h2 class="section-title" data-translate="heading_other_projects">DİĞER PROJELER</h2>
+            </div>
+            <div class="projects-grid" id="related-projects-container">
+                <!-- Diğer projeler dinamik doldurulacak -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Alt Bilgi / Footer -->
+    <footer class="hud-footer">
+        <p data-translate="footer_text">© 2026 // AHMET SONER GÜLEÇ</p>
+    </footer>
+
+    <!-- JS Bağımlılıkları -->
+    <script src="data.js?v=56"></script>
+    <script src="project.js?v=56"></script>
+    <script src="app.js?v=56"></script>
+</body>
+</html>
