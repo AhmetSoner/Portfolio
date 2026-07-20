@@ -49,7 +49,7 @@ const PORTFOLIO_DATA = {
       title: "Kurucu Ortak (Co-Founder)",
       company: "Tulpar Tharros Havacılık Topluluğu",
       duration: "Mart 2023 - Eylül 2024",
-      details: "Havacılık bilimi alanında teknik ve bilimsel araştırmalar yürütmek üzere kurulan topluluğun kurucu ortaklığı. Havacılık MRO sektörü için geliştirilen yapay zeka destekli yumuşak robot INFLOBOT projesinin yürütülmesi. TEKNOFEST Girişimcilik Yarışması'nda 'En İyi Girişim' ödülü ve THY Design Hackathon Finalistliği."
+      details: "Havacılık bakım, onarım ve revizyon (MRO) sektörüne yönelik yenilikçi çözümler üretmek amacıyla kurucu ortağı olduğum Tulpar Tharros ekibi bünyesinde, yapay zeka destekli yumuşak robot \"INFLOBOT\" projesini geliştirdim. İnsan erişiminin zor ve riskli olduğu dar/kapalı alanlardaki denetim verimliliğini artırmak amacıyla robotun 3D gövde tasarımını, elektrik altyapısını ve yazılımını üstlendim; özel aydınlatma ve donanım entegrasyonuyla bakım teknisyenlerine net görüş sağlayarak operasyonel hızı ve iş güvenliğini optimize ettim. Ekibimizin temelini oluşturan bu projeyle THY Design Hackathon'da finalist olduk. Ardından iş modelini ve teknik prototipi geliştirerek TEKNOFEST Girişimcilik Yarışması'nda \"En İyi Girişim\" ödülünü kazanıp kritik finansal destek elde ettik. Yakalanan ivmeyle aktif şirketleşme sürecini başlatarak Take Off İstanbul Uluslararası Girişimcilik Zirvesi'ne katıldım ve INFLOBOT'un havacılık sektöründe ticarileşmesi için stratejik B2B yatırımcı görüşmeleri yürüttüm."
     }
   ],
   projects: [
