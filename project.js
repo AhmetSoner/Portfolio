@@ -69,9 +69,27 @@ function loadProjectData(lang, projectId) {
         specsTable.appendChild(item);
     });
 
-    // Detay Metinleri (Overview, Architecture, Analysis, Achievements)
+    // Detay Metinleri (Overview, Scientific Merit, Architecture, Risk Management, Analysis, Achievements)
     document.getElementById("project-overview").innerHTML = proj.overview || proj.description;
+
+    const blockMerit = document.getElementById("block-scientific-merit");
+    if (proj.scientificMerit) {
+        document.getElementById("project-scientific-merit").innerHTML = proj.scientificMerit;
+        blockMerit.style.display = "block";
+    } else if (blockMerit) {
+        blockMerit.style.display = "none";
+    }
+
     document.getElementById("project-architecture").innerHTML = proj.architecture || proj.description;
+
+    const blockRisk = document.getElementById("block-risk-management");
+    if (proj.riskManagement) {
+        document.getElementById("project-risk-management").innerHTML = proj.riskManagement;
+        blockRisk.style.display = "block";
+    } else if (blockRisk) {
+        blockRisk.style.display = "none";
+    }
+
     document.getElementById("project-analysis").innerHTML = proj.analysis || "";
     document.getElementById("project-achievements").innerHTML = proj.achievements || "";
 
