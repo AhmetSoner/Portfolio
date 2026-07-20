@@ -41,6 +41,16 @@ function loadProjectData(lang, projectId) {
 
     // Başlık, Özet ve Görsel
     document.getElementById("project-title").textContent = proj.title;
+    const applicationNoEl = document.getElementById("project-application-no");
+    if (applicationNoEl) {
+        if (proj.applicationNo) {
+            applicationNoEl.textContent = `${lang === "tr" ? "Başvuru No" : "Application No"}: ${proj.applicationNo}`;
+            applicationNoEl.style.display = "inline-flex";
+        } else {
+            applicationNoEl.textContent = "";
+            applicationNoEl.style.display = "none";
+        }
+    }
     document.getElementById("project-summary").textContent = proj.summary;
     document.getElementById("project-image").src = proj.image;
     document.getElementById("project-image").alt = proj.title;

@@ -891,7 +891,8 @@ const UI_TRANSLATIONS = {
 (function enrichLiftUpProjectDetail() {
   const liftUpContent = {
     tr: {
-      summary: "Başvuru No: 68a5b97874a0f. TUSAŞ LIFT UP ve TÜBİTAK 2209-B kapsamında yürütülen bu araştırmada, muharip hava araçlarında Specific Range gibi kritik uçuş performans değerlerinin klasik arama tablosu ve interpolasyon yaklaşımıyla hesaplanması problemi yeniden ele alındı. F-18 AFM/handbook nomogramları U-Net tabanlı eğri segmentasyonu, OCR destekli eksen okuma ve veri temizleme hattıyla 54.620 satırlık yapısal bir veri setine dönüştürüldü. Aynı veri üzerinde kübik spline referansı, XGBoost ve FT-Transformer modelleri eğitilerek doğruluk, gecikme, bellek ayak izi ve gömülü sistem uygulanabilirliği açısından karşılaştırıldı.",
+      applicationNo: "68a5b97874a0f",
+      summary: "TUSAŞ LIFT UP ve TÜBİTAK 2209-B kapsamında yürütülen bu araştırmada, muharip hava araçlarında Specific Range gibi kritik uçuş performans değerlerinin klasik arama tablosu ve interpolasyon yaklaşımıyla hesaplanması problemi yeniden ele alındı. F-18 AFM/handbook nomogramları U-Net tabanlı eğri segmentasyonu, OCR destekli eksen okuma ve veri temizleme hattıyla 54.620 satırlık yapısal bir veri setine dönüştürüldü. Aynı veri üzerinde kübik spline referansı, XGBoost ve FT-Transformer modelleri eğitilerek doğruluk, gecikme, bellek ayak izi ve gömülü sistem uygulanabilirliği açısından karşılaştırıldı.",
       description: "Bu proje; analog uçuş performans grafiklerinden sayısal, öğrenilebilir ve gömülü sistemlerde çalıştırılabilir bir aviyonik performans tahmin altyapısı üretmeyi amaçlar. Çalışmada önce AFM nomogramlarından altitude, gross weight, drag index, Mach, fuel flow, engine type ve specific range değişkenleri çıkarıldı; ardından klasik 4 boyutlu kübik spline interpolasyon, XGBoost regresyonu ve FT-Transformer mimarisi aynı deney protokolü altında kıyaslandı.",
       tags: [
         "TUSAŞ LIFT UP",
@@ -1093,6 +1094,7 @@ Proje; TUSAŞ LIFT UP 2025-2026 ve TÜBİTAK 2209-B desteğiyle yürütülen, sa
 `
     },
     en: {
+      applicationNo: "68a5b97874a0f",
       summary: "This TUSAŞ LIFT UP and TÜBİTAK 2209-B research project revisits how combat-aircraft flight performance quantities such as Specific Range can be computed beyond classical lookup tables and interpolation. F-18 AFM/handbook nomograms were converted into a 54,620-row structured dataset through U-Net based curve segmentation, OCR-assisted axis parsing, and data cleaning. A cubic spline reference engine, XGBoost, and FT-Transformer were trained and compared across accuracy, latency, memory footprint, model size, and edge deployment feasibility.",
       description: "The project builds an end-to-end avionics performance modeling pipeline: analog AFM nomograms are digitized into altitude, gross weight, drag index, Mach, fuel flow, engine type, and specific range variables; then cubic spline interpolation, XGBoost regression, and FT-Transformer are benchmarked under the same protocol.",
       tags: [
