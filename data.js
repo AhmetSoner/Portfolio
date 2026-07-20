@@ -328,58 +328,71 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-6",
-            "title": "Muharip Uçaklarda Performans Hesaplama Algoritmaları ile Yapay Zeka Modellerinin Karşılaştırmalı Analizi ve Doğrulanması",
+            "title": "Muharip Hava Araçlarında Uçuş Performansı Veri Setinin Makine Öğrenmesi Yöntemleriyle Modellenmesi ve Kıyaslanması",
             "category": "gomulu",
-            "summary": "Milli Muharip Uçak KAAN görev bilgisayarı için uçuş el kitabı geleneksel hesaplama algoritmalarının Yapay Zeka (YSA & RL) modelleri ile modellenmesi ve karşılaştırmalı doğruluk analizi.",
-            "description": "TUSAŞ LIFT-UP Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında Milli Muharip Uçak KAAN platformu için geliştirilmiş yapay zeka tabanlı uçuş performans karşılaştırma ve modelleme projesidir. Uçak Uçuş El Kitabı (AFM) nomogramlarındaki geleneksel aerodinamik hesaplama yöntemleri ve algoritmaları PyTorch kullanılarak Yapay Sinir Ağları (YSA), Curve Fitting ve Pekiştirmeli Öğrenme (RL) modelleri ile ikame edilmiş; aviyonik görev bilgisayarı bellek/işlemci kısıtları altında geleneksel algoritmalarla karşılaştırmalı doğruluk analizleri gerçekleştirilmiştir.",
+            "summary": "TUSAŞ LIFT UP Programı kapsamında Milli Muharip Uçak (KAAN) aviyonik sistemleri için U-Net ve OCR ile dijitalleştirilen AFM nomogram verilerinden Kübik İnterpolasyon, XGBoost ve Tabular Transformer (FT-Transformer) modellerinin Raspberry Pi 3 hedef ortamındaki donanım ve doğruluk benchmark analizi.",
+            "description": "TUSAŞ (Türk Havacılık ve Uzay Sanayii A.Ş.) LIFT UP Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında yürütülen bu çalışmada, muharip hava araçlarında kritik uçuş performans parametrelerinin (Özgül Menzil, İrtifa, Mach Sayısı, Yakıt Akışı, Sürükleme İndeksi vb.) hesaplanmasında kullanılan geleneksel kübik interpolasyon arama tablosu yöntemi ile yapay zeka modelleri (XGBoost ve Tabular Transformer) doğrusal olmayan davranışlar, çıkarım hızı, bellek ayak izi ve işlemci yükü açısından karşılaştırılmıştır.",
             "image": "kaan.jpg",
             "tags": [
-                  "TUSAŞ LIFT-UP",
-                  "KAAN MMU",
-                  "PyTorch / YSA",
-                  "Pekiştirmeli Öğrenme",
-                  "Aviyonik Donanım"
+                  "TUSAŞ LIFT UP",
+                  "MMU KAAN",
+                  "Tabular Transformer",
+                  "XGBoost",
+                  "Raspberry Pi 3 Edge Benchmark",
+                  "U-Net / OCR"
             ],
             "specs": [
                   {
-                        "name": "Sponsor / Program",
-                        "value": "TUSAŞ LIFT-UP Sanayi Programı"
+                        "name": "Sanayi Danışmanı",
+                        "value": "Zeynel Abidin AYDOĞAN (TUSAŞ)"
                   },
                   {
-                        "name": "Hedef Platform",
-                        "value": "Milli Muharip Uçak (KAAN)"
+                        "name": "Akademik Danışman",
+                        "value": "Dr. Aziz KABA (ESTÜ Pilotaj)"
                   },
                   {
-                        "name": "Yapay Zeka Mimarisi",
-                        "value": "PyTorch YSA, Curve Fitting, RL"
+                        "name": "Proje Ekibi",
+                        "value": "Ahmet Soner GÜLEÇ, Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"
                   },
                   {
-                        "name": "Aviyonik Kısıtlar",
-                        "value": "Gerçek Zamanlı CPU & Bellek Optimizasyonu"
+                        "name": "En İyi Modeller",
+                        "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"
+                  },
+                  {
+                        "name": "Çıkarım Gecikmesi (p95)",
+                        "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"
+                  },
+                  {
+                        "name": "Hedef Donanım",
+                        "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"
                   }
             ],
-            "overview": "Milli Muharip Uçak KAAN'ın görev bilgisayarı üzerinde gerçek zamanlı uçuş performans hesaplamalarını hızlandırmak ve pilot karar destek sistemlerini beslemek amacıyla yürütülen TUSAŞ LIFT-UP sanayi odaklı araştırma projesidir.",
-            "architecture": "Uçak Uçuş El Kitabı (AFM) nomogram grafiklerinden elde edilen aerodinamik ve itki verileri dijitalleştirilmiştir. PyTorch altyapısı üzerinde Yapay Sinir Ağları (YSA), Curve Fitting ve Pekiştirmeli Öğrenme (Reinforcement Learning) modelleri eğitilerek aviyonik görev bilgisayarı bellek kısıtlarına uygun hafifletilmiş (lightweight) çıkarım motoru oluşturulmuştur.",
+            "overview": "Muharip hava araçlarında görev başarısı; farklı irtifa, hız, ağırlık ve sürükleme koşullarında uçuş performansının (özellikle Özgül Menzil / Specific Range) milisaniye hassasiyetinde hesaplanmasına bağlıdır. Geleneksel Arama Tablosu (Lookup Table) yöntemleri deterministik ve açıklanabilirdir; ancak çok boyutlu değişken uzayında tablo çözünürlüğü arttıkça bellek ihtiyacı katlanarak yükselir. Bu projede, U-Net evrişimli sinir ağı ve OCR (Optik Karakter Tanıma) boru hattı ile AFM grafiklerinden elde edilen master veri seti üzerinde Kübik İnterpolasyon referans yöntemi, XGBoost ve Tabular Transformer (FT-Transformer) modelleri eğitilmiş ve Raspberry Pi 3 gömülü hedef ortamında kapsamlı benchmark testlerine tabi tutulmuştur.",
+            "architecture": "Veri Toplama Pipeline'ı: U-Net mimarisi ile AFM grafik görüntülerindeki hedef eğriler piksel düzeyinde ayrıştırılmış, OCR entegrasyonu ile eksen sayısal etiketleri okunmuştur. 5 boyutlu girdi uzayı (Mach sayısı, irtifa, brüt ağırlık, sürükleme indeksi, motor konfigürasyonu) oluşturulmuştur.\n\nModelleme Yaklaşımları:\n1. Referans Yöntem (Kübik İnterpolasyon): 3. derece yumuşak spline polinomları ile deterministik tablo ara değer üretimi.\n2. XGBoost (Gradient Boosting): Karar ağaçlarının toplamsal bileşimi ile çok değişkenli doğrusal olmayan regresyon tahmini.\n3. FT-Transformer (Tabular Deep Learning): Özelliklerin Feature Tokenizer ile vektörleştirilip Multi-Head Self-Attention (Çok Başlıklı Öz-Dikkat) mekanizması ile kolonlar arası ilişkilerinin öğrenilmesi.",
             "subsystems": [
                   {
-                        "title": "AFM Data Digitization Engine",
-                        "desc": "Uçuş El Kitabı performans nomogramlarının yüksek doğrulukla veri kümesine dönüştürülmesi."
+                        "title": "U-Net & OCR Digitization Pipeline",
+                        "desc": "AFM grafiklerinden piksellerin U-Net ile segmentasyonu ve OCR ile sayısal eksen okunmasıyla %2 sapma sınırında master veri seti üretimi."
                   },
                   {
-                        "title": "PyTorch ANN Core",
-                        "desc": "Sürtünme, irtifa, tırmanma oranı ve yakıt tüketimini gerçek zamanlı kestiren derin sinir ağı."
+                        "title": "Cubic Interpolation Engine",
+                        "desc": "Deterministik, açıklanabilir ve türev sürekliliğine sahip 3. derece spline tablo referans hesaplama altyapısı."
                   },
                   {
-                        "title": "RL Mission Optimizer",
-                        "desc": "Optimum irtifa ve seyir hızı profilini dinamik olarak öneren pekiştirmeli öğrenme ajanı."
+                        "title": "XGBoost Regression Model",
+                        "desc": "En yüksek doğruluk (RMSE: 0.003468, MAE: 0.001372, MAPE: %1.560, R² > 0.99) üreten ve 2.30 ms p95 gecikmeyle çalışan birincil deploy modeli."
                   },
                   {
-                        "title": "Avionics Constraint Benchmarking",
-                        "desc": "Görev bilgisayarı işlemci (CPU) ve RAM yükünün milisaniye hassasiyetinde ölçümlenmesi."
+                        "title": "FT-Transformer Deep Architecture",
+                        "desc": "Sayısal ve kategorik değişkenleri ortak token temsil uzayına taşıyarak öz-dikkat (Self-Attention) mekanizması koşan ileri seviye tabular derin öğrenme modeli."
+                  },
+                  {
+                        "title": "Raspberry Pi 3 Edge Benchmark Suite",
+                        "desc": "ARM Cortex-A53 işlemci üzerinde p50/p95 çıkarım süresi, Peak RSS bellek kullanımı ve CPU yükü ölçümleyen donanım farkındalıklı test yazılımı."
                   }
             ],
-            "analysis": "Derin sinir ağı ve Curve Fitting modellerinin doğruluk oranları karşılaştırılmış, aviyonik gömülü donanım üzerinde bellek ayak izi ve işlem süresi 5 ms'nin altına indirilerek gerçek zamanlı uçuş koşulları doğrulanmıştır.",
-            "achievements": "TUSAŞ LIFT-UP Programı kapsamında başarıyla tamamlanmış, TUSAŞ akademisyen ve mühendisler kuruluna sunularak yüksek başarı notu ve sanayi tescili almıştır."
+            "analysis": "Raspberry Pi 3 Hedef Ortam Benchmark Analizi:\n\n• XGBoost: RMSE = 0.003468, MAE = 0.001372, MAPE = %1.560 | p95 Gecikme = 2.30 ms | Peak RAM = 185.2 MiB | Bütünleşik Fit Score = 81.5 (EN YÜKSEK SKOR)\n• FT-Transformer: RMSE = 0.003671, MAE = 0.002044, MAPE = %2.888 | p95 Gecikme = 3.05 ms | Model Boyutu = 0.42 MB | Peak RAM = 482.1 MiB | Fit Score = 77.6\n• Kübik İnterpolasyon: p95 Gecikme = 6.78 ms | Peak RAM = 166.5 MiB (En Düşük RAM) | CPU Avg = %355 | Fit Score = 74.0",
+            "achievements": "TUSAŞ LIFT UP 2025-2026 Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında desteklenmiş; TUSAŞ Havacılık Mühendisliği Sanayi Danışmanı Zeynel Abidin AYDOĞAN ve ESTÜ Pilotaj Akademik Danışmanı Dr. Aziz KABA kuruluna başarıyla sunulmuştur. Bildiri ve makale olarak yayınlanmış, yerli ve milli aviyonik yazılım yetkinliklerine doğrudan katkı sunmuştur."
       }
 ],
   },
@@ -712,58 +725,71 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-6",
-            "title": "Comparative Analysis & Verification of Traditional Calculation Algorithms vs. AI Models in Combat Aircraft",
+            "title": "Modeling and Comparing the Performance Dataset of a Combat Aircraft Using Machine Learning Methods",
             "category": "gomulu",
-            "summary": "Modeling Flight Manual traditional performance calculation algorithms using AI (ANN & RL) models for National Combat Aircraft KAAN mission computer and comparative accuracy verification.",
-            "description": "An AI-based flight performance modeling and benchmarking project developed for the National Combat Aircraft KAAN platform within the TUSAŞ LIFT-UP Industry Program. Traditional calculation methods and algorithms from Aircraft Flight Manual (AFM) nomograms were modeled using PyTorch with Artificial Neural Networks (ANN), Curve Fitting, and Reinforcement Learning (RL) models, followed by comparative accuracy analysis under avionics mission computer memory and processor constraints.",
+            "summary": "Hardware and accuracy benchmark analysis of Cubic Interpolation, XGBoost, and Tabular Transformer (FT-Transformer) models on Raspberry Pi 3 edge deployment for National Combat Aircraft (KAAN) avionics systems digitized via U-Net & OCR under the TUSAŞ LIFT UP Program.",
+            "description": "In this study conducted within the TUSAŞ (Turkish Aerospace Industries) LIFT UP Industry-Oriented Graduation Project Program, traditional cubic interpolation lookup table methods used for computing critical flight performance parameters (Specific Range, Altitude, Mach Number, Fuel Flow, Drag Index) in combat aircraft were benchmarked against machine learning models (XGBoost and Tabular Transformer) in terms of non-linear accuracy, inference latency, memory footprint, and CPU utilization.",
             "image": "kaan.jpg",
             "tags": [
-                  "TUSAŞ LIFT-UP",
-                  "KAAN MMU",
-                  "PyTorch / ANN",
-                  "Reinforcement Learning",
-                  "Avionics Hardware"
+                  "TUSAŞ LIFT UP",
+                  "MMU KAAN",
+                  "Tabular Transformer",
+                  "XGBoost",
+                  "Raspberry Pi 3 Edge Benchmark",
+                  "U-Net / OCR"
             ],
             "specs": [
                   {
-                        "name": "Sponsor / Program",
-                        "value": "TUSAŞ LIFT-UP Industry Program"
+                        "name": "Industry Advisor",
+                        "value": "Zeynel Abidin AYDOĞAN (TUSAŞ)"
                   },
                   {
-                        "name": "Target Platform",
-                        "value": "National Combat Aircraft (KAAN)"
+                        "name": "Academic Advisor",
+                        "value": "Dr. Aziz KABA (ESTÜ Pilotage)"
                   },
                   {
-                        "name": "AI Architecture",
-                        "value": "PyTorch ANN, Curve Fitting, RL"
+                        "name": "Project Team",
+                        "value": "Ahmet Soner GÜLEÇ, Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL"
                   },
                   {
-                        "name": "Avionics Constraints",
-                        "value": "Real-time CPU & Memory Optimization"
+                        "name": "Best Models",
+                        "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"
+                  },
+                  {
+                        "name": "Inference Latency (p95)",
+                        "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"
+                  },
+                  {
+                        "name": "Target Hardware",
+                        "value": "Raspberry Pi 3 (ARM Cortex-A53, 1GB RAM Edge)"
                   }
             ],
-            "overview": "An industry-oriented research project under TUSAŞ LIFT-UP aimed at accelerating real-time flight performance calculations on the mission computer of the National Combat Aircraft KAAN and feeding pilot decision support systems.",
-            "architecture": "Aerodynamic and thrust data extracted from Aircraft Flight Manual (AFM) nomogram graphs were digitized. Artificial Neural Networks (ANN), Curve Fitting, and Reinforcement Learning (RL) models trained in PyTorch were compiled into a lightweight inference engine matching avionics mission computer memory constraints.",
+            "overview": "Mission success in combat aircraft relies on computing flight performance (especially Specific Range) within millisecond precision across diverse altitude, speed, weight, and drag conditions. Traditional Lookup Table methods are deterministic and explainable; however, memory requirements scale exponentially with multi-dimensional table resolution. In this project, Cubic Interpolation reference baseline, XGBoost, and Tabular Transformer (FT-Transformer) models were trained on a master dataset extracted from AFM graphs via U-Net convolutional segmentation & OCR, followed by rigorous edge hardware benchmarking on a Raspberry Pi 3 deployment target.",
+            "architecture": "Data Digitization Pipeline: U-Net architecture segmented target curves from AFM graphs at pixel precision, integrated with OCR to read numerical axis labels, building a 5-dimensional input space (Mach Number, Altitude, Gross Weight, Drag Index, Engine Config).\n\nModeling Approaches:\n1. Reference Baseline (Cubic Interpolation): Deterministic 3rd-degree smooth spline interpolation for lookup table interpolation.\n2. XGBoost (Gradient Boosting): Multi-variable non-linear regression using an ensemble of decision trees.\n3. FT-Transformer (Tabular Deep Learning): Feature Tokenizer mapping numerical & categorical variables into token representations processed via Multi-Head Self-Attention layers.",
             "subsystems": [
                   {
-                        "title": "AFM Data Digitization Engine",
-                        "desc": "High-accuracy dataset conversion of Flight Manual performance nomograms."
+                        "title": "U-Net & OCR Digitization Pipeline",
+                        "desc": "Pixel-level curve segmentation via U-Net and numerical axis parsing via OCR producing master datasets within a 2% error threshold."
                   },
                   {
-                        "title": "PyTorch ANN Core",
-                        "desc": "Deep neural network predicting drag, altitude, climb rate, and fuel consumption in real time."
+                        "title": "Cubic Interpolation Engine",
+                        "desc": "Deterministic, explainable, and derivative-continuous 3rd-degree spline lookup table reference infrastructure."
                   },
                   {
-                        "title": "RL Mission Optimizer",
-                        "desc": "Reinforcement learning agent dynamically proposing optimal altitude and cruise speed profiles."
+                        "title": "XGBoost Regression Model",
+                        "desc": "Primary deployment model producing top accuracy (RMSE: 0.003468, MAE: 0.001372, MAPE: 1.560%, R² > 0.99) operating at 2.30 ms p95 latency."
                   },
                   {
-                        "title": "Avionics Constraint Benchmarking",
-                        "desc": "Millisecond-precision benchmarking of CPU and RAM utilization on avionics mission computer."
+                        "title": "FT-Transformer Deep Architecture",
+                        "desc": "Advanced tabular deep learning model projecting continuous and categorical inputs into a shared token space using Self-Attention mechanisms."
+                  },
+                  {
+                        "title": "Raspberry Pi 3 Edge Benchmark Suite",
+                        "desc": "Hardware-aware benchmarking measuring p50/p95 inference latency, Peak RSS RAM memory footprint, and CPU load on ARM Cortex-A53."
                   }
             ],
-            "analysis": "Accuracy rates of ANN and Curve Fitting models were benchmarked, reducing memory footprint and processing latency to under 5 ms on embedded avionics hardware for real-time flight validation.",
-            "achievements": "Successfully completed under the TUSAŞ LIFT-UP Program, evaluated and presented before the TUSAŞ academic & engineering board with high honors and industry accreditation."
+            "analysis": "Raspberry Pi 3 Target Hardware Benchmark Analysis:\n\n• XGBoost: RMSE = 0.003468, MAE = 0.001372, MAPE = 1.560% | p95 Latency = 2.30 ms | Peak RAM = 185.2 MiB | Integrated Fit Score = 81.5 (TOP SCORE)\n• FT-Transformer: RMSE = 0.003671, MAE = 0.002044, MAPE = 2.888% | p95 Latency = 3.05 ms | Model Size = 0.42 MB | Peak RAM = 482.1 MiB | Fit Score = 77.6\n• Cubic Interpolation: p95 Latency = 6.78 ms | Peak RAM = 166.5 MiB (Lowest RAM) | CPU Avg = 355% | Fit Score = 74.0",
+            "achievements": "Supported under TUSAŞ LIFT UP 2025-2026 Program; successfully presented to Industry Advisor Zeynel Abidin AYDOĞAN (TUSAŞ) and Academic Advisor Dr. Aziz KABA (ESTÜ Pilotage). Published as paper & proceedings, directly advancing national avionics software capabilities."
       }
 ],
   }
