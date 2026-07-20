@@ -70,10 +70,10 @@ function loadProjectData(lang, projectId) {
     });
 
     // Detay Metinleri (Overview, Architecture, Analysis, Achievements)
-    document.getElementById("project-overview").textContent = proj.overview || proj.description;
-    document.getElementById("project-architecture").textContent = proj.architecture || proj.description;
-    document.getElementById("project-analysis").textContent = proj.analysis || "";
-    document.getElementById("project-achievements").textContent = proj.achievements || "";
+    document.getElementById("project-overview").innerHTML = proj.overview || proj.description;
+    document.getElementById("project-architecture").innerHTML = proj.architecture || proj.description;
+    document.getElementById("project-analysis").innerHTML = proj.analysis || "";
+    document.getElementById("project-achievements").innerHTML = proj.achievements || "";
 
     // Alt Sistemler Kartları (Subsystems Grid)
     const subsystemsContainer = document.getElementById("project-subsystems");
