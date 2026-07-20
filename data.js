@@ -325,6 +325,61 @@ const PORTFOLIO_DATA = {
             ],
             "analysis": "Dar yakıt tankı mockup'ları içinde manevra kabiliyeti ve çatlak tespit hassasiyeti test edilmiş, geleneksel muayene süresi %65 kısaltılmıştır.",
             "achievements": "TEKNOFEST Girişimcilik Yarışması'nda 'En İyi Girişim' Ödülü kazanılmış, THY Design Hackathon'da finalist olunmuş ve Take Off İstanbul Uluslararası Girişim Zirvesi'nde sergilenmiştir."
+      },
+      {
+            "id": "project-6",
+            "title": "TUSAŞ LIFT-UP: MMU KAAN Görev Bilgisayarı Yapay Zeka Entegrasyonu",
+            "category": "gomulu",
+            "summary": "Milli Muharip Uçak KAAN görev bilgisayarı için uçuş performans verilerinin YSA ve Pekiştirmeli Öğrenme ile modellenmesi projesi.",
+            "description": "TUSAŞ LIFT-UP Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında Milli Muharip Uçak KAAN platformu için geliştirilmiş yapay zeka tabanlı uçuş performans modelleme projesidir. Uçak Uçuş El Kitabı (AFM) nomogram verileri PyTorch kullanılarak Yapay Sinir Ağları (YSA), Curve Fitting ve Pekiştirmeli Öğrenme (RL) algoritmaları ile modellenmiş; aviyonik donanım bellek ve işlemci kısıtları altında doğrulanmıştır.",
+            "image": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "TUSAŞ LIFT-UP",
+                  "KAAN MMU",
+                  "PyTorch / YSA",
+                  "Pekiştirmeli Öğrenme",
+                  "Aviyonik Donanım"
+            ],
+            "specs": [
+                  {
+                        "name": "Sponsor / Program",
+                        "value": "TUSAŞ LIFT-UP Sanayi Programı"
+                  },
+                  {
+                        "name": "Hedef Platform",
+                        "value": "Milli Muharip Uçak (KAAN)"
+                  },
+                  {
+                        "name": "Yapay Zeka Mimarisi",
+                        "value": "PyTorch YSA, Curve Fitting, RL"
+                  },
+                  {
+                        "name": "Aviyonik Kısıtlar",
+                        "value": "Gerçek Zamanlı CPU & Bellek Optimizasyonu"
+                  }
+            ],
+            "overview": "Milli Muharip Uçak KAAN'ın görev bilgisayarı üzerinde gerçek zamanlı uçuş performans hesaplamalarını hızlandırmak ve pilot karar destek sistemlerini beslemek amacıyla yürütülen TUSAŞ LIFT-UP sanayi odaklı araştırma projesidir.",
+            "architecture": "Uçak Uçuş El Kitabı (AFM) nomogram grafiklerinden elde edilen aerodinamik ve itki verileri dijitalleştirilmiştir. PyTorch altyapısı üzerinde Yapay Sinir Ağları (YSA), Curve Fitting ve Pekiştirmeli Öğrenme (Reinforcement Learning) modelleri eğitilerek aviyonik görev bilgisayarı bellek kısıtlarına uygun hafifletilmiş (lightweight) çıkarım motoru oluşturulmuştur.",
+            "subsystems": [
+                  {
+                        "title": "AFM Data Digitization Engine",
+                        "desc": "Uçuş El Kitabı performans nomogramlarının yüksek doğrulukla veri kümesine dönüştürülmesi."
+                  },
+                  {
+                        "title": "PyTorch ANN Core",
+                        "desc": "Sürtünme, irtifa, tırmanma oranı ve yakıt tüketimini gerçek zamanlı kestiren derin sinir ağı."
+                  },
+                  {
+                        "title": "RL Mission Optimizer",
+                        "desc": "Optimum irtifa ve seyir hızı profilini dinamik olarak öneren pekiştirmeli öğrenme ajanı."
+                  },
+                  {
+                        "title": "Avionics Constraint Benchmarking",
+                        "desc": "Görev bilgisayarı işlemci (CPU) ve RAM yükünün milisaniye hassasiyetinde ölçümlenmesi."
+                  }
+            ],
+            "analysis": "Derin sinir ağı ve Curve Fitting modellerinin doğruluk oranları karşılaştırılmış, aviyonik gömülü donanım üzerinde bellek ayak izi ve işlem süresi 5 ms'nin altına indirilerek gerçek zamanlı uçuş koşulları doğrulanmıştır.",
+            "achievements": "TUSAŞ LIFT-UP Programı kapsamında başarıyla tamamlanmış, TUSAŞ akademisyen ve mühendisler kuruluna sunularak yüksek başarı notu ve sanayi tescili almıştır."
       }
 ],
   },
@@ -654,6 +709,61 @@ const PORTFOLIO_DATA = {
             ],
             "analysis": "Tested maneuverability and crack detection sensitivity within aircraft fuel tank mockups, reducing traditional inspection duration by 65%.",
             "achievements": "Won 'Best Startup' Award in TEKNOFEST Entrepreneurship Competition, finalist in THY Design Hackathon, and exhibited at Take Off Istanbul Summit."
+      },
+      {
+            "id": "project-6",
+            "title": "TUSAŞ LIFT-UP: MMU KAAN Mission Computer AI Integration",
+            "category": "gomulu",
+            "summary": "Modeling flight performance data for National Combat Aircraft KAAN mission computer using ANN and Reinforcement Learning.",
+            "description": "An AI-based flight performance modeling project developed for the National Combat Aircraft KAAN platform within the TUSAŞ LIFT-UP Industry-Oriented Graduation Project Program. Aircraft Flight Manual (AFM) nomogram data were modeled using PyTorch with Artificial Neural Networks (ANN), Curve Fitting, and Reinforcement Learning (RL) algorithms, validated under avionics hardware memory and processor constraints.",
+            "image": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&q=80&w=600",
+            "tags": [
+                  "TUSAŞ LIFT-UP",
+                  "KAAN MMU",
+                  "PyTorch / ANN",
+                  "Reinforcement Learning",
+                  "Avionics Hardware"
+            ],
+            "specs": [
+                  {
+                        "name": "Sponsor / Program",
+                        "value": "TUSAŞ LIFT-UP Industry Program"
+                  },
+                  {
+                        "name": "Target Platform",
+                        "value": "National Combat Aircraft (KAAN)"
+                  },
+                  {
+                        "name": "AI Architecture",
+                        "value": "PyTorch ANN, Curve Fitting, RL"
+                  },
+                  {
+                        "name": "Avionics Constraints",
+                        "value": "Real-time CPU & Memory Optimization"
+                  }
+            ],
+            "overview": "An industry-oriented research project under TUSAŞ LIFT-UP aimed at accelerating real-time flight performance calculations on the mission computer of the National Combat Aircraft KAAN and feeding pilot decision support systems.",
+            "architecture": "Aerodynamic and thrust data extracted from Aircraft Flight Manual (AFM) nomogram graphs were digitized. Artificial Neural Networks (ANN), Curve Fitting, and Reinforcement Learning (RL) models trained in PyTorch were compiled into a lightweight inference engine matching avionics mission computer memory constraints.",
+            "subsystems": [
+                  {
+                        "title": "AFM Data Digitization Engine",
+                        "desc": "High-accuracy dataset conversion of Flight Manual performance nomograms."
+                  },
+                  {
+                        "title": "PyTorch ANN Core",
+                        "desc": "Deep neural network predicting drag, altitude, climb rate, and fuel consumption in real time."
+                  },
+                  {
+                        "title": "RL Mission Optimizer",
+                        "desc": "Reinforcement learning agent dynamically proposing optimal altitude and cruise speed profiles."
+                  },
+                  {
+                        "title": "Avionics Constraint Benchmarking",
+                        "desc": "Millisecond-precision benchmarking of CPU and RAM utilization on avionics mission computer."
+                  }
+            ],
+            "analysis": "Accuracy rates of ANN and Curve Fitting models were benchmarked, reducing memory footprint and processing latency to under 5 ms on embedded avionics hardware for real-time flight validation.",
+            "achievements": "Successfully completed under the TUSAŞ LIFT-UP Program, evaluated and presented before the TUSAŞ academic & engineering board with high honors and industry accreditation."
       }
 ],
   }
