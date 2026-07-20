@@ -1809,6 +1809,43 @@ section {
     padding: 10px;
 }
 
+.project-figure-grid.inline-figure-flow {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    margin: 14px auto 22px;
+}
+
+.project-figure-grid.inline-figure-flow .project-figure-card img {
+    max-height: 340px;
+    object-fit: contain;
+}
+
+.method-subtitle {
+    display: inline-block;
+    margin: 18px 0 8px;
+    color: var(--primary);
+    font-family: var(--font-header);
+    font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+    letter-spacing: 0.02em;
+}
+
+.formula-block {
+    width: min(100%, 720px);
+    margin: 14px auto 22px;
+    padding: 14px 18px;
+    border-left: 3px solid var(--primary);
+    background: rgba(0, 240, 255, 0.055);
+    color: #e9fbff;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: clamp(0.92rem, 1.5vw, 1.08rem);
+    line-height: 1.55;
+    overflow-x: auto;
+}
+
+.formula-block span {
+    white-space: nowrap;
+}
+
 .project-figure-card {
     margin: 0;
     border: 0;
