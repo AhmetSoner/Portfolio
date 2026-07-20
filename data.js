@@ -321,7 +321,7 @@ const UI_TRANSLATIONS = {
     form_email: "E-POSTA ADRESİ",
     form_message: "MESAJINIZ (SİNYAL)",
     form_send: "SİNYALİ GÖNDER",
-    footer_text: "© 2026 // KULLANICI PORTFOLYO TASARIMI. TÜM SİSTEMLER AKTİF.",
+    footer_text: "© 2026 // AHMET SONER GÜLEÇ. TÜM SİSTEMLER AKTİF.",
     modal_specs: "// TEKNİK ÖZELLİKLER",
     modal_close: "Kapat"
   },
@@ -368,7 +368,7 @@ const UI_TRANSLATIONS = {
     form_email: "YOUR E-MAIL ADDRESS",
     form_message: "YOUR MESSAGE (SIGNAL)",
     form_send: "SEND SIGNAL",
-    footer_text: "© 2026 // USER PORTFOLIO DESIGN. ALL SYSTEMS ACTIVE.",
+    footer_text: "© 2026 // AHMET SONER GULEC. ALL SYSTEMS ACTIVE.",
     modal_specs: "// TECHNICAL SPECIFICATIONS",
     modal_close: "Close"
   }
