@@ -99,6 +99,17 @@ body {
     opacity: 0.15;
 }
 
+#margin-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 1;
+}
+
 .hud-grid-overlay {
     position: fixed;
     top: 0;

@@ -64,6 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 7. Estetik Havacılık Geometrik Animasyon (Plexus/Constellation)
     initAestheticAnimation();
+
+    // 8. Sol/Sağ Kenar Plexus Animasyonu (Bağımsız Canvas)
+    initMarginAnimation();
 });
 
 /* ==========================================================================
@@ -173,54 +176,14 @@ function initRadarCanvas() {
     let width = canvas.width = window.innerWidth;
     let height = canvas.height = window.innerHeight;
 
-    // Yan boşluklar için Plexus (Parçacık) verisi
-    const sideParticles = [];
-    const particleCount = 14; // Her bir kenar için parçacık sayısı
-
-    function initSideParticles() {
-        sideParticles.length = 0;
-        const marginWidth = Math.max(80, (window.innerWidth - 1200) / 2);
-        const w = window.innerWidth;
-        const h = window.innerHeight;
-
-        // Sol taraf parçacıkları
-        for (let i = 0; i < particleCount; i++) {
-            sideParticles.push({
-                x: Math.random() * marginWidth,
-                y: Math.random() * h,
-                vx: (Math.random() - 0.5) * 0.4,
-                vy: (Math.random() - 0.5) * 0.4,
-                radius: Math.random() * 2 + 1,
-                side: 'left'
-            });
-        }
-
-        // Sağ taraf parçacıkları
-        for (let i = 0; i < particleCount; i++) {
-            sideParticles.push({
-                x: w - (Math.random() * marginWidth),
-                y: Math.random() * h,
-                vx: (Math.random() - 0.5) * 0.4,
-                vy: (Math.random() - 0.5) * 0.4,
-                radius: Math.random() * 2 + 1,
-                side: 'right'
-            });
-        }
-    }
-
-    // İlk yüklemede parçacıkları oluştur
-    initSideParticles();
-
     window.addEventListener("resize", () => {
         width = canvas.width = window.innerWidth;
         height = canvas.height = window.innerHeight;
-        initSideParticles();
     });
 
     // Radar Parametreleri
     let angle = 0;
     const radarColor = "rgba(0, 240, 255, 0.15)";
-    const sweepColor = "rgba(0, 240, 255, 0.08)";
     
     // Sabit radar hedefleri (Uçan "blip"ler)
     const targets = [
@@ -232,7 +195,6 @@ function initRadarCanvas() {
     function drawRadar() {
         ctx.clearRect(0, 0, width, height);
 
-        // Ekranın tam ortasını radar merkezi yapalım
         const centerX = width / 2;
         const centerY = height / 2;
         const maxRadius = Math.max(width, height) * 0.6;
@@ -240,19 +202,17 @@ function initRadarCanvas() {
         ctx.strokeStyle = radarColor;
         ctx.lineWidth = 1;
 
-        // 1. Konsantrik Radar Halkalarını Çiz
+        // 1. Konsantrik Radar Halkaları
         for (let r = 100; r < maxRadius; r += 150) {
             ctx.beginPath();
             ctx.arc(centerX, centerY, r, 0, Math.PI * 2);
             ctx.stroke();
-            
-            // Halka Mesafe Metinleri (HUD stili)
             ctx.fillStyle = "rgba(0, 240, 255, 0.2)";
             ctx.font = "9px Orbitron";
             ctx.fillText(`R_${Math.round(r)}KM`, centerX + r + 5, centerY - 5);
         }
 
-        // 2. Çapraz Eksen Çizgilerini Çiz
+        // 2. Çapraz Eksen Çizgileri
         ctx.beginPath();
         ctx.moveTo(centerX - maxRadius, centerY);
         ctx.lineTo(centerX + maxRadius, centerY);
@@ -260,7 +220,7 @@ function initRadarCanvas() {
         ctx.lineTo(centerX, centerY + maxRadius);
         ctx.stroke();
 
-        // 3. Radar Dönen Tarama Hattını Çiz (Sweeper)
+        // 3. Radar Dönen Tarama Hattı
         const sweepGradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, maxRadius);
         sweepGradient.addColorStop(0, "rgba(0, 240, 255, 0.05)");
         sweepGradient.addColorStop(1, "transparent");
@@ -268,12 +228,10 @@ function initRadarCanvas() {
         ctx.fillStyle = sweepGradient;
         ctx.beginPath();
         ctx.moveTo(centerX, centerY);
-        // Tarama hattının arka ucunu oluşturmak için yelpaze çizelim
         ctx.arc(centerX, centerY, maxRadius, angle, angle + 0.3);
         ctx.lineTo(centerX, centerY);
         ctx.fill();
 
-        // Taramayı gösteren parlak ön çizgi
         ctx.strokeStyle = "rgba(0, 240, 255, 0.4)";
         ctx.lineWidth = 2;
         ctx.beginPath();
@@ -284,33 +242,27 @@ function initRadarCanvas() {
         );
         ctx.stroke();
 
-        // 4. Hedefleri (Blip) Güncelle ve Çiz
+        // 4. Hedef Blip'leri
         targets.forEach(t => {
-            // Hedefleri dairesel rotada yavaşça hareket ettirelim
             t.angleOffset += t.speed;
             t.x = centerX + Math.cos(t.angleOffset) * (maxRadius * 0.4);
             t.y = centerY + Math.sin(t.angleOffset) * (maxRadius * 0.4);
 
-            // Sweeper hattının hedefin üzerinden geçip geçmediğini hesaplayalım
             const dx = t.x - centerX;
             const dy = t.y - centerY;
             const targetAngle = Math.atan2(dy, dx);
             
-            // Açıları pozitif aralığa normalize edelim (0 - 2PI)
             let diff = (angle + 0.3 - targetAngle) % (Math.PI * 2);
             if (diff < 0) diff += Math.PI * 2;
 
-            // Eğer tarama çizgisi hedefin yakınındaysa, hedefi parlat
             if (diff < 0.3) {
                 t.alpha = 1.0;
             } else {
-                // Zamanla solma efekti
                 t.alpha -= 0.01;
                 if (t.alpha < 0) t.alpha = 0;
             }
 
             if (t.alpha > 0) {
-                // Hedef Blip
                 ctx.fillStyle = `rgba(0, 240, 255, ${t.alpha})`;
                 ctx.shadowColor = "rgba(0, 240, 255, 0.8)";
                 ctx.shadowBlur = 15;
@@ -318,13 +270,11 @@ function initRadarCanvas() {
                 ctx.arc(t.x, t.y, t.size, 0, Math.PI * 2);
                 ctx.fill();
                 
-                // Hedef Kare Çerçeve
                 ctx.strokeStyle = `rgba(57, 255, 20, ${t.alpha * 0.7})`;
                 ctx.lineWidth = 1;
                 ctx.shadowBlur = 0;
                 ctx.strokeRect(t.x - t.size - 4, t.y - t.size - 4, t.size * 2 + 8, t.size * 2 + 8);
                 
-                // Hedef Bilgisi Yazısı
                 ctx.fillStyle = `rgba(57, 255, 20, ${t.alpha})`;
                 ctx.font = "8px Orbitron";
                 ctx.fillText(`TRGT_0${targets.indexOf(t) + 1}`, t.x + t.size + 8, t.y - 4);
@@ -332,59 +282,6 @@ function initRadarCanvas() {
             }
         });
 
-        // 5. Yan Boşluklar İçin Plexus (Parçacık & Bağ) Animasyonu
-        const marginWidth = (width - 1200) / 2;
-        if (width > 800 && marginWidth > 50) {
-            ctx.save();
-            ctx.lineWidth = 0.6;
-
-            // Parçacıkları güncelle ve çiz
-            sideParticles.forEach((p, index) => {
-                // Pozisyon güncelleme
-                p.x += p.vx;
-                p.y += p.vy;
-
-                // Sınır kontrolü (kendi kenar boşluğunda kalması için) ve kelepçeleme
-                if (p.side === 'left') {
-                    if (p.x < 0) { p.x = 0; p.vx *= -1; }
-                    if (p.x > marginWidth) { p.x = marginWidth; p.vx *= -1; }
-                } else {
-                    if (p.x < width - marginWidth) { p.x = width - marginWidth; p.vx *= -1; }
-                    if (p.x > width) { p.x = width; p.vx *= -1; }
-                }
-                
-                if (p.y < 0) { p.y = 0; p.vy *= -1; }
-                if (p.y > height) { p.y = height; p.vy *= -1; }
-
-                // Parçacık noktasını çiz
-                ctx.fillStyle = "rgba(0, 240, 255, 0.7)";
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fill();
-
-                // Diğer parçacıklarla yakınlık çizgilerini çiz
-                for (let j = index + 1; j < sideParticles.length; j++) {
-                    const p2 = sideParticles[j];
-                    if (p.side !== p2.side) continue; // Farklı taraftakileri bağlama
-
-                    const dx = p2.x - p.x;
-                    const dy = p2.y - p.y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-
-                    if (dist < 180) {
-                        const alpha = (1 - dist / 180) * 0.45;
-                        ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
-                        ctx.beginPath();
-                        ctx.moveTo(p.x, p.y);
-                        ctx.lineTo(p2.x, p2.y);
-                        ctx.stroke();
-                    }
-                }
-            });
-            ctx.restore();
-        }
-
-        // Açıyı döndür
         angle += 0.005;
         if (angle > Math.PI * 2) angle = 0;
 
@@ -993,4 +890,147 @@ function initAestheticAnimation() {
     animate();
 }
 
+/* ==========================================================================
+   8. SOL / SAĞ KENAR PLEXUS ANİMASYONU (BAĞIMSIZ CANVAS)
+   ========================================================================== */
+function initMarginAnimation() {
+    const canvas = document.getElementById("margin-canvas");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
 
+    let W = canvas.width  = window.innerWidth;
+    let H = canvas.height = window.innerHeight;
+
+    // Her kenar için parçacık sayısı
+    const COUNT = 18;
+    let particles = [];
+
+    function marginWidth() {
+        return Math.max(0, (W - 1200) / 2);
+    }
+
+    function spawnParticles() {
+        particles = [];
+        const mw = marginWidth();
+        if (mw < 40) return; // Dar ekranda gösterme
+
+        for (let i = 0; i < COUNT; i++) {
+            // Sol kenar
+            particles.push({
+                x: Math.random() * mw,
+                y: Math.random() * H,
+                vx: (Math.random() - 0.5) * 0.35,
+                vy: (Math.random() - 0.5) * 0.35,
+                r: Math.random() * 1.5 + 0.5,
+                side: 'L',
+                phase: Math.random() * Math.PI * 2  // parlama fazı
+            });
+            // Sağ kenar
+            particles.push({
+                x: W - mw + Math.random() * mw,
+                y: Math.random() * H,
+                vx: (Math.random() - 0.5) * 0.35,
+                vy: (Math.random() - 0.5) * 0.35,
+                r: Math.random() * 1.5 + 0.5,
+                side: 'R',
+                phase: Math.random() * Math.PI * 2
+            });
+        }
+    }
+
+    window.addEventListener("resize", () => {
+        W = canvas.width  = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+        spawnParticles();
+    });
+
+    spawnParticles();
+
+    let tick = 0;
+
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
+        tick++;
+
+        const mw = marginWidth();
+        if (mw < 40) {
+            requestAnimationFrame(draw);
+            return;
+        }
+
+        // --- Dikey ince kenar çizgileri (içerik sınırı belirteci) ---
+        ctx.save();
+        ctx.strokeStyle = "rgba(0, 240, 255, 0.06)";
+        ctx.lineWidth = 1;
+        ctx.setLineDash([4, 10]);
+        // Sol
+        ctx.beginPath();
+        ctx.moveTo(mw, 0);
+        ctx.lineTo(mw, H);
+        ctx.stroke();
+        // Sağ
+        ctx.beginPath();
+        ctx.moveTo(W - mw, 0);
+        ctx.lineTo(W - mw, H);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.restore();
+
+        // --- Parçacık hareketi ve çizimi ---
+        ctx.save();
+
+        for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+
+            // Hareket
+            p.x += p.vx;
+            p.y += p.vy;
+
+            // Sınır yansıması
+            if (p.side === 'L') {
+                if (p.x < 0)   { p.x = 0;   p.vx *= -1; }
+                if (p.x > mw)  { p.x = mw;  p.vx *= -1; }
+            } else {
+                if (p.x < W - mw) { p.x = W - mw; p.vx *= -1; }
+                if (p.x > W)      { p.x = W;       p.vx *= -1; }
+            }
+            if (p.y < 0) { p.y = 0; p.vy *= -1; }
+            if (p.y > H) { p.y = H; p.vy *= -1; }
+
+            // Parçacık parlama: sinüs dalgasıyla hafif titreşim
+            const glow = 0.45 + 0.3 * Math.sin(tick * 0.025 + p.phase);
+
+            // Nokta
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0, 240, 255, ${glow})`;
+            ctx.fill();
+
+            // Bağlantı çizgileri (aynı taraf, yakın parçacıklar)
+            for (let j = i + 1; j < particles.length; j++) {
+                const q = particles[j];
+                if (p.side !== q.side) continue;
+
+                const dx = q.x - p.x;
+                const dy = q.y - p.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                const maxDist = mw * 1.4;  // kenar genişliğine orantılı bağlantı menzili
+                if (dist < maxDist) {
+                    const alpha = (1 - dist / maxDist) * 0.3;
+                    ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
+                    ctx.lineWidth = 0.7;
+                    ctx.beginPath();
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(q.x, q.y);
+                    ctx.stroke();
+                }
+            }
+        }
+
+        ctx.restore();
+        requestAnimationFrame(draw);
+    }
+
+    draw();
+}
