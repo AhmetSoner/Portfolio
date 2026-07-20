@@ -260,8 +260,8 @@ function initRadarCanvas() {
         // 5. HUD Kenar Teypleri Çizimi (Sadece geniş ekranlarda: width > 1024)
         if (width > 1024) {
             ctx.save();
-            ctx.strokeStyle = "rgba(0, 240, 255, 0.12)";
-            ctx.fillStyle = "rgba(0, 240, 255, 0.12)";
+            ctx.strokeStyle = "rgba(0, 240, 255, 0.7)";
+            ctx.fillStyle = "rgba(0, 240, 255, 0.7)";
             ctx.lineWidth = 1;
             ctx.font = "10px Orbitron";
             ctx.textAlign = "center";
