@@ -28,7 +28,7 @@ const PORTFOLIO_DATA = {
       institution: "Eskişehir Teknik Üniversitesi",
       degree: "Uçak Bakım Mühendisi / Aviyonik",
       duration: "Eylül 2020 - Mezun",
-      gpa: "3.05",
+      gpa: "3.1",
       details: "Gaz Türbinli Motorlar, Modern Aviyonik Sistemler, Mikroişlemciler, Elektrik ve Elektronik Sistemler, Otomatik Uçuş Sistemleri, Navigasyon Sistemleri, Uçak Aerodinamiği, Tahribatsız Muayene Yöntemleri (NDT) gibi konularda teorik ve laboratuvar eğitimi. Üniversite bünyesindeki SHY-145 onaylı uçak bakım tesislerinde pratik/uygulamalı deneyim."
     }
   ],
@@ -37,7 +37,7 @@ const PORTFOLIO_DATA = {
       title: "Aviyonik Mühendisliği Stajyeri",
       company: "Vilnius Gediminas Teknik Üniversitesi (Vilnius, Litvanya)",
       duration: "Ekim 2023 - Nisan 2024",
-      details: "Cessna 310, Cessna 152 ve Airbus A320 uçaklarında aviyonik sistemlerin söküm, montaj, bakım ve test süreçleri. EASA Part-145 sertifikalı Kyviškės Havaalanı'nda uçuşa elverişli Cessna 172S ve Piper PA-34 uçakları üzerinde EASA Part-66 lisanslı uzmanlar denetiminde çalışma. İHA mekanik tasarımı (SolidWorks), airfoil analizi (XFLR5), ESC kart tasarımı (Altium Designer), devre simülasyonu (PSpice/MATLAB) ve termal analizler (COMSOL)."
+      details: "İlk dönemde, uçuşa elverişli olmayan Cessna 310, Cessna 152 ve Airbus A320 gibi uçaklar üzerinde çeşitli teknik görevler gerçekleştirdim. Bu süreçte; kanatlar, uçuş kontrol sistemleri, iniş takımları ve gövde gibi ana bileşenlerin sökülmesi, yeniden monte edilmesi ve kurulumu gibi işlemler yaptım. Ayrıca aviyonik sistemlerin bakımı, onarımı ve işletimi konularında deneyim kazandım. Sonrasında, uygulamalı eğitimimi EASA Part-145 sertifikasına sahip Kyviškės Havaalanı'nda sürdürdüm. Burada uçuşa elverişli Cessna 172S ve Piper PA-34 uçakları üzerinde çalıştım ve tüm çalışmalar EASA Part-66 lisansına sahip uzmanlar tarafından denetlendi. Son dönemde, insansız hava aracı teknolojileri ve bu sistemlerde kullanılan elektronik altyapılar üzerine yoğunlaştım. Üzerinde çalıştığım kuadrotorun mekanik tasarımını SolidWorks uygulamasını kullanarak gerçekleştirdim; bu süreçte ağırlık dengesi gibi kritik unsurlar için XFLR5 üzerinden hesaplamalar yaptım. Baskı devre kartı tasarımında Altium Designer kullanarak fırçasız motor sürücü devre kartlarını (ESC – Electronic Speed Controller) geliştirdim. Bu kartların doğrulama ve performans analizlerini ise PSpice ve Matlab ortamında gerçekleştirdiğim devre simülasyonları ile tamamladım. Uçuş sırasında elektronik kartlar üzerindeki yarı iletken malzemelerin sıcaklık sıcaklık dağılımını değerlendirmek amacıyla COMSOL Multiphysics yazılımı ile termal analizler gerçekleştirdim. Geliştirdiğim sistem, temel uçuş kontrol algoritmalarını destekleyecek şekilde yapılandırıldı. Tasarım sürecinde enerji verimliliği, termal dayanıklılık ve sistem güvenilirliği ön planda tutuldu ve tüm bileşenler bu hedeflere uygun olarak optimize edildi."
     },
     {
       title: "Elektrik-Elektronik Sistem Entegratörü",
