@@ -29,7 +29,7 @@ const PORTFOLIO_DATA = {
       degree: "Uçak Bakım Mühendisi / Aviyonik",
       duration: "Eylül 2020 - Mezun",
       gpa: "3.1",
-      details: "Eğitimim süresince birçok disiplini kapsayan dersler gördüm:<br><br>• Gaz Türbinli Motorlar<br>• Modern Aviyonik Sistemler<br>• Mikroişlemciler<br>• Elektrik ve Elektronik<br>• Otomatik Uçuş Sistemleri<br>• Navigasyon Sistemleri<br>• Uçak Aerodinamiği<br>• Tahribatsız Muayene Yöntemleri (NDT)<br>• Uçak Yapıları ve Sistemleri<br>• Elektrik Makineleri<br>• Haberleşme Sistemleri Laboratuvarları<br><br>Ayrıca, fakülte bünyesindeki SHY-145 onaylı uçak bakım tesislerinde uygulamalı eğitimler aracılığıyla pratik deneyim kazanılmıştır."
+      details: "Eğitimim süresince birçok disiplini kapsayan dersler gördüm:<br><br>• Gaz Türbinli Motorlar<br>• Modern Aviyonik Sistemler<br>• Mikroişlemciler<br>• Elektrik ve Elektronik<br>• Elektrik Makineleri<br>• Otomatik Uçuş Sistemleri<br>• Seyrüsefer Sistemleri<br>• Sayısal Veri İletimi<br>• Elektronik Gösterge Sistemleri<br>• Elektromanyetik Çevre<br>• Uçak Aerodinamiği<br>• Uçak Yapıları ve Sistemleri<br>• Uçak Malzeme Bilgisi<br>• İnsan Faktörleri<br>• Tahribatsız Muayene Yöntemleri (NDT)<br>• Haberleşme Sistemleri Laboratuvarları<br><br>Ayrıca, fakülte bünyesindeki SHY-145 onaylı uçak bakım tesislerinde uygulamalı eğitimler aracılığıyla pratik deneyim kazanılmıştır."
     }
   ],
   experience: [
