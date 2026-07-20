@@ -257,8 +257,8 @@ function initRadarCanvas() {
             }
         });
 
-        // 5. HUD Kenar Teypleri Çizimi (Sadece geniş ekranlarda: width > 1024)
-        if (width > 1024) {
+        // 5. HUD Kenar Teypleri Çizimi (Sadece geniş ekranlarda: width > 768)
+        if (width > 768) {
             ctx.save();
             ctx.strokeStyle = "rgba(0, 240, 255, 0.7)";
             ctx.fillStyle = "rgba(0, 240, 255, 0.7)";
@@ -269,7 +269,7 @@ function initRadarCanvas() {
             const timeFactor = Date.now() * 0.0005;
 
             // --- SOL TEYP (HIZ / IAS TAPE) ---
-            const leftX = 40;
+            const leftX = 25;
             // Dikey çizgi
             ctx.beginPath();
             ctx.moveTo(leftX, centerY - 150);
@@ -293,7 +293,7 @@ function initRadarCanvas() {
                 // Değerler
                 if (i % 2 === 0) {
                     const speedVal = Math.round(centerSpeed - i * 5);
-                    ctx.fillText(speedVal, leftX - 25, y + 4);
+                    ctx.fillText(speedVal, leftX - 22, y + 4);
                 }
             }
 
@@ -304,10 +304,10 @@ function initRadarCanvas() {
             ctx.lineTo(leftX + 8, centerY + 5);
             ctx.closePath();
             ctx.fill();
-            ctx.fillText("IAS", leftX - 15, centerY - 165);
+            ctx.fillText("IAS", leftX - 10, centerY - 160);
 
             // --- SAĞ TEYP (ALTITUDE / ALT TAPE) ---
-            const rightX = width - 40;
+            const rightX = width - 25;
             // Dikey çizgi
             ctx.beginPath();
             ctx.moveTo(rightX, centerY - 150);
@@ -330,7 +330,7 @@ function initRadarCanvas() {
                 // Değerler
                 if (i % 2 === 0) {
                     const altVal = Math.round(centerAlt - i * 10);
-                    ctx.fillText(altVal, rightX + 28, y + 4);
+                    ctx.fillText(altVal, rightX + 25, y + 4);
                 }
             }
 
@@ -341,7 +341,7 @@ function initRadarCanvas() {
             ctx.lineTo(rightX - 8, centerY + 5);
             ctx.closePath();
             ctx.fill();
-            ctx.fillText("ALT", rightX + 15, centerY - 165);
+            ctx.fillText("ALT", rightX + 10, centerY - 160);
 
             ctx.restore();
         }
