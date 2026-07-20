@@ -45,6 +45,15 @@ body {
     position: relative;
 }
 
+.about-paragraph, 
+.contact-desc, 
+.node-desc, 
+.project-summary, 
+.modal-description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /* ==========================================================================
    RADAR & INTERACTION LAYER
    ========================================================================== */
