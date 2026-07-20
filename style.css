@@ -799,6 +799,28 @@ section {
     line-height: 1.5;
 }
 
+.timeline-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: var(--font-header);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    transition: var(--transition);
+    border-bottom: 1px dashed rgba(0, 240, 255, 0.4);
+    padding-bottom: 2px;
+}
+
+.timeline-link:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+    text-shadow: 0 0 8px var(--primary-glow);
+}
+
 /* ==========================================================================
    SKILLS SECTION
    ========================================================================== */
