@@ -1618,8 +1618,9 @@ section {
 /* Media & Specs Grid */
 .project-media-specs-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
     gap: 30px;
+    align-items: start;
     margin-bottom: 50px;
 }
 
@@ -1628,7 +1629,7 @@ section {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
     overflow: hidden;
-    min-height: 340px;
+    height: clamp(310px, 31vw, 370px);
 }
 
 .project-main-image-wrap img {
@@ -1641,9 +1642,48 @@ section {
 .project-specs-panel {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
-    padding: 25px;
+    padding: 24px 26px 22px;
     position: relative;
     height: fit-content;
+}
+
+.project-specs-panel .specs-table {
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.project-specs-panel .spec-item {
+    display: grid;
+    grid-template-columns: minmax(112px, 0.42fr) minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    padding: 11px 0;
+    border-bottom: 1px dashed rgba(0, 240, 255, 0.09);
+    font-size: 0.9rem;
+}
+
+.project-specs-panel .spec-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project-specs-panel .spec-name {
+    color: rgba(178, 191, 214, 0.78);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0.03em;
+}
+
+.project-specs-panel .spec-value {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.88rem;
+    font-weight: 650;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+    text-align: left;
+    overflow-wrap: anywhere;
 }
 
 .panel-header-title {
@@ -1764,6 +1804,10 @@ section {
 @media (max-width: 900px) {
     .project-media-specs-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-main-image-wrap {
+        height: clamp(300px, 70vw, 420px);
     }
     
     .project-detail-title {
