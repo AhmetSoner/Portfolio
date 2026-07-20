@@ -34,6 +34,12 @@ const PORTFOLIO_DATA = {
   ],
   experience: [
     {
+      title: "Proje Görevlisi & Ar-Ge Lideri",
+      company: "Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı (Eskişehir, Türkiye)",
+      duration: "Ekim 2024 - Devam Ediyor",
+      details: "2022 yılında kurulan çok disiplinli laboratuvar bünyesinde, yapay zeka ve otonom teknolojilerin havacılık ekosistemine entegrasyonuyla sektörel problemlere yenilikçi çözümler üretmeyi amaçlayan Ar-Ge çalışmalarına liderlik etmekteyim. Takımımız bünyesinde 3 TÜBİTAK 2209-A, 2 TÜBİTAK 2209-B ve 2 TUSAŞ LIFT-UP projesi yürütülmüştür. Laboratuvardaki genel sorumluluklarım ve liderlik ettiğim projeler:<br><br>• <b>İHA Sistem Tasarımı & Simülasyon:</b> İnsansız hava araçları ve aviyonik sistemler için uçuş kontrol algoritmaları geliştirmekte, sensör verisi işleme ve otonom karar mekanizmalarını kurgulamaktayım. MATLAB/Simulink ve Python ortamlarında uçuş davranışlarını modelleyerek sanal ortamda doğrulama analizleri yapmaktayım.<br>• <b>Donanım Geliştirme:</b> Geliştirilen yapay zeka sistemlerini destekleyecek aviyonik elektronik kartların (PCB) şematik tasarım ve layout süreçlerini yürütmekteyim.<br>• <b>TUSAŞ LIFT-UP Projesi (KAAN Entegrasyonu):</b> Milli Muharip Uçak KAAN görev bilgisayarı için kritik uçuş performans verilerinin modellenmesi çalışmasında yer aldım. Uçuş El Kitabı (AFM) nomogramlarından elde edilen veri setlerini PyTorch kullanarak Curve Fitting, Yapay Sinir Ağları (YSA) ve Pekiştirmeli Öğrenme mimarileriyle modelledim. KAAN platformundaki aviyonik donanım kısıtlamalarını (işlemci ve bellek yükü) ve doğruluk oranlarını değerlendiren karşılaştırmalı model analizleri gerçekleştirdim.<br>• <b>TÜBİTAK 2209-A Projesi (Kuş Tespit Sistemi):</b> Kuş çarpmalarının havacılık endüstrisindeki etkilerini azaltmayı hedefleyen derin öğrenme tabanlı görüntü işleme sistemi geliştirdim. YOLOv8 ve MobileNetV2 modelleriyle havalimanları için gerçek zamanlı kuş tespiti ve sınıflandırma altyapısını kurarak Boeing x ESTÜ Havacılığın Geleceği Yarışması'nda İkincilik Ödülü kazandım."
+    },
+    {
       title: "Aviyonik Mühendisliği Stajyeri",
       company: "Vilnius Gediminas Teknik Üniversitesi (Vilnius, Litvanya)",
       duration: "Ekim 2023 - Nisan 2024",
