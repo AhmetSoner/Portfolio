@@ -1337,6 +1337,92 @@ XGBoost, kullanıcıya hızlı cevap üretmesi gereken canlı demo ve edge deplo
 Final arayüzde üçlü yapı korunmalıdır: interpolasyon referans değer üretimi için, XGBoost hızlı ve güvenilir ML tahmini için, FT-Transformer ise akademik mimari ve ileri modelleme adayı olarak kullanılmalıdır. Bu rol ayrımı hem mühendislik kararını daha dürüst gösterir hem de projenin araştırma derinliğini güçlendirir.
 `;
 
+  liftUpContent.tr.architecture = `
+<strong>2. Uçtan Uca Sistem Mimarisi ve Çalışma Prensibi</strong><br><br>
+
+<div class="visual-callout-grid">
+  <div class="visual-callout-card"><span class="visual-kicker">Kaynak</span><strong>AFM / handbook nomogramları</strong><p>Specific Range grafikleri, uçuş testi ve standardizasyon süreçlerinden geçmiş mühendislik bilgisini taşır.</p></div>
+  <div class="visual-callout-card"><span class="visual-kicker">Dönüşüm</span><strong>Dijitasyon ve veri temizleme</strong><p>Eğri pikselleri, eksen değerleri ve motor/konfigürasyon bilgileri tek ölçülebilir veri hattında birleştirildi.</p></div>
+  <div class="visual-callout-card"><span class="visual-kicker">Modelleme</span><strong>Referans model + öğrenen modeller</strong><p>Kübik spline, XGBoost ve FT-Transformer aynı veri üzerinde doğruluk ve gömülü sistem maliyeti açısından kıyaslandı.</p></div>
+</div>
+
+<strong>2.1. Ham Veri ve Nomogram Mantığı</strong><br>
+Ham Veri Eldesi raporunda anlatıldığı gibi uçuş performans nomogramları, yalnızca teorik çizimler değildir. Süreç önce tasarım ve teorik modelleme ile başlar; CFD analizleri ve rüzgar tüneli testleriyle sürükleme karakteristikleri, drag polar davranışı ve tahmini performans yüzeyleri oluşturulur. Ardından uçuş testlerinde farklı ağırlık, irtifa, sıcaklık, basınç irtifası, güç ayarı ve hız kombinasyonları denenir. Bu ham ölçümlerde rüzgar, nem, pilotaj farkları ve atmosfer koşulları bulunduğu için veriler ISA benzeri standart koşullara indirgenir, normalize edilir ve emniyet marjlarıyla handbook grafiğine dönüştürülür.<br><br>
+Bu projede yapılan işlem, bu akışı ters yönde okumaktır: grafikteki standartlaştırılmış Specific Range eğrileri tekrar sayısal veri noktalarına çevrilmiş, ardından sıcaklık/irtifa, ağırlık, drag index ve Mach etkileri veri setinde temsil edilebilir hale getirilmiştir. Ham Veri Eldesi notundaki yaklaşımda sıcaklık ve irtifa etkisi için motor yakıt sarfiyatının <code>sqrt(theta)</code> bağımlılığı, ağırlık etkisi için yaklaşık <code>(W / W_ref)^0.6</code> katsayısı, drag index için parazitik sürükleme katsayısı ve Mach için transonik dalga sürüklemesi dikkate alınır. Özet fikir şudur: grafikten okunan değer, fiziksel etkiler ayrıştırılarak daha ham ve modellenebilir bir forma taşınır.<br><br>
+<code>SR_Ham = SR_Grafik / (f_alt × f_mach × f_weight × f_drag)</code><br><br>
+
+<strong>2.2. Dijitasyon Hattı</strong><br>
+Lift-UP 1. Aşama raporunda ilk hedef, grafiklerden ham <code>x, y</code> noktalarının güvenilir şekilde çıkarılması olarak tanımlandı. Başlangıçta MATLAB DigitizeGraph ve Python/OpenCV tabanlı klasik görüntü işleme yaklaşımları denendi. Bu yöntemler eğri takibi için hızlı bir başlangıç sağladı; fakat handbook grafiklerinde grid çizgileri, eksen yazıları, eğri etiketleri ve yakın geçen performans eğrileri aynı görsel düzlemde bulunduğu için salt eşikleme her grafikte aynı kararlılığı veremedi.<br><br>
+Bu nedenle hat, kontrollü ve doğrulanabilir adımlara ayrıldı. Önce grafik görselleri okunabilir çözünürlüğe getirildi, eğri rengi/kontrastı ve grid yapısı ayrıştırıldı. Ardından eksen kalibrasyonu yapılarak piksel koordinatları fiziksel birimlere çevrildi. Son aşamada her nokta ait olduğu motor senaryosu, drag index, Mach, gross weight ve altitude bilgisiyle etiketlendi. Böylece PDF/handbook görseli, model eğitiminde kullanılabilecek satır-sütun formatına indirildi.<br><br>
+
+<strong>2.3. Master Veri Seti</strong><br>
+1. Aşama çıktısında amaç, yalnızca eğri noktalarını çıkarmak değil; bu noktaları makine öğrenmesi modellerinin doğrudan okuyabileceği standart bir tabloya dönüştürmekti. Bu nedenle veri <em>tidy data</em> düzeninde kuruldu: her değişken ayrı sütun, her uçuş koşulu ayrı satır olacak şekilde yapılandırıldı. Nihai master veri seti 54.620 satırdan oluştu ve <code>altitude</code>, <code>gross_weight</code>, <code>drag_index</code>, <code>mach</code>, <code>fuel_flow</code>, <code>engine_type</code>, <code>specific_range</code> kolonlarıyla standardize edildi.<br><br>
+One Engine ve Two Engine senaryoları ayrı motor durumları olarak korundu. Bu tercih önemliydi; çünkü model yalnızca geometrik eğri şeklini değil, motor konfigürasyonunun yakıt akışı ve menzil üzerindeki etkisini de öğrenmeliydi. Veri temizleme adımında tekrar eden/uyumsuz noktalar ayıklandı, eksen kaynaklı ölçek hataları düzeltildi ve öğrenme modelleri için eğitim, doğrulama, test ayrımı yapılabilecek tek bir master tablo elde edildi.<br><br>
+
+<strong>2.4. Referans Nümerik Model</strong><br>
+Baseline Model çalışması, klasik lookup table yaklaşımını temsil eden deterministik bir karşılaştırma zemini kurar. Burada amaç ML modelini doğrudan “gerçek” kabul etmek yerine, handbook tablosuna sadık kalabilen bir nümerik referans oluşturmaktır. Referans nümerik model 4 boyutlu kübik spline interpolasyon mantığıyla çalışır: <code>Altitude × Weight × Drag Index × Mach -> Specific Range</code>. Hesap zinciri Mach ekseninden başlayarak drag index, gross weight ve altitude boyutlarında ara değer üretir.<br><br>
+Kübik spline yaklaşımı iki veri noktası arasında lineer kırıklar üretmek yerine daha yumuşak geçişler sağlar. Baseline dokümantasyonunda bu yapı lineer interpolasyon, Newton interpolasyonu ve lineer regresyon gibi yöntemlerle karşılaştırılmıştır. Bu katman projede “referans nümerik model” olarak konumlandırıldı; çünkü açıklanabilir, tablo mantığına sadık ve uçuş performansı arama tablolarının mühendislik kullanımına yakındır.<br><br>
+
+<strong>2.5. Öğrenen Modeller</strong><br>
+XGBoost, tabular uçuş performansı verisinde güçlü bir pratik model olarak seçildi. XGBoost PDF’inde anlatılan gradyan artırmalı karar ağacı mantığında her ağaç, önceki ağaçların hatasını azaltacak şekilde kurulur; split kazancı gradyan ve Hessian toplamlarıyla değerlendirilir, düzenlileştirme terimleri ise modelin gereksiz karmaşıklığa gitmesini engeller. Bu nedenle XGBoost, az özellikli ama güçlü doğrusal olmayan ilişkiler içeren uçuş performansı tablosu için hızlı ve sağlam bir adaydır.<br><br>
+FT-Transformer ise Tabular Transform raporundaki mimariyi takip eder. Sayısal ve kategorik değişkenler feature tokenizer ile ortak bir temsil uzayına taşınır; kategorik değişkenler embedding, sayısal değişkenler ise öğrenilebilir ağırlıklarla token haline gelir. Transformer encoder bloklarında Multi-Head Self-Attention, FFN, residual bağlantılar ve LayerNorm kullanılarak değişkenler arası etkileşim öğrenilir. Bu model mevcut veri ölçeğinde XGBoost’u geçmekten çok, projenin akademik araştırma tarafını güçlendiren ileri mimari aday olarak kullanıldı.<br><br>
+
+<div class="project-figure-grid">
+  <figure class="project-figure-card"><img src="lift-up-fig-xgboost-flow.png" alt="XGBoost karar ağacı akışı"><figcaption>XGBoost raporundan: ardışık ağaçların residual hatayı azaltarak nihai tahmini oluşturması.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-fig-xgboost-split.png" alt="XGBoost split gain analizi"><figcaption>XGBoost raporundan: aday bölünmelerin gain, gradient ve Hessian toplamlarıyla değerlendirilmesi.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-fig-ft-tokenization.png" alt="FT-Transformer tokenization akışı"><figcaption>Tabular Transform raporundan: kategorik ve sayısal girdilerin Transformer mimarisine taşınması.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-fig-transformer-block.png" alt="Transformer encoder blok yapısı"><figcaption>Tabular Transform raporundan: MHSA, FFN, residual akış ve LayerNorm bileşenleri.</figcaption></figure>
+</div>
+`;
+
+  liftUpContent.tr.analysis = `
+<strong>4. Test, Simülasyon ve Doğrulama Sonuçları</strong><br><br>
+
+<div class="visual-callout-grid result-grid">
+  <div class="visual-callout-card result-card"><span class="visual-kicker">Pratik Kazanan</span><strong>XGBoost</strong><p>2. aşama sonuç raporunda XGBoost; doğruluk, hız ve canlı demo uygulanabilirliği açısından en dengeli ML modeli olarak değerlendirildi.</p></div>
+  <div class="visual-callout-card result-card"><span class="visual-kicker">Araştırma Odağı</span><strong>FT-Transformer</strong><p>Mevcut ölçümde XGBoost’u geçmese de tabular transformer yaklaşımını temsil ettiği ve ileri çalışma potansiyeli taşıdığı için korundu.</p></div>
+  <div class="visual-callout-card result-card"><span class="visual-kicker">Referans Ailesi</span><strong>Interpolasyon</strong><p>Kaynak tablo mantığına en yakın, deterministik ve yorumlanabilir referans üretim yöntemi olarak konumlandırıldı.</p></div>
+</div>
+
+<div class="project-figure-grid">
+  <figure class="project-figure-card"><img src="lift-up-fig-accuracy-comparison.png" alt="XGBoost ve FT-Transformer doğruluk karşılaştırması"><figcaption>Lift-UP 2. Aşama Sonuç PDF’inden: XGBoost RMSE, MAE ve MAPE metriklerinde FT-Transformer’a göre daha düşük hata verdi.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-fig-runtime-cost.png" alt="Runtime maliyet bileşenleri"><figcaption>Lift-UP 2. Aşama Sonuç PDF’inden: latency, memory ve CPU bileşenlerinin normalize edilmiş karşılaştırması.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-fig-decision-matrix.png" alt="Genel karar matrisi"><figcaption>Karar matrisi: doğruluk, hız, RAM, model boyutu, yorumlanabilirlik ve Pi/edge uygunluğu birlikte skorlandı.</figcaption></figure>
+  <figure class="project-figure-card"><img src="lift-up-fig-radar-profile.png" alt="Genel profil radar grafiği"><figcaption>Radar profil: XGBoost’un dengeli pratik model, FT-Transformer’ın araştırma adayı, interpolasyonun referans ailesi olduğunu görselleştirir.</figcaption></figure>
+</div>
+
+<strong>4.1. Ölçülebilir Karşılaştırma</strong><br>
+2. aşama sonuç raporunda karşılaştırma yalnızca RMSE, MAE, MAPE ve R² ile sınırlı tutulmadı. Hız, RAM, CPU, model boyutu, yorumlanabilirlik, kurulum kolaylığı, demo uygunluğu ve akademik değer birlikte değerlendirildi. XGBoost düşük hata ve düşük p95 gecikme ile öne çıktı; FT-Transformer daha küçük model dosyasına rağmen PyTorch tabanlı inference yolu nedeniyle daha yüksek bellek ayak izine sahip oldu; interpolasyon ise düşük bellek ve yüksek yorumlanabilirlik avantajıyla referans aile olarak kaldı.<br><br>
+
+<table class='hud-benchmark-table' style='width:100%; border-collapse:collapse; margin:10px 0; border:1px solid rgba(0,240,255,0.2);'>
+  <thead style='background:rgba(0,240,255,0.1); color:var(--primary); font-family:var(--font-header); font-size:0.85rem;'>
+    <tr><th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Yöntem</th><th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>p95 Gecikme</th><th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Peak RSS</th><th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Model Boyutu</th><th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Rol</th></tr>
+  </thead>
+  <tbody style='font-size:0.9rem; color:var(--text-main);'>
+    <tr><td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Interpolasyon</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>6.89 ms</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>166.5 MiB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>2.64 MB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Deterministik referans</td></tr>
+    <tr><td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>XGBoost</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>2.35 ms</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>318.1 MiB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>1.92 MB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Pratik tahmin modeli</td></tr>
+    <tr><td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>FT-Transformer</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>2.74 ms</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>482.2 MiB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.42 MB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Araştırma mimarisi</td></tr>
+  </tbody>
+</table>
+
+<strong>4.2. Sonuç Yorumu</strong><br>
+XGBoost, kullanıcıya hızlı cevap üretmesi gereken canlı demo ve edge deployment senaryosunda güvenli varsayılan model olarak öne çıktı. FT-Transformer’ın değeri, mevcut ölçümde en iyi skoru vermesinden çok feature tokenizer, transformer encoder ve self-attention yapısıyla tabular uçuş verisi için ileri mimari denemesi sunmasıdır. İnterpolasyon ise doğruluk yarışında sıfır hatalı model gibi gösterilmedi; referans/tahmini gerçek değer üretimi için ayrı bir rol aldı.<br><br>
+
+<strong>4.3. Sistem Önerisi</strong><br>
+Final arayüzde üçlü yapı korunmalıdır: interpolasyon referans değer üretimi için, XGBoost hızlı ve güvenilir ML tahmini için, FT-Transformer ise akademik mimari ve ileri modelleme adayı olarak kullanılmalıdır. Bu rol ayrımı hem mühendislik kararını daha dürüst gösterir hem de projenin araştırma derinliğini güçlendirir. Sonraki teknik iyileştirme hattı; FT-Transformer için daha uzun eğitim, PSO hiperparametre araması, kuantizasyon ve ONNX/TensorRT dönüşümü; XGBoost için model sıkıştırma, ağaç derinliği/estimator dengesi ve CPU thread ayarıdır.
+`;
+
+  liftUpContent.tr.subsystems = [
+    { name: "Nomogram Kaynak Katmanı", desc: "F-18 AFM/handbook grafiklerinden Specific Range davranışını temsil eden eğriler seçildi; grafiklerin uçuş testi, standardizasyon ve emniyet marjı geçmişi proje anlatısında kaynak veri mantığı olarak kullanıldı." },
+    { name: "Dijitasyon ve Kalibrasyon Hattı", desc: "MATLAB DigitizeGraph, Python/OpenCV ve segmentasyon destekli okuma denemeleriyle eğri pikselleri çıkarıldı; eksen kalibrasyonu ile piksel koordinatları Mach, irtifa, ağırlık ve drag index değerlerine dönüştürüldü." },
+    { name: "Master Veri Seti", desc: "54.620 satırlık tablo; altitude, gross_weight, drag_index, mach, fuel_flow, engine_type ve specific_range kolonlarıyla standardize edildi. One Engine ve Two Engine senaryoları ayrı kategorik durumlar olarak korundu." },
+    { name: "Referans Nümerik Model", desc: "Baseline Model klasöründeki 4 boyutlu kübik spline yaklaşımı, klasik lookup/interpolasyon mantığını temsil eden deterministik referans olarak kuruldu. Bu katman ML modelleri için tahmini gerçek ve mühendislik kıyas zemini sağladı." },
+    { name: "XGBoost Modeli", desc: "Gradyan artırmalı karar ağaçlarıyla tabular veride düşük hata ve düşük gecikme hedeflendi. Split gain, gradient/Hessian toplamları ve düzenlileştirme mantığı sayesinde pratik demo ve edge kullanım için en dengeli model rolünü aldı." },
+    { name: "FT-Transformer Modeli", desc: "Sayısal ve kategorik değişkenler token uzayına taşındı; Multi-Head Self-Attention, FFN, residual bağlantılar ve LayerNorm ile değişkenler arası etkileşimler öğrenildi. Projede akademik mimari ve ileri araştırma adayı olarak korundu." },
+    { name: "Edge Benchmark Ortamı", desc: "Hedef ortam NVIDIA Jetson Orin Nano olarak güncellendi. Karşılaştırmada yalnızca doğruluk değil; p95 latency, Peak RSS, CPU maliyeti, model boyutu ve deploy edilebilirlik birlikte değerlendirildi." },
+    { name: "Doğrulama ve Karar Matrisi", desc: "Lift-UP 2. Aşama Sonuç raporundaki doğruluk grafikleri, runtime maliyet grafikleri, karar matrisi ve radar profil ile üç yaklaşım rol bazlı karşılaştırıldı: interpolasyon referans, XGBoost pratik model, FT-Transformer araştırma mimarisi." }
+  ];
+
   Object.entries(liftUpContent).forEach(([lang, content]) => {
     const project = PORTFOLIO_DATA[lang]?.projects?.find(item => item.id === "project-6");
     if (project) {
