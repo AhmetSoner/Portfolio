@@ -257,6 +257,95 @@ function initRadarCanvas() {
             }
         });
 
+        // 5. HUD Kenar Teypleri Çizimi (Sadece geniş ekranlarda: width > 1024)
+        if (width > 1024) {
+            ctx.save();
+            ctx.strokeStyle = "rgba(0, 240, 255, 0.12)";
+            ctx.fillStyle = "rgba(0, 240, 255, 0.12)";
+            ctx.lineWidth = 1;
+            ctx.font = "10px Orbitron";
+            ctx.textAlign = "center";
+
+            const timeFactor = Date.now() * 0.0005;
+
+            // --- SOL TEYP (HIZ / IAS TAPE) ---
+            const leftX = 40;
+            // Dikey çizgi
+            ctx.beginPath();
+            ctx.moveTo(leftX, centerY - 150);
+            ctx.lineTo(leftX, centerY + 150);
+            ctx.stroke();
+
+            // Kayma miktarını hesapla (yavaşça yukarı/aşağı salınım)
+            const speedOffset = (Math.sin(timeFactor) * 50) % 20;
+            const centerSpeed = 160 + Math.sin(timeFactor) * 50;
+
+            for (let i = -8; i <= 8; i++) {
+                const y = centerY + i * 20 - speedOffset;
+                if (y < centerY - 150 || y > centerY + 150) continue;
+
+                // Ticks
+                ctx.beginPath();
+                ctx.moveTo(leftX, y);
+                ctx.lineTo(leftX - (i % 2 === 0 ? 10 : 5), y);
+                ctx.stroke();
+
+                // Değerler
+                if (i % 2 === 0) {
+                    const speedVal = Math.round(centerSpeed - i * 5);
+                    ctx.fillText(speedVal, leftX - 25, y + 4);
+                }
+            }
+
+            // Merkez Göstergesi (Arrow)
+            ctx.beginPath();
+            ctx.moveTo(leftX, centerY);
+            ctx.lineTo(leftX + 8, centerY - 5);
+            ctx.lineTo(leftX + 8, centerY + 5);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillText("IAS", leftX - 15, centerY - 165);
+
+            // --- SAĞ TEYP (ALTITUDE / ALT TAPE) ---
+            const rightX = width - 40;
+            // Dikey çizgi
+            ctx.beginPath();
+            ctx.moveTo(rightX, centerY - 150);
+            ctx.lineTo(rightX, centerY + 150);
+            ctx.stroke();
+
+            const altOffset = (Math.cos(timeFactor * 0.7) * 80) % 20;
+            const centerAlt = 3200 + Math.cos(timeFactor * 0.7) * 200;
+
+            for (let i = -8; i <= 8; i++) {
+                const y = centerY + i * 20 - altOffset;
+                if (y < centerY - 150 || y > centerY + 150) continue;
+
+                // Ticks
+                ctx.beginPath();
+                ctx.moveTo(rightX, y);
+                ctx.lineTo(rightX + (i % 2 === 0 ? 10 : 5), y);
+                ctx.stroke();
+
+                // Değerler
+                if (i % 2 === 0) {
+                    const altVal = Math.round(centerAlt - i * 10);
+                    ctx.fillText(altVal, rightX + 28, y + 4);
+                }
+            }
+
+            // Merkez Göstergesi (Arrow)
+            ctx.beginPath();
+            ctx.moveTo(rightX, centerY);
+            ctx.lineTo(rightX - 8, centerY - 5);
+            ctx.lineTo(rightX - 8, centerY + 5);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillText("ALT", rightX + 15, centerY - 165);
+
+            ctx.restore();
+        }
+
         // Açıyı döndür
         angle += 0.005;
         if (angle > Math.PI * 2) angle = 0;
