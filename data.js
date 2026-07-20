@@ -820,7 +820,7 @@ const UI_TRANSLATIONS = {
     modal_close: "Kapat",
     btn_back: "ANA SAYFAYA DÖN",
     heading_specs: "PROJE HAKKINDA",
-    heading_overview: "// 01. PROJE ÖZETİ VE MÜHENDİSLİK AMACI",
+    heading_overview: "// 01. PROJE ÖZETİ",
     heading_architecture: "// 02. SİSTEM MİMARİSİ VE ÇALIŞMA PRENSİBİ",
     heading_subsystems: "// 03. ALT SİSTEMLER VE DONANIM/YAZILIM BİLEŞENLERİ",
     heading_analysis: "// 04. TEST, SİMÜLASYON VE DOĞRULAMA",
@@ -914,16 +914,18 @@ const UI_TRANSLATIONS = {
         { name: "Proje Ekibi", value: "Ahmet Soner GÜLEÇ (Lider), Umut ÇÖRDÜK, Ufuk ÖZKAN" }
       ],
       overview: `
-<strong>A. Projenin Mühendislik Problemi</strong><br><br>
+<strong class="overview-subtitle">A. Projenin Problemi</strong><br><br>
 Muharip hava araçlarında uçuş performans büyüklükleri, görev bilgisayarı ve aviyonik yazılım içinde çoğunlukla arama tabloları ve interpolasyon yöntemleri ile temsil edilir. Bu yaklaşım deterministik ve açıklanabilir olsa da tablo çözünürlüğü, bellek maliyeti ve ara noktalardaki doğrusal olmayan davranışlar nedeniyle sınırlıdır. Projenin çıkış noktası tam olarak bu ikilemdi: <strong>yüksek doğruluk</strong>, <strong>düşük gecikme</strong> ve <strong>kısıtlı donanımda çalışabilirlik</strong> aynı anda sağlanabilir mi?<br><br>
+Bu soru özellikle Specific Range gibi operasyonel kararları etkileyen performans değerlerinde önemlidir. Çünkü model yalnızca masaüstü ortamında iyi sonuç vermemeli; aynı zamanda aviyonik sistemlerde beklenen hızlı yanıt, düşük bellek kullanımı ve açıklanabilir karar gerekçesi beklentilerine de yaklaşmalıdır. Bu nedenle çalışma, klasik LUT/interpolasyon mantığını tamamen yok saymak yerine onu referans aile olarak koruyup, XGBoost ve FT-Transformer gibi öğrenen modellerle birlikte değerlendiren karşılaştırmalı bir sistem olarak tasarlandı.<br><br>
 
-<strong>B. Araştırma Kapsamı</strong><br><br>
+<strong class="overview-subtitle">B. Araştırma Kapsamı</strong><br><br>
 Çalışma TUSAŞ LIFT UP Sanayi Odaklı Lisans Bitirme Projeleri Programı ve TÜBİTAK 2209-B Sanayi Odaklı Araştırma Projeleri desteğiyle yürütüldü. KAAN hedef platformu için doğrudan gizli/veri erişimi yerine, yöntem geliştirme ve doğrulama amacıyla F-18 uçuş el kitabı/performans nomogramları vekil veri kaynağı olarak ele alındı. Amaç, üreticiye ait ham veri tabanına erişmek değil; yayınlanmış performans grafiklerinde temsil edilen düzeltilmiş uçuş bilgisini sayısal ve modellenebilir bir veri setine dönüştürmekti.<br><br>
+Bu kapsamda çalışma veri eldesinden model karşılaştırmasına kadar genişledi: nomogram mantığı incelendi, eğri dijitasyonu ve eksen kalibrasyonu yapıldı, One Engine / Two Engine senaryoları master veri setinde birleştirildi, referans nümerik model kuruldu ve aynı veri üzerinde XGBoost ile FT-Transformer modelleri kıyaslandı. Son aşamada sonuçlar yalnızca hata metrikleriyle değil; gecikme, bellek ayak izi, model boyutu ve gömülü sisteme aktarılabilirlik açısından yorumlandı.<br><br>
 
-<strong>C. Benim Rolüm</strong><br><br>
+<strong class="overview-subtitle">C. Benim Rolüm</strong><br><br>
 Proje lideri olarak veri dijitasyonu, modelleme protokolünün kurulması, XGBoost ve FT-Transformer kıyas akışının tasarlanması, NVIDIA Jetson Orin Nano hedef ortam profilinin yorumlanması, teknik raporların hazırlanması ve sanayi/akademik danışman sunumlarının bütünleştirilmesinde aktif rol aldım. Çalışmanın odağı yalnızca model eğitmek değil; aviyonik sistemlerde gerçekçi sayılabilecek kısıtlar altında hangi yaklaşımın neden tercih edileceğini mühendislik gerekçeleriyle ortaya koymaktı.<br><br>
 
-<strong>D. Ortaya Çıkan Ürün</strong><br><br>
+<strong class="overview-subtitle">D. Ortaya Çıkan Ürün</strong><br><br>
 Sonuçta analog performans grafiklerinden başlayan süreç; temizlenmiş bir master veri seti, 4 boyutlu kübik spline referans motoru, XGBoost ve FT-Transformer modelleri, full-table raporlar, slice bazlı hata analizleri, nomogram karşılaştırma çıktıları ve Flask/Qt tabanlı tahmin arayüzleriyle uçtan uca bir araştırma prototipine dönüştü.
 `,
       scientificMerit: `

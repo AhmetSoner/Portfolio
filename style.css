@@ -1838,6 +1838,15 @@ section {
     letter-spacing: 0.02em;
 }
 
+.overview-subtitle {
+    display: inline-block;
+    margin: 14px 0 4px;
+    color: var(--primary);
+    font-family: var(--font-header);
+    font-size: clamp(0.98rem, 1.5vw, 1.18rem);
+    letter-spacing: 0.01em;
+}
+
 .formula-block {
     width: min(100%, 720px);
     margin: 14px auto 22px;

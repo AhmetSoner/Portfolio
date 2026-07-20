@@ -44,7 +44,7 @@ function loadProjectData(lang, projectId) {
     const applicationNoEl = document.getElementById("project-application-no");
     if (applicationNoEl) {
         if (proj.applicationNo) {
-            applicationNoEl.textContent = `${lang === "tr" ? "Başvuru No" : "Application No"}: ${proj.applicationNo}`;
+            applicationNoEl.textContent = `${lang === "tr" ? "Proje No" : "Project No"}: ${proj.applicationNo}`;
             applicationNoEl.style.display = "inline-flex";
         } else {
             applicationNoEl.textContent = "";
