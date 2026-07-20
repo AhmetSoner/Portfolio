@@ -52,7 +52,7 @@ function loadProjectData(lang, projectId) {
         }
     }
     document.getElementById("project-summary").textContent = proj.summary;
-    document.getElementById("project-image").src = proj.image;
+    document.getElementById("project-image").src = proj.detailImage || proj.image;
     document.getElementById("project-image").alt = proj.title;
     document.getElementById("project-img-hud").textContent = `// STREAM: ${proj.id.toUpperCase()} // HIGH_RES_RENDER`;
 
