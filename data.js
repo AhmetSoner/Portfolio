@@ -883,3 +883,366 @@ const UI_TRANSLATIONS = {
     heading_other_projects: "OTHER PROJECTS"
   }
 };
+
+/* ==========================================================================
+   LIFT UP PROJECT DETAIL ENRICHMENT
+   Source package: Lift up/Raporlar
+   ========================================================================== */
+(function enrichLiftUpProjectDetail() {
+  const liftUpContent = {
+    tr: {
+      summary: "TUSAŞ LIFT UP ve TÜBİTAK 2209-B kapsamında yürütülen bu araştırmada, muharip hava araçlarında Specific Range gibi kritik uçuş performans değerlerinin klasik arama tablosu ve interpolasyon yaklaşımıyla hesaplanması problemi yeniden ele alındı. F-18 AFM/handbook nomogramları U-Net tabanlı eğri segmentasyonu, OCR destekli eksen okuma ve veri temizleme hattıyla 54.620 satırlık yapısal bir veri setine dönüştürüldü. Aynı veri üzerinde kübik spline referansı, XGBoost ve FT-Transformer modelleri eğitilerek doğruluk, gecikme, bellek ayak izi ve gömülü sistem uygulanabilirliği açısından karşılaştırıldı.",
+      description: "Bu proje; analog uçuş performans grafiklerinden sayısal, öğrenilebilir ve gömülü sistemlerde çalıştırılabilir bir aviyonik performans tahmin altyapısı üretmeyi amaçlar. Çalışmada önce AFM nomogramlarından altitude, gross weight, drag index, Mach, fuel flow, engine type ve specific range değişkenleri çıkarıldı; ardından klasik 4 boyutlu kübik spline interpolasyon, XGBoost regresyonu ve FT-Transformer mimarisi aynı deney protokolü altında kıyaslandı.",
+      tags: [
+        "TUSAŞ LIFT UP",
+        "TÜBİTAK 2209-B",
+        "MMU KAAN",
+        "AFM Nomogram Digitization",
+        "U-Net / OCR",
+        "Cubic Spline Baseline",
+        "XGBoost",
+        "FT-Transformer",
+        "Raspberry Pi 3 Edge Benchmark"
+      ],
+      specs: [
+        { name: "Kurum / Sanayi Ortağı", value: "Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ)" },
+        { name: "Destek Programları", value: "TUSAŞ LIFT UP 2025-2026 & TÜBİTAK 2209-B Sanayi Odaklı Araştırma Projeleri" },
+        { name: "Proje Numaraları", value: "TÜBİTAK: 1999B212502693 / LIFTUP-2025-2026-AV-06" },
+        { name: "Sanayi Danışmanı", value: "Zeynel Abidin AYDOĞAN (TUSAŞ - Havacılık Mühendisliği)" },
+        { name: "Akademik Danışman", value: "Doç. Dr. Aziz KABA (ESTÜ Pilotaj)" },
+        { name: "Proje Ekibi", value: "Ahmet Soner GÜLEÇ (Lider), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL" },
+        { name: "Veri Seti", value: "54.620 satır, 7 kolon: altitude, gross_weight, drag_index, mach, fuel_flow, engine_type, specific_range" },
+        { name: "Motor Senaryoları", value: "One Engine: 18.025 satır / Two Engine: 36.595 satır" },
+        { name: "Modelleme Protokolü", value: "%70 eğitim, %15 doğrulama, %15 test; sabit random_state=42" },
+        { name: "XGBoost Test Performansı", value: "RMSE 0.002592 / MAE 0.001089 / R² 0.999280 / MAPE %1.399" },
+        { name: "FT-Transformer Test Performansı", value: "RMSE 0.003907 / MAE 0.002042 / R² 0.998365 / MAPE %3.119" },
+        { name: "XGBoost Konfigürasyonu", value: "300 estimator, max_depth 6, learning_rate 0.05, subsample 0.9, hist tree_method" },
+        { name: "FT-Transformer Konfigürasyonu", value: "d_model 64, 3 encoder katmanı, 4 attention head, d_ff 128, batch 128" },
+        { name: "Hedef Ortam", value: "Raspberry Pi 3 sınıfı ARM Cortex-A53, 1 GB RAM, CPU-only inference profili" }
+      ],
+      overview: `
+<strong>A. Projenin Mühendislik Problemi</strong><br><br>
+Muharip hava araçlarında uçuş performans büyüklükleri, görev bilgisayarı ve aviyonik yazılım içinde çoğunlukla arama tabloları ve interpolasyon yöntemleri ile temsil edilir. Bu yaklaşım deterministik ve açıklanabilir olsa da tablo çözünürlüğü, bellek maliyeti ve ara noktalardaki doğrusal olmayan davranışlar nedeniyle sınırlıdır. Projenin çıkış noktası tam olarak bu ikilemdi: <strong>yüksek doğruluk</strong>, <strong>düşük gecikme</strong> ve <strong>kısıtlı donanımda çalışabilirlik</strong> aynı anda sağlanabilir mi?<br><br>
+
+<strong>B. Araştırma Kapsamı</strong><br><br>
+Çalışma TUSAŞ LIFT UP Sanayi Odaklı Lisans Bitirme Projeleri Programı ve TÜBİTAK 2209-B Sanayi Odaklı Araştırma Projeleri desteğiyle yürütüldü. KAAN hedef platformu için doğrudan gizli/veri erişimi yerine, yöntem geliştirme ve doğrulama amacıyla F-18 uçuş el kitabı/performans nomogramları vekil veri kaynağı olarak ele alındı. Amaç, üreticiye ait ham veri tabanına erişmek değil; yayınlanmış performans grafiklerinde temsil edilen düzeltilmiş uçuş bilgisini sayısal ve modellenebilir bir veri setine dönüştürmekti.<br><br>
+
+<strong>C. Benim Rolüm</strong><br><br>
+Proje lideri olarak veri dijitasyonu, modelleme protokolünün kurulması, XGBoost ve FT-Transformer kıyas akışının tasarlanması, Raspberry Pi 3 hedef ortam profilinin yorumlanması, teknik raporların hazırlanması ve sanayi/akademik danışman sunumlarının bütünleştirilmesinde aktif rol aldım. Çalışmanın odağı yalnızca model eğitmek değil; aviyonik sistemlerde gerçekçi sayılabilecek kısıtlar altında hangi yaklaşımın neden tercih edileceğini mühendislik gerekçeleriyle ortaya koymaktı.<br><br>
+
+<strong>D. Ortaya Çıkan Ürün</strong><br><br>
+Sonuçta analog performans grafiklerinden başlayan süreç; temizlenmiş bir master veri seti, 4 boyutlu kübik spline referans motoru, XGBoost ve FT-Transformer modelleri, full-table raporlar, slice bazlı hata analizleri, nomogram karşılaştırma çıktıları ve Flask/Qt tabanlı tahmin arayüzleriyle uçtan uca bir araştırma prototipine dönüştü.
+`,
+      scientificMerit: `
+<strong>1. Bilimsel Nitelik ve Yenilikçi Yön</strong><br><br>
+Bu çalışmanın özgün yönü, uçuş performans tahminini yalnızca "hangi model daha doğru?" sorusuyla ele almamasıdır. Aviyonik sistemlerde doğruluk tek başına yeterli değildir; modelin çalıştığı donanımda ne kadar bellek tükettiği, tekil tahmin gecikmesi, model artefact boyutu ve CPU davranışı da karar kriteridir. Bu nedenle karşılaştırma; RMSE, MAE, MAPE ve R² yanında model boyutu, tahmini gecikme ve RAM ayak iziyle birlikte kuruldu.<br><br>
+
+<strong>1.1. Neden Klasik Yöntem Yetmeyebilir?</strong><br>
+Arama tablosu ve interpolasyon yaklaşımı, doğrulanmış veriyi ayrık düğüm noktalarında saklar. Tablo büyüdükçe bellek maliyeti artar; tablo seyrekleştiğinde ise doğrusal olmayan bölgelerde hata büyüyebilir. Özellikle altitude, gross weight, drag index, Mach ve fuel flow değişkenlerinin birlikte etkileştiği performans yüzeylerinde bu etki daha belirgin hale gelir.<br><br>
+
+<strong>1.2. Neden XGBoost?</strong><br>
+XGBoost, tabular mühendislik verilerinde güçlü bir baseline olarak seçildi. Ağaç tabanlı gradyan artırma yaklaşımı, düşük çıkarım maliyetiyle doğrusal olmayan ilişkileri yakalayabilir. Proje artefactlarında XGBoost test kümesinde RMSE 0.002592, MAE 0.001089 ve R² 0.999280 değerlerine ulaştı; bu da onu edge inference için en dengeli aday yaptı.<br><br>
+
+<strong>1.3. Neden FT-Transformer?</strong><br>
+FT-Transformer, sayısal ve kategorik değişkenleri ortak token uzayında temsil ederek değişkenler arası bağlamsal ilişkileri self-attention ile öğrenir. Bu model, yalnızca tek tek kolon etkilerini değil; örneğin irtifa-Mach-ağırlık-yakıt akışı birlikteliğinin specific range üzerindeki etkisini modelleyebilecek araştırma değeri yüksek bir mimari olarak konumlandırıldı.<br><br>
+
+<strong>1.4. Optimizasyon Mantığı</strong><br>
+PSO yaklaşımı, hiperparametre uzayında yalnızca doğruluk değil; gecikme ve model boyutu gibi donanım farkındalıklı maliyetleri de içerecek şekilde tasarlandı. Kullanılan hedef mantığı: J(theta) = w1 * RMSE/RMSE_ref + w2 * latency/latency_ref + w3 * size/size_ref.
+`,
+      architecture: `
+<strong>2. Uçtan Uca Sistem Mimarisi</strong><br><br>
+
+<strong>2.1. Ham Veri ve Nomogram Mantığı</strong><br>
+AFM/handbook grafiklerinde yer alan performans eğrileri; CFD, rüzgar tüneli, uçuş testi ve sertifikasyon süreci sonunda üretilmiş düzeltilmiş performans bilgisini temsil eder. Bu nedenle grafiklerden okunan veri, rastgele görsel veri değil; fiziksel olarak anlamlı bir performans yüzeyinin dışavurumudur. Projede bu grafikler sayısallaştırılarak ML modelleri için yapılandırılmış hale getirildi.<br><br>
+
+<strong>2.2. Dijitasyon Hattı</strong><br>
+Başlangıçta MATLAB DigitizeGraph ve temel OpenCV eşikleme yaklaşımı değerlendirildi. Ancak yoğun grid çizgileri, üst üste binen metinler ve nomogram eğrilerinin karmaşık yapısı nedeniyle klasik piksel yoğunluğu yöntemi tek başına yeterli görülmedi. Bunun üzerine Python tabanlı bir U-Net segmentasyon hattı kuruldu. Binlerce sentetik uçak performans grafiği ve maske üretilerek model eğitildi; hedef eğriler arka plan grid ve metin gürültüsünden ayrıştırıldı. OCR ile eksen/sayısal değerler okunarak piksel koordinatları fiziksel birimlere dönüştürüldü.<br><br>
+
+<strong>2.3. Master Veri Seti</strong><br>
+Veriler Tidy Data prensibiyle tek tabloya indirildi: her değişken bir sütun, her uçuş koşulu bir satır. Nihai CSV, 54.620 satırdan oluştu. Kolonlar: altitude, gross_weight, drag_index, mach, fuel_flow, engine_type ve specific_range. Veri setinde one_engine ve two_engine senaryoları ayrı kategorik özellik olarak tutuldu. İrtifa aralığı 5.000-50.000 ft, gross weight aralığı 30.000-66.000 lb, drag index aralığı 0-300 ve Mach aralığı 0.1069-0.9652 olarak işlendi.<br><br>
+
+<strong>2.4. Referans Nümerik Motor</strong><br>
+Klasik yaklaşımı temsil etmek için 4 boyutlu kübik spline interpolasyon motoru geliştirildi. Hesap zinciri sırasıyla Mach -> Specific Range, Drag Index -> Specific Range, Gross Weight -> Specific Range ve Altitude -> Specific Range şeklinde kuruldu. Tridiagonal sistemler Thomas algoritmasıyla O(n) karmaşıklıkta çözüldü; aralık bulma için binary search kullanıldı. Böylece FMS benzeri deterministik ve açıklanabilir baseline elde edildi.<br><br>
+
+<strong>2.5. Öğrenen Modeller</strong><br>
+XGBoost tarafında 300 estimator, max_depth 6, learning_rate 0.05, subsample 0.9 ve hist tree_method kullanıldı. FT-Transformer tarafında d_model 64, 3 encoder katmanı, 4 attention head, d_ff 128, dropout 0.1 ve batch_size 128 ile eğitim yapıldı. Her iki model aynı veri bölünmesiyle, aynı hedef değişken olan specific_range üzerinde kıyaslandı.<br><br>
+
+<strong>2.6. Raporlama ve Arayüz</strong><br>
+Proje içinde Flask tabanlı "Specific Range Studio" arayüzü, legacy Streamlit arayüzü ve Qt masaüstü uygulaması geliştirildi. Arayüzler; hazır rapor görüntüleme, tekil tahmin, XGBoost/FT-Transformer karşılaştırması, slice bazlı hata analizi, nomogram üretimi ve maliyet fonksiyonu simülasyonu gibi modüller içerir.
+`,
+      riskManagement: `
+<strong>3. Risk Yönetimi ve Teknik Kararlar</strong><br><br>
+<table class='hud-benchmark-table' style='width:100%; border-collapse:collapse; margin:10px 0; border:1px solid rgba(0,240,255,0.2);'>
+  <thead style='background:rgba(0,240,255,0.1); color:var(--primary); font-family:var(--font-header); font-size:0.85rem;'>
+    <tr>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Risk / Belirsizlik</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Uygulanan Çözüm</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Sonuç</th>
+    </tr>
+  </thead>
+  <tbody style='font-size:0.9rem; color:var(--text-main);'>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Muharip uçak ham verilerine erişim kısıtı</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>KAAN hedefi için yöntem geliştirme; F-18 AFM/handbook nomogramlarıyla vekil veri doğrulaması.</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Gizli veri gerektirmeyen, tekrarlanabilir araştırma protokolü.</td>
+    </tr>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Nomogramlarda grid ve metin gürültüsü</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Klasik eşikleme yerine sentetik veriyle eğitilen U-Net segmentasyon ve OCR destekli eksen okuma.</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Hedef eğriler izole edildi; %2 sapma eşiğiyle dijital veri kalitesi izlendi.</td>
+    </tr>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Model doğruluğu ile kaynak tüketimi çatışması</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>RMSE/MAE yanında gecikme, model boyutu ve RAM ayak izini içeren donanım farkındalıklı kıyas.</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>XGBoost deploy için en dengeli aday, FT-Transformer araştırma mimarisi olarak konumlandı.</td>
+    </tr>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Raspberry Pi 3 eğitim için yetersiz donanım</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Eğitim masaüstü/GPU ortamında, Pi 3 tarafı yalnızca CPU-only inference ve demo profili olarak tasarlandı.</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Gerçekçi edge deployment ayrımı kuruldu.</td>
+    </tr>
+  </tbody>
+</table>
+`,
+      subsystems: [
+        {
+          title: "Nomogram Digitization Pipeline",
+          desc: "AFM grafiklerinin grid, metin ve eğri katmanlarını ayrıştırmak için U-Net segmentasyon, OCR eksen okuma ve pikselden fiziksel birime dönüşüm hattı kuruldu."
+        },
+        {
+          title: "Synthetic Data Generator",
+          desc: "U-Net eğitiminde kullanılmak üzere binlerce uçak performans grafiği ve maske üreten sentetik veri altyapısı geliştirildi."
+        },
+        {
+          title: "Master Dataset Builder",
+          desc: "One Engine ve Two Engine kaynakları birleştirilerek 54.620 satırlık combined_specific_range.csv veri seti üretildi."
+        },
+        {
+          title: "4D Cubic Spline Baseline",
+          desc: "Mach, drag index, gross weight ve altitude eksenlerinde ardışık spline zinciri; Thomas algoritması ve binary search ile deterministik referans motoru."
+        },
+        {
+          title: "XGBoost Regression Stack",
+          desc: "Tabular performans verisinde düşük gecikmeli, yüksek R² değerli ve edge inference için pratik deploy adayı model."
+        },
+        {
+          title: "FT-Transformer Architecture",
+          desc: "Sayısal ve kategorik değişkenleri ortak token uzayına taşıyan, self-attention ile değişken etkileşimlerini öğrenen araştırma modeli."
+        },
+        {
+          title: "Specific Range Studio",
+          desc: "Flask/Qt/Streamlit arayüzleriyle hazır rapor, tekil tahmin, model karşılaştırması, nomogram ve maliyet simülasyonu modülleri."
+        },
+        {
+          title: "Edge Benchmark Profile",
+          desc: "Raspberry Pi 3 sınıfı ARM Cortex-A53, 1 GB RAM ve CPU-only inference kısıtlarında gecikme, RAM ve model boyutu yorumlama hattı."
+        }
+      ],
+      analysis: `
+<strong>4. Doğruluk ve Benchmark Sonuçları</strong><br><br>
+<table class='hud-benchmark-table' style='width:100%; border-collapse:collapse; margin:10px 0; border:1px solid rgba(0,240,255,0.2);'>
+  <thead style='background:rgba(0,240,255,0.1); color:var(--primary); font-family:var(--font-header); font-size:0.85rem;'>
+    <tr>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Model</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Test RMSE</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Test MAE</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>R²</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>MAPE</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Model Boyutu</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Tahmini Edge Gecikme</th>
+    </tr>
+  </thead>
+  <tbody style='font-size:0.9rem; color:var(--text-main);'>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>XGBoost</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.002592</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.001089</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.999280</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>%1.399</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>1.855 MB</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>2.76 ms</td>
+    </tr>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>FT-Transformer</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.003907</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.002042</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.998365</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>%3.119</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.417 MB</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>5.12 ms</td>
+    </tr>
+  </tbody>
+</table>
+
+<strong>4.1. Sonuçların Yorumu</strong><br>
+XGBoost hem doğruluk hem de gecikme tarafında en dengeli profil olarak öne çıktı. FT-Transformer daha küçük model artefactına sahip olmasına rağmen runtime bellek maliyeti daha yüksek tahmin edildi; buna karşın değişkenler arası bağlamsal ilişkiyi öğrenmesi nedeniyle araştırma değeri yüksek bir mimari olarak değerlendirildi. Kübik spline yaklaşımı ise "model rakibi" olmaktan çok deterministik ve açıklanabilir referans üretim ailesi olarak kullanıldı.<br><br>
+
+<strong>4.2. Slice ve Nomogram Analizi</strong><br>
+Full-table raporlar 54.620 satır üzerinde üretildi. Ayrıca altitude, gross_weight ve engine_type dilimlerine göre slice bazlı hata tabloları ve handbook-style nomogram karşılaştırmaları hazırlandı. Bu sayede model performansı yalnızca global metriklerle değil; belirli irtifa/ağırlık bölgelerinde eğri davranışıyla da incelendi.<br><br>
+
+<strong>4.3. Hedef Ortam Mantığı</strong><br>
+Raspberry Pi 3 profili eğitim için değil, deploy/inference davranışını görünür kılmak için kullanıldı. Eğitim ve ağır raporlama iş istasyonu tarafında; Pi 3 tarafında temiz veri, model artefactları ve Flask tabanlı tekil tahmin arayüzü çalışacak şekilde ayrıldı. Bu ayrım aviyonik gömülü sistem yaklaşımına daha gerçekçi bir mühendislik çerçevesi sağladı.
+`,
+      achievements: `
+<strong>5. Çıktılar ve Etki</strong><br><br>
+Proje; TUSAŞ LIFT UP 2025-2026 ve TÜBİTAK 2209-B desteğiyle yürütülen, sanayi problemiyle doğrudan ilişkili bir araştırma prototipine dönüştü. Çıktılar arasında araştırma önerisi, ara değerlendirme raporu, 1. ve 2. aşama raporları, XGBoost raporu, Tabular Transformer raporu, Raspberry Pi 3 hedef ortam benchmark raporu, bildiri/makale taslakları, model artefactları, nomogram çıktıları ve çalıştırılabilir tahmin arayüzleri bulunuyor.<br><br>
+
+<strong>Teknik Kazanım:</strong> Analog performans grafiklerinden başlayıp gömülü sistem profiline kadar uzanan uçtan uca bir modelleme hattı kuruldu.<br>
+<strong>Sanayi Kazanımı:</strong> KAAN benzeri platformlarda uçuş performans verisinin depolanması ve hesaplanması için LUT/interpolasyon dışı, donanım farkındalıklı alternatiflerin nasıl değerlendirileceği gösterildi.<br>
+<strong>Kişisel Katkı:</strong> Proje liderliği, veri hattı mimarisi, model kıyas protokolü, benchmark yorumu, raporlama ve sunum bütünlüğü tarafında aktif sorumluluk aldım.
+`
+    },
+    en: {
+      summary: "This TUSAŞ LIFT UP and TÜBİTAK 2209-B research project revisits how combat-aircraft flight performance quantities such as Specific Range can be computed beyond classical lookup tables and interpolation. F-18 AFM/handbook nomograms were converted into a 54,620-row structured dataset through U-Net based curve segmentation, OCR-assisted axis parsing, and data cleaning. A cubic spline reference engine, XGBoost, and FT-Transformer were trained and compared across accuracy, latency, memory footprint, model size, and edge deployment feasibility.",
+      description: "The project builds an end-to-end avionics performance modeling pipeline: analog AFM nomograms are digitized into altitude, gross weight, drag index, Mach, fuel flow, engine type, and specific range variables; then cubic spline interpolation, XGBoost regression, and FT-Transformer are benchmarked under the same protocol.",
+      tags: [
+        "TUSAŞ LIFT UP",
+        "TÜBİTAK 2209-B",
+        "MMU KAAN",
+        "AFM Nomogram Digitization",
+        "U-Net / OCR",
+        "Cubic Spline Baseline",
+        "XGBoost",
+        "FT-Transformer",
+        "Raspberry Pi 3 Edge Benchmark"
+      ],
+      specs: [
+        { name: "Institution / Industry Partner", value: "Turkish Aerospace Industries (TUSAŞ)" },
+        { name: "Grant Programs", value: "TUSAŞ LIFT UP 2025-2026 & TÜBİTAK 2209-B Industry-Oriented Research" },
+        { name: "Project Numbers", value: "TÜBİTAK: 1999B212502693 / LIFTUP-2025-2026-AV-06" },
+        { name: "Industry Advisor", value: "Zeynel Abidin AYDOĞAN (TUSAŞ - Aerospace Engineering)" },
+        { name: "Academic Advisor", value: "Assoc. Prof. Dr. Aziz KABA (ESTÜ Pilotage)" },
+        { name: "Project Team", value: "Ahmet Soner GÜLEÇ (Lead), Umut ÇÖRDÜK, Ufuk ÖZKAN, Sema ÜNAL" },
+        { name: "Dataset", value: "54,620 rows, 7 columns: altitude, gross_weight, drag_index, mach, fuel_flow, engine_type, specific_range" },
+        { name: "Engine Scenarios", value: "One Engine: 18,025 rows / Two Engine: 36,595 rows" },
+        { name: "Model Protocol", value: "70% train, 15% validation, 15% test; fixed random_state=42" },
+        { name: "XGBoost Test Performance", value: "RMSE 0.002592 / MAE 0.001089 / R² 0.999280 / MAPE 1.399%" },
+        { name: "FT-Transformer Test Performance", value: "RMSE 0.003907 / MAE 0.002042 / R² 0.998365 / MAPE 3.119%" },
+        { name: "XGBoost Configuration", value: "300 estimators, max_depth 6, learning_rate 0.05, subsample 0.9, hist tree_method" },
+        { name: "FT-Transformer Configuration", value: "d_model 64, 3 encoder layers, 4 attention heads, d_ff 128, batch 128" },
+        { name: "Target Environment", value: "Raspberry Pi 3 class ARM Cortex-A53, 1 GB RAM, CPU-only inference profile" }
+      ],
+      overview: `
+<strong>A. Engineering Problem</strong><br><br>
+Combat-aircraft avionics frequently store and compute flight performance quantities through lookup tables and interpolation. This is deterministic and explainable, but table resolution, memory cost, and nonlinear behavior between grid points create a practical trade-off. The project asks whether high accuracy, low latency, and constrained-hardware deployability can be achieved together.<br><br>
+
+<strong>B. Research Scope</strong><br><br>
+The work was conducted under TUSAŞ LIFT UP and TÜBİTAK 2209-B. For method development, F-18 AFM/handbook nomograms were used as a surrogate data source for the KAAN-oriented problem context. The goal was not to access confidential manufacturer databases; it was to transform performance information represented in public/available nomograms into a clean, learnable dataset.<br><br>
+
+<strong>C. My Role</strong><br><br>
+As project lead, I worked on the digitization workflow, model comparison protocol, XGBoost and FT-Transformer evaluation, Raspberry Pi 3 target-profile interpretation, technical reporting, and integration of academic/industry advisor feedback.<br><br>
+
+<strong>D. Resulting Prototype</strong><br><br>
+The pipeline evolved from analog performance charts into a master dataset, a 4D cubic spline reference engine, XGBoost and FT-Transformer models, full-table reports, slice-level error analyses, nomogram comparison outputs, and Flask/Qt prediction interfaces.
+`,
+      scientificMerit: `
+<strong>1. Scientific Merit and Novelty</strong><br><br>
+The project does not treat model quality as an accuracy-only question. In avionics, a model must also be evaluated through latency, memory footprint, model size, and CPU behavior. Therefore, RMSE, MAE, MAPE, and R² were interpreted together with edge deployment metrics.<br><br>
+
+<strong>1.1. Lookup Table Limitation</strong><br>
+Lookup tables store verified performance data at discrete grid points. Higher resolution increases memory cost; lower resolution can increase interpolation error in nonlinear regions. This becomes more critical when altitude, gross weight, drag index, Mach, and fuel flow interact.<br><br>
+
+<strong>1.2. XGBoost Rationale</strong><br>
+XGBoost was selected as a strong tabular baseline. It reached test RMSE 0.002592, MAE 0.001089, and R² 0.999280, making it the most balanced candidate for edge inference.<br><br>
+
+<strong>1.3. FT-Transformer Rationale</strong><br>
+FT-Transformer represents numerical and categorical inputs in a shared token space and learns feature interactions through self-attention. It was evaluated as a research-focused architecture for capturing contextual relationships among flight variables.<br><br>
+
+<strong>1.4. Optimization Logic</strong><br>
+The PSO objective was structured to combine accuracy, latency, and model size: J(theta) = w1 * RMSE/RMSE_ref + w2 * latency/latency_ref + w3 * size/size_ref.
+`,
+      architecture: `
+<strong>2. End-to-End System Architecture</strong><br><br>
+The pipeline starts with AFM/handbook nomograms and turns them into a tabular ML problem. Classical thresholding and MATLAB digitization were evaluated first, but dense grid lines and overlapping text motivated a Python-based U-Net segmentation pipeline. OCR-assisted axis parsing converted curve pixels into physical units.<br><br>
+
+The final dataset contains 54,620 rows with altitude, gross_weight, drag_index, mach, fuel_flow, engine_type, and specific_range columns. A 4D cubic spline baseline computes Specific Range through the chain Mach -> SR, Drag Index -> SR, Gross Weight -> SR, and Altitude -> SR, using Thomas algorithm for tridiagonal systems and binary search for interval localization.<br><br>
+
+XGBoost was trained with 300 estimators, max_depth 6, learning_rate 0.05, and hist tree_method. FT-Transformer used d_model 64, three encoder layers, four attention heads, and a regression head. Reporting interfaces include Flask-based Specific Range Studio, a legacy Streamlit UI, and a Qt desktop tool for prediction, comparison, nomogram generation, and cost simulation.
+`,
+      riskManagement: `
+<strong>3. Risk Management</strong><br><br>
+<table class='hud-benchmark-table' style='width:100%; border-collapse:collapse; margin:10px 0; border:1px solid rgba(0,240,255,0.2);'>
+  <thead style='background:rgba(0,240,255,0.1); color:var(--primary); font-family:var(--font-header); font-size:0.85rem;'>
+    <tr>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Risk</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Mitigation</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Outcome</th>
+    </tr>
+  </thead>
+  <tbody style='font-size:0.9rem; color:var(--text-main);'>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Restricted combat-aircraft raw data</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Use F-18 AFM/handbook nomograms as surrogate data for method development.</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Repeatable protocol without confidential data dependency.</td>
+    </tr>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Grid/text noise in nomograms</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Switch from thresholding to U-Net segmentation and OCR-assisted parsing.</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Curve extraction quality was controlled with a 2% deviation threshold.</td>
+    </tr>
+    <tr>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>Accuracy vs resource trade-off</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Evaluate latency, memory, model size, and accuracy together.</td>
+      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>XGBoost emerged as the balanced deployment candidate.</td>
+    </tr>
+  </tbody>
+</table>
+`,
+      subsystems: [
+        { title: "Nomogram Digitization Pipeline", desc: "U-Net segmentation, OCR axis parsing, and pixel-to-physical-unit conversion for AFM performance charts." },
+        { title: "Synthetic Data Generator", desc: "Synthetic aircraft performance charts and masks used to train the curve segmentation model." },
+        { title: "Master Dataset Builder", desc: "One Engine and Two Engine sources merged into a 54,620-row combined_specific_range.csv dataset." },
+        { title: "4D Cubic Spline Baseline", desc: "Deterministic reference engine over Mach, drag index, gross weight, and altitude." },
+        { title: "XGBoost Regression Stack", desc: "Low-latency tabular model with strong test accuracy and practical edge deployment behavior." },
+        { title: "FT-Transformer Architecture", desc: "Self-attention model that embeds numerical and categorical variables into a shared token space." },
+        { title: "Specific Range Studio", desc: "Flask/Qt/Streamlit tools for reports, prediction, comparison, nomogram generation, and cost simulation." },
+        { title: "Edge Benchmark Profile", desc: "Raspberry Pi 3 class CPU-only inference interpretation over latency, RAM, and artifact size." }
+      ],
+      analysis: `
+<strong>4. Accuracy and Benchmark Results</strong><br><br>
+<table class='hud-benchmark-table' style='width:100%; border-collapse:collapse; margin:10px 0; border:1px solid rgba(0,240,255,0.2);'>
+  <thead style='background:rgba(0,240,255,0.1); color:var(--primary); font-family:var(--font-header); font-size:0.85rem;'>
+    <tr>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Model</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Test RMSE</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Test MAE</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>R²</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>MAPE</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Model Size</th>
+      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2);'>Estimated Edge Latency</th>
+    </tr>
+  </thead>
+  <tbody style='font-size:0.9rem; color:var(--text-main);'>
+    <tr><td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>XGBoost</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.002592</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.001089</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.999280</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>1.399%</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>1.855 MB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>2.76 ms</td></tr>
+    <tr><td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>FT-Transformer</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.003907</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.002042</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.998365</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>3.119%</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>0.417 MB</td><td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>5.12 ms</td></tr>
+  </tbody>
+</table>
+XGBoost delivered the strongest balance between accuracy and estimated edge latency. FT-Transformer remains valuable as a research architecture for feature interaction modeling, while cubic spline provides the deterministic reference family.
+`,
+      achievements: `
+<strong>5. Outputs and Impact</strong><br><br>
+The project produced the TÜBİTAK proposal, interim report, Lift-UP stage reports, XGBoost and Tabular Transformer technical reports, Raspberry Pi 3 target benchmark report, paper/proceedings drafts, trained artifacts, nomogram outputs, and executable prediction interfaces.<br><br>
+<strong>Technical impact:</strong> An end-to-end path from analog performance graphs to edge-profile inference was built.<br>
+<strong>Industry impact:</strong> The work demonstrates how alternatives to lookup-table/interpolation logic can be evaluated under avionics-oriented constraints.<br>
+<strong>Personal contribution:</strong> I led the project flow across data pipeline design, model comparison, benchmark interpretation, reporting, and advisor-facing presentation.
+`
+    }
+  };
+
+  Object.assign(UI_TRANSLATIONS.tr, {
+    heading_scientific_merit: "// 02. BİLİMSEL NİTELİK VE YENİLİKÇİ YÖN",
+    heading_risk_management: "// 05. RİSK YÖNETİMİ VE TEKNİK KARARLAR"
+  });
+
+  Object.assign(UI_TRANSLATIONS.en, {
+    heading_scientific_merit: "// 02. SCIENTIFIC MERIT & NOVELTY",
+    heading_risk_management: "// 05. RISK MANAGEMENT & TECHNICAL DECISIONS"
+  });
+
+  Object.entries(liftUpContent).forEach(([lang, content]) => {
+    const project = PORTFOLIO_DATA[lang]?.projects?.find(item => item.id === "project-6");
+    if (project) {
+      Object.assign(project, content);
+    }
+  });
+})();
