@@ -62,7 +62,7 @@ const PORTFOLIO_DATA = {
         focus: "Hidrojen enerjili araçlarda güç elektroniği uygulamaları ve sistem entegrasyonu.",
         contributions: [
           "DORLION ve MIDAS araçlarının elektrik-elektronik alt sistem tasarım ve entegrasyonu",
-          "3 fazlı BLDC motor sürücü, batarya yönetim sistemi ve izolasyon izleme donanımı geliştirme",
+          "Güç elektroniği, dijital/analog sistem tasarımı ve donanım optimizasyonu çalışmaları",
           "PCB tasarımı, devre simülasyonu, termal analiz ve yarışma saha entegrasyonu"
         ],
         outcomes: ["TEKNOFEST Efficiency Challenge İkinciliği", "TEKNOFEST Efficiency Challenge Özel Jüri Ödülü", "Shell Eco-Marathon Finalisti"]
@@ -479,7 +479,7 @@ const PORTFOLIO_DATA = {
         focus: "Power electronics applications and system integration for hydrogen-powered vehicles.",
         contributions: [
           "Electrical-electronic subsystem design and integration for DORLION and MIDAS vehicles",
-          "Development of 3-phase BLDC motor driver, battery management, and insulation monitoring hardware",
+          "Power electronics, digital/analog system design, and hardware optimization studies",
           "PCB design, circuit simulation, thermal analysis, and race-site system integration"
         ],
         outcomes: ["TEKNOFEST Efficiency Challenge 2nd Place", "TEKNOFEST Efficiency Challenge Special Jury Award", "Shell Eco-Marathon Finalist"]
