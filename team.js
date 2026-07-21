@@ -75,44 +75,69 @@ function loadTeamData(lang, teamId) {
         outputGrid.appendChild(card);
     });
 
-    renderRelatedTeams(lang, team.id);
+    renderTeamProjects(lang, team);
 
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
 }
 
-function renderRelatedTeams(lang, activeId) {
-    const container = document.getElementById("related-teams-container");
+function renderTeamProjects(lang, team) {
+    const container = document.getElementById("team-projects-container");
     if (!container) return;
 
     container.innerHTML = "";
-    (PORTFOLIO_DATA[lang].projectTeams || [])
-        .filter(team => team.id !== activeId)
-        .forEach(team => {
-            const card = document.createElement("article");
-            card.className = "project-team-card";
-            card.addEventListener("click", () => {
-                window.location.href = `team.html?id=${team.id}`;
-            });
-            card.innerHTML = `
+
+    const projectIds = team.projectIds || [];
+    const projects = (PORTFOLIO_DATA[lang].projects || []).filter(project => projectIds.includes(project.id));
+
+    if (projects.length === 0) {
+        container.innerHTML = `
+            <div class="empty-team-projects">
                 <div class="corner-t-l"></div>
                 <div class="corner-b-r"></div>
-                <div class="team-card-header">
-                    <div class="team-icon-wrap"><i data-lucide="${team.icon || 'users'}"></i></div>
-                    <div>
-                        <span class="team-role">${team.role}</span>
-                        <h3>${team.name}</h3>
-                    </div>
-                </div>
-                <div class="team-period">// ${team.period}</div>
-                <p class="team-focus">${team.focus}</p>
-                <div class="project-action-hint team-action-hint">
-                    ${lang === "tr" ? "TAKIM DETAYINI AÇ" : "OPEN TEAM DETAILS"} <i data-lucide="arrow-right"></i>
-                </div>
-            `;
-            container.appendChild(card);
+                <p>${lang === "tr" ? "Bu takım için bağlı proje bilgisi yakında eklenecek." : "Linked project information for this team will be added soon."}</p>
+            </div>
+        `;
+        return;
+    }
+
+    projects.forEach(project => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+        card.dataset.category = project.category;
+        card.addEventListener("click", () => {
+            window.location.href = `project.html?id=${project.id}`;
         });
+
+        const categoryName = project.category === "donanim"
+            ? (lang === "tr" ? "DONANIM" : "HARDWARE")
+            : project.category === "gomulu"
+                ? (lang === "tr" ? "GÖMÜLÜ" : "EMBEDDED")
+                : (lang === "tr" ? "YAZILIM" : "SOFTWARE");
+
+        card.innerHTML = `
+            <div class="corner-t-l"></div>
+            <div class="corner-t-r"></div>
+            <div class="corner-b-l"></div>
+            <div class="corner-b-r"></div>
+            <div class="project-img-wrap">
+                <img src="${project.image}" alt="${project.title}" loading="lazy">
+                <div class="project-overlay-hud">// SYS_${categoryName}</div>
+            </div>
+            <div class="project-body">
+                <h3>${project.title}</h3>
+                <p class="project-summary">${project.summary}</p>
+                <div class="project-tags-row">
+                    ${(project.tags || []).slice(0, 4).map(tag => `<span class="project-tag">${tag}</span>`).join("")}
+                </div>
+                <div class="project-action-hint">
+                    ${lang === "tr" ? "PROJE DETAYINI AÇ" : "OPEN PROJECT DETAILS"} <i data-lucide="arrow-right"></i>
+                </div>
+            </div>
+        `;
+        container.appendChild(card);
+    });
 }
 
 function applyTeamPageLanguage(lang) {

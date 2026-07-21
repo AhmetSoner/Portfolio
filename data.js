@@ -32,6 +32,7 @@ const PORTFOLIO_DATA = {
         period: "2024 - Devam Ediyor",
         icon: "brain-circuit",
         logo: "HAYA/Logo.png",
+        projectIds: ["project-6"],
         focus: "Yapay zeka, otonom sistemler, uçuş kontrol yazılımları ve aviyonik veri modelleme.",
         overview: [
           "Havacılıkta Yapay Zeka Araştırmaları Topluluğu (HAYA), 2022 yılında kurulmuş; havacılık ve uzay bilimleri odaklı, farklı mühendislik disiplinlerini bir araya getiren bir öğrenci ekibidir. Takımın temel amacı, yapay zeka ve geleceğin otonom teknolojilerini havacılık ekosistemine entegre ederek sektördeki problemlere disiplinli, uygulanabilir ve yenilikçi çözümler üretmektir.",
@@ -456,6 +457,7 @@ const PORTFOLIO_DATA = {
         period: "2024 - Present",
         icon: "brain-circuit",
         logo: "HAYA/Logo.png",
+        projectIds: ["project-6"],
         focus: "Artificial intelligence, autonomous systems, flight control software, and avionics data modeling.",
         overview: [
           "Aviation AI Research Society (HAYA) was founded in 2022 as a multidisciplinary student team focused on aviation and space sciences. Its main purpose is to integrate artificial intelligence and future autonomous technologies into the aviation ecosystem and produce disciplined, applicable, and innovative solutions for sectoral problems.",
@@ -904,7 +906,7 @@ const UI_TRANSLATIONS = {
     heading_team_overview: "// 01. TAKIM ÖZETİ",
     heading_team_role: "// 02. ROL VE SORUMLULUKLAR",
     heading_team_outputs: "// 03. ÇIKTILAR VE DERECELER",
-    heading_other_teams: "DİĞER PROJE TAKIMLARI",
+    heading_team_projects: "TAKIM KAPSAMINDAKİ PROJELER",
     team_role_label: "Rol",
     team_period_label: "Dönem",
     team_intro_pdf: "TAKIM TANITIM PDF'İ",
@@ -970,7 +972,7 @@ const UI_TRANSLATIONS = {
     heading_team_overview: "// 01. TEAM OVERVIEW",
     heading_team_role: "// 02. ROLE & RESPONSIBILITIES",
     heading_team_outputs: "// 03. OUTPUTS & ACHIEVEMENTS",
-    heading_other_teams: "OTHER PROJECT TEAMS",
+    heading_team_projects: "PROJECTS UNDER THIS TEAM",
     team_role_label: "Role",
     team_period_label: "Period",
     team_intro_pdf: "TEAM INTRO PDF",
