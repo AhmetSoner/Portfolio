@@ -1267,18 +1267,19 @@ section {
 
 .team-detail-hero {
     display: grid;
-    grid-template-columns: 180px minmax(0, 1fr);
-    gap: 28px;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 24px;
     align-items: center;
-    margin-top: 18px;
+    margin-top: 12px;
+    margin-bottom: 18px;
 }
 
 .team-hero-logo-wrap {
-    min-height: 150px;
+    min-height: 118px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 22px;
+    padding: 14px;
     border: 1px solid rgba(0, 240, 255, 0.2);
     background: rgba(0, 240, 255, 0.035);
 }
@@ -1286,13 +1287,17 @@ section {
 .team-hero-logo-wrap img {
     display: block;
     width: 100%;
-    max-height: 128px;
+    max-height: 94px;
     object-fit: contain;
 }
 
 .team-hero-copy {
     min-width: 0;
     grid-column: 2;
+}
+
+.team-detail-hero .project-detail-title {
+    margin: 0;
 }
 
 .team-intro-pdf-link {
@@ -1936,6 +1941,10 @@ section {
 .project-detail-container {
     padding-top: 20px;
     padding-bottom: 80px;
+}
+
+.team-detail-container {
+    gap: 28px;
 }
 
 .project-detail-hero {

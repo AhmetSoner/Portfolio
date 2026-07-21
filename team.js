@@ -20,10 +20,7 @@ function loadTeamData(lang, teamId) {
 
     document.title = `${team.name} // Ahmet Soner Güleç`;
     document.getElementById("telemetry-id").textContent = `// TEAM_FILE: ${team.id.toUpperCase()}`;
-    document.getElementById("team-status-tag").textContent = `// FILE_ID: ${team.id.toUpperCase()} // STATUS: ACTIVE_TEAM`;
-    document.getElementById("team-category").textContent = lang === "tr" ? "PROJE TAKIMI" : "PROJECT TEAM";
     document.getElementById("team-title").textContent = team.name;
-    document.getElementById("team-summary").textContent = team.focus;
     document.getElementById("team-role").textContent = team.role;
     document.getElementById("team-period").textContent = team.period;
 
@@ -48,15 +45,6 @@ function loadTeamData(lang, teamId) {
     document.getElementById("team-overview").innerHTML = overviewParagraphs
         .map(paragraph => `<p>${paragraph}</p>`)
         .join("");
-
-    const outcomes = document.getElementById("team-outcomes");
-    outcomes.innerHTML = "";
-    (team.outcomes || []).forEach(item => {
-        const tag = document.createElement("span");
-        tag.className = "project-tag";
-        tag.textContent = item;
-        outcomes.appendChild(tag);
-    });
 
     const contributions = document.getElementById("team-contributions");
     contributions.innerHTML = "";
