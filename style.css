@@ -2284,6 +2284,34 @@ section {
     object-fit: contain;
 }
 
+.project-figure-grid:has(img[src*="bird-detection-figures"]) {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    width: min(100%, 760px);
+    margin: 18px auto 28px;
+}
+
+.project-figure-grid:has(img[src*="bird-detection-figures"]) .project-figure-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.project-figure-grid:has(img[src*="bird-detection-figures"]) .project-figure-card img {
+    width: auto;
+    max-width: 100%;
+    max-height: 520px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.project-figure-grid:has(img[src*="bird-detection-figures"]) .project-figure-card figcaption {
+    max-width: 720px;
+    margin: 8px auto 0;
+    padding: 0 4px;
+    text-align: center;
+}
+
 .figure-detail-text {
     width: 100%;
     margin: -8px auto 22px;
