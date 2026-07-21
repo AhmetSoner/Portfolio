@@ -317,13 +317,14 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-4",
-            "title": "TÜBİTAK 2209-A Görüntü Tabanlı Kuş Tanıma Sistemi",
+            "title": "HAVAALANLARI İÇİN DERİN ÖĞRENME TABANLI KUŞ TESPİT SİSTEMİ",
             "category": "gomulu",
-            "summary": "Kuş çarpmalarını önlemek amacıyla derin öğrenme tabanlı nesne tespiti yapan yazılım.",
-            "description": "Kuş çarpmalarının havacılık endüstrisine etkilerini azaltarak uçuş güvenliğini artırmayı amaçlayan araştırma projesidir. Mevcut radar tabanlı sistemlerin sınırlarını aşarak kuşları ayrıntılı tespit etmek amacıyla YOLOv8 ve MobileNetV2 nesne tanıma modelleri kullanılarak görüntü işleme tabanlı bir tespit ve tür tanımlama sistemi geliştirilmiştir. Proje TÜBİTAK tarafından desteklenmiştir.",
+            "summary": "Havaalanlarında kuş çarpması riskini azaltmak için YOLOv8n tabanlı gerçek zamanlı kuş tespiti, tür tanıma ve ikaz yaklaşımı geliştiren TÜBİTAK 2209-A araştırma projesi.",
+            "description": "Kuş çarpmalarının uçuş emniyeti, operasyon sürekliliği ve bakım maliyetleri üzerindeki etkisini azaltmak amacıyla geliştirilen bu çalışmada, radar tabanlı sistemlerin tür, renk, boyut ve tekil kuş takibi konusundaki sınırlamalarını tamamlayacak görüntü tabanlı bir derin öğrenme hattı tasarlanmıştır. Proje önerisi YOLOv8 ve MobileNetV2 entegrasyonunu hedeflerken, tez çalışmasında Roboflow ile hazırlanan veri seti üzerinde YOLOv8n modeli eğitilmiş, performans çıktıları precision, recall, F1 ve mAP metrikleriyle değerlendirilmiştir.",
             "image": "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
             "tags": [
-                  "YOLOv8 / MobileNetV2",
+                  "YOLOv8n",
+                  "Roboflow",
                   "Python",
                   "Derin Öğrenme",
                   "TÜBİTAK 2209-A"
@@ -331,7 +332,7 @@ const PORTFOLIO_DATA = {
             "specs": [
                   {
                         "name": "Nesne Tespit Modeli",
-                        "value": "YOLOv8 & MobileNetV2"
+                        "value": "YOLOv8n"
                   },
                   {
                         "name": "Uygulama Alanı",
@@ -344,30 +345,39 @@ const PORTFOLIO_DATA = {
                   {
                         "name": "Destek Türü",
                         "value": "TÜBİTAK 2209-A Araştırma Projesi"
+                  },
+                  {
+                        "name": "Proje No",
+                        "value": "1919B012323737"
+                  },
+                  {
+                        "name": "Ekip",
+                        "value": "Onur Can DURUKAN, Hakan HAMİTOĞLU, Elif Dila GÖNEN, Ahmet Soner GÜLEÇ"
                   }
             ],
-            "overview": "Havalimanları ve uçuş rotalarında kuş çarpmalarından kaynaklanan hayati emniyet risklerini ve yüksek maliyetli uçak hasarlarını önlemek için geliştirilmiş yapay zeka tabanlı nesne tespit yazılımıdır.",
-            "architecture": "Geleneksel radar sistemlerinin küçük kuşları tespit etmedeki yetersizliğini aşmak için derin öğrenme tabanlı görüntü işleme ve sınıflandırma boru hattı (pipeline) kurulmuştur.",
+            "overview": "<p>Bu proje, havaalanları ve uçuş çevresinde kuş çarpması riskini azaltmak için geliştirilen derin öğrenme tabanlı bir kuş tespit sistemidir. TÜBİTAK 2209-A desteğiyle yürütülen çalışmanın çıkış noktası, kuş çarpmalarının yalnızca uçak gövdesi ve motorları için değil; pilot, yolcu, operasyon sürekliliği ve bakım maliyetleri için de ciddi bir emniyet problemi oluşturmasıdır. Proje dosyasında ve tezde kullanılan verilere göre kuş çarpmaları havacılık sektöründe yıllık 1,21 milyar doların üzerinde maliyete yol açmakta; ICAO IBIS verileri 2016-2021 arasında 273.343 kuş çarpması olayının raporlandığını göstermektedir.</p><p>Çalışmanın temel problemi, mevcut radar tabanlı sistemlerin kuşların türünü, rengini, tahmini boyutunu, sayısını ve tekil davranışını ayrıntılı biçimde ifade etmekte sınırlı kalmasıdır. Radar sistemleri mesafe ve hava koşulları bakımından avantajlı olsa da küçük hedefleri ayrıştırma, tek başına uçan kuşları takip etme ve tür seviyesinde zarar tahmini üretme noktasında yetersizdir. Proje önerisinde aktarılan literatür değerlendirmesinde sürü takibinde başarının yaklaşık yüzde 40-80 aralığında, tekil kuş takibinde ise yaklaşık yüzde 30 seviyesinde kalabildiği vurgulanmıştır.</p><p>Bu nedenle proje, radar yaklaşımının yerine yalnızca yeni bir sistem koymayı değil; görüntü tabanlı derin öğrenme çıktılarıyla radarın sağlayamadığı ayrıntıyı tamamlamayı hedeflemiştir. Kamera veya çevre görüntülerinden kuş tespiti yapabilen, tespit edilen kuşu tür seviyesinde yorumlayabilen ve ileride radar uzaklık bilgisiyle birleştirildiğinde daha detaylı ikaz/zarar tahmini üretebilecek bir karar destek hattı tasarlanmıştır.</p>",
+            "scientificMerit": "<p>Projenin özgün değeri, kuş çarpması problemini yalnızca 'hedef var/yok' yaklaşımıyla değil, görüntü üzerinden tür, konum, yoğunluk ve risk yorumuna taşımaya çalışmasıdır. Proje önerisinde araştırma sorusu 'Kuş çarpmalarını azaltmak için görüntü tabanlı bir kuş tanıma sistemi nasıl geliştirilebilir?' şeklinde kurulmuş; YOLOv8 ve MobileNetV2 gibi modellerin kuş tespiti ve tür belirleme başarısı, havacılık güvenliğine sağlayabileceği katkı üzerinden ele alınmıştır.</p><p>Başlangıç tasarımında iki aşamalı bir mimari öngörülmüştür: YOLOv8 ile görüntüde kuş nesnesinin hızlı tespiti, ardından yüzde 50 güven eşiğinin üzerinde algılanan kuşların MobileNetV2 benzeri hafif bir sınıflandırıcıya aktarılması. MobileNetV2 seçimi; düşük hesaplama maliyeti, düşük bellek kullanımı, mobil/gömülü sistemlere uygunluk ve hızlı sınıflandırma avantajları nedeniyle değerlendirilmiştir. Tez uygulamasında ise veri setinin ölçeği ve gerçek zamanlı çalışma beklentisi dikkate alınarak YOLOv8'in en hafif alt modeli olan YOLOv8n üzerinden eğitim ve test hattı kurulmuştur.</p>",
+            "architecture": "<p>Sistem mimarisi veri toplama, veri temizleme, etiketleme, veri artırma, YOLOv8 formatına dışa aktarım, model eğitimi ve sonuç değerlendirme adımlarından oluşur. Proje önerisinde İstanbul Havalimanı çevresinde görülen kuş türleri, İGA çevre/sürdürülebilirlik çalışmaları, FAA Wildlife Strike verileri ve açık veri kaynakları dikkate alınarak öncelikli tür skalasının belirlenmesi hedeflenmiştir. Her tür için yeterli görsel bulunması, veri setinin temizlenmesi ve hatalı etiketlerin düzeltilmesi iş paketlerinin temel başarı ölçütleri arasında yer almıştır.</p><p>Tez sürecinde veri hattı Roboflow üzerinde kurgulanmıştır. Görseller Roboflow projesine yüklenmiş, kuş nesneleri bounding box ile etiketlenmiş, veri seti iyileştirme ve augmentation adımları uygulanmış, ardından YOLOv8 PyTorch formatında dışa aktarılmıştır. Roboflow tarafından oluşturulan train/validation/test dizin yapısı YOLOv8 eğitimiyle uyumlu hale getirilmiş; veri seti yaklaşık yüzde 70 eğitim, yüzde 20 doğrulama ve yüzde 10 test bölünmesi mantığıyla ele alınmıştır.</p><p>Model eğitimi Ultralytics YOLOv8 altyapısı ve PyTorch ekosistemiyle yürütülmüştür. YOLO'nun görüntüyü tek geçişte analiz eden mimarisi gerçek zamanlı ikaz ihtiyacı için seçilmiştir; çünkü havaalanı çevresinde kuş tespiti yalnızca doğru değil, aynı zamanda hızlı olmalıdır. YOLOv8n modeli, düşük işlem gücü gereksinimi ve hızlı çıkarım beklentisi nedeniyle bu proje için uygun temel model olarak değerlendirilmiştir.</p>",
             "subsystems": [
                   {
-                        "title": "Detection Engine",
-                        "desc": "Real-time nesne tespiti için eğitilmiş YOLOv8 mimarisi."
+                        "title": "Veri Toplama ve Tür Önceliklendirme",
+                        "desc": "İstanbul Havalimanı çevresi, FAA Wildlife Strike verileri ve açık görsel kaynakları üzerinden kuş türleri ve risk öncelikleri belirlendi."
                   },
                   {
-                        "title": "Classification Core",
-                        "desc": "Tür seviyesinde yüksek doğruluk için MobileNetV2 evrişimli sinir ağı (CNN)."
+                        "title": "Roboflow Etiketleme Hattı",
+                        "desc": "Görseller Roboflow üzerinde etiketlendi, bounding box yapıları oluşturuldu, veri seti temizleme ve augmentation adımları uygulandı."
                   },
                   {
-                        "title": "Camera & Stream Unit",
-                        "desc": "Havalimanı çevre kameralarından canlı yayın işleme ve takip modülü."
+                        "title": "YOLOv8n Tespit Modeli",
+                        "desc": "Hafif ve hızlı YOLOv8n modeli, kuş nesnelerini gerçek zamanlı tespit etmeye uygun temel derin öğrenme motoru olarak eğitildi."
                   },
                   {
-                        "title": "Telemetry Interface",
-                        "desc": "Erken uyarı ve rotadaki kuş yoğunluğunu gösteren kule kontrol arayüzü."
+                        "title": "İkaz ve Entegrasyon Mantığı",
+                        "desc": "Görüntü tabanlı tespit çıktılarının ileride radar uzaklık bilgisi, kamera sistemi veya İHA entegrasyonu ile daha detaylı ikaz sistemine dönüştürülmesi hedeflendi."
                   }
             ],
-            "analysis": "Çeşitli hava koşulları (sis, bulut, gece) ve farklı irtifalardaki kuş sürüleri üzerinde %94'ün üzerinde tespit başarısı doğrulanmıştır.",
-            "achievements": "TÜBİTAK 2209-A Ulusal Üniversite Öğrencileri Araştırma Projeleri Desteği kazanmış, Boeing x ESTÜ Havacılığın Geleceği Yarışması'nda Türkiye 2.'si olmuştur."
+            "analysis": "<p>Tez sonuçlarında model performansı karışıklık matrisi, precision-confidence, recall-confidence, precision-recall, F1 eğrisi, etiket dağılımı ve genel eğitim sonuçları üzerinden yorumlanmıştır. Karışıklık matrisi, özellikle Seagull sınıfında yüksek doğruluk gösterirken Pigeon ve Falcon gibi bazı sınıflar arasında karışmalar olduğunu ortaya koymuştur. Background sınıfındaki daha zayıf sonuçlar, arka plan örneklerinin ve negatif örnek çeşitliliğinin artırılması gerektiğini göstermiştir.</p><p>Precision-recall grafiğinde tüm sınıflar için ortalama değer 0.875 olarak raporlanmıştır. Recall eğrisinde modelin tüm sınıflar için 0.97 seviyesine ulaşabildiği belirtilmiş, F1 eğrisinde maksimum F1 skorunun 0.78 civarında ve yaklaşık 0.449 güven eşiğinde elde edildiği yorumlanmıştır. Eğitim sonuçlarında mAP50 değerinin yaklaşık 0.85'e, mAP50-95 değerinin ise yaklaşık 0.60 seviyesine ulaştığı; kutu kaybı, sınıflandırma kaybı ve doğrulama kayıplarında eğitim boyunca düzenli azalma görüldüğü ifade edilmiştir.</p><p>Bu çıktılar, görüntü tabanlı kuş tespit yaklaşımının havaalanı emniyeti için uygulanabilir bir temel oluşturduğunu göstermiştir. Bununla birlikte tez sonuçları, daha büyük ve dengeli veri seti, daha çeşitli arka plan örnekleri, kamera kalitesi, eşik optimizasyonu ve ileride radar/kamera entegrasyonu ile sistemin çok daha güçlü bir ikaz altyapısına dönüştürülebileceğini ortaya koymaktadır.</p>",
+            "achievements": "<p>Proje, TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Desteği kapsamında desteklenmiş ve 1919B012323737 proje numarasıyla yürütülmüştür. Proje önerisi aşamasında veri seti hazırlama, veri ön işleme, model eğitimi, optimizasyon/hiperparametre çalışmaları ve test iş paketleri tanımlanmış; tez aşamasında bu yapı YOLOv8n tabanlı uygulanabilir bir tespit modeline dönüştürülmüştür.</p><p>Çalışma, havacılık güvenliği alanında görüntü tabanlı yapay zeka sistemlerinin radar tabanlı erken uyarı yaklaşımlarını nasıl tamamlayabileceğini göstermiştir. Kişisel katkı açısından proje; veri hattı oluşturma, derin öğrenme modeli eğitme, performans metriklerini yorumlama ve havacılık emniyeti problemine mühendislik perspektifiyle yaklaşma deneyimi kazandırmıştır.</p>"
       },
       {
             "id": "project-5",
@@ -799,13 +809,14 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-4",
-            "title": "TÜBİTAK 2209-A Image-Based Bird Recognition System",
+            "title": "DEEP LEARNING BASED BIRD DETECTION SYSTEM FOR AIRPORTS",
             "category": "gomulu",
-            "summary": "Software using deep learning-based object detection to prevent bird strikes in aviation.",
-            "description": "A research project aimed at increasing flight safety by reducing the impact of bird strikes on the aviation industry. Exceeding the limits of existing radar-based systems to detect birds in detail, an image processing-based detection and species identification system was developed using YOLOv8 and MobileNetV2 object recognition models. The project was supported by TÜBİTAK.",
+            "summary": "A TÜBİTAK 2209-A research project developing YOLOv8n-based real-time bird detection, species recognition, and warning logic to reduce bird-strike risk around airports.",
+            "description": "This project was developed to reduce the impact of bird strikes on flight safety, operational continuity, and maintenance costs. It designs an image-based deep learning pipeline to complement radar-based systems, which are limited in identifying bird species, color, size, count, and single-bird behavior. While the proposal targeted a YOLOv8 and MobileNetV2 integration, the thesis phase trained and evaluated a YOLOv8n model on a Roboflow-prepared dataset using precision, recall, F1, and mAP metrics.",
             "image": "https://images.unsplash.com/photo-1460602594182-8268277697b8?auto=format&fit=crop&q=80&w=600",
             "tags": [
-                  "YOLOv8 / MobileNetV2",
+                  "YOLOv8n",
+                  "Roboflow",
                   "Python",
                   "Deep Learning",
                   "TÜBİTAK 2209-A"
@@ -813,7 +824,7 @@ const PORTFOLIO_DATA = {
             "specs": [
                   {
                         "name": "Object Detection Model",
-                        "value": "YOLOv8 & MobileNetV2"
+                        "value": "YOLOv8n"
                   },
                   {
                         "name": "Application Field",
@@ -826,30 +837,39 @@ const PORTFOLIO_DATA = {
                   {
                         "name": "Support Type",
                         "value": "TÜBİTAK 2209-A Research Project"
+                  },
+                  {
+                        "name": "Project No",
+                        "value": "1919B012323737"
+                  },
+                  {
+                        "name": "Team",
+                        "value": "Onur Can DURUKAN, Hakan HAMİTOĞLU, Elif Dila GÖNEN, Ahmet Soner GÜLEÇ"
                   }
             ],
-            "overview": "AI-based object detection software developed to prevent vital safety risks and costly aircraft damage caused by bird strikes at airports and flight paths.",
-            "architecture": "Surpassing traditional radar limitations in small bird detection by constructing a deep learning image processing and classification pipeline.",
+            "overview": "<p>This project is a deep learning-based bird detection system developed to reduce bird-strike risk around airports and flight paths. Supported by TÜBİTAK 2209-A, the work starts from the fact that bird strikes are not only a structural and engine-damage problem, but also a major safety, operational continuity, and maintenance-cost issue. According to the proposal and thesis, bird strikes create an annual cost exceeding 1.21 billion USD for aviation, and ICAO IBIS data reported 273,343 bird-strike events between 2016 and 2021.</p><p>The core problem is that radar-based systems remain limited in expressing bird species, color, estimated size, quantity, and individual behavior. Radar has advantages in range and weather independence, but struggles with small target discrimination, single-bird tracking, and species-level risk estimation. The proposal highlights that radar tracking performance may vary around 40-80 percent for flocks and remain around 30 percent for a single bird.</p><p>Therefore, the project does not aim to simply replace radar, but to complement it with image-based deep learning outputs. The intended system detects birds from camera imagery, interprets them at species level, and can later be combined with radar distance data to create richer warning and risk-estimation logic.</p>",
+            "scientificMerit": "<p>The original value of the project is its attempt to move the bird-strike problem beyond a simple target/no-target approach and toward visual interpretation of species, location, density, and risk. The proposal frames the research question as: how can an image-based bird recognition system be developed to reduce bird strikes? It evaluates the potential of YOLOv8 and MobileNetV2 models for bird detection and species identification in relation to aviation safety.</p><p>The initial design proposed a two-stage architecture: fast bird detection with YOLOv8, followed by species classification with a lightweight classifier such as MobileNetV2 for detections above a 50 percent confidence threshold. MobileNetV2 was considered due to its low computational cost, low memory usage, embedded/mobile suitability, and fast classification capability. In the thesis implementation, considering dataset scale and real-time requirements, YOLOv8n was selected and trained as the practical core model.</p>",
+            "architecture": "<p>The system architecture consists of data collection, data cleaning, annotation, augmentation, export to YOLOv8 format, model training, and performance evaluation. The proposal prioritized bird species around Istanbul Airport using IGA environmental studies, FAA Wildlife Strike data, and open data sources. Preparing sufficient images for each species, cleaning the dataset, and correcting incorrect labels were defined as key work packages.</p><p>During the thesis phase, the data pipeline was implemented on Roboflow. Images were uploaded to Roboflow, bird objects were annotated with bounding boxes, dataset improvement and augmentation steps were applied, and the dataset was exported in YOLOv8 PyTorch format. The generated train/validation/test structure was made compatible with YOLOv8 training, using an approximate 70 percent training, 20 percent validation, and 10 percent test split logic.</p><p>Model training was carried out with the Ultralytics YOLOv8 infrastructure and PyTorch ecosystem. YOLO was selected because its single-pass image analysis is suitable for real-time warning requirements. YOLOv8n was evaluated as the most appropriate base model for this project due to its low computational requirement and fast inference potential.</p>",
             "subsystems": [
                   {
-                        "title": "Detection Engine",
-                        "desc": "YOLOv8 architecture trained for real-time object detection."
+                        "title": "Data Collection and Species Prioritization",
+                        "desc": "Bird species and risk priorities were determined using Istanbul Airport context, FAA Wildlife Strike data, and open visual datasets."
                   },
                   {
-                        "title": "Classification Core",
-                        "desc": "MobileNetV2 convolutional neural network (CNN) for species-level high-accuracy identification."
+                        "title": "Roboflow Annotation Pipeline",
+                        "desc": "Images were annotated in Roboflow, bounding boxes were created, and dataset cleaning and augmentation steps were applied."
                   },
                   {
-                        "title": "Camera & Stream Unit",
-                        "desc": "Live stream processing and tracking module for airport perimeter cameras."
+                        "title": "YOLOv8n Detection Model",
+                        "desc": "The lightweight YOLOv8n model was trained as the real-time deep learning engine for bird object detection."
                   },
                   {
-                        "title": "Telemetry Interface",
-                        "desc": "Tower control interface presenting early warnings and bird density maps."
+                        "title": "Warning and Integration Logic",
+                        "desc": "The image-based detection output was designed to be extended into a warning system with radar distance data, camera systems, or UAV integration."
                   }
             ],
-            "analysis": "Validated detection accuracy over 94% under diverse weather conditions (fog, clouds, night) and varying flock altitudes.",
-            "achievements": "Awarded TÜBİTAK 2209-A National Undergraduate Research Grant and won 2nd Prize in the Boeing x ESTU Future of Aviation Competition."
+            "analysis": "<p>The thesis evaluated model performance using confusion matrix, precision-confidence, recall-confidence, precision-recall, F1 curve, label distribution, and training result plots. The confusion matrix showed strong performance on the Seagull class, while some confusion remained between classes such as Pigeon and Falcon. Weaker behavior on the background class indicated the need for more diverse negative/background examples.</p><p>The precision-recall curve reported an average value of 0.875 across classes. The recall curve indicated that the model could reach a 0.97 recall level across all classes, while the F1 curve reached a maximum value around 0.78 at approximately 0.449 confidence threshold. Training results showed mAP50 rising to about 0.85 and mAP50-95 reaching around 0.60, while box loss, classification loss, and validation losses decreased consistently during training.</p><p>These outputs show that an image-based bird detection approach can provide a viable foundation for airport safety. The results also indicate that a larger and more balanced dataset, richer background samples, better camera quality, threshold optimization, and future radar/camera integration can turn the system into a stronger warning infrastructure.</p>",
+            "achievements": "<p>The project was supported under the TÜBİTAK 2209-A University Students Research Projects Support Program with project number 1919B012323737. In the proposal phase, the work packages covered dataset preparation, preprocessing, model training, optimization/hyperparameter tuning, and testing; in the thesis phase, this structure was turned into a practical YOLOv8n-based detection model.</p><p>The study demonstrated how image-based AI systems can complement radar-based early warning approaches in aviation safety. Personally, the project provided experience in building data pipelines, training deep learning models, interpreting performance metrics, and approaching an aviation safety problem from an engineering perspective.</p>"
       },
       {
             "id": "project-5",
