@@ -74,10 +74,16 @@ const PORTFOLIO_DATA = {
         degree: "Uçak Bakım Mühendisi / Aviyonik",
         duration: "Eylül 2020 - Mezun",
         gpa: "3.1",
-        details: "Lisans Eğitimim süresince birçok disiplini kapsayan dersler gördüm. Bu derslere örnek:<br><br>• Gaz Türbinli Motorlar<br>• Modern Aviyonik Sistemler<br>• Microişlemciler<br>• Elektrik ve Elektronik<br>• Elektrik Makineleri<br>• Otomatik Uçuş Sistemleri<br>• Seyrüsefer Sistemleri<br>• Sayısal Veri İletimi<br>• Elektronik Gösterge Sistemleri<br>• Elektromanyetik Çevre<br>• Uçak Aerodinamiği<br>• Uçak Yapıları ve Sistemleri<br>• Uçak Malzeme Bilgisi<br>• İnsan Faktörleri<br>• Tahribatsız Muayene Yöntemleri (NDT)<br>• Haberleşme Sistemleri<br><br>Ayrıca, fakülte bünyesindeki SHY-145 onaylı uçak bakım tesislerinde uygulamalı eğitimler aracılığıyla pratik deneyim kazandım."
+        details: "Lisans Eğitimim süresince birçok disiplini kapsayan dersler gördüm. Bu derslere örnek olarak :<br><br>• Gaz Türbinli Motorlar<br>• Modern Aviyonik Sistemler<br>• Microişlemciler<br>• Elektrik ve Elektronik<br>• Elektrik Makineleri<br>• Otomatik Uçuş Sistemleri<br>• Seyrüsefer Sistemleri<br>• Sayısal Veri İletimi<br>• Elektronik Gösterge Sistemleri<br>• Elektromanyetik Çevre<br>• Uçak Aerodinamiği<br>• Uçak Yapıları ve Sistemleri<br>• Uçak Malzeme Bilgisi<br>• İnsan Faktörleri<br>• Tahribatsız Muayene Yöntemleri (NDT)<br>• Haberleşme Sistemleri<br><br>Ayrıca, fakülte bünyesindeki SHY-145 onaylı uçak bakım tesislerinde uygulamalı eğitimler aracılığıyla pratik deneyim kazandım."
       }
     ],
     experience: [
+      {
+        title: "Araştırma Görevlisi",
+        company: "Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı - Havacılık ve Uzay Bilimleri Fakültesi",
+        duration: "Ekim 2025 - Haziran 2026",
+        details: "İŞKUR Gençlik Programı kapsamında, Havacılık ve Uzay Bilimleri Fakültesi bünyesinde kurulan Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı'nda araştırma görevlisi olarak çalıştım. Bu süreçte havacılık odaklı yapay zeka araştırmaları, proje hazırlığı, literatür takibi, teknik dokümantasyon ve laboratuvar çalışmalarının yürütülmesine katkı sundum."
+      },
       {
         title: "Aviyonik Mühendisliği Stajyeri",
         company: "Vilnius Gediminas Teknik Üniversitesi (Vilnius, Litvanya)",
@@ -489,6 +495,12 @@ const PORTFOLIO_DATA = {
       }
     ],
     experience: [
+      {
+        title: "Research Assistant",
+        company: "Aviation AI Research Laboratory - Faculty of Aeronautics and Astronautics",
+        duration: "October 2025 - June 2026",
+        details: "Within the İŞKUR Youth Program, I worked as a research assistant at the Aviation AI Research Laboratory established within the Faculty of Aeronautics and Astronautics. During this period, I contributed to aviation-focused AI research, project preparation, literature tracking, technical documentation, and laboratory activities."
+      },
       {
         title: "Avionics Engineering Intern",
         company: "Vilnius Gediminas Technical University (Vilnius, Lithuania)",
