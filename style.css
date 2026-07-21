@@ -2132,6 +2132,19 @@ section {
     text-align: justify;
 }
 
+.block-text p {
+    margin: 0;
+}
+
+.block-text p + p {
+    margin-top: 1.05em;
+}
+
+.detail-block p + p,
+.team-output-card p + p {
+    margin-top: 1.05em;
+}
+
 .block-text > strong:not(.method-subtitle):not(.overview-subtitle),
 .block-text .content-subtitle {
     display: inline-block;
