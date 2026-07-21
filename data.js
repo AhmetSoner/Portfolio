@@ -1599,6 +1599,118 @@ Self-attention mekanizmasının özeti aşağıdaki denklemdir:<br>
 Bu denklemde <code>Q</code>, <code>K</code> ve <code>V</code> tokenlardan türetilen sorgu, anahtar ve değer temsilleridir. Pratik anlamı şudur: model her uçuş koşulu için hangi değişkenin hangi değişkenle daha ilişkili olduğunu öğrenir. Mevcut sonuçlarda XGBoost daha güçlü pratik denge vermiş olsa da FT-Transformer, projenin akademik tarafında “tabular uçuş verisi transformer ile nasıl modellenir?” sorusuna cevap veren ana mimari olarak korundu.
 `;
 
+  liftUpContent.tr.overview = `
+<strong class="overview-subtitle">A. Makale Başlığı ve Çalışmanın Çerçevesi</strong><br><br>
+Bu çalışma, <strong>Muharip Bir Hava Aracının Performans Verisetinin Makine Öğrenmesi Yöntemleriyle Modellenmesi ve Kıyaslanması</strong> başlığıyla hazırlanmış akademik makale içeriğine dayanmaktadır. İngilizce başlık karşılığı <em>Modeling and Comparing the Performance Dataset of a Combat Aircraft Using Machine Learning Methods</em> şeklindedir. Çalışma; Ahmet Soner GÜLEÇ, Umut ÇÖRDÜK, Ufuk ÖZKAN, akademik danışman Aziz KABA ve sanayi danışmanı Zeynel Abidin AYDOĞAN katkılarıyla, Eskişehir Teknik Üniversitesi ve TUSAŞ bağlamında yürütülen LIFT UP araştırma hattının çıktısıdır.<br><br>
+
+<strong class="overview-subtitle">B. Giriş ve Problem Alanı</strong><br><br>
+Havacılık endüstrisi yüksek teknoloji yoğunluğu, stratejik etkisi ve ekonomik büyüklüğü nedeniyle modern dünyanın en kritik sektörlerinden biridir. Savunma havacılığı ise uzun geliştirme döngüleri, yüksek Ar-Ge maliyetleri ve görev kritik sistem isterleriyle öne çıkar. Muharip hava araçlarında görev başarısı yalnızca aerodinamik kabiliyetlere değil; farklı irtifa, hız, ağırlık, sürükleme ve motor konfigürasyonu koşullarındaki uçuş performans parametrelerini doğru hesaplayabilen aviyonik yazılımlara da bağlıdır.<br><br>
+Bu hesaplamalar geleneksel olarak arama tabloları ve çok değişkenli interpolasyon yöntemleriyle yapılır. Arama tabloları deterministik, izlenebilir ve mühendislik açısından açıklanabilir olmaları nedeniyle avantajlıdır; ancak değişken sayısı arttıkça tablo çözünürlüğü ve bellek maliyeti büyür. Tablo seyrekleştiğinde ise özellikle doğrusal olmayan uçuş bölgelerinde interpolasyon hatası artabilir. Bu nedenle çalışmada, klasik referans yaklaşım korunarak XGBoost ve Tabular Transformer modellerinin aynı veri seti üzerinde doğruluk ve donanım maliyeti bakımından nasıl davrandığı araştırılmıştır.<br><br>
+
+<strong class="overview-subtitle">C. Araştırma Yaklaşımı</strong><br><br>
+Çalışmanın veri kaynağı olarak F-18 uçağına ait performans nomogramları kullanılmıştır. Bu grafikler doğrudan ham uçuş verisi değil; CFD, rüzgar tüneli, uçuş testi ve standart atmosfer düzeltmeleriyle oluşturulmuş performans bilgisinin kullanıcıya sunulan grafik karşılığıdır. Projenin amacı üreticiye ait gizli ham veri tabanına erişmek değil, açık performans grafiklerinde temsil edilen düzeltilmiş uçuş bilgisini sayısal ve modellenebilir bir veri setine dönüştürmektir.<br><br>
+Bu kapsamda nomogramlar dijitize edilmiş, U-Net tabanlı eğri segmentasyonu ve OCR destekli eksen okuma yaklaşımıyla yapısal veri elde edilmiş, master veri seti oluşturulmuş, kübik interpolasyon referansı kurulmuş ve aynı veri üzerinde XGBoost ile Tabular Transformer modelleri eğitilmiştir. Modeller yalnızca RMSE, MAE, MAPE ve R² ile değil; çıkarım gecikmesi, bellek kullanımı, CPU yükü, model boyutu ve hedef ortam uygunluğu ile birlikte değerlendirilmiştir.
+`;
+
+  liftUpContent.tr.architecture = `
+<strong>2. Materyal ve Metot</strong><br><br>
+Uçuş performans parametrelerinin makine öğrenmesiyle modellenebilmesi için önce güvenilir ve karşılaştırılabilir bir veri zemini oluşturuldu. Açık kaynaklı muharip uçak ham performans veri tabanlarına erişim sınırlı olduğundan, çalışma F-18 performans nomogramlarının sayısallaştırılmasıyla başlatıldı. Bu grafik tabanlı bilgi, dijitasyon ve denormalizasyon adımlarıyla çok boyutlu veri setlerine dönüştürüldü. Ardından kübik interpolasyon, XGBoost ve Tabular Transformer aynı giriş değişkenleri ve aynı hedef çıktı üzerinden karşılaştırılabilir hale getirildi.<br><br>
+
+<strong class="method-subtitle">2.1. Nomogram Dijitasyonu ve Veri Seti Oluşturma</strong><br><br>
+Veri kaynağı olarak F-18 Hava Aracı Uçuş El Kitabı performans grafikleri kullanıldı. F-18 platformu, yöntem geliştirme sürecinde açık erişilebilir grafik tabanlı performans verisi sağladığı için seçildi. Uygulama parametresi olarak özgül menzil ele alındı; ancak kurulan yöntem farklı uçuş performans parametrelerine de uygulanabilecek genel bir dijitasyon yaklaşımı sunar.<br><br>
+<div class="project-figure-grid inline-figure-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-10.png" alt="F-18 özgül menzil nomogramı"><figcaption>Şekil 2.1. F-18 özgül menzil nomogramı.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Nomogram, farklı uçuş koşullarında özgül menzil davranışını grafik olarak temsil eden ana veri kaynağıdır. Bu grafik doğrudan ham uçuş testi tablosu değil; uçuş testi, mühendislik düzeltmeleri ve standartlaştırılmış performans bilgisiyle oluşturulan bir mühendislik gösterimidir. Projede bu görselin amacı, KAAN benzeri platformlarda gizli performans verilerine erişmeden açık kaynaklı bir vekil platform üzerinden veri üretim ve modelleme hattını kanıtlamaktır.</p>
+Klasik piksel yoğunluğu, eşikleme ve temel görüntü işleme yöntemleri ilk aşamada incelendi. Ancak yoğun ızgara çizgileri, eksen yazıları, eğri etiketleri ve arka plan gürültüsü nedeniyle hedef performans eğrilerini güvenilir biçimde ayırmakta yetersiz kaldıkları görüldü. Bu nedenle Python ortamında U-Net tabanlı bir segmentasyon mimarisi kullanıldı.<br>
+<div class="project-figure-grid inline-figure-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-11.png" alt="U-Net tabanlı eğri segmentasyon mimarisi"><figcaption>Şekil 2.2. U-Net tabanlı eğri segmentasyon mimarisi.</figcaption></figure>
+</div>
+<p class="figure-detail-text">U-Net mimarisi grafik görüntüsündeki hedef eğriyi arka plan bileşenlerinden piksel düzeyinde ayırmak için kullanıldı. Kodlayıcı bölüm görüntüden kenar, çizgi ve yoğunluk bilgilerini çıkarırken; çözücü bölüm bu temsilleri tekrar görüntü boyutuna taşıyarak her pikseli eğri veya arka plan olarak sınıflandırır. Atlama bağlantıları, grafiklerdeki ince eğri yapılarını koruduğu için bu problemde özellikle faydalıdır.</p>
+Segmentasyon sonrası elde edilen grafik parçalarında eksen değerleri ve sayısal etiketler OCR ile okunmuştur. U-Net hedef eğrileri ayırırken OCR, bu eğrilerin fiziksel koordinat sistemine taşınmasını sağlar. Böylece yoğun ızgara çizgileri ve metin bindirmeleri arasında kalan performans eğrileri sayısal veri üretimine uygun hale getirilmiştir.<br>
+<div class="project-figure-grid inline-figure-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-12.png" alt="Segmentasyon sonrası hedef performans eğrileri"><figcaption>Şekil 2.3. Segmentasyon sonrası ayrıştırılan hedef eğriler.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Bu çıktı, arka plandan ayrıştırılan eğri bilgisinin model veri hattına girmeden önceki ara aşamasını temsil eder. Ayrıştırılan eğriler üzerinde örnekleme yapılır, piksel koordinatları eksen kalibrasyonu ile Mach, irtifa, brüt ağırlık ve drag index gibi fiziksel değişkenlere dönüştürülür.</p>
+Elde edilen veri seti <em>tidy data</em> prensibine göre düzenlenmiştir. Her değişken bir sütun, her gözlem bir satır olarak temsil edilmiştir. Dijitalleştirme kalitesi için temel doğrulama ölçütü, AFM grafiklerinden seçilen kontrol noktaları ile dijital karşılıkları arasındaki sapmanın %2 sınırını aşmamasıdır.<br>
+<div class="project-figure-grid inline-figure-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-13.png" alt="Master veri seti örneği"><figcaption>Şekil 2.4. Master veri seti örnek satırları.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Bu tablo, grafik tabanlı performans bilgisinin makine öğrenmesi modellerine verilebilecek yapısal forma dönüştüğünü gösterir. Altitude, gross weight, drag index, Mach number, specific range ve fuel flow gibi kolonlar modelleme hattının ortak veri şemasını oluşturur.</p>
+
+<strong class="method-subtitle">2.2. Modelleme Yöntemleri</strong><br><br>
+Veri seti oluşturulduktan sonra çalışma üç hesaplama yaklaşımıyla yürütülmüştür. İlk yaklaşım, mevcut tablo tabanlı aviyonik hesaplama mantığını temsil eden kübik interpolasyondur. Diğer iki yaklaşım ise aynı veri seti üzerinde eğitilen XGBoost ve Tabular Transformer modelleridir. Böylece geleneksel nümerik yöntem ve makine öğrenmesi modelleri aynı giriş değişkenleri üzerinden adil biçimde karşılaştırılmıştır.<br><br>
+Kübik interpolasyon referans yöntem olarak kullanılmıştır. Bunun nedeni deterministik, açıklanabilir, düşük hesaplama maliyetine sahip ve mühendislik doğrulamasına uygun olmasıdır. Kübik interpolasyon, doğrusal interpolasyona kıyasla uçuş performans eğrilerindeki yumuşak değişimi daha iyi temsil eder.<br>
+<div class="formula-block"><span>S<sub>i</sub>(x) = a<sub>i</sub> + b<sub>i</sub>(x-x<sub>i</sub>) + c<sub>i</sub>(x-x<sub>i</sub>)<sup>2</sup> + d<sub>i</sub>(x-x<sub>i</sub>)<sup>3</sup></span></div>
+XGBoost, gradyan artırmalı karar ağaçlarına dayanan güçlü bir tabular model olarak seçilmiştir. Model giriş uzayını karar bölgelerine ayırır ve her yeni ağaç önceki hataları azaltacak şekilde eğitilir. Bu yapı; Mach, irtifa, ağırlık, sürükleme ve motor konfigürasyonu gibi değişkenlerin doğrusal olmayan etkilerini yakalamak için kullanılmıştır.<br><br>
+Tabular Transformer ise değişkenler arasındaki bağlamsal ilişkileri attention mekanizmasıyla öğrenebilmesi nedeniyle ikinci öğrenen model olarak değerlendirilmiştir. Bu mimaride kategorik değişkenler embedding, sürekli değişkenler ise normalizasyon/projeksiyon adımlarıyla ortak temsil uzayına taşınır.<br>
+<div class="project-figure-grid inline-figure-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-15.png" alt="FT-Transformer genel akışı"><figcaption>Şekil 2.5. FT-Transformer genel akışı.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-16.png" alt="Transformer encoder blok yapısı"><figcaption>Şekil 2.6. Transformer encoder blok yapısı.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-17.png" alt="Kategorik ve sürekli değişkenlerin birlikte işlendiği mimari"><figcaption>Şekil 2.7. Kategorik ve sürekli değişkenlerin birlikte işlendiği Transformer mimarisi.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Bu görseller Tabular Transformer hattının neden kullanıldığını açıklar. Feature tokenizer, sayısal ve kategorik girdileri ortak token temsillerine dönüştürür; transformer encoder bu tokenlar arasındaki ilişkileri self-attention ile öğrenir; çıktı başlığı ise özgül menzil tahminini üretir. Motor konfigürasyonu kategorik değişken olarak, Mach sayısı, irtifa, brüt ağırlık ve sürükleme indeksi ise sürekli değişkenler olarak ele alınmıştır.</p>
+
+<strong class="method-subtitle">2.3. Model Değerlendirme ve Hedef Ortam Karşılaştırması</strong><br><br>
+Modeller yalnızca tahmin doğruluğuyla değil, düşük kaynaklı hedef ortamda çalışabilirlikleriyle de değerlendirilmiştir. Karşılaştırmada hata metrikleri ile birlikte çıkarım gecikmesi, tepe bellek kullanımı, CPU yükü, model artefakt boyutu ve bütünleşik uygunluk skoru dikkate alınmıştır. Böylece çalışma, en düşük hata değerini veren modeli seçmek yerine doğruluk-donanım verimliliği dengesini değerlendiren bir mühendislik çerçevesi sunmuştur.
+<div class="project-figure-grid inline-figure-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-18.png" alt="Benchmark metrik açıklamaları"><figcaption>Şekil 2.8. Benchmark metriklerinin anlamı.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-19.png" alt="Yöntemlerin benchmark tablosu"><figcaption>Şekil 2.9. Yöntemlerin hedef ortam benchmark tablosu.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-21.png" alt="Benchmark ölçüm sonuçları"><figcaption>Şekil 2.10. Ölçüm sonuçlarının özet tablosu.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Bu tablolar, doğruluk metrikleri ile donanım metriklerinin birlikte okunması gerektiğini gösterir. RMSE, MAE, MAPE ve R² tahmin başarısını ölçerken; p95 gecikme, CPU kullanımı, Peak RSS ve model boyutu gerçek sistemde çalıştırılabilirliği temsil eder. Bu yüzden model seçimi yalnızca en küçük hata değerine değil, NVIDIA Jetson Orin Nano gibi hedef gömülü ortamda sürdürülebilir kaynak kullanımına göre yorumlanmıştır.</p>
+`;
+
+  liftUpContent.tr.analysis = `
+<strong>3. Bulgular ve Tartışma</strong><br><br>
+Kübik interpolasyon, XGBoost ve FT-Transformer modelleri; tahmin doğruluğu, çıkarım gecikmesi, bellek kullanımı, işlemci yükü, model boyutu ve bütünleşik hedef ortam uygunluğu açısından karşılaştırıldı. Sonuçlar, tek bir yöntemin tüm ölçütlerde aynı anda üstün olmadığını; yöntem seçiminin kullanım amacı, donanım kısıtı ve açıklanabilirlik ihtiyacına göre yapılması gerektiğini gösterdi.<br><br>
+Doğruluk sonuçlarında XGBoost, FT-Transformer’a göre daha düşük RMSE, MAE ve MAPE değerleri üretmiştir. XGBoost için RMSE 0,003468, MAE 0,001372 ve MAPE %1,560 olarak elde edilirken; FT-Transformer için bu değerler sırasıyla 0,003671, 0,002044 ve %2,888 olarak raporlanmıştır. R² değerlerinin her iki modelde yüksek olması genel eğilimin başarıyla öğrenildiğini; hata büyüklükleri açısından ise XGBoost’un daha güvenilir pratik tahmin modeli olduğunu göstermektedir.<br>
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-20.png" alt="XGBoost ve FT-Transformer doğruluk karşılaştırması"><figcaption>Şekil 3.1. XGBoost ve FT-Transformer doğruluk karşılaştırması.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-22.png" alt="Hedef runtime ve kaynak özeti"><figcaption>Şekil 3.2. Hedef runtime ve kaynak özeti.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-23.png" alt="Runtime maliyet bileşenleri"><figcaption>Şekil 3.3. Runtime maliyet bileşenleri.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-01.png" alt="Fit Score karşılaştırması"><figcaption>Şekil 3.4. Maliyet tabanlı Fit Score karşılaştırması.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Benchmark sonuçları XGBoost’un yalnızca doğruluk açısından değil, çıkarım hızı açısından da dengeli bir çözüm sunduğunu göstermektedir. XGBoost en düşük p95 gecikme değerini üretirken, FT-Transformer kabul edilebilir hız sunmasına rağmen daha yüksek bellek ayak izine sahiptir. İnterpolasyon ise RAM tarafında avantajlıdır; fakat CPU maliyeti ve gecikme profili nedeniyle pratik sistem değerlendirmesinde tek başına en iyi seçenek değildir.</p>
+Fit Score sonuçları bütünleşik değerlendirmede XGBoost’un en dengeli aday olduğunu göstermiştir. XGBoost 81,5 ile en yüksek skoru alırken, FT-Transformer 77,6 ve interpolasyon 74,0 seviyesinde kalmıştır. Bu sonuç, hata metrikleri ve hedef ortam maliyetleri birlikte değerlendirildiğinde XGBoost’un pratik uygulama için en uygun model olduğunu destekler.<br>
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-02.png" alt="Yöntemlerin proje içindeki rol dağılımı"><figcaption>Şekil 3.5. Yöntemlerin proje içindeki rol dağılımı.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Rol dağılımı, üç yöntemin birbirinin yerine doğrudan konmadığını; her birinin proje içinde farklı bir mühendislik görevini temsil ettiğini açıklar. İnterpolasyon tahmini gerçek ve deterministik referans ailesi olarak, XGBoost pratik tahmin ve demo modeli olarak, FT-Transformer ise akademik araştırma mimarisi olarak konumlandırılmıştır.</p>
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-03.png" alt="Genel karar matrisi"><figcaption>Şekil 3.6. Genel karar matrisi.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-04.png" alt="Genel profil radar grafiği"><figcaption>Şekil 3.7. Genel profil radar grafiği.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-05.png" alt="Kriterlere göre öne çıkan yöntemler"><figcaption>Şekil 3.8. Kriterlere göre öne çıkan yöntemler.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Karar matrisi ve radar grafiği, XGBoost’un doğruluk, hız, kurulum kolaylığı ve hedef ortam uygunluğu açısından dengeli profil sunduğunu gösterir. İnterpolasyon açıklanabilirlik ve düşük RAM kullanımı açısından güçlüdür; ancak referans yöntem olduğu için doğrudan doğruluk yarışına sokulmamalıdır. FT-Transformer model boyutu ve araştırma değeri açısından öne çıkar; fakat bellek kullanımı ve runtime bağımlılıkları nedeniyle mevcut haliyle doğrudan pratik deploy modeli değil, ileri optimizasyon adayıdır.</p>
+Bu bulgulara göre model seçimi tek bir metriğe indirgenmemelidir. Mevcut performans tablolarına sadık, açıklanabilir ve doğrulanabilir referans değer üretmek için interpolasyon ailesi uygundur. Düşük hata, hızlı çıkarım ve uygulanabilir demo sistemi için XGBoost en güçlü adaydır. Tabular Transformer ise uçuş performans verilerinde attention tabanlı ilişkilerin incelenmesi için değerli bir araştırma hattı sunmaktadır.
+`;
+
+  liftUpContent.tr.achievements = `
+<strong>4. Sonuçlar ve Proje Çıktıları</strong><br><br>
+Bu çalışma, muharip hava araçlarında uçuş performans parametrelerinin hesaplanmasında kullanılan geleneksel tablo/interpolasyon yaklaşımının modern makine öğrenmesi modelleriyle doğruluk ve donanım verimliliği açısından karşılaştırılabileceğini göstermiştir. F-18 performans grafiklerinden elde edilen özgül menzil verileri sayısallaştırılmış, çok boyutlu veri setlerine dönüştürülmüş ve aynı veri seti üzerinde kübik interpolasyon, XGBoost ve Tabular Transformer modelleri değerlendirilmiştir.<br><br>
+Elde edilen bulgular, kübik interpolasyonun deterministik ve açıklanabilir yapısıyla referans üretimi için değerli olduğunu; XGBoost’un düşük hata değerleri, kısa çıkarım süresi ve düşük kaynaklı hedef ortamda dengeli kaynak kullanımıyla en uygulanabilir pratik çözümü sunduğunu ortaya koymuştur. Tabular Transformer mevcut koşullarda XGBoost’u geçememiş olsa da, değişkenler arası ilişkileri dikkat mekanizmasıyla temsil edebilmesi nedeniyle ileri çalışmalar için önemli bir mimari aday olarak değerlendirilmiştir.<br><br>
+Çalışmanın temel katkısı, aviyonik performans hesaplamalarında yalnızca doğruluk odaklı değil; çıkarım hızı, bellek kullanımı, işlemci yükü ve model boyutu gibi donanım-farkındalıklı ölçütleri de içeren bütünleşik bir model seçimi çerçevesi sunmasıdır. Bu yönüyle çalışma, yerli muharip hava aracı projelerinde aviyonik yazılım, gömülü yapay zekâ ve performans modelleme alanlarında milli teknik bilgi birikimini güçlendirecek bir ön değerlendirme sağlamaktadır.<br><br>
+<div class="project-figure-grid result-paper-flow">
+  <figure class="project-figure-card"><img src="word-article-fig-06.png" alt="TUSAŞ kurumsal destek görseli"><figcaption>Şekil 4.1. TUSAŞ kurumsal destek görseli.</figcaption></figure>
+  <figure class="project-figure-card"><img src="word-article-fig-08.png" alt="LIFT UP program görseli"><figcaption>Şekil 4.2. LIFT UP program görseli.</figcaption></figure>
+</div>
+<p class="figure-detail-text">Kurumsal destek ve LIFT UP programı bu projenin yalnızca akademik bir model karşılaştırması olarak kalmamasını sağladı. Çalışma, sanayi danışmanlığı ve milli teknoloji odağıyla gerçek aviyonik yazılım problemlerine daha yakın bir araştırma pratiği kazandırdı.</p>
+<div class="project-output-access">
+  <div>
+    <span class="visual-kicker">Arayüz Çıktısı</span>
+    <strong>Specific Range Studio</strong>
+    <p>Makale içeriğinde anlatılan veri işleme, model eğitimi, karşılaştırma, benchmark ve tekil tahmin akışlarının çalıştırılabilir yazılım çıktısıdır. Repo; veri yükleme, ön işleme, XGBoost/FT-Transformer eğitimi, interpolasyon referansı, rapor üretimi ve Flask tabanlı tahmin arayüzü modüllerini içerir.</p>
+  </div>
+  <a class="project-output-link" href="https://github.com/ufukzkn/specific-range-studio" target="_blank" rel="noopener noreferrer">
+    <i data-lucide="external-link"></i>
+    <span>Specific Range Studio’ya Git</span>
+  </a>
+</div>
+<strong class="overview-subtitle">Kaynaklar</strong><br><br>
+[1] Air Transport Action Group, Aviation Benefits Beyond Borders 2024. [2] Mordor Intelligence, Fighter Aircraft Market Forecast. [3-4] Spitzer, C. R., The Avionics Handbook. [5] Baller vd., DeepEdgeBench. [6] Grinsztajn vd., Why Do Tree-Based Models Still Outperform Deep Learning on Typical Tabular Data? [7] Gorishniy vd., Revisiting Deep Learning Models for Tabular Data. Bu kaynaklar makale metninde havacılık sektörü bağlamı, aviyonik performans hesaplama yaklaşımı, edge benchmark değerlendirmesi ve tabular model seçimi gerekçelerini desteklemek için kullanılmıştır.
+`;
+
   Object.entries(liftUpContent).forEach(([lang, content]) => {
     const project = PORTFOLIO_DATA[lang]?.projects?.find(item => item.id === "project-6");
     if (project) {
