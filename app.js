@@ -462,6 +462,7 @@ function renderProjects(projectsList) {
 
         const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
                         proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
+                        proj.category === 'arge' ? (currentLang === 'tr' ? 'AR-GE' : 'R&D') :
                         (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
 
         card.innerHTML = `
@@ -527,6 +528,7 @@ function openProjectModal(proj) {
     
     const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
                     proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
+                    proj.category === 'arge' ? (currentLang === 'tr' ? 'AR-GE' : 'R&D') :
                     (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
                     
     document.getElementById("modal-cat").textContent = catName;

@@ -383,7 +383,7 @@ const PORTFOLIO_DATA = {
       {
           "id": "project-5",
           "title": "INFLOBOT: Yapay Zeka Destekli Şişirilebilir Yumuşak MRO Robotu",
-          "category": "gomulu",
+          "category": "arge",
           "summary": "Tulpar Tharros takımı kapsamında geliştirilen INFLOBOT, uçak yakıt tankları ve benzeri dar bakım alanlarında teknisyenin erişemediği bölgeleri incelemek için tasarlanmış yapay zeka destekli, şişirilebilir yumuşak robot konseptidir. Proje; aydınlatma, görüntüleme, CO2 ile yönlendirme, oksijen desteği ve hasar tespiti bileşenlerini tek bir bakım asistanında birleştirir. Amaç, MRO süreçlerinde zaman ve iş gücü kaybını azaltırken teknisyen güvenliğini, sürdürülebilirliği ve bakım doğruluğunu artırmaktır.",
           "description": "INFLOBOT; Turkish Airlines & Turkish Technic Design Hackathon, TEKNOFEST Girişimcilik ve sürdürülebilir havacılık çalışmalarında olgunlaştırılan, uçak yakıt tankı gibi kapalı ve karmaşık alanlarda muayene/bakım sürecini kolaylaştırmayı hedefleyen bir yumuşak robotik projesidir. Geleneksel sert robotlardan farklı olarak esnek, şişirilebilir ve bio-inspired bir gövde kurgusuna sahiptir. Kamera, sensör, LED aydınlatma, CO2 yönlendirme kanalları ve oksijen destek hattı ile teknisyene hem görüş hem de güvenli çalışma desteği sağlar.",
           "image": "inflobot-figures/images.jpg",
@@ -886,7 +886,7 @@ const PORTFOLIO_DATA = {
       {
           "id": "project-5",
           "title": "INFLOBOT: AI-Supported Inflatable Soft MRO Robot",
-          "category": "gomulu",
+          "category": "arge",
           "summary": "INFLOBOT is an AI-supported inflatable soft robot concept developed within Tulpar Tharros for aircraft fuel-tank and confined-space inspection. It combines illumination, visual sensing, CO2-based steering channels, oxygen support, and future defect-detection logic to reduce MRO time, technician risk, and workforce loss.",
           "description": "Developed through the Turkish Airlines & Turkish Technic Design Hackathon and TEKNOFEST Entrepreneurship process, INFLOBOT is a bio-inspired soft robotic maintenance assistant for aircraft fuel tanks and other confined aviation structures.",
           "image": "inflobot-figures/images.jpg",
@@ -1042,6 +1042,7 @@ const UI_TRANSLATIONS = {
     filter_all: "HEPSİ",
     filter_hardware: "DONANIM",
     filter_embedded: "GÖMÜLÜ",
+    filter_research: "AR-GE",
     filter_software: "YAZILIM",
     stat_status: "DURUM:",
     stat_status_val: "GÖREVE HAZIR",
@@ -1112,6 +1113,7 @@ const UI_TRANSLATIONS = {
     filter_all: "ALL",
     filter_hardware: "HARDWARE",
     filter_embedded: "EMBEDDED",
+    filter_research: "R&D",
     filter_software: "SOFTWARE",
     stat_status: "STATUS:",
     stat_status_val: "READY FOR DUTY",

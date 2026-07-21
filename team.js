@@ -109,7 +109,9 @@ function renderTeamProjects(lang, team) {
             ? (lang === "tr" ? "DONANIM" : "HARDWARE")
             : project.category === "gomulu"
                 ? (lang === "tr" ? "GÖMÜLÜ" : "EMBEDDED")
-                : (lang === "tr" ? "YAZILIM" : "SOFTWARE");
+                : project.category === "arge"
+                    ? (lang === "tr" ? "AR-GE" : "R&D")
+                    : (lang === "tr" ? "YAZILIM" : "SOFTWARE");
 
         card.innerHTML = `
             <div class="corner-t-l"></div>

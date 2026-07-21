@@ -36,6 +36,7 @@ function loadProjectData(lang, projectId) {
     // Kategori Rozeti
     const catName = proj.category === 'donanim' ? (lang === 'tr' ? 'DONANIM TASARIMI' : 'HARDWARE DESIGN') : 
                     proj.category === 'gomulu' ? (lang === 'tr' ? 'GÖMÜLÜ SİSTEMLER' : 'EMBEDDED SYSTEMS') : 
+                    proj.category === 'arge' ? (lang === 'tr' ? 'AR-GE PROJESİ' : 'R&D PROJECT') :
                     (lang === 'tr' ? 'YAZILIM & SİMÜLASYON' : 'SOFTWARE & SIMULATION');
     document.getElementById("project-category").textContent = catName;
 
@@ -143,6 +144,7 @@ function renderRelatedProjects(lang, currentId) {
         
         const catName = proj.category === 'donanim' ? (lang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
                         proj.category === 'gomulu' ? (lang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
+                        proj.category === 'arge' ? (lang === 'tr' ? 'AR-GE' : 'R&D') :
                         (lang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
 
         card.addEventListener("click", () => {
