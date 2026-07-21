@@ -102,7 +102,15 @@ const PORTFOLIO_DATA = {
         role: "Elektrik Birimi Üyesi",
         period: "2022 - 2025",
         icon: "zap",
+        logo: "Hidroana/hidro logo.png",
         focus: "Hidrojen enerjili araçlarda güç elektroniği uygulamaları ve sistem entegrasyonu.",
+        overview: [
+          "Hidroana, Eskişehir Teknik Üniversitesi'nin hidrojen enerjili araç projesidir. 2007 yılında kurulmuş, 17 yıllık bir proje kültürüne sahip olan takım; alternatif enerjili araç projeleri alanında Türkiye'nin öncü ekiplerinden biri olduğunu göstermiştir. Tamamı gönüllü mühendislik öğrencilerinden oluşan ekipte Malzeme Bilimi ve Mühendisliği, Elektrik-Elektronik Mühendisliği, Bilgisayar Mühendisliği, Kimya Mühendisliği ve Makine Mühendisliği gibi farklı disiplinlerden öğrenciler yer almaktadır.",
+          "Takımın temel amacı, hidrojen enerjisinin hem ülkemizde hem de dünya genelinde alternatif bir enerji kaynağı olarak kullanımını artırmak ve yaygınlaştırmaktır. Bu amaç doğrultusunda Hidroana, her zaman daha iyisini yapmayı hedefleyen; ulusal ve uluslararası projelerde mükemmellik standardını benimseyen bir çalışma anlayışıyla hareket eder. Hidrojen enerjisinin sürdürülebilir ve etkili şekilde kullanılmasını sağlamak, bu alanda öncü ve örnek alınan bir grup olmak takımın en büyük hedeflerinden biridir.",
+          "Proje yapısı, görevlerin iş bölümü esasına göre paylaşılması ve araştırma-geliştirme ağırlıklı çalışmalar yürütülmesi üzerine kuruludur. Bu yaklaşım sayesinde hidrojenin günlük hayatta kullanımına katkı sağlamak, alternatif enerji teknolojilerinin yaygınlaşmasına destek olmak ve daha temiz bir dünya hedefi için somut mühendislik çıktıları üretmek amaçlanmaktadır. Ekip, bu vizyonu gerçekleştirmek için sürekli gelişmeyi ve kendi alanında adını duyurmuş bir grup olmayı hedefler.",
+          "Shell Eco-marathon, dünyanın en prestijli öğrenci inovasyon yarışmalarından biri olarak 38 yıldır Avrupa, Amerika ve Asya kıtalarında düzenlenmektedir. Yarışma kapsamında dünyanın farklı bölgelerinden gelen üniversite öğrencileri, kendi tasarladıkları ve ürettikleri enerji tasarruflu araçlarla en az enerjiyle en uzun mesafeyi kat etmek için yarışır. Yaratıcı tasarımları ve teknik yeterlilikleriyle en yüksek verimlilik değerlerine ulaşan takımlar ödüllendirilir. Hidroana, Shell Eco-marathon Europe ve Shell Eco-marathon Türkiye organizasyonlarına düzenli olarak katılım sağlayan bir takımdır.",
+          "TEKNOFEST kapsamında TÜBİTAK tarafından düzenlenen Efficiency Challenge Elektrikli Araç Yarışları, üniversite ve lise öğrencilerinin elektrikli araçlarını en verimli şekilde tasarlayıp yarıştırdığı önemli bir etkinliktir. Hidromobil ve elektromobil kategorileri bulunan bu yarışmada Hidroana, 2008 yılından beri hidromobil kategorisinde yer almaktadır. Yarışmanın temel amacı, alternatif enerji ile çalışan araçlara yönelik yerli üretimi artırmak, katma değeri yüksek ürünlerin geliştirilmesini desteklemek ve alternatif enerji kaynakları konusunda ülke genelinde farkındalık oluşturmaktır."
+        ],
         contributions: [
           "DORLION ve MIDAS araçlarının elektrik-elektronik alt sistem tasarım ve entegrasyonu",
           "Güç elektroniği, dijital/analog sistem tasarımı ve donanım optimizasyonu çalışmaları",
@@ -562,7 +570,15 @@ const PORTFOLIO_DATA = {
         role: "Electrical Unit Member",
         period: "2022 - 2025",
         icon: "zap",
+        logo: "Hidroana/hidro logo.png",
         focus: "Power electronics applications and system integration for hydrogen-powered vehicles.",
+        overview: [
+          "Hidroana is Eskişehir Technical University's hydrogen-powered vehicle project. Founded in 2007, the team has built a 17-year project culture and has become one of Turkey's pioneering student teams in alternative-energy vehicle projects. The team is composed entirely of volunteer engineering students from disciplines such as Materials Science and Engineering, Electrical and Electronics Engineering, Computer Engineering, Chemical Engineering, and Mechanical Engineering.",
+          "The team's main purpose is to increase and popularize the use of hydrogen energy as an alternative energy source both in Turkey and globally. In line with this purpose, Hidroana works with a mindset that constantly aims to improve and adopts a standard of excellence in national and international projects. One of the team's largest goals is to enable the sustainable and effective use of hydrogen energy and become a pioneering group in this field.",
+          "The project structure is based on sharing responsibilities through task division and carrying out research-and-development-oriented work. Through this approach, the team aims to contribute to the daily-life use of hydrogen, support the spread of alternative energy technologies, and produce concrete engineering outputs for a cleaner world.",
+          "Shell Eco-marathon is one of the world's most prestigious student innovation competitions and has been held for 38 years across Europe, America, and Asia. In this competition, university students race with energy-efficient vehicles they design and manufacture themselves, aiming to travel the longest distance with the least amount of energy. Hidroana regularly participates in Shell Eco-marathon Europe and Shell Eco-marathon Turkey events.",
+          "The TÜBİTAK Efficiency Challenge Electric Vehicle Races, held within TEKNOFEST, are major competitions where university and high-school students design and race electric vehicles for maximum efficiency. Hidroana has competed in the hydromobile category since 2008. The event aims to increase domestic production in alternative-energy vehicles, support high-value product development, and raise national awareness of alternative energy sources."
+        ],
         contributions: [
           "Electrical-electronic subsystem design and integration for DORLION and MIDAS vehicles",
           "Power electronics, digital/analog system design, and hardware optimization studies",
