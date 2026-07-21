@@ -80,9 +80,9 @@ const PORTFOLIO_DATA = {
     experience: [
       {
         title: "Araştırma Görevlisi",
-        company: "Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı - Havacılık ve Uzay Bilimleri Fakültesi",
+        company: "Eskişehir Teknik Üniversitesi (Eskişehir, Türkiye)",
         duration: "Ekim 2025 - Haziran 2026",
-        details: "İŞKUR Gençlik Programı kapsamında, Havacılık ve Uzay Bilimleri Fakültesi bünyesinde kurulan Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı'nda araştırma görevlisi olarak çalıştım. Bu süreçte havacılık odaklı yapay zeka araştırmaları, proje hazırlığı, literatür takibi, teknik dokümantasyon ve laboratuvar çalışmalarının yürütülmesine katkı sundum."
+        details: "İŞKUR Gençlik Programı kapsamında, Eskişehir Teknik Üniversitesi bünyesinde kurulan Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı'nda araştırma görevlisi olarak çalıştım.<br><br>• <b>İHA Sistem Tasarımı:</b> İnsansız hava araçları ve aviyonik sistemler için uçuş kontrol algoritmaları geliştirme süreçlerinde görev aldım. Sensör verilerinin işlenmesi, uçuş durumunun yorumlanması ve otonom karar verme mekanizmalarının kurgulanması üzerine çalışmalar yürüttüm.<br><br>• <b>Simülasyon ve Modelleme:</b> MATLAB/Simulink ve Python ortamlarını kullanarak hava aracı sistem davranışlarının modellenmesine katkı sağladım. Geliştirilen yazılım ve kontrol yaklaşımlarının sanal ortamda test edilmesi, doğrulama analizlerinin yapılması ve sonuçların teknik olarak yorumlanması süreçlerinde yer aldım.<br><br>• <b>Donanım Geliştirme:</b> Yapay zeka destekli havacılık uygulamalarını destekleyebilecek elektronik kartların tasarım, doğrulama ve entegrasyon süreçlerinde görev aldım. Sensör, işlemci ve uçuş kontrol altyapılarının birlikte çalışmasına yönelik donanım geliştirme çalışmalarına katkı sundum."
       },
       {
         title: "Aviyonik Mühendisliği Stajyeri",
@@ -497,9 +497,9 @@ const PORTFOLIO_DATA = {
     experience: [
       {
         title: "Research Assistant",
-        company: "Aviation AI Research Laboratory - Faculty of Aeronautics and Astronautics",
+        company: "Eskişehir Technical University (Eskişehir, Turkey)",
         duration: "October 2025 - June 2026",
-        details: "Within the İŞKUR Youth Program, I worked as a research assistant at the Aviation AI Research Laboratory established within the Faculty of Aeronautics and Astronautics. During this period, I contributed to aviation-focused AI research, project preparation, literature tracking, technical documentation, and laboratory activities."
+        details: "Within the İŞKUR Youth Program, I worked as a research assistant at the Aviation AI Research Laboratory established at Eskişehir Technical University.<br><br>• <b>UAV System Design:</b> Contributed to the development of flight control algorithms for unmanned aerial vehicles and avionics systems. Worked on sensor data processing, flight-state interpretation, and the design of autonomous decision-making workflows.<br><br>• <b>Simulation and Modeling:</b> Used MATLAB/Simulink and Python to support the modeling of aircraft system behavior. Took part in virtual testing, verification analysis, and technical interpretation of developed control and software approaches.<br><br>• <b>Hardware Development:</b> Contributed to the design, validation, and integration of electronic boards supporting AI-assisted aviation applications. Supported hardware development efforts involving sensors, processing units, and flight-control infrastructure."
       },
       {
         title: "Avionics Engineering Intern",
