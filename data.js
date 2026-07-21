@@ -59,13 +59,13 @@ const PORTFOLIO_DATA = {
         role: "Elektrik Birimi Üyesi",
         period: "2022 - 2025",
         icon: "zap",
-        focus: "Hidrojen enerjili araçlarda güç elektroniği, BMS, izolasyon izleme ve araç entegrasyonu.",
+        focus: "Hidrojen enerjili araçlarda güç elektroniği uygulamaları ve sistem entegrasyonu.",
         contributions: [
           "DORLION ve MIDAS araçlarının elektrik-elektronik alt sistem tasarım ve entegrasyonu",
           "3 fazlı BLDC motor sürücü, batarya yönetim sistemi ve izolasyon izleme donanımı geliştirme",
           "PCB tasarımı, devre simülasyonu, termal analiz ve yarışma saha entegrasyonu"
         ],
-        outcomes: ["TEKNOFEST Türkiye İkinciliği", "Elektronik Sistemler Özel Jüri Ödülü", "Shell Eco-Marathon"]
+        outcomes: ["TEKNOFEST Efficiency Challenge İkinciliği", "TEKNOFEST Efficiency Challenge Özel Jüri Ödülü", "Shell Eco-Marathon Finalisti"]
       }
     ],
     education: [
@@ -476,13 +476,13 @@ const PORTFOLIO_DATA = {
         role: "Electrical Unit Member",
         period: "2022 - 2025",
         icon: "zap",
-        focus: "Power electronics, BMS, insulation monitoring, and vehicle integration for hydrogen-powered vehicles.",
+        focus: "Power electronics applications and system integration for hydrogen-powered vehicles.",
         contributions: [
           "Electrical-electronic subsystem design and integration for DORLION and MIDAS vehicles",
           "Development of 3-phase BLDC motor driver, battery management, and insulation monitoring hardware",
           "PCB design, circuit simulation, thermal analysis, and race-site system integration"
         ],
-        outcomes: ["TEKNOFEST 2nd Place in Turkey", "Electronic Systems Special Jury Award", "Shell Eco-Marathon"]
+        outcomes: ["TEKNOFEST Efficiency Challenge 2nd Place", "TEKNOFEST Efficiency Challenge Special Jury Award", "Shell Eco-Marathon Finalist"]
       }
     ],
     education: [
