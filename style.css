@@ -1169,28 +1169,43 @@ section {
 
 .team-output-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
 .team-output-card {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+    padding: 18px 20px;
     border: 1px solid rgba(57, 255, 20, 0.2);
     background: rgba(57, 255, 20, 0.04);
-    color: #eaffea;
-    font-family: var(--font-header);
-    font-size: 0.88rem;
-    line-height: 1.45;
+    color: var(--text-main);
 }
 
 .team-output-card i {
     flex: 0 0 auto;
     width: 18px;
     height: 18px;
+    margin-top: 4px;
     color: var(--accent);
+}
+
+.team-output-card h3 {
+    margin: 0 0 8px;
+    color: var(--accent);
+    font-family: var(--font-header);
+    font-size: 0.92rem;
+    line-height: 1.35;
+}
+
+.team-output-card p {
+    margin: 0;
+    color: var(--text-main);
+    font-size: 0.98rem;
+    line-height: 1.75;
+    text-align: justify;
 }
 
 .empty-team-projects {

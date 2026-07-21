@@ -68,10 +68,17 @@ function loadTeamData(lang, teamId) {
 
     const outputGrid = document.getElementById("team-output-grid");
     outputGrid.innerHTML = "";
-    (team.outcomes || []).forEach(item => {
+    const detailedOutputs = team.outcomeDetails || (team.outcomes || []).map(item => ({ title: item, text: "" }));
+    detailedOutputs.forEach(item => {
         const card = document.createElement("div");
         card.className = "team-output-card";
-        card.innerHTML = `<i data-lucide="badge-check"></i><span>${item}</span>`;
+        card.innerHTML = `
+            <i data-lucide="badge-check"></i>
+            <div>
+                <h3>${item.title}</h3>
+                ${item.text ? `<p>${item.text}</p>` : ""}
+            </div>
+        `;
         outputGrid.appendChild(card);
     });
 

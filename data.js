@@ -45,7 +45,21 @@ const PORTFOLIO_DATA = {
           "TFX (MMU Kaan) uçağı uçuş performans verisi modelleme ve benchmark çalışmalarının yürütülmesi",
           "TEKNOFEST FPV drone takibi ve kuş tespit sistemi gibi havacılık yapay zekası projelerinde teknik liderlik"
         ],
-        outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"]
+        outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"],
+        outcomeDetails: [
+          {
+            title: "TUSAŞ LIFT-UP Programı",
+            text: "TUSAŞ LIFT-UP, lisans seviyesindeki bitirme ve araştırma projelerini sanayi problemleriyle eşleştiren, öğrencilerin Türk Havacılık ve Uzay Sanayii ekosistemiyle doğrudan temas kurmasını sağlayan sanayi odaklı bir programdır. HAYA kapsamında yürütülen LIFT-UP projesinde, TFX (MMU Kaan) uçağı gibi modern muharip hava aracı platformlarında performans verisinin nasıl modellenebileceği, klasik lookup table ve interpolasyon yaklaşımlarına alternatif makine öğrenmesi yöntemleriyle incelendi. Bu çıktı, takımın yalnızca akademik üretim yapan bir topluluk olmadığını; sanayi ihtiyacı, danışman geri bildirimi, raporlama disiplini ve uygulanabilir prototip beklentisiyle proje yönetebildiğini gösterdi."
+          },
+          {
+            title: "TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Desteği",
+            text: "TÜBİTAK 2209-A, üniversite öğrencilerinin akademik danışman eşliğinde araştırma kültürü kazanmasını, bilimsel yöntemle problem tanımlamasını ve proje çıktısı üretebilmesini destekleyen ulusal bir programdır. HAYA için 2209-A süreci; fikir geliştirme, literatür okuma, yöntem seçimi, deney planı oluşturma ve akademik rapor yazımı gibi adımların takım kültürüne yerleşmesini sağladı. Bu destek, topluluğun yapay zeka ve havacılık eksenindeki projelerini yalnızca yarışma odaklı değil, bilimsel temeli olan araştırma çıktılarına dönüştürmesi açısından kritik bir kazanım oldu."
+          },
+          {
+            title: "TÜBİTAK 2209-B Sanayiye Yönelik Araştırma Projeleri Desteği",
+            text: "TÜBİTAK 2209-B, öğrenci projelerinin sanayi kuruluşlarıyla ilişkilendirilmesini ve gerçek sektör ihtiyaçlarına temas eden araştırma çıktılarına dönüşmesini hedefleyen bir destek programıdır. 2209-B kapsamındaki çalışmalar, HAYA'nın geliştirdiği teknik fikirleri yalnızca laboratuvar veya simülasyon ortamında bırakmayıp uygulanabilirlik, maliyet, doğrulama, sistem entegrasyonu ve sanayi beklentileriyle birlikte ele almasını sağladı. Bu yönüyle 2209-B deneyimi, milli teknoloji hamlesiyle uyumlu olarak yerli havacılık problemlerine öğrenci seviyesinde nitelikli mühendislik katkısı sunma pratiği kazandırdı."
+          }
+        ]
       },
       {
         id: "team-tulpar-tharros",
@@ -470,7 +484,21 @@ const PORTFOLIO_DATA = {
           "Leading TFX (MMU Kaan) aircraft flight performance data modeling and benchmark studies",
           "Technical leadership in aviation AI projects such as TEKNOFEST FPV drone tracking and bird detection"
         ],
-        outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"]
+        outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"],
+        outcomeDetails: [
+          {
+            title: "TUSAŞ LIFT-UP Program",
+            text: "TUSAŞ LIFT-UP is an industry-oriented program that connects undergraduate graduation and research projects with real aviation problems and gives students direct exposure to the Turkish Aerospace ecosystem. Within HAYA, the LIFT-UP project examined how performance data for modern combat aircraft platforms such as the TFX (MMU Kaan) can be modeled with machine learning alternatives to classical lookup-table and interpolation workflows. This output showed that the team could manage a project with industrial expectations, advisor feedback, disciplined reporting, and an applicable prototype mindset."
+          },
+          {
+            title: "TÜBİTAK 2209-A Undergraduate Research Project Support",
+            text: "TÜBİTAK 2209-A supports undergraduate students in gaining research culture, defining problems through scientific methodology, and producing academic outputs under advisor guidance. For HAYA, the 2209-A process helped embed literature review, method selection, experimental planning, and academic reporting into the team culture. It became a critical step in turning aviation AI ideas into research-based outputs rather than only competition-oriented prototypes."
+          },
+          {
+            title: "TÜBİTAK 2209-B Industry-Oriented Research Project Support",
+            text: "TÜBİTAK 2209-B aims to connect student projects with industrial organizations and transform them into research outputs that address real sector needs. For HAYA, this experience encouraged the team to evaluate technical ideas through applicability, cost, validation, system integration, and industrial expectations. In that sense, 2209-B strengthened the team's ability to contribute to national aviation problems in line with the national technology initiative."
+          }
+        ]
       },
       {
         id: "team-tulpar-tharros",
