@@ -1702,8 +1702,6 @@ Elde edilen bulgular, kübik interpolasyonun deterministik ve açıklanabilir ya
     <span>Specific Range Studio’ya Git</span>
   </a>
 </div>
-<strong class="overview-subtitle">Kaynaklar</strong><br><br>
-[1] Air Transport Action Group, Aviation Benefits Beyond Borders 2024. [2] Mordor Intelligence, Fighter Aircraft Market Forecast. [3-4] Spitzer, C. R., The Avionics Handbook. [5] Baller vd., DeepEdgeBench. [6] Grinsztajn vd., Why Do Tree-Based Models Still Outperform Deep Learning on Typical Tabular Data? [7] Gorishniy vd., Revisiting Deep Learning Models for Tabular Data. Bu kaynaklar makale metninde havacılık sektörü bağlamı, aviyonik performans hesaplama yaklaşımı, edge benchmark değerlendirmesi ve tabular model seçimi gerekçelerini desteklemek için kullanılmıştır.
 `;
 
   Object.entries(liftUpContent).forEach(([lang, content]) => {
