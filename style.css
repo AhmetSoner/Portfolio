@@ -871,6 +871,42 @@ section {
     text-shadow: 0 0 8px var(--primary-glow);
 }
 
+.internship-files {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.internship-files-title {
+    flex-basis: 100%;
+    color: var(--primary);
+    font-family: var(--font-header);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.internship-files a {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 9px;
+    border: 1px solid rgba(0, 240, 255, 0.28);
+    color: var(--primary);
+    background: rgba(0, 240, 255, 0.045);
+    font-family: var(--font-header);
+    font-size: 0.76rem;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.internship-files a:hover {
+    border-color: var(--primary);
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.14);
+}
+
 /* ==========================================================================
    SKILLS SECTION
    ========================================================================== */
