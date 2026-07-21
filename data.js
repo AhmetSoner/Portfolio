@@ -382,58 +382,72 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-5",
-            "title": "INFLOBOT: Yapay Zeka Destekli MRO Robotu",
+            "title": "INFLOBOT: Yapay Zeka Destekli Şişirilebilir Yumuşak MRO Robotu",
             "category": "gomulu",
-            "summary": "Uçak bakım süreçlerinde yakıt tankı gibi dar alan muayeneleri için yumuşak robot asistan.",
-            "description": "Havacılık bakım-onarım (MRO) sektöründe uçak yakıt tankları, uzay araçları ve roket gövdeleri gibi erişimi zor alanlarda hızlı hata tespiti yapabilen yapay zeka destekli yumuşak robottur. Entegre aydınlatma sistemiyle teknisyenlere net görüş sağlar. Proje TEKNOFEST Girişimcilik Yarışması'nda 'En İyi Girişim' seçilmiş ve THY Design Hackathon'da finalist olmuştur.",
-            "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600",
+            "summary": "Tulpar Tharros takımı kapsamında geliştirilen INFLOBOT, uçak yakıt tankları ve benzeri dar bakım alanlarında teknisyenin erişemediği bölgeleri incelemek için tasarlanmış yapay zeka destekli, şişirilebilir yumuşak robot konseptidir. Proje; aydınlatma, görüntüleme, CO2 ile yönlendirme, oksijen desteği ve hasar tespiti bileşenlerini tek bir bakım asistanında birleştirir. Amaç, MRO süreçlerinde zaman ve iş gücü kaybını azaltırken teknisyen güvenliğini, sürdürülebilirliği ve bakım doğruluğunu artırmaktır.",
+            "description": "INFLOBOT; Turkish Airlines & Turkish Technic Design Hackathon, TEKNOFEST Girişimcilik ve sürdürülebilir havacılık çalışmalarında olgunlaştırılan, uçak yakıt tankı gibi kapalı ve karmaşık alanlarda muayene/bakım sürecini kolaylaştırmayı hedefleyen bir yumuşak robotik projesidir. Geleneksel sert robotlardan farklı olarak esnek, şişirilebilir ve bio-inspired bir gövde kurgusuna sahiptir. Kamera, sensör, LED aydınlatma, CO2 yönlendirme kanalları ve oksijen destek hattı ile teknisyene hem görüş hem de güvenli çalışma desteği sağlar.",
+            "image": "inflobot-figures/inflobot-co2-compressor-3d.png",
+            "detailImage": "inflobot-figures/inflobot-soft-robot-animation.gif",
+            "teamIds": [
+                        "team-tulpar-tharros"
+            ],
             "tags": [
-                  "Yumuşak Robotik",
-                  "Yapay Zeka",
-                  "MRO Havacılık",
-                  "TEKNOFEST Ödüllü"
+                        "Soft Robotics",
+                        "Inflatable Robot",
+                        "MRO Aviation",
+                        "Teknofest",
+                        "THY Design Hackathon"
             ],
             "specs": [
-                  {
-                        "name": "Uygulama Alanı",
-                        "value": "Yakıt Tankı & Ulaşılamaz Bölüm Muayenesi"
-                  },
-                  {
-                        "name": "Ödül",
-                        "value": "TEKNOFEST En İyi Girişim Ödülü"
-                  },
-                  {
-                        "name": "Geliştirici Takım",
-                        "value": "Tulpar Tharros (Co-Founder)"
-                  },
-                  {
-                        "name": "Tasarım",
-                        "value": "Esnek Yumuşak Gövde"
-                  }
+                        {
+                                    "name": "Proje Takımı",
+                                    "value": "Tulpar Tharros Havacılık Topluluğu"
+                        },
+                        {
+                                    "name": "Uygulama Alanı",
+                                    "value": "Uçak yakıt tankı, kanat içi hacimler ve dar MRO bölgeleri"
+                        },
+                        {
+                                    "name": "Robot Tipi",
+                                    "value": "Bio-inspired, şişirilebilir yumuşak robot / vine robot"
+                        },
+                        {
+                                    "name": "Ana Modüller",
+                                    "value": "TA-8 bakım destek kolu, TS-5 dar alan muayene başlığı, CO2 kompresör destek ünitesi"
+                        },
+                        {
+                                    "name": "Donanım",
+                                    "value": "Kamera, sensör, LED aydınlatma, oksijen kanalı, CO2 yönlendirme kanalları"
+                        },
+                        {
+                                    "name": "Çıktı",
+                                    "value": "THY Design Hackathon finalisti, TEKNOFEST Girişimcilik ürünleşme dosyası"
+                        }
             ],
-            "overview": "Uçak yakıt tankları, kanat içi boşluklar ve uzay aracı gövdeleri gibi teknisyen girişinin imkansız veya hayati risk taşıdığı kapalı alanlarda muayene ve bakım yapan otonom yumuşak robotik sistemdir.",
-            "architecture": "Esnek ve eklemsiz yumuşak robotik (Soft Robotics) gövde yapısı sayesinde dar yapılardan kolayca geçer. Üzerindeki kamera ve sensör dizilimiyle yüzey çatlaklarını ve korozyonu yapay zeka ile tespit eder.",
+            "overview": "<p>INFLOBOT, havacılık bakım-onarım ve revizyon süreçlerinde en zorlayıcı alanlardan biri olan uçak yakıt tankı muayenesine odaklanan bir yumuşak robotik projesidir. Yakıt tankları; dar erişim panelleri, kanat içindeki nervür/cut-out geçişleri, düşük görüş, zehirli buhar riski, patlama/yangın güvenliği ve oksijen yetersizliği nedeniyle teknisyen açısından hem yorucu hem de riskli çalışma ortamları oluşturur. Bu nedenle proje yalnızca bir robot tasarımı değil, aynı zamanda MRO süreçlerinde zaman, iş gücü ve emniyet problemini birlikte ele alan bir sistem önerisidir.</p><p>Proje fikri Turkish Airlines & Turkish Technic Design Hackathon sürecinde yakıt tanklarının detaylı kontrolü probleminden doğdu. Mevcut bakım yönteminde yakıtın boşaltılması, elektriksel kaynakların kapatılması, tankın uzun süre havalandırılması, kişisel koruyucu donanım ile tank içine girilmesi ve dışarıda güvenlik ekibinin beklemesi gerekir. Kaynak dokümanlarda bu hazırlık sürecinin tank büyüklüğüne bağlı olarak 8-12 saatten 12-24 saate kadar uzayabildiği; bu sırada diğer bakım faaliyetlerinin de kesintiye uğrayabildiği vurgulanır.</p><p>INFLOBOT bu problemi, teknisyenin elini ve görüşünü dar alan içinde uzatan yarı otonom bir bakım asistanı olarak ele alır. Sistem, sert gövdeli robotların yakıt tankı içinde kablo, boru, valf ve yapısal elemanlara temas ederek zarar verme riskini azaltmak için yumuşak ve şişirilebilir bir gövde mantığına dayanır. Böylece robotun yakıt tankı içinde ilerlemesi, yön değiştirmesi, aydınlatma sağlaması ve görüntü/sensör verisi toplaması hedeflenir.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-fuel-tank-structure.png\" alt=\"Uçak yakıt tankı yapısı ve erişim mantığı\"><figcaption>Şekil 1.1. Yakıt tankı yapısı ve bakım erişim bölgeleri.</figcaption></figure></div><p>Bu görsel, yakıt tanklarının kanat kutusu ve merkez tank yapısı içinde nasıl konumlandığını anlatmak için kullanıldı. Ana tanklara kanat altındaki erişim panellerinden girilir; merkez tanka ise gövde içinden erişilir. Bu geometrinin doğal sonucu olarak teknisyenin çalışma alanı parçalı, dar ve keskin dönüşlüdür. INFLOBOT'un şişirilebilir yumuşak robot olarak seçilmesinin temel nedeni de bu geometriye zarar vermeden uyum sağlayabilmesidir.</p>",
+            "scientificMerit": "<p>Projenin özgün yönü, yakıt tankı muayenesini yalnızca kamera taşıyan bir cihaz problemi olarak değil; hareket, güvenlik, hava desteği, aydınlatma, malzeme seçimi ve hasar tespitini birlikte ele alan bir bakım robotu problemi olarak modellemesidir. Kaynak sunumlarda mevcut robot fikirlerinin çoğunun metal veya sert parçalar içerdiği, bu nedenle dar ve hassas tank ortamında temas kaynaklı hasar, ark/statik elektrik ve hareket kısıtı riskleri oluşturabileceği belirtilir. Bu riskler INFLOBOT'ta yumuşak robotik yaklaşımıyla azaltılmaya çalışılmıştır.</p><p>Soft/inflatable robotik yaklaşımı; büyüyerek ilerleyen vine robot mantığı, sarmaşık benzeri uzama ve basınç kontrollü yönlenme prensipleri üzerine kuruludur. Robot, yüzeyde tekerlek veya paletle ilerlemek yerine iç basınç ile uzar, farklı kanalların basınçlandırılmasıyla yön değiştirir ve esnek gövdesi sayesinde dar hacimlerde daha fazla serbestlik kazanır. Bu yapı yakıt tankı gibi yüzeye zarar verilmemesi gereken, insan ergonomisine uygun olmayan ortamlarda mantıklı bir tercih oluşturur.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-soft-robot-principle.png\" alt=\"Şişirilebilir yumuşak robot çalışma prensibi\"><figcaption>Şekil 1.2. Vine robot / şişirilebilir yumuşak robot çalışma prensibi.</figcaption></figure></div><p>Şişirilebilir robot mantığında gövde, makaraya sarılmış esnek bir tüp gibi düşünülür. Basınç verildiğinde malzeme uçtan dışa doğru açılarak ilerler; basınç azaltıldığında veya sistem geri sarıldığında yapı kısalır. Bu prensip sayesinde robotun başlangıç boyutuna göre çok daha uzun mesafelere erişmesi, başlangıç boyutundan daha dar boşluklara girebilmesi ve tankın taban, tavan, duvar gibi farklı bölgelerini kamera/sensörlerle tarayabilmesi mümkün olur.</p>",
+            "architecture": "<h4>Problem Tanımı ve Bakım Senaryosu</h4><p>Yakıt tankı bakımında dört ana problem öne çıkar: aydınlatma yetersizliği, tank boyutu ve erişilebilirlik, havalandırma zorunluluğu, maske kullanımı ve oksijen yetersizliği. Tank içinde yerleşik aydınlatma olmadığı için pilli veya kablolu dış aydınlatma kullanılır; fakat kablo, zaten dar olan çalışma hacmini daha da karmaşık hale getirir. Daralan kanat geometrisi ve nervürler nedeniyle bazı bölgelerde görsel muayene zorlaşır, teknisyenin kablo/valf/boru gibi parçaları istemeden hasarlama ihtimali artar.</p><p>Havalandırma adımı, zehirli buhar ve patlama riskini azaltmak için zorunludur. Kaynak dosyalarda LEL değerinin güvenli seviyeye inmesi beklenirken bakım süresinin uzadığı, tüm güç kaynaklarının kapatıldığı ve paralel bakım faaliyetlerinin aksadığı anlatılır. Oksijen seviyesinin 19,5-23,5 aralığı dışında kalması baş ağrısı, mide bulantısı, uyuşukluk ve hipoksi benzeri belirtilere neden olabilir. Bu nedenle maskeyle çalışma ve sık mola ihtiyacı bakım temposunu doğrudan düşürür.</p><h4>Yumuşak Robot Seçimi</h4><p>Çözüm araştırmasında tam otonom, sert gövdeli robotların yakıt tankı için yeterince uygun olmadığı görüldü. Yakıt tankı muayenesinde robotun yalnızca hata bulması yetmez; ortamın hassas parçalarına zarar vermemesi, güvenlik riskini artırmaması ve gerektiğinde teknisyene destek vermesi gerekir. Bu nedenle tasarım yarı otonom bir soft/inflatable robot çizgisine taşındı: robot bakım alanına girer, görüş ve erişim sağlar, fakat kritik karar ve bakım sorumluluğu teknisyenle birlikte yürütülür.</p><h4>TA-8 ve TS-5 Konseptleri</h4><p>Proje dokümanlarında iki tamamlayıcı konsept öne çıkar. TA-8, yakıt tankı bakımında teknisyene aydınlatma, oksijen desteği ve yönlendirilebilir uzanma kabiliyeti sağlayan ana bakım destek kolu olarak düşünülür. TS-5 ise daha dar hacimler, kanat ucu bölgesi, FPB/aviyonik kompartıman ve motor çevresi gibi görsel muayene gerektiren alanlara yönelik daha kompakt bir muayene başlığı mantığı taşır. Bu ayrım projenin yalnızca tek bir yakıt tankı senaryosuna sıkışmamasını, farklı dar alan bakım senaryolarına revize edilebilmesini sağlar.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-ta8-ts5-concept.png\" alt=\"TA-8 ve TS-5 konsept tasarımları\"><figcaption>Şekil 2.1. TA-8 ve TS-5 konseptlerinin kanat içi bakım senaryosundaki yeri.</figcaption></figure></div><p>TA-8 üzerinde eklem boyunca LED aydınlatma, gövde merkezinden geçen oksijen destek kanalı ve CO2 ile basınçlandırılan yönlendirme kanalları bulunur. Kanalların farklı basınçlarda çalıştırılması robotun istenen yöne dönmesini sağlar. TS-5 tarafı ise kamera, sensör ve uç başlık geometrisiyle dar hacimlerde hasar tespitine odaklanır. Bu iki konsept birlikte düşünüldüğünde INFLOBOT hem teknisyene görüş/erişim kazandıran bir yardımcı hem de yapay zeka destekli görsel hasar tespiti için veri toplayan bir platform haline gelir.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-wing-motion-section.png\" alt=\"INFLOBOT kanat içinde hareket şeması\"><figcaption>Şekil 2.2. INFLOBOT'un kanat içindeki yönlendirme ve muayene mantığı.</figcaption></figure></div><p>Kanat içi hareket şeması, robotun kanat kutusu boyunca uzayarak ilerlemesini ve kritik bölgelere kamera/aydınlatma taşımasını açıklar. Yeşil hatlar aydınlatma ve erişim fikrini vurgular; robotun amacı tank içine giren teknisyenin görüşünü genişletmek, kontrol edilemeyen bölgeleri görünür yapmak ve acil durumda çıkış yönlendirmesi için ışık hattı oluşturmaktır.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-channel-schematic.png\" alt=\"INFLOBOT oksijen, CO2, kamera ve LED modülleri\"><figcaption>Şekil 2.3. INFLOBOT kesitinde oksijen, CO2, kamera ve LED yerleşimi.</figcaption></figure></div><p>Kesit mantığında merkezde oksijen destek hattı, çevrede CO2 kanalları, uçta kamera ve gövde boyunca LED aydınlatma düşünülür. Oksijen hattı, teknisyenin tank içinde daha güvenli ve daha uzun süre çalışmasına destek olacak şekilde kurgulanmıştır. CO2 kanalları hem yönlendirme hem de yangın güvenliği açısından seçilmiştir; CO2'nin yanıcı olmaması ve boğucu gaz olarak kullanılabilmesi yakıt tankı senaryosunda önemli bir güvenlik gerekçesidir.</p><h4>Malzeme, Donanım ve Sürdürülebilirlik</h4><p>Malzeme tarafında TPE/TPU ailesi temel yapı olarak ele alınmıştır. Bu malzemeler basınç altında esneyebilme, kuvvet kalktığında eski formuna dönebilme, aşınma/kimyasal dayanım ve yumuşak robotik için gerekli elastik davranışı sağlama özellikleri nedeniyle uygundur. Kaynak dosyalarda sürdürülebilirlik için PLA katkısı, polycaprolactone tabanlı TPU ve kompozit destek fikirleri tartışılır. Amaç, esnekliği korurken yeterli dayanım ve çevresel sorumluluk dengesini yakalamaktır.</p><p>Elektronik tarafta hafif kamera veya boroskop lensleri, sensörler, LED/OLED aydınlatma, karbon nötr/yangın yayılımı düşük kablo seçenekleri ve uzaktan kontrol arayüzü düşünülmüştür. Yapay zeka katmanı, kameradan gelen görüntüde çatlak, korozyon, sızıntı veya yüzey deformasyonu gibi bakım bulgularını noktasal olarak belirlemek için gelecekteki analiz modülü olarak konumlandırılmıştır.</p><h4>Kompresör Destek Ünitesi</h4><p>Proje klasöründeki Picture 1 görseli, ekip tarafından tasarlanan kompresör destek ünitesinin 3B tasarımını gösterir. Bu ünite INFLOBOT'un şişirilebilir gövde kanallarını beslemek, CO2/akışkan basıncını kontrol etmek ve operatörün sistemi sahada yönetebilmesi için dış destek kutusu olarak kurgulanmıştır. Ön panelde kontrol elemanları, sistem göstergeleri ve bağlantı portları; iç hacimde ise basınçlandırma ve filtreleme/dağıtım bileşenleri yer alır.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-co2-compressor-3d.png\" alt=\"INFLOBOT kompresör 3B tasarımı\"><figcaption>Şekil 2.4. Ekip tarafından tasarlanan CO2 kompresör destek ünitesinin 3B modeli.</figcaption></figure></div><p>Bu tasarım, robotun yalnızca yumuşak gövdeden ibaret olmadığını gösterir. Şişirilebilir robotların sahada kullanılabilmesi için basınç kaynağı, akış kontrolü, güvenli bağlantılar ve operatörün takip edebileceği bir kontrol kutusu gerekir. Kompresör birimi bu nedenle INFLOBOT'un hareket kabiliyetini sağlayan ana yer destek sistemi olarak ele alınmıştır.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-soft-robot-animation.gif\" alt=\"INFLOBOT hareket animasyonu\"><figcaption>Şekil 2.5. INFLOBOT çalışma/hareket konseptinin animasyon gösterimi.</figcaption></figure></div><p>Animasyon, tasarımın statik bir fikirden hareketli bir bakım asistanına nasıl dönüştüğünü göstermesi için eklendi. Sayfada bu görsel, şişirilebilir gövdenin uzama, yönlenme ve dar alanda ilerleme fikrini hızlıca okunabilir hale getirir.</p>",
             "subsystems": [
-                  {
-                        "title": "Soft Robotic Actuation",
-                        "desc": "Şişirilebilir ve bükülebilir pnömatik/esnek gövde mekanizması."
-                  },
-                  {
-                        "title": "Inspection Vision Unit",
-                        "desc": "Yüksek çözünürlüklü endoskopik kamera ve homojen LED aydınlatma halkası."
-                  },
-                  {
-                        "title": "AI Defect Analysis",
-                        "desc": "Yüzey deformasyonlarını ve sızıntıları tanıyan derin öğrenme modeli."
-                  },
-                  {
-                        "title": "Operator Control Station",
-                        "desc": "Teknisyenin canlı görüntü alabildiği ve robotu uzaktan komuta ettiği HUD arayüzü."
-                  }
+                        {
+                                    "title": "TA-8 Bakım Destek Kolu",
+                                    "desc": "Yakıt tankı içinde aydınlatma, oksijen desteği ve yönlendirilebilir uzanma kabiliyeti sağlayan ana soft robot konsepti."
+                        },
+                        {
+                                    "title": "TS-5 Dar Alan Muayene Başlığı",
+                                    "desc": "Kanat ucu, FPB, aviyonik kompartıman ve motor çevresi gibi daha küçük hacimlerde kamera/sensörle görsel muayene yapmaya odaklanan modül."
+                        },
+                        {
+                                    "title": "CO2 Basınç ve Yönlendirme Sistemi",
+                                    "desc": "Farklı kanalların kontrollü basınçlandırılmasıyla robotun uzamasını ve yön değiştirmesini sağlayan pnömatik hareket altyapısı."
+                        },
+                        {
+                                    "title": "Görüntüleme ve Yapay Zeka Katmanı",
+                                    "desc": "Kamera, sensör ve ileride hasar/korozyon/çatlak tespiti yapabilecek görüntü analizi yazılımı için veri toplama katmanı."
+                        }
             ],
-            "analysis": "Dar yakıt tankı mockup'ları içinde manevra kabiliyeti ve çatlak tespit hassasiyeti test edilmiş, geleneksel muayene süresi %65 kısaltılmıştır.",
-            "achievements": "TEKNOFEST Girişimcilik Yarışması'nda 'En İyi Girişim' Ödülü kazanılmış, THY Design Hackathon'da finalist olunmuş ve Take Off İstanbul Uluslararası Girişim Zirvesi'nde sergilenmiştir."
-      },
+            "analysis": "<p>TEKNOFEST Girişimcilik dosyasında INFLOBOT, büyüyen MRO pazarına yönelik yenilikçi bir bakım teknolojisi olarak konumlandırılır. Global hava aracı MRO pazarının 2022 yılında yaklaşık 85 milyar dolar, 2027 projeksiyonunda yaklaşık 109 milyar dolar seviyesinde olduğu; Türkiye'nin bu pazardan yaklaşık yüzde 2,3 pay aldığı belirtilir. Ürün için ilk hedef pazar, Türkiye'deki yerli bakım-onarım şirketleri ve Turkish Technic gibi SHY-145 onaylı bakım kuruluşlarıdır.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-market-mro.png\" alt=\"MRO pazar büyüklüğü grafiği\"><figcaption>Şekil 3.1. MRO pazar büyüklüğü ve bakım kategorileri.</figcaption></figure></div><p>INFLOBOT'un pazar yaklaşımı TAM/SAM/SOM mantığıyla kurulmuştur. Toplam pazar tüm bakım-onarım ekosistemini kapsar; ulaşılabilir pazar, ürünün kullanılabileceği motor, hat ve üs/ağır bakım gibi kategorilere odaklanır; elde edilebilir pazar ise yerli bakım şirketleriyle başlanıp kalite, yetki ve onay süreçleri tamamlandıktan sonra global pazara açılma hedefiyle tanımlanır. İş modeli tarafında ürün satışı, servis sözleşmesi, kiralama/abonelik ve kompresör/CO2 tüpü/aparat gibi çapraz satış kalemleri düşünülmüştür.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-competition-table.png\" alt=\"INFLOBOT rakip analizi\"><figcaption>Şekil 3.2. Solunum, boroskop ve aydınlatma çözümlerine karşı INFLOBOT karşılaştırması.</figcaption></figure></div><p>Rakip analizi, INFLOBOT'un doğrudan tek bir rakiple değil; solunum aygıtları, oksijen tüpleri, boroskop sistemleri ve aydınlatma elemanları gibi farklı bakım yardımcılarıyla dolaylı rekabet ettiğini gösterir. Bu ekipmanların her biri belirli bir problemi çözer; INFLOBOT'un iddiası ise dar alanda hareket, aydınlatma, görsel muayene, oksijen desteği ve hasar tespitini aynı platformda birleştirebilmesidir.</p>",
+            "achievements": "<p>INFLOBOT, Tulpar Tharros takımının havacılık bakım süreçlerine yönelik en güçlü ürünleşme denemelerinden biridir. Turkish Airlines & Turkish Technic Design Hackathon'da yakıt tanklarının detaylı kontrolü problemi için finalist seviyesinde sunulmuş; TEKNOFEST Girişimcilik yarışması dosyasında ise ürün, pazar, rakip analizi, iş modeli ve pazara giriş stratejisiyle birlikte girişim fikri olarak olgunlaştırılmıştır.</p><p>Benim açımdan proje, havacılık bakım tecrübesiyle elektrik-elektronik sistem tasarımı ve robotik ürün geliştirme bakışını birleştirdi. Özellikle 3B kompresör destek ünitesi, sensör/kamera/aydınlatma yerleşimi, basınçlı akış mantığı ve yapay zeka destekli hasar tespiti fikri; bir bakım problemini yalnızca mekanik tasarım olarak değil, uçtan uca sistem mimarisi olarak düşünmemi sağladı.</p>"
+},
       {
             "id": "project-6",
             "title": "Muharip Hava Araçlarında Uçuş Performansı Veri Setinin Makine Öğrenmesi Yöntemleriyle Modellenmesi ve Kıyaslanması",
@@ -875,58 +889,72 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-5",
-            "title": "INFLOBOT: AI-Supported MRO Robot",
+            "title": "INFLOBOT: AI-Supported Inflatable Soft MRO Robot",
             "category": "gomulu",
-            "summary": "Soft robot assistant for confined space inspections such as aircraft fuel tanks.",
-            "description": "An AI-supported soft robot capable of rapid defect detection in hard-to-reach areas such as aircraft fuel tanks, spacecraft, and rocket fuselages in the aviation maintenance, repair, and overhaul (MRO) sector. Its integrated lighting system provides technicians with a clear view. The project was named 'Best Startup' in the TEKNOFEST Entrepreneurship Competition and became a finalist in the THY Design Hackathon.",
-            "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600",
+            "summary": "INFLOBOT is an AI-supported inflatable soft robot concept developed within Tulpar Tharros for aircraft fuel-tank and confined-space inspection. It combines illumination, visual sensing, CO2-based steering channels, oxygen support, and future defect-detection logic to reduce MRO time, technician risk, and workforce loss.",
+            "description": "Developed through the Turkish Airlines & Turkish Technic Design Hackathon and TEKNOFEST Entrepreneurship process, INFLOBOT is a bio-inspired soft robotic maintenance assistant for aircraft fuel tanks and other confined aviation structures.",
+            "image": "inflobot-figures/inflobot-co2-compressor-3d.png",
+            "detailImage": "inflobot-figures/inflobot-soft-robot-animation.gif",
+            "teamIds": [
+                        "team-tulpar-tharros"
+            ],
             "tags": [
-                  "Soft Robotics",
-                  "Artificial Intelligence",
-                  "MRO Aviation",
-                  "TEKNOFEST Awarded"
+                        "Soft Robotics",
+                        "Inflatable Robot",
+                        "MRO Aviation",
+                        "TEKNOFEST",
+                        "THY Design Hackathon"
             ],
             "specs": [
-                  {
-                        "name": "Application Field",
-                        "value": "Fuel Tank & Confined Space Inspection"
-                  },
-                  {
-                        "name": "Award",
-                        "value": "TEKNOFEST Best Startup Award"
-                  },
-                  {
-                        "name": "Developer Team",
-                        "value": "Tulpar Tharros (Co-Founder)"
-                  },
-                  {
-                        "name": "Design",
-                        "value": "Flexible Soft Body"
-                  }
+                        {
+                                    "name": "Team",
+                                    "value": "Tulpar Tharros Aviation Society"
+                        },
+                        {
+                                    "name": "Application",
+                                    "value": "Aircraft fuel tanks and confined MRO areas"
+                        },
+                        {
+                                    "name": "Robot Type",
+                                    "value": "Bio-inspired inflatable soft / vine robot"
+                        },
+                        {
+                                    "name": "Modules",
+                                    "value": "TA-8 support arm, TS-5 inspection head, CO2 compressor unit"
+                        },
+                        {
+                                    "name": "Hardware",
+                                    "value": "Camera, sensors, LED lighting, oxygen channel, CO2 steering channels"
+                        },
+                        {
+                                    "name": "Output",
+                                    "value": "THY Design Hackathon finalist and TEKNOFEST Entrepreneurship product file"
+                        }
             ],
-            "overview": "Autonomous soft robotic system performing inspection and maintenance in confined spaces such as aircraft fuel tanks, wing cavities, and rocket fuselages where technician access is hazardous or impossible.",
-            "architecture": "Navigates tight structures effortlessly via an unjointed soft robotic body structure. Detects surface cracks and corrosion in real-time using an onboard camera and sensor array powered by AI.",
+            "overview": "<p>INFLOBOT focuses on one of the most demanding MRO tasks: aircraft fuel-tank inspection. Fuel tanks are confined, poorly illuminated, chemically hazardous, and geometrically complex spaces. The project addresses this as a combined safety, time, workforce, and inspection-quality problem rather than a simple camera-carrier design.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-fuel-tank-structure.png\" alt=\"Aircraft fuel tank structure\"><figcaption>Figure 1.1. Fuel tank structure and access logic.</figcaption></figure></div>",
+            "scientificMerit": "<p>The core design choice is inflatable soft robotics. Instead of relying on a rigid robot that may damage cables, valves, pipes, and structural elements, INFLOBOT uses a compliant body that can extend through pressure, steer through differentiated CO2 channels, and adapt to narrow aircraft structures.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-soft-robot-principle.png\" alt=\"Inflatable soft robot principle\"><figcaption>Figure 1.2. Inflatable/vine robot working principle.</figcaption></figure></div>",
+            "architecture": "<h4>TA-8 and TS-5 Concepts</h4><p>TA-8 was framed as the main fuel-tank support arm, carrying lighting, oxygen support, and steerable extension capability. TS-5 was designed as a more compact inspection head for tighter regions such as wing-tip spaces, FPB, avionics compartments, and engine-adjacent inspection zones.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-ta8-ts5-concept.png\" alt=\"TA-8 and TS-5 concepts\"><figcaption>Figure 2.1. TA-8 and TS-5 concepts in a wing inspection scenario.</figcaption></figure></div><p>The cross-section logic combines a central oxygen channel, CO2 steering channels, camera support, and LED illumination. CO2 was selected as a pressure and safety-oriented medium because it is non-flammable and suitable for fuel-tank scenarios.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-channel-schematic.png\" alt=\"INFLOBOT channels and modules\"><figcaption>Figure 2.2. Oxygen, CO2, camera, and LED modules.</figcaption></figure></div><p>The 3D compressor image shows the team-designed support unit that feeds and controls the inflatable robot channels during operation.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-co2-compressor-3d.png\" alt=\"INFLOBOT compressor 3D design\"><figcaption>Figure 2.3. Team-designed CO2 compressor support unit.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-soft-robot-animation.gif\" alt=\"INFLOBOT animation\"><figcaption>Figure 2.4. Animated operating concept.</figcaption></figure></div>",
             "subsystems": [
-                  {
-                        "title": "Soft Robotic Actuation",
-                        "desc": "Inflatable and bendable pneumatic/flexible body mechanism."
-                  },
-                  {
-                        "title": "Inspection Vision Unit",
-                        "desc": "High-resolution endoscopic camera and homogeneous LED illumination ring."
-                  },
-                  {
-                        "title": "AI Defect Analysis",
-                        "desc": "Deep learning model trained to identify surface deformations and fluid leaks."
-                  },
-                  {
-                        "title": "Operator Control Station",
-                        "desc": "HUD interface providing live video telemetry and remote command to technicians."
-                  }
+                        {
+                                    "title": "TA-8 Support Arm",
+                                    "desc": "Main soft robotic support concept for lighting, oxygen support, and steerable extension in fuel tanks."
+                        },
+                        {
+                                    "title": "TS-5 Inspection Head",
+                                    "desc": "Compact camera/sensor inspection concept for wing tips, FPB, avionics compartments, and tight areas."
+                        },
+                        {
+                                    "title": "CO2 Steering System",
+                                    "desc": "Pneumatic actuation infrastructure that extends and steers the robot through controlled pressure channels."
+                        },
+                        {
+                                    "title": "Vision and AI Layer",
+                                    "desc": "Camera and sensor data layer intended for future crack, corrosion, leak, and deformation detection."
+                        }
             ],
-            "analysis": "Tested maneuverability and crack detection sensitivity within aircraft fuel tank mockups, reducing traditional inspection duration by 65%.",
-            "achievements": "Won 'Best Startup' Award in TEKNOFEST Entrepreneurship Competition, finalist in THY Design Hackathon, and exhibited at Take Off Istanbul Summit."
-      },
+            "analysis": "<p>The TEKNOFEST Entrepreneurship file positioned INFLOBOT inside the growing aircraft MRO market. It cited a global MRO market of about 85 billion USD in 2022 and a 2027 projection of about 109 billion USD, with Turkey holding around 2.3 percent of the market.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-market-mro.png\" alt=\"MRO market chart\"><figcaption>Figure 3.1. MRO market size and categories.</figcaption></figure></div><p>The project competes indirectly with breathing devices, oxygen cylinders, borescopes, and lighting equipment. INFLOBOT's value proposition is combining movement, inspection, illumination, oxygen support, and defect-detection potential in a single platform.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"inflobot-figures/inflobot-competition-table.png\" alt=\"INFLOBOT competitor analysis\"><figcaption>Figure 3.2. Competitor comparison.</figcaption></figure></div>",
+            "achievements": "<p>INFLOBOT was presented as a finalist-level solution in the Turkish Airlines & Turkish Technic Design Hackathon and developed as an entrepreneurship-oriented product file for TEKNOFEST. Personally, it combined my aviation maintenance background with electronics, 3D design, robotic systems thinking, and AI-supported inspection concepts.</p>"
+},
       {
             "id": "project-6",
             "title": "Modeling and Comparing the Performance Dataset of a Combat Aircraft Using Machine Learning Methods",
