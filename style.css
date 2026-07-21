@@ -992,6 +992,8 @@ section {
     border: 1px solid var(--border-color);
     background: linear-gradient(180deg, rgba(0, 240, 255, 0.055), rgba(6, 10, 19, 0.62));
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
     transition: var(--transition);
 }
 
@@ -1063,6 +1065,8 @@ section {
     margin: 0 0 18px;
     padding: 0;
     list-style: none;
+    flex: 1 1 auto;
+    align-content: start;
 }
 
 .team-contributions li {
@@ -1088,6 +1092,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    min-height: 66px;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .team-outcomes span {
@@ -1101,7 +1108,7 @@ section {
 }
 
 .team-action-hint {
-    margin-top: 18px;
+    margin-top: 12px;
 }
 
 .team-detail-meta {

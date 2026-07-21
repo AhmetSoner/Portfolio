@@ -34,10 +34,10 @@ const PORTFOLIO_DATA = {
         focus: "Yapay zeka, otonom sistemler, uçuş kontrol yazılımları ve aviyonik veri modelleme.",
         contributions: [
           "TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve TÜBİTAK 2209-B proje süreçlerinin planlanması",
-          "KAAN odaklı uçuş performans verisi modelleme ve benchmark çalışmalarının yürütülmesi",
+          "TFX (MMU Kaan) uçağı uçuş performans verisi modelleme ve benchmark çalışmalarının yürütülmesi",
           "TEKNOFEST FPV drone takibi ve kuş tespit sistemi gibi havacılık yapay zekası projelerinde teknik liderlik"
         ],
-        outcomes: ["3 TÜBİTAK 2209-A", "2 TÜBİTAK 2209-B", "2 TUSAŞ LIFT-UP"]
+        outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"]
       },
       {
         id: "team-tulpar-tharros",
@@ -451,10 +451,10 @@ const PORTFOLIO_DATA = {
         focus: "Artificial intelligence, autonomous systems, flight control software, and avionics data modeling.",
         contributions: [
           "Planning TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and TÜBİTAK 2209-B project workflows",
-          "Leading KAAN-focused flight performance data modeling and benchmark studies",
+          "Leading TFX (MMU Kaan) aircraft flight performance data modeling and benchmark studies",
           "Technical leadership in aviation AI projects such as TEKNOFEST FPV drone tracking and bird detection"
         ],
-        outcomes: ["3 TÜBİTAK 2209-A", "2 TÜBİTAK 2209-B", "2 TUSAŞ LIFT-UP"]
+        outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"]
       },
       {
         id: "team-tulpar-tharros",
