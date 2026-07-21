@@ -56,7 +56,7 @@ const PORTFOLIO_DATA = {
       {
         id: "team-hidroana",
         name: "Hidroana Proje Takımı",
-        role: "Elektrik ve Elektronik Birimi Üyesi",
+        role: "Elektrik Birimi Üyesi",
         period: "2022 - 2025",
         icon: "zap",
         focus: "Hidrojen enerjili araçlarda güç elektroniği, BMS, izolasyon izleme ve araç entegrasyonu.",
@@ -473,7 +473,7 @@ const PORTFOLIO_DATA = {
       {
         id: "team-hidroana",
         name: "Hidroana Project Team",
-        role: "Electrical and Electronics Unit Member",
+        role: "Electrical Unit Member",
         period: "2022 - 2025",
         icon: "zap",
         focus: "Power electronics, BMS, insulation monitoring, and vehicle integration for hydrogen-powered vehicles.",
