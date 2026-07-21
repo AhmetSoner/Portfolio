@@ -24,6 +24,47 @@ const PORTFOLIO_DATA = {
       { name: "COMSOL Multiphysics", category: "Havacılık & Analiz", level: 60 },
       { name: "XFLR5 (Aerodinamik)", category: "Havacılık & Analiz", level: 50 }
     ],
+    projectTeams: [
+      {
+        name: "Havacılıkta Yapay Zeka Araştırmaları Topluluğu",
+        role: "Kurucu / Proje Lideri",
+        period: "2024 - Devam Ediyor",
+        icon: "brain-circuit",
+        focus: "Yapay zeka, otonom sistemler, uçuş kontrol yazılımları ve aviyonik veri modelleme.",
+        contributions: [
+          "TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve TÜBİTAK 2209-B proje süreçlerinin planlanması",
+          "KAAN odaklı uçuş performans verisi modelleme ve benchmark çalışmalarının yürütülmesi",
+          "TEKNOFEST FPV drone takibi ve kuş tespit sistemi gibi havacılık yapay zekası projelerinde teknik liderlik"
+        ],
+        outcomes: ["3 TÜBİTAK 2209-A", "2 TÜBİTAK 2209-B", "2 TUSAŞ LIFT-UP"]
+      },
+      {
+        name: "Tulpar Tharros Havacılık Topluluğu",
+        role: "Kurucu Ortak",
+        period: "2023 - 2024",
+        icon: "bot",
+        focus: "Havacılık bakım, onarım ve revizyon süreçleri için yapay zeka destekli robotik denetim sistemleri.",
+        contributions: [
+          "INFLOBOT projesinde 3D gövde tasarımı, elektrik altyapısı ve yazılım geliştirme",
+          "Dar/kapalı alanlarda bakım teknisyenlerine görüş ve operasyon güvenliği sağlayan sistem entegrasyonu",
+          "Teknik prototip, iş modeli ve yatırımcı görüşmeleriyle ticarileşme sürecine katkı"
+        ],
+        outcomes: ["THY Design Hackathon Finalisti", "TEKNOFEST En İyi Girişim", "Take Off Istanbul"]
+      },
+      {
+        name: "Hidroana Proje Takımı",
+        role: "Elektrik ve Elektronik Birimi Üyesi",
+        period: "2022 - 2025",
+        icon: "zap",
+        focus: "Hidrojen enerjili araçlarda güç elektroniği, BMS, izolasyon izleme ve araç entegrasyonu.",
+        contributions: [
+          "DORLION ve MIDAS araçlarının elektrik-elektronik alt sistem tasarım ve entegrasyonu",
+          "3 fazlı BLDC motor sürücü, batarya yönetim sistemi ve izolasyon izleme donanımı geliştirme",
+          "PCB tasarımı, devre simülasyonu, termal analiz ve yarışma saha entegrasyonu"
+        ],
+        outcomes: ["TEKNOFEST Türkiye İkinciliği", "Elektronik Sistemler Özel Jüri Ödülü", "Shell Eco-Marathon"]
+      }
+    ],
     education: [
       {
         institution: "Eskişehir Teknik Üniversitesi",
@@ -409,6 +450,47 @@ const PORTFOLIO_DATA = {
       { name: "COMSOL Multiphysics", category: "Aviation & Analysis", level: 60 },
       { name: "XFLR5 (Aerodynamics)", category: "Aviation & Analysis", level: 50 }
     ],
+    projectTeams: [
+      {
+        name: "Aviation AI Research Society",
+        role: "Founder / Project Lead",
+        period: "2024 - Present",
+        icon: "brain-circuit",
+        focus: "Artificial intelligence, autonomous systems, flight control software, and avionics data modeling.",
+        contributions: [
+          "Planning TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and TÜBİTAK 2209-B project workflows",
+          "Leading KAAN-focused flight performance data modeling and benchmark studies",
+          "Technical leadership in aviation AI projects such as TEKNOFEST FPV drone tracking and bird detection"
+        ],
+        outcomes: ["3 TÜBİTAK 2209-A", "2 TÜBİTAK 2209-B", "2 TUSAŞ LIFT-UP"]
+      },
+      {
+        name: "Tulpar Tharros Aviation Society",
+        role: "Co-Founder",
+        period: "2023 - 2024",
+        icon: "bot",
+        focus: "AI-supported robotic inspection systems for aviation maintenance, repair, and overhaul processes.",
+        contributions: [
+          "3D body design, electrical infrastructure, and software development for the INFLOBOT project",
+          "System integration for safer inspection in narrow and confined maintenance areas",
+          "Contributing to prototype development, business modeling, and investor-facing commercialization work"
+        ],
+        outcomes: ["THY Design Hackathon Finalist", "TEKNOFEST Best Startup", "Take Off Istanbul"]
+      },
+      {
+        name: "Hidroana Project Team",
+        role: "Electrical and Electronics Unit Member",
+        period: "2022 - 2025",
+        icon: "zap",
+        focus: "Power electronics, BMS, insulation monitoring, and vehicle integration for hydrogen-powered vehicles.",
+        contributions: [
+          "Electrical-electronic subsystem design and integration for DORLION and MIDAS vehicles",
+          "Development of 3-phase BLDC motor driver, battery management, and insulation monitoring hardware",
+          "PCB design, circuit simulation, thermal analysis, and race-site system integration"
+        ],
+        outcomes: ["TEKNOFEST 2nd Place in Turkey", "Electronic Systems Special Jury Award", "Shell Eco-Marathon"]
+      }
+    ],
     education: [
       {
         institution: "Eskişehir Technical University",
@@ -777,6 +859,7 @@ const UI_TRANSLATIONS = {
     nav_about: "HAKKIMDA",
     nav_experience: "DENEYİM",
     nav_skills: "YETENEKLER",
+    nav_project_teams: "PROJE TAKIMLARI",
     nav_projects: "PROJELER",
     nav_contact: "İLETİŞİM",
     hero_prefix: "INITIALIZING SYSTEM DATA...",
@@ -790,9 +873,11 @@ const UI_TRANSLATIONS = {
     col_experience: "DENEYİM & TAKIMLAR",
     tag_skills: "SYS_04 // CALIBRATION_DATA",
     title_skills: "TEKNİK YETENEKLER",
-    tag_projects: "SYS_05 // RECORDED_MISSIONS",
+    tag_project_teams: "SYS_05 // TEAM_REGISTRY",
+    title_project_teams: "PROJE TAKIMLARI",
+    tag_projects: "SYS_06 // RECORDED_MISSIONS",
     title_projects: "PROJELER",
-    tag_contact: "SYS_06 // OPEN_CHANNEL",
+    tag_contact: "SYS_07 // OPEN_CHANNEL",
     title_contact: "İLETİŞİM",
     contact_send_signal: "",
     contact_desc: "Aviyonik sistemler, gömülü donanım tasarımı, PCB geliştirme veya otonom sistem projelerinde iş teklifleri, kariyer fırsatları ve proje iş birliklerini değerlendirmek için aşağıdaki kanallar üzerinden veya doğrudan mesaj aracılığıyla benimle iletişime geçebilirsiniz.",
@@ -832,6 +917,7 @@ const UI_TRANSLATIONS = {
     nav_about: "ABOUT",
     nav_experience: "EXPERIENCE",
     nav_skills: "SKILLS",
+    nav_project_teams: "PROJECT TEAMS",
     nav_projects: "PROJECTS",
     nav_contact: "CONTACT",
     hero_prefix: "INITIALIZING SYSTEM DATA...",
@@ -845,9 +931,11 @@ const UI_TRANSLATIONS = {
     col_experience: "EXPERIENCE & TEAMS",
     tag_skills: "SYS_04 // CALIBRATION_DATA",
     title_skills: "TECHNICAL SKILLS",
-    tag_projects: "SYS_05 // RECORDED_MISSIONS",
+    tag_project_teams: "SYS_05 // TEAM_REGISTRY",
+    title_project_teams: "PROJECT TEAMS",
+    tag_projects: "SYS_06 // RECORDED_MISSIONS",
     title_projects: "PROJECTS",
-    tag_contact: "SYS_06 // OPEN_CHANNEL",
+    tag_contact: "SYS_07 // OPEN_CHANNEL",
     title_contact: "CONTACT",
     contact_send_signal: "",
     contact_desc: "If you would like to discuss job opportunities, career proposals, or project collaborations in avionics systems, embedded hardware design, PCB development, or autonomous systems, feel free to reach out through the channels below or send a direct message.",

@@ -164,8 +164,42 @@ function initPortfolioData() {
         skillsContainer.appendChild(card);
     });
 
+    // Proje Takımları
+    renderProjectTeams(data.projectTeams || []);
+
     // Projeleri Oluştur
     renderProjects(data.projects);
+}
+
+function renderProjectTeams(teamsList) {
+    const container = document.getElementById("project-teams-container");
+    if (!container) return;
+
+    container.innerHTML = "";
+    teamsList.forEach(team => {
+        const card = document.createElement("article");
+        card.className = "project-team-card";
+        card.innerHTML = `
+            <div class="corner-t-l"></div>
+            <div class="corner-b-r"></div>
+            <div class="team-card-header">
+                <div class="team-icon-wrap"><i data-lucide="${team.icon || 'users'}"></i></div>
+                <div>
+                    <span class="team-role">${team.role}</span>
+                    <h3>${team.name}</h3>
+                </div>
+            </div>
+            <div class="team-period">// ${team.period}</div>
+            <p class="team-focus">${team.focus}</p>
+            <ul class="team-contributions">
+                ${(team.contributions || []).map(item => `<li>${item}</li>`).join("")}
+            </ul>
+            <div class="team-outcomes">
+                ${(team.outcomes || []).map(item => `<span>${item}</span>`).join("")}
+            </div>
+        `;
+        container.appendChild(card);
+    });
 }
 
 /* ==========================================================================
