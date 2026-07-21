@@ -88,8 +88,6 @@ const PORTFOLIO_DATA = {
           },
           {
             title: "TEKNOFEST En İyi Girişim",
-            image: "TTT/Tulpar Tharros.jpg",
-            imageAlt: "Tulpar Tharros TEKNOFEST girişim sunumu",
             text: "TEKNOFEST Girişim Yarışması kapsamında Tulpar Tharros, havacılık bakım alanında dar ve kapalı bölgelerde çalışanlara destek olabilecek yapay zeka destekli robotik denetim yaklaşımıyla En İyi Girişim başarısı elde etti. Bu derece, projenin yalnızca mühendislik fikri olarak değil; ticarileşme potansiyeli, saha problemiyle uyumu ve girişim değeri açısından da karşılık bulduğunu gösterdi."
           },
           {
@@ -550,8 +548,6 @@ const PORTFOLIO_DATA = {
           },
           {
             title: "TEKNOFEST Best Startup",
-            image: "TTT/Tulpar Tharros.jpg",
-            imageAlt: "Tulpar Tharros TEKNOFEST startup presentation",
             text: "Within the TEKNOFEST Entrepreneurship Competition, Tulpar Tharros achieved Best Startup recognition with an AI-supported robotic inspection approach designed to support personnel in narrow and confined aviation maintenance areas. This result showed that the project had value not only as an engineering idea, but also in terms of commercialization potential, field relevance, and startup impact."
           },
           {
@@ -947,9 +943,13 @@ const UI_TRANSLATIONS = {
     title_skills: "TEKNİK YETENEKLER",
     tag_project_teams: "SYS_05 // TEAM_REGISTRY",
     title_project_teams: "PROJE TAKIMLARI",
-    tag_projects: "SYS_06 // RECORDED_MISSIONS",
+    tag_gallery: "SYS_06 // VISUAL_ARCHIVE",
+    title_gallery: "GALERİ",
+    gallery_empty_title: "FOTOĞRAFLAR YAKINDA EKLENECEK",
+    gallery_empty_desc: "Proje takımları, yarışmalar, sunumlar ve saha çalışmalarına ait görseller bu alanda galeri formatında gösterilecek.",
+    tag_projects: "SYS_07 // RECORDED_MISSIONS",
     title_projects: "PROJELER",
-    tag_contact: "SYS_07 // OPEN_CHANNEL",
+    tag_contact: "SYS_08 // OPEN_CHANNEL",
     title_contact: "İLETİŞİM",
     contact_send_signal: "",
     contact_desc: "Aviyonik sistemler, gömülü donanım tasarımı, PCB geliştirme veya otonom sistem projelerinde iş teklifleri, kariyer fırsatları ve proje iş birliklerini değerlendirmek için aşağıdaki kanallar üzerinden veya doğrudan mesaj aracılığıyla benimle iletişime geçebilirsiniz.",
@@ -1013,9 +1013,13 @@ const UI_TRANSLATIONS = {
     title_skills: "TECHNICAL SKILLS",
     tag_project_teams: "SYS_05 // TEAM_REGISTRY",
     title_project_teams: "PROJECT TEAMS",
-    tag_projects: "SYS_06 // RECORDED_MISSIONS",
+    tag_gallery: "SYS_06 // VISUAL_ARCHIVE",
+    title_gallery: "GALLERY",
+    gallery_empty_title: "PHOTOS WILL BE ADDED SOON",
+    gallery_empty_desc: "Images from project teams, competitions, presentations, and field work will be displayed here in a gallery layout.",
+    tag_projects: "SYS_07 // RECORDED_MISSIONS",
     title_projects: "PROJECTS",
-    tag_contact: "SYS_07 // OPEN_CHANNEL",
+    tag_contact: "SYS_08 // OPEN_CHANNEL",
     title_contact: "CONTACT",
     contact_send_signal: "",
     contact_desc: "If you would like to discuss job opportunities, career proposals, or project collaborations in avionics systems, embedded hardware design, PCB development, or autonomous systems, feel free to reach out through the channels below or send a direct message.",
