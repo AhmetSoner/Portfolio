@@ -941,8 +941,6 @@ XGBoost, tabular mühendislik verilerinde güçlü bir baseline olarak seçildi.
 <strong>1.3. Neden FT-Transformer?</strong><br>
 FT-Transformer, sayısal ve kategorik değişkenleri ortak token uzayında temsil ederek değişkenler arası bağlamsal ilişkileri self-attention ile öğrenir. Bu model, yalnızca tek tek kolon etkilerini değil; örneğin irtifa-Mach-ağırlık-yakıt akışı birlikteliğinin specific range üzerindeki etkisini modelleyebilecek araştırma değeri yüksek bir mimari olarak konumlandırıldı.<br><br>
 
-<strong>1.4. Optimizasyon Mantığı</strong><br>
-PSO yaklaşımı, hiperparametre uzayında yalnızca doğruluk değil; gecikme ve model boyutu gibi donanım farkındalıklı maliyetleri de içerecek şekilde tasarlandı. Kullanılan hedef mantığı: J(theta) = w1 * RMSE/RMSE_ref + w2 * latency/latency_ref + w3 * size/size_ref.
 `,
       architecture: `
 <strong>2. Uçtan Uca Sistem Mimarisi</strong><br><br>
@@ -1145,8 +1143,6 @@ XGBoost was selected as a strong tabular baseline. It reached test RMSE 0.002592
 <strong>1.3. FT-Transformer Rationale</strong><br>
 FT-Transformer represents numerical and categorical inputs in a shared token space and learns feature interactions through self-attention. It was evaluated as a research-focused architecture for capturing contextual relationships among flight variables.<br><br>
 
-<strong>1.4. Optimization Logic</strong><br>
-The PSO objective was structured to combine accuracy, latency, and model size: J(theta) = w1 * RMSE/RMSE_ref + w2 * latency/latency_ref + w3 * size/size_ref.
 `,
       architecture: `
 <strong>2. End-to-End System Architecture</strong><br><br>
