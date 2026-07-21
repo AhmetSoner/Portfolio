@@ -32,8 +32,13 @@ const PORTFOLIO_DATA = {
         period: "2024 - Devam Ediyor",
         icon: "brain-circuit",
         logo: "HAYA/Logo.png",
-        introPdf: "HAYA/HAYA%20-%20Tan%C4%B1t%C4%B1m.pdf",
         focus: "Yapay zeka, otonom sistemler, uçuş kontrol yazılımları ve aviyonik veri modelleme.",
+        overview: [
+          "Havacılıkta Yapay Zeka Araştırmaları Topluluğu (HAYA), 2022 yılında kurulmuş; havacılık ve uzay bilimleri odaklı, farklı mühendislik disiplinlerini bir araya getiren bir öğrenci ekibidir. Takımın temel amacı, yapay zeka ve geleceğin otonom teknolojilerini havacılık ekosistemine entegre ederek sektördeki problemlere disiplinli, uygulanabilir ve yenilikçi çözümler üretmektir.",
+          "HAYA, araştırmalarını yalnızca teorik düzeyde bırakmadan akıllı sistemler tasarlamayı ve bu sistemleri sektöre uygulanabilir sürdürülebilir çıktılara dönüştürmeyi hedefler. Bu vizyon doğrultusunda uçuş güvenliği, performans optimizasyonu, özgün İHA tasarımları, otonom sistemler ve sensör veri analizi gibi kritik alanlarda derin öğrenme algoritmaları ve modelleme yaklaşımları geliştirir.",
+          "Geliştirilen akıllı sistemlerin teorik altyapısı, simülasyon ve animasyon uygulamalarıyla test edilerek saha geçerliliği ve donanım uygulanabilirliği açısından değerlendirilir. Farklı bilgi ve deneyime sahip üyelerin bir araya gelmesiyle oluşan ekip, hedefe odaklılığı ve yüksek mühendislik vizyonunu temel ilke olarak benimser.",
+          "Kuruluşundan bu yana TÜBİTAK 2209-A, TÜBİTAK 2209-B ve bilimsel araştırma projelerinde çözümler ortaya koyan HAYA, edindiği proje kültürüyle TUSAŞ LIFT-UP Programı kapsamında da akıllı uçuş sistemleri üzerine destek almayı başarmış ve ulusal havacılık platformlarına katma değer sağlamaya devam etmektedir."
+        ],
         contributions: [
           "TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve TÜBİTAK 2209-B proje süreçlerinin planlanması",
           "TFX (MMU Kaan) uçağı uçuş performans verisi modelleme ve benchmark çalışmalarının yürütülmesi",
@@ -451,8 +456,13 @@ const PORTFOLIO_DATA = {
         period: "2024 - Present",
         icon: "brain-circuit",
         logo: "HAYA/Logo.png",
-        introPdf: "HAYA/HAYA%20-%20Tan%C4%B1t%C4%B1m.pdf",
         focus: "Artificial intelligence, autonomous systems, flight control software, and avionics data modeling.",
+        overview: [
+          "Aviation AI Research Society (HAYA) was founded in 2022 as a multidisciplinary student team focused on aviation and space sciences. Its main purpose is to integrate artificial intelligence and future autonomous technologies into the aviation ecosystem and produce disciplined, applicable, and innovative solutions for sectoral problems.",
+          "HAYA aims to move beyond purely theoretical research by designing intelligent systems and transforming them into sustainable outputs that can be applied in the field. In line with this vision, the team develops deep learning algorithms and modeling approaches in critical areas such as flight safety, performance optimization, original UAV designs, autonomous systems, and sensor data analysis.",
+          "The theoretical foundations of the developed intelligent systems are tested through simulation and animation environments, then evaluated in terms of field validity and hardware applicability. Bringing together members with different knowledge and experience, the team adopts goal orientation and a strong engineering vision as core principles.",
+          "Since its foundation, HAYA has produced solutions within TÜBİTAK 2209-A, TÜBİTAK 2209-B, and scientific research project processes. With this project culture, the team has also received support through the TUSAŞ LIFT-UP Program for intelligent flight systems and continues to create added value for national aviation platforms."
+        ],
         contributions: [
           "Planning TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and TÜBİTAK 2209-B project workflows",
           "Leading TFX (MMU Kaan) aircraft flight performance data modeling and benchmark studies",

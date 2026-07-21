@@ -39,21 +39,15 @@ function loadTeamData(lang, teamId) {
         logoWrap.style.display = "none";
     }
 
-    const introPdf = document.getElementById("team-intro-pdf");
-    if (team.introPdf) {
-        introPdf.href = team.introPdf;
-        introPdf.style.display = "inline-flex";
-    } else {
-        introPdf.href = "#";
-        introPdf.style.display = "none";
-    }
-
-    document.getElementById("team-overview").innerHTML = `
-        <p>${team.focus}</p>
-        <p>${lang === "tr"
+    const overviewParagraphs = team.overview || [
+        team.focus,
+        lang === "tr"
             ? "Bu takım altında yürütülen çalışmalar, ana sayfadaki bağımsız proje kartlarında detaylandırılan teknik çıktıların organizasyonel ve operasyonel zeminini oluşturur."
-            : "The work carried out under this team forms the organizational and operational basis for the technical outputs detailed in the project cards on the homepage."}</p>
-    `;
+            : "The work carried out under this team forms the organizational and operational basis for the technical outputs detailed in the project cards on the homepage."
+    ];
+    document.getElementById("team-overview").innerHTML = overviewParagraphs
+        .map(paragraph => `<p>${paragraph}</p>`)
+        .join("");
 
     const outcomes = document.getElementById("team-outcomes");
     outcomes.innerHTML = "";
