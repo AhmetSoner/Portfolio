@@ -116,7 +116,21 @@ const PORTFOLIO_DATA = {
           "Güç elektroniği, dijital/analog sistem tasarımı ve donanım optimizasyonu çalışmaları",
           "PCB tasarımı, devre simülasyonu, termal analiz ve yarışma saha entegrasyonu"
         ],
-        outcomes: ["TEKNOFEST Efficiency Challenge İkinciliği", "TEKNOFEST Efficiency Challenge Özel Jüri Ödülü", "Shell Eco-Marathon Finalisti"]
+        outcomes: ["TEKNOFEST Efficiency Challenge İkinciliği", "TEKNOFEST Efficiency Challenge Özel Jüri Ödülü", "Shell Eco-Marathon Finalisti"],
+        outcomeDetails: [
+          {
+            title: "TEKNOFEST Efficiency Challenge İkinciliği",
+            text: "TEKNOFEST Efficiency Challenge Elektrikli Araç Yarışları, TÜBİTAK yürütücülüğünde düzenlenen ve öğrencilerin tasarlayıp ürettiği elektrikli araçların verimlilik, teknik uygunluk, güvenlik ve yarış performansı üzerinden değerlendirildiği önemli bir mühendislik yarışmasıdır. Hidroana, hidromobil kategorisinde geliştirdiği hidrojen yakıt hücreli araçla bu yarışmada ikincilik elde ederek yalnızca pist performansını değil; enerji yönetimi, araç entegrasyonu, elektriksel güvenlik ve sistem verimliliği konularındaki mühendislik yetkinliğini de göstermiştir."
+          },
+          {
+            title: "TEKNOFEST Efficiency Challenge Özel Jüri Ödülü",
+            text: "Özel Jüri Ödülü, yarışma derecesinden bağımsız olarak teknik yaklaşımı, tasarım kalitesi, yenilikçi çözüm üretme becerisi ve takımın mühendislik olgunluğu açısından dikkat çeken projelere verilen bir takdirdir. Hidroana'nın bu ödülü alması; güç elektroniği, dijital/analog sistem tasarımı, izolasyon izleme, batarya ve hidrojen altyapısı gibi alt sistemlerde ortaya koyduğu bütünleşik mühendislik yaklaşımının jüri tarafından ayrıca değerli bulunduğunu gösterir."
+          },
+          {
+            title: "Shell Eco-Marathon Finalisti",
+            text: "Shell Eco-marathon, öğrencilerin kendi tasarladıkları enerji tasarruflu araçlarla en az enerjiyle en uzun mesafeyi kat etmeyi hedeflediği uluslararası bir inovasyon yarışmasıdır. Bu yarışmada finalist olmak; aracın yalnızca konsept düzeyinde kalmadığını, teknik denetimlerden geçebilecek seviyede geliştirildiğini ve enerji verimliliği odağında uluslararası rekabete uygun bir mühendislik çıktısına dönüştüğünü gösterir. Hidroana için bu süreç, hidrojen enerjili araç teknolojisini global öğrenci inovasyon ekosisteminde temsil etme açısından önemli bir kazanımdır."
+          }
+        ]
       }
     ],
     education: [
@@ -584,7 +598,21 @@ const PORTFOLIO_DATA = {
           "Power electronics, digital/analog system design, and hardware optimization studies",
           "PCB design, circuit simulation, thermal analysis, and race-site system integration"
         ],
-        outcomes: ["TEKNOFEST Efficiency Challenge 2nd Place", "TEKNOFEST Efficiency Challenge Special Jury Award", "Shell Eco-Marathon Finalist"]
+        outcomes: ["TEKNOFEST Efficiency Challenge 2nd Place", "TEKNOFEST Efficiency Challenge Special Jury Award", "Shell Eco-Marathon Finalist"],
+        outcomeDetails: [
+          {
+            title: "TEKNOFEST Efficiency Challenge 2nd Place",
+            text: "TEKNOFEST Efficiency Challenge Electric Vehicle Races are TÜBİTAK-led engineering competitions where student-built electric vehicles are evaluated through efficiency, technical compliance, safety, and race performance. Competing in the hydromobile category with a hydrogen fuel-cell vehicle, Hidroana achieved second place and demonstrated strong engineering capability in energy management, vehicle integration, electrical safety, and system efficiency."
+          },
+          {
+            title: "TEKNOFEST Efficiency Challenge Special Jury Award",
+            text: "The Special Jury Award recognizes projects that stand out beyond ranking through technical approach, design quality, innovative problem solving, and engineering maturity. For Hidroana, this award reflects the value of its integrated engineering work across power electronics, digital/analog system design, isolation monitoring, battery infrastructure, and hydrogen vehicle systems."
+          },
+          {
+            title: "Shell Eco-Marathon Finalist",
+            text: "Shell Eco-marathon is an international innovation competition where students design and build energy-efficient vehicles to travel the longest distance with the least amount of energy. Becoming a finalist shows that the vehicle reached a level beyond concept, passed key technical expectations, and became a competitive engineering output focused on energy efficiency. For Hidroana, this process was an important opportunity to represent hydrogen-powered vehicle technology within the global student innovation ecosystem."
+          }
+        ]
       }
     ],
     education: [
