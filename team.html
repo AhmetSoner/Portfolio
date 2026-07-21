@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Takım Detayları // Ahmet Soner Güleç</title>
+    <meta name="description" content="Proje takımı detay sayfası.">
+    <meta name="author" content="Ahmet Soner Güleç">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css?v=82">
+</head>
+<body>
+    <canvas id="radar-canvas"></canvas>
+    <canvas id="margin-canvas"></canvas>
+    <div class="hud-grid-overlay"></div>
+
+    <div class="system-status-bar">
+        <div class="status-left">
+            <span class="pulse-indicator"></span>
+            <span class="status-text" id="telemetry-id">// TEAM_FILE: LOADING</span>
+        </div>
+        <div class="status-center"></div>
+        <div class="status-right">
+            <span class="lang-selector">
+                <button class="lang-btn active" data-lang="tr">TR</button>
+                <span class="lang-divider">//</span>
+                <button class="lang-btn" data-lang="en">ENG</button>
+            </span>
+            <span id="system-time">UTC: 00:00:00</span>
+        </div>
+    </div>
+
+    <nav class="hud-nav">
+        <ul class="nav-links">
+            <li><a href="index.html#project-teams"><span class="nav-num">←</span> <span data-translate="back_to_portfolio">PORTFOLYOYA DÖN</span></a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container project-detail-container">
+        <section class="project-detail-hero">
+            <div class="hero-badge-row">
+                <span class="project-cat-badge" id="team-category">PROJE TAKIMI</span>
+                <span class="project-status-tag" id="team-status-tag">// STATUS: ACTIVE_TEAM</span>
+            </div>
+            <h1 class="project-detail-title glow-text" id="team-title">YÜKLENİYOR...</h1>
+            <p class="project-detail-lead" id="team-summary">Takım özeti yükleniyor...</p>
+            <div class="project-tags-row" id="team-outcomes"></div>
+        </section>
+
+        <section class="project-rich-content">
+            <div class="detail-block">
+                <div class="corner-t-l"></div>
+                <h2 class="block-title">
+                    <i data-lucide="users"></i>
+                    <span data-translate="heading_team_overview">// 01. TAKIM ÖZETİ</span>
+                </h2>
+                <div id="team-overview" class="block-text">Yükleniyor...</div>
+            </div>
+
+            <div class="detail-block">
+                <div class="corner-t-l"></div>
+                <h2 class="block-title">
+                    <i data-lucide="briefcase-business"></i>
+                    <span data-translate="heading_team_role">// 02. ROL VE SORUMLULUKLAR</span>
+                </h2>
+                <div class="team-detail-meta">
+                    <div>
+                        <span data-translate="team_role_label">Rol</span>
+                        <strong id="team-role">Yükleniyor...</strong>
+                    </div>
+                    <div>
+                        <span data-translate="team_period_label">Dönem</span>
+                        <strong id="team-period">Yükleniyor...</strong>
+                    </div>
+                </div>
+                <ul class="team-detail-list" id="team-contributions"></ul>
+            </div>
+
+            <div class="detail-block achievement-highlight-block">
+                <div class="corner-t-l"></div>
+                <div class="corner-b-r"></div>
+                <h2 class="block-title">
+                    <i data-lucide="trophy"></i>
+                    <span data-translate="heading_team_outputs">// 03. ÇIKTILAR VE DERECELER</span>
+                </h2>
+                <div class="team-output-grid" id="team-output-grid"></div>
+            </div>
+        </section>
+
+        <section class="related-projects-section">
+            <div class="section-title-wrap">
+                <span class="section-tag">// OTHER_TEAMS</span>
+                <h2 class="section-title" data-translate="heading_other_teams">DİĞER PROJE TAKIMLARI</h2>
+            </div>
+            <div class="project-teams-grid" id="related-teams-container"></div>
+        </section>
+    </main>
+
+    <footer class="hud-footer">
+        <p data-translate="footer_text">© 2026 // AHMET SONER GÜLEÇ</p>
+    </footer>
+
+    <script src="data.js?v=87"></script>
+    <script src="team.js?v=1"></script>
+    <script src="app.js?v=67"></script>
+</body>
+</html>

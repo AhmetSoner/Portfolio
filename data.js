@@ -26,6 +26,7 @@ const PORTFOLIO_DATA = {
     ],
     projectTeams: [
       {
+        id: "team-aviation-ai",
         name: "Havacılıkta Yapay Zeka Araştırmaları Topluluğu",
         role: "Kurucu / Proje Lideri",
         period: "2024 - Devam Ediyor",
@@ -39,6 +40,7 @@ const PORTFOLIO_DATA = {
         outcomes: ["3 TÜBİTAK 2209-A", "2 TÜBİTAK 2209-B", "2 TUSAŞ LIFT-UP"]
       },
       {
+        id: "team-tulpar-tharros",
         name: "Tulpar Tharros Havacılık Topluluğu",
         role: "Kurucu Ortak",
         period: "2023 - 2024",
@@ -52,6 +54,7 @@ const PORTFOLIO_DATA = {
         outcomes: ["THY Design Hackathon Finalisti", "TEKNOFEST En İyi Girişim", "Take Off Istanbul"]
       },
       {
+        id: "team-hidroana",
         name: "Hidroana Proje Takımı",
         role: "Elektrik ve Elektronik Birimi Üyesi",
         period: "2022 - 2025",
@@ -76,28 +79,10 @@ const PORTFOLIO_DATA = {
     ],
     experience: [
       {
-        title: "Kurucu",
-        company: "Havacılıkta Yapay Zeka Araştırmaları Topluluğu (Eskişehir, Türkiye)",
-        duration: "Ekim 2024 - Devam Ediyor",
-        details: "2022 yılında kurulan çok disiplinli topluluk bünyesinde, yapay zeka ve otonom teknolojilerin havacılık ekosistemine entegrasyonuyla sektörel problemlere yenilikçi çözümler üretmeyi amaçlayan Ar-Ge çalışmalarına liderlik etmekteyim. Takımımız bünyesinde 3 TÜBİTAK 2209-A, 2 TÜBİTAK 2209-B ve 2 TUSAŞ LIFT-UP projesi yürütülmüştür.<br><br>• <b>TEKNOFEST FPV Drone Tracking Yarışması:</b> Otonom hedef tespiti, FPV drone takibi ve uçuş kontrol algoritmaları geliştirdim; sensör verisi işleme ve otonom karar mekanizmalarını MATLAB/Simulink ve Python ortamlarında modelleyerek sanal testlerle doğruladım.<br><br>• <b>TUSAŞ LIFT-UP Projesi (KAAN Entegrasyonu):</b> Milli Muharip Uçak KAAN görev bilgisayarı için kritik uçuş performans verilerinin modellenmesi çalışmasında yer aldım. Uçuş El Kitabı (AFM) nomogramlarından elde edilen veri setlerini PyTorch kullanarak Curve Fitting, Yapay Sinir Ağları (YSA) ve Pekiştirmeli Öğrenme mimarileriyle modelledim. KAAN platformundaki aviyonik donanım kısıtlamalarını (işlemci ve bellek yükü) ve doğruluk oranlarını değerlendiren karşılaştırmalı model analizleri gerçekleştirdim.<br><br>• <b>TÜBİTAK 2209-A Projesi (Kuş Tespit Sistemi):</b> Kuş çarpmalarının havacılık endüstrisindeki etkilerini azaltmayı hedefleyen derin öğrenme tabanlı görüntü işleme sistemi geliştirdim. YOLOv8 ve MobileNetV2 modelleriyle havalimanları için gerçek zamanlı kuş tespiti ve sınıflandırma altyapısını kurarak Boeing x ESTÜ Havacılığın Geleceği Yarışması'nda İkincilik Ödülü kazandım."
-      },
-      {
         title: "Aviyonik Mühendisliği Stajyeri",
         company: "Vilnius Gediminas Teknik Üniversitesi (Vilnius, Litvanya)",
         duration: "Ekim 2023 - Nisan 2024",
         details: "İlk dönemde, uçuşa elverişli olmayan Cessna 310, Cessna 152 ve Airbus A320 gibi uçaklar üzerinde çeşitli teknik görevler gerçekleştirdim. Bu süreçte; kanatlar, uçuş kontrol sistemleri, iniş takımları ve gövde gibi ana bileşenlerin sökülmesi, yeniden monte edilmesi ve kurulumu gibi işlemler yaptım. Ayrıca aviyonik sistemlerin bakımı, onarımı ve işletimi konularında deneyim kazandım. Sonrasında, uygulamalı eğitimimi EASA Part-145 sertifikasına sahip Kyviškės Havaalanı'nda sürdüm. Burada uçuşa elverişli Cessna 172S ve Piper PA-34 uçakları üzerinde çalıştım ve tüm çalışmalar EASA Part-66 lisansına sahip uzmanlar tarafından denetlendi. Son dönemde, insansız hava aracı teknolojileri ve bu sistemlerde kullanılan elektronik altyapılar üzerine yoğunlaştım. Üzerinde çalıştığım kuadrotorun mekanik tasarımını SolidWorks uygulamasını kullanarak gerçekleştirdim; bu süreçte ağırlık dengesi gibi kritik unsurlar için XFLR5 üzerinden hesaplamalar yaptım. Baskı devre kartı tasarımında Altium Designer kullanarak fırçasız motor sürücü devre kartlarını geliştirdim. Bu kartların doğrulama ve performans analizlerini ise PSpice ve Matlab ortamında gerçekleştirdiğim devre simülasyonları ile tamamladım. Uçuş sırasında elektronik kartlar üzerindeki yarı iletken malzemelerin sıcaklık sıcaklık dağılımını değerlendirmek amacıyla COMSOL Multiphysics yazılımı ile termal analizler gerçekleştirdim. Geliştirdiğim sistem, temel uçuş kontrol algoritmalarını destekleyecek şekilde yapılandırıldı. Tasarım sürecinde enerji verimliliği, termal dayanıklılık ve sistem güvenilirliği ön planda tutuldu ve tüm bileşenler bu hedeflere uygun olarak optimize edildi."
-      },
-      {
-        title: "Kurucu Ortak (Co-Founder)",
-        company: "Tulpar Tharros Havacılık Topluluğu",
-        duration: "Mart 2023 - Eylül 2024",
-        details: "Havacılık bakım, onarım ve revizyon (MRO) sektörüne yönelik yenilikçi çözümler üretmek amacıyla kurucu ortağı olduğum Tulpar Tharros ekibi bünyesinde, yapay zeka destekli yumuşak robot \"INFLOBOT\" projesini geliştirdim. İnsan erişiminin zor ve riskli olduğu dar/kapalı alanlardaki denetim verimliliğini artırmak amacıyla robotun 3D gövde tasarımını, elektrik altyapısını ve yazılımını üstlendim; özel aydınlatma ve donanım entegrasyonuyla bakım teknisyenlerine net görüş sağlayarak operasyonel hızı ve iş güvenliğini optimize ettim. Ekibimizin temelini oluşturan bu projeyle THY Design Hackathon'da finalist olduk. Ardından iş modelini ve teknik prototipi geliştirerek TEKNOFEST Girişimcilik Yarışması'nda \"En İyi Girişim\" ödülünü kazanıp kritik finansal destek elde ettik. Yakalanan ivmeyle aktif şirketleşme sürecini başlatarak Take Off İstanbul Uluslararası Girişimcilik Zirvesi'ne katıldım ve INFLOBOT'un havacılık sektöründe ticarileşmesi için stratejik B2B yatırımcı görüşmeleri yürüttüm."
-      },
-      {
-        title: "Elektrik ve Elektronik Birimi Üyesi",
-        company: "Hidroana Proje Takımı",
-        duration: "Eylül 2022 - Eylül 2025",
-        details: "Eskişehir Teknik Üniversitesi'nin 2007 yılında kurulmuş köklü hidrojen enerjili araç projesi Hidroana'nın elektrik biriminde 3 yıl boyunca donanım geliştirme ve Ar-Ge faaliyetlerini aktif olarak yürüttüm. Elektrik ve Elektronik Birimi Üyesi olarak DORLION ve MIDAS araçlarının tüm elektrik-elektronik sistem tasarım ve entegrasyon süreçlerinde görev aldım. Sistem mühendisliği yaklaşımıyla teknik gereksinim analizi ve alt sistem entegrasyonlarını gerçekleştirdim. Güç elektroniği kapsamında; 3 fazlı BLDC motorlar için motor sürücü donanımı, hücre güvenliğini sağlayan Batarya Yönetim Sistemi (BMS) ve elektriksel kaçak tespiti için izolasyon izleme sistemi geliştirerek şematik tasarım, PCB tasarımı, devre simülasyonları ve optimizasyonlarını tamamladım. Geliştirilen bu elektronik kartların yüksek akım ve gerilim altında kararlı çalışması amacıyla termal analizler ve termal yönetim optimizasyonları yürüttüm. Tasarladığımız donanımların araca entegrasyon süreçlerini yöneterek 3 kez TEKNOFEST Verimlilik Yarışması'nda (Türkiye İkinciliği ve Elektronik Sistemler Özel Jüri Ödülü kazanarak) ve 1 kez de küresel Shell Eco-Marathon yarışmasında takımımızı temsil ederek elektrik-elektronik birimi bünyesinde aktif görev aldım. <br><a href='https://hidroana.com' target='_blank' class='timeline-link'>hidroana.com</a>"
       }
     ],
     projects: [
@@ -452,6 +437,7 @@ const PORTFOLIO_DATA = {
     ],
     projectTeams: [
       {
+        id: "team-aviation-ai",
         name: "Aviation AI Research Society",
         role: "Founder / Project Lead",
         period: "2024 - Present",
@@ -465,6 +451,7 @@ const PORTFOLIO_DATA = {
         outcomes: ["3 TÜBİTAK 2209-A", "2 TÜBİTAK 2209-B", "2 TUSAŞ LIFT-UP"]
       },
       {
+        id: "team-tulpar-tharros",
         name: "Tulpar Tharros Aviation Society",
         role: "Co-Founder",
         period: "2023 - 2024",
@@ -478,6 +465,7 @@ const PORTFOLIO_DATA = {
         outcomes: ["THY Design Hackathon Finalist", "TEKNOFEST Best Startup", "Take Off Istanbul"]
       },
       {
+        id: "team-hidroana",
         name: "Hidroana Project Team",
         role: "Electrical and Electronics Unit Member",
         period: "2022 - 2025",
@@ -502,28 +490,10 @@ const PORTFOLIO_DATA = {
     ],
     experience: [
       {
-        title: "Founder",
-        company: "Aviation AI Research Society (Eskişehir, Turkey)",
-        duration: "October 2024 - Present",
-        details: "Within the multidisciplinary society established in 2022, I lead R&D efforts aimed at integrating AI and autonomous technologies into the aviation ecosystem to provide innovative solutions to sectoral problems. Our team has carried out 3 TÜBİTAK 2209-A, 2 TÜBİTAK 2209-B, and 2 TUSAŞ LIFT-UP projects.<br><br>• <b>TEKNOFEST FPV Drone Tracking Competition:</b> Developed autonomous target detection, FPV drone tracking, and flight control algorithms; modeled sensor data processing and autonomous decision-making mechanisms in MATLAB/Simulink and Python environments, validating them through virtual tests.<br><br>• <b>TUSAŞ LIFT-UP Project (KAAN Integration):</b> Participated in modeling critical flight performance data for the National Combat Aircraft KAAN mission computer. Modelled data sets obtained from Aircraft Flight Manual (AFM) nomograms using PyTorch with Curve Fitting, Artificial Neural Networks (ANN), and Reinforcement Learning architectures. Performed comparative model analyses evaluating avionics hardware constraints (CPU and memory load) and accuracy rates on the KAAN platform.<br><br>• <b>TÜBİTAK 2209-A Project (Bird Detection System):</b> Developed a deep learning-based image processing system aimed at reducing the effects of bird strikes in the aviation industry. Established real-time bird detection and classification infrastructure for airports using YOLOv8 and MobileNetV2 models, winning the Second Prize in the Boeing x ESTU Future of Aviation Competition."
-      },
-      {
         title: "Avionics Engineering Intern",
         company: "Vilnius Gediminas Technical University (Vilnius, Lithuania)",
         duration: "October 2023 - April 2024",
         details: "In the first period, I performed various technical tasks on non-airworthy aircraft such as Cessna 310, Cessna 152 and Airbus A320. In this process, I performed disassembly, reassembly, and installation operations of main components such as wings, flight control systems, landing gear, and fuselage. I also gained experience in maintenance, repair, and operation of avionics systems. Later, I continued my hands-on training at Kyviškės Airport, which holds EASA Part-145 certification. Here, I worked on airworthy Cessna 172S and Piper PA-34 aircraft, and all works were supervised by experts with EASA Part-66 licenses. In the final period, I focused on unmanned aerial vehicle technologies and the electronic infrastructures used in these systems. I designed the mechanical structure of the quadrotor I worked on using SolidWorks; in this process, I performed calculations via XFLR5 for critical factors like weight balance. Using Altium Designer, I designed and developed brushless motor driver circuit boards. I completed the validation and performance analyses of these boards through circuit simulations in PSpice and Matlab environments. To evaluate the temperature distribution on semiconductor materials on electronic boards during flight, I performed thermal analyses using COMSOL Multiphysics software. The system I developed was structured to support basic flight control algorithms. Energy efficiency, thermal durability, and system reliability were prioritized in the design process, and all components were optimized accordingly."
-      },
-      {
-        title: "Co-Founder",
-        company: "Tulpar Tharros Aviation Society",
-        duration: "March 2023 - September 2024",
-        details: "As a co-founder of the Tulpar Tharros team, established to create innovative solutions for the aviation maintenance, repair, and overhaul (MRO) sector, I developed the AI-supported soft robot \"INFLOBOT\" project. To increase inspection efficiency in narrow/confined spaces where human access is difficult and risky, I undertook the 3D body design, electrical infrastructure, and software of the robot; optimizing operational speed and occupational safety by providing maintenance technicians with a clear view through custom lighting and hardware integration. With this project, which forms the basis of our team, we became finalists in the THY Design Hackathon. Then, by developing the business model and technical prototype, we won the \"Best Startup\" award in the TEKNOFEST Entrepreneurship Competition and obtained critical financial support. With this momentum, I initiated the active incorporation process, participated in the Take Off Istanbul International Entrepreneurship Summit, and conducted strategic B2B investor negotiations for the commercialization of INFLOBOT in the aviation sector."
-      },
-      {
-        title: "Electrical and Electronics Unit Member",
-        company: "Hidroana Project Team",
-        duration: "September 2022 - September 2025",
-        details: "I actively carried out hardware development and R&D activities for 3 years in the electrical unit of Hidroana, Eskisehir Technical University's long-established hydrogen-powered vehicle project founded in 2007. As an Electrical and Electronics Unit Member, I took part in all electrical-electronic system design and integration processes of DORLION and MIDAS vehicles. I performed technical requirement analysis and subsystem integrations using a system engineering approach. Within the scope of power electronics; I developed motor driver hardware for 3-phase BLDC motors, a Battery Management System (BMS) ensuring cell safety, and an insulation monitoring system for electrical leakage detection, completing schematic design, PCB design, circuit simulations, and optimizations. I conducted thermal analyses and thermal management optimizations to ensure these developed electronic boards operate stably under high current and voltage. I managed the integration processes of the designs we developed into the vehicle, actively participating in the electric-electronics unit by representing our team in the TEKNOFEST Efficiency Challenge 3 times (winning Turkey Second Place and the Electronic Systems Special Jury Award) and once in the global Shell Eco-Marathon competition. <br><a href='https://hidroana.com' target='_blank' class='timeline-link'>hidroana.com</a>"
       }
     ],
     projects: [
@@ -870,7 +840,7 @@ const UI_TRANSLATIONS = {
     tag_experience: "SYS_03 // HISTORY_LOG",
     title_experience: "EĞİTİM & DENEYİM",
     col_education: "EĞİTİM",
-    col_experience: "DENEYİM & TAKIMLAR",
+    col_experience: "DENEYİM",
     tag_skills: "SYS_04 // CALIBRATION_DATA",
     title_skills: "TEKNİK YETENEKLER",
     tag_project_teams: "SYS_05 // TEAM_REGISTRY",
@@ -904,6 +874,13 @@ const UI_TRANSLATIONS = {
     modal_specs: "// TEKNİK ÖZELLİKLER",
     modal_close: "Kapat",
     btn_back: "ANA SAYFAYA DÖN",
+    back_to_portfolio: "PORTFOLYOYA DÖN",
+    heading_team_overview: "// 01. TAKIM ÖZETİ",
+    heading_team_role: "// 02. ROL VE SORUMLULUKLAR",
+    heading_team_outputs: "// 03. ÇIKTILAR VE DERECELER",
+    heading_other_teams: "DİĞER PROJE TAKIMLARI",
+    team_role_label: "Rol",
+    team_period_label: "Dönem",
     heading_specs: "PROJE HAKKINDA",
     heading_overview: "// 01. PROJE ÖZETİ",
     heading_architecture: "// 02. SİSTEM MİMARİSİ VE ÇALIŞMA PRENSİBİ",
@@ -928,7 +905,7 @@ const UI_TRANSLATIONS = {
     tag_experience: "SYS_03 // HISTORY_LOG",
     title_experience: "EDUCATION & EXPERIENCE",
     col_education: "EDUCATION",
-    col_experience: "EXPERIENCE & TEAMS",
+    col_experience: "EXPERIENCE",
     tag_skills: "SYS_04 // CALIBRATION_DATA",
     title_skills: "TECHNICAL SKILLS",
     tag_project_teams: "SYS_05 // TEAM_REGISTRY",
@@ -962,6 +939,13 @@ const UI_TRANSLATIONS = {
     modal_specs: "// TECHNICAL SPECIFICATIONS",
     modal_close: "Close",
     btn_back: "BACK TO MAIN PORTFOLIO",
+    back_to_portfolio: "BACK TO PORTFOLIO",
+    heading_team_overview: "// 01. TEAM OVERVIEW",
+    heading_team_role: "// 02. ROLE & RESPONSIBILITIES",
+    heading_team_outputs: "// 03. OUTPUTS & ACHIEVEMENTS",
+    heading_other_teams: "OTHER PROJECT TEAMS",
+    team_role_label: "Role",
+    team_period_label: "Period",
     heading_specs: "ABOUT THE PROJECT",
     heading_overview: "// 01. PROJECT OVERVIEW & ENGINEERING PURPOSE",
     heading_architecture: "// 02. SYSTEM ARCHITECTURE & WORKING LOGIC",

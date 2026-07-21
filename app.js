@@ -179,6 +179,17 @@ function renderProjectTeams(teamsList) {
     teamsList.forEach(team => {
         const card = document.createElement("article");
         card.className = "project-team-card";
+        card.tabIndex = 0;
+        card.setAttribute("role", "link");
+        card.addEventListener("click", () => {
+            window.location.href = `team.html?id=${team.id}`;
+        });
+        card.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                window.location.href = `team.html?id=${team.id}`;
+            }
+        });
         card.innerHTML = `
             <div class="corner-t-l"></div>
             <div class="corner-b-r"></div>
@@ -196,6 +207,9 @@ function renderProjectTeams(teamsList) {
             </ul>
             <div class="team-outcomes">
                 ${(team.outcomes || []).map(item => `<span>${item}</span>`).join("")}
+            </div>
+            <div class="project-action-hint team-action-hint">
+                ${currentLang === 'tr' ? 'TAKIM DETAYINI AÇ' : 'OPEN TEAM DETAILS'} <i data-lucide="arrow-right"></i>
             </div>
         `;
         container.appendChild(card);
