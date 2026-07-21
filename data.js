@@ -64,16 +64,39 @@ const PORTFOLIO_DATA = {
       {
         id: "team-tulpar-tharros",
         name: "Tulpar Tharros Havacılık Topluluğu",
-        role: "Kurucu Ortak",
+        role: "Kurucu",
         period: "2023 - 2024",
         icon: "bot",
+        logo: "TTT/LOGO.png",
         focus: "Havacılık bakım, onarım ve revizyon süreçleri için yapay zeka destekli robotik denetim sistemleri.",
+        overview: [
+          "2023 yılı Mart ayında kurulan TT takımı ismini, Türk mitolojisinde yer alan kanatlı at figürü “Tulpar” ve cesaret, azim, heves; hedeflerini gerçekleştirmek için motive edici güç gibi anlamlara sahip Grekçe “Tharros” kelimelerinden almaktadır. Takım; çeşitli takım ve projelerde bulunmuş, Uçak Gövde ve Motor Bakımı, Havacılık Elektrik Elektroniği ve Fizik bölümlerinde öğrenim gören öğrencilerden oluşmaktadır.",
+          "Takımın amacı, Havacılık ve Uzay Bilimleri kapsamında teknolojik ve bilimsel çalışmalara yönelerek gerek sektörel gerek akademik anlamda özgün ve yaratıcı fikirler üretmek ve bu fikirleri hayata geçirmektir.",
+          "Havacılık ve farklı bilim dallarından gelen öğrenciler olarak, çeşitli proje ve yarışmalarda kendi düşüncelerimizi ifade etmek; bu fikirlerin hayata geçirilme sürecinde Ar-Ge ve üretim safhalarında bizzat bulunarak pratik ve teorik çözümlerle sektöre ve bilimsel araştırmalara katkı sunmak temel hedefimizdir. Akademik ve kültürel yatırımlarımız, sürekli merakımız ve üretme isteğimizle ülkemizin geleceğine mühendis, teknisyen veya bilim insanı olarak hizmet etmeyi değerli görüyoruz.",
+          "Takım; Eskişehir Teknik Üniversitesi Havacılık ve Uzay Bilimleri Fakültesi üçüncü sınıfta öğrenim gören beş öğrenciden oluşmuştur. Her üye farklı alanlarda çeşitli yeteneklere sahip olup belirli araştırma alanlarında takıma destek vermiştir. Ekip üyelerinin yalnızca kendi ilgi alanlarıyla sınırlı kalmaması, takımı ilgilendiren her konuda söz söyleyebilmesi; proaktif, adaptif ve hızlı aksiyon alabilen bir çalışma kültürü oluşturmuştur."
+        ],
         contributions: [
           "INFLOBOT projesinde 3D gövde tasarımı, elektrik altyapısı ve yazılım geliştirme",
           "Dar/kapalı alanlarda bakım teknisyenlerine görüş ve operasyon güvenliği sağlayan sistem entegrasyonu",
           "Teknik prototip, iş modeli ve yatırımcı görüşmeleriyle ticarileşme sürecine katkı"
         ],
-        outcomes: ["THY Design Hackathon Finalisti", "TEKNOFEST En İyi Girişim", "Take Off Istanbul"]
+        outcomes: ["THY Design Hackathon Finalisti", "TEKNOFEST En İyi Girişim", "Take Off Istanbul"],
+        outcomeDetails: [
+          {
+            title: "THY Design Hackathon Finalisti",
+            text: "Tulpar Tharros ekibi, havacılık bakım ve denetim süreçlerine yönelik robotik çözüm fikrini THY Design Hackathon sürecinde finalist seviyesine taşıdı. Bu süreçte fikir yalnızca teknik bir prototip olarak değil; kullanıcı ihtiyacı, operasyonel güvenlik, bakım ortamı ve uygulanabilir ürün senaryosu üzerinden değerlendirildi."
+          },
+          {
+            title: "TEKNOFEST En İyi Girişim",
+            image: "TTT/Tulpar Tharros.jpg",
+            imageAlt: "Tulpar Tharros TEKNOFEST girişim sunumu",
+            text: "TEKNOFEST Girişim Yarışması kapsamında Tulpar Tharros, havacılık bakım alanında dar ve kapalı bölgelerde çalışanlara destek olabilecek yapay zeka destekli robotik denetim yaklaşımıyla En İyi Girişim başarısı elde etti. Bu derece, projenin yalnızca mühendislik fikri olarak değil; ticarileşme potansiyeli, saha problemiyle uyumu ve girişim değeri açısından da karşılık bulduğunu gösterdi."
+          },
+          {
+            title: "Take Off Istanbul",
+            text: "Take Off Istanbul süreci, Tulpar Tharros fikrinin uluslararası girişim ekosistemi içinde anlatılmasına ve yatırımcı/mentor perspektifiyle değerlendirilmesine imkan verdi. Takım için bu çıktı; teknik çözümün iş modeli, pazar ihtiyacı ve havacılık bakım sektöründeki uygulanabilirlik tarafını güçlendiren önemli bir deneyim oldu."
+          }
+        ]
       },
       {
         id: "team-hidroana",
@@ -503,16 +526,39 @@ const PORTFOLIO_DATA = {
       {
         id: "team-tulpar-tharros",
         name: "Tulpar Tharros Aviation Society",
-        role: "Co-Founder",
+        role: "Founder",
         period: "2023 - 2024",
         icon: "bot",
+        logo: "TTT/LOGO.png",
         focus: "AI-supported robotic inspection systems for aviation maintenance, repair, and overhaul processes.",
+        overview: [
+          "Founded in March 2023, TT takes its name from “Tulpar”, the winged horse figure in Turkic mythology, and the Greek word “Tharros”, which refers to courage, determination, enthusiasm, and the motivating force behind achieving goals. The team brought together students from Aircraft Airframe and Powerplant Maintenance, Aviation Electrical and Electronics, and Physics who had taken part in different teams and projects.",
+          "The team's aim was to focus on technological and scientific studies within aviation and space sciences, producing original and creative ideas with both sectoral and academic value and turning them into real outputs.",
+          "As students from aviation and different scientific disciplines, our main goal was to express our ideas through projects and competitions, take part directly in R&D and production phases, and contribute to the sector and scientific research with practical and theoretical solutions.",
+          "The team consisted of five third-year students from Eskişehir Technical University Faculty of Aviation and Space Sciences. Each member supported the team with different capabilities and research interests. The fact that members were not limited only to their own fields created a proactive, adaptive, and fast-moving team culture."
+        ],
         contributions: [
           "3D body design, electrical infrastructure, and software development for the INFLOBOT project",
           "System integration for safer inspection in narrow and confined maintenance areas",
           "Contributing to prototype development, business modeling, and investor-facing commercialization work"
         ],
-        outcomes: ["THY Design Hackathon Finalist", "TEKNOFEST Best Startup", "Take Off Istanbul"]
+        outcomes: ["THY Design Hackathon Finalist", "TEKNOFEST Best Startup", "Take Off Istanbul"],
+        outcomeDetails: [
+          {
+            title: "THY Design Hackathon Finalist",
+            text: "Tulpar Tharros carried its robotic solution idea for aviation maintenance and inspection processes to the finalist stage in the THY Design Hackathon. The idea was evaluated not only as a technical prototype, but also through user needs, operational safety, maintenance environments, and applicable product scenarios."
+          },
+          {
+            title: "TEKNOFEST Best Startup",
+            image: "TTT/Tulpar Tharros.jpg",
+            imageAlt: "Tulpar Tharros TEKNOFEST startup presentation",
+            text: "Within the TEKNOFEST Entrepreneurship Competition, Tulpar Tharros achieved Best Startup recognition with an AI-supported robotic inspection approach designed to support personnel in narrow and confined aviation maintenance areas. This result showed that the project had value not only as an engineering idea, but also in terms of commercialization potential, field relevance, and startup impact."
+          },
+          {
+            title: "Take Off Istanbul",
+            text: "The Take Off Istanbul process enabled the Tulpar Tharros idea to be presented within an international startup ecosystem and evaluated from investor and mentor perspectives. For the team, this strengthened the business model, market-need framing, and applicability of the technical solution in aviation maintenance."
+          }
+        ]
       },
       {
         id: "team-hidroana",

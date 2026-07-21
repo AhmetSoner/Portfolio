@@ -76,6 +76,7 @@ function loadTeamData(lang, teamId) {
             <i data-lucide="badge-check"></i>
             <div>
                 <h3>${item.title}</h3>
+                ${item.image ? `<figure class="team-output-figure"><img src="${item.image}" alt="${item.imageAlt || item.title}" loading="lazy"></figure>` : ""}
                 ${item.text ? `<p>${item.text}</p>` : ""}
             </div>
         `;

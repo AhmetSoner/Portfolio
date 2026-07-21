@@ -1208,6 +1208,19 @@ section {
     text-align: justify;
 }
 
+.team-output-figure {
+    margin: 10px 0 12px;
+    max-width: 420px;
+}
+
+.team-output-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 240, 255, 0.22);
+    background: rgba(0, 240, 255, 0.035);
+}
+
 .empty-team-projects {
     position: relative;
     padding: 24px;
@@ -1279,6 +1292,7 @@ section {
 
 .team-hero-copy {
     min-width: 0;
+    grid-column: 2;
 }
 
 .team-intro-pdf-link {
@@ -2407,6 +2421,10 @@ section {
     .team-hero-logo-wrap {
         max-width: 220px;
         min-height: 120px;
+    }
+
+    .team-hero-copy {
+        grid-column: 1;
     }
 
     .project-output-link {
