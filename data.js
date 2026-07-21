@@ -68,6 +68,7 @@ const PORTFOLIO_DATA = {
         period: "2023 - 2024",
         icon: "bot",
         logo: "TTT/LOGO.png?v=3",
+        projectIds: ["project-5"],
         focus: "Havacılık bakım, onarım ve revizyon süreçleri için yapay zeka destekli robotik denetim sistemleri.",
         overview: [
           "2023 yılı Mart ayında kurulan TT takımı ismini, Türk mitolojisinde yer alan kanatlı at figürü “Tulpar” ve cesaret, azim, heves; hedeflerini gerçekleştirmek için motive edici güç gibi anlamlara sahip Grekçe “Tharros” kelimelerinden almaktadır. Takım; çeşitli takım ve projelerde bulunmuş, Uçak Gövde ve Motor Bakımı, Havacılık Elektrik Elektroniği ve Fizik bölümlerinde öğrenim gören öğrencilerden oluşmaktadır.",
@@ -571,6 +572,7 @@ const PORTFOLIO_DATA = {
         period: "2023 - 2024",
         icon: "bot",
         logo: "TTT/LOGO.png?v=3",
+        projectIds: ["project-5"],
         focus: "AI-supported robotic inspection systems for aviation maintenance, repair, and overhaul processes.",
         overview: [
           "Founded in March 2023, TT takes its name from “Tulpar”, the winged horse figure in Turkic mythology, and the Greek word “Tharros”, which refers to courage, determination, enthusiasm, and the motivating force behind achieving goals. The team brought together students from Aircraft Airframe and Powerplant Maintenance, Aviation Electrical and Electronics, and Physics who had taken part in different teams and projects.",
