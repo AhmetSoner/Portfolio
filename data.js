@@ -31,6 +31,8 @@ const PORTFOLIO_DATA = {
         role: "Kurucu / Proje Lideri",
         period: "2024 - Devam Ediyor",
         icon: "brain-circuit",
+        logo: "HAYA/Logo.png",
+        introPdf: "HAYA/HAYA%20-%20Tan%C4%B1t%C4%B1m.pdf",
         focus: "Yapay zeka, otonom sistemler, uçuş kontrol yazılımları ve aviyonik veri modelleme.",
         contributions: [
           "TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve TÜBİTAK 2209-B proje süreçlerinin planlanması",
@@ -448,6 +450,8 @@ const PORTFOLIO_DATA = {
         role: "Founder / Project Lead",
         period: "2024 - Present",
         icon: "brain-circuit",
+        logo: "HAYA/Logo.png",
+        introPdf: "HAYA/HAYA%20-%20Tan%C4%B1t%C4%B1m.pdf",
         focus: "Artificial intelligence, autonomous systems, flight control software, and avionics data modeling.",
         contributions: [
           "Planning TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and TÜBİTAK 2209-B project workflows",
@@ -893,6 +897,7 @@ const UI_TRANSLATIONS = {
     heading_other_teams: "DİĞER PROJE TAKIMLARI",
     team_role_label: "Rol",
     team_period_label: "Dönem",
+    team_intro_pdf: "TAKIM TANITIM PDF'İ",
     heading_specs: "PROJE HAKKINDA",
     heading_overview: "// 01. PROJE ÖZETİ",
     heading_architecture: "// 02. SİSTEM MİMARİSİ VE ÇALIŞMA PRENSİBİ",
@@ -958,6 +963,7 @@ const UI_TRANSLATIONS = {
     heading_other_teams: "OTHER PROJECT TEAMS",
     team_role_label: "Role",
     team_period_label: "Period",
+    team_intro_pdf: "TEAM INTRO PDF",
     heading_specs: "ABOUT THE PROJECT",
     heading_overview: "// 01. PROJECT OVERVIEW & ENGINEERING PURPOSE",
     heading_architecture: "// 02. SYSTEM ARCHITECTURE & WORKING LOGIC",

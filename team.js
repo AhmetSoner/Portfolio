@@ -27,6 +27,27 @@ function loadTeamData(lang, teamId) {
     document.getElementById("team-role").textContent = team.role;
     document.getElementById("team-period").textContent = team.period;
 
+    const logoWrap = document.getElementById("team-logo-wrap");
+    const logo = document.getElementById("team-logo");
+    if (team.logo) {
+        logo.src = team.logo;
+        logo.alt = team.name;
+        logoWrap.style.display = "flex";
+    } else {
+        logo.src = "";
+        logo.alt = "";
+        logoWrap.style.display = "none";
+    }
+
+    const introPdf = document.getElementById("team-intro-pdf");
+    if (team.introPdf) {
+        introPdf.href = team.introPdf;
+        introPdf.style.display = "inline-flex";
+    } else {
+        introPdf.href = "#";
+        introPdf.style.display = "none";
+    }
+
     document.getElementById("team-overview").innerHTML = `
         <p>${team.focus}</p>
         <p>${lang === "tr"
