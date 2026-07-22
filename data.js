@@ -164,7 +164,7 @@ const PORTFOLIO_DATA = {
           "category": "donanim",
           "summary": "Hidrojen enerjili araç güç aktarma sistemi için geliştirilen Vol.1 BLDC motor sürücü kartı; 48 V DC baradan 50 A nominal akım ve 2.5 kW güç seviyesinde üç fazlı motor kontrolü hedefleyen, STM32F446RET6 tabanlı bir güç elektroniği tasarımıdır. Kart; MOSFET yarım köprü katları, IRS2186 kapı sürücüleri, INA229 ölçüm hattı, Hall sensörü geri beslemesi, çok kademeli DC/DC besleme mimarisi ve akım/sıcaklık güvenli mod algoritmalarıyla ele alınmıştır.",
           "description": "Vol.1 motor sürücü çalışması, üç fazlı BLDC motorun hız, yön, akım ve sıcaklık geri beslemeleriyle güvenli biçimde sürülmesi için tasarlanan güç kartını açıklar. Word teknik tasarım dosyasındaki topoloji seçimi, 48 V / 50 A güç hedefi, MOSFET ve gate-driver seçimi, DC-link kondansatör hesabı, STM32 tabanlı kontrol algoritması, Proteus simülasyonları, Altium PCB çalışmaları, prototip testleri, verim hesabı, koruma algoritmaları ve malzeme listesi bu sayfaya aktarılmıştır.",
-          "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+          "image": "vol1/Resim29.png",
           "tags": [
                     "BLDC Motor Sürücü",
                     "STM32F446RET6",
@@ -666,7 +666,7 @@ const PORTFOLIO_DATA = {
           "category": "donanim",
           "summary": "Vol.1 is a 48 V, 50 A, 2.5 kW three-phase BLDC motor driver board designed for an electric/hydrogen vehicle drivetrain. It combines a MOSFET bridge power stage, IRS2186 gate drivers, STM32F446RET6 control, INA229 measurement, Hall-sensor feedback, DC/DC rails, simulations, PCB layout, prototype tests, and current/temperature protection logic.",
           "description": "This page transfers the full technical design narrative of the Vol.1 BLDC driver document into the portfolio: topology selection, component choice, parameter calculations, control algorithm, simulation work, PCB design, production tests, efficiency estimation, protection algorithms, and bill of materials.",
-          "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+          "image": "vol1/Resim29.png",
           "tags": [
                     "BLDC Motor Driver",
                     "STM32F446RET6",
