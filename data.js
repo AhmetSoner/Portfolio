@@ -4,7 +4,7 @@ const PORTFOLIO_DATA = {
       name: "Ahmet Soner Güleç",
       title: "Uçak Bakım Mühendisi",
       subTitle: "Aviyonik Sistemler | Hava Aracı Bakımı | Elektronik Sistem ve Donanım Tasarımı",
-      about: "Eskişehir Teknik Üniversitesi Havacılık Elektrik ve Elektronik Bölümü’nden Uçak Bakım Mühendisi / Aviyonik unvanıyla mezun oldum. Teorik bilgiyi pratik mühendislik uygulamalarıyla birleştirme hedefim doğrultusunda; yurt dışı staj ve eğitim süreçlerimde hava araçlarının aviyonik sistem bakımı ve montaj prosedürlerinin yanı sıra mekanik tasarım, PCB donanım tasarımı ve simülasyon/analiz çalışmaları üzerine kapsamlı deneyim kazandım.\n\n Proje odaklı çalışma disiplinimle, kurucusu olduğum Tulpar Tharros Proje Takımı bünyesinde yapay zeka destekli havacılık muayene robotunu geliştirdim. Alternatif enerjili araçlar tasarlayan Hidroana ekibinde elektrik-elektronik alt sistem entegrasyonu ve güç elektroniği süreçlerini üstlenerek TEKNOFEST ve Shell Eco-marathon gibi ulusal ve uluslararası yarışmalarda dereceler elde ettim. Ayrıca kurucusu olduğum Havacılıkta Yapay Zeka Araştırmaları Topluluğu (HYZAT) çatısı altında; otonom sistemler, uçuş kontrol yazılımları ve yapay zeka entegrasyonuna odaklanan TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve 2209-B projelerini yöneterek havacılık ve uzay teknolojilerinde yenilikçi çözümler üretmeye devam ediyorum.",
+      about: "Eskişehir Teknik Üniversitesi Havacılık Elektrik ve Elektronik Bölümü’nden Uçak Bakım Mühendisi / Aviyonik unvanıyla mezun oldum. Teorik bilgiyi pratik mühendislik uygulamalarıyla birleştirme hedefim doğrultusunda; yurt dışı staj ve eğitim süreçlerimde hava araçlarının aviyonik sistem bakımı ve montaj prosedürlerinin yanı sıra mekanik tasarım, PCB donanım tasarımı ve simülasyon/analiz çalışmaları üzerine kapsamlı deneyim kazandım.\n\n Proje odaklı çalışma disiplinimle, kurucusu olduğum Tulpar Tharros Proje Takımı bünyesinde yapay zeka destekli havacılık muayene robotunu geliştirdim. Alternatif enerjili araçlar tasarlayan Hidroana ekibinde elektrik-elektronik alt sistem entegrasyonu ve güç elektroniği süreçlerini üstlenerek TEKNOFEST ve Shell Eco-marathon gibi ulusal ve uluslararası yarışmalarda dereceler elde ettim. Ayrıca kurucusu olduğum Havacılıkta Yapay Zeka Araştırmaları Topluluğu (HAYA) çatısı altında; otonom sistemler, uçuş kontrol yazılımları ve yapay zeka entegrasyonuna odaklanan TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve 2209-B projelerini yöneterek havacılık ve uzay teknolojilerinde yenilikçi çözümler üretmeye devam ediyorum.",
       avatar: "Foto.jpg",
       socials: {
         github: "https://github.com/AhmetSoner",
@@ -28,8 +28,8 @@ const PORTFOLIO_DATA = {
       {
         id: "team-aviation-ai",
         name: "Havacılıkta Yapay Zeka Araştırmaları Topluluğu",
-        role: "Kurucu / Proje Lideri",
-        period: "2024 - Devam Ediyor",
+        role: "Kurucu",
+        period: "2022 - Devam Ediyor",
         icon: "brain-circuit",
         logo: "HAYA/Logo.png",
         projectIds: ["project-6", "project-4"],
@@ -42,7 +42,7 @@ const PORTFOLIO_DATA = {
         ],
         contributions: [
           "TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve TÜBİTAK 2209-B proje süreçlerinin planlanması",
-          "TFX (MMU Kaan) uçağı uçuş performans verisi modelleme ve benchmark çalışmalarının yürütülmesi",
+          "TFX (Kaan) uçağı uçuş performans verisi modelleme ve benchmark çalışmalarının yürütülmesi",
           "TEKNOFEST FPV drone takibi ve kuş tespit sistemi gibi havacılık yapay zekası projelerinde teknik liderlik"
         ],
         outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"],
@@ -69,7 +69,7 @@ const PORTFOLIO_DATA = {
         icon: "bot",
         logo: "TTT/LOGO.png?v=3",
         projectIds: ["project-5"],
-        focus: "Havacılık bakım, onarım ve revizyon süreçleri için yapay zeka destekli robotik denetim sistemleri.",
+        focus: "Havacılık bakım, onarım ve revizyon süreçleri için yapay zeka destekli robotik sistemler.",
         overview: [
           "2023 yılı Mart ayında kurulan TT takımı ismini, Türk mitolojisinde yer alan kanatlı at figürü “Tulpar” ve cesaret, azim, heves; hedeflerini gerçekleştirmek için motive edici güç gibi anlamlara sahip Grekçe “Tharros” kelimelerinden almaktadır. Takım; çeşitli takım ve projelerde bulunmuş, Uçak Gövde ve Motor Bakımı, Havacılık Elektrik Elektroniği ve Fizik bölümlerinde öğrenim gören öğrencilerden oluşmaktadır.",
           "Takımın amacı, Havacılık ve Uzay Bilimleri kapsamında teknolojik ve bilimsel çalışmalara yönelerek gerek sektörel gerek akademik anlamda özgün ve yaratıcı fikirler üretmek ve bu fikirleri hayata geçirmektir.",
@@ -77,9 +77,9 @@ const PORTFOLIO_DATA = {
           "Takım; Eskişehir Teknik Üniversitesi Havacılık ve Uzay Bilimleri Fakültesi üçüncü sınıfta öğrenim gören beş öğrenciden oluşmuştur. Her üye farklı alanlarda çeşitli yeteneklere sahip olup belirli araştırma alanlarında takıma destek vermiştir. Ekip üyelerinin yalnızca kendi ilgi alanlarıyla sınırlı kalmaması, takımı ilgilendiren her konuda söz söyleyebilmesi; proaktif, adaptif ve hızlı aksiyon alabilen bir çalışma kültürü oluşturmuştur."
         ],
         contributions: [
-          "INFLOBOT projesinde 3D gövde tasarımı, elektrik altyapısı ve yazılım geliştirme",
-          "Dar/kapalı alanlarda bakım teknisyenlerine görüş ve operasyon güvenliği sağlayan sistem entegrasyonu",
-          "Teknik prototip, iş modeli ve yatırımcı görüşmeleriyle ticarileşme sürecine katkı"
+          "INFLOBOT projesinde 3D gövde tasarımını, elektrik altyapısını ve yazılımını geliştirme",
+          "Dar/kapalı alanlarda bakım teknisyenlerine görüş ve operasyon güvenliği sağlayan sistemlerin tasarımı",
+          "Yatırımcı görüşmeleriyle ticarileşme süreçlerinin yönetimi"
         ],
         outcomes: ["THY Design Hackathon Finalisti", "TEKNOFEST En İyi Girişim", "Take Off Istanbul"],
         outcomeDetails: [
