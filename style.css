@@ -2376,8 +2376,21 @@ section {
     color: #7ddff0;
     font-size: 0.86rem;
     line-height: 1.45;
-    text-align: left;
+    text-align: center;
     background: transparent;
+}
+
+.bldc-output-table .hud-benchmark-table {
+    border-color: rgba(255, 52, 52, 0.72);
+}
+
+.bldc-output-table .hud-benchmark-table th {
+    background: #c90000;
+    color: #fff;
+}
+
+.bldc-output-table .hud-benchmark-table td {
+    border-color: rgba(255, 52, 52, 0.58);
 }
 
 .project-output-access {
