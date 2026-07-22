@@ -104,7 +104,7 @@ const PORTFOLIO_DATA = {
         period: "2022 - 2025",
         icon: "zap",
         logo: "Hidroana/hidro logo.png",
-        projectIds: ["project-1", "project-3"],
+        projectIds: ["project-1", "project-2", "project-3"],
         focus: "Hidrojen enerjili araçlarda güç elektroniği uygulamaları ve sistem entegrasyonu.",
         overview: [
           "Hidroana, Eskişehir Teknik Üniversitesi'nin hidrojen enerjili araç projesidir. 2007 yılında kurulmuş, 17 yıllık bir proje kültürüne sahip olan takım; alternatif enerjili araç projeleri alanında Türkiye'nin öncü ekiplerinden biri olduğunu göstermiştir. Tamamı gönüllü mühendislik öğrencilerinden oluşan ekipte Malzeme Bilimi ve Mühendisliği, Elektrik-Elektronik Mühendisliği, Bilgisayar Mühendisliği, Kimya Mühendisliği ve Makine Mühendisliği gibi farklı disiplinlerden öğrenciler yer almaktadır.",
@@ -215,7 +215,7 @@ const PORTFOLIO_DATA = {
             "id": "project-2",
             "title": "Elektrikli Araçlar İçin İzolasyon İzleme Cihazı",
             "category": "donanim",
-            "summary": "Hidroana hidrojen enerjili aracının 48 V güç hattında batarya kutupları ile şasi arasındaki izolasyon direncini izlemek için geliştirilen analog ölçüm ve güvenlik kartı.",
+            "summary": "Bu proje, YTÜ Hidroana hidrojen enerjili aracının 48 V DC ana güç hattında batarya kutupları ile şasi arasındaki elektriksel izolasyon direncini gerçek zamanlı izlemek amacıyla geliştirilmiştir. Sistem, asimetrik ve simetrik kaçak durumlarını tespit edebilen anahtarlamalı direnç köprüsü (Electric Bridge Switch) ve izole ölçüm mimarisine dayanır. AD8216 fark yükselteci ve AMC1311 izole aktarım entegreleri sayesinde yüksek gerilim tarafı ile kontrol elektroniği arasında tam galvanik izolasyon sağlanarak araç ve kullanıcı güvenliği üst seviyeye taşınmıştır.",
             "description": "Bu proje, yüksek gerilim sınıfında ele alınan bir sistem değil; 48 V seviyesinde çalışan hidrojen enerjili araç güç hattında güvenli izolasyon takibi yapmak için tasarlanmış bir izleme kartıdır. Amaç, bataryanın pozitif ve negatif terminallerinin şasiye karşı izolasyon dirençlerini ölçmek, olası kaçak yolları erken tespit etmek ve kontrol kartına sayısallaştırılabilir güvenilir bir ölçüm bilgisi aktarmaktır.",
             "image": "isolation/ev-isolation-cover.jpg",
             "tags": [
@@ -598,7 +598,7 @@ const PORTFOLIO_DATA = {
         period: "2022 - 2025",
         icon: "zap",
         logo: "Hidroana/hidro logo.png",
-        projectIds: ["project-1", "project-3"],
+        projectIds: ["project-1", "project-2", "project-3"],
         focus: "Power electronics applications and system integration for hydrogen-powered vehicles.",
         overview: [
           "Hidroana is Eskişehir Technical University's hydrogen-powered vehicle project. Founded in 2007, the team has built a 17-year project culture and has become one of Turkey's pioneering student teams in alternative-energy vehicle projects. The team is composed entirely of volunteer engineering students from disciplines such as Materials Science and Engineering, Electrical and Electronics Engineering, Computer Engineering, Chemical Engineering, and Mechanical Engineering.",
@@ -734,7 +734,7 @@ const PORTFOLIO_DATA = {
             "id": "project-2",
             "title": "Insulation Monitoring Device for Electric Vehicles",
             "category": "donanim",
-            "summary": "Analog measurement and safety board developed to monitor the insulation resistance between the 48 V power line and chassis of the Hidroana hydrogen vehicle.",
+            "summary": "Developed for the 48 V DC power rail of the Hidroana hydrogen-powered vehicle, this project real-time monitors the electrical insulation resistance between battery terminals and the chassis. Built upon an Electric Bridge Switch architecture and differential measurement front-end, it accurately detects potential leakage paths and insulation degradation. Utilizing AD8216 difference amplifiers and AMC1311 galvanically isolated transmitters, the board decouples high-voltage sensing from low-voltage control electronics to ensure maximum vehicle and operational safety.",
             "description": "This project is not framed as an extremely high-voltage system; it was designed for a 48 V hydrogen vehicle power line. The goal is to monitor the insulation condition between the battery positive/negative terminals and the chassis, detect leakage paths early, and provide a reliable ADC-readable measurement to the control board.",
             "image": "isolation/ev-isolation-cover.jpg",
             "tags": [
