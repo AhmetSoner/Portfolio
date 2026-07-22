@@ -1,0 +1,35 @@
+** Profile: "SCHEMATIC1-hayanansini"  [ C:\Users\ahmet\Desktop\Boards\Motor Surucu Hesaplama\Simulasyon\gatedenyiyenler\Gatedenyemisler-PSpiceFiles\SCHEMATIC1\hayanansini.sim ] 
+
+** Creating circuit file "hayanansini.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/TMCS1126x1A.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/ina226.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/MV5_100V_STD_rev1p0_pspice.txt" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/UCC/ucc21550-q1.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WCAP-AIG5.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/B0530W.spice.txt" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WE-CSGP_Simple_Models/WCAP-CSGP_6-3V.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WE-CSGP_Simple_Models/WCAP-CSGP_10V.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WE-CSGP_Simple_Models/WCAP-CSGP_25V.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WE-CSGP_Simple_Models/WCAP-CSGP_50V.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WE-CSGP_Simple_Models/WCAP-CSGP_100V.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WCAP-ATG5.lib" 
+.LIB "C:/Users/ahmet/Desktop/PSPice Lib/WCAP-FTDB.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ahmet\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500u 0 0 SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 10.0p
+.OPTIONS VNTOL= 100.0u
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

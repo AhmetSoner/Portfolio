@@ -1,0 +1,35 @@
+** Profile: "SCHEMATIC1-matlab"  [ C:\Users\ahmet\Desktop\PSpiceSimulasyon\gatedenyemisler-pspicefiles\schematic1\matlab.sim ] 
+
+** Creating circuit file "matlab.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/ahmet/Desktop/pspice lib/ss14.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/tmcs1126x1a.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/ina226.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/mv5_100v_std_rev1p0_pspice.txt" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/ucc/ucc21550-q1.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/wcap-aig5.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/b0530w.spice.txt" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/we-csgp_simple_models/wcap-csgp_6-3v.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/we-csgp_simple_models/wcap-csgp_10v.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/we-csgp_simple_models/wcap-csgp_25v.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/we-csgp_simple_models/wcap-csgp_50v.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/we-csgp_simple_models/wcap-csgp_100v.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/wcap-atg5.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/wcap-ftdb.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ahmet\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 350u 0 SKIPBP 
+.OPTIONS STEPGMIN
+.OPTIONS ADVCONV
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

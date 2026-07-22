@@ -1,0 +1,31 @@
+** Profile: "SCHEMATIC1-KontrolDeneme"  [ c:\users\ahmet\desktop\motor simulation\motor simulation-pspicefiles\schematic1\kontroldeneme.sim ] 
+
+** Creating circuit file "KontrolDeneme.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/PSpiceTI/tools/capture/library/pspice/zetex.lib.txt" 
+.LIB "C:/Cadence/PSpiceTI/tools/capture/library/pspice/siemens.lib.txt" 
+.LIB "c:/users/ahmet/desktop/pspice lib/phil_fet.olb/phil_fet.lib.txt" 
+.LIB "c:/users/ahmet/desktop/pspice lib/aluminium cap/wcap-aig5.lib" 
+.LIB "c:/users/ahmet/desktop/pspice lib/wcap-atg5.lib" 
+.LIB "c:/users/ahmet/desktop/pspice lib/we-csgp_simple_models/wcap-csgp_25v.lib" 
+.LIB "c:/users/ahmet/desktop/pspice lib/we-csgp_simple_models/wcap-csgp_50v.lib" 
+.LIB "c:/users/ahmet/desktop/pspice lib/we-csgp_simple_models/wcap-csgp_100v.lib" 
+.LIB "C:/Cadence/PSpiceTI/tools/capture/library/pspice/mix_misc.lib.txt" 
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+.lib "nom_pspti.lib" 
+
+*Analysis directives: 
+.TRAN  0 500u 0 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

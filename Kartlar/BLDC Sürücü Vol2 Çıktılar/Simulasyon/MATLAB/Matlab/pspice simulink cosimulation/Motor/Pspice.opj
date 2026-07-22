@@ -1,0 +1,121 @@
+(ExpressProject "Pspice"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[03/24/25]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\pspice.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\pspice-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pspice-pspicefiles\schematic1\stm32.sim"
+        (DisplayName "SCHEMATIC1-STM32")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pspice-pspicefiles\schematic1\withoutmosfet.sim"
+        (DisplayName "SCHEMATIC1-withoutmosfet")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\pspice-pspicefiles\schematic1\stm32.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "C:\Users\ahmet\Desktop\PSPice Lib\MV5_100V_STD_rev1p0_pspice.txt"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "C:\Users\ahmet\Desktop\PSPice Lib\MV5_100V_STD_rev1p0_pspice.txt"))
+      (File "C:\Users\ahmet\Desktop\PSPice Lib\B0530W.spice.txt"
+        (Type "PSpiceLibrary")
+        (DisplayName "C:\Users\ahmet\Desktop\PSPice Lib\B0530W.spice.txt"))
+      (File "C:\Users\ahmet\Desktop\PSPice Lib\UCC\ucc21550-q1.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "C:\Users\ahmet\Desktop\PSPice Lib\UCC\ucc21550-q1.lib"))
+      (File "C:\Users\ahmet\Desktop\PSPice Lib\WCAP-ATUL.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "C:\Users\ahmet\Desktop\PSPice Lib\WCAP-ATUL.lib"))
+      (File "C:\Users\ahmet\Desktop\PSPice Lib\ss14.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "C:\Users\ahmet\Desktop\PSPice Lib\ss14.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (BLDCMTR
+      (FullPartName "BLDCMTR.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\MIX_MISC.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VEXP
+      (FullPartName "VEXP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\Motor\pspice.dsn")
+      (Path "Design Resources"
+         "C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\Motor\pspice.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 756"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 774")
+        (Scroll "0 360")
+        (Zoom "110")
+        (Occurrence "/"))
+      (Path
+         "C:\CADENCE\SPB_17.4\TOOLS\PSPICE\CAPTURE_SAMPLES\COSIMULATIONDEMOS\PSPICECOSIM\MOTOR\PSPICE.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Stm32")))
+  (MPSSessionName "ahmet")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.4\tools\capture\library\pspice"))

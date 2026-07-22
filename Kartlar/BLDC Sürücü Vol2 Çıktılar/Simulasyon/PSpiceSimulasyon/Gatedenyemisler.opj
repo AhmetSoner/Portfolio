@@ -1,0 +1,250 @@
+(ExpressProject "Gatedenyemisler"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[02/01/25]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "c:\cadence\spb_22.1\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "c:\cadence\spb_22.1\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "c:\cadence\spb_22.1\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "c:\cadence\spb_22.1\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "gatedenyemisler.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (Netlist_TAB "3")
+    (PSPICE_Output_File "Gatedenyemisler-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.NET")
+    (PSPICE_View_Output "FALSE")
+    (PSPICE_Subcircuit_Format "FALSE")
+    (PSPICE_Do_DRC_Markers "FALSE")
+    (PSPICE_Net_Name_Pref "TRUE")
+    (PSPICE_Hier_Format "FALSE")
+    (PSPICE_Hier_Descend "FALSE")
+    (PSPICE_Hier_DoNot_Descend "FALSE")
+    (PSPICE_Alt_Template "PSpiceTemplate"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\gatedenyemisler-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\gatedenyemisler-pspicefiles\schematic1\matlab.sim"
+        (DisplayName "SCHEMATIC1-matlab")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\gatedenyemisler-pspicefiles\schematic1\hayanansini.sim"
+        (DisplayName "SCHEMATIC1-hayanansini")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\gatedenyemisler-pspicefiles\schematic1\matlab.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "..\pspice lib\ss14.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\ss14.lib"))
+      (File "..\pspice lib\tmcs1126x1a.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\tmcs1126x1a.lib"))
+      (File "..\pspice lib\ina226.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\ina226.lib"))
+      (File "..\pspice lib\mv5_100v_std_rev1p0_pspice.txt"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\mv5_100v_std_rev1p0_pspice.txt"))
+      (File "..\pspice lib\ucc\ucc21550-q1.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\ucc\ucc21550-q1.lib"))
+      (File "..\pspice lib\wcap-aig5.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\wcap-aig5.lib"))
+      (File "..\pspice lib\b0530w.spice.txt"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\b0530w.spice.txt"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_6-3v.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\we-csgp_simple_models\wcap-csgp_6-3v.lib"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_10v.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\we-csgp_simple_models\wcap-csgp_10v.lib"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_25v.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\we-csgp_simple_models\wcap-csgp_25v.lib"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_50v.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\we-csgp_simple_models\wcap-csgp_50v.lib"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_100v.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\we-csgp_simple_models\wcap-csgp_100v.lib"))
+      (File "..\pspice lib\wcap-atg5.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\wcap-atg5.lib"))
+      (File "..\pspice lib\wcap-ftdb.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice lib\wcap-ftdb.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (E
+      (FullPartName "E.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (H
+      (FullPartName "H.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (F
+      (FullPartName "F.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (G
+      (FullPartName "G.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (AIG5_861021386031_0R47mF
+      (FullPartName "AIG5_861021386031_0R47mF.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE LIB\WCAP-AIG5.OLB")
+      (DeviceIndex "0"))
+    (CSGP_0603_885012206120_100nF
+      (FullPartName "CSGP_0603_885012206120_100nF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_100V.OLB")
+      (DeviceIndex "0"))
+    (CSGP_1206_885012208118_100nF
+      (FullPartName "CSGP_1206_885012208118_100nF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_100V.OLB")
+      (DeviceIndex "0"))
+    (FTDB_890764427009CS_10uF
+      (FullPartName "FTDB_890764427009CS_10uF.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE LIB\WCAP-FTDB.OLB")
+      (DeviceIndex "0"))
+    (FTDB_890484428002CS_35uF
+      (FullPartName "FTDB_890484428002CS_35uF.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE LIB\WCAP-FTDB.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (CSGP_1210_885012209069_1uF
+      (FullPartName "CSGP_1210_885012209069_1uF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_100V.OLB")
+      (DeviceIndex "0"))
+    (zener
+      (FullPartName "zener.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\ZENER\HYBRID\SUPPORTFILES\ZENER.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (DI_B0530W
+      (FullPartName "DI_B0530W.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\B0530W.SPICE.OLB")
+      (DeviceIndex "0"))
+    (CSGP_0805_885012207103_1uF
+      (FullPartName "CSGP_0805_885012207103_1uF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_50V.OLB")
+      (DeviceIndex "0"))
+    (CSGP_0805_885012207098_100nF
+      (FullPartName "CSGP_0805_885012207098_100nF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_50V.OLB")
+      (DeviceIndex "0"))
+    (CSGP_2220_885012214006_10uF
+      (FullPartName "CSGP_2220_885012214006_10uF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_100V.OLB")
+      (DeviceIndex "0"))
+    (ATG8_860010372002_22uF
+      (FullPartName "ATG8_860010372002_22uF.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WCAP-ATG8.OLB")
+      (DeviceIndex "0"))
+    (ATG8_860011374003_2R2uF
+      (FullPartName "ATG8_860011374003_2R2uF.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WCAP-ATG8.OLB")
+      (DeviceIndex "0"))
+    (ATG8_860011373001_470nF
+      (FullPartName "ATG8_860011373001_470nF.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WCAP-ATG8.OLB")
+      (DeviceIndex "0"))
+    (ATG8_860011374004_3R3uF
+      (FullPartName "ATG8_860011374004_3R3uF.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE\KAPASITOR\WCAP-ATG8.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\ahmet\Desktop\PSPice Lib")
+  (MPSSessionName "ahmet")
+  (Folder "Logs")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 733"))
+      (Tab 0)))
+  (ISPCBBASICLICENSE "false"))

@@ -1,0 +1,100 @@
+{
+		"Opj": "..\\Pspice.opj",
+		"Sim": "C:\\Cadence\\SPB_17.4\\tools\\pspice\\capture_samples\\CoSimulationDemos\\PSpiceCoSim\\Motor\\Pspice-PSpiceFiles\\SCHEMATIC1\\STM32.sim",
+		"Net": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\SCHEMATIC1.net",
+		"Cir": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\STM32_slps_\\STM32_slps_.cir",
+		"Out": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\STM32_slps_\\STM32_slps_.out",
+		"Dat": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\STM32_slps_\\STM32_slps_.dat",
+		"radioCheck": 0,
+		"minStepCheck": 0,
+		"Lib": "C:\\Cadence\\SPB_17.4\\tools\\pspice\\library",
+		"Input": [
+				{
+						"Trace": "VRA",
+						"PSpiceName": "V_VRA"
+				},
+				{
+						"Trace": "VRA1",
+						"PSpiceName": "V_VRA1"
+				},
+				{
+						"Trace": "VRA2",
+						"PSpiceName": "V_VRA2"
+				},
+				{
+						"Trace": "VRA3",
+						"PSpiceName": "V_VRA3"
+				},
+				{
+						"Trace": "VRA4",
+						"PSpiceName": "V_VRA4"
+				},
+				{
+						"Trace": "VRA5",
+						"PSpiceName": "V_VRA5"
+				}
+		],
+		"numOfInputs": 6,
+		"Output": [
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "angle",
+						"PSpiceName": "ANGLE"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "speed",
+						"PSpiceName": "SPEED"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "Gate_A_High",
+						"PSpiceName": "GATE_A_HIGH"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "Gate_A_Ref",
+						"PSpiceName": "GATE_A_REF"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "phase_a",
+						"PSpiceName": "GATE_A_REF"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "phase_b",
+						"PSpiceName": "PHASE_B"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "phase_c",
+						"PSpiceName": "PHASE_C"
+				}
+		],
+		"numOfOutputs": 7,
+		"Params": {
+				"cdc_link": "0.00047",
+				"cdt": "1e-07",
+				"Rbootstrap": "2",
+				"Vdriver_in": "5",
+				"Rmos_off": "76.5",
+				"Rmos_pulldown": "10000",
+				"Rdt": "20000",
+				"Rmos_on": "109",
+				"R_snubber": "5",
+				"V_bus": "48",
+				"C_snubber": "1e-07",
+				"Vstm_in": "0",
+				"Cmos_drain": "4.7e-06",
+				"Rmos_ext": "3",
+				"Vdriver_out": "12"
+		}
+}

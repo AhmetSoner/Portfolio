@@ -1,0 +1,28 @@
+** Profile: "SCHEMATIC1-patlayansurucu"  [ C:\Users\ahmet\Desktop\Motor Simulation\Motor Simulation-PSpiceFiles\SCHEMATIC1\patlayansurucu.sim ] 
+
+** Creating circuit file "patlayansurucu.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/ahmet/Desktop/pspice/ucc21550-q1.lib" 
+.LIB "C:/Cadence/PSpiceTI/tools/capture/library/pspice/WCAP-CSGP_25V.lib" 
+.LIB "C:/Cadence/PSpiceTI/tools/capture/library/pspice/siemens.lib.txt" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/aluminium cap/wcap-aig5.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/wcap-atg5.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/we-csgp_simple_models/wcap-csgp_50v.lib" 
+.LIB "C:/Users/ahmet/Desktop/pspice lib/we-csgp_simple_models/wcap-csgp_100v.lib" 
+.LIB "C:/Cadence/PSpiceTI/tools/capture/library/pspice/mix_misc.lib.txt" 
+* From [PSPICE NETLIST] section of C:\Users\ahmet\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.OPTIONS ADVCONV
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

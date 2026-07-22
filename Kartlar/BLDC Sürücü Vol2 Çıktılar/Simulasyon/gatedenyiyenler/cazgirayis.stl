@@ -1,0 +1,18 @@
+* C:\Users\ahmet\Desktop\cazgirayis.stl written on Sat Oct 26 15:08:19 2024
+* by Stimulus Editor -- Serial Number: 1031236939 -- Version 22.1.0
+;!Stimulus Get
+;! cazgirayi_Q2H Analog cazgirayi2_Q3L Analog cazgirayi3_Q1H Analog cazgirayi_Q2L Analog cazgirayi_Q3H Analog cazgirayi_Q1L Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 220us
+;!Yrange 0 4
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS cazgirayi_Q1L PULSE( 0 3.3 40u 100n 100n 20u 60u )
+.STIMULUS cazgirayi_Q3H PULSE( 0 3.3 30u 100n 100n 20u 60u )
+.STIMULUS cazgirayi_Q2L PULSE( 0 3.3 20u 100n 100n 20u 60u )
+.STIMULUS cazgirayi3_Q1H PULSE( 0 3.3 10u 100n 100n 20u 60u )
+.STIMULUS cazgirayi2_Q3L PULSE( 0 3.3 0 100n 100n 20u 60u )
+.STIMULUS cazgirayi_Q2H PULSE( 0 3.3 0 100n 100n 10u 50u )

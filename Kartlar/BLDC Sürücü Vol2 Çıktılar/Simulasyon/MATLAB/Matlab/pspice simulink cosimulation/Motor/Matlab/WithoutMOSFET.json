@@ -1,0 +1,130 @@
+{
+		"Opj": "..\\Pspice.opj",
+		"Sim": "C:\\Cadence\\SPB_17.4\\tools\\pspice\\capture_samples\\CoSimulationDemos\\PSpiceCoSim\\Motor\\Pspice-PSpiceFiles\\SCHEMATIC1\\withoutmosfet.sim",
+		"Net": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\SCHEMATIC1.net",
+		"Cir": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\withoutmosfet_slps_\\withoutmosfet_slps_.cir",
+		"Out": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\withoutmosfet_slps_\\withoutmosfet_slps_.out",
+		"Dat": "..\\Pspice-PSpiceFiles\\SCHEMATIC1\\withoutmosfet_slps_\\withoutmosfet_slps_.dat",
+		"radioCheck": 0,
+		"minStepCheck": 1,
+		"Lib": "C:\\Cadence\\SPB_17.4\\tools\\pspice\\library",
+		"Input": [
+				{
+						"Trace": "V64",
+						"PSpiceName": "V_V64"
+				},
+				{
+						"Trace": "V69",
+						"PSpiceName": "V_V69"
+				},
+				{
+						"Trace": "V72",
+						"PSpiceName": "V_V72"
+				},
+				{
+						"Trace": "V76",
+						"PSpiceName": "V_V76"
+				},
+				{
+						"Trace": "V79",
+						"PSpiceName": "V_V79"
+				},
+				{
+						"Trace": "V83",
+						"PSpiceName": "V_V83"
+				}
+		],
+		"numOfInputs": 6,
+		"Output": [
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1552136",
+						"PSpiceName": "N1552136"
+				},
+				{
+						"Type": "V",
+						"SType": "Pin",
+						"Trace": "R56:2",
+						"PSpiceName": "N1552116"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1553164",
+						"PSpiceName": "N1553164"
+				},
+				{
+						"Type": "V",
+						"SType": "Pin",
+						"Trace": "R68:2",
+						"PSpiceName": "N1553734"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1562392",
+						"PSpiceName": "N1562392"
+				},
+				{
+						"Type": "V",
+						"SType": "Pin",
+						"Trace": "R72:2",
+						"PSpiceName": "N1562604"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1563018",
+						"PSpiceName": "N1563018"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1563278",
+						"PSpiceName": "N1563278"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1566904",
+						"PSpiceName": "N1566904"
+				},
+				{
+						"Type": "V",
+						"SType": "Pin",
+						"Trace": "R81:2",
+						"PSpiceName": "N1567116"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1567530",
+						"PSpiceName": "N1567530"
+				},
+				{
+						"Type": "V",
+						"SType": "Net",
+						"Trace": "N1567790",
+						"PSpiceName": "N1567790"
+				}
+		],
+		"numOfOutputs": 12,
+		"Params": {
+				"cdt": "1e-07",
+				"cdc_link": "0.00047",
+				"Rbootstrap": "2",
+				"Vdriver_in": "5",
+				"Rmos_off": "76.5",
+				"Rmos_pulldown": "10000",
+				"Rdt": "20000",
+				"Rmos_on": "109",
+				"R_snubber": "5",
+				"V_bus": "48",
+				"C_snubber": "1e-07",
+				"Vstm_in": "0",
+				"Cmos_drain": "4.7e-06",
+				"Rmos_ext": "3",
+				"Vdriver_out": "12"
+		}
+}

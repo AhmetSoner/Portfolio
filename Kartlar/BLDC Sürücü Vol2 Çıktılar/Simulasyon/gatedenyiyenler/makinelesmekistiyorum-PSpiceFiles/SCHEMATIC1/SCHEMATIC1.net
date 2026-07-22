@@ -1,0 +1,14 @@
+* source MAKINELESMEKISTIYORUM
+X_M1         N14684 N14929 N14431 M_UN0001 M_UN0002 BLDCMTR_WYE 
++ PARAMS: J=146000_g*cm*sec*sec B=0.559_g*cm*sec/rad F=3580_g*cm
++  D=11675.100_g*cm A=26 Cl=0.000000543954H Cr=0.0201498 Cc=35.5uF Cm=-0.4
++  Cb=5.875_Volt*sec/rev Ct=9526660_g*cm/amp
+V_V4         N14431 0 DC 0 AC 0
++SIN 0 48 60 0 0 0
+V_V5         N14929 0 DC 0 AC 0
++SIN 0 48 60 0 0 120
+V_V6         N14684 0 DC 0 AC 0
++SIN 0 48 60 0 0 240
+** Floating/unmodeled pin fixups **
+R__UC0001   M_UN0001  0   {1/GMIN}
+R__UC0002   M_UN0002  0   {1/GMIN}

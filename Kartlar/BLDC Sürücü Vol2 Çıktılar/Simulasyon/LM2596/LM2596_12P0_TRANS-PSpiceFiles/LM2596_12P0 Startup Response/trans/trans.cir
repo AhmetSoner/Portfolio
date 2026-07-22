@@ -1,0 +1,25 @@
+** Profile: "LM2596_12P0 Startup Response-trans"  [ C:\Users\ahmet\Desktop\Simulasyon\LM2596\lm2596_12p0_trans-pspicefiles\lm2596_12p0 startup response\trans.sim ] 
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lm2596_12p0_trans.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ahmet\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3m 0 20n 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 10n
+.OPTIONS ITL1= 1500
+.OPTIONS ITL2= 400
+.OPTIONS ITL4= 400
+.OPTIONS VNTOL= 10u
+.PROBE64 V(*) I(*) 
+.INC "..\LM2596_12P0 Startup Response.net" 
+
+
+.END

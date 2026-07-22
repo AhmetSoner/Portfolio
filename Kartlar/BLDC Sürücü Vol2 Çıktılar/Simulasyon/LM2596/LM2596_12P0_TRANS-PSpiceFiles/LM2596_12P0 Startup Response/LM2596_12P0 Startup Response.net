@@ -1,0 +1,17 @@
+* source LM2596_12P0_TRANS
+C_C2         N16788279 VIN  4.7u  TC=0,0 
+V_V1         VIN 0 24Vdc
+C_C1         N16788162 VIN  4.7u  TC=0,0 
+V_EN         ON_OFF_N 0  
++PULSE 1 0 100u 1n 1n 5m 5.1m
+R_R3         N16788441 0  3m TC=0,0 
+R_R1         N16788162 0  3m TC=0,0 
+X_U2         0 SW D_D1 
+C_C3         N16788441 VIN  4.7u  TC=0,0 
+L_L1         SW N167865311  68u  
+X_U1         VIN FB SW 0 ON_OFF_N LM2596_12P0_TRANS
+R_RL         FB 0  12 TC=0,0 
+R_Rdcr         N167865311 FB  0.0885 TC=0,0 
+R_R2         N16788279 0  3m TC=0,0 
+R_Resr         FB N16810791  0.17 TC=0,0 
+C_COUT         N16810791 0  220u  TC=0,0 

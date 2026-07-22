@@ -1,0 +1,76 @@
+{
+		"Opj": ".\\Gatedenyemisler.opj",
+		"Sim": "C:\\Users\\ahmet\\Desktop\\Boards\\Motor Surucu Hesaplama\\Simulasyon\\gatedenyiyenler\\Gatedenyemisler-PSpiceFiles\\SCHEMATIC1\\matlab.sim",
+		"Net": ".\\Gatedenyemisler-PSpiceFiles\\SCHEMATIC1\\SCHEMATIC1.net",
+		"Cir": ".\\Gatedenyemisler-PSpiceFiles\\SCHEMATIC1\\matlab_slps_\\matlab_slps_.cir",
+		"Out": ".\\Gatedenyemisler-PSpiceFiles\\SCHEMATIC1\\matlab_slps_\\matlab_slps_.out",
+		"Dat": ".\\Gatedenyemisler-PSpiceFiles\\SCHEMATIC1\\matlab_slps_\\matlab_slps_.dat",
+		"radioCheck": 0,
+		"minStepCheck": 1,
+		"Lib": "C:\\Cadence\\SPB_22.1\\tools\\pspice\\library",
+		"Input": [
+				{
+						"Trace": "V44",
+						"PSpiceName": "V_V44"
+				},
+				{
+						"Trace": "V45",
+						"PSpiceName": "V_V45"
+				},
+				{
+						"Trace": "V46",
+						"PSpiceName": "V_V46"
+				},
+				{
+						"Trace": "V47",
+						"PSpiceName": "V_V47"
+				},
+				{
+						"Trace": "V48",
+						"PSpiceName": "V_V48"
+				},
+				{
+						"Trace": "V49",
+						"PSpiceName": "V_V49"
+				}
+		],
+		"numOfInputs": 6,
+		"Output": [
+				{
+						"Type": "V",
+						"SType": "Pin",
+						"Trace": "M15:g",
+						"PSpiceName": "N988736"
+				},
+				{
+						"Type": "V",
+						"SType": "Pin",
+						"Trace": "M15:s",
+						"PSpiceName": "0"
+				},
+				{
+						"Type": "V",
+						"SType": "Pin",
+						"Trace": "M16:d",
+						"PSpiceName": "N15373"
+				}
+		],
+		"numOfOutputs": 3,
+		"Params": {
+				"cdc_link": "0.00047",
+				"cdt": "1e-07",
+				"c_snubber": "1e-07",
+				"Vstm_in": "0",
+				"Rmos_pulldown": "10000",
+				"V_bus": "48",
+				"Rmos_off": "76.5",
+				"Rbootstrap": "2",
+				"Rmos_on": "109",
+				"Vdriver_in": "5",
+				"Vdriver_out": "12",
+				"Rmos_ext": "3",
+				"Rdt": "20000",
+				"R_snubber": "5",
+				"Cmos_drain": "4.7e-09"
+		}
+}

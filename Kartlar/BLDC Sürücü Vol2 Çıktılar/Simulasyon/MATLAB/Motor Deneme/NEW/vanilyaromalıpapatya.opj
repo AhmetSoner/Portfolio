@@ -1,0 +1,44 @@
+(ExpressProject "vanilyaromalýpapatya"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "22.1 P001 (4063652)  [10/6/2022]-[10/25/24]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File "C:\Users\ahmet\Desktop\PSpice\vanilyaromalýpapatya.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Layout")
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (UCC21550-Q1
+      (FullPartName "UCC21550-Q1.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE\UCC21550-Q1.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\ahmet\Desktop\PSpice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Select "Design Resources"
+         "C:\Users\ahmet\Desktop\PSpice\vanilyaromalýpapatya.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 755"))
+      (Tab 0)))
+  (MPSSessionName "ahmet"))

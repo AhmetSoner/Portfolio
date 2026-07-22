@@ -1,0 +1,689 @@
+* source PSPICE
+X_C80    GATE_A_REF N1503153 SCHEMATIC1_C80 
+V_V52         N1506303 0 {Vdriver_out}
+V_V6         N1504205 0 {Vdriver_out}
+R_R50         N15086930 N1508505  {Rmos_ext} TC=0,0 
+V_V5         N1504199 0 {Vdriver_out}
+X_X12         PHASE_C N15086930 0 FDB0260N1007L_3P
+R_R7         N15037570 GATE_A_HIGH  {Rmos_ext} TC=0,0 
+C_C58         0 N1507535  {Cmos_drain}  TC=0,0 
+C_C36         PHASE_B N15057630  {C_snubber}  TC=0,0 
+V_V58         N1507535 0 {V_bus}
+X_X3         GATE_A_REF N15046490 0 FDB0260N1007L_3P
+R_R29         PHASE_B N15065070  {R_snubber} TC=0,0 
+R_R5         N1503483 N15036690  {R_snubber} TC=0,0 
+R_R49         N15086630 N1508505  {Rmos_ext} TC=0,0 
+V_V50         N1505547 0 {V_bus}
+D_D6         N1505189 N1505195 DI_B0530W 
+V_V54         N1507169 0 {Vdriver_out}
+X_X11         PHASE_C N15086630 0 FDB0260N1007L_3P
+R_R15         N1504491 N1504469  {Rmos_on} TC=0,0 
+X_C92    0 N1503683 SCHEMATIC1_C92 
+R_R22         N1505391 N1505371  {Rmos_on} TC=0,0 
+R_R9         N1504575 0  {Rdt} TC=0,0 
+C_C29         GATE_A_REF N15036690  {C_snubber}  TC=0,0 
+X_X7         PHASE_B N15066530 0 FDB0260N1007L_3P
+R_R42         N1507393 PHASE_C  {Rmos_pulldown} TC=0,0 
+C_C46         0 N15065070  {C_snubber}  TC=0,0 
+X_C95    0 N1503125 SCHEMATIC1_C95 
+R_R43         N1508455 N1508461  1 TC=0,0 
+X_U2         N1503343 N1503329 SS14
+R_R38         N1507535 N15076830  {R_snubber} TC=0,0 
+R_R14         N15046490 N1504491  {Rmos_ext} TC=0,0 
+R_R17         N1504491 0  {Rmos_pulldown} TC=0,0 
+R_R8         GATE_A_HIGH GATE_A_REF  {Rmos_pulldown} TC=0,0 
+R_R47         PHASE_C N15085390  {R_snubber} TC=0,0 
+R_R44         N1508505 N1508495  {Rmos_off} TC=0,0 
+X_X9         N1507535 N15077450 PHASE_C FDB0260N1007L_3P
+V_V47         N1505195 PHASE_B {Vdriver_out}
+C_C56         0 N1507535  {Cmos_drain}  TC=0,0 
+X_U4         N1505385 N1505371 SS14
+R_R21         N1505547 N15057630  {R_snubber} TC=0,0 
+C_C63         0 N15085170  {C_snubber}  TC=0,0 
+V_V55         N1507197 PHASE_C {Vdriver_out}
+V_V57         N1507697 0 {Vdriver_in}
+R_R10         N1504199 N1504205  1 TC=0,0 
+X_C194         0 N1505547 ATUL_860040881012_470uF
+R_R18         N1505189 N1505167  {Rbootstrap} TC=0,0 
+R_R30         PHASE_B N15065290  {R_snubber} TC=0,0 
+X_X10         N1507535 N15077710 PHASE_C FDB0260N1007L_3P
+C_C40         0 N1505547  {Cmos_drain}  TC=0,0 
+X_U3         N1504481 N1504469 SS14
+C_C53         PHASE_C N15076830  {C_snubber}  TC=0,0 
+R_R3         N1503483 N15036470  {R_snubber} TC=0,0 
+R_R45         N1508589 0  {Rdt} TC=0,0 
+V_V51         N1506297 0 {Vdriver_out}
+R_R6         GATE_A_HIGH N1503329  {Rmos_on} TC=0,0 
+C_C28         0 N15045030  {C_snubber}  TC=0,0 
+R_R25         N1505391 PHASE_B  {Rmos_pulldown} TC=0,0 
+X_C118    0 N1504205 SCHEMATIC1_C118 
+C_C10         0 N1503483  {Cmos_drain}  TC=0,0 
+C_C52         PHASE_C N15076610  {C_snubber}  TC=0,0 
+R_R37         N1507535 N15076610  {R_snubber} TC=0,0 
+R_R28         N1506587 0  {Rdt} TC=0,0 
+R_R51         N1508505 0  {Rmos_pulldown} TC=0,0 
+X_X5         N1505547 N15056910 PHASE_B FDB0260N1007L_3P
+R_R11         N1504491 N1504481  {Rmos_off} TC=0,0 
+R_R1         N1503147 N1503125  {Rbootstrap} TC=0,0 
+C_C27         GATE_A_REF N15036470  {C_snubber}  TC=0,0 
+V_V59         N1508455 0 {Vdriver_out}
+C_C41         0 N1505547  {Cmos_drain}  TC=0,0 
+R_R27         N1506353 N1506343  {Rmos_off} TC=0,0 
+X_C96    0 N1503125 SCHEMATIC1_C96 
+V_V49         N1505621 0 {Vdriver_in}
+D_D7         N1507191 N1507197 DI_B0530W 
+R_R41         N15077710 N1507393  {Rmos_ext} TC=0,0 
+X_X8         PHASE_B N15066830 0 FDB0260N1007L_3P
+V_V3         N1503683 0 {Vdriver_in}
+C_C9         0 N1503483  {Cmos_drain}  TC=0,0 
+R_R39         N1507393 N1507373  {Rmos_on} TC=0,0 
+R_R36         N1507393 N1507387  {Rmos_off} TC=0,0 
+R_R26         N1506297 N1506303  1 TC=0,0 
+X_C193         0 N1503483 ATUL_860040881012_470uF
+C_C59         0 N1507535  {Cmos_drain}  TC=0,0 
+X_U9         N1508495 N1508483 SS14
+R_R16         N15046790 N1504491  {Rmos_ext} TC=0,0 
+C_C12         0 N1503483  {Cmos_drain}  TC=0,0 
+X_X6         N1505547 N15057390 PHASE_B FDB0260N1007L_3P
+C_C35         PHASE_B N15057150  {C_snubber}  TC=0,0 
+X_C81    GATE_A_REF N1503153 SCHEMATIC1_C81 
+C_C47         0 N15065290  {C_snubber}  TC=0,0 
+D_D5         N1503147 N1503153 DI_B0530W 
+X_U6         N1506343 N1506331 SS14
+R_R34         N1506353 0  {Rmos_pulldown} TC=0,0 
+C_C39         0 N1505547  {Cmos_drain}  TC=0,0 
+V_V4         N1503483 0 {V_bus}
+X_U7         N1507387 N1507373 SS14
+R_R31         N1506353 N1506331  {Rmos_on} TC=0,0 
+R_R46         PHASE_C N15085170  {R_snubber} TC=0,0 
+X_U5         N1505927 N1506793 N1505621 0 0 N1506587 N1505195 N1505371 PHASE_B
++  N1506303 N1506331 0 UCC21550-Q1
+X_X2         N1503483 N15037570 GATE_A_REF FDB0260N1007L_3P
+X_C195         0 N1507535 ATUL_860040881012_470uF
+R_R33         N15066830 N1506353  {Rmos_ext} TC=0,0 
+V_V46         N1505167 0 {Vdriver_out}
+C_C57         0 N1507535  {Cmos_drain}  TC=0,0 
+R_R23         N15056910 N1505391  {Rmos_ext} TC=0,0 
+C_C30         0 N15045250  {C_snubber}  TC=0,0 
+V_V2         N1503153 GATE_A_REF {Vdriver_out}
+C_C13         0 N1503483  {Cmos_drain}  TC=0,0 
+R_R35         N1507191 N1507169  {Rbootstrap} TC=0,0 
+C_C42         0 N1505547  {Cmos_drain}  TC=0,0 
+R_R48         N1508505 N1508483  {Rmos_on} TC=0,0 
+R_R40         N15077450 N1507393  {Rmos_ext} TC=0,0 
+X_U1         N1579584 N1504865 N1503683 0 0 N1504575 N1503153 N1503329
++  GATE_A_REF N1504205 N1504469 0 UCC21550-Q1
+R_R20         N1505547 N15057150  {R_snubber} TC=0,0 
+V_V60         N1508461 0 {Vdriver_out}
+X_X1         N1503483 N15037310 GATE_A_REF FDB0260N1007L_3P
+R_R12         GATE_A_REF N15045030  {R_snubber} TC=0,0 
+X_C94    N1504575 0 SCHEMATIC1_C94 
+X_C93    0 N1503683 SCHEMATIC1_C93 
+R_R19         N1505391 N1505385  {Rmos_off} TC=0,0 
+R_R4         N15037310 GATE_A_HIGH  {Rmos_ext} TC=0,0 
+V_V1         N1503125 0 {Vdriver_out}
+C_C64         0 N15085390  {C_snubber}  TC=0,0 
+R_R24         N15057390 N1505391  {Rmos_ext} TC=0,0 
+X_U8         N1507937 N1508879 N1507697 0 0 N1508589 N1507197 N1507373 PHASE_C
++  N1508461 N1508483 0 UCC21550-Q1
+X_C117    0 N1504205 SCHEMATIC1_C117 
+R_R2         GATE_A_HIGH N1503343  {Rmos_off} TC=0,0 
+R_R13         GATE_A_REF N15045250  {R_snubber} TC=0,0 
+R_R32         N15066530 N1506353  {Rmos_ext} TC=0,0 
+X_X4         GATE_A_REF N15046790 0 FDB0260N1007L_3P
+X_C201    0 N1505621 SCHEMATIC1_C201 
+X_C204    0 N1506303 SCHEMATIC1_C204 
+X_C199    PHASE_B N1505195 SCHEMATIC1_C199 
+X_C197    0 N1505167 SCHEMATIC1_C197 
+X_C200    0 N1505621 SCHEMATIC1_C200 
+X_C203    0 N1506303 SCHEMATIC1_C203 
+X_C202    N1506587 0 SCHEMATIC1_C202 
+X_C198    PHASE_B N1505195 SCHEMATIC1_C198 
+X_C196    0 N1505167 SCHEMATIC1_C196 
+X_C211    N1508589 0 SCHEMATIC1_C211 
+X_C207    PHASE_C N1507197 SCHEMATIC1_C207 
+X_C206    0 N1507169 SCHEMATIC1_C206 
+X_C208    PHASE_C N1507197 SCHEMATIC1_C208 
+X_C210    0 N1507697 SCHEMATIC1_C210 
+X_C209    0 N1507697 SCHEMATIC1_C209 
+X_C205    0 N1507169 SCHEMATIC1_C205 
+X_C213    0 N1508461 SCHEMATIC1_C213 
+X_C212    0 N1508461 SCHEMATIC1_C212 
+V_V67         N1553108 0 {Vdriver_out}
+X_C217    N1552454 N1551940 SCHEMATIC1_C217 
+X_C221    0 N1552420 SCHEMATIC1_C221 
+R_R61         N1553164 N1553154  {Rmos_off} TC=0,0 
+X_C214    0 N1551912 SCHEMATIC1_C214 
+V_V63         N1551940 N1552454 {Vdriver_out}
+R_R60         N1553108 N1553114  1 TC=0,0 
+R_R56         N1552136 N1552116  {Rmos_on} TC=0,0 
+X_C216    N1552454 N1551940 SCHEMATIC1_C216 
+X_C215    0 N1551912 SCHEMATIC1_C215 
+R_R62         N1553340 0  {Rdt} TC=0,0 
+X_U10         N1552130 N1552116 SS14
+R_R52         N1551934 N1551912  {Rbootstrap} TC=0,0 
+V_V65         N1552420 0 {Vdriver_in}
+V_V64         N1552704 0 {Vstm_in}
+V_V69         N1553570 0 {Vstm_in}
+X_U12         N1553154 N1553142 SS14
+R_R53         N1552136 N1552130  {Rmos_off} TC=0,0 
+X_C223    N1553340 0 SCHEMATIC1_C223 
+V_V68         N1553114 N1553734 {Vdriver_out}
+R_R68         N1553164 N1553734  {Rmos_pulldown} TC=0,0 
+V_V62         N1551912 0 {Vdriver_out}
+R_R65         N1553164 N1553142  {Rmos_on} TC=0,0 
+X_U11         N1552704 N1553570 N1552420 0 0 N1553340 N1551940 N1552116
++  N1552454 N1553114 N1553142 N1553734 UCC21550-Q1
+X_C228    N1553734 N1553114 SCHEMATIC1_C228 
+X_C229    N1553734 N1553114 SCHEMATIC1_C229 
+D_D8         N1551934 N1551940 DI_B0530W 
+X_C220    0 N1552420 SCHEMATIC1_C220 
+R_R59         N1552136 N1552454  {Rmos_pulldown} TC=0,0 
+X_C234    0 N1562548 SCHEMATIC1_C234 
+V_V71         N1562196 N1562604 {Vdriver_out}
+D_D9         N1562190 N1562196 DI_B0530W 
+V_V74         N1562962 0 {Vdriver_out}
+R_R72         N1562392 N1562604  {Rmos_pulldown} TC=0,0 
+V_V72         N1562694 0 {Vstm_in}
+X_U14         N1562694 N1563174 N1562548 0 0 N1563072 N1562196 N1562372
++  N1562604 N1562968 N1562996 N1563278 UCC21550-Q1
+R_R74         N1563018 N1563008  {Rmos_off} TC=0,0 
+X_C235    0 N1562548 SCHEMATIC1_C235 
+X_C230    0 N1562168 SCHEMATIC1_C230 
+X_C237    N1563278 N1562968 SCHEMATIC1_C237 
+X_C232    N1562604 N1562196 SCHEMATIC1_C232 
+V_V76         N1563174 0 {Vstm_in}
+X_C231    0 N1562168 SCHEMATIC1_C231 
+R_R76         N1563018 N1562996  {Rmos_on} TC=0,0 
+X_C236    N1563072 0 SCHEMATIC1_C236 
+V_V75         N1562968 N1563278 {Vdriver_out}
+R_R75         N1563072 0  {Rdt} TC=0,0 
+V_V73         N1562548 0 {Vdriver_in}
+R_R71         N1562392 N1562372  {Rmos_on} TC=0,0 
+X_C238    N1563278 N1562968 SCHEMATIC1_C238 
+X_U13         N1562386 N1562372 SS14
+X_C233    N1562604 N1562196 SCHEMATIC1_C233 
+R_R73         N1562962 N1562968  1 TC=0,0 
+V_V70         N1562168 0 {Vdriver_out}
+X_U15         N1563008 N1562996 SS14
+R_R70         N1562392 N1562386  {Rmos_off} TC=0,0 
+R_R77         N1563018 N1563278  {Rmos_pulldown} TC=0,0 
+R_R69         N1562190 N1562168  {Rbootstrap} TC=0,0 
+V_V80         N1567060 0 {Vdriver_in}
+X_C241    N1567116 N1566708 SCHEMATIC1_C241 
+D_D10         N1566702 N1566708 DI_B0530W 
+X_C243    0 N1567060 SCHEMATIC1_C243 
+X_C240    0 N1566680 SCHEMATIC1_C240 
+R_R85         N1567530 N1567508  {Rmos_on} TC=0,0 
+R_R81         N1566904 N1567116  {Rmos_pulldown} TC=0,0 
+V_V83         N1567686 0 {Vstm_in}
+R_R83         N1567530 N1567520  {Rmos_off} TC=0,0 
+R_R80         N1566904 N1566884  {Rmos_on} TC=0,0 
+R_R79         N1566904 N1566898  {Rmos_off} TC=0,0 
+X_C239    0 N1566680 SCHEMATIC1_C239 
+X_C242    N1567116 N1566708 SCHEMATIC1_C242 
+X_C247    N1567790 N1567480 SCHEMATIC1_C247 
+X_C246    N1567790 N1567480 SCHEMATIC1_C246 
+X_U17         N1567206 N1567686 N1567060 0 0 N1567584 N1566708 N1566884
++  N1567116 N1567480 N1567508 N1567790 UCC21550-Q1
+V_V81         N1567474 0 {Vdriver_out}
+R_R82         N1567474 N1567480  1 TC=0,0 
+V_V82         N1567480 N1567790 {Vdriver_out}
+X_C245    N1567584 0 SCHEMATIC1_C245 
+R_R86         N1567530 N1567790  {Rmos_pulldown} TC=0,0 
+X_U16         N1566898 N1566884 SS14
+V_V77         N1566680 0 {Vdriver_out}
+X_U18         N1567520 N1567508 SS14
+R_R84         N1567584 0  {Rdt} TC=0,0 
+X_C244    0 N1567060 SCHEMATIC1_C244 
+V_V78         N1566708 N1567116 {Vdriver_out}
+R_R78         N1566702 N1566680  {Rbootstrap} TC=0,0 
+V_V79         N1567206 0 {Vstm_in}
+V_VRA         N1579584 0 DC 1u  
+V_VRA1         N1504865 0 DC 1u  
+V_VRA3         N1506793 0 DC 1u  
+V_VRA2         N1505927 0 DC 1u  
+V_VRA5         N1508879 0 DC 1u  
+V_VRA4         N1507937 0 DC 1u  
+X_M1         GATE_A_REF PHASE_B PHASE_C SPEED ANGLE BLDCMTR_WYE 
++ PARAMS: J=0.30_g*cm*sec*sec B=0.36_g*cm*sec/rad F=0.72_g*cm D=2.9_g*cm A=26
++  Cl=3mH Cr=0.0201498ohm Cc=35.5uF Cm=0.5 Cb=0.935262_Volt*sec/rev
++  Ct=9714_g*cm/amp
+** Floating/unmodeled pin fixups **
+R__UC0001   SPEED  0   {1/GMIN}
+R__UC0002   ANGLE  0   {1/GMIN}
+.PARAM  rmos_on=109 r_snubber=5 vdriver_out=12v vdriver_in=5v vstm_in=0v
++  c_snubber=100n cmos_drain=4.7u rmos_off=76.5 rdt=20k rmos_ext=3 rbootstrap=2
++  rmos_pulldown=10k v_bus=48v cdt=100n cdc_link=0.47m
+
+.subckt SCHEMATIC1_C80 1 2  
+C_C80         1 _SR C_C80 100n  
+.model         C_C80 CAP C=1 DEV=10%   VC1=-2  
+RESR_C80         _SR _SL 18.9m 
+LESL_C80         _SL 2 443p   
+RRP_C80         1 2 5G
+.ends SCHEMATIC1_C80
+
+.subckt SCHEMATIC1_C92 1 2  
+C_C92         1 _SR C_C92 1u  
+.model         C_C92 CAP C=1 DEV=10%     
+RESR_C92         _SR _SL 7.34m 
+LESL_C92         _SL 2 476p   
+RRP_C92         1 2 500M
+.ends SCHEMATIC1_C92
+
+.subckt SCHEMATIC1_C95 1 2  
+C_C95         1 _SR C_C95 1u  
+.model         C_C95 CAP C=1 DEV=10%     
+RESR_C95         _SR _SL 7.34m 
+LESL_C95         _SL 2 476p   
+RRP_C95         1 2 500M
+.ends SCHEMATIC1_C95
+
+.subckt SCHEMATIC1_C118 1 2  
+C_C118         1 _SR C_C118 10u  
+.model         C_C118 CAP C=1 DEV=10%     
+RESR_C118         _SR _SL 8.03m 
+LESL_C118         _SL 2 402p   
+RRP_C118         1 2 5M
+.ends SCHEMATIC1_C118
+
+.subckt SCHEMATIC1_C96 1 2  
+C_C96         1 _SR C_C96 100n  
+.model         C_C96 CAP C=1 DEV=10%     
+RESR_C96         _SR _SL 18.9m 
+LESL_C96         _SL 2 443p   
+RRP_C96         1 2 5G
+.ends SCHEMATIC1_C96
+
+.subckt SCHEMATIC1_C81 1 2  
+C_C81         1 _SR C_C81 10u  
+.model         C_C81 CAP C=1 DEV=10%     
+RESR_C81         _SR _SL 8.03m 
+LESL_C81         _SL 2 402p   
+RRP_C81         1 2 5M
+.ends SCHEMATIC1_C81
+
+.subckt SCHEMATIC1_C94 1 2  
+C_C94         1 _SR C_C94 100n  
+.model         C_C94 CAP C=1 DEV=10%     
+RESR_C94         _SR _SL 18.9m 
+LESL_C94         _SL 2 443p   
+RRP_C94         1 2 5G
+.ends SCHEMATIC1_C94
+
+.subckt SCHEMATIC1_C93 1 2  
+C_C93         1 _SR C_C93 100n  
+.model         C_C93 CAP C=1 DEV=10%     
+RESR_C93         _SR _SL 18.9m 
+LESL_C93         _SL 2 443p   
+RRP_C93         1 2 5G
+.ends SCHEMATIC1_C93
+
+.subckt SCHEMATIC1_C117 1 2  
+C_C117         1 _SR C_C117 220n  
+.model         C_C117 CAP C=1 DEV=10%     
+RESR_C117         _SR _SL 12.8m 
+LESL_C117         _SL 2 515p   
+RRP_C117         1 2 2.3G
+.ends SCHEMATIC1_C117
+
+.subckt SCHEMATIC1_C201 1 2  
+C_C201         1 _SR C_C201 100n  
+.model         C_C201 CAP C=1 DEV=10%     
+RESR_C201         _SR _SL 18.9m 
+LESL_C201         _SL 2 443p   
+RRP_C201         1 2 5G
+.ends SCHEMATIC1_C201
+
+.subckt SCHEMATIC1_C204 1 2  
+C_C204         1 _SR C_C204 10u  
+.model         C_C204 CAP C=1 DEV=10%     
+RESR_C204         _SR _SL 8.03m 
+LESL_C204         _SL 2 402p   
+RRP_C204         1 2 5M
+.ends SCHEMATIC1_C204
+
+.subckt SCHEMATIC1_C199 1 2  
+C_C199         1 _SR C_C199 10u  
+.model         C_C199 CAP C=1 DEV=10%     
+RESR_C199         _SR _SL 8.03m 
+LESL_C199         _SL 2 402p   
+RRP_C199         1 2 5M
+.ends SCHEMATIC1_C199
+
+.subckt SCHEMATIC1_C197 1 2  
+C_C197         1 _SR C_C197 100n  
+.model         C_C197 CAP C=1 DEV=10%     
+RESR_C197         _SR _SL 18.9m 
+LESL_C197         _SL 2 443p   
+RRP_C197         1 2 5G
+.ends SCHEMATIC1_C197
+
+.subckt SCHEMATIC1_C200 1 2  
+C_C200         1 _SR C_C200 1u  
+.model         C_C200 CAP C=1 DEV=10%     
+RESR_C200         _SR _SL 7.34m 
+LESL_C200         _SL 2 476p   
+RRP_C200         1 2 500M
+.ends SCHEMATIC1_C200
+
+.subckt SCHEMATIC1_C203 1 2  
+C_C203         1 _SR C_C203 220n  
+.model         C_C203 CAP C=1 DEV=10%     
+RESR_C203         _SR _SL 12.8m 
+LESL_C203         _SL 2 515p   
+RRP_C203         1 2 2.3G
+.ends SCHEMATIC1_C203
+
+.subckt SCHEMATIC1_C202 1 2  
+C_C202         1 _SR C_C202 100n  
+.model         C_C202 CAP C=1 DEV=10%     
+RESR_C202         _SR _SL 18.9m 
+LESL_C202         _SL 2 443p   
+RRP_C202         1 2 5G
+.ends SCHEMATIC1_C202
+
+.subckt SCHEMATIC1_C198 1 2  
+C_C198         1 _SR C_C198 100n  
+.model         C_C198 CAP C=1 DEV=10%   VC1=-2  
+RESR_C198         _SR _SL 18.9m 
+LESL_C198         _SL 2 443p   
+RRP_C198         1 2 5G
+.ends SCHEMATIC1_C198
+
+.subckt SCHEMATIC1_C196 1 2  
+C_C196         1 _SR C_C196 1u  
+.model         C_C196 CAP C=1 DEV=10%     
+RESR_C196         _SR _SL 7.34m 
+LESL_C196         _SL 2 476p   
+RRP_C196         1 2 500M
+.ends SCHEMATIC1_C196
+
+.subckt SCHEMATIC1_C211 1 2  
+C_C211         1 _SR C_C211 100n  
+.model         C_C211 CAP C=1 DEV=10%     
+RESR_C211         _SR _SL 18.9m 
+LESL_C211         _SL 2 443p   
+RRP_C211         1 2 5G
+.ends SCHEMATIC1_C211
+
+.subckt SCHEMATIC1_C207 1 2  
+C_C207         1 _SR C_C207 100n  
+.model         C_C207 CAP C=1 DEV=10%   VC1=-2  
+RESR_C207         _SR _SL 18.9m 
+LESL_C207         _SL 2 443p   
+RRP_C207         1 2 5G
+.ends SCHEMATIC1_C207
+
+.subckt SCHEMATIC1_C206 1 2  
+C_C206         1 _SR C_C206 100n  
+.model         C_C206 CAP C=1 DEV=10%     
+RESR_C206         _SR _SL 18.9m 
+LESL_C206         _SL 2 443p   
+RRP_C206         1 2 5G
+.ends SCHEMATIC1_C206
+
+.subckt SCHEMATIC1_C208 1 2  
+C_C208         1 _SR C_C208 10u  
+.model         C_C208 CAP C=1 DEV=10%     
+RESR_C208         _SR _SL 8.03m 
+LESL_C208         _SL 2 402p   
+RRP_C208         1 2 5M
+.ends SCHEMATIC1_C208
+
+.subckt SCHEMATIC1_C210 1 2  
+C_C210         1 _SR C_C210 100n  
+.model         C_C210 CAP C=1 DEV=10%     
+RESR_C210         _SR _SL 18.9m 
+LESL_C210         _SL 2 443p   
+RRP_C210         1 2 5G
+.ends SCHEMATIC1_C210
+
+.subckt SCHEMATIC1_C209 1 2  
+C_C209         1 _SR C_C209 1u  
+.model         C_C209 CAP C=1 DEV=10%     
+RESR_C209         _SR _SL 7.34m 
+LESL_C209         _SL 2 476p   
+RRP_C209         1 2 500M
+.ends SCHEMATIC1_C209
+
+.subckt SCHEMATIC1_C205 1 2  
+C_C205         1 _SR C_C205 1u  
+.model         C_C205 CAP C=1 DEV=10%     
+RESR_C205         _SR _SL 7.34m 
+LESL_C205         _SL 2 476p   
+RRP_C205         1 2 500M
+.ends SCHEMATIC1_C205
+
+.subckt SCHEMATIC1_C213 1 2  
+C_C213         1 _SR C_C213 10u  
+.model         C_C213 CAP C=1 DEV=10%     
+RESR_C213         _SR _SL 8.03m 
+LESL_C213         _SL 2 402p   
+RRP_C213         1 2 5M
+.ends SCHEMATIC1_C213
+
+.subckt SCHEMATIC1_C212 1 2  
+C_C212         1 _SR C_C212 220n  
+.model         C_C212 CAP C=1 DEV=10%     
+RESR_C212         _SR _SL 12.8m 
+LESL_C212         _SL 2 515p   
+RRP_C212         1 2 2.3G
+.ends SCHEMATIC1_C212
+
+.subckt SCHEMATIC1_C217 1 2  
+C_C217         1 _SR C_C217 10u  
+.model         C_C217 CAP C=1 DEV=10%     
+RESR_C217         _SR _SL 8.03m 
+LESL_C217         _SL 2 402p   
+RRP_C217         1 2 5M
+.ends SCHEMATIC1_C217
+
+.subckt SCHEMATIC1_C221 1 2  
+C_C221         1 _SR C_C221 100n  
+.model         C_C221 CAP C=1 DEV=10%     
+RESR_C221         _SR _SL 18.9m 
+LESL_C221         _SL 2 443p   
+RRP_C221         1 2 5G
+.ends SCHEMATIC1_C221
+
+.subckt SCHEMATIC1_C214 1 2  
+C_C214         1 _SR C_C214 1u  
+.model         C_C214 CAP C=1 DEV=10%     
+RESR_C214         _SR _SL 7.34m 
+LESL_C214         _SL 2 476p   
+RRP_C214         1 2 500M
+.ends SCHEMATIC1_C214
+
+.subckt SCHEMATIC1_C216 1 2  
+C_C216         1 _SR C_C216 100n  
+.model         C_C216 CAP C=1 DEV=10%   VC1=-2  
+RESR_C216         _SR _SL 18.9m 
+LESL_C216         _SL 2 443p   
+RRP_C216         1 2 5G
+.ends SCHEMATIC1_C216
+
+.subckt SCHEMATIC1_C215 1 2  
+C_C215         1 _SR C_C215 100n  
+.model         C_C215 CAP C=1 DEV=10%     
+RESR_C215         _SR _SL 18.9m 
+LESL_C215         _SL 2 443p   
+RRP_C215         1 2 5G
+.ends SCHEMATIC1_C215
+
+.subckt SCHEMATIC1_C223 1 2  
+C_C223         1 _SR C_C223 100n  
+.model         C_C223 CAP C=1 DEV=10%     
+RESR_C223         _SR _SL 18.9m 
+LESL_C223         _SL 2 443p   
+RRP_C223         1 2 5G
+.ends SCHEMATIC1_C223
+
+.subckt SCHEMATIC1_C228 1 2  
+C_C228         1 _SR C_C228 220n  
+.model         C_C228 CAP C=1 DEV=10%     
+RESR_C228         _SR _SL 12.8m 
+LESL_C228         _SL 2 515p   
+RRP_C228         1 2 2.3G
+.ends SCHEMATIC1_C228
+
+.subckt SCHEMATIC1_C229 1 2  
+C_C229         1 _SR C_C229 10u  
+.model         C_C229 CAP C=1 DEV=10%     
+RESR_C229         _SR _SL 8.03m 
+LESL_C229         _SL 2 402p   
+RRP_C229         1 2 5M
+.ends SCHEMATIC1_C229
+
+.subckt SCHEMATIC1_C220 1 2  
+C_C220         1 _SR C_C220 1u  
+.model         C_C220 CAP C=1 DEV=10%     
+RESR_C220         _SR _SL 7.34m 
+LESL_C220         _SL 2 476p   
+RRP_C220         1 2 500M
+.ends SCHEMATIC1_C220
+
+.subckt SCHEMATIC1_C234 1 2  
+C_C234         1 _SR C_C234 1u  
+.model         C_C234 CAP C=1 DEV=10%     
+RESR_C234         _SR _SL 7.34m 
+LESL_C234         _SL 2 476p   
+RRP_C234         1 2 500M
+.ends SCHEMATIC1_C234
+
+.subckt SCHEMATIC1_C235 1 2  
+C_C235         1 _SR C_C235 100n  
+.model         C_C235 CAP C=1 DEV=10%     
+RESR_C235         _SR _SL 18.9m 
+LESL_C235         _SL 2 443p   
+RRP_C235         1 2 5G
+.ends SCHEMATIC1_C235
+
+.subckt SCHEMATIC1_C230 1 2  
+C_C230         1 _SR C_C230 1u  
+.model         C_C230 CAP C=1 DEV=10%     
+RESR_C230         _SR _SL 7.34m 
+LESL_C230         _SL 2 476p   
+RRP_C230         1 2 500M
+.ends SCHEMATIC1_C230
+
+.subckt SCHEMATIC1_C237 1 2  
+C_C237         1 _SR C_C237 220n  
+.model         C_C237 CAP C=1 DEV=10%     
+RESR_C237         _SR _SL 12.8m 
+LESL_C237         _SL 2 515p   
+RRP_C237         1 2 2.3G
+.ends SCHEMATIC1_C237
+
+.subckt SCHEMATIC1_C232 1 2  
+C_C232         1 _SR C_C232 10u  
+.model         C_C232 CAP C=1 DEV=10%     
+RESR_C232         _SR _SL 8.03m 
+LESL_C232         _SL 2 402p   
+RRP_C232         1 2 5M
+.ends SCHEMATIC1_C232
+
+.subckt SCHEMATIC1_C231 1 2  
+C_C231         1 _SR C_C231 100n  
+.model         C_C231 CAP C=1 DEV=10%     
+RESR_C231         _SR _SL 18.9m 
+LESL_C231         _SL 2 443p   
+RRP_C231         1 2 5G
+.ends SCHEMATIC1_C231
+
+.subckt SCHEMATIC1_C236 1 2  
+C_C236         1 _SR C_C236 100n  
+.model         C_C236 CAP C=1 DEV=10%     
+RESR_C236         _SR _SL 18.9m 
+LESL_C236         _SL 2 443p   
+RRP_C236         1 2 5G
+.ends SCHEMATIC1_C236
+
+.subckt SCHEMATIC1_C238 1 2  
+C_C238         1 _SR C_C238 10u  
+.model         C_C238 CAP C=1 DEV=10%     
+RESR_C238         _SR _SL 8.03m 
+LESL_C238         _SL 2 402p   
+RRP_C238         1 2 5M
+.ends SCHEMATIC1_C238
+
+.subckt SCHEMATIC1_C233 1 2  
+C_C233         1 _SR C_C233 100n  
+.model         C_C233 CAP C=1 DEV=10%   VC1=-2  
+RESR_C233         _SR _SL 18.9m 
+LESL_C233         _SL 2 443p   
+RRP_C233         1 2 5G
+.ends SCHEMATIC1_C233
+
+.subckt SCHEMATIC1_C241 1 2  
+C_C241         1 _SR C_C241 10u  
+.model         C_C241 CAP C=1 DEV=10%     
+RESR_C241         _SR _SL 8.03m 
+LESL_C241         _SL 2 402p   
+RRP_C241         1 2 5M
+.ends SCHEMATIC1_C241
+
+.subckt SCHEMATIC1_C243 1 2  
+C_C243         1 _SR C_C243 1u  
+.model         C_C243 CAP C=1 DEV=10%     
+RESR_C243         _SR _SL 7.34m 
+LESL_C243         _SL 2 476p   
+RRP_C243         1 2 500M
+.ends SCHEMATIC1_C243
+
+.subckt SCHEMATIC1_C240 1 2  
+C_C240         1 _SR C_C240 100n  
+.model         C_C240 CAP C=1 DEV=10%     
+RESR_C240         _SR _SL 18.9m 
+LESL_C240         _SL 2 443p   
+RRP_C240         1 2 5G
+.ends SCHEMATIC1_C240
+
+.subckt SCHEMATIC1_C239 1 2  
+C_C239         1 _SR C_C239 1u  
+.model         C_C239 CAP C=1 DEV=10%     
+RESR_C239         _SR _SL 7.34m 
+LESL_C239         _SL 2 476p   
+RRP_C239         1 2 500M
+.ends SCHEMATIC1_C239
+
+.subckt SCHEMATIC1_C242 1 2  
+C_C242         1 _SR C_C242 100n  
+.model         C_C242 CAP C=1 DEV=10%   VC1=-2  
+RESR_C242         _SR _SL 18.9m 
+LESL_C242         _SL 2 443p   
+RRP_C242         1 2 5G
+.ends SCHEMATIC1_C242
+
+.subckt SCHEMATIC1_C247 1 2  
+C_C247         1 _SR C_C247 10u  
+.model         C_C247 CAP C=1 DEV=10%     
+RESR_C247         _SR _SL 8.03m 
+LESL_C247         _SL 2 402p   
+RRP_C247         1 2 5M
+.ends SCHEMATIC1_C247
+
+.subckt SCHEMATIC1_C246 1 2  
+C_C246         1 _SR C_C246 220n  
+.model         C_C246 CAP C=1 DEV=10%     
+RESR_C246         _SR _SL 12.8m 
+LESL_C246         _SL 2 515p   
+RRP_C246         1 2 2.3G
+.ends SCHEMATIC1_C246
+
+.subckt SCHEMATIC1_C245 1 2  
+C_C245         1 _SR C_C245 100n  
+.model         C_C245 CAP C=1 DEV=10%     
+RESR_C245         _SR _SL 18.9m 
+LESL_C245         _SL 2 443p   
+RRP_C245         1 2 5G
+.ends SCHEMATIC1_C245
+
+.subckt SCHEMATIC1_C244 1 2  
+C_C244         1 _SR C_C244 100n  
+.model         C_C244 CAP C=1 DEV=10%     
+RESR_C244         _SR _SL 18.9m 
+LESL_C244         _SL 2 443p   
+RRP_C244         1 2 5G
+.ends SCHEMATIC1_C244

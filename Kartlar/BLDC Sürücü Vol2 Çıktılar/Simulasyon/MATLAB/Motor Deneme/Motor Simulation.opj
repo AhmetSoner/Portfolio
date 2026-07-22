@@ -1,0 +1,261 @@
+(ExpressProject "Motor Simulation"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[10/25/24]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\bldc\mix_misc (3).olb"
+        (Type "Schematic Library"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_6-3v.olb"
+        (Type "Schematic Library"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_10v.olb"
+        (Type "Schematic Library"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_16v.olb"
+        (Type "Schematic Library"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_25v.olb"
+        (Type "Schematic Library"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_50v.olb"
+        (Type "Schematic Library"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_100v.olb"
+        (Type "Schematic Library")))
+    (Allegro Netlist Directory "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\motor simulation.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (Board_sim_option "VHDL_flow"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\motor simulation-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\motor simulation-pspicefiles\schematic1\abdullahavci.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\motor simulation-pspicefiles\schematic1\abdullahavci.sim"
+        (DisplayName "SCHEMATIC1-abdullahavci")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (File "..\pspice\ucc21550-q1.lib"
+        (DisplayName "..\pspice\ucc21550-q1.lib")
+        (Type "PSpiceLibrary"))
+      (File
+         "C:\Cadence\PSpiceTI\tools\capture\library\pspice\WCAP-CSGP_25V.lib"
+        (DisplayName
+           "C:\Cadence\PSpiceTI\tools\capture\library\pspice\WCAP-CSGP_25V.lib")
+        (Type "PSpiceLibrary"))
+      (File "C:\Cadence\PSpiceTI\tools\capture\library\pspice\siemens.lib.txt"
+        (DisplayName
+           "C:\Cadence\PSpiceTI\tools\capture\library\pspice\siemens.lib.txt")
+        (Type "PSpiceLibrary"))
+      (File "..\pspice lib\aluminium cap\wcap-aig5.lib"
+        (DisplayName "..\pspice lib\aluminium cap\wcap-aig5.lib")
+        (Type "PSpiceLibrary"))
+      (File "..\pspice lib\wcap-atg5.lib"
+        (DisplayName "..\pspice lib\wcap-atg5.lib")
+        (Type "PSpiceLibrary"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_50v.lib"
+        (DisplayName "..\pspice lib\we-csgp_simple_models\wcap-csgp_50v.lib")
+        (Type "PSpiceLibrary"))
+      (File "..\pspice lib\we-csgp_simple_models\wcap-csgp_100v.lib"
+        (DisplayName "..\pspice lib\we-csgp_simple_models\wcap-csgp_100v.lib")
+        (Type "PSpiceLibrary"))
+      (File "C:\Cadence\PSpiceTI\tools\capture\library\pspice\mix_misc.lib.txt"
+        (DisplayName
+           "C:\Cadence\PSpiceTI\tools\capture\library\pspice\mix_misc.lib.txt")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (POWER_DIODE_P
+      (FullPartName "POWER_DIODE_P.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\POWERDIODE\HYBRID\SUPPORTFILES\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (UCC21550-Q1
+      (FullPartName "UCC21550-Q1.Normal")
+      (LibraryName "C:\USERS\AHMET\DESKTOP\PSPICE\UCC21550-Q1.OLB")
+      (DeviceIndex "0"))
+    (BLDCMTR
+      (FullPartName "BLDCMTR.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\MIX_MISC (3).OLB")
+      (DeviceIndex "0"))
+    (DigClock
+      (FullPartName "DigClock.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (FileStim8
+      (FullPartName "FileStim8.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (FileStim1
+      (FullPartName "FileStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (CSGP_0805_885012207072_100nF
+      (FullPartName "CSGP_0805_885012207072_100nF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE LIB\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_25V.OLB")
+      (DeviceIndex "0"))
+    (CSGP_0805_885012207078_1uF
+      (FullPartName "CSGP_0805_885012207078_1uF.Normal")
+      (LibraryName
+         "C:\USERS\AHMET\DESKTOP\PSPICE LIB\WE-CSGP_SIMPLE_MODELS\WCAP-CSGP_25V.OLB")
+      (DeviceIndex "0"))
+    (VPULSEN
+      (FullPartName "VPULSEN.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICESOURCEAPP\HYBRID\SUPPORTFILES\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TIS93
+      (FullPartName "TIS93.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BC817-25
+      (FullPartName "BC817-25.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (MPS2907
+      (FullPartName "MPS2907.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BSV15-10
+      (FullPartName "BSV15-10.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (MPS3903
+      (FullPartName "MPS3903.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (PN4250
+      (FullPartName "PN4250.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (TIS97
+      (FullPartName "TIS97.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (INV
+      (FullPartName "INV.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\DIG_PRIM.OLB")
+      (DeviceIndex "0"))
+    (POWER_NMOS_P
+      (FullPartName "POWER_NMOS_P.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\POWERMOSFET\HYBRID\SUPPORTFILES\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MPS6733
+      (FullPartName "MPS6733.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (MPSH10
+      (FullPartName "MPSH10.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (PN4141
+      (FullPartName "PN4141.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PN5179
+      (FullPartName "PN5179.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (PN5910
+      (FullPartName "PN5910.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\ahmet\Desktop\Boards\Motor Surucu\Simulasyon\Motor Simulation\motor simulation.dsn")
+      (Path "Design Resources"
+         "C:\Users\ahmet\Desktop\Boards\Motor Surucu\Simulasyon\Motor Simulation\motor simulation.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\Users\ahmet\Desktop\Boards\Motor Surucu\Simulasyon\Motor Simulation\motor simulation.dsn"
+         "SCHEMATIC1" "Sim2 ( 3phase )"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 756"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 774")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\AHMET\DESKTOP\BOARDS\MOTOR SURUCU\SIMULASYON\MOTOR SIMULATION\MOTOR SIMULATION.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "MotorSim1( One phase )"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 774")
+        (Scroll "1533 359")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\AHMET\DESKTOP\BOARDS\MOTOR SURUCU\SIMULASYON\MOTOR SIMULATION\MOTOR SIMULATION.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Sim2 ( 3phase )")))
+  (MPSSessionName "ahmet")
+  (LastUsedLibraryBrowseDirectory "C:\Users\ahmet\Desktop\PSpice"))
