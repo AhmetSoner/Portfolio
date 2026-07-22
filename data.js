@@ -104,6 +104,7 @@ const PORTFOLIO_DATA = {
         period: "2022 - 2025",
         icon: "zap",
         logo: "Hidroana/hidro logo.png",
+        projectIds: ["project-1"],
         focus: "Hidrojen enerjili araçlarda güç elektroniği uygulamaları ve sistem entegrasyonu.",
         overview: [
           "Hidroana, Eskişehir Teknik Üniversitesi'nin hidrojen enerjili araç projesidir. 2007 yılında kurulmuş, 17 yıllık bir proje kültürüne sahip olan takım; alternatif enerjili araç projeleri alanında Türkiye'nin öncü ekiplerinden biri olduğunu göstermiştir. Tamamı gönüllü mühendislik öğrencilerinden oluşan ekipte Malzeme Bilimi ve Mühendisliği, Elektrik-Elektronik Mühendisliği, Bilgisayar Mühendisliği, Kimya Mühendisliği ve Makine Mühendisliği gibi farklı disiplinlerden öğrenciler yer almaktadır.",
@@ -606,6 +607,7 @@ const PORTFOLIO_DATA = {
         period: "2022 - 2025",
         icon: "zap",
         logo: "Hidroana/hidro logo.png",
+        projectIds: ["project-1"],
         focus: "Power electronics applications and system integration for hydrogen-powered vehicles.",
         overview: [
           "Hidroana is Eskişehir Technical University's hydrogen-powered vehicle project. Founded in 2007, the team has built a 17-year project culture and has become one of Turkey's pioneering student teams in alternative-energy vehicle projects. The team is composed entirely of volunteer engineering students from disciplines such as Materials Science and Engineering, Electrical and Electronics Engineering, Computer Engineering, Chemical Engineering, and Mechanical Engineering.",
