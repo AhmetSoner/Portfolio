@@ -1052,7 +1052,7 @@ const UI_TRANSLATIONS = {
     filter_research: "AR-GE",
     filter_software: "YAZILIM",
     stat_status: "DURUM:",
-    stat_status_val: "GÖREVE HAZIR",
+    stat_status_val: "KARİYER FIRSATLARINA AÇIK",
     stat_role: "ROL:",
     stat_role_val: "UÇAK BAKIM MÜH.",
     stat_birth: "DOĞUM TARİHİ:",
