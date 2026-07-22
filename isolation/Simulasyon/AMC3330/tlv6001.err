@@ -1,8 +1,0 @@
-STATUS: PSpice Schematics to Capture translator (24.1.0.d001)
-STATUS:  
-STATUS: Translator started at Thursday, September 11, 2025 14:07:47
-INFO(ORSCH-1029): Using existing library 'C:\Cadence\SPB_24.1\tools\Capture\Library\PSpice\modeled.etc'.
-INFO(ORSCH-1031): Created new library 'C:\Users\ahmet\Desktop\Sistemler\Ýzolasyon\Simulasyon\AMC3330\tlv6001.olb'.
-ERROR(ORSCH-1079): Unable to save library. ERROR(ORDBDLL-1005): Invalid file path name
-STATUS: Translator stopped at Thursday, September 11, 2025 14:07:51
-STATUS: 1 Error messages, 0 Warning messages
