@@ -104,7 +104,7 @@ const PORTFOLIO_DATA = {
         period: "2022 - 2025",
         icon: "zap",
         logo: "Hidroana/hidro logo.png",
-        projectIds: ["project-1"],
+        projectIds: ["project-1", "project-3"],
         focus: "Hidrojen enerjili araçlarda güç elektroniği uygulamaları ve sistem entegrasyonu.",
         overview: [
           "Hidroana, Eskişehir Teknik Üniversitesi'nin hidrojen enerjili araç projesidir. 2007 yılında kurulmuş, 17 yıllık bir proje kültürüne sahip olan takım; alternatif enerjili araç projeleri alanında Türkiye'nin öncü ekiplerinden biri olduğunu göstermiştir. Tamamı gönüllü mühendislik öğrencilerinden oluşan ekipte Malzeme Bilimi ve Mühendisliği, Elektrik-Elektronik Mühendisliği, Bilgisayar Mühendisliği, Kimya Mühendisliği ve Makine Mühendisliği gibi farklı disiplinlerden öğrenciler yer almaktadır.",
@@ -263,57 +263,43 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-3",
-            "title": "Akıllı Batarya Yönetim Sistemi (BMS)",
-            "category": "gomulu",
-            "summary": "13S8P konfigürasyonundaki 48V - 50A batarya paketi için BQ76940 tabanlı koruma donanımı.",
-            "description": "Texas Instruments BQ76940 entegresi tabanlı, 14 bit çözünürlüklü ADC ile hücre gerilimlerini, şönt direnç ile akımı, NTC termistörler ile sıcaklığı izleyen sistemdir. Hücre dengelemesi 47 ohm dirençler üzerinden pasif olarak yapılır. State of Charge (SOC) tahmini Coulomb Sayaç Metodu ile gerçekleştirilir. Tüm algoritmalar STM32F103C8T6 mikrodenetleyicisi üzerinden koşulur.",
-            "image": "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
+            "title": "48 V / 42 A Üç Fazlı BLDC Motor Sürücü Kartı (Vol.2)",
+            "category": "donanim",
+            "summary": "Hidroana hidrojen enerjili araç güç aktarma sistemi için geliştirilen Vol.2 motor sürücü; 48 V nominal besleme, 2 kW güç seviyesi ve 42 A çalışma akımı hedefiyle tasarlanmış, modüler güç kartı, kontrol kartı ve regülatör kartından oluşan ikinci nesil BLDC sürücü mimarisidir.",
+            "description": "Vol.2 sürücü çalışması, önceki Vol.1 kartta elde edilen saha ve test deneyimlerinin ardından güvenilirlik, termal yönetim, EMI davranışı, galvanik izolasyon ve üretilebilirlik açısından yeniden ele alınan üç fazlı BLDC motor kontrol sistemidir. Tasarımda FDB0260N1007L MOSFET, UCC21520DWR izole gate driver, ACS758 Hall etkili akım sensörü, STM32F446RET6 kontrol birimi, CAN/RS485 haberleşme, dört katmanlı PCB ve aktif soğutmalı kutulama birlikte değerlendirilmiştir.",
+            "image": "vol2/3d-bldc-on.png",
+            "detailImage": "vol2/3d-bldc-on.png",
             "tags": [
-                  "STM32F103C8T6",
-                  "BQ76940 BMS",
-                  "Coulomb Sayaç (SOC)",
-                  "Altium Designer"
+                  "BLDC Motor Sürücü Vol.2",
+                  "UCC21520DWR",
+                  "FDB0260N1007L",
+                  "STM32F446RET6",
+                  "Altium Designer",
+                  "Hidroana"
             ],
             "specs": [
                   {
-                        "name": "Hücre Konfigürasyonu",
-                        "value": "13S8P (LG INR18650 MJ1)"
+                        "name": "Proje Takımı",
+                        "value": "Hidroana Proje Takımı"
                   },
                   {
-                        "name": "Güç Değerleri",
-                        "value": "48V / 50A Çıkış Kapasitesi"
+                        "name": "Güç Hedefi",
+                        "value": "2 kW / 48 V / 42 A"
                   },
                   {
-                        "name": "Mikrodenetleyici",
-                        "value": "STM32F103C8T6"
+                        "name": "Topoloji",
+                        "value": "Üç Fazlı Yarım Köprü Evirici"
                   },
                   {
-                        "name": "Hücre Dengeleme",
-                        "value": "47 Ohm Pasif Dengeleme"
+                        "name": "Kontrolcü",
+                        "value": "STM32F446RET6"
                   }
             ],
-            "overview": "13S8P konfigürasyonundaki 48V / 50A Li-ion batarya paketinin güvenli çalışmasını, hücre ömrünün uzatılmasını ve şarj/deşarj dengesini sağlayan gömülü kontrol donanımıdır.",
-            "architecture": "Texas Instruments BQ76940 AFE entegresi ve STM32F103C8T6 ARM Cortex-M3 mikrodenetleyici mimarisi üzerine kurgulanmıştır.",
-            "subsystems": [
-                  {
-                        "title": "AFE (Analog Front End)",
-                        "desc": "BQ76940 entegresi ile 13 hücrenin gerilimlerinin 14-bit ADC ile örneklenmesi."
-                  },
-                  {
-                        "title": "Passive Cell Balancing",
-                        "desc": "47 Ohm güç dirençleri üzerinden hücreler arası gerilim eşitleme."
-                  },
-                  {
-                        "title": "Current & Temp Monitoring",
-                        "desc": "Shunt direnç üzerinden akım okuma ve 4 kanallı NTC termistör sıcaklık izleme."
-                  },
-                  {
-                        "title": "SOC Algorithm",
-                        "desc": "Coulomb Counting (Akım Entegrasyonu) yöntemiyle gerçek zamanlı şarj seviyesi tahmini."
-                  }
-            ],
-            "analysis": "Altium Designer ile yüksek akım yolları güç düzlemleri olarak tasarlanmış, termal kamera ile hücre dengeleme dirençlerinin ısınma testleri yapılmıştır.",
-            "achievements": "Hidroana elektrikli araç projesinde 3 yıl boyunca kesintisiz ve güvenli batarya yönetimi sağlanmıştır."
+            "overview": "<p>Vol.2 motor sürücü sistemi, yüksek akımı taşıyan güç kartı ile modüler kontrol ve regülatör kartlarından oluşan ikinci nesil bir BLDC sürücü mimarisi olarak tasarlandı. Amaç, hidrojen enerjili aracın güç aktarma hattında motorun yön, hız, akım ve güvenlik durumlarını daha kararlı biçimde yönetmek; önceki tasarımda görülen parazit, ölçüm, termal dağılım ve sürüş kararsızlığı problemlerini azaltmaktı.</p><p>Bu revizyonda güç kartı; MOSFET sürücü birimi, üç fazlı evirici, DC bara kapasitörleri, Hall etkili akım sensörleri, güç giriş terminalleri ve motor faz çıkışlarından oluşacak şekilde yapılandırıldı. Kontrol kartı ise motordan alınan konum bilgisi, gerilim bilgisi ve akım sensörü verileriyle PWM üretimini yapan STM32F446RET6 mikrodenetleyici, CAN/RS485 haberleşme modülleri ve sistem güvenliğini destekleyen çevre birimlerini içerir.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/blok-semasi.png\" alt=\"Vol.2 motor sürücü genel blok şeması\"><figcaption>Şekil 1. Vol.2 motor sürücü sisteminin genel blok şeması.</figcaption></figure></div>",
+            "architecture": "<h4>4.1. Devre Tasarımı</h4><p>Motor sürücünün çalışma aralığı nominal 2 kW olarak belirlendiği için sistem 48 V nominal besleme gerilimi ve 40 A sürekli çalışma akımı esas alınarak tasarlandı. Kalkış, ani yüklenme ve geçici rejimlerde oluşabilecek akım artışları dikkate alınarak güç devresinin anlık 100 A seviyesine dayanabilecek güvenlik payıyla tasarlanması hedeflendi.</p><h4>Güç Kartı ve Topoloji Seçimi</h4><p>Güç katında üç fazlı yarım köprü evirici topolojisi kullanıldı. Bu yapı, BLDC motorun A, B ve C fazlarının bağımsız sürülmesine imkan verir. Her fazda üst ve alt kolda MOSFET anahtarları yer alır; bu sayede motor fazlarına simetrik ve senkronize enerji iletimi sağlanır.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/topoloji.png\" alt=\"Üç fazlı yarım köprü topolojisi\"><figcaption>Şekil 2. Güç kartında kullanılan üç fazlı yarım köprü evirici topolojisi.</figcaption></figure></div><h4>Anahtarlama Elemanı</h4><p>Anahtarlama elemanı olarak FDB0260N1007L N-kanal MOSFET tercih edildi. Bu MOSFET; 100 V üst çalışma gerilimi, 260 A maksimum akım kapasitesi, düşük iletim direnci ve D2PAK-7 yüzey montaj paketiyle yüksek güçlü motor sürücü uygulamaları için uygundur. Her anahtarlama pozisyonunda iki MOSFET paralel kullanılarak akım taşıma kapasitesi artırıldı ve termal yük paylaştırıldı.</p><p>MOSFET seçiminde düşük Crss değeri ve düşük Crss/Ciss oranı özellikle dikkate alındı. Böylece önceki tasarımlarda görülen Miller etkisi kaynaklı yanlış tetiklenme davranışlarının azaltılması hedeflendi.</p><h4>MOSFET Sürücü ve Gate Yapısı</h4><p>MOSFET sürücü entegresi olarak UCC21520DWR seçildi. Entegre, izole high-side ve low-side çıkışları, yüksek kaynak/emme akımı kapasitesi ve programlanabilir ölü zaman özelliğiyle yarım köprü sürücü yapısı için uygundur.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/kapi-surucu.png\" alt=\"UCC21520DWR gate sürücü şematiği\"><figcaption>Şekil 3. UCC21520DWR tabanlı MOSFET gate sürücü devresi.</figcaption></figure></div><p>High-side MOSFET’in doğru anahtarlanabilmesi için bootstrap beslemesi ve izole DC-DC destekli sürüş altyapısı değerlendirildi. İki paralel MOSFET için toplam gate yükü 168 nC olarak alınmış, sürücü entegresinin çevrim başına tüketimi de hesaba katılarak minimum bootstrap kapasitörü yaklaşık 366 nF olarak bulunmuştur. Pratik tasarımda 4.7 uF / 50 V / X7R seramik kapasitör kullanıldı.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/r1se0512.png\" alt=\"İzole DC-DC dönüştürücü sürücü beslemesi\"><figcaption>Şekil 4. Gate sürücü beslemesi için kullanılan izole DC-DC dönüştürücü yapısı.</figcaption></figure></div><h4>DC Bara, Kuplaj ve Akım Ölçümü</h4><p>DC bara, batarya ile anahtarlama elemanları arasında yer alarak yüksek frekanslı akım ripple’larını sönümlemek, gerilim dalgalanmalarını azaltmak ve dv/dt ile di/dt kaynaklı parazitik etkileri sınırlamak için tasarlandı. Güç kartında 9 adet 470 uF / 100 V kapasitör kullanılarak toplam 4230 uF bulk kapasitans elde edildi.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/kuplaj-kapasitorleri.png\" alt=\"MOSFET kuplaj kapasitörleri\"><figcaption>Şekil 5. MOSFET drain-source hattına yakın konumlandırılan kuplaj kapasitörleri.</figcaption></figure></div><p>Önceki tasarımda shunt direnç ve Kelvin bağlantısı kaynaklı ölçüm/iz yolu problemleri yaşandığı için Vol.2 tasarımında Hall etkisi tabanlı ACS758 akım sensörü kullanıldı. Bu yaklaşım temassız ve izolasyonlu ölçüm sağladığı için yüksek akım yollarında güvenilirliği artırır.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/akim-sensoru.png\" alt=\"ACS758 akım sensörü devresi\"><figcaption>Şekil 6. Hall etkisi tabanlı ACS758 akım sensörü bağlantısı.</figcaption></figure></div><h4>Kontrol, Haberleşme ve Regülasyon</h4><p>Kontrol kartı STM32F446RET6 mikrodenetleyicisi etrafında oluşturuldu. Kart; Hall sensörü konum bilgisini, akım sensörü verisini, gerilim bilgilerini ve sürücü durumlarını okuyarak 6 adım trapezoidal komutasyon için PWM sinyallerini üretir. CAN ve RS485 modülleri, araç içi haberleşme ve test altyapısı için sisteme dahil edilmiştir.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/kontrol-karti.png\" alt=\"STM32 kontrol kartı şematiği\"><figcaption>Şekil 7. STM32F446RET6 tabanlı kontrol kartı şematiği.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/can-modulu.png\" alt=\"CAN haberleşme modülü\"><figcaption>Şekil 8. Araç içi haberleşme için kullanılan CAN modülü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/rs485-modulu.png\" alt=\"RS485 haberleşme modülü\"><figcaption>Şekil 9. Test ve haberleşme altyapısını destekleyen RS485 modülü.</figcaption></figure></div><p>Regülatör kartı, batarya geriliminden kontrol ve sürüş devrelerinin ihtiyaç duyduğu düşük gerilim seviyelerini üretmek için ayrı bir modül olarak tasarlandı. Bu modülerlik, güç kartından gelebilecek elektriksel ve termal etkilerin kontrol elektroniği üzerindeki etkisini azaltır.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/regulator-karti.png\" alt=\"Regülatör kartı şematiği\"><figcaption>Şekil 10. Vol.2 sürücü sisteminde kullanılan regülatör kartı.</figcaption></figure></div>",
+            "subsystems": [],
+            "analysis": "<h4>4.3. Simülasyon Çalışmaları</h4><p>Vol.2 tasarımında sürücü davranışı MATLAB/Simulink ve PSpice ortamları birlikte kullanılarak test edildi. MATLAB tarafında motor parametreleri, komutasyon mantığı ve S-fonksiyon tabanlı sürücü algoritması modellenirken; PSpice tarafında MOSFET sürücü devresi, akım/voltaj okuma ve anahtarlama kayıpları incelendi.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/matlab-pspice-cosim.png\" alt=\"MATLAB ve PSpice ortak simülasyon yapısı\"><figcaption>Şekil 11. MATLAB-PSpice ortak simülasyon altyapısı.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/komutasyon-modeli.png\" alt=\"6 adım komutasyon modeli\"><figcaption>Şekil 12. 6 adım trapezoidal komutasyon modelinin simülasyon yapısı.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/mosfet-surucu-devresi.png\" alt=\"MOSFET sürücü simülasyonu\"><figcaption>Şekil 13. MOSFET sürücü devresinin PSpice simülasyonu.</figcaption></figure></div><p>Akım ve voltaj okuma simülasyonları, sensör çıktılarının kontrol kartına doğru şekilde taşınmasını ve koruma algoritmalarının güvenilir veriyle çalışmasını hedefledi. Anahtarlama kaybı çalışmaları ise MOSFET iletim ve geçiş kayıplarının ısıl davranışa etkisini değerlendirmek için kullanıldı.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/akim-voltaj-okuma.png\" alt=\"Akım ve voltaj okuma simülasyonu\"><figcaption>Şekil 14. Akım ve voltaj okuma hattının simülasyon çıktısı.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/anahtarlama-kaybi.png\" alt=\"Anahtarlama kaybı simülasyonu\"><figcaption>Şekil 15. Anahtarlama kaybı hesabı için kullanılan simülasyon çıktısı.</figcaption></figure></div><h4>4.4. PCB Tasarımı ve Üretim Verileri</h4><p>PCB tasarımında Altium Designer kullanıldı. Vol.2 kart mimarisi, önceki iki katlı yaklaşımdan farklı olarak dört katmanlı FR4 PCB yapısına taşındı. Bu tercih; güç yollarının, hassas sinyal hatlarının ve toprak düzleminin daha kontrollü yerleşmesini sağladı. Böylece EMI seviyesi azaltıldı, akım dağılımı iyileştirildi ve kartın termal davranışı daha dengeli hale getirildi.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/3d-bldc-on.png\" alt=\"Güç kartı 3D ön görünüm\"><figcaption>Şekil 16. Güç kartının Altium Designer 3D ön görünümü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/3d-bldc-arka.png\" alt=\"Güç kartı 3D arka görünüm\"><figcaption>Şekil 17. Güç kartının Altium Designer 3D arka görünümü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/2d-bldc.png\" alt=\"Güç kartı 2D PCB görünümü\"><figcaption>Şekil 18. Güç kartının 2D PCB yerleşim görünümü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/3d-kontrolcu-on.png\" alt=\"Kontrolcü kartı 3D ön görünüm\"><figcaption>Şekil 19. Kontrolcü kartının 3D ön görünümü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/3d-regulator-on.png\" alt=\"Regülatör kartı 3D görünüm\"><figcaption>Şekil 20. Regülatör kartının 3D görünümü.</figcaption></figure></div><h4>4.5. Üretim ve Test Süreci</h4><p>Üretim dosyaları Gerber, NC Drill, BOM ve Pick & Place çıktıları olarak hazırlandı. Lehimleme öncesinde boş PCB’ler görsel olarak kontrol edildi; kırık yol, kısa devre izi, pad hizasızlığı ve üretim hatası olup olmadığı incelendi.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/pcb-bldc-on.jpg\" alt=\"Güç kartı boş PCB ön yüz\"><figcaption>Şekil 21. Güç kartı boş PCB ön yüzü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/pcb-bldc-arka.jpg\" alt=\"Güç kartı boş PCB arka yüz\"><figcaption>Şekil 22. Güç kartı boş PCB arka yüzü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/pcb-kontrolcu-on.jpg\" alt=\"Kontrolcü kartı boş PCB ön yüz\"><figcaption>Şekil 23. Kontrolcü kartı boş PCB ön yüzü.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/lehimleme-1.jpg\" alt=\"Vol.2 kart lehimleme süreci\"><figcaption>Şekil 24. Vol.2 kartların lehimleme ve montaj süreci.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/lehimleme-3.jpg\" alt=\"Lehimlenmiş Vol.2 sürücü kartı\"><figcaption>Şekil 25. Lehimleme sonrası Vol.2 sürücü kartı.</figcaption></figure></div><p>Deneme kartı üzerinde gate sinyalleri ve ripple davranışı incelendi. Bu testler, gerçek kartta karşılaşılabilecek anahtarlama kararsızlıklarını erken aşamada görmek ve gate sürüş kararlarını doğrulamak için kullanıldı.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/deneme-gate.jpg\" alt=\"Deneme kartı gate sinyali testi\"><figcaption>Şekil 26. Deneme kartı üzerinde gate sinyali testi.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/deneme-ripple.jpg\" alt=\"Deneme kartı ripple testi\"><figcaption>Şekil 27. Deneme kartı üzerinde ripple gözlemi.</figcaption></figure></div><h4>4.6. Verimlilik ve Koruma</h4><p>Verimlilik hesabında MOSFET iletim kaybı, anahtarlama kaybı, Coss kaybı, DC bara kapasitör kayıpları, izole DC-DC dönüştürücü kayıpları ve MLCC kapasitör kayıpları birlikte değerlendirildi. 2 kW çıkış gücü için teorik verim yaklaşık %97.15 olarak yorumlandı.</p><p>Koruma tarafında UCC21520’nin programlanabilir dead-time özelliğiyle shoot-through riski azaltıldı. UVLO özelliği, sürücü beslemesi eşik altına düştüğünde çıkışların pasif kalmasını sağlar. ACS758 akım sensörü üzerinden alınan ölçümlerle, herhangi bir fazda akımın belirlenen eşiği aşması durumunda sürücünün güvenli moda alınması hedeflendi.</p><h4>4.10. Vol.1 - Vol.2 Karşılaştırması</h4><div class=\"hud-table-wrap bldc-output-table\"><table class=\"hud-benchmark-table\"><thead><tr><th>Özellik</th><th>Vol.1</th><th>Vol.2</th></tr></thead><tbody><tr><td>Anahtar</td><td>IXTH200N10T</td><td>FDB0260N1007L</td></tr><tr><td>Sürücü Entegresi</td><td>IRS21867S</td><td>UCC21520DW</td></tr><tr><td>Kontrolcü</td><td>STM32F446RET6</td><td>STM32F446RET6</td></tr><tr><td>Kontrol Algoritması</td><td>6 adım trapezoidal</td><td>6 adım trapezoidal</td></tr><tr><td>Koruma</td><td>80 A sigorta</td><td>UVLO, galvanik izolasyon, shoot-through koruması, 60 A sigorta</td></tr><tr><td>PCB</td><td>2 katlı FR4</td><td>4 katlı FR4</td></tr><tr><td>Boyut</td><td>200 x 150 mm PCB</td><td>250 x 140 mm güç PCB, 80 x 37 mm kontrolcü PCB, 50 x 50 mm regülatör PCB</td></tr><tr><td>Güç</td><td>2.5 kW / 48 V / 50 A</td><td>2 kW / 48 V / 42 A</td></tr><tr><td>Verim</td><td>%90</td><td>%97.15</td></tr></tbody></table></div>",
+            "achievements": "<p>Vol.2 projesi sonunda Hidroana aracı için daha modüler, daha güvenilir ve üretilebilirliği daha yüksek bir motor sürücü altyapısı ortaya çıkarıldı. Güç kartı, kontrol kartı ve regülatör kartının ayrılması; hem test edilebilirliği hem de arıza durumunda müdahale edilebilirliği artırdı.</p><p>Bu çalışma, Vol.1’den gelen deneyimi doğrudan Vol.2 mimarisine taşıdı: shunt yerine Hall etkili akım sensörü kullanılması, 4 katlı PCB’ye geçilmesi, ground-loop mesafesinin kısaltılması, UCC21520 tabanlı izole gate sürüşü, UVLO ve shoot-through korumalarının eklenmesi kartı yarışma şartlarına daha uygun hale getirdi.</p>"
       },
       {
             "id": "project-4",
@@ -607,7 +593,7 @@ const PORTFOLIO_DATA = {
         period: "2022 - 2025",
         icon: "zap",
         logo: "Hidroana/hidro logo.png",
-        projectIds: ["project-1"],
+        projectIds: ["project-1", "project-3"],
         focus: "Power electronics applications and system integration for hydrogen-powered vehicles.",
         overview: [
           "Hidroana is Eskişehir Technical University's hydrogen-powered vehicle project. Founded in 2007, the team has built a 17-year project culture and has become one of Turkey's pioneering student teams in alternative-energy vehicle projects. The team is composed entirely of volunteer engineering students from disciplines such as Materials Science and Engineering, Electrical and Electronics Engineering, Computer Engineering, Chemical Engineering, and Mechanical Engineering.",
@@ -791,57 +777,43 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-3",
-            "title": "Smart Battery Management System (BMS)",
-            "category": "gomulu",
-            "summary": "BQ76940-based protection hardware for a 48V - 50A battery pack in 13S8P configuration.",
-            "description": "A system based on the Texas Instruments BQ76940 integrated circuit, monitoring cell voltages with a 14-bit ADC, current with a shunt resistor, and temperature with NTC thermistors. Cell balancing is performed passively via 47-ohm resistors. State of Charge (SOC) estimation is performed using the Coulomb Counting method. All algorithms run on the STM32F103C8T6 microcontroller.",
-            "image": "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=600",
+            "title": "48 V / 42 A Three-Phase BLDC Motor Driver Board (Vol.2)",
+            "category": "donanim",
+            "summary": "Vol.2 is the second-generation BLDC motor driver developed for the Hidroana hydrogen vehicle drivetrain. It targets 48 V nominal supply, 2 kW output power, and 42 A operating current with a modular power board, control board, and regulator board architecture.",
+            "description": "The Vol.2 BLDC driver improves reliability, thermal behavior, EMI control, galvanic isolation, and manufacturability using FDB0260N1007L MOSFETs, UCC21520DWR isolated gate drivers, ACS758 Hall-effect current sensing, STM32F446RET6 control, CAN/RS485 communication, four-layer PCB design, and active enclosure cooling.",
+            "image": "vol2/3d-bldc-on.png",
+            "detailImage": "vol2/3d-bldc-on.png",
             "tags": [
-                  "STM32F103C8T6",
-                  "BQ76940 BMS",
-                  "Coulomb Counter (SOC)",
-                  "Altium Designer"
+                  "BLDC Motor Driver Vol.2",
+                  "UCC21520DWR",
+                  "FDB0260N1007L",
+                  "STM32F446RET6",
+                  "Altium Designer",
+                  "Hidroana"
             ],
             "specs": [
                   {
-                        "name": "Cell Configuration",
-                        "value": "13S8P (LG INR18650 MJ1)"
+                        "name": "Project Team",
+                        "value": "Hidroana Project Team"
                   },
                   {
-                        "name": "Power Ratings",
-                        "value": "48V / 50A Output Capacity"
+                        "name": "Power Target",
+                        "value": "2 kW / 48 V / 42 A"
                   },
                   {
-                        "name": "Microcontroller",
-                        "value": "STM32F103C8T6"
+                        "name": "Topology",
+                        "value": "Three-Phase Half-Bridge Inverter"
                   },
                   {
-                        "name": "Cell Balancing",
-                        "value": "47 Ohm Passive Balancing"
+                        "name": "Controller",
+                        "value": "STM32F446RET6"
                   }
             ],
-            "overview": "Embedded control hardware ensuring safe operation, cell life extension, and charge/discharge balance for a 48V / 50A Li-ion battery pack in 13S8P configuration.",
-            "architecture": "Built around the Texas Instruments BQ76940 AFE IC and STM32F103C8T6 ARM Cortex-M3 microcontroller architecture.",
-            "subsystems": [
-                  {
-                        "title": "AFE (Analog Front End)",
-                        "desc": "Sampling voltages of 13 cells via 14-bit ADC using the BQ76940 IC."
-                  },
-                  {
-                        "title": "Passive Cell Balancing",
-                        "desc": "Inter-cell voltage equalization across 47 Ohm power resistors."
-                  },
-                  {
-                        "title": "Current & Temp Monitoring",
-                        "desc": "Current sensing via shunt resistor and 4-channel NTC thermistor temperature tracking."
-                  },
-                  {
-                        "title": "SOC Algorithm",
-                        "desc": "Real-time State of Charge estimation using the Coulomb Counting (Current Integration) method."
-                  }
-            ],
-            "analysis": "Designed high-current copper planes in Altium Designer and conducted thermal imaging tests on cell balancing resistors.",
-            "achievements": "Provided 3 years of uninterrupted and safe battery management for the Hidroana electric vehicle project."
+            "overview": "<p>The Vol.2 motor driver system was designed as a second-generation BLDC driver architecture composed of a high-current power board, a modular control board, and a regulator board. The goal was to manage motor direction, speed, current, and safety states more reliably while reducing the noise, measurement, thermal, and switching issues observed in earlier revisions.</p><p>The power board includes the MOSFET driver stage, three-phase inverter, DC bus capacitors, Hall-effect current sensors, power input terminals, and motor phase outputs. The control board uses an STM32F446RET6 microcontroller to generate PWM signals from position, voltage, and current feedback.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/blok-semasi.png\" alt=\"Vol.2 motor driver block diagram\"><figcaption>Figure 1. General block diagram of the Vol.2 motor driver system.</figcaption></figure></div>",
+            "architecture": "<h4>4.1. Circuit Design</h4><p>The driver was designed around 48 V nominal supply and 40 A continuous current for a 2 kW target. The power stage was dimensioned with transient operation in mind, including startup and sudden load conditions.</p><h4>Power Board and Topology</h4><p>The design uses a three-phase half-bridge inverter topology. This structure allows independent control of the A, B, and C motor phases and is suitable for six-step trapezoidal BLDC commutation.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/topoloji.png\" alt=\"Three-phase half-bridge topology\"><figcaption>Figure 2. Three-phase half-bridge inverter topology used in the power board.</figcaption></figure></div><h4>Switching Device and Gate Driver</h4><p>FDB0260N1007L N-channel MOSFETs were selected for their 100 V voltage rating, high current capability, low on-resistance, and D2PAK-7 package. Two MOSFETs are used in parallel at each switching position to distribute current and thermal load.</p><p>The UCC21520DWR isolated gate driver was selected for high-side/low-side drive capability, high source/sink current, programmable dead time, and robust switching behavior.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/kapi-surucu.png\" alt=\"UCC21520DWR gate driver schematic\"><figcaption>Figure 3. UCC21520DWR-based MOSFET gate driver circuit.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/r1se0512.png\" alt=\"Isolated DC-DC driver supply\"><figcaption>Figure 4. Isolated DC-DC converter used for the gate-driver supply.</figcaption></figure></div><h4>DC Bus, Decoupling, and Current Measurement</h4><p>The DC bus reduces high-frequency current ripple, limits voltage ripple, and helps suppress parasitic effects caused by high dv/dt and di/dt switching. A total of 4230 uF bulk capacitance was created using nine 470 uF capacitors.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/kuplaj-kapasitorleri.png\" alt=\"MOSFET decoupling capacitors\"><figcaption>Figure 5. Decoupling capacitors placed close to the MOSFET drain-source loop.</figcaption></figure></div><p>ACS758 Hall-effect current sensors replaced shunt-based measurement to avoid routing and Kelvin-connection issues from the previous design.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/akim-sensoru.png\" alt=\"ACS758 current sensor circuit\"><figcaption>Figure 6. ACS758 Hall-effect current sensor connection.</figcaption></figure></div><h4>Control and Communication</h4><p>The STM32F446RET6 control board reads sensor feedback and generates the PWM signals for six-step trapezoidal commutation. CAN and RS485 modules support vehicle communication and testing.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/kontrol-karti.png\" alt=\"STM32 control board schematic\"><figcaption>Figure 7. STM32F446RET6-based control board schematic.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/regulator-karti.png\" alt=\"Regulator board schematic\"><figcaption>Figure 8. Regulator board used in the Vol.2 driver system.</figcaption></figure></div>",
+            "subsystems": [],
+            "analysis": "<h4>Simulation Work</h4><p>The Vol.2 driver behavior was tested through MATLAB/Simulink and PSpice co-simulation. MATLAB modeled the motor parameters, commutation logic, and S-function-based driver code, while PSpice was used for MOSFET gate-drive, current/voltage sensing, and switching-loss checks.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/matlab-pspice-cosim.png\" alt=\"MATLAB and PSpice co-simulation\"><figcaption>Figure 9. MATLAB-PSpice co-simulation setup.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/mosfet-surucu-devresi.png\" alt=\"MOSFET driver simulation\"><figcaption>Figure 10. PSpice simulation of the MOSFET driver stage.</figcaption></figure></div><h4>PCB Design and Production</h4><p>The design was moved from a two-layer board concept to a four-layer FR4 PCB. Separating power paths, sensitive signals, and ground planes improved EMI behavior, current distribution, and thermal balance.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/3d-bldc-on.png\" alt=\"Power board 3D front view\"><figcaption>Figure 11. Altium Designer 3D front view of the power board.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/2d-bldc.png\" alt=\"Power board 2D PCB view\"><figcaption>Figure 12. 2D PCB layout of the power board.</figcaption></figure></div><p>Before soldering, the empty boards were visually and electrically checked for broken traces, short circuits, pad alignment, and continuity. After assembly, low-voltage startup tests, gate signal observations, and ripple checks were carried out.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/pcb-bldc-on.jpg\" alt=\"Power board empty PCB\"><figcaption>Figure 13. Empty power board PCB front side.</figcaption></figure></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"vol2/lehimleme-3.jpg\" alt=\"Soldered Vol.2 driver board\"><figcaption>Figure 14. Vol.2 driver board after soldering.</figcaption></figure></div><h4>Efficiency and Comparison</h4><p>Efficiency was evaluated through MOSFET conduction, switching, Coss, DC bus capacitor, isolated DC-DC, and MLCC capacitor losses. For the 2 kW output target, the theoretical efficiency was interpreted around 97.15 percent.</p><div class=\"hud-table-wrap bldc-output-table\"><table class=\"hud-benchmark-table\"><thead><tr><th>Feature</th><th>Vol.1</th><th>Vol.2</th></tr></thead><tbody><tr><td>Switching Device</td><td>IXTH200N10T</td><td>FDB0260N1007L</td></tr><tr><td>Driver IC</td><td>IRS21867S</td><td>UCC21520DW</td></tr><tr><td>Controller</td><td>STM32F446RET6</td><td>STM32F446RET6</td></tr><tr><td>Protection</td><td>80 A fuse</td><td>UVLO, galvanic isolation, shoot-through protection, 60 A fuse</td></tr><tr><td>PCB</td><td>2-layer FR4</td><td>4-layer FR4</td></tr><tr><td>Power</td><td>2.5 kW / 48 V / 50 A</td><td>2 kW / 48 V / 42 A</td></tr><tr><td>Efficiency</td><td>90%</td><td>97.15%</td></tr></tbody></table></div>",
+            "achievements": "<p>The Vol.2 project produced a more modular, reliable, and manufacturable motor-driver platform for the Hidroana vehicle. Separating the power, control, and regulator boards improved testability and maintainability.</p><p>The work carried Vol.1 lessons directly into the new architecture: Hall-effect current sensing, four-layer PCB design, shorter ground loops, UCC21520-based isolated gate driving, UVLO, and shoot-through protection.</p>"
       },
       {
             "id": "project-4",
