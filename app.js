@@ -36,9 +36,39 @@ function applyLanguage(lang) {
     }
 }
 
+/* URL Temizleyici (URL Sanitizer): index.html ve hash kalıntılarını temizler */
+function initCleanURL() {
+    try {
+        // index.html yazısını adresten temizle
+        if (window.location.pathname.endsWith('/index.html')) {
+            const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/') + window.location.search + window.location.hash;
+            window.history.replaceState(null, '', cleanPath);
+        }
+        
+        // Eğer hash (#projects vb.) ile geldiyse yumuşakça kay ve adresi temizle
+        if (window.location.hash) {
+            const targetId = window.location.hash.substring(1);
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+                setTimeout(() => {
+                    targetEl.scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => {
+                        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+                    }, 600);
+                }, 100);
+            }
+        }
+    } catch (e) {
+        console.warn("URL temizleme sırasında hata:", e);
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Dil sistemini başlat (Bu otomatik olarak initPortfolioData'yı çağıracaktır)
     applyLanguage(currentLang);
+
+    // 1.1. URL'den index.html ve # hash kalıntılarını temizle (Sade & Prestijli URL)
+    initCleanURL();
 
     // Dil değiştirme butonlarına olay dinleyicisi ekle
     document.querySelectorAll(".lang-btn").forEach(btn => {
