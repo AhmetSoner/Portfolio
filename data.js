@@ -217,7 +217,7 @@ const PORTFOLIO_DATA = {
             "category": "donanim",
             "summary": "Hidroana hidrojen enerjili aracının 48 V güç hattında batarya kutupları ile şasi arasındaki izolasyon direncini izlemek için geliştirilen analog ölçüm ve güvenlik kartı.",
             "description": "Bu proje, yüksek gerilim sınıfında ele alınan bir sistem değil; 48 V seviyesinde çalışan hidrojen enerjili araç güç hattında güvenli izolasyon takibi yapmak için tasarlanmış bir izleme kartıdır. Amaç, bataryanın pozitif ve negatif terminallerinin şasiye karşı izolasyon dirençlerini ölçmek, olası kaçak yolları erken tespit etmek ve kontrol kartına sayısallaştırılabilir güvenilir bir ölçüm bilgisi aktarmaktır.",
-            "image": "isolation/1.jpeg",
+            "image": "isolation/ev-isolation-cover.jpg",
             "tags": [
                   "48 V Araç Güvenliği",
                   "İzolasyon İzleme",
@@ -735,7 +735,7 @@ const PORTFOLIO_DATA = {
             "category": "donanim",
             "summary": "Analog measurement and safety board developed to monitor the insulation resistance between the 48 V power line and chassis of the Hidroana hydrogen vehicle.",
             "description": "This project is not framed as an extremely high-voltage system; it was designed for a 48 V hydrogen vehicle power line. The goal is to monitor the insulation condition between the battery positive/negative terminals and the chassis, detect leakage paths early, and provide a reliable ADC-readable measurement to the control board.",
-            "image": "isolation/1.jpeg",
+            "image": "isolation/ev-isolation-cover.jpg",
             "tags": [
                   "Electric Vehicle Safety",
                   "Insulation Monitoring",
