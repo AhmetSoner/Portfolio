@@ -2368,7 +2368,7 @@ section {
     width: 100%;
     max-height: 520px;
     object-fit: contain;
-    background: #fff;
+    background: transparent;
 }
 
 .project-figure-card figcaption {
