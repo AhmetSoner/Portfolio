@@ -105,9 +105,11 @@ function loadProjectData(lang, projectId) {
     document.getElementById("project-achievements").innerHTML = proj.achievements || "";
 
     // Alt Sistemler Kartları (Subsystems Grid)
+    const blockSubsystems = document.getElementById("block-subsystems");
     const subsystemsContainer = document.getElementById("project-subsystems");
     subsystemsContainer.innerHTML = "";
     if (proj.subsystems && proj.subsystems.length > 0) {
+        if (blockSubsystems) blockSubsystems.style.display = "block";
         proj.subsystems.forEach(sub => {
             const card = document.createElement("div");
             card.className = "subsystem-card";
@@ -119,6 +121,8 @@ function loadProjectData(lang, projectId) {
             `;
             subsystemsContainer.appendChild(card);
         });
+    } else if (blockSubsystems) {
+        blockSubsystems.style.display = "none";
     }
 
     // Diğer Projeler Kartları (Related Projects)
