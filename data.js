@@ -209,7 +209,7 @@ const PORTFOLIO_DATA = {
 },
       {
             "id": "project-2",
-            "title": "Elektrikli Araçlar İçin İzolasyon İzleme Cihazı",
+            "title": "Elektrikli Araçlar İçin İzolasyon İzleme Cihazı (YTÜ Hidroana)",
             "category": "donanim",
             "summary": "Bu proje, YTÜ Hidroana hidrojen enerjili aracının 48 V DC ana güç hattında batarya kutupları ile şasi arasındaki elektriksel izolasyon direncini gerçek zamanlı izlemek amacıyla geliştirilmiştir. Sistem, asimetrik ve simetrik kaçak durumlarını tespit edebilen anahtarlamalı direnç köprüsü (Electric Bridge Switch) ve izole ölçüm mimarisine dayanır. AD8216 fark yükselteci ve AMC1311 izole aktarım entegreleri sayesinde yüksek gerilim tarafı ile kontrol elektroniği arasında tam galvanik izolasyon sağlanarak araç ve kullanıcı güvenliği üst seviyeye taşınmıştır.",
             "description": "Bu proje, yüksek gerilim sınıfında ele alınan bir sistem değil; 48 V seviyesinde çalışan hidrojen enerjili araç güç hattında güvenli izolasyon takibi yapmak için tasarlanmış bir izleme kartıdır. Amaç, bataryanın pozitif ve negatif terminallerinin şasiye karşı izolasyon dirençlerini ölçmek, olası kaçak yolları erken tespit etmek ve kontrol kartına sayısallaştırılabilir güvenilir bir ölçüm bilgisi aktarmaktır.",
@@ -304,7 +304,7 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-4",
-            "title": "HAVAALANLARI İÇİN DERİN ÖĞRENME TABANLI KUŞ TESPİT SİSTEMİ",
+            "title": "Havaalanları İçin Derin Öğrenme Tabanlı Kuş Tespit Sistemi (TÜBİTAK 2209-A)",
             "category": "gomulu",
             "summary": "Havaalanlarında kuş çarpması riskini azaltmak için geliştirilen bu TÜBİTAK 2209-A araştırma projesinde, pist ve havaalanı çevresindeki kuş hareketlerini görüntü tabanlı olarak algılayabilecek bir derin öğrenme hattı kuruldu. YOLOv8n modeli kullanılarak kuşların görüntü içinde tespit edilmesi, tür seviyesinde sınıflandırılması ve güven değeriyle birlikte yorumlanması hedeflendi. Çalışma; veri seti hazırlama, Roboflow tabanlı etiketleme, augmentation, model eğitimi ve performans doğrulama adımlarını kapsayan uçtan uca bir yapay zeka uygulaması olarak geliştirildi. Elde edilen yaklaşım, radar tabanlı sistemlerin sağlayamadığı görsel tür bilgisiyle havaalanı erken ikaz altyapılarını destekleyebilecek bir karar destek katmanı sunmaktadır.",
             "description": "Kuş çarpmalarının uçuş emniyeti, operasyon sürekliliği ve bakım maliyetleri üzerindeki etkisini azaltmak amacıyla geliştirilen bu çalışmada, radar tabanlı sistemlerin tür, renk, boyut ve tekil kuş takibi konusundaki sınırlamalarını tamamlayacak görüntü tabanlı bir derin öğrenme hattı tasarlanmıştır. Proje önerisi YOLOv8 ve MobileNetV2 entegrasyonunu hedeflerken, tez çalışmasında Roboflow ile hazırlanan veri seti üzerinde YOLOv8n modeli eğitilmiş, performans çıktıları precision, recall, F1 ve mAP metrikleriyle değerlendirilmiştir.",
@@ -728,7 +728,7 @@ const PORTFOLIO_DATA = {
 },
       {
             "id": "project-2",
-            "title": "Insulation Monitoring Device for Electric Vehicles",
+            "title": "Insulation Monitoring Device for Electric Vehicles (YTU Hidroana)",
             "category": "donanim",
             "summary": "Developed for the 48 V DC power rail of the Hidroana hydrogen-powered vehicle, this project real-time monitors the electrical insulation resistance between battery terminals and the chassis. Built upon an Electric Bridge Switch architecture and differential measurement front-end, it accurately detects potential leakage paths and insulation degradation. Utilizing AD8216 difference amplifiers and AMC1311 galvanically isolated transmitters, the board decouples high-voltage sensing from low-voltage control electronics to ensure maximum vehicle and operational safety.",
             "description": "This project is not framed as an extremely high-voltage system; it was designed for a 48 V hydrogen vehicle power line. The goal is to monitor the insulation condition between the battery positive/negative terminals and the chassis, detect leakage paths early, and provide a reliable ADC-readable measurement to the control board.",
@@ -823,7 +823,7 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-4",
-            "title": "DEEP LEARNING BASED BIRD DETECTION SYSTEM FOR AIRPORTS",
+            "title": "Deep Learning Based Bird Detection System for Airports (TÜBİTAK 2209-A)",
             "category": "gomulu",
             "summary": "This TÜBİTAK 2209-A research project develops an image-based deep learning pipeline to reduce bird-strike risk around airports and runway environments. Using YOLOv8n, the system aims to detect birds in camera imagery, classify them at species level, and interpret each detection with a confidence value. The work covers dataset preparation, Roboflow-based annotation, augmentation, model training, and performance validation as an end-to-end AI application. The resulting approach can support airport early warning workflows by adding visual species-level information that radar-based systems cannot provide alone.",
             "description": "This project was developed to reduce the impact of bird strikes on flight safety, operational continuity, and maintenance costs. It designs an image-based deep learning pipeline to complement radar-based systems, which are limited in identifying bird species, color, size, count, and single-bird behavior. While the proposal targeted a YOLOv8 and MobileNetV2 integration, the thesis phase trained and evaluated a YOLOv8n model on a Roboflow-prepared dataset using precision, recall, F1, and mAP metrics.",
