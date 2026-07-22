@@ -1,0 +1,105 @@
+Removed Pin From Net: NetName=Shunt Pin=Q7-3
+Removed Pin From Net: NetName=Shunt Pin=Q8-3
+Removed Pin From Net: NetName=Shunt Pin=R26-1
+Removed Pin From Net: NetName=Shunt Pin=R34-1
+Added Component: Designator=J1(TB2_3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-02P-11-00AH"; VariantName = "[No Variations]"
+Added Component: Designator=J2(TBLOCK5P)
+Added Component: Designator=J3(61302421821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61302421821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61302421821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61302421821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "24"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=J4(TB3_3.81_90C)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/Product/Detail/515263/15EDGRC-3-81-03P-11-00AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://enoss.degson.com/upload/file/20210313/10030000179/15EDGRC-3.81-XXP-1Y-00A(H)T0-1.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=J5(TB2_3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-02P-11-00AH"; VariantName = "[No Variations]"
+Added Component: Designator=J6(TB3_3.81_90C)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/Product/Detail/515263/15EDGRC-3-81-03P-11-00AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://enoss.degson.com/upload/file/20210313/10030000179/15EDGRC-3.81-XXP-1Y-00A(H)T0-1.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=R57(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4.7k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R59(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4.7k Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Shunt Pin=J1-2
+Added Pin To Net: NetName=Shunt Pin=J2-5
+Added Pin To Net: NetName=PWM_CH Pin=J3-13
+Added Pin To Net: NetName=PWM_CL Pin=J3-15
+Added Pin To Net: NetName=PWM_BH Pin=J3-17
+Added Pin To Net: NetName=PWM_BL Pin=J3-19
+Added Pin To Net: NetName=PWM_AH Pin=J3-21
+Added Pin To Net: NetName=PWM_AL Pin=J3-23
+Added Pin To Net: NetName=Shunt Pin=J4-1
+Added Pin To Net: NetName=Shunt Pin=J5-2
+Added Pin To Net: NetName=Shunt Pin=J6-1
+Change Net Name : Old Net Name=Shunt New Net Name=GND
+Added Pin To Net: NetName=+3.3V Pin=R57-1
+Added Pin To Net: NetName=+3.3V Pin=R59-1
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=+5V Pin=J2-1
+Added Pin To Net: NetName=+5V Pin=J3-1
+Added Pin To Net: NetName=+5V Pin=J4-3
+Added Pin To Net: NetName=+5V Pin=J6-3
+Added Net: Name=+5V
+Added Pin To Net: NetName=ENABLE Pin=J5-1
+Added Pin To Net: NetName=ENABLE Pin=R59-2
+Added Net: Name=ENABLE
+Added Pin To Net: NetName=FWD/REV Pin=J1-1
+Added Pin To Net: NetName=FWD/REV Pin=R57-2
+Added Net: Name=FWD/REV
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=J3-3
+Added Net: Name=NetJ2_2
+Added Pin To Net: NetName=NetJ2_3 Pin=J2-3
+Added Pin To Net: NetName=NetJ2_3 Pin=J3-5
+Added Net: Name=NetJ2_3
+Added Pin To Net: NetName=NetJ2_4 Pin=J2-4
+Added Pin To Net: NetName=NetJ2_4 Pin=J3-7
+Added Net: Name=NetJ2_4
+Added Pin To Net: NetName=Shunt Pin=Q7-3
+Added Pin To Net: NetName=Shunt Pin=Q8-3
+Added Pin To Net: NetName=Shunt Pin=R26-1
+Added Pin To Net: NetName=Shunt Pin=R34-1
+Added Net: Name=Shunt
+Added Pin To Net: NetName=SPEED_2 Pin=J3-11
+Added Pin To Net: NetName=SPEED_2 Pin=J6-2
+Added Net: Name=SPEED_2
+Added Pin To Net: NetName=SPEED Pin=J3-9
+Added Pin To Net: NetName=SPEED Pin=J4-2
+Added Net: Name=SPEED
+Added Member To Class: ClassName=Power Member=Component J1 2P 3.81mm
+Added Member To Class: ClassName=Power Member=Component J2 5P
+Added Member To Class: ClassName=Power Member=Component J3 61302421821
+Added Member To Class: ClassName=Power Member=Component J4 3P 3.81MM
+Added Member To Class: ClassName=Power Member=Component J5 2P 3.81mm
+Added Member To Class: ClassName=Power Member=Component J6 3P 3.81MM
+Added Member To Class: ClassName=Power Member=Component R57 4.7k Ohms
+Added Member To Class: ClassName=Power Member=Component R59 4.7k Ohms
+Added Room: Name=Power
+Added Room: Name=Regulator

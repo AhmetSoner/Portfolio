@@ -1,0 +1,27 @@
+Added Component: Designator=D?(TO-252-2_CRW)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Wolfspeed"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Component: Designator=D?(TO-252-2_CRW)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Wolfspeed"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Component: Designator=D?(TO-252-2_CRW)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Wolfspeed"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ISO_+12_A_H Pin=D?-1
+Added Pin To Net: NetName=ISO_+12_B_H Pin=D?-1
+Added Pin To Net: NetName=ISO_+12_C_H Pin=D?-1
+Added Pin To Net: NetName=ISO_+12_A_H Pin=D?-3
+Added Pin To Net: NetName=ISO_+12_B_H Pin=D?-3
+Added Pin To Net: NetName=ISO_+12_C_H Pin=D?-3
+Added Pin To Net: NetName=NetD?_2 Pin=D?-2
+Added Pin To Net: NetName=NetD?_2 Pin=R1-1
+Added Net: Name=NetD?_2
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E-TR
+Added Member To Class: ClassName=Power Member=Component IC2 ACS758LCB-100B-PFF-T

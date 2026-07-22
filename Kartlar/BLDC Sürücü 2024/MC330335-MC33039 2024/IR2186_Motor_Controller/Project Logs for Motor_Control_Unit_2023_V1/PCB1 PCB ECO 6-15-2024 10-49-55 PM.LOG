@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=Shunt Pin=J3-7
+Add Net: Net with name "+45V" already exists
+Added Pin To Net: NetName=NetR15_2 Pin=R15-2
+Added Pin To Net: NetName=NetR15_2 Pin=R49-2
+Added Net: Name=NetR15_2

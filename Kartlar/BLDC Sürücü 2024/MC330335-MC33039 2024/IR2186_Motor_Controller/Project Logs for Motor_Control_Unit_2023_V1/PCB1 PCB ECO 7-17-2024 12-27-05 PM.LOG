@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=Shunt Pin=J3-7
+Added Pin To Net: NetName=Shunt Pin=R61-1
+Added Room: Name=Power
+Added Room: Name=Regulator

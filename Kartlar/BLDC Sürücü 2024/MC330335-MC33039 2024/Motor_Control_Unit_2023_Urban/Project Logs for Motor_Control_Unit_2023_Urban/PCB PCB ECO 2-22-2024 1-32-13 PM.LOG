@@ -1,0 +1,4 @@
+Added Component: Designator=C29(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 25V"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Power Member=Component C29 1uF 25V
+Added Room: Name=Regulator

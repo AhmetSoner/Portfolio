@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=R25-1
+Removed Pin From Net: NetName=Shunt Pin=R26-1
+Removed Pin From Net: NetName=GND Pin=R34-2
+Removed Member From Class: ClassName=Power Member=C22
+Removed Member From Class: ClassName=Power Member=R25
+Removed Member From Class: ClassName=Power Member=R26
+Change Component Designator: OldDesignator=PVDD NewDesignator=VIN
+Add Net: Net with name "+45V" already exists
+Added Pin To Net: NetName=NetR34_2 Pin=R34-2
+Added Net: Name=NetR34_2

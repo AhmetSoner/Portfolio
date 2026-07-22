@@ -1,0 +1,60 @@
+Removed Pin From Net: NetName=Current_Sense_A Pin=C105-2
+Removed Pin From Net: NetName=Current_Sense_B Pin=C106-2
+Removed Pin From Net: NetName=Current_Sense_C Pin=C107-2
+Removed Pin From Net: NetName=GND Pin=C108-1
+Removed Pin From Net: NetName=+3.3V Pin=C108-2
+Removed Pin From Net: NetName=GND Pin=C109-1
+Removed Pin From Net: NetName=+3.3V Pin=C109-2
+Removed Pin From Net: NetName=GND Pin=C110-1
+Removed Pin From Net: NetName=+3.3V Pin=C110-2
+Removed Pin From Net: NetName=+3.3V Pin=R45-2
+Removed Pin From Net: NetName=GND Pin=R48-1
+Removed Pin From Net: NetName=COUT_A Pin=R49-1
+Removed Pin From Net: NetName=Current_Sense_A Pin=R50-2
+Removed Pin From Net: NetName=+3.3V Pin=R51-2
+Removed Pin From Net: NetName=GND Pin=R54-1
+Removed Pin From Net: NetName=COUT_B Pin=R55-1
+Removed Pin From Net: NetName=Current_Sense_B Pin=R56-2
+Removed Pin From Net: NetName=+3.3V Pin=R57-2
+Removed Pin From Net: NetName=GND Pin=R61-1
+Removed Pin From Net: NetName=COUT_C Pin=R62-1
+Removed Pin From Net: NetName=Current_Sense_C Pin=R63-2
+Removed Member From Class: ClassName=Regulators Member=C108
+Removed Member From Class: ClassName=Regulators Member=C109
+Removed Member From Class: ClassName=Regulators Member=C110
+Removed Member From Class: ClassName=Regulators Member=R45
+Removed Member From Class: ClassName=Regulators Member=R48
+Removed Member From Class: ClassName=Regulators Member=R49
+Removed Member From Class: ClassName=Regulators Member=R50
+Removed Member From Class: ClassName=Regulators Member=R51
+Removed Member From Class: ClassName=Regulators Member=R54
+Removed Member From Class: ClassName=Regulators Member=R55
+Removed Member From Class: ClassName=Regulators Member=R56
+Removed Member From Class: ClassName=Regulators Member=R57
+Removed Member From Class: ClassName=Regulators Member=R61
+Removed Member From Class: ClassName=Regulators Member=R62
+Removed Member From Class: ClassName=Regulators Member=R63
+Change Component Footprint: Designator=C105 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=C106 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=C107 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Comment : Designator=C105 Old Comment=1000pF New Comment=1uF 16V
+Change Component Comment : Designator=C106 Old Comment=1000pF New Comment=1uF 16V
+Change Component Comment : Designator=C107 Old Comment=1000pF New Comment=1uF 16V
+Change component parameters: Designator = "C105" ("C105"); Footprint = "0805_CAP"; UniqueID = "\CDAYOEXT" ("\CDAYOEXT")
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C106" ("C106"); Footprint = "0805_CAP"; UniqueID = "\ZSXAZUWM" ("\ZSXAZUWM")
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C107" ("C107"); Footprint = "0805_CAP"; UniqueID = "\CMDAUADT" ("\CMDAUADT")
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3.3V Pin=C105-1
+Added Pin To Net: NetName=GND Pin=C105-2
+Added Pin To Net: NetName=+3.3V Pin=C106-1
+Added Pin To Net: NetName=GND Pin=C106-2
+Added Pin To Net: NetName=+3.3V Pin=C107-1
+Added Pin To Net: NetName=GND Pin=C107-2
+Added Pin To Net: NetName=COUT_A Pin=U8-3
+Added Pin To Net: NetName=Current_Sense_A Pin=U8-4
+Added Pin To Net: NetName=COUT_B Pin=U9-3
+Added Pin To Net: NetName=Current_Sense_B Pin=U9-4
+Added Pin To Net: NetName=COUT_C Pin=U10-3
+Added Pin To Net: NetName=Current_Sense_C Pin=U10-4

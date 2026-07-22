@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=FOR/REV Pin=P1-20
+Removed Pin From Net: NetName=GND Pin=P1-24
+Added Pin To Net: NetName=GND Pin=P1-20
+Added Pin To Net: NetName=FOR/REV Pin=P1-24
+Added Room: Name=MC33035

@@ -1,0 +1,16 @@
+Added Component: Designator=J6(4PIN_100MIL)
+Added Pin To Net: NetName=+5V Pin=C103-1
+Added Pin To Net: NetName=+5V Pin=C105-1
+Added Pin To Net: NetName=+3.3V Pin=C106-1
+Added Pin To Net: NetName=+5V Pin=J6-1
+Added Pin To Net: NetName=CAN_H Pin=J6-2
+Added Pin To Net: NetName=CAN_L Pin=J6-3
+Added Pin To Net: NetName=A_VSS_L Pin=J6-4
+Added Pin To Net: NetName=+3.3V Pin=R28-1
+Added Pin To Net: NetName=+3.3V Pin=R32-2
+Added Pin To Net: NetName=+3.3V Pin=R38-2
+Added Pin To Net: NetName=+3.3V Pin=R43-1
+Added Pin To Net: NetName=+5V Pin=U7-3
+Added Pin To Net: NetName=+3.3V Pin=U7-5
+Added Member To Class: ClassName=Connection Member=Component J6 DS1070 4 Pin
+Added Member To Class: ClassName=Connection Member=Component R13 10k Ohms

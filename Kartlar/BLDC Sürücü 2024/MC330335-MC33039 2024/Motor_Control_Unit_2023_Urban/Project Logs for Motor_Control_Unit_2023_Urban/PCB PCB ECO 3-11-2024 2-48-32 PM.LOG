@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetJ1_11 Pin=R23-1
+Removed Pin From Net: NetName=NetJ1_13 Pin=R31-1
+Added Pin To Net: NetName=NetJ1_13 Pin=R23-1
+Added Pin To Net: NetName=NetJ1_11 Pin=R31-1
+Added Room: Name=Regulator

@@ -1,0 +1,51 @@
+Removed Pin From Net: NetName=NetR45_1 Pin=U8-1
+Removed Pin From Net: NetName=NetC105_1 Pin=U8-3
+Removed Pin From Net: NetName=Current_Sense_A Pin=U8-4
+Removed Pin From Net: NetName=NetR51_1 Pin=U9-1
+Removed Pin From Net: NetName=NetC106_1 Pin=U9-3
+Removed Pin From Net: NetName=Current_Sense_B Pin=U9-4
+Removed Pin From Net: NetName=NetR57_1 Pin=U10-1
+Removed Pin From Net: NetName=NetC107_1 Pin=U10-3
+Removed Pin From Net: NetName=Current_Sense_C Pin=U10-4
+Change Component Comment : Designator=U8 Old Comment=LM321MF New Comment=OPA320AIDBVR
+Change Component Comment : Designator=U9 Old Comment=LM321MF New Comment=OPA320AIDBVR
+Change Component Comment : Designator=U10 Old Comment=LM321MF New Comment=OPA320AIDBVR
+Change component parameters: Designator = "U8" ("U8"); Footprint = "SOT95P280X145-5N"; UniqueID = "\UHFWWDAV" ("\UHFWWDAV")
+Change component parameters (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/OPA320AIDBVR/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "OPA320AIDBVR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOT-23-5 Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/OPA320AIDBVR/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/OPA320AIDBVR/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U9" ("U9"); Footprint = "SOT95P280X145-5N"; UniqueID = "\IUGEPEGK" ("\IUGEPEGK")
+Change component parameters (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/OPA320AIDBVR/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "OPA320AIDBVR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOT-23-5 Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/OPA320AIDBVR/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/OPA320AIDBVR/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U10" ("U10"); Footprint = "SOT95P280X145-5N"; UniqueID = "\MGQLJJPI" ("\MGQLJJPI")
+Change component parameters (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/OPA320AIDBVR/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "OPA320AIDBVR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOT-23-5 Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/OPA320AIDBVR/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/OPA320AIDBVR/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Current_Sense_A Pin=U8-1
+Added Pin To Net: NetName=NetR45_1 Pin=U8-3
+Added Pin To Net: NetName=NetC105_1 Pin=U8-4
+Added Pin To Net: NetName=Current_Sense_B Pin=U9-1
+Added Pin To Net: NetName=NetR51_1 Pin=U9-3
+Added Pin To Net: NetName=NetC106_1 Pin=U9-4
+Added Pin To Net: NetName=Current_Sense_C Pin=U10-1
+Added Pin To Net: NetName=NetR57_1 Pin=U10-3
+Added Pin To Net: NetName=NetC107_1 Pin=U10-4

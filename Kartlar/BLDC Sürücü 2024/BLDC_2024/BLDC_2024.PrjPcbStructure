@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=Connection.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Connection.SchDoc|FileName=Driver.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Connection.SchDoc|FileName=Power.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Connection.SchDoc|FileName=Regulators.SchDoc|SheetNumber=3

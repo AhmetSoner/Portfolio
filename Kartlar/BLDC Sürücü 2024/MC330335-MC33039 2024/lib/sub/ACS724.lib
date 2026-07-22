@@ -1,0 +1,13 @@
+.subckt ACS724 IP+ IP- DUT_GND VCC Viout Filter
+Rp IP+ IP- 1.2m
+B1 N002 DUT_GND V=if({polarity}== 2,delay((V(IP+)-V(IP-))/1.2m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/2), 1.4u), delay((V(IP+)-V(IP-))/1.2m*{Sensitivity}*(V(Vcc)/5)+(V(Vcc)/10), 1.4u))
+R_F N003 N002 1.8k
+I1 DUT_GND VCC 10mA
+B§VSat_High1 N001 DUT_GND V=V(VCC)-0.3
+VSat_Low1 N004 DUT_GND 300mV
+XBuffer1 N003 Viout N001 N004 Viout level2 Avol=1Meg GBW=120k Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+.lib opamp.sub
+.lib UniversalOpAmp2.lib
+.backanno
+.ends ACS724
+.end

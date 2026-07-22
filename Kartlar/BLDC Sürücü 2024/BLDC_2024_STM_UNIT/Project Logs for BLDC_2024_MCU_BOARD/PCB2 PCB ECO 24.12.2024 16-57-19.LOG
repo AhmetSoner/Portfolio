@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=CAN_TX Pin=J5-13
+Removed Pin From Net: NetName=CAN_RX Pin=J5-15
+Added Component: Designator=U?(SOT96-1)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NXP USA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TJA1051T/3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SO-8 NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TJA1051T/3/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CAN_H Pin=J5-13
+Added Pin To Net: NetName=CAN_L Pin=J5-15
+Added Pin To Net: NetName=CAN_TX Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=+5 Pin=U?-3
+Added Pin To Net: NetName=CAN_RX Pin=U?-4
+Added Pin To Net: NetName=+3V3 Pin=U?-5
+Added Pin To Net: NetName=CAN_L Pin=U?-6
+Added Pin To Net: NetName=CAN_H Pin=U?-7
+Added Pin To Net: NetName=GND Pin=U?-8
+Added Member To Class: ClassName=Sheet1 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet1 Member=Component R? 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R? 60
+Added Member To Class: ClassName=Sheet1 Member=Component U? TJA1051T/3

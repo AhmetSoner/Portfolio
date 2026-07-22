@@ -1,0 +1,137 @@
+Removed Pin From Net: NetName=GND Pin=C13-2
+Removed Pin From Net: NetName=GND Pin=C14-2
+Removed Pin From Net: NetName=GND Pin=C15-2
+Removed Pin From Net: NetName=+3V3 Pin=C16-1
+Removed Pin From Net: NetName=GND Pin=C16-2
+Removed Pin From Net: NetName=CAN_L Pin=J3-13
+Removed Pin From Net: NetName=CAN_H Pin=J3-15
+Removed Pin From Net: NetName=CAN_H Pin=R8-2
+Removed Pin From Net: NetName=CAN_L Pin=R9-2
+Removed Pin From Net: NetName=CAN_TX Pin=U2-1
+Removed Pin From Net: NetName=GND Pin=U2-2
+Removed Pin From Net: NetName=CAN_RX Pin=U2-4
+Removed Pin From Net: NetName=+3V3 Pin=U2-5
+Removed Pin From Net: NetName=CAN_L Pin=U2-6
+Removed Pin From Net: NetName=CAN_H Pin=U2-7
+Removed Pin From Net: NetName=GND Pin=U2-8
+Removed Member From Class: ClassName=Sheet1 Member=C13
+Removed Member From Class: ClassName=Sheet1 Member=C14
+Removed Member From Class: ClassName=Sheet1 Member=C15
+Removed Member From Class: ClassName=Sheet1 Member=C16
+Removed Member From Class: ClassName=Sheet1 Member=R8
+Removed Member From Class: ClassName=Sheet1 Member=R9
+Removed Member From Class: ClassName=Sheet1 Member=U2
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "4.7nF"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Added Component: Designator=J?(61300511821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300511821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300511821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300511821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0603_RES)
+Added Component: Designator=R?(0603_RES)
+Added Component: Designator=U?(SOT96-1)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NXP USA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TJA1051T/3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SO-8 NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TJA1051T/3/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found radial_oscillator
+Add Component: Footprint Not Found NDK NX5032GA
+Added Pin To Net: NetName=+3.3V Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D2-1
+Add Pin To Net: Unknown Pin: Pin D2-2
+Add Pin To Net: Unknown Pin: Pin D3-1
+Add Pin To Net: Unknown Pin: Pin D3-2
+Add Pin To Net: Unknown Pin: Pin D4-1
+Add Pin To Net: Unknown Pin: Pin D4-2
+Add Pin To Net: Unknown Pin: Pin D5-1
+Add Pin To Net: Unknown Pin: Pin D5-2
+Add Pin To Net: Unknown Pin: Pin D6-1
+Add Pin To Net: Unknown Pin: Pin D6-2
+Add Pin To Net: Unknown Pin: Pin D7-1
+Add Pin To Net: Unknown Pin: Pin D7-2
+Add Pin To Net: Unknown Pin: Pin D8-1
+Add Pin To Net: Unknown Pin: Pin D8-2
+Added Pin To Net: NetName=CAN_RX Pin=J3-13
+Added Pin To Net: NetName=CAN_TX Pin=J3-15
+Added Pin To Net: NetName=CAN_H Pin=R?-2
+Added Pin To Net: NetName=CAN_L Pin=R?-2
+Added Pin To Net: NetName=CAN_TX Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=CAN_RX Pin=U?-4
+Added Pin To Net: NetName=+3.3V Pin=U?-5
+Added Pin To Net: NetName=CAN_L Pin=U?-6
+Added Pin To Net: NetName=CAN_H Pin=U?-7
+Added Pin To Net: NetName=GND Pin=U?-8
+Add Pin To Net: Unknown Pin: Pin Y1-1
+Add Pin To Net: Unknown Pin: Pin Y1-2
+Add Pin To Net: Unknown Pin: Pin Y2-1
+Add Pin To Net: Unknown Pin: Pin Y2-2
+Added Pin To Net: NetName=+5V Pin=C?-1
+Added Pin To Net: NetName=+5V Pin=C?-1
+Added Pin To Net: NetName=+5V Pin=U?-3
+Added Net: Name=+5V
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=NetC?_1 Pin=R?-1
+Added Pin To Net: NetName=NetC?_1 Pin=R?-1
+Added Net: Name=NetC?_1
+Added Member To Class: ClassName=Sheet1 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet1 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet1 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet1 Member=Component C? 4.7nF
+Add Class Member: Failed to add class member : Component D1 Yellow
+Add Class Member: Failed to add class member : Component D2 Yellow
+Add Class Member: Failed to add class member : Component D3 Yellow
+Add Class Member: Failed to add class member : Component D4 Yellow
+Add Class Member: Failed to add class member : Component D5 Yellow
+Add Class Member: Failed to add class member : Component D6 Yellow
+Add Class Member: Failed to add class member : Component D7 Yellow
+Add Class Member: Failed to add class member : Component D8 Yellow
+Added Member To Class: ClassName=Sheet1 Member=Component J? 61300511821
+Added Member To Class: ClassName=Sheet1 Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Sheet1 Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Sheet1 Member=Component U? TJA1051T/3
+Add Class Member: Failed to add class member : Component Y1 32.768KHZ
+Add Class Member: Failed to add class member : Component Y2 8 MHz

@@ -1,0 +1,5 @@
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ISO_+12_A_L Pin=C?-1
+Added Pin To Net: NetName=A_VSS_L Pin=C?-2
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V

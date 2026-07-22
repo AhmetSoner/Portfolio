@@ -1,0 +1,4 @@
+Change Footprint: Cannot match pads with new footprint in component :IC1 Footprint:ACS758
+Change Footprint: Cannot match pads with new footprint in component :IC2 Footprint:ACS758
+Change Footprint: Cannot match pads with new footprint in component :IC3 Footprint:ACS758
+Added Member To Class: ClassName=Power Member=Component IC1 ACS756KCA-050B-PFF-T

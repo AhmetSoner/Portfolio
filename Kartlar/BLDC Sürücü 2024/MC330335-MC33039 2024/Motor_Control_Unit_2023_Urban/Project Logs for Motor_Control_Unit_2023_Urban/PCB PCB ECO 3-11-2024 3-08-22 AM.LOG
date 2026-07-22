@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=VSS_A Pin=R6-1
+Removed Pin From Net: NetName=VSS_B Pin=R21-1
+Removed Pin From Net: NetName=VSS_C Pin=R38-1
+Added Pin To Net: NetName=VSS_1 Pin=R6-1
+Added Pin To Net: NetName=VSS_1 Pin=R21-1
+Added Pin To Net: NetName=VSS_1 Pin=R38-1
+Change Net Name : Old Net Name=+15 New Net Name=15V
+Change Net Name : Old Net Name=VDD New Net Name=48V
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=R8-1
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-3
+Added Pin To Net: NetName=NetJ1_3 Pin=R14-1
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetJ1_5 Pin=J1-5
+Added Pin To Net: NetName=NetJ1_5 Pin=R23-1
+Added Net: Name=NetJ1_5
+Added Pin To Net: NetName=NetJ1_7 Pin=J1-7
+Added Pin To Net: NetName=NetJ1_7 Pin=R31-1
+Added Net: Name=NetJ1_7
+Added Pin To Net: NetName=NetJ1_9 Pin=J1-9
+Added Pin To Net: NetName=NetJ1_9 Pin=R40-1
+Added Net: Name=NetJ1_9
+Added Pin To Net: NetName=NetJ1_11 Pin=J1-11
+Added Pin To Net: NetName=NetJ1_11 Pin=R46-1
+Added Net: Name=NetJ1_11
+Added Pin To Net: NetName=VDD Pin=R51-2
+Added Net: Name=VDD
+Added Room: Name=Regulator

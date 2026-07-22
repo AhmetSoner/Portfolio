@@ -1,0 +1,227 @@
+Removed Pin From Net: NetName=COUT_P Pin=P?-1
+Removed Pin From Net: NetName=COUT_N Pin=P?-2
+Removed Pin From Net: NetName=PWM_CL Pin=P?-3
+Removed Pin From Net: NetName=HC Pin=P?-4
+Removed Pin From Net: NetName=PWM_CH Pin=P?-5
+Removed Pin From Net: NetName=HB Pin=P?-6
+Removed Pin From Net: NetName=+15 Pin=P?-7
+Removed Pin From Net: NetName=HA Pin=P?-8
+Removed Pin From Net: NetName=+15 Pin=P?-9
+Removed Pin From Net: NetName=GND Pin=P?-10
+Removed Pin From Net: NetName=GND Pin=P?-11
+Removed Pin From Net: NetName=GND Pin=P?-12
+Removed Pin From Net: NetName=PWM_BL Pin=P?-13
+Removed Pin From Net: NetName=REFOUT Pin=P?-14
+Removed Pin From Net: NetName=PWM_BH Pin=P?-15
+Removed Pin From Net: NetName=+5 Pin=P?-16
+Removed Pin From Net: NetName=+15 Pin=P?-17
+Removed Pin From Net: NetName=SPEED Pin=P?-18
+Removed Pin From Net: NetName=+15 Pin=P?-19
+Removed Pin From Net: NetName=+5 Pin=P?-20
+Removed Pin From Net: NetName=+5 Pin=P?-21
+Removed Pin From Net: NetName=ENABLE Pin=P?-22
+Removed Pin From Net: NetName=PWM_AL Pin=P?-23
+Removed Pin From Net: NetName=GND Pin=P?-24
+Removed Pin From Net: NetName=PWM_AH Pin=P?-25
+Removed Pin From Net: NetName=FWD/REV Pin=P?-26
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=GND Pin=R?-1
+Removed Pin From Net: NetName=SPEED Pin=R?-1
+Removed Pin From Net: NetName=SPEED Pin=R?-1
+Removed Pin From Net: NetName=SPEED Pin=R?-1
+Removed Pin From Net: NetName=+3V3 Pin=R?-2
+Removed Pin From Net: NetName=ENABLE Pin=R?-2
+Removed Pin From Net: NetName=FWD/REV Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=NetR?_2 Pin=R?-2
+Removed Pin From Net: NetName=PB1 Pin=R?-2
+Removed Pin From Net: NetName=PB3 Pin=R?-2
+Removed Pin From Net: NetName=PC2 Pin=R?-2
+Removed Pin From Net: NetName=PC10 Pin=R?-2
+Removed Pin From Net: NetName=NetR?_2 Pin=RX?-1
+Removed Member From Class: ClassName=Sheet2 Member=P?
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Comment : Designator=R? Old Comment=0R New Comment=4.7K
+Change Component Comment : Designator=R? Old Comment=2k2 Ohms New Comment=2k2
+Change Component Comment : Designator=R? Old Comment=2k2 Ohms New Comment=2k2
+Change Component Comment : Designator=R? Old Comment=2k2 Ohms New Comment=2k2
+Change Component Comment : Designator=R? Old Comment=2k2 Ohms New Comment=4.7K
+Change Component Comment : Designator=R? Old Comment=2k2 Ohms New Comment=4.7K
+Change Component Comment : Designator=R? Old Comment=2k2 Ohms New Comment=4.7K
+Change Component Comment : Designator=R? Old Comment=4.7k Ohms New Comment=2k2
+Change Component Comment : Designator=R? Old Comment=4.7k Ohms New Comment=2k2
+Change Component Comment : Designator=R? Old Comment=4.7k Ohms New Comment=2k2
+Change Component Comment : Designator=R? Old Comment=4.7k Ohms New Comment=2k2
+Change Component Comment : Designator=R? Old Comment=4.7k Ohms New Comment=4.7K
+Change Component Comment : Designator=R? Old Comment=4.7k Ohms New Comment=4.7K
+Change Component Comment : Designator=R? Old Comment=4.7k Ohms New Comment=4.7K
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\EZBJQALM" ("\EZBJQALM")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\TXXGMTPW" ("\TXXGMTPW")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\SOXACKJZ" ("\SOXACKJZ")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\QEMGAJRP" ("\QEMGAJRP")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\YXABXRCL" ("\YXABXRCL")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\GNHPEWHO" ("\GNHPEWHO")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\ITHRCFSU" ("\ITHRCFSU")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\DJPDYXXY" ("\DJPDYXXY")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\HJDXTOMG" ("\HJDXTOMG")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\LVEYMVTQ" ("\LVEYMVTQ")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\ICHYGVAJ" ("\ICHYGVAJ")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\WDJEDBKM" ("\WDJEDBKM")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\ZIFLCFWO" ("\ZIFLCFWO")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\XNISYCTY" ("\XNISYCTY")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=J?(61302621821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61302621821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61302621821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20m?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61302621821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "26"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=FWD/REV Pin=J?-1
+Added Pin To Net: NetName=PWM_AH Pin=J?-2
+Added Pin To Net: NetName=GND Pin=J?-3
+Added Pin To Net: NetName=PWM_AL Pin=J?-4
+Added Pin To Net: NetName=ENABLE Pin=J?-5
+Added Pin To Net: NetName=+5 Pin=J?-6
+Added Pin To Net: NetName=+5 Pin=J?-7
+Added Pin To Net: NetName=+15 Pin=J?-8
+Added Pin To Net: NetName=SPEED Pin=J?-9
+Added Pin To Net: NetName=+15 Pin=J?-10
+Added Pin To Net: NetName=+5 Pin=J?-11
+Added Pin To Net: NetName=PWM_BH Pin=J?-12
+Added Pin To Net: NetName=REFOUT Pin=J?-13
+Added Pin To Net: NetName=PWM_BL Pin=J?-14
+Added Pin To Net: NetName=GND Pin=J?-15
+Added Pin To Net: NetName=GND Pin=J?-16
+Added Pin To Net: NetName=GND Pin=J?-17
+Added Pin To Net: NetName=+15 Pin=J?-18
+Added Pin To Net: NetName=HA Pin=J?-19
+Added Pin To Net: NetName=+15 Pin=J?-20
+Added Pin To Net: NetName=HB Pin=J?-21
+Added Pin To Net: NetName=PWM_CH Pin=J?-22
+Added Pin To Net: NetName=HC Pin=J?-23
+Added Pin To Net: NetName=PWM_CL Pin=J?-24
+Added Pin To Net: NetName=COUT_N Pin=J?-25
+Added Pin To Net: NetName=COUT_P Pin=J?-26
+Added Pin To Net: NetName=3V3 Pin=R?-1
+Added Pin To Net: NetName=3V3 Pin=R?-1
+Added Pin To Net: NetName=3V3 Pin=R?-1
+Added Pin To Net: NetName=ENABLE Pin=R?-1
+Added Pin To Net: NetName=FWD/REV Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=PB3 Pin=R?-1
+Added Pin To Net: NetName=PC10 Pin=R?-1
+Added Pin To Net: NetName=SPEED Pin=R?-1
+Added Pin To Net: NetName=SPEED Pin=R?-1
+Added Pin To Net: NetName=3V3 Pin=R?-2
+Added Pin To Net: NetName=3V3 Pin=R?-2
+Added Pin To Net: NetName=3V3 Pin=R?-2
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=NetR?_2 Pin=R?-2
+Added Pin To Net: NetName=PB1 Pin=R?-2
+Added Pin To Net: NetName=PC2 Pin=R?-2
+Added Pin To Net: NetName=SPEED Pin=R?-2
+Added Pin To Net: NetName=NetR?_2 Pin=RX?-1
+Added Pin To Net: NetName=+3V3 Pin=U?-3
+Added Pin To Net: NetName=COUT_N Pin=U?-9
+Added Pin To Net: NetName=COUT_P Pin=U?-10
+Added Member To Class: ClassName=Sheet2 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 1uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF 35V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 4.7uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF 35V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component J? 61302621821
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 5P
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 3 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 2 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component R? 10K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component TX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component U? 7-28Vin, 3.3Vout, 1Aout
+Added Room: Name=Sheet2

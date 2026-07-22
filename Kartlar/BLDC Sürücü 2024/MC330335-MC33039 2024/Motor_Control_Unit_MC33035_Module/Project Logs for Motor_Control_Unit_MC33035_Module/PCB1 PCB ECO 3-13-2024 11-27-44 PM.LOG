@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=15V Pin=P1-8
+Added Pin To Net: NetName=SPEED_CMD Pin=P1-8
+Added Room: Name=MC33035

@@ -1,0 +1,14 @@
+Added Component: Designator=J7(RJ458N4B)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Catalog+Section%7F1654001_CORCOM_PRODUCT_GUIDE%7F0611%7Fpdf%7FEnglish%7FENG_CS_1654001_CORCOM_PRODUCT_GUIDE_0611.pdf%7F1-6609212-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "13.58mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "RJ45-8N4-B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "592-RJ45-8N4-B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/RJ45-8N4-B?qs=LiYTmuET8LTUh2dcTsii4g%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ3_2 Pin=J7-3
+Added Pin To Net: NetName=CAN_H Pin=J7-4
+Added Pin To Net: NetName=CAN_L Pin=J7-5
+Added Pin To Net: NetName=NetJ3_1 Pin=J7-6
+Added Member To Class: ClassName=Connection Member=Component J7 RJ45-8N4-B

@@ -1,0 +1,714 @@
+Removed Pin From Net: NetName=PVDD Pin=C?-1
+Removed Pin From Net: NetName=GND Pin=C?-2
+Removed Pin From Net: NetName=NetB?_2 Pin=C?-2
+Removed Pin From Net: NetName=NetB?_2 Pin=C?-2
+Removed Pin From Net: NetName=NetB?_2 Pin=L?-2
+Removed Pin From Net: NetName=NetR?_1 Pin=R?-1
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=GND Pin=R?-2
+Removed Pin From Net: NetName=NetR?_2 Pin=R?-2
+Removed Pin From Net: NetName=+15V Pin=U?-1
+Removed Pin From Net: NetName=GND Pin=U?-2
+Removed Pin From Net: NetName=ISO_5V Pin=U?-3
+Removed Pin From Net: NetName=+45V Pin=VR?-1
+Removed Pin From Net: NetName=NetD?_2 Pin=VR?-2
+Removed Member From Class: ClassName=Power Member=P?
+Removed Member From Class: ClassName=Regulators Member=P?
+Change Component Footprint: Designator=P? Old Footprint=61232420621 New Footprint=61302221121
+Change Component Comment : Designator=P? Old Comment=61232420621 New Comment=61302221121
+Change component parameters: Designator = "P?" ("P?"); Footprint = "61232420621"; UniqueID = "\LNILWSNE" ("\LNILWSNE")
+Change component parameters (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61302221121?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61302221121?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "61302221121"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "22"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found ACS772ECB200BPFFT
+Add Component: Footprint Not Found ACS772ECB200BPFFT
+Add Component: Footprint Not Found ACS772ECB200BPFFT
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found WPME-FDSM_SIP-3_L11.6W8.5H10.5
+Add Component: Footprint Not Found WPME-FDSM_SIP-3_L11.6W8.5H10.5
+Add Component: Footprint Not Found TO170P1524X483-6N
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-2
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Added Pin To Net: NetName=+45V Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=PVDD Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=NetB?_2 Pin=C?-2
+Added Pin To Net: NetName=NetB?_2 Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Added Pin To Net: NetName=PVDD Pin=C?-2
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-3
+Add Pin To Net: Unknown Pin: Pin D?-3
+Add Pin To Net: Unknown Pin: Pin D?-3
+Add Pin To Net: Unknown Pin: Pin IC?-1
+Add Pin To Net: Unknown Pin: Pin IC?-1
+Add Pin To Net: Unknown Pin: Pin IC?-1
+Add Pin To Net: Unknown Pin: Pin IC?-2
+Add Pin To Net: Unknown Pin: Pin IC?-2
+Add Pin To Net: Unknown Pin: Pin IC?-2
+Add Pin To Net: Unknown Pin: Pin IC?-5
+Add Pin To Net: Unknown Pin: Pin IC?-5
+Add Pin To Net: Unknown Pin: Pin IC?-5
+Add Pin To Net: Unknown Pin: Pin IC?-6
+Add Pin To Net: Unknown Pin: Pin IC?-6
+Add Pin To Net: Unknown Pin: Pin IC?-6
+Add Pin To Net: Unknown Pin: Pin IC?-7
+Add Pin To Net: Unknown Pin: Pin IC?-7
+Add Pin To Net: Unknown Pin: Pin IC?-7
+Add Pin To Net: Unknown Pin: Pin IC?-8
+Add Pin To Net: Unknown Pin: Pin IC?-8
+Add Pin To Net: Unknown Pin: Pin IC?-8
+Add Pin To Net: Unknown Pin: Pin IC?-9
+Add Pin To Net: Unknown Pin: Pin IC?-9
+Add Pin To Net: Unknown Pin: Pin IC?-9
+Add Pin To Net: Unknown Pin: Pin IC?-10
+Add Pin To Net: Unknown Pin: Pin IC?-10
+Add Pin To Net: Unknown Pin: Pin IC?-10
+Add Pin To Net: Unknown Pin: Pin IC?-11
+Add Pin To Net: Unknown Pin: Pin IC?-11
+Add Pin To Net: Unknown Pin: Pin IC?-11
+Add Pin To Net: Unknown Pin: Pin IC?-12
+Add Pin To Net: Unknown Pin: Pin IC?-12
+Add Pin To Net: Unknown Pin: Pin IC?-12
+Add Pin To Net: Unknown Pin: Pin IC?-13
+Add Pin To Net: Unknown Pin: Pin IC?-13
+Add Pin To Net: Unknown Pin: Pin IC?-13
+Add Pin To Net: Unknown Pin: Pin IC?-14
+Add Pin To Net: Unknown Pin: Pin IC?-14
+Add Pin To Net: Unknown Pin: Pin IC?-14
+Add Pin To Net: Unknown Pin: Pin IC?-15
+Add Pin To Net: Unknown Pin: Pin IC?-15
+Add Pin To Net: Unknown Pin: Pin IC?-15
+Add Pin To Net: Unknown Pin: Pin IC?-16
+Add Pin To Net: Unknown Pin: Pin IC?-16
+Add Pin To Net: Unknown Pin: Pin IC?-16
+Add Pin To Net: Unknown Pin: Pin IC?-17
+Add Pin To Net: Unknown Pin: Pin IC?-17
+Add Pin To Net: Unknown Pin: Pin IC?-17
+Add Pin To Net: Unknown Pin: Pin IC?-18
+Add Pin To Net: Unknown Pin: Pin IC?-18
+Add Pin To Net: Unknown Pin: Pin IC?-18
+Add Pin To Net: Unknown Pin: Pin IC?-19
+Add Pin To Net: Unknown Pin: Pin IC?-19
+Add Pin To Net: Unknown Pin: Pin IC?-19
+Add Pin To Net: Unknown Pin: Pin IC?-20
+Add Pin To Net: Unknown Pin: Pin IC?-20
+Add Pin To Net: Unknown Pin: Pin IC?-20
+Added Pin To Net: NetName=ISO_5V Pin=L?-1
+Added Pin To Net: NetName=+15V Pin=L?-2
+Added Pin To Net: NetName=NetB?_2 Pin=L?-2
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=PVDD Pin=Q?-4
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-5
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-6
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=GND Pin=Q?-7
+Added Pin To Net: NetName=+45V Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=C_VSS_L Pin=R?-2
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=NetR?_1 Pin=R?-2
+Added Pin To Net: NetName=NetR?_2 Pin=R?-2
+Added Pin To Net: NetName=+15V Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=+5V Pin=U?-3
+Added Pin To Net: NetName=ISO_5V Pin=U?-3
+Added Pin To Net: NetName=NetR?_2 Pin=VIN?-1
+Added Pin To Net: NetName=+45V Pin=VR?-1
+Added Pin To Net: NetName=NetR?_1 Pin=VR?-1
+Added Pin To Net: NetName=+45V Pin=VR?-2
+Added Pin To Net: NetName=NetD?_2 Pin=VR?-2
+Added Pin To Net: NetName=GND Pin=VR?-3
+Add Pin To Net: Unknown Pin: Pin VR?-5
+Add Pin To Net: Unknown Pin: Pin VR?-6
+Add Net: Net with name "Net+?_1" already exists
+Add Net: Net with name "Net+?_1" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetC?_1" already exists
+Add Net: Net with name "NetC?_1" already exists
+Add Net: Net with name "NetC?_1" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Added Pin To Net: NetName=NetQ?_1 Pin=Q?-1
+Added Pin To Net: NetName=NetQ?_1 Pin=R?-2
+Added Net: Name=NetQ?_1
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Added Pin To Net: NetName=NetQ?_2 Pin=Q?-2
+Added Pin To Net: NetName=NetQ?_2 Pin=Q?-3
+Added Pin To Net: NetName=NetQ?_2 Pin=R?-2
+Added Net: Name=NetQ?_2
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-4
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-4
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-4
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-5
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-5
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-5
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-6
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-6
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-6
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-7
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-7
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-7
+Added Net: Name=NetQ?_4
+Add Net: Net with name "NetQ?_4" already exists
+Add Net: Net with name "NetQ?_4" already exists
+Add Net: Net with name "NetR?_1" already exists
+Add Net: Net with name "NetR?_1" already exists
+Add Net: Net with name "NetR?_1" already exists
+Added Member To Class: ClassName=Regulators Member=Component +? Green
+Added Member To Class: ClassName=Regulators Member=Component +? Green
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 2200pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 2200pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 2200pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 1uF 16V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Power Member=Component C? 1uF 16V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Regulators Member=Component C? 220uF 50V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 100V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 470uF 100V
+Added Member To Class: ClassName=Regulators Member=Component C? 10µF 63V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10µF 63V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 680pF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Add Class Member: Failed to add class member : Component IC? ACS758LCB-100B-PFF-T
+Add Class Member: Failed to add class member : Component IC? ACS758LCB-100B-PFF-T
+Add Class Member: Failed to add class member : Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Regulators Member=Component L? 47uH 2A
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Power Member=Component MP? M6 x 10mm
+Added Member To Class: ClassName=Power Member=Component MP? M6 x 10mm
+Added Member To Class: ClassName=Driver Member=Component P? 61302221121
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 20K Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 11k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 10K Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 22K Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Driver Member=Component U? UCC21520DWR
+Added Member To Class: ClassName=Driver Member=Component U? UCC21520DWR
+Added Member To Class: ClassName=Regulators Member=Component U? 8-28Vin, 5Vout, 1Aout
+Added Member To Class: ClassName=Regulators Member=Component VR? LM2596S-5.0

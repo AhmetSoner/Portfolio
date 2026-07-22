@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=R34-2
+Added Pin To Net: NetName=GND Pin=J3-5
+Added Pin To Net: NetName=NetR34_2 Pin=R34-2
+Add Net: Net with name "+45V" already exists
+Add Net: Net with name "Shunt" already exists

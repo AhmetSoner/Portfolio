@@ -1,0 +1,623 @@
+Removed Pin From Net: NetName=PVDD Pin=C?-1
+Removed Pin From Net: NetName=GND Pin=C?-2
+Removed Pin From Net: NetName=NetB?_2 Pin=L?-2
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=PHASE_C Pin=MP?-1
+Removed Pin From Net: NetName=NetR?_1 Pin=R?-1
+Removed Pin From Net: NetName=NetR?_1 Pin=R?-2
+Removed Pin From Net: NetName=+15V Pin=U?-1
+Removed Pin From Net: NetName=GND Pin=U?-2
+Removed Pin From Net: NetName=ISO_5V Pin=U?-3
+Removed Pin From Net: NetName=+45V Pin=VR?-1
+Removed Pin From Net: NetName=NetD?_2 Pin=VR?-2
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found ACS772ECB200BPFFT
+Add Component: Footprint Not Found ACS772ECB200BPFFT
+Added Component: Designator=J?(61302621821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61302621821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61302621821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20m?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61302621821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "26"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Added Component: Designator=P?(61302621121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61302621121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61302621121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20m?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61302621121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "26"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found WPME-FDSM_SIP-3_L11.6W8.5H10.5
+Add Component: Footprint Not Found WPME-FDSM_SIP-3_L11.6W8.5H10.5
+Add Component: Footprint Not Found TO170P1524X483-6N
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-1
+Add Pin To Net: Unknown Pin: Pin B?-2
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-4
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Add Pin To Net: Unknown Pin: Pin B?-5
+Added Pin To Net: NetName=+45V Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=PVDD Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-3
+Add Pin To Net: Unknown Pin: Pin D?-3
+Add Pin To Net: Unknown Pin: Pin D?-3
+Added Pin To Net: NetName=PHASE_B Pin=IC?-5
+Added Pin To Net: NetName=PHASE_B Pin=IC?-5
+Added Pin To Net: NetName=PHASE_B Pin=IC?-6
+Added Pin To Net: NetName=PHASE_B Pin=IC?-7
+Added Pin To Net: NetName=PHASE_B Pin=IC?-8
+Added Pin To Net: NetName=PHASE_B Pin=IC?-9
+Added Pin To Net: NetName=PHASE_B Pin=IC?-10
+Added Pin To Net: NetName=PHASE_B Pin=IC?-11
+Added Pin To Net: NetName=PHASE_B Pin=IC?-12
+Added Pin To Net: NetName=PHASE_B Pin=IC?-13
+Added Pin To Net: NetName=PHASE_B Pin=IC?-14
+Added Pin To Net: NetName=PHASE_B Pin=IC?-14
+Added Pin To Net: NetName=PHASE_B Pin=IC?-14
+Added Pin To Net: NetName=PHASE_B Pin=IC?-15
+Added Pin To Net: NetName=PHASE_B Pin=IC?-16
+Added Pin To Net: NetName=PHASE_B Pin=IC?-17
+Added Pin To Net: NetName=PHASE_B Pin=IC?-18
+Added Pin To Net: NetName=PHASE_B Pin=IC?-19
+Added Pin To Net: NetName=PHASE_B Pin=IC?-20
+Added Pin To Net: NetName=GND Pin=J?-9
+Added Pin To Net: NetName=GND Pin=J?-11
+Added Pin To Net: NetName=GND Pin=J?-12
+Added Pin To Net: NetName=GND Pin=J?-23
+Added Pin To Net: NetName=ISO_5V Pin=L?-1
+Added Pin To Net: NetName=+15V Pin=L?-2
+Added Pin To Net: NetName=NetB?_2 Pin=L?-2
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=GND Pin=P?-10
+Added Pin To Net: NetName=GND Pin=P?-11
+Added Pin To Net: NetName=GND Pin=P?-12
+Added Pin To Net: NetName=GND Pin=P?-24
+Added Pin To Net: NetName=+45V Pin=R?-1
+Added Pin To Net: NetName=ISO_-12_C_L Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=C_VSS_L Pin=R?-2
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=NetR?_1 Pin=R?-2
+Added Pin To Net: NetName=+15V Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=+5V Pin=U?-3
+Added Pin To Net: NetName=ISO_5V Pin=U?-3
+Added Pin To Net: NetName=+45V Pin=VR?-1
+Added Pin To Net: NetName=NetR?_1 Pin=VR?-1
+Added Pin To Net: NetName=+45V Pin=VR?-2
+Added Pin To Net: NetName=NetD?_2 Pin=VR?-2
+Added Pin To Net: NetName=GND Pin=VR?-3
+Add Pin To Net: Unknown Pin: Pin VR?-5
+Add Pin To Net: Unknown Pin: Pin VR?-6
+Change Net Name : Old Net Name=PHASE_C New Net Name=PHASE_A
+Added Pin To Net: NetName=+5 Pin=J?-15
+Added Pin To Net: NetName=+5 Pin=J?-19
+Added Pin To Net: NetName=+5 Pin=J?-22
+Added Pin To Net: NetName=+5 Pin=P?-16
+Added Pin To Net: NetName=+5 Pin=P?-20
+Added Pin To Net: NetName=+5 Pin=P?-21
+Added Net: Name=+5
+Added Pin To Net: NetName=+15 Pin=J?-8
+Added Pin To Net: NetName=+15 Pin=J?-10
+Added Pin To Net: NetName=+15 Pin=J?-18
+Added Pin To Net: NetName=+15 Pin=J?-20
+Added Pin To Net: NetName=+15 Pin=P?-7
+Added Pin To Net: NetName=+15 Pin=P?-9
+Added Pin To Net: NetName=+15 Pin=P?-17
+Added Pin To Net: NetName=+15 Pin=P?-19
+Added Net: Name=+15
+Added Pin To Net: NetName=ALTBOAR Pin=P?-26
+Added Net: Name=ALTBOAR
+Added Pin To Net: NetName=COUT_N Pin=J?-1
+Added Pin To Net: NetName=COUT_N Pin=P?-2
+Added Net: Name=COUT_N
+Added Pin To Net: NetName=COUT_P Pin=J?-2
+Added Pin To Net: NetName=COUT_P Pin=P?-1
+Added Net: Name=COUT_P
+Added Pin To Net: NetName=ENABLE Pin=J?-21
+Added Pin To Net: NetName=ENABLE Pin=P?-22
+Added Net: Name=ENABLE
+Added Pin To Net: NetName=FWD/REV Pin=J?-25
+Added Net: Name=FWD/REV
+Added Pin To Net: NetName=HA Pin=J?-7
+Added Pin To Net: NetName=HA Pin=P?-8
+Added Net: Name=HA
+Added Pin To Net: NetName=HB Pin=J?-5
+Added Pin To Net: NetName=HB Pin=P?-6
+Added Net: Name=HB
+Added Pin To Net: NetName=HC Pin=J?-3
+Added Pin To Net: NetName=HC Pin=P?-4
+Added Net: Name=HC
+Add Net: Net with name "Net+?_1" already exists
+Add Net: Net with name "Net+?_1" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetB?_2" already exists
+Add Net: Net with name "NetC?_1" already exists
+Add Net: Net with name "NetC?_1" already exists
+Add Net: Net with name "NetC?_1" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_A" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetD?_C" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_1" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_2" already exists
+Add Net: Net with name "NetQ?_4" already exists
+Add Net: Net with name "NetQ?_4" already exists
+Add Net: Net with name "NetR?_1" already exists
+Add Net: Net with name "NetR?_1" already exists
+Add Net: Net with name "NetR?_1" already exists
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=MP?-1
+Added Pin To Net: NetName=PHASE_C Pin=IC?-5
+Added Pin To Net: NetName=PHASE_C Pin=IC?-5
+Added Pin To Net: NetName=PHASE_C Pin=IC?-6
+Added Pin To Net: NetName=PHASE_C Pin=IC?-7
+Added Pin To Net: NetName=PHASE_C Pin=IC?-8
+Added Pin To Net: NetName=PHASE_C Pin=IC?-9
+Added Pin To Net: NetName=PHASE_C Pin=IC?-10
+Added Pin To Net: NetName=PHASE_C Pin=IC?-11
+Added Pin To Net: NetName=PHASE_C Pin=IC?-12
+Added Pin To Net: NetName=PHASE_C Pin=IC?-13
+Added Pin To Net: NetName=PHASE_C Pin=IC?-14
+Added Pin To Net: NetName=PHASE_C Pin=IC?-14
+Added Pin To Net: NetName=PHASE_C Pin=IC?-14
+Added Pin To Net: NetName=PHASE_C Pin=IC?-15
+Added Pin To Net: NetName=PHASE_C Pin=IC?-16
+Added Pin To Net: NetName=PHASE_C Pin=IC?-17
+Added Pin To Net: NetName=PHASE_C Pin=IC?-18
+Added Pin To Net: NetName=PHASE_C Pin=IC?-19
+Added Pin To Net: NetName=PHASE_C Pin=IC?-20
+Added Net: Name=PHASE_C
+Added Pin To Net: NetName=PWM_AH Pin=J?-26
+Added Pin To Net: NetName=PWM_AH Pin=P?-25
+Added Net: Name=PWM_AH
+Added Pin To Net: NetName=PWM_AL Pin=J?-24
+Added Pin To Net: NetName=PWM_AL Pin=P?-23
+Added Net: Name=PWM_AL
+Added Pin To Net: NetName=PWM_BH Pin=J?-16
+Added Pin To Net: NetName=PWM_BH Pin=P?-15
+Added Net: Name=PWM_BH
+Added Pin To Net: NetName=PWM_BL Pin=J?-14
+Added Pin To Net: NetName=PWM_BL Pin=P?-13
+Added Net: Name=PWM_BL
+Added Pin To Net: NetName=PWM_CH Pin=J?-6
+Added Pin To Net: NetName=PWM_CH Pin=P?-5
+Added Net: Name=PWM_CH
+Added Pin To Net: NetName=PWM_CL Pin=J?-4
+Added Pin To Net: NetName=PWM_CL Pin=P?-3
+Added Net: Name=PWM_CL
+Added Pin To Net: NetName=REFOUT Pin=J?-13
+Added Pin To Net: NetName=REFOUT Pin=P?-14
+Added Net: Name=REFOUT
+Added Pin To Net: NetName=SPEED Pin=J?-17
+Added Pin To Net: NetName=SPEED Pin=P?-18
+Added Net: Name=SPEED
+Added Member To Class: ClassName=Regulators Member=Component +? Green
+Added Member To Class: ClassName=Regulators Member=Component +? Green
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Add Class Member: Failed to add class member : Component B? R1SE-0512_H2-R
+Added Member To Class: ClassName=Driver Member=Component C? 2200pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 2200pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 1uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 2200pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 1uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 10uF Tantalum
+Added Member To Class: ClassName=Driver Member=Component C? 10uF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 220pF 50V
+Added Member To Class: ClassName=Driver Member=Component C? 100nF 50V
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 1uF 16V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 1uF 16V
+Added Member To Class: ClassName=Power Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 4.7uF
+Added Member To Class: ClassName=Power Member=Component C? 470uF 200V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 680pF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10µF 63V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 470uF 100V
+Added Member To Class: ClassName=Regulators Member=Component C? 220uF 50V
+Added Member To Class: ClassName=Regulators Member=Component C? 6.8uF
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 100V
+Added Member To Class: ClassName=Regulators Member=Component C? 10µF 63V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF
+Added Member To Class: ClassName=Regulators Member=Component C? 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? SS14
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? B0530W-7-F
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E
+Added Member To Class: ClassName=Power Member=Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Power Member=Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Power Member=Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Driver Member=Component J? 61302621821
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? 47uH 2A
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Regulators Member=Component L? RLS-126-R
+Added Member To Class: ClassName=Power Member=Component MP? M6 x 10mm
+Added Member To Class: ClassName=Power Member=Component MP? M6 x 10mm
+Added Member To Class: ClassName=Driver Member=Component P? 61302621121
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Power Member=Component Q? FDB0260N1007L
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 76.5 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 51 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 109 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 0 Ohms
+Added Member To Class: ClassName=Driver Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Power Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Power Member=Component R? 3 Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 11k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 10K Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 20K Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 22K Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Driver Member=Component U? UCC21520DWR
+Added Member To Class: ClassName=Driver Member=Component U? UCC21520DWR
+Added Member To Class: ClassName=Regulators Member=Component U? 8-28Vin, 5Vout, 1Aout
+Added Member To Class: ClassName=Regulators Member=Component VR? LM2596S-5.0
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2

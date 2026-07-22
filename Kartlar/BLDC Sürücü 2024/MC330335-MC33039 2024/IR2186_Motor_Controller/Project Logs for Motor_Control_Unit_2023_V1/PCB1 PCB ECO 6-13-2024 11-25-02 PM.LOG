@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=+5V Pin=J3-1
+Removed Pin From Net: NetName=NetJ2_2 Pin=J3-3
+Removed Pin From Net: NetName=NetJ2_3 Pin=J3-5
+Removed Pin From Net: NetName=NetJ2_4 Pin=J3-7
+Removed Pin From Net: NetName=SPEED Pin=J3-9
+Removed Pin From Net: NetName=SPEED_2 Pin=J3-11
+Removed Pin From Net: NetName=PWM_CH Pin=J3-13
+Removed Pin From Net: NetName=PWM_CL Pin=J3-15
+Removed Pin From Net: NetName=PWM_BH Pin=J3-17
+Removed Pin From Net: NetName=PWM_BL Pin=J3-19
+Removed Pin From Net: NetName=PWM_AH Pin=J3-21
+Removed Pin From Net: NetName=PWM_AL Pin=J3-23
+Added Pin To Net: NetName=PWM_CL Pin=J3-1
+Added Pin To Net: NetName=PWM_CH Pin=J3-3
+Added Pin To Net: NetName=PWM_BL Pin=J3-11
+Added Pin To Net: NetName=PWM_BH Pin=J3-13
+Added Pin To Net: NetName=PWM_AL Pin=J3-21
+Added Pin To Net: NetName=PWM_AH Pin=J3-23
+Added Room: Name=Power
+Added Room: Name=Regulator

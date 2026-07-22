@@ -1,0 +1,7 @@
+Add Net: Net with name "+45V" already exists
+Added Pin To Net: NetName=ENABLE Pin=J3-8
+Added Pin To Net: NetName=ENABLE Pin=P2-1
+Added Net: Name=ENABLE
+Added Pin To Net: NetName=FWD/REV Pin=J3-6
+Added Pin To Net: NetName=FWD/REV Pin=P1-1
+Added Net: Name=FWD/REV

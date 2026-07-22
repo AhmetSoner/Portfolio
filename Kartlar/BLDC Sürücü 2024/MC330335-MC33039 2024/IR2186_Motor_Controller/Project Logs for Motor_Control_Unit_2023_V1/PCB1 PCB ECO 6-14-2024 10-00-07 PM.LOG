@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+45V Pin=C45-1
+Removed Pin From Net: NetName=+45V Pin=C47-2
+Removed Pin From Net: NetName=+45V Pin=IC4-1
+Added Pin To Net: NetName=+5V Pin=R54-1
+Added Pin To Net: NetName=+15V Pin=R55-1
+Add Net: Net with name "+45V" already exists

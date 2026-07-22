@@ -1,0 +1,11 @@
+Added Pin To Net: NetName=+15 Pin=P1-8
+Added Pin To Net: NetName=+15 Pin=P1-10
+Added Pin To Net: NetName=+15 Pin=P1-12
+Added Pin To Net: NetName=GND Pin=P1-20
+Added Pin To Net: NetName=GND Pin=P1-22
+Added Pin To Net: NetName=GND Pin=P1-24
+Added Pin To Net: NetName=+5V Pin=P1-14
+Added Pin To Net: NetName=+5V Pin=P1-16
+Added Pin To Net: NetName=+5V Pin=P1-18
+Added Net: Name=+5V
+Added Room: Name=MC33035

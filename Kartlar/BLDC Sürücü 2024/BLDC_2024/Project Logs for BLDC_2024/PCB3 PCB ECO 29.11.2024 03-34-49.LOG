@@ -1,0 +1,58 @@
+Removed Pin From Net: NetName=ISO_+12_A_H Pin=D1-1
+Removed Pin From Net: NetName=ISO_+12_A_H Pin=D1-3
+Removed Pin From Net: NetName=ISO_+12_B_H Pin=D6-1
+Removed Pin From Net: NetName=ISO_+12_B_H Pin=D6-3
+Removed Pin From Net: NetName=ISO_+12_C_H Pin=D11-1
+Removed Pin From Net: NetName=ISO_+12_C_H Pin=D11-3
+Removed Pin From Net: NetName=NetC8_2 Pin=R8-2
+Removed Pin From Net: NetName=NetC14_2 Pin=R15-2
+Removed Pin From Net: NetName=NetC22_2 Pin=R23-2
+Removed Pin From Net: NetName=NetC28_2 Pin=R30-2
+Removed Pin From Net: NetName=NetC36_2 Pin=R38-2
+Removed Pin From Net: NetName=NetC42_2 Pin=R45-2
+Removed Member From Class: ClassName=Driver Member=R8
+Removed Member From Class: ClassName=Driver Member=R15
+Removed Member From Class: ClassName=Driver Member=R23
+Removed Member From Class: ClassName=Driver Member=R30
+Removed Member From Class: ClassName=Driver Member=R38
+Removed Member From Class: ClassName=Driver Member=R45
+Change Component Footprint: Designator=D1 Old Footprint=TO-252-2_CRW New Footprint=DO-214AC
+Change Component Footprint: Designator=D6 Old Footprint=TO-252-2_CRW New Footprint=DO-214AC
+Change Component Footprint: Designator=D11 Old Footprint=TO-252-2_CRW New Footprint=DO-214AC
+Change Component Comment : Designator=D1 Old Comment=C4D02120E-TR New Comment=B0530W-7-F
+Change Component Comment : Designator=D6 Old Comment=C4D02120E-TR New Comment=B0530W-7-F
+Change Component Comment : Designator=D11 Old Comment=C4D02120E-TR New Comment=B0530W-7-F
+Change Component Designator: OldDesignator=C? NewDesignator=C4
+Change component parameters: Designator = "D1" ("D1"); Footprint = "TO-252-2_CRW"; UniqueID = "\NLBXHRUX" ("\NLBXHRUX")
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "SS14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SMA-2 ON Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "D6" ("D6"); Footprint = "TO-252-2_CRW"; UniqueID = "\AQQCBZXW" ("\AQQCBZXW")
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "SS14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SMA-2 ON Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "D11" ("D11"); Footprint = "TO-252-2_CRW"; UniqueID = "\HQPZYTTF" ("\HQPZYTTF")
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "SS14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SMA-2 ON Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ISO_+12_A_H Pin=D1-K
+Added Pin To Net: NetName=ISO_+12_B_H Pin=D6-K
+Added Pin To Net: NetName=ISO_+12_C_H Pin=D11-K
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=R1-1
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD6_A Pin=D6-A
+Added Pin To Net: NetName=NetD6_A Pin=R16-1
+Added Net: Name=NetD6_A
+Added Pin To Net: NetName=NetD11_A Pin=D11-A
+Added Pin To Net: NetName=NetD11_A Pin=R31-1
+Added Net: Name=NetD11_A

@@ -1,0 +1,12 @@
+Added Component: Designator=+3.3V(0805LED)
+Added Component: Designator=R57(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20K Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=+3.3V-2
+Added Pin To Net: NetName=+3.3V Pin=R57-1
+Add Net: Net with name "+45V" already exists
+Added Pin To Net: NetName=Net+3.3V_1 Pin=+3.3V-1
+Added Pin To Net: NetName=Net+3.3V_1 Pin=R57-2
+Added Net: Name=Net+3.3V_1
+Added Member To Class: ClassName=Regulator Member=Component +3.3V Green
+Added Member To Class: ClassName=Regulator Member=Component R57 2k2 Ohms

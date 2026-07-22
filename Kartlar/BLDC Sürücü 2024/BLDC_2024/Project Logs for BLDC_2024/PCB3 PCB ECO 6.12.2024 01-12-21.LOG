@@ -1,0 +1,16 @@
+Added Component: Designator=J3(3pin_100mil)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/konnektor-ve-baglanti-elemanlari/konnektor-cesitleri/pcb-konnektorler/DS1070-3MVV6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part"; Value = "DS1070 3 Pin"; VariantName = "[No Variations]"
+Added Component: Designator=J6(4PIN_100MIL)
+Added Pin To Net: NetName=NetJ3_1 Pin=J3-1
+Added Pin To Net: NetName=NetJ3_2 Pin=J3-2
+Added Pin To Net: NetName=GND Pin=J3-3
+Added Pin To Net: NetName=+5V Pin=J6-1
+Added Pin To Net: NetName=CAN_H Pin=J6-2
+Added Pin To Net: NetName=CAN_L Pin=J6-3
+Added Pin To Net: NetName=GND Pin=J6-4
+Added Pin To Net: NetName=GND Pin=J7-MH3
+Added Pin To Net: NetName=GND Pin=J7-MH4
+Added Member To Class: ClassName=Connection Member=Component J3 DS1070 3 Pin
+Added Member To Class: ClassName=Connection Member=Component J6 DS1070 4 Pin

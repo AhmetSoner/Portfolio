@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=Shunt Pin=C48-1
+Change Component Comment : Designator=R58 Old Comment=1k Ohms New Comment=35k Ohms
+Change Component Comment : Designator=R52 Old Comment=10k Ohms New Comment=11k Ohms
+Change Component Comment : Designator=C48 Old Comment=100nF 25V New Comment=680pF 25V
+Change Component Comment : Designator=R51 Old Comment=118.9k Ohms New Comment=1k Ohms
+Change Component Comment : Designator=C45 Old Comment=680uF 50V New Comment=220uF 50V
+Change component parameters: Designator = "C48" ("C48"); Footprint = "0805_CAP"; UniqueID = "\SFVTXMLQ" ("\SFVTXMLQ")
+Change component parameters (AddParameter): Name = "Value"; Value = "680pF 25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R58" ("R58"); Footprint = "0805_RES"; UniqueID = "\VYYFFSEP" ("\VYYFFSEP")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "35k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(TO-247)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/Product/Detail/480417/IRFP4310ZPBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://cdn.ozdisan.com/ETicaret_Dosya/480417_1248700.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rate"; Value = "120A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartValue"; Value = "IRFP4310ZPbF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rate"; Value = "100V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetIC4_4 Pin=C48-1
+Change Net Name : Old Net Name=NetIC4_4 New Net Name=NetC48_1
+Added Member To Class: ClassName=Power Member=Component Q4 IRFP4310ZPbF
+Added Member To Class: ClassName=Power Member=Component Q? IRFP4310ZPbF
+Added Room: Name=Power
+Added Room: Name=Regulator

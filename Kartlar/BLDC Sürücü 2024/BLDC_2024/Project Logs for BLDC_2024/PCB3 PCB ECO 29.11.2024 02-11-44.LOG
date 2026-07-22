@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Change Component Designator: OldDesignator=D? NewDesignator=D6
+Change Component Designator: OldDesignator=D? NewDesignator=D11
+Change Component Designator: OldDesignator=R? NewDesignator=R16
+Change Component Designator: OldDesignator=R? NewDesignator=R31
+Change Net Name : Old Net Name=NetD?_2 New Net Name=NetD1_2
+Change Net Name : Old Net Name=NetD?_2 New Net Name=NetD6_2
+Change Net Name : Old Net Name=NetD?_2 New Net Name=NetD11_2
+Added Member To Class: ClassName=Driver Member=Component D1 C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component D6 C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component R16 2 Ohms

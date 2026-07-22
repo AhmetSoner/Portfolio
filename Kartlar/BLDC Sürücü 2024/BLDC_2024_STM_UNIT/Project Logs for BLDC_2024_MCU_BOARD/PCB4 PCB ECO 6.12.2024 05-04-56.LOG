@@ -1,0 +1,44 @@
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found radial_oscillator
+Add Component: Footprint Not Found NDK NX5032GA
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D2-1
+Add Pin To Net: Unknown Pin: Pin D2-2
+Add Pin To Net: Unknown Pin: Pin D3-1
+Add Pin To Net: Unknown Pin: Pin D3-2
+Add Pin To Net: Unknown Pin: Pin D4-1
+Add Pin To Net: Unknown Pin: Pin D4-2
+Add Pin To Net: Unknown Pin: Pin D5-1
+Add Pin To Net: Unknown Pin: Pin D5-2
+Add Pin To Net: Unknown Pin: Pin D6-1
+Add Pin To Net: Unknown Pin: Pin D6-2
+Add Pin To Net: Unknown Pin: Pin D7-1
+Add Pin To Net: Unknown Pin: Pin D7-2
+Add Pin To Net: Unknown Pin: Pin D8-1
+Add Pin To Net: Unknown Pin: Pin D8-2
+Add Pin To Net: Unknown Pin: Pin Y1-1
+Add Pin To Net: Unknown Pin: Pin Y1-2
+Add Pin To Net: Unknown Pin: Pin Y2-1
+Add Pin To Net: Unknown Pin: Pin Y2-2
+Added Member To Class: ClassName=Sheet1 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet1 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet1 Member=Component C? 100nF
+Add Class Member: Failed to add class member : Component D1 Yellow
+Add Class Member: Failed to add class member : Component D2 Yellow
+Add Class Member: Failed to add class member : Component D3 Yellow
+Add Class Member: Failed to add class member : Component D4 Yellow
+Add Class Member: Failed to add class member : Component D5 Yellow
+Add Class Member: Failed to add class member : Component D6 Yellow
+Add Class Member: Failed to add class member : Component D7 Yellow
+Add Class Member: Failed to add class member : Component D8 Yellow
+Added Member To Class: ClassName=Sheet1 Member=Component R? 1k Ohms
+Add Class Member: Failed to add class member : Component Y1 32.768KHZ
+Add Class Member: Failed to add class member : Component Y2 8 MHz

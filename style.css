@@ -2393,6 +2393,10 @@ section {
     border-color: rgba(255, 52, 52, 0.58);
 }
 
+#block-subsystems .block-title {
+    display: none;
+}
+
 .project-output-access {
     margin-top: 24px;
     padding: 18px;

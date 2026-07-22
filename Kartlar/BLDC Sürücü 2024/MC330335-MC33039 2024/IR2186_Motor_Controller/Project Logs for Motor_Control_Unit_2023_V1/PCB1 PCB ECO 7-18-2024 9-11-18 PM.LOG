@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Pin To Net: NetName=GND Pin=J3-18
+Added Pin To Net: NetName=GND Pin=J3-24
+Added Member To Class: ClassName=Power Member=Component R33 1k Ohms

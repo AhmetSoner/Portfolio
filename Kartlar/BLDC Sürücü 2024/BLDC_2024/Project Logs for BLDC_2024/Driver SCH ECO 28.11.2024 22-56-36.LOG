@@ -1,0 +1,9 @@
+Change Pin Designator/Name:  Old Designator=C?-1 Old Name=P New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=C?-2 Old Name=N New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=IC?-1 Old Name=VCC New Designator =VCC New Name=1
+Change Pin Designator/Name:  Old Designator=IC?-5 Old Name=IP-_1 New Designator =IP-_1 New Name=5
+Change Pin Designator/Name:  Old Designator=IC?-6 Old Name=IP-_2 New Designator =IP-_2 New Name=6
+Change Pin Designator/Name:  Old Designator=IC?-7 Old Name=IP-_3 New Designator =IP-_3 New Name=7
+Change Pin Designator/Name:  Old Designator=IC?-8 Old Name=IP-_4 New Designator =IP-_4 New Name=8
+Change Pin Designator/Name:  Old Designator=R?-2 Old Name= New Designator = New Name=2
+Change Pin Designator/Name:  Old Designator=VR?-2 Old Name=OUTPUT New Designator =OUTPUT New Name=2

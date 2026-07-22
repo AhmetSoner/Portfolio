@@ -1,0 +1,242 @@
+Added Component: Designator=C1(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "750pF 25V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "750pF 25V"; VariantName = "[No Variations]"
+Added Component: Designator=C5(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C6(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "22uF 25V"; VariantName = "[No Variations]"
+Added Component: Designator=C7(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "10nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C8(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C9(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 100V"; VariantName = "[No Variations]"
+Added Component: Designator=C10(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C11(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C12(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=IC1(SOIC16)
+Add component (AddParameter): Name = "PartNumber"; Value = "CD4049UB"; VariantName = "[No Variations]"
+Added Component: Designator=IC2(SOIC8)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.onsemi.com/pdf/datasheet/mc33039-d.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "MC33039"; VariantName = "[No Variations]"
+Added Component: Designator=IC3(SOIC-24 WB)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.onsemi.com/pdf/datasheet/mc33035-d.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "MC33035"; VariantName = "[No Variations]"
+Added Component: Designator=LED1(0805LED)
+Added Component: Designator=P1(61302421121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61302421121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61302421121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61302421121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "24"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=R1(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1M Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R2(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R3(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R4(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R5(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R6(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R7(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R8(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4.7K Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R9(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "5.1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R10(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4.99K Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R11(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R12(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R13(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R14(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=C9-2
+Added Pin To Net: NetName=+5 Pin=R12-2
+Added Pin To Net: NetName=+5 Pin=R13-2
+Added Pin To Net: NetName=+5 Pin=R14-2
+Added Net: Name=+5
+Added Pin To Net: NetName=+15 Pin=C5-2
+Added Pin To Net: NetName=+15 Pin=C6-2
+Added Pin To Net: NetName=+15 Pin=IC1-1
+Added Pin To Net: NetName=+15 Pin=IC3-17
+Added Pin To Net: NetName=+15 Pin=IC3-18
+Added Pin To Net: NetName=+15 Pin=LED1-1
+Added Net: Name=+15
+Added Pin To Net: NetName=BRAKE Pin=IC3-23
+Added Pin To Net: NetName=BRAKE Pin=P1-19
+Added Net: Name=BRAKE
+Added Pin To Net: NetName=Close_Loop Pin=C8-1
+Added Pin To Net: NetName=Close_Loop Pin=IC3-12
+Added Pin To Net: NetName=Close_Loop Pin=R5-1
+Added Pin To Net: NetName=Close_Loop Pin=R11-1
+Added Net: Name=Close_Loop
+Added Pin To Net: NetName=CS_IN! Pin=C4-1
+Added Pin To Net: NetName=CS_IN! Pin=IC3-15
+Added Pin To Net: NetName=CS_IN! Pin=R7-2
+Added Net: Name=CS_IN!
+Added Pin To Net: NetName=CS_IN Pin=C4-2
+Added Pin To Net: NetName=CS_IN Pin=IC3-9
+Added Pin To Net: NetName=CS_IN Pin=R6-2
+Added Net: Name=CS_IN
+Added Pin To Net: NetName=Driver_AH Pin=IC1-3
+Added Pin To Net: NetName=Driver_AH Pin=P1-1
+Added Net: Name=Driver_AH
+Added Pin To Net: NetName=Driver_BH Pin=IC1-5
+Added Pin To Net: NetName=Driver_BH Pin=P1-3
+Added Net: Name=Driver_BH
+Added Pin To Net: NetName=Driver_CH Pin=IC1-7
+Added Pin To Net: NetName=Driver_CH Pin=P1-5
+Added Net: Name=Driver_CH
+Added Pin To Net: NetName=ENABLE Pin=P1-21
+Added Pin To Net: NetName=ENABLE Pin=R8-1
+Added Net: Name=ENABLE
+Added Pin To Net: NetName=FOR/REV Pin=IC3-3
+Added Pin To Net: NetName=FOR/REV Pin=P1-17
+Added Net: Name=FOR/REV
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=IC1-8
+Added Pin To Net: NetName=GND Pin=IC2-7
+Added Pin To Net: NetName=GND Pin=IC3-16
+Added Net: Name=GND
+Added Pin To Net: NetName=HALL_A Pin=C11-2
+Added Pin To Net: NetName=HALL_A Pin=C12-2
+Added Pin To Net: NetName=HALL_A Pin=IC2-3
+Added Pin To Net: NetName=HALL_A Pin=IC3-4
+Added Pin To Net: NetName=HALL_A Pin=P1-2
+Added Pin To Net: NetName=HALL_A Pin=P1-4
+Added Pin To Net: NetName=HALL_A Pin=R12-1
+Added Pin To Net: NetName=HALL_A Pin=R14-1
+Added Net: Name=HALL_A
+Added Pin To Net: NetName=HALL_B Pin=IC2-2
+Added Pin To Net: NetName=HALL_B Pin=IC3-5
+Added Net: Name=HALL_B
+Added Pin To Net: NetName=HALL_C Pin=C10-2
+Added Pin To Net: NetName=HALL_C Pin=IC2-1
+Added Pin To Net: NetName=HALL_C Pin=IC3-6
+Added Pin To Net: NetName=HALL_C Pin=P1-6
+Added Pin To Net: NetName=HALL_C Pin=R13-1
+Added Net: Name=HALL_C
+Added Pin To Net: NetName=HALL_DEG Pin=IC3-22
+Added Pin To Net: NetName=HALL_DEG Pin=P1-23
+Added Net: Name=HALL_DEG
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=R2-2
+Added Pin To Net: NetName=NetC1_1 Pin=R3-2
+Added Pin To Net: NetName=NetC1_1 Pin=R4-2
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=IC2-6
+Added Pin To Net: NetName=NetC3_2 Pin=R1-1
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=NetC7_2 Pin=IC3-10
+Added Pin To Net: NetName=NetC7_2 Pin=R9-2
+Added Net: Name=NetC7_2
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=IC3-13
+Added Pin To Net: NetName=NetC8_2 Pin=R11-2
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetIC2_5 Pin=IC2-5
+Added Pin To Net: NetName=NetIC2_5 Pin=R5-2
+Added Net: Name=NetIC2_5
+Added Pin To Net: NetName=NetIC3_7 Pin=IC3-7
+Added Pin To Net: NetName=NetIC3_7 Pin=R8-2
+Added Net: Name=NetIC3_7
+Added Pin To Net: NetName=NetIC3_14 Pin=R10-1
+Added Net: Name=NetIC3_14
+Added Pin To Net: NetName=NetLED1_2 Pin=LED1-2
+Added Pin To Net: NetName=NetLED1_2 Pin=R10-2
+Added Net: Name=NetLED1_2
+Added Pin To Net: NetName=PWM_HA Pin=IC1-2
+Added Pin To Net: NetName=PWM_HA Pin=IC3-2
+Added Pin To Net: NetName=PWM_HA Pin=R2-1
+Added Net: Name=PWM_HA
+Added Pin To Net: NetName=PWM_HB Pin=IC1-4
+Added Pin To Net: NetName=PWM_HB Pin=IC3-1
+Added Pin To Net: NetName=PWM_HB Pin=R3-1
+Added Net: Name=PWM_HB
+Added Pin To Net: NetName=PWM_HC Pin=IC1-6
+Added Pin To Net: NetName=PWM_HC Pin=IC3-24
+Added Pin To Net: NetName=PWM_HC Pin=R4-1
+Added Net: Name=PWM_HC
+Added Pin To Net: NetName=PWM_LA Pin=IC3-21
+Added Pin To Net: NetName=PWM_LA Pin=P1-7
+Added Net: Name=PWM_LA
+Added Pin To Net: NetName=PWM_LB Pin=IC3-20
+Added Pin To Net: NetName=PWM_LB Pin=P1-9
+Added Net: Name=PWM_LB
+Added Pin To Net: NetName=PWM_LC Pin=IC3-19
+Added Pin To Net: NetName=PWM_LC Pin=P1-11
+Added Net: Name=PWM_LC
+Added Pin To Net: NetName=REF_OUT Pin=C2-2
+Added Pin To Net: NetName=REF_OUT Pin=IC2-8
+Added Pin To Net: NetName=REF_OUT Pin=P1-13
+Added Pin To Net: NetName=REF_OUT Pin=R1-2
+Added Pin To Net: NetName=REF_OUT Pin=R9-1
+Added Net: Name=REF_OUT
+Added Pin To Net: NetName=SENSE_N Pin=R7-1
+Added Net: Name=SENSE_N
+Added Pin To Net: NetName=SENSE_P Pin=R6-1
+Added Net: Name=SENSE_P
+Added Pin To Net: NetName=SPEED_CMD Pin=IC3-11
+Added Pin To Net: NetName=SPEED_CMD Pin=IC3-11
+Added Pin To Net: NetName=SPEED_CMD Pin=P1-15
+Added Net: Name=SPEED_CMD
+Added Class: Name=MC33035
+Added Room: Name=MC33035

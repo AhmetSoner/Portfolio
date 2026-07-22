@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=+5V Pin=C4-1
+Removed Pin From Net: NetName=GND Pin=C4-2
+Removed Pin From Net: NetName=+5V Pin=C18-1
+Removed Pin From Net: NetName=GND Pin=C18-2
+Removed Pin From Net: NetName=+5V Pin=C32-1
+Removed Pin From Net: NetName=GND Pin=C32-2
+Removed Member From Class: ClassName=Driver Member=C18
+Removed Member From Class: ClassName=Driver Member=C32
+Change Component Footprint: Designator=C4 Old Footprint=CAPPC3528X210N New Footprint=0805_CAP
+Change Component Comment : Designator=C4 Old Comment=1uF Tantalum New Comment=100nF 16V
+Change component parameters: Designator = "C4" ("C4"); Footprint = "CAPPC3528X210N"; UniqueID = "\XXAKSRMF" ("\XXAKSRMF")
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C17(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=+5V Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Member To Class: ClassName=Driver Member=Component C3 100nF 16V
+Added Member To Class: ClassName=Driver Member=Component C17 100nF 16V

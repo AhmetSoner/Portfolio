@@ -1,0 +1,103 @@
+Removed Pin From Net: NetName=A_VSS_L Pin=+3-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C79-1
+Removed Pin From Net: NetName=PVDD Pin=C80-1
+Removed Pin From Net: NetName=A_VSS_L Pin=C80-2
+Removed Pin From Net: NetName=+15V Pin=C81-1
+Removed Pin From Net: NetName=A_VSS_L Pin=C81-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C82-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C83-1
+Removed Pin From Net: NetName=A_VSS_L Pin=C84-2
+Removed Pin From Net: NetName=+15V Pin=C85-2
+Removed Pin From Net: NetName=A_VSS_L Pin=D16-1
+Removed Pin From Net: NetName=A_VSS_L Pin=IC4-3
+Removed Pin From Net: NetName=A_VSS_L Pin=IC4-3
+Removed Pin From Net: NetName=A_VSS_L Pin=IC4-3
+Removed Pin From Net: NetName=A_VSS_L Pin=IC4-3
+Removed Pin From Net: NetName=A_VSS_L Pin=IC4-5
+Removed Pin From Net: NetName=+15V Pin=L1-2
+Removed Pin From Net: NetName=A_VSS_H Pin=R13-2
+Removed Pin From Net: NetName=B_VSS_H Pin=R28-2
+Removed Pin From Net: NetName=C_VSS_H Pin=R43-2
+Removed Pin From Net: NetName=+15V Pin=R90-2
+Removed Pin From Net: NetName=A_VSS_L Pin=R91-1
+Removed Pin From Net: NetName=A_VSS_L Pin=R92-2
+Removed Pin From Net: NetName=PVDD Pin=VR1-3
+Removed Member From Class: ClassName=Regulators Member=+3
+Removed Member From Class: ClassName=Regulators Member=C79
+Removed Member From Class: ClassName=Regulators Member=C80
+Removed Member From Class: ClassName=Regulators Member=C81
+Removed Member From Class: ClassName=Regulators Member=C82
+Removed Member From Class: ClassName=Regulators Member=C83
+Removed Member From Class: ClassName=Regulators Member=C84
+Removed Member From Class: ClassName=Regulators Member=C85
+Removed Member From Class: ClassName=Regulators Member=D16
+Removed Member From Class: ClassName=Regulators Member=IC4
+Removed Member From Class: ClassName=Regulators Member=L1
+Removed Member From Class: ClassName=Driver Member=R13
+Removed Member From Class: ClassName=Driver Member=R28
+Removed Member From Class: ClassName=Driver Member=R43
+Removed Member From Class: ClassName=Regulators Member=R88
+Removed Member From Class: ClassName=Regulators Member=R89
+Removed Member From Class: ClassName=Regulators Member=R90
+Removed Member From Class: ClassName=Regulators Member=R91
+Removed Member From Class: ClassName=Regulators Member=R92
+Removed Member From Class: ClassName=Regulators Member=VR1
+Change Component Designator: OldDesignator=IC? NewDesignator=IC1
+Change Component Designator: OldDesignator=IC? NewDesignator=IC2
+Change Component Designator: OldDesignator=IC? NewDesignator=IC3
+Added Component: Designator=C9(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C18(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C23(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=U6(WPME-FDSM_SIP-3_L11.6W8.5H10.5)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SIP-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Step Down Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/173010578?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/173010578?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "28V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "173010578"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FDSM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "8.5mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=A_VSS_H Pin=B1-4
+Added Pin To Net: NetName=B_VSS_H Pin=B3-4
+Added Pin To Net: NetName=C_VSS_H Pin=B6-4
+Added Pin To Net: NetName=A_VSS_L Pin=C9-1
+Added Pin To Net: NetName=+3.3V Pin=C9-2
+Added Pin To Net: NetName=A_VSS_L Pin=C18-1
+Added Pin To Net: NetName=+3.3V Pin=C18-2
+Added Pin To Net: NetName=A_VSS_L Pin=C23-1
+Added Pin To Net: NetName=+15V Pin=C23-2
+Added Pin To Net: NetName=+5V Pin=C98-2
+Added Pin To Net: NetName=+5V Pin=C103-2
+Added Pin To Net: NetName=+5V Pin=IC5-3
+Added Pin To Net: NetName=+5V Pin=J1-3
+Added Pin To Net: NetName=+5V Pin=J2-1
+Added Pin To Net: NetName=+5V Pin=P1-14
+Added Pin To Net: NetName=+5V Pin=R93-1
+Added Pin To Net: NetName=+5V Pin=R94-1
+Added Pin To Net: NetName=+5V Pin=R95-1
+Added Pin To Net: NetName=+15V Pin=U6-1
+Added Pin To Net: NetName=A_VSS_L Pin=U6-2
+Added Pin To Net: NetName=+3.3V Pin=U6-3
+Change Net Name : Old Net Name=+5V New Net Name=REFOUT
+Change Net Name : Old Net Name=NetR58_1 New Net Name=NetIC1_3
+Change Net Name : Old Net Name=NetR71_1 New Net Name=NetIC2_3
+Change Net Name : Old Net Name=NetR84_1 New Net Name=NetIC3_3
+Added Member To Class: ClassName=Regulators Member=Component C9 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C18 10uF 25V
+Added Member To Class: ClassName=Regulators Member=Component C23 100nF 25V
+Added Member To Class: ClassName=Regulators Member=Component U6 8-28Vin, 5Vout, 1Aout

@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=GND Pin=C103-1
+Removed Pin From Net: NetName=5V Pin=C103-2
+Removed Pin From Net: NetName=GND Pin=C104-1
+Removed Pin From Net: NetName=CAN_L Pin=R23-1
+Removed Pin From Net: NetName=CAN_H Pin=R30-2
+Removed Pin From Net: NetName=GND Pin=U7-2
+Removed Pin From Net: NetName=5V Pin=U7-3
+Removed Pin From Net: NetName=+3.3V Pin=U7-5
+Removed Pin From Net: NetName=CAN_L Pin=U7-6
+Removed Pin From Net: NetName=CAN_H Pin=U7-7
+Removed Pin From Net: NetName=GND Pin=U7-8
+Removed Member From Class: ClassName=Connection Member=C103
+Removed Member From Class: ClassName=Connection Member=C104
+Removed Member From Class: ClassName=Connection Member=R23
+Removed Member From Class: ClassName=Connection Member=R30
+Removed Member From Class: ClassName=Connection Member=U7
+Added Pin To Net: NetName=CAN_H Pin=P1-14
+Added Pin To Net: NetName=CAN_L Pin=P1-16
+Change Net Name : Old Net Name=ISO_-12_A_H New Net Name=kelvin 1
+Change Net Name : Old Net Name=ISO_-12_B_H New Net Name=kelvin 3
+Change Net Name : Old Net Name=ISO_-12_C_H New Net Name=kelvin 5
+Change Net Name : Old Net Name=NetIC1_3 New Net Name=NetR58_1
+Change Net Name : Old Net Name=NetIC2_3 New Net Name=NetR71_1
+Change Net Name : Old Net Name=NetIC3_3 New Net Name=NetR84_1

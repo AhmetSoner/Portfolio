@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=FOR/REV Pin=IC3-11
+Removed Pin From Net: NetName=FOR/REV Pin=R10-1
+Added Pin To Net: NetName=SPEED_CMD Pin=IC3-11
+Added Pin To Net: NetName=SPEED_CMD Pin=IC3-11
+Added Pin To Net: NetName=SENSE_N Pin=P1-17
+Added Pin To Net: NetName=SENSE_P Pin=P1-19
+Added Pin To Net: NetName=NetIC3_14 Pin=R10-1
+Added Room: Name=MC33035

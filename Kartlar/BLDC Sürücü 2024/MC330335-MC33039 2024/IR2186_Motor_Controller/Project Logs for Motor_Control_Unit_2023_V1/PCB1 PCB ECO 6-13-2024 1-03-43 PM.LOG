@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=+1 NewDesignator=+5V
+Change Component Designator: OldDesignator=+2 NewDesignator=+15V
+Change Component Designator: OldDesignator=1 NewDesignator=+3.3V
+Change Component Designator: OldDesignator=2 NewDesignator=+45V
+Change Component Designator: OldDesignator=VIN1 NewDesignator=VIN
+Change Net Name : Old Net Name=Net1_1 New Net Name=Net+3.3V_1
+Change Net Name : Old Net Name=Net2_1 New Net Name=Net+45V_1
+Change Net Name : Old Net Name=Net+1_1 New Net Name=Net+5V_1
+Change Net Name : Old Net Name=Net+2_1 New Net Name=Net+15V_1
+Added Room: Name=Power
+Added Room: Name=Regulator

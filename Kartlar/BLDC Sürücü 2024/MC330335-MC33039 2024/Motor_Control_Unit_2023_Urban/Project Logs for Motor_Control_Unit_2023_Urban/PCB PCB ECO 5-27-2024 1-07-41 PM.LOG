@@ -1,0 +1,41 @@
+Added Pin To Net: NetName=+48V Pin=C4-1
+Added Pin To Net: NetName=+48V Pin=C5-1
+Added Pin To Net: NetName=+48V Pin=C6-1
+Added Pin To Net: NetName=+48V Pin=C7-1
+Added Pin To Net: NetName=+48V Pin=C11-1
+Added Pin To Net: NetName=+48V Pin=C12-1
+Added Pin To Net: NetName=+48V Pin=C13-1
+Added Pin To Net: NetName=+48V Pin=C14-1
+Added Pin To Net: NetName=Sense_N Pin=J2-5
+Added Pin To Net: NetName=Sense_N Pin=P1-2
+Added Pin To Net: NetName=Sense_N Pin=P3-2
+Added Pin To Net: NetName=Sense_N Pin=P4-2
+Added Pin To Net: NetName=Sense_N Pin=P5-2
+Change Net Name : Old Net Name=Sense_N New Net Name=GND
+Added Pin To Net: NetName=+12V Pin=P3-1
+Added Net: Name=+12V
+Added Pin To Net: NetName=BRK Pin=P5-1
+Added Net: Name=BRK
+Added Pin To Net: NetName=ENABLE Pin=P4-1
+Added Net: Name=ENABLE
+Added Pin To Net: NetName=FAN+ Pin=P2-1
+Added Net: Name=FAN+
+Added Pin To Net: NetName=FAN- Pin=P2-2
+Added Net: Name=FAN-
+Added Pin To Net: NetName=FW/RV Pin=P1-1
+Added Net: Name=FW/RV
+Added Pin To Net: NetName=H_A Pin=J2-2
+Added Net: Name=H_A
+Added Pin To Net: NetName=H_B Pin=J2-3
+Added Net: Name=H_B
+Added Pin To Net: NetName=H_C Pin=J2-4
+Added Net: Name=H_C
+Added Pin To Net: NetName=POT + Pin=J3-1
+Added Net: Name=POT +
+Added Pin To Net: NetName=POT - Pin=J3-3
+Added Net: Name=POT -
+Added Pin To Net: NetName=POT Pin=J3-2
+Added Net: Name=POT
+Added Pin To Net: NetName=VCC Pin=J2-1
+Added Net: Name=VCC
+Added Room: Name=Regulator

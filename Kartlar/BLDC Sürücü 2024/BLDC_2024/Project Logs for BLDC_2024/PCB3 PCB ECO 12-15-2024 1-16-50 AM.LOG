@@ -1,0 +1,7 @@
+Added Component: Designator=J3(48/12V REGULATOR)
+Added Pin To Net: NetName=+15V Pin=J3-1
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Pin To Net: NetName=GND Pin=J3-4
+Added Pin To Net: NetName=PVDD Pin=J3-5
+Added Member To Class: ClassName=Connection Member=Component J3 48/12V Regulator
+Added Member To Class: ClassName=Regulators Member=Component U5 8-28Vin, 5Vout, 1Aout

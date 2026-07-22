@@ -1,0 +1,14 @@
+Change Component Designator: OldDesignator=? NewDesignator=2
+Change Component Designator: OldDesignator=R? NewDesignator=R85
+Added Component: Designator=Q13(TO-247)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/Product/Detail/480417/IRFP4310ZPBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://cdn.ozdisan.com/ETicaret_Dosya/480417_1248700.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rate"; Value = "120A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartValue"; Value = "IRFP4310ZPbF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rate"; Value = "100V"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=Net?_1 New Net Name=Net2_1
+Added Member To Class: ClassName=Power Member=Component Q13 IRFP4310ZPbF
+Added Room: Name=Power
+Added Room: Name=Regulator

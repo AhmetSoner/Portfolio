@@ -1,0 +1,96 @@
+Change Component Description : Designator=D1 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Change Component Description : Designator=D2 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Change Component Description : Designator=D3 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Change Component Description : Designator=D4 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Change Component Description : Designator=D5 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Change Component Description : Designator=D6 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Change Component Description : Designator=D7 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Change Component Description : Designator=D8 Old Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle New Description=LED SMD 0603 Ultra Yellow 593nm 70mcd Water Clear Lens 130 Deg Viewing Angle | Bivar Inc. SM0603UYC
+Added Component: Designator=B1(SOIC127P600X175-8N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "ADM485ARZ-REEL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/adm485arz-reel/analog-devices?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.analog.com/media/en/technical-documentation/data-sheets/adm485.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "1.75mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ADM485ARZ-REEL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "584-ADM485ARZ-R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADM485ARZ-REEL?qs=BpaRKvA4VqEQkRKEKZjbCg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=C24(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C25(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C26(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C27(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=R7(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R23(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R24(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R25(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R26(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R27(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R28(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=TB1(TB2)
+Added Pin To Net: NetName=PA3 Pin=B1-1
+Added Pin To Net: NetName=PB4 Pin=B1-2
+Added Pin To Net: NetName=PB5 Pin=B1-3
+Added Pin To Net: NetName=PA2 Pin=B1-4
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=GND Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=PB4 Pin=R7-1
+Added Pin To Net: NetName=GND Pin=R27-1
+Added Pin To Net: NetName=PB5 Pin=R27-2
+Added Pin To Net: NetName=GND Pin=R28-1
+Added Pin To Net: NetName=+5V Pin=B1-8
+Added Pin To Net: NetName=+5V Pin=C24-1
+Added Pin To Net: NetName=+5V Pin=C25-1
+Added Pin To Net: NetName=+5V Pin=R23-2
+Added Net: Name=+5V
+Added Pin To Net: NetName=NetB1_6 Pin=B1-6
+Added Pin To Net: NetName=NetB1_6 Pin=R23-1
+Added Pin To Net: NetName=NetB1_6 Pin=R24-2
+Added Pin To Net: NetName=NetB1_6 Pin=R25-2
+Added Net: Name=NetB1_6
+Added Pin To Net: NetName=NetB1_7 Pin=B1-7
+Added Pin To Net: NetName=NetB1_7 Pin=R25-1
+Added Pin To Net: NetName=NetB1_7 Pin=R26-2
+Added Pin To Net: NetName=NetB1_7 Pin=R28-2
+Added Net: Name=NetB1_7
+Added Pin To Net: NetName=RS485+ Pin=C26-2
+Added Pin To Net: NetName=RS485+ Pin=R24-1
+Added Pin To Net: NetName=RS485+ Pin=TB1-1
+Added Net: Name=RS485+
+Added Pin To Net: NetName=RS485- Pin=C27-1
+Added Pin To Net: NetName=RS485- Pin=R26-1
+Added Pin To Net: NetName=RS485- Pin=TB1-2
+Added Net: Name=RS485-
+Added Member To Class: ClassName=Sheet1 Member=Component B1 ADM485ARZ-REEL
+Added Member To Class: ClassName=Sheet1 Member=Component C24 100nF
+Added Member To Class: ClassName=Sheet1 Member=Component C25 10uF
+Added Member To Class: ClassName=Sheet1 Member=Component C26 100nF
+Added Member To Class: ClassName=Sheet1 Member=Component C27 100nF
+Added Member To Class: ClassName=Sheet1 Member=Component R7 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R23 1.2k
+Added Member To Class: ClassName=Sheet1 Member=Component R24 1.2k
+Added Member To Class: ClassName=Sheet1 Member=Component R25 120
+Added Member To Class: ClassName=Sheet1 Member=Component R26 1.2k
+Added Member To Class: ClassName=Sheet1 Member=Component R27 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R28 1.2k
+Added Member To Class: ClassName=Sheet1 Member=Component TB1 TB2
+Added Rule: Name=Schematic Supply Nets_3

@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=NetD?_2 Pin=R31-1
+Removed Member From Class: ClassName=Regulators Member=C7
+Removed Member From Class: ClassName=Regulators Member=IC1
+Removed Member From Class: ClassName=Regulators Member=R2
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-1
+Add Pin To Net: Unknown Pin: Pin D?-2
+Add Pin To Net: Unknown Pin: Pin D?-3
+Add Pin To Net: Unknown Pin: Pin D?-3
+Add Pin To Net: Unknown Pin: Pin D?-3
+Added Pin To Net: NetName=NetD?_2 Pin=R1-1
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Added Member To Class: ClassName=Regulators Member=Component C? 10µF
+Added Member To Class: ClassName=Regulators Member=Component C? 10µF
+Add Class Member: Failed to add class member : Component D? C4D02120E
+Add Class Member: Failed to add class member : Component D? C4D02120E
+Add Class Member: Failed to add class member : Component D? C4D02120E
+Added Member To Class: ClassName=Power Member=Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Power Member=Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Regulators Member=Component IC? LM2596HV
+Added Member To Class: ClassName=Regulators Member=Component R? 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R? 35K Ohms

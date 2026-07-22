@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=RESET Pin=P?-1
+Removed Pin From Net: NetName=SWDIO Pin=P?-2
+Removed Pin From Net: NetName=SWCLK Pin=P?-4
+Removed Pin From Net: NetName=+3V3 Pin=P?-5
+Added Pin To Net: NetName=+3V3 Pin=P?-1
+Added Pin To Net: NetName=SWCLK Pin=P?-2
+Added Pin To Net: NetName=SWDIO Pin=P?-4
+Added Pin To Net: NetName=RESET Pin=P?-5
+Added Room: Name=Sheet2

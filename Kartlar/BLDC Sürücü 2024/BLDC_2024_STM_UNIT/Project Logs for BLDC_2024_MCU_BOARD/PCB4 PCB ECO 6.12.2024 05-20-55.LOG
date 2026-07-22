@@ -1,0 +1,130 @@
+Removed Member From Class: ClassName=Sheet1 Member=J?
+Change Component Designator: OldDesignator=C? NewDesignator=C13
+Change Component Designator: OldDesignator=C? NewDesignator=C14
+Change Component Designator: OldDesignator=C? NewDesignator=C15
+Change Component Designator: OldDesignator=C? NewDesignator=C16
+Change Component Designator: OldDesignator=R? NewDesignator=R8
+Change Component Designator: OldDesignator=R? NewDesignator=R9
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Added Component: Designator=D3(LED_SM0603UYC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SM0603UYC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D4(LED_SM0603UYC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SM0603UYC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D5(LED_SM0603UYC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SM0603UYC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D6(LED_SM0603UYC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SM0603UYC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D7(LED_SM0603UYC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SM0603UYC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D8(LED_SM0603UYC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SM0603UYC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Bivar"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SM0603UYC/Bivar/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Y1(radial_oscillator)
+Added Component: Designator=Y2(PCBComponent_1)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "//media.digikey.com/pdf/Data%20Sheets/NDK%20PDFs/NX5032GA.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "DigiKey Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/ndk-america-inc/NX5032GA-12-000000MHZ-LN-CD-1/1128816"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR (Equivalent Series Resistance)"; Value = "120 Ohms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "12 MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency Stability"; Value = "±50ppm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency Tolerance"; Value = "±50ppm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height - Seated (Max)"; Value = "0.059" (1.50mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LastUpdated"; Value = "19.09.2022 13:51:57"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Load Capacitance"; Value = "8pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "NDK America, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Mode"; Value = "Fundamental"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-10°C ~ 70°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "2-SMD, No Lead"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "TapeAndReel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NX5032GA-12.000000MHZ-LN-CD-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "625"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.28"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "NX5032GA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size / Dimension"; Value = "0.197" L x 0.126" W (5.00mm x 3.20mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "644-1034-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "MHz Crystal"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "12 MHz"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D2-1
+Add Pin To Net: Unknown Pin: Pin D2-2
+Added Pin To Net: NetName=PB10 Pin=D3-C
+Added Pin To Net: NetName=PC5 Pin=D4-C
+Added Pin To Net: NetName=PB15 Pin=D5-C
+Added Pin To Net: NetName=CAN_TX Pin=D6-C
+Added Pin To Net: NetName=CAN_RX Pin=D7-C
+Added Pin To Net: NetName=PB12 Pin=D8-C
+Added Pin To Net: NetName=OSC_OUT_1 Pin=Y1-1
+Added Pin To Net: NetName=OSC_IN_1 Pin=Y1-2
+Added Pin To Net: NetName=OSC_IN_2 Pin=Y2-1
+Added Pin To Net: NetName=OSC_OUT_2 Pin=Y2-2
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC14_1
+Added Pin To Net: NetName=NetD3_A Pin=D3-A
+Added Pin To Net: NetName=NetD3_A Pin=R10-2
+Added Net: Name=NetD3_A
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=NetD4_A Pin=R11-2
+Added Net: Name=NetD4_A
+Added Pin To Net: NetName=NetD5_A Pin=D5-A
+Added Pin To Net: NetName=NetD5_A Pin=R12-2
+Added Net: Name=NetD5_A
+Added Pin To Net: NetName=NetD6_A Pin=D6-A
+Added Pin To Net: NetName=NetD6_A Pin=R14-2
+Added Net: Name=NetD6_A
+Added Pin To Net: NetName=NetD7_A Pin=D7-A
+Added Pin To Net: NetName=NetD7_A Pin=R15-2
+Added Net: Name=NetD7_A
+Added Pin To Net: NetName=NetD8_A Pin=D8-A
+Added Pin To Net: NetName=NetD8_A Pin=R18-2
+Added Net: Name=NetD8_A
+Added Member To Class: ClassName=Sheet1 Member=Component C13 100nF
+Added Member To Class: ClassName=Sheet1 Member=Component C15 2.2uF
+Added Member To Class: ClassName=Sheet1 Member=Component C16 100nF
+Add Class Member: Failed to add class member : Component D1 Yellow
+Add Class Member: Failed to add class member : Component D2 Yellow
+Added Member To Class: ClassName=Sheet1 Member=Component D3 SM0603UYC
+Added Member To Class: ClassName=Sheet1 Member=Component D4 SM0603UYC
+Added Member To Class: ClassName=Sheet1 Member=Component D5 SM0603UYC
+Added Member To Class: ClassName=Sheet1 Member=Component D6 SM0603UYC
+Added Member To Class: ClassName=Sheet1 Member=Component D7 SM0603UYC
+Added Member To Class: ClassName=Sheet1 Member=Component D8 SM0603UYC
+Added Member To Class: ClassName=Sheet1 Member=Component R9 1k Ohms
+Added Member To Class: ClassName=Sheet1 Member=Component Y1 32.768KHZ
+Added Member To Class: ClassName=Sheet1 Member=Component Y2 8 MHz

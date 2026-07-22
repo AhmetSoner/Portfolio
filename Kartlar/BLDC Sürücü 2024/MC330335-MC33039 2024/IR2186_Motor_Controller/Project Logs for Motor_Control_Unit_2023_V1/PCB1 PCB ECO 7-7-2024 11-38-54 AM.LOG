@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=HC Pin=J3-15
+Added Pin To Net: NetName=HB Pin=J3-17
+Added Pin To Net: NetName=HA Pin=J3-19
+Added Room: Name=Power
+Added Room: Name=Regulator

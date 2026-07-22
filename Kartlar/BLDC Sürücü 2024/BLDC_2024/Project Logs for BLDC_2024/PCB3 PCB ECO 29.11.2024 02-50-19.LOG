@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C17-1
+Removed Pin From Net: NetName=GND Pin=C31-1
+Removed Member From Class: ClassName=Driver Member=C3
+Removed Member From Class: ClassName=Driver Member=C17
+Removed Member From Class: ClassName=Driver Member=C31
+Removed Member From Class: ClassName=Driver Member=R2
+Removed Member From Class: ClassName=Driver Member=R17
+Removed Member From Class: ClassName=Driver Member=R32
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=GND Pin=U3-5
+Added Member To Class: ClassName=Driver Member=Component C11 100nF 50V

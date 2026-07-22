@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=NetLabel3 Pin=D?-2
+Added Pin To Net: NetName=NetLabel3 Pin=R?-1
+Added Net: Name=NetLabel3
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms

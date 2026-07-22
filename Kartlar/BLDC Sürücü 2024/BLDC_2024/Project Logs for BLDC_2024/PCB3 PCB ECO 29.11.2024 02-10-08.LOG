@@ -1,0 +1,7 @@
+Add Net: Net with name "NetD?_2" already exists
+Added Pin To Net: NetName=NetLabel2 Pin=D?-2
+Added Pin To Net: NetName=NetLabel2 Pin=R?-1
+Added Net: Name=NetLabel2
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component D? C4D02120E-TR
+Added Member To Class: ClassName=Driver Member=Component R? 2 Ohms

@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=VIN Pin=C60-1
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R13-1
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R13-2
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R28-2
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R29-2
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R30-1
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R30-2
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R45-1
+Removed Pin From Net: NetName=IN+ CURRENT Pin=R45-2
+Removed Pin From Net: NetName=VIN Pin=R51-2
+Removed Member From Class: ClassName=Power Member=C33
+Removed Member From Class: ClassName=Power Member=R13
+Removed Member From Class: ClassName=Power Member=R28
+Removed Member From Class: ClassName=Power Member=R29
+Removed Member From Class: ClassName=Power Member=R30
+Removed Member From Class: ClassName=Power Member=R45
+Added Pin To Net: NetName=IN+ CURRENT Pin=C19-1
+Added Pin To Net: NetName=IN+ CURRENT Pin=C34-1
+Added Pin To Net: NetName=IN+ CURRENT Pin=C48-1
+Added Pin To Net: NetName=IN+ CURRENT Pin=R15-1
+Added Pin To Net: NetName=IN+ CURRENT Pin=R32-1
+Added Pin To Net: NetName=IN+ CURRENT Pin=R47-1
+Added Pin To Net: NetName=IN+ CURRENT Pin=U1-4
+Added Pin To Net: NetName=IN+ CURRENT Pin=U2-4
+Added Pin To Net: NetName=IN+ CURRENT Pin=U3-4
+Change Net Name : Old Net Name=IN+ CURRENT New Net Name=VSS_1

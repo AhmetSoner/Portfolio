@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=PB4 Pin=R7-1
+Removed Member From Class: ClassName=Sheet1 Member=R7
+Added Component: Designator=R?(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PB4 Pin=R?-1
+Added Pin To Net: NetName=+5 Pin=R?-2
+Added Member To Class: ClassName=Sheet1 Member=Component R? 10k

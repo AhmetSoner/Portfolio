@@ -1,0 +1,261 @@
+Removed Pin From Net: NetName=A_VSS_L Pin=C31-1
+Removed Pin From Net: NetName=PVDD Pin=C31-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C32-1
+Removed Pin From Net: NetName=PVDD Pin=C32-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C37-1
+Removed Pin From Net: NetName=PVDD Pin=C37-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C49-1
+Removed Pin From Net: NetName=PVDD Pin=C49-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C50-1
+Removed Pin From Net: NetName=PVDD Pin=C50-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C59-1
+Removed Pin From Net: NetName=PVDD Pin=C59-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C60-1
+Removed Pin From Net: NetName=PVDD Pin=C60-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C69-1
+Removed Pin From Net: NetName=PVDD Pin=C69-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C70-1
+Removed Pin From Net: NetName=PVDD Pin=C70-2
+Change Component Footprint: Designator=C31 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C32 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C37 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C49 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C50 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C59 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C60 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C69 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Footprint: Designator=C70 Old Footprint=CAPPRD750W80D1825H4150 New Footprint=WCAP-ATUL_D18H31.5
+Change Component Comment : Designator=C31 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C32 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C37 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C49 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C50 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C59 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C60 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C69 Old Comment=470uF 200V New Comment=470µF
+Change Component Comment : Designator=C70 Old Comment=470uF 200V New Comment=470µF
+Change component parameters: Designator = "C31" ("C31"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\JHBWBVGD" ("\JHBWBVGD")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C32" ("C32"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\DWMSTLEZ" ("\DWMSTLEZ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C37" ("C37"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\SGHGIKYI" ("\SGHGIKYI")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C49" ("C49"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\TBSVDLCJ" ("\TBSVDLCJ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C50" ("C50"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\RVBIHJQR" ("\RVBIHJQR")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C59" ("C59"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\TCQLEIZT" ("\TCQLEIZT")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C60" ("C60"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\VETLLSNA" ("\VETLLSNA")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C69" ("C69"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\PVABTMCH" ("\PVABTMCH")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C70" ("C70"); Footprint = "CAPPRD750W80D1825H4150"; UniqueID = "\GCYVZYZD" ("\GCYVZYZD")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "470µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/860040881012?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Diameter"; Value = "18mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "9%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Endurance"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "31.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Leakage Current"; Value = "470µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "860040881012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-ATUL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = "1600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "ATDL315471M100DSPAEK000"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PVDD Pin=C31-1
+Added Pin To Net: NetName=A_VSS_L Pin=C31-2
+Added Pin To Net: NetName=PVDD Pin=C32-1
+Added Pin To Net: NetName=A_VSS_L Pin=C32-2
+Added Pin To Net: NetName=PVDD Pin=C37-1
+Added Pin To Net: NetName=A_VSS_L Pin=C37-2
+Added Pin To Net: NetName=PVDD Pin=C49-1
+Added Pin To Net: NetName=A_VSS_L Pin=C49-2
+Added Pin To Net: NetName=PVDD Pin=C50-1
+Added Pin To Net: NetName=A_VSS_L Pin=C50-2
+Added Pin To Net: NetName=PVDD Pin=C59-1
+Added Pin To Net: NetName=A_VSS_L Pin=C59-2
+Added Pin To Net: NetName=PVDD Pin=C60-1
+Added Pin To Net: NetName=A_VSS_L Pin=C60-2
+Added Pin To Net: NetName=PVDD Pin=C69-1
+Added Pin To Net: NetName=A_VSS_L Pin=C69-2
+Added Pin To Net: NetName=PVDD Pin=C70-1
+Added Pin To Net: NetName=A_VSS_L Pin=C70-2

@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=Y2 Old Footprint=XTAL_AB38T-32.768KHZ New Footprint=XTAL_CC7V-T1A-32.768KHZ-9PF-20PPM-TA-QC
+Change Component Comment : Designator=Y2 Old Comment=AB38T-32.768KHZ New Comment=CC7V-T1A-32.768KHZ-9PF-20PPM-TA-QC
+Change component parameters: Designator = "Y2" ("Y2"); Footprint = "XTAL_AB38T-32.768KHZ"; UniqueID = "\MOJMYFFT" ("\MOJMYFFT")
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CC7V-T1A-32.768kHz-9pF-20PPM-TA-QC/Micro+Crystal/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Micro Crystal"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "CC7V-T1A-32.768kHz-9pF-20PPM-TA-QC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SMD-2 Micro Crystal"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CC7V-T1A-32.768kHz-9pF-20PPM-TA-QC/Micro+Crystal/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"

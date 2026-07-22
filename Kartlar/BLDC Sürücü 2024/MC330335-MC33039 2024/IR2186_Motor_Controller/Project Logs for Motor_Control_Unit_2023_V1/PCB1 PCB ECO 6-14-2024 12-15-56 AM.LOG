@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=J4 Old Footprint=TE_284512-3 New Footprint=TE_282837-3
+Change Component Comment : Designator=J4 Old Comment=284512-3 New Comment=282837-3
+Change component parameters: Designator = "J4" ("J4"); Footprint = "TE_284512-3"; UniqueID = "\HLUYCATK" ("\HLUYCATK")
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "282837-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"

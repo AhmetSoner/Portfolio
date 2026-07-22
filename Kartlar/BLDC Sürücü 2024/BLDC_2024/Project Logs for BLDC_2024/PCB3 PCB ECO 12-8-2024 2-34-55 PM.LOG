@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=ISO_-12_A_H Pin=B1-4
+Removed Pin From Net: NetName=B_VSS_H Pin=B3-4
+Removed Pin From Net: NetName=C_VSS_H Pin=B6-4
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Pin To Net: Unknown Pin: Pin R?-2
+Add Pin To Net: Unknown Pin: Pin R?-2
+Add Pin To Net: Unknown Pin: Pin R?-2
+Change Net Name : Old Net Name=ISO_-12_A_H New Net Name=VSS_H
+Added Pin To Net: NetName=ISO_-12_A_H Pin=B1-4
+Added Net: Name=ISO_-12_A_H
+Added Pin To Net: NetName=ISO_-12_B_H Pin=B3-4
+Added Net: Name=ISO_-12_B_H
+Added Pin To Net: NetName=ISO_-12_C_H Pin=B6-4
+Added Net: Name=ISO_-12_C_H
+Add Class Member: Failed to add class member : Component R? 0 Ohms
+Add Class Member: Failed to add class member : Component R? 0 Ohms
+Add Class Member: Failed to add class member : Component R? 0 Ohms

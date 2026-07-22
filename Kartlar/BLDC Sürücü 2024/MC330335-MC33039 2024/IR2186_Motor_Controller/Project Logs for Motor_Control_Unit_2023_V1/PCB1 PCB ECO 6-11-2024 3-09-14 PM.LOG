@@ -1,0 +1,132 @@
+Removed Member From Class: ClassName=STM32 Member=C57
+Removed Member From Class: ClassName=Power Member=D16
+Change Component Footprint: Designator=L1 Old Footprint=BOURNS SRR1280 New Footprint=WE-PD_7345R
+Change Component Footprint: Designator=L4 Old Footprint=BOURNS SRR1280 New Footprint=WE-PD_7345R
+Change Component Footprint: Designator=L5 Old Footprint=BOURNS SRR1280 New Footprint=WE-PD_7345R
+Change Component Comment : Designator=L1 Old Comment=47uH 2A New Comment=6.8uH, 2.91A
+Change Component Comment : Designator=L4 Old Comment=47uH 2A New Comment=6.8uH, 2.91A
+Change Component Comment : Designator=L5 Old Comment=47uH 2A New Comment=6.8uH, 2.91A
+Change component parameters: Designator = "L1" ("L1"); Footprint = "BOURNS SRR1280"; UniqueID = "\HFGWCJXM" ("\HFGWCJXM")
+Change component parameters (AddParameter): Name = "Case/Size Code"; Value = "7345R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Power Inductors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/7447779006?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/7447779006?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance"; Value = "33mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance Max"; Value = "35mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "4.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance"; Value = "6.8uH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "7.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "7447779006"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WE-PD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current"; Value = "2.91A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Saturation Current"; Value = "3.3A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Self Resonant Frequency"; Value = "32MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Robust"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "7.3mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L4" ("L4"); Footprint = "BOURNS SRR1280"; UniqueID = "\FCPRSXNG" ("\FCPRSXNG")
+Change component parameters (AddParameter): Name = "Case/Size Code"; Value = "7345R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Power Inductors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/7447779006?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/7447779006?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance"; Value = "33mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance Max"; Value = "35mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "4.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance"; Value = "6.8uH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "7.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "7447779006"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WE-PD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current"; Value = "2.91A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Saturation Current"; Value = "3.3A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Self Resonant Frequency"; Value = "32MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Robust"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "7.3mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L5" ("L5"); Footprint = "BOURNS SRR1280"; UniqueID = "\HHGEPYGJ" ("\HHGEPYGJ")
+Change component parameters (AddParameter): Name = "Case/Size Code"; Value = "7345R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Power Inductors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/7447779006?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/7447779006?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance"; Value = "33mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance Max"; Value = "35mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "4.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance"; Value = "6.8uH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "7.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "7447779006"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WE-PD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current"; Value = "2.91A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Saturation Current"; Value = "3.3A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Self Resonant Frequency"; Value = "32MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Robust"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "7.3mm"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Power Member=Component C24 2.2uF
+Added Member To Class: ClassName=Power Member=Component C26 2.2uF
+Added Member To Class: ClassName=Power Member=Component C27 16nF 35V
+Added Member To Class: ClassName=Power Member=Component C28 1210YD106KAT2A
+Added Member To Class: ClassName=Regulator Member=Component C35 270pF / 2kV
+Added Member To Class: ClassName=Regulator Member=Component C36 100nF 16V
+Added Member To Class: ClassName=Regulator Member=Component C37 2.2uF / 25V
+Added Member To Class: ClassName=Regulator Member=Component C38 4.7uF / 25V
+Added Member To Class: ClassName=Regulator Member=Component C40 270pF / 2kV
+Added Member To Class: ClassName=Regulator Member=Component C42 22uF 16V
+Added Member To Class: ClassName=Regulator Member=Component C44 10µF 63V
+Added Member To Class: ClassName=Regulator Member=Component C46 220uF 50V
+Added Member To Class: ClassName=Regulator Member=Component C48 100nF 25V
+Added Member To Class: ClassName=Regulator Member=Component C50 4.7uF / 25V
+Added Member To Class: ClassName=Regulator Member=Component C52 270pF / 2kV
+Added Member To Class: ClassName=Regulator Member=Component C54 10µF 63V
+Added Member To Class: ClassName=Regulator Member=Component C56 2.2uF / 25V
+Added Member To Class: ClassName=Regulator Member=Component C57 4.7uF / 25V
+Added Member To Class: ClassName=Regulator Member=Component C58 4.7uF / 25V
+Added Member To Class: ClassName=STM32 Member=Component C60 1uF
+Added Member To Class: ClassName=STM32 Member=Component C62 1uF
+Added Member To Class: ClassName=STM32 Member=Component C64 1uF
+Added Member To Class: ClassName=STM32 Member=Component C66 4.7uF
+Added Member To Class: ClassName=STM32 Member=Component C68 100nF
+Added Member To Class: ClassName=STM32 Member=Component C70 100nF
+Added Member To Class: ClassName=STM32 Member=Component C72 100nF 35V
+Added Member To Class: ClassName=STM32 Member=Component C76 10nF 35V
+Added Member To Class: ClassName=STM32 Member=Component C78 2.2uF
+Added Member To Class: ClassName=STM32 Member=Component C80 100nF 16V
+Added Member To Class: ClassName=STM32 Member=Component C82 100nF 16V
+Added Member To Class: ClassName=STM32 Member=Component C84 15pF
+Added Member To Class: ClassName=STM32 Member=Component C88 6pF
+Added Member To Class: ClassName=Power Member=Component D3 SOD-323
+Added Member To Class: ClassName=Power Member=Component D5 SOD-323
+Added Member To Class: ClassName=Power Member=Component D7 BAT54
+Added Member To Class: ClassName=Power Member=Component D9 BAT54
+Added Member To Class: ClassName=Power Member=Component D10 SOD-323
+Added Member To Class: ClassName=STM32 Member=Component J4 DS1070 4 Pin
+Added Member To Class: ClassName=STM32 Member=Component J5 DS1070 4 Pin
+Added Member To Class: ClassName=STM32 Member=Component J7 DS1070 3 Pin
+Added Member To Class: ClassName=STM32 Member=Component J9 DS1070 3 Pin
+Added Member To Class: ClassName=STM32 Member=Component R63 100R
+Added Member To Class: ClassName=STM32 Member=Component R65 100R
+Added Member To Class: ClassName=STM32 Member=Component R68 4.7k Ohms
+Added Member To Class: ClassName=STM32 Member=Component R72 10k Ohms
+Added Member To Class: ClassName=STM32 Member=Component R76 10k Ohms
+Added Member To Class: ClassName=STM32 Member=Component R78 4.7k Ohms
+Added Member To Class: ClassName=STM32 Member=Component R80 4.7k Ohms
+Added Member To Class: ClassName=STM32 Member=Component R81 10R Ohms
+Added Member To Class: ClassName=STM32 Member=Component U4 STM32F446RET6
+Added Room: Name=Power
+Added Room: Name=Regulator

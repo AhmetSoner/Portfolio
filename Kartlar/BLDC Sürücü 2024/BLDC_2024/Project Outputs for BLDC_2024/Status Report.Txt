@@ -1,0 +1,22 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [BLDC_2024.PrjPcb]
+   Generated File[PCB3_Legend_Top.gbr]
+   Generated File[PCB3_Paste_Top.gbr]
+   Generated File[PCB3_Soldermask_Top.gbr]
+   Generated File[PCB3_Copper_Signal_Top.gbr]
+   Generated File[PCB3_Copper_Signal_1.gbr]
+   Generated File[PCB3_Copper_Signal_2.gbr]
+   Generated File[PCB3_Copper_Signal_Bot.gbr]
+   Generated File[PCB3_Soldermask_Bot.gbr]
+   Generated File[PCB3_Paste_Bot.gbr]
+   Generated File[PCB3_Legend_Bot.gbr]
+   Generated File[PCB3_Profile.gbr]
+   Generated File[PCB3.EXTREP]
+   Generated File[PCB3.REP]
+
+
+Files Generated   : 13
+Documents Printed : 0
+
+Finished Output Generation At 11:45:36 AM On 6/22/2025

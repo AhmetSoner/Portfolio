@@ -1,0 +1,143 @@
+Removed Pin From Net: NetName=COUT_C Pin=P1-17
+Removed Pin From Net: NetName=COUT_B Pin=P1-19
+Removed Pin From Net: NetName=COUT_A Pin=P1-21
+Added Component: Designator=C105(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C106(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C107(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=R45(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R48(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R49(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R50(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R51(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R54(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R55(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R56(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R57(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R61(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R62(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R63(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=U8(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LM321MF/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM321MF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT-23-5 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM321MF/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U9(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LM321MF/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM321MF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT-23-5 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM321MF/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U10(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LM321MF/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM321MF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT-23-5 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM321MF/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3.3V Pin=R45-2
+Added Pin To Net: NetName=GND Pin=R48-1
+Added Pin To Net: NetName=COUT_A Pin=R49-1
+Added Pin To Net: NetName=+3.3V Pin=R51-2
+Added Pin To Net: NetName=GND Pin=R54-1
+Added Pin To Net: NetName=COUT_B Pin=R55-1
+Added Pin To Net: NetName=+3.3V Pin=R57-2
+Added Pin To Net: NetName=GND Pin=R61-1
+Added Pin To Net: NetName=COUT_C Pin=R62-1
+Added Pin To Net: NetName=GND Pin=U8-2
+Added Pin To Net: NetName=+3.3V Pin=U8-5
+Added Pin To Net: NetName=GND Pin=U9-2
+Added Pin To Net: NetName=+3.3V Pin=U9-5
+Added Pin To Net: NetName=GND Pin=U10-2
+Added Pin To Net: NetName=+3.3V Pin=U10-5
+Added Pin To Net: NetName=Current_Sense_A Pin=C105-2
+Added Pin To Net: NetName=Current_Sense_A Pin=P1-21
+Added Pin To Net: NetName=Current_Sense_A Pin=R50-2
+Added Pin To Net: NetName=Current_Sense_A Pin=U8-4
+Added Net: Name=Current_Sense_A
+Added Pin To Net: NetName=Current_Sense_B Pin=C106-2
+Added Pin To Net: NetName=Current_Sense_B Pin=P1-19
+Added Pin To Net: NetName=Current_Sense_B Pin=R56-2
+Added Pin To Net: NetName=Current_Sense_B Pin=U9-4
+Added Net: Name=Current_Sense_B
+Added Pin To Net: NetName=Current_Sense_C Pin=C107-2
+Added Pin To Net: NetName=Current_Sense_C Pin=P1-17
+Added Pin To Net: NetName=Current_Sense_C Pin=R63-2
+Added Pin To Net: NetName=Current_Sense_C Pin=U10-4
+Added Net: Name=Current_Sense_C
+Added Pin To Net: NetName=NetC105_1 Pin=C105-1
+Added Pin To Net: NetName=NetC105_1 Pin=R49-2
+Added Pin To Net: NetName=NetC105_1 Pin=R50-1
+Added Pin To Net: NetName=NetC105_1 Pin=U8-3
+Added Net: Name=NetC105_1
+Added Pin To Net: NetName=NetC106_1 Pin=C106-1
+Added Pin To Net: NetName=NetC106_1 Pin=R55-2
+Added Pin To Net: NetName=NetC106_1 Pin=R56-1
+Added Pin To Net: NetName=NetC106_1 Pin=U9-3
+Added Net: Name=NetC106_1
+Added Pin To Net: NetName=NetC107_1 Pin=C107-1
+Added Pin To Net: NetName=NetC107_1 Pin=R62-2
+Added Pin To Net: NetName=NetC107_1 Pin=R63-1
+Added Pin To Net: NetName=NetC107_1 Pin=U10-3
+Added Net: Name=NetC107_1
+Added Pin To Net: NetName=NetR45_1 Pin=R45-1
+Added Pin To Net: NetName=NetR45_1 Pin=R48-2
+Added Pin To Net: NetName=NetR45_1 Pin=U8-1
+Added Net: Name=NetR45_1
+Added Pin To Net: NetName=NetR51_1 Pin=R51-1
+Added Pin To Net: NetName=NetR51_1 Pin=R54-2
+Added Pin To Net: NetName=NetR51_1 Pin=U9-1
+Added Net: Name=NetR51_1
+Added Pin To Net: NetName=NetR57_1 Pin=R57-1
+Added Pin To Net: NetName=NetR57_1 Pin=R61-2
+Added Pin To Net: NetName=NetR57_1 Pin=U10-1
+Added Net: Name=NetR57_1
+Add Class Member: Failed to add class member : Component +2 Green
+Added Member To Class: ClassName=Regulators Member=Component C105 1000pF
+Added Member To Class: ClassName=Regulators Member=Component C106 1000pF
+Added Member To Class: ClassName=Regulators Member=Component C107 1000pF
+Added Member To Class: ClassName=Regulators Member=Component R45 100k
+Added Member To Class: ClassName=Regulators Member=Component R48 100k
+Added Member To Class: ClassName=Regulators Member=Component R49 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R50 3.3k
+Added Member To Class: ClassName=Regulators Member=Component R51 100k
+Added Member To Class: ClassName=Regulators Member=Component R54 100k
+Added Member To Class: ClassName=Regulators Member=Component R55 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R56 3.3k
+Added Member To Class: ClassName=Regulators Member=Component R57 100k
+Added Member To Class: ClassName=Regulators Member=Component R61 100k
+Added Member To Class: ClassName=Regulators Member=Component R62 1k Ohms
+Added Member To Class: ClassName=Regulators Member=Component R63 3.3k
+Added Member To Class: ClassName=Regulators Member=Component U8 LM321MF
+Added Member To Class: ClassName=Regulators Member=Component U9 LM321MF
+Added Member To Class: ClassName=Regulators Member=Component U10 LM321MF
+Add Class Member: Failed to add class member : Component VIN1 Green

@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=R23 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R30 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Comment : Designator=R23 Old Comment=60 Ohms New Comment=1k Ohms
+Change Component Comment : Designator=R30 Old Comment=60 Ohms New Comment=1k Ohms
+Change component parameters: Designator = "R23" ("R23"); Footprint = "0805_RES"; UniqueID = "\AYQUBTLC" ("\AYQUBTLC")
+Change component parameters: Designator = "R30" ("R30"); Footprint = "0805_RES"; UniqueID = "\NSOFLQIH" ("\NSOFLQIH")

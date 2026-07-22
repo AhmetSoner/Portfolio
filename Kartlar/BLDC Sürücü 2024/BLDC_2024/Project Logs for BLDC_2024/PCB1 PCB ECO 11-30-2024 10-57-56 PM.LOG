@@ -1,0 +1,1554 @@
+Add Component: Footprint Not Found ACS758
+Added Component: Designator=+1(0805LED)
+Added Component: Designator=+2(0805LED)
+Added Component: Designator=+3(0805LED)
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Add Component: Footprint Not Found R1SE3305H2R
+Added Component: Designator=C1(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C5(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C6(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C7(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C8(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C10(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C11(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C12(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C13(WCAP-CSGP_1210_L3.2W2.5H0.95)
+Add component (AddParameter): Name = "Capacitance"; Value = "2.2nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "1210"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012009019"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "1000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP01210222J050DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Added Component: Designator=C14(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C15(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C16(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C17(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C19(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C20(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C21(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C22(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C24(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C25(WCAP-CSGP_1210_L3.2W2.5H0.95)
+Add component (AddParameter): Name = "Capacitance"; Value = "2.2nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "1210"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012009019"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "1000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP01210222J050DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Added Component: Designator=C26(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C27(WCAP-CSGP_1210_L3.2W2.5H0.95)
+Add component (AddParameter): Name = "Capacitance"; Value = "2.2nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "1210"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012009019"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "1000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP01210222J050DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Added Component: Designator=C28(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C29(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C30(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C33(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C34(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C35(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C36(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C38(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C39(WCAP-CSGP_1210_L3.2W2.5H0.95)
+Add component (AddParameter): Name = "Capacitance"; Value = "2.2nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "1210"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012009019"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "1000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP01210222J050DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Added Component: Designator=C40(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C41(WCAP-CSGP_1210_L3.2W2.5H0.95)
+Add component (AddParameter): Name = "Capacitance"; Value = "2.2nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "1210"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012009019?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012009019"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "1000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP01210222J050DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Added Component: Designator=C42(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found CAPPRD750W80D1825H4150
+Add Component: Footprint Not Found CAPPRD750W80D1825H4150
+Added Component: Designator=C51(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "220pF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C52(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found CAPPRD750W80D1825H4150
+Add Component: Footprint Not Found CAPPRD750W80D1825H4150
+Added Component: Designator=C61(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C62(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found WCAP-CSGP_2220_L5.7W5H2.8
+Add Component: Footprint Not Found CAPPRD750W80D1825H4150
+Add Component: Footprint Not Found CAPPRD750W80D1825H4150
+Added Component: Designator=C71(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C72(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C73(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C74(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C75(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C76(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C77(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C78(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C79(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 25V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Added Component: Designator=C81(CAPAE1030X1060N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.lcsc.com/szlcsc/1810281207_ST-Semtech-CK1H221M-CRG10_C131159.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SEMTECH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CK1H221M-CRG10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C82(CAPAE1030X1060N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.lcsc.com/szlcsc/1810281207_ST-Semtech-CK1H221M-CRG10_C131159.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SEMTECH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CK1H221M-CRG10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C83(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 25V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Added Component: Designator=C85(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "680pF 25V"; VariantName = "[No Variations]"
+Added Component: Designator=C86(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C87(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C88(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C89(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C90(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C91(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C92(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C93(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C94(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C95(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C96(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C97(WCAP-CSGP_0805_L2W1.25H0.6_Reflow)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ceramic Type"; Value = "NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012007012?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "10G?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "885012007012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Q Factor"; Value = "840"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "NP00805220J016DFCT10000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C98(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C99(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 35V"; VariantName = "[No Variations]"
+Added Component: Designator=C100(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 35V"; VariantName = "[No Variations]"
+Added Component: Designator=C101(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 35V"; VariantName = "[No Variations]"
+Added Component: Designator=C102(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "330nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C103(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 25V"; VariantName = "[No Variations]"
+Added Component: Designator=D1(DO-214AC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SS14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMA-2 ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D3(SOD3715X145N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "B0530W-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOD-123 Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/B0530W-7-F/Diodes%20Inc./view-part/272168/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D4(SOD3715X145N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "B0530W-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOD-123 Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/B0530W-7-F/Diodes%20Inc./view-part/272168/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D6(DO-214AC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SS14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMA-2 ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D8(SOD3715X145N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "B0530W-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOD-123 Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/B0530W-7-F/Diodes%20Inc./view-part/272168/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D9(SOD3715X145N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "B0530W-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOD-123 Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/B0530W-7-F/Diodes%20Inc./view-part/272168/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D11(DO-214AC)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SS14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMA-2 ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SS14/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D13(SOD3715X145N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "B0530W-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOD-123 Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/B0530W-7-F/Diodes%20Inc./view-part/272168/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D14(SOD3715X145N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "B0530W-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOD-123 Diodes Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/B0530W-7-F/Diodes%20Inc./view-part/272168/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D16(DO-214AB)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/guc-yari-iletkenleri/diyotlar-modul-diyotlar-ve-dogrultucular/schottky-diyotlar/SS36-214AB-HT/475999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://cdn.ozdisan.com/ETicaret_Dosya/475999_7494647.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "SS36-HT"; VariantName = "[No Variations]"
+Added Component: Designator=IC4(TO-263-5)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "LM2596S-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/lm2596s-12/texas-instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/ds/symlink/lm2596.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "926-LM2596S-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2596S-12?qs=X1J7HmVL2ZEK1FPBBSYJCA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartValue"; Value = "LM2596HV"; VariantName = "[No Variations]"
+Added Component: Designator=IC5(TO-220-3)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/entegre-devreler-ics/guc-entegreleri/lineer-voltaj-regulatorleri/L7806CV-DG/5861"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://cdn.ozdisan.com/ETicaret_Dosya/39226_7065362.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartValue"; Value = "L7805"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found ACS758
+Add Component: Footprint Not Found ACS758
+Add Component: Footprint Not Found ACS758
+Added Component: Designator=J1(TB3_3.81_90C)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/Product/Detail/515263/15EDGRC-3-81-03P-11-00AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://enoss.degson.com/upload/file/20210313/10030000179/15EDGRC-3.81-XXP-1Y-00A(H)T0-1.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=J2(TB5 3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-05P-14-00AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://enoss.degson.com/upload/file/20210313/10030000179/15EDGRC-3.81-XXP-1Y-00A(H)T0-1.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=J3(TB2_3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-02P-11-00AH"; VariantName = "[No Variations]"
+Added Component: Designator=J4(TB2_3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-02P-11-00AH"; VariantName = "[No Variations]"
+Added Component: Designator=L1(BOURNS SRR1280)
+Add component (AddParameter): Name = "Value"; Value = "47uH 2A"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found IND_RLS-126-R
+Add Component: Footprint Not Found 7461098_chemical surface
+Add Component: Footprint Not Found 7461098_chemical surface
+Add Component: Footprint Not Found 7461098_chemical surface
+Add Component: Footprint Not Found 7461098_chemical surface
+Add Component: Footprint Not Found 7461098_chemical surface
+Add Component: Footprint Not Found 61302621121
+Added Component: Designator=Q1(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q2(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q4(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q5(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q7(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q8(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q10(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q11(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q13(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q14(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q16(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q17(FDB0260N1007L)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/fdb0260n1007l/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/FDB0260N1007L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-FDB0260N1007L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDB0260N1007L?qs=lDZPRidwxxtoCZGWdM7x%2FA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R1(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R3(0603_RES)
+Added Component: Designator=R4(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R5(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R6(0603_RES)
+Added Component: Designator=R7(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R9(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R10(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R11(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R12(0603_RES)
+Added Component: Designator=R13(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R14(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R16(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R18(0603_RES)
+Added Component: Designator=R19(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R20(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R21(0603_RES)
+Added Component: Designator=R22(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R24(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R25(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R26(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R27(0603_RES)
+Added Component: Designator=R28(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R29(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R31(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R33(0603_RES)
+Added Component: Designator=R34(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R35(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R36(0603_RES)
+Added Component: Designator=R37(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R39(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R40(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R41(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R42(0603_RES)
+Added Component: Designator=R43(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R44(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R46(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R47(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R52(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R53(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R58(0603_RES)
+Added Component: Designator=R59(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R60(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R65(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R66(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R71(0603_RES)
+Added Component: Designator=R72(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R73(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R78(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R79(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R84(0603_RES)
+Added Component: Designator=R85(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2k2 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R86(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R87(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22K Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R88(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20K Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R89(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R90(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "11k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R91(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R92(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2k2 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R93(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R94(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R95(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R96(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R97(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "5.5k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=U1(SOIC127P1030X265-16N)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/UCC21520DWR/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "UCC21520DWR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-16 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/UCC21520DWR/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/UCC21520DWR/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(SOIC127P1030X265-16N)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/UCC21520DWR/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "UCC21520DWR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-16 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/UCC21520DWR/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/UCC21520DWR/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U3(SOIC127P1030X265-16N)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/UCC21520DWR/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "UCC21520DWR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-16 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/UCC21520DWR/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/UCC21520DWR/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found WPME-FDSM_SIP-3_L11.6W8.5H10.5
+Add Component: Footprint Not Found WPME-FDSM_SIP-3_L11.6W8.5H10.5
+Added Component: Designator=VIN1(0805LED)
+Added Component: Designator=VR1(TL783)
+Added Pin To Net: NetName=+3.3V Pin=C62-1
+Added Pin To Net: NetName=+3.3V Pin=C72-1
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=+5V Pin=C3-2
+Added Pin To Net: NetName=+5V Pin=C4-2
+Added Pin To Net: NetName=+5V Pin=C5-2
+Added Pin To Net: NetName=+5V Pin=C6-2
+Added Pin To Net: NetName=+5V Pin=C19-2
+Added Pin To Net: NetName=+5V Pin=C20-2
+Added Pin To Net: NetName=+5V Pin=C33-2
+Added Pin To Net: NetName=+5V Pin=C34-2
+Added Pin To Net: NetName=+5V Pin=C73-2
+Added Pin To Net: NetName=+5V Pin=C74-2
+Added Pin To Net: NetName=+5V Pin=R85-1
+Added Pin To Net: NetName=+5V Pin=U1-3
+Added Pin To Net: NetName=+5V Pin=U1-8
+Added Pin To Net: NetName=+5V Pin=U2-3
+Added Pin To Net: NetName=+5V Pin=U2-8
+Added Pin To Net: NetName=+5V Pin=U3-3
+Added Pin To Net: NetName=+5V Pin=U3-8
+Added Net: Name=+5V
+Added Pin To Net: NetName=+12V Pin=C1-2
+Added Pin To Net: NetName=+12V Pin=C2-2
+Added Pin To Net: NetName=+12V Pin=C15-2
+Added Pin To Net: NetName=+12V Pin=C16-2
+Added Pin To Net: NetName=+12V Pin=C29-2
+Added Pin To Net: NetName=+12V Pin=C30-2
+Added Pin To Net: NetName=+12V Pin=R1-2
+Added Pin To Net: NetName=+12V Pin=R16-2
+Added Pin To Net: NetName=+12V Pin=R31-2
+Added Net: Name=+12V
+Added Pin To Net: NetName=+15V Pin=C77-2
+Added Pin To Net: NetName=+15V Pin=C78-2
+Added Pin To Net: NetName=+15V Pin=C81-1
+Added Pin To Net: NetName=+15V Pin=C85-2
+Added Pin To Net: NetName=+15V Pin=C102-2
+Added Pin To Net: NetName=+15V Pin=IC5-1
+Added Pin To Net: NetName=+15V Pin=L1-2
+Added Pin To Net: NetName=+15V Pin=R86-1
+Added Pin To Net: NetName=+15V Pin=R90-2
+Added Net: Name=+15V
+Added Pin To Net: NetName=+45V Pin=C79-2
+Added Pin To Net: NetName=+45V Pin=C82-1
+Added Pin To Net: NetName=+45V Pin=C83-2
+Added Pin To Net: NetName=+45V Pin=IC4-1
+Added Pin To Net: NetName=+45V Pin=R88-1
+Added Pin To Net: NetName=+45V Pin=R89-1
+Added Pin To Net: NetName=+45V Pin=VR1-2
+Added Pin To Net: NetName=+45V Pin=VR1-4
+Added Net: Name=+45V
+Added Pin To Net: NetName=A_IN_H Pin=R6-1
+Added Net: Name=A_IN_H
+Added Pin To Net: NetName=A_IN_L Pin=R12-1
+Added Net: Name=A_IN_L
+Added Pin To Net: NetName=A_VSS_H Pin=C12-2
+Added Pin To Net: NetName=A_VSS_H Pin=C13-1
+Added Pin To Net: NetName=A_VSS_H Pin=Q1-2
+Added Pin To Net: NetName=A_VSS_H Pin=Q1-3
+Added Pin To Net: NetName=A_VSS_H Pin=Q1-5
+Added Pin To Net: NetName=A_VSS_H Pin=Q1-6
+Added Pin To Net: NetName=A_VSS_H Pin=Q1-7
+Added Pin To Net: NetName=A_VSS_H Pin=Q2-2
+Added Pin To Net: NetName=A_VSS_H Pin=Q2-3
+Added Pin To Net: NetName=A_VSS_H Pin=Q2-5
+Added Pin To Net: NetName=A_VSS_H Pin=Q2-6
+Added Pin To Net: NetName=A_VSS_H Pin=Q2-7
+Added Pin To Net: NetName=A_VSS_H Pin=Q4-4
+Added Pin To Net: NetName=A_VSS_H Pin=Q5-4
+Added Pin To Net: NetName=A_VSS_H Pin=R4-1
+Added Pin To Net: NetName=A_VSS_H Pin=R13-2
+Added Pin To Net: NetName=A_VSS_H Pin=U1-14
+Added Net: Name=A_VSS_H
+Added Pin To Net: NetName=A_VSS_L Pin=+1-2
+Added Pin To Net: NetName=A_VSS_L Pin=+2-2
+Added Pin To Net: NetName=A_VSS_L Pin=+3-2
+Added Pin To Net: NetName=A_VSS_L Pin=C1-1
+Added Pin To Net: NetName=A_VSS_L Pin=C2-1
+Added Pin To Net: NetName=A_VSS_L Pin=C3-1
+Added Pin To Net: NetName=A_VSS_L Pin=C4-1
+Added Pin To Net: NetName=A_VSS_L Pin=C5-1
+Added Pin To Net: NetName=A_VSS_L Pin=C6-1
+Added Pin To Net: NetName=A_VSS_L Pin=C7-2
+Added Pin To Net: NetName=A_VSS_L Pin=C8-1
+Added Pin To Net: NetName=A_VSS_L Pin=C10-2
+Added Pin To Net: NetName=A_VSS_L Pin=C11-2
+Added Pin To Net: NetName=A_VSS_L Pin=C14-1
+Added Pin To Net: NetName=A_VSS_L Pin=C15-1
+Added Pin To Net: NetName=A_VSS_L Pin=C16-1
+Added Pin To Net: NetName=A_VSS_L Pin=C17-1
+Added Pin To Net: NetName=A_VSS_L Pin=C19-1
+Added Pin To Net: NetName=A_VSS_L Pin=C20-1
+Added Pin To Net: NetName=A_VSS_L Pin=C21-2
+Added Pin To Net: NetName=A_VSS_L Pin=C22-1
+Added Pin To Net: NetName=A_VSS_L Pin=C24-2
+Added Pin To Net: NetName=A_VSS_L Pin=C25-1
+Added Pin To Net: NetName=A_VSS_L Pin=C28-1
+Added Pin To Net: NetName=A_VSS_L Pin=C29-1
+Added Pin To Net: NetName=A_VSS_L Pin=C30-1
+Added Pin To Net: NetName=A_VSS_L Pin=C33-1
+Added Pin To Net: NetName=A_VSS_L Pin=C34-1
+Added Pin To Net: NetName=A_VSS_L Pin=C35-2
+Added Pin To Net: NetName=A_VSS_L Pin=C36-1
+Added Pin To Net: NetName=A_VSS_L Pin=C38-2
+Added Pin To Net: NetName=A_VSS_L Pin=C39-1
+Added Pin To Net: NetName=A_VSS_L Pin=C42-1
+Added Pin To Net: NetName=A_VSS_L Pin=C51-1
+Added Pin To Net: NetName=A_VSS_L Pin=C52-2
+Added Pin To Net: NetName=A_VSS_L Pin=C61-1
+Added Pin To Net: NetName=A_VSS_L Pin=C61-2
+Added Pin To Net: NetName=A_VSS_L Pin=C62-2
+Added Pin To Net: NetName=A_VSS_L Pin=C71-1
+Added Pin To Net: NetName=A_VSS_L Pin=C72-2
+Added Pin To Net: NetName=A_VSS_L Pin=C73-1
+Added Pin To Net: NetName=A_VSS_L Pin=C74-1
+Added Pin To Net: NetName=A_VSS_L Pin=C75-1
+Added Pin To Net: NetName=A_VSS_L Pin=C76-1
+Added Pin To Net: NetName=A_VSS_L Pin=C77-1
+Added Pin To Net: NetName=A_VSS_L Pin=C78-1
+Added Pin To Net: NetName=A_VSS_L Pin=C79-1
+Added Pin To Net: NetName=A_VSS_L Pin=C81-2
+Added Pin To Net: NetName=A_VSS_L Pin=C82-2
+Added Pin To Net: NetName=A_VSS_L Pin=C83-1
+Added Pin To Net: NetName=A_VSS_L Pin=C86-1
+Added Pin To Net: NetName=A_VSS_L Pin=C87-1
+Added Pin To Net: NetName=A_VSS_L Pin=C88-1
+Added Pin To Net: NetName=A_VSS_L Pin=C89-1
+Added Pin To Net: NetName=A_VSS_L Pin=C90-1
+Added Pin To Net: NetName=A_VSS_L Pin=C91-1
+Added Pin To Net: NetName=A_VSS_L Pin=C92-1
+Added Pin To Net: NetName=A_VSS_L Pin=C93-1
+Added Pin To Net: NetName=A_VSS_L Pin=C94-1
+Added Pin To Net: NetName=A_VSS_L Pin=C95-1
+Added Pin To Net: NetName=A_VSS_L Pin=C96-1
+Added Pin To Net: NetName=A_VSS_L Pin=C97-1
+Added Pin To Net: NetName=A_VSS_L Pin=C98-1
+Added Pin To Net: NetName=A_VSS_L Pin=C99-1
+Added Pin To Net: NetName=A_VSS_L Pin=C100-1
+Added Pin To Net: NetName=A_VSS_L Pin=C101-1
+Added Pin To Net: NetName=A_VSS_L Pin=C102-1
+Added Pin To Net: NetName=A_VSS_L Pin=C103-1
+Added Pin To Net: NetName=A_VSS_L Pin=D16-1
+Added Pin To Net: NetName=A_VSS_L Pin=IC4-3
+Added Pin To Net: NetName=A_VSS_L Pin=IC4-3
+Added Pin To Net: NetName=A_VSS_L Pin=IC4-3
+Added Pin To Net: NetName=A_VSS_L Pin=IC4-3
+Added Pin To Net: NetName=A_VSS_L Pin=IC4-5
+Added Pin To Net: NetName=A_VSS_L Pin=IC5-2
+Added Pin To Net: NetName=A_VSS_L Pin=J1-1
+Added Pin To Net: NetName=A_VSS_L Pin=J2-5
+Added Pin To Net: NetName=A_VSS_L Pin=J3-2
+Added Pin To Net: NetName=A_VSS_L Pin=J4-2
+Added Pin To Net: NetName=A_VSS_L Pin=Q4-2
+Added Pin To Net: NetName=A_VSS_L Pin=Q4-3
+Added Pin To Net: NetName=A_VSS_L Pin=Q4-5
+Added Pin To Net: NetName=A_VSS_L Pin=Q4-6
+Added Pin To Net: NetName=A_VSS_L Pin=Q4-7
+Added Pin To Net: NetName=A_VSS_L Pin=Q5-2
+Added Pin To Net: NetName=A_VSS_L Pin=Q5-3
+Added Pin To Net: NetName=A_VSS_L Pin=Q5-5
+Added Pin To Net: NetName=A_VSS_L Pin=Q5-6
+Added Pin To Net: NetName=A_VSS_L Pin=Q5-7
+Added Pin To Net: NetName=A_VSS_L Pin=Q10-2
+Added Pin To Net: NetName=A_VSS_L Pin=Q10-3
+Added Pin To Net: NetName=A_VSS_L Pin=Q10-5
+Added Pin To Net: NetName=A_VSS_L Pin=Q10-6
+Added Pin To Net: NetName=A_VSS_L Pin=Q10-7
+Added Pin To Net: NetName=A_VSS_L Pin=Q11-2
+Added Pin To Net: NetName=A_VSS_L Pin=Q11-3
+Added Pin To Net: NetName=A_VSS_L Pin=Q11-5
+Added Pin To Net: NetName=A_VSS_L Pin=Q11-6
+Added Pin To Net: NetName=A_VSS_L Pin=Q11-7
+Added Pin To Net: NetName=A_VSS_L Pin=Q16-2
+Added Pin To Net: NetName=A_VSS_L Pin=Q16-3
+Added Pin To Net: NetName=A_VSS_L Pin=Q16-5
+Added Pin To Net: NetName=A_VSS_L Pin=Q16-6
+Added Pin To Net: NetName=A_VSS_L Pin=Q16-7
+Added Pin To Net: NetName=A_VSS_L Pin=Q17-2
+Added Pin To Net: NetName=A_VSS_L Pin=Q17-3
+Added Pin To Net: NetName=A_VSS_L Pin=Q17-5
+Added Pin To Net: NetName=A_VSS_L Pin=Q17-6
+Added Pin To Net: NetName=A_VSS_L Pin=Q17-7
+Added Pin To Net: NetName=A_VSS_L Pin=R3-2
+Added Pin To Net: NetName=A_VSS_L Pin=R11-2
+Added Pin To Net: NetName=A_VSS_L Pin=R14-2
+Added Pin To Net: NetName=A_VSS_L Pin=R18-2
+Added Pin To Net: NetName=A_VSS_L Pin=R26-2
+Added Pin To Net: NetName=A_VSS_L Pin=R29-2
+Added Pin To Net: NetName=A_VSS_L Pin=R33-2
+Added Pin To Net: NetName=A_VSS_L Pin=R41-2
+Added Pin To Net: NetName=A_VSS_L Pin=R44-2
+Added Pin To Net: NetName=A_VSS_L Pin=R71-2
+Added Pin To Net: NetName=A_VSS_L Pin=R91-1
+Added Pin To Net: NetName=A_VSS_L Pin=R92-2
+Added Pin To Net: NetName=A_VSS_L Pin=R97-2
+Added Pin To Net: NetName=A_VSS_L Pin=U1-4
+Added Pin To Net: NetName=A_VSS_L Pin=U1-5
+Added Pin To Net: NetName=A_VSS_L Pin=U1-9
+Added Pin To Net: NetName=A_VSS_L Pin=U2-4
+Added Pin To Net: NetName=A_VSS_L Pin=U2-5
+Added Pin To Net: NetName=A_VSS_L Pin=U2-9
+Added Pin To Net: NetName=A_VSS_L Pin=U3-4
+Added Pin To Net: NetName=A_VSS_L Pin=U3-5
+Added Pin To Net: NetName=A_VSS_L Pin=U3-9
+Added Pin To Net: NetName=A_VSS_L Pin=VIN1-2
+Added Net: Name=A_VSS_L
+Added Pin To Net: NetName=B_IN_H Pin=R21-1
+Added Net: Name=B_IN_H
+Added Pin To Net: NetName=B_IN_L Pin=R27-1
+Added Net: Name=B_IN_L
+Added Pin To Net: NetName=B_VSS_H Pin=C26-2
+Added Pin To Net: NetName=B_VSS_H Pin=C27-1
+Added Pin To Net: NetName=B_VSS_H Pin=Q7-2
+Added Pin To Net: NetName=B_VSS_H Pin=Q7-3
+Added Pin To Net: NetName=B_VSS_H Pin=Q7-5
+Added Pin To Net: NetName=B_VSS_H Pin=Q7-6
+Added Pin To Net: NetName=B_VSS_H Pin=Q7-7
+Added Pin To Net: NetName=B_VSS_H Pin=Q8-2
+Added Pin To Net: NetName=B_VSS_H Pin=Q8-3
+Added Pin To Net: NetName=B_VSS_H Pin=Q8-5
+Added Pin To Net: NetName=B_VSS_H Pin=Q8-6
+Added Pin To Net: NetName=B_VSS_H Pin=Q8-7
+Added Pin To Net: NetName=B_VSS_H Pin=Q10-4
+Added Pin To Net: NetName=B_VSS_H Pin=Q11-4
+Added Pin To Net: NetName=B_VSS_H Pin=R19-1
+Added Pin To Net: NetName=B_VSS_H Pin=R28-2
+Added Pin To Net: NetName=B_VSS_H Pin=U2-14
+Added Net: Name=B_VSS_H
+Added Pin To Net: NetName=C_IN_H Pin=R36-1
+Added Net: Name=C_IN_H
+Added Pin To Net: NetName=C_IN_L Pin=R42-1
+Added Net: Name=C_IN_L
+Added Pin To Net: NetName=C_VSS_H Pin=C40-2
+Added Pin To Net: NetName=C_VSS_H Pin=C41-1
+Added Pin To Net: NetName=C_VSS_H Pin=Q13-2
+Added Pin To Net: NetName=C_VSS_H Pin=Q13-3
+Added Pin To Net: NetName=C_VSS_H Pin=Q13-5
+Added Pin To Net: NetName=C_VSS_H Pin=Q13-6
+Added Pin To Net: NetName=C_VSS_H Pin=Q13-7
+Added Pin To Net: NetName=C_VSS_H Pin=Q14-2
+Added Pin To Net: NetName=C_VSS_H Pin=Q14-3
+Added Pin To Net: NetName=C_VSS_H Pin=Q14-5
+Added Pin To Net: NetName=C_VSS_H Pin=Q14-6
+Added Pin To Net: NetName=C_VSS_H Pin=Q14-7
+Added Pin To Net: NetName=C_VSS_H Pin=Q16-4
+Added Pin To Net: NetName=C_VSS_H Pin=Q17-4
+Added Pin To Net: NetName=C_VSS_H Pin=R34-1
+Added Pin To Net: NetName=C_VSS_H Pin=R43-2
+Added Pin To Net: NetName=C_VSS_H Pin=U3-14
+Added Net: Name=C_VSS_H
+Added Pin To Net: NetName=COUT_A Pin=C51-2
+Added Pin To Net: NetName=COUT_A Pin=R58-2
+Added Net: Name=COUT_A
+Added Pin To Net: NetName=COUT_C Pin=C71-2
+Added Pin To Net: NetName=COUT_C Pin=R84-2
+Added Net: Name=COUT_C
+Added Pin To Net: NetName=ENABLE Pin=J3-1
+Added Net: Name=ENABLE
+Added Pin To Net: NetName=FB Pin=C85-1
+Added Pin To Net: NetName=FB Pin=IC4-4
+Added Pin To Net: NetName=FB Pin=R90-1
+Added Pin To Net: NetName=FB Pin=R91-2
+Added Net: Name=FB
+Added Pin To Net: NetName=FWD/REV Pin=J4-1
+Added Net: Name=FWD/REV
+Added Pin To Net: NetName=HA Pin=C99-2
+Added Pin To Net: NetName=HA Pin=J2-2
+Added Pin To Net: NetName=HA Pin=R93-2
+Added Net: Name=HA
+Added Pin To Net: NetName=HB Pin=C100-2
+Added Pin To Net: NetName=HB Pin=J2-3
+Added Pin To Net: NetName=HB Pin=R94-2
+Added Net: Name=HB
+Added Pin To Net: NetName=HC Pin=C101-2
+Added Pin To Net: NetName=HC Pin=J2-4
+Added Pin To Net: NetName=HC Pin=R95-2
+Added Net: Name=HC
+Added Pin To Net: NetName=ISO_5V Pin=C75-2
+Added Pin To Net: NetName=ISO_5V Pin=C76-2
+Added Net: Name=ISO_5V
+Added Pin To Net: NetName=ISO_+12_A_H Pin=C12-1
+Added Pin To Net: NetName=ISO_+12_A_H Pin=C13-2
+Added Pin To Net: NetName=ISO_+12_A_H Pin=D1-K
+Added Pin To Net: NetName=ISO_+12_A_H Pin=U1-16
+Added Net: Name=ISO_+12_A_H
+Added Pin To Net: NetName=ISO_+12_A_L Pin=C10-1
+Added Pin To Net: NetName=ISO_+12_A_L Pin=C11-1
+Added Pin To Net: NetName=ISO_+12_A_L Pin=U1-11
+Added Net: Name=ISO_+12_A_L
+Added Pin To Net: NetName=ISO_+12_B_H Pin=C26-1
+Added Pin To Net: NetName=ISO_+12_B_H Pin=C27-2
+Added Pin To Net: NetName=ISO_+12_B_H Pin=D6-K
+Added Pin To Net: NetName=ISO_+12_B_H Pin=U2-16
+Added Net: Name=ISO_+12_B_H
+Added Pin To Net: NetName=ISO_+12_B_L Pin=C24-1
+Added Pin To Net: NetName=ISO_+12_B_L Pin=C25-2
+Added Pin To Net: NetName=ISO_+12_B_L Pin=U2-11
+Added Net: Name=ISO_+12_B_L
+Added Pin To Net: NetName=ISO_+12_C_H Pin=C40-1
+Added Pin To Net: NetName=ISO_+12_C_H Pin=C41-2
+Added Pin To Net: NetName=ISO_+12_C_H Pin=D11-K
+Added Pin To Net: NetName=ISO_+12_C_H Pin=U3-16
+Added Net: Name=ISO_+12_C_H
+Added Pin To Net: NetName=ISO_+12_C_L Pin=C38-1
+Added Pin To Net: NetName=ISO_+12_C_L Pin=C39-2
+Added Pin To Net: NetName=ISO_+12_C_L Pin=U3-11
+Added Net: Name=ISO_+12_C_L
+Added Pin To Net: NetName=ISO_-12_A_H Pin=R13-1
+Added Net: Name=ISO_-12_A_H
+Added Pin To Net: NetName=ISO_-12_A_L Pin=R14-1
+Added Net: Name=ISO_-12_A_L
+Added Pin To Net: NetName=ISO_-12_B_H Pin=R28-1
+Added Net: Name=ISO_-12_B_H
+Added Pin To Net: NetName=ISO_-12_B_L Pin=R29-1
+Added Net: Name=ISO_-12_B_L
+Added Pin To Net: NetName=ISO_-12_C_H Pin=R43-1
+Added Net: Name=ISO_-12_C_H
+Added Pin To Net: NetName=ISO_-12_C_L Pin=R44-1
+Added Net: Name=ISO_-12_C_L
+Added Pin To Net: NetName=Net+1_1 Pin=+1-1
+Added Pin To Net: NetName=Net+1_1 Pin=R85-2
+Added Net: Name=Net+1_1
+Added Pin To Net: NetName=Net+2_1 Pin=+2-1
+Added Pin To Net: NetName=Net+2_1 Pin=R86-2
+Added Net: Name=Net+2_1
+Added Pin To Net: NetName=Net+3_1 Pin=+3-1
+Added Pin To Net: NetName=Net+3_1 Pin=R88-2
+Added Net: Name=Net+3_1
+Added Pin To Net: NetName=NetB1_2 Pin=C86-2
+Added Pin To Net: NetName=NetB1_2 Pin=C87-2
+Added Net: Name=NetB1_2
+Added Pin To Net: NetName=NetB2_2 Pin=C88-2
+Added Pin To Net: NetName=NetB2_2 Pin=C89-2
+Added Net: Name=NetB2_2
+Added Pin To Net: NetName=NetB3_2 Pin=C90-2
+Added Pin To Net: NetName=NetB3_2 Pin=C91-2
+Added Net: Name=NetB3_2
+Added Pin To Net: NetName=NetB4_2 Pin=C92-2
+Added Pin To Net: NetName=NetB4_2 Pin=C93-2
+Added Net: Name=NetB4_2
+Added Pin To Net: NetName=NetB5_2 Pin=C94-2
+Added Pin To Net: NetName=NetB5_2 Pin=C95-2
+Added Net: Name=NetB5_2
+Added Pin To Net: NetName=NetB6_2 Pin=C96-2
+Added Pin To Net: NetName=NetB6_2 Pin=C97-2
+Added Net: Name=NetB6_2
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=NetC7_1 Pin=R3-1
+Added Pin To Net: NetName=NetC7_1 Pin=U1-6
+Added Net: Name=NetC7_1
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=R6-2
+Added Pin To Net: NetName=NetC8_2 Pin=U1-1
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetC14_2 Pin=C14-2
+Added Pin To Net: NetName=NetC14_2 Pin=R12-2
+Added Pin To Net: NetName=NetC14_2 Pin=U1-2
+Added Net: Name=NetC14_2
+Added Pin To Net: NetName=NetC21_1 Pin=C21-1
+Added Pin To Net: NetName=NetC21_1 Pin=R18-1
+Added Pin To Net: NetName=NetC21_1 Pin=U2-6
+Added Net: Name=NetC21_1
+Added Pin To Net: NetName=NetC22_2 Pin=C22-2
+Added Pin To Net: NetName=NetC22_2 Pin=R21-2
+Added Pin To Net: NetName=NetC22_2 Pin=U2-1
+Added Net: Name=NetC22_2
+Added Pin To Net: NetName=NetC28_2 Pin=C28-2
+Added Pin To Net: NetName=NetC28_2 Pin=R27-2
+Added Pin To Net: NetName=NetC28_2 Pin=U2-2
+Added Net: Name=NetC28_2
+Added Pin To Net: NetName=NetC35_1 Pin=C35-1
+Added Pin To Net: NetName=NetC35_1 Pin=R33-1
+Added Pin To Net: NetName=NetC35_1 Pin=U3-6
+Added Net: Name=NetC35_1
+Added Pin To Net: NetName=NetC36_2 Pin=C36-2
+Added Pin To Net: NetName=NetC36_2 Pin=R36-2
+Added Pin To Net: NetName=NetC36_2 Pin=U3-1
+Added Net: Name=NetC36_2
+Added Pin To Net: NetName=NetC42_2 Pin=C42-2
+Added Pin To Net: NetName=NetC42_2 Pin=R42-2
+Added Pin To Net: NetName=NetC42_2 Pin=U3-2
+Added Net: Name=NetC42_2
+Added Pin To Net: NetName=NetC52_1 Pin=C52-1
+Added Net: Name=NetC52_1
+Added Pin To Net: NetName=NetC53_2 Pin=Q7-4
+Added Net: Name=NetC53_2
+Added Pin To Net: NetName=NetC63_2 Pin=Q13-4
+Added Net: Name=NetC63_2
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=R1-1
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD3_A Pin=D3-A
+Added Pin To Net: NetName=NetD3_A Pin=R7-1
+Added Net: Name=NetD3_A
+Added Pin To Net: NetName=NetD3_C Pin=D3-C
+Added Pin To Net: NetName=NetD3_C Pin=R5-1
+Added Pin To Net: NetName=NetD3_C Pin=U1-15
+Added Net: Name=NetD3_C
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=NetD4_A Pin=R10-1
+Added Net: Name=NetD4_A
+Added Pin To Net: NetName=NetD4_C Pin=D4-C
+Added Pin To Net: NetName=NetD4_C Pin=R9-1
+Added Pin To Net: NetName=NetD4_C Pin=U1-10
+Added Net: Name=NetD4_C
+Added Pin To Net: NetName=NetD6_A Pin=D6-A
+Added Pin To Net: NetName=NetD6_A Pin=R16-1
+Added Net: Name=NetD6_A
+Added Pin To Net: NetName=NetD8_A Pin=D8-A
+Added Pin To Net: NetName=NetD8_A Pin=R22-1
+Added Net: Name=NetD8_A
+Added Pin To Net: NetName=NetD8_C Pin=D8-C
+Added Pin To Net: NetName=NetD8_C Pin=R20-1
+Added Pin To Net: NetName=NetD8_C Pin=U2-15
+Added Net: Name=NetD8_C
+Added Pin To Net: NetName=NetD9_A Pin=D9-A
+Added Pin To Net: NetName=NetD9_A Pin=R25-1
+Added Net: Name=NetD9_A
+Added Pin To Net: NetName=NetD9_C Pin=D9-C
+Added Pin To Net: NetName=NetD9_C Pin=R24-1
+Added Pin To Net: NetName=NetD9_C Pin=U2-10
+Added Net: Name=NetD9_C
+Added Pin To Net: NetName=NetD11_A Pin=D11-A
+Added Pin To Net: NetName=NetD11_A Pin=R31-1
+Added Net: Name=NetD11_A
+Added Pin To Net: NetName=NetD13_A Pin=D13-A
+Added Pin To Net: NetName=NetD13_A Pin=R37-1
+Added Net: Name=NetD13_A
+Added Pin To Net: NetName=NetD13_C Pin=D13-C
+Added Pin To Net: NetName=NetD13_C Pin=R35-1
+Added Pin To Net: NetName=NetD13_C Pin=U3-15
+Added Net: Name=NetD13_C
+Added Pin To Net: NetName=NetD14_A Pin=D14-A
+Added Pin To Net: NetName=NetD14_A Pin=R40-1
+Added Net: Name=NetD14_A
+Added Pin To Net: NetName=NetD14_C Pin=D14-C
+Added Pin To Net: NetName=NetD14_C Pin=R39-1
+Added Pin To Net: NetName=NetD14_C Pin=U3-10
+Added Net: Name=NetD14_C
+Added Pin To Net: NetName=NetD16_2 Pin=D16-2
+Added Pin To Net: NetName=NetD16_2 Pin=IC4-2
+Added Pin To Net: NetName=NetD16_2 Pin=L1-1
+Added Net: Name=NetD16_2
+Added Pin To Net: NetName=NetIC?_3 Pin=R58-1
+Added Net: Name=NetIC?_3
+Add Net: Net with name "NetIC?_3" already exists
+Add Net: Net with name "NetIC?_3" already exists
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R46-2
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R47-2
+Added Net: Name=NetQ2_1
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=NetQ4_1 Pin=R52-2
+Added Net: Name=NetQ4_1
+Added Pin To Net: NetName=NetQ5_1 Pin=Q5-1
+Added Pin To Net: NetName=NetQ5_1 Pin=R53-2
+Added Net: Name=NetQ5_1
+Added Pin To Net: NetName=NetQ7_1 Pin=Q7-1
+Added Pin To Net: NetName=NetQ7_1 Pin=R59-2
+Added Net: Name=NetQ7_1
+Added Pin To Net: NetName=NetQ8_1 Pin=Q8-1
+Added Pin To Net: NetName=NetQ8_1 Pin=R60-2
+Added Net: Name=NetQ8_1
+Added Pin To Net: NetName=NetQ10_1 Pin=Q10-1
+Added Pin To Net: NetName=NetQ10_1 Pin=R65-2
+Added Net: Name=NetQ10_1
+Added Pin To Net: NetName=NetQ11_1 Pin=Q11-1
+Added Pin To Net: NetName=NetQ11_1 Pin=R66-2
+Added Net: Name=NetQ11_1
+Added Pin To Net: NetName=NetQ13_1 Pin=Q13-1
+Added Pin To Net: NetName=NetQ13_1 Pin=R72-2
+Added Net: Name=NetQ13_1
+Added Pin To Net: NetName=NetQ14_1 Pin=Q14-1
+Added Pin To Net: NetName=NetQ14_1 Pin=R73-2
+Added Net: Name=NetQ14_1
+Added Pin To Net: NetName=NetQ16_1 Pin=Q16-1
+Added Pin To Net: NetName=NetQ16_1 Pin=R78-2
+Added Net: Name=NetQ16_1
+Added Pin To Net: NetName=NetQ17_1 Pin=Q17-1
+Added Pin To Net: NetName=NetQ17_1 Pin=R79-2
+Added Net: Name=NetQ17_1
+Added Pin To Net: NetName=NetR87_2 Pin=R87-2
+Added Pin To Net: NetName=NetR87_2 Pin=VIN1-1
+Added Net: Name=NetR87_2
+Added Pin To Net: NetName=NetR89_2 Pin=R89-2
+Added Pin To Net: NetName=NetR89_2 Pin=R92-1
+Added Pin To Net: NetName=NetR89_2 Pin=VR1-1
+Added Net: Name=NetR89_2
+Added Pin To Net: NetName=Phase_A_H Pin=R4-2
+Added Pin To Net: NetName=Phase_A_H Pin=R5-2
+Added Pin To Net: NetName=Phase_A_H Pin=R7-2
+Added Pin To Net: NetName=Phase_A_H Pin=R46-1
+Added Pin To Net: NetName=Phase_A_H Pin=R47-1
+Added Net: Name=Phase_A_H
+Added Pin To Net: NetName=Phase_A_L Pin=R9-2
+Added Pin To Net: NetName=Phase_A_L Pin=R10-2
+Added Pin To Net: NetName=Phase_A_L Pin=R11-1
+Added Pin To Net: NetName=Phase_A_L Pin=R52-1
+Added Pin To Net: NetName=Phase_A_L Pin=R53-1
+Added Net: Name=Phase_A_L
+Added Net: Name=PHASE_A
+Added Pin To Net: NetName=Phase_B_H Pin=R19-2
+Added Pin To Net: NetName=Phase_B_H Pin=R20-2
+Added Pin To Net: NetName=Phase_B_H Pin=R22-2
+Added Pin To Net: NetName=Phase_B_H Pin=R59-1
+Added Pin To Net: NetName=Phase_B_H Pin=R60-1
+Added Net: Name=Phase_B_H
+Added Pin To Net: NetName=Phase_B_L Pin=R24-2
+Added Pin To Net: NetName=Phase_B_L Pin=R25-2
+Added Pin To Net: NetName=Phase_B_L Pin=R26-1
+Added Pin To Net: NetName=Phase_B_L Pin=R65-1
+Added Pin To Net: NetName=Phase_B_L Pin=R66-1
+Added Net: Name=Phase_B_L
+Added Net: Name=PHASE_B
+Added Pin To Net: NetName=Phase_C_H Pin=R34-2
+Added Pin To Net: NetName=Phase_C_H Pin=R35-2
+Added Pin To Net: NetName=Phase_C_H Pin=R37-2
+Added Pin To Net: NetName=Phase_C_H Pin=R72-1
+Added Pin To Net: NetName=Phase_C_H Pin=R73-1
+Added Pin To Net: NetName=Phase_C_H Pin=R78-1
+Added Pin To Net: NetName=Phase_C_H Pin=R79-1
+Added Net: Name=Phase_C_H
+Added Pin To Net: NetName=Phase_C_L Pin=R39-2
+Added Pin To Net: NetName=Phase_C_L Pin=R40-2
+Added Pin To Net: NetName=Phase_C_L Pin=R41-1
+Added Net: Name=Phase_C_L
+Added Net: Name=PHASE_C
+Added Pin To Net: NetName=PVDD Pin=Q1-4
+Added Pin To Net: NetName=PVDD Pin=Q2-4
+Added Pin To Net: NetName=PVDD Pin=Q8-4
+Added Pin To Net: NetName=PVDD Pin=Q14-4
+Added Pin To Net: NetName=PVDD Pin=R87-1
+Added Pin To Net: NetName=PVDD Pin=R96-1
+Added Pin To Net: NetName=PVDD Pin=VR1-3
+Added Net: Name=PVDD
+Added Pin To Net: NetName=REFOUT Pin=C98-2
+Added Pin To Net: NetName=REFOUT Pin=C103-2
+Added Pin To Net: NetName=REFOUT Pin=IC5-3
+Added Pin To Net: NetName=REFOUT Pin=J1-3
+Added Pin To Net: NetName=REFOUT Pin=J2-1
+Added Pin To Net: NetName=REFOUT Pin=R93-1
+Added Pin To Net: NetName=REFOUT Pin=R94-1
+Added Pin To Net: NetName=REFOUT Pin=R95-1
+Added Net: Name=REFOUT
+Added Pin To Net: NetName=SPEED Pin=J1-2
+Added Net: Name=SPEED
+Added Pin To Net: NetName=V_Sense Pin=R96-2
+Added Pin To Net: NetName=V_Sense Pin=R97-1
+Added Net: Name=V_Sense
+Added Class: Name=Connection
+Added Class: Name=Driver
+Added Class: Name=Power
+Added Class: Name=Regulators
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1

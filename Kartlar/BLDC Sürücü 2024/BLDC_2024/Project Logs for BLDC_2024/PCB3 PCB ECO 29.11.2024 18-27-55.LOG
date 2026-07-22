@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=IC? Old Footprint=ACS772ECB200BPFFT New Footprint=ACS758
+Added Component: Designator=*IC?(ACS758)
+Added Member To Class: ClassName=Power Member=Component *IC? ACS758

@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=PA4 Pin=R16-1
+Removed Pin From Net: NetName=NetJ5_22 Pin=R16-2
+Removed Pin From Net: NetName=PA5 Pin=R17-1
+Removed Pin From Net: NetName=NetJ5_20 Pin=R17-2
+Removed Pin From Net: NetName=PA6 Pin=R18-1
+Removed Pin From Net: NetName=NetJ5_18 Pin=R18-2
+Change Component Footprint: Designator=R16 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R17 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R18 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Comment : Designator=R16 Old Comment=10k Ohms New Comment=2k2
+Change Component Comment : Designator=R17 Old Comment=10k Ohms New Comment=2k2
+Change Component Comment : Designator=R18 Old Comment=10k Ohms New Comment=2k2
+Change component parameters: Designator = "R16" ("R16"); Footprint = "0805_RES"; UniqueID = "\PJYFROOH" ("\PJYFROOH")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R17" ("R17"); Footprint = "0805_RES"; UniqueID = "\PWGTHUOK" ("\PWGTHUOK")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R18" ("R18"); Footprint = "0805_RES"; UniqueID = "\COPMPUIZ" ("\COPMPUIZ")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ5_22 Pin=R16-1
+Added Pin To Net: NetName=PA4 Pin=R16-2
+Added Pin To Net: NetName=NetJ5_20 Pin=R17-1
+Added Pin To Net: NetName=PA5 Pin=R17-2
+Added Pin To Net: NetName=NetJ5_18 Pin=R18-1
+Added Pin To Net: NetName=PA6 Pin=R18-2

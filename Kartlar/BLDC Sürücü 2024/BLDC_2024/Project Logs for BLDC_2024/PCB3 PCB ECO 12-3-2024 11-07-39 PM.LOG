@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Phase_C_H Pin=R78-1
+Removed Pin From Net: NetName=Phase_C_H Pin=R79-1
+Added Pin To Net: NetName=Phase_C_L Pin=R78-1
+Added Pin To Net: NetName=Phase_C_L Pin=R79-1
+Added Member To Class: ClassName=Driver Member=Component U3 UCC21520DWR

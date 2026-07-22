@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=REF_OUT Pin=IC3-8
+Removed Pin From Net: NetName=SPEED_CMD Pin=R10-1
+Change Component Comment : Designator=R1 Old Comment=1M Ohms New Comment=10k Ohms
+Change Component Comment : Designator=R9 Old Comment=5.1k Ohms New Comment=10k Ohms
+Change Component Comment : Designator=R5 Old Comment=100k Ohms New Comment=68k Ohms
+Change Component Comment : Designator=C3 Old Comment=750pF 25V New Comment=22nF 25V
+Change component parameters: Designator = "C3" ("C3"); Footprint = "0805_CAP"; UniqueID = "\MAGNLCQF" ("\MAGNLCQF")
+Change component parameters (AddParameter): Name = "Value"; Value = "22nF 25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1" ("R1"); Footprint = "0805_RES"; UniqueID = "\ZUCRRPDT" ("\ZUCRRPDT")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "0805_RES"; UniqueID = "\NEJVNKUI" ("\NEJVNKUI")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "68k Ohms"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9" ("R9"); Footprint = "0805_RES"; UniqueID = "\VXVRSHFZ" ("\VXVRSHFZ")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetIC3_14 Pin=R10-1
+Added Room: Name=MC33035

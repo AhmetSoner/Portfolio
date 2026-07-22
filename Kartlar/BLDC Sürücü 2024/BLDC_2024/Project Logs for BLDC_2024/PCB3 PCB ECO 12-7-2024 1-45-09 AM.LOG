@@ -1,0 +1,56 @@
+Change Component Designator: OldDesignator=+5V NewDesignator=+1
+Change Component Designator: OldDesignator=+15V NewDesignator=+2
+Change Component Designator: OldDesignator=    NewDesignator=C45
+Change Component Designator: OldDesignator=    NewDesignator=C58
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=PVDD NewDesignator=VIN1
+Added Component: Designator=C103(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C104(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=R23(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R30(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=U7(SOT96-1)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NXP USA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TJA1051T/3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SO-8 NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TJA1051T/3/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C103-1
+Added Pin To Net: NetName=+5V Pin=C103-2
+Added Pin To Net: NetName=GND Pin=C104-1
+Added Pin To Net: NetName=CAN_L Pin=R23-1
+Added Pin To Net: NetName=CAN_H Pin=R30-2
+Added Pin To Net: NetName=GND Pin=U7-2
+Added Pin To Net: NetName=+5V Pin=U7-3
+Added Pin To Net: NetName=+3.3V Pin=U7-5
+Added Pin To Net: NetName=CAN_L Pin=U7-6
+Added Pin To Net: NetName=CAN_H Pin=U7-7
+Added Pin To Net: NetName=GND Pin=U7-8
+Change Net Name : Old Net Name=NetR58_1 New Net Name=NetIC1_3
+Change Net Name : Old Net Name=NetR71_1 New Net Name=NetIC2_3
+Change Net Name : Old Net Name=NetR84_1 New Net Name=NetIC3_3
+Added Pin To Net: NetName=NetC104_2 Pin=C104-2
+Added Pin To Net: NetName=NetC104_2 Pin=R23-2
+Added Pin To Net: NetName=NetC104_2 Pin=R30-1
+Added Net: Name=NetC104_2
+Added Pin To Net: NetName=RX Pin=U7-4
+Added Net: Name=RX
+Added Pin To Net: NetName=TX Pin=U7-1
+Added Net: Name=TX
+Added Member To Class: ClassName=Power Member=Component C45 47µF
+Added Member To Class: ClassName=Power Member=Component C50 470µF
+Added Member To Class: ClassName=Power Member=Component C58 47µF
+Added Member To Class: ClassName=Connection Member=Component C103 100nF 16V
+Added Member To Class: ClassName=Connection Member=Component C104 100nF 16V
+Added Member To Class: ClassName=Connection Member=Component R23 60
+Added Member To Class: ClassName=Connection Member=Component R30 60
+Added Member To Class: ClassName=Connection Member=Component U7 TJA1051T/3

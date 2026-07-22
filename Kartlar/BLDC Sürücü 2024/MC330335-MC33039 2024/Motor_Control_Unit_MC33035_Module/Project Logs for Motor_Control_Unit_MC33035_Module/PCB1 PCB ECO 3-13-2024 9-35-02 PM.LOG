@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=REF_OUT Pin=IC3-8
+Added Pin To Net: NetName=15V Pin=P1-6
+Added Pin To Net: NetName=15V Pin=P1-8
+Added Pin To Net: NetName=15V Pin=P1-10
+Added Pin To Net: NetName=15V Pin=P1-12
+Added Room: Name=MC33035

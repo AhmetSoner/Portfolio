@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=A_VSS_H Pin=B1-4
+Added Pin To Net: NetName=B_VSS_H Pin=B3-4
+Added Pin To Net: NetName=C_VSS_H Pin=B6-4
+Added Pin To Net: NetName=A_VSS_H Pin=C12-2
+Added Pin To Net: NetName=A_VSS_H Pin=C13-1
+Added Pin To Net: NetName=A_VSS_H Pin=U1-14
+Added Member To Class: ClassName=Driver Member=Component R4 10k Ohms
+Added Member To Class: ClassName=Driver Member=Component R11 10k Ohms

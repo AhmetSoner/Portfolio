@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=A_VSS_L Pin=C11-1
+Removed Pin From Net: NetName=ISO_+12_A_L Pin=C11-2
+Removed Member From Class: ClassName=Driver Member=C11

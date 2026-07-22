@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=REFOUT Pin=C1-2
+Removed Pin From Net: NetName=REFOUT Pin=J5-13
+Removed Pin From Net: NetName=REFOUT Pin=U1-1
+Added Pin To Net: NetName=+15 Pin=C1-2
+Added Pin To Net: NetName=+15 Pin=U1-1
+Change Net Name : Old Net Name=REFOUT New Net Name=+5
+Added Pin To Net: NetName=REFOUT Pin=J5-13
+Added Net: Name=REFOUT
+Added Member To Class: ClassName=Sheet2 Member=Component D1 Yellow
+Added Member To Class: ClassName=Sheet2 Member=Component D4 Yellow
+Added Member To Class: ClassName=Sheet2 Member=Component D5 Yellow
+Added Member To Class: ClassName=Sheet2 Member=Component R8 10 kOhms
+Added Member To Class: ClassName=Sheet2 Member=Component R14 10 kOhms
+Added Member To Class: ClassName=Sheet2 Member=Component R16 2k2
+Added Room: Name=Sheet2

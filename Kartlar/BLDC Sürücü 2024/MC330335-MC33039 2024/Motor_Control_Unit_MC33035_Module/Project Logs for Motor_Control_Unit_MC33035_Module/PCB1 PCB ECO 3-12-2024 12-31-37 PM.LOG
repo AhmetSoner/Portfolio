@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=HALL_A Pin=P1-2
+Removed Pin From Net: NetName=HALL_A Pin=P1-4
+Removed Pin From Net: NetName=HALL_C Pin=P1-6
+Removed Pin From Net: NetName=SPEED_CMD Pin=P1-15
+Removed Pin From Net: NetName=FOR/REV Pin=P1-17
+Removed Pin From Net: NetName=BRAKE Pin=P1-19
+Added Pin To Net: NetName=HALL_C Pin=P1-15
+Added Pin To Net: NetName=HALL_A Pin=P1-17
+Added Pin To Net: NetName=HALL_A Pin=P1-19
+Added Room: Name=MC33035

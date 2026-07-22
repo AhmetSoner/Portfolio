@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=5V Pin=J2-1
+Change Component Designator: OldDesignator=+5V NewDesignator=+1
+Change Component Designator: OldDesignator=+15V NewDesignator=+2
+Change Component Designator: OldDesignator=PVDD NewDesignator=VIN1
+Added Pin To Net: NetName=+5V Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Pin To Net: NetName=GND Pin=J3-4
+Add Net: Net with name "+15V" already exists
+Add Net: Net with name "PVDD" already exists

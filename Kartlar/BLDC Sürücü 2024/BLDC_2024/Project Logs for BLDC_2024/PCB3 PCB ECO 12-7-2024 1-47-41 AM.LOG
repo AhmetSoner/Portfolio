@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=CAN_L Pin=P1-14
+Removed Pin From Net: NetName=CAN_H Pin=P1-16
+Added Pin To Net: NetName=TX Pin=P1-14
+Added Pin To Net: NetName=RX Pin=P1-16
+Added Member To Class: ClassName=Regulators Member=Component +1 Green

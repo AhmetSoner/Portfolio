@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=GND Pin=C?-1
+Removed Pin From Net: NetName=CAN_H Pin=R?-2
+Change Component Footprint: Designator=C? Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=C? Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R? Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Comment : Designator=R? Old Comment=60 New Comment=60 Ohms
+Change Component Comment : Designator=R? Old Comment=60 New Comment=60 Ohms
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\YLSSEANN" ("\YLSSEANN")
+Change component parameters: Designator = "R?" ("R?"); Footprint = "0805_RES"; UniqueID = "\VHDVWJHJ" ("\VHDVWJHJ")
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=CAN_H Pin=R?-1
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=NetC?_1 Pin=R?-2
+Added Pin To Net: NetName=NetC?_1 Pin=R?-2
+Added Net: Name=NetC?_1
+Added Member To Class: ClassName=Sheet1 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet1 Member=Component R? 60 Ohms
+Added Member To Class: ClassName=Sheet1 Member=Component R? 60 Ohms

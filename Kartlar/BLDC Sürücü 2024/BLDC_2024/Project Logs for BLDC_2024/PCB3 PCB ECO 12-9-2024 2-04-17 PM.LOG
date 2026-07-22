@@ -1,0 +1,5 @@
+Change Net Name : Old Net Name=Net+1_1 New Net Name=Net+5V_1
+Change Net Name : Old Net Name=Net+2_1 New Net Name=Net+15V_1
+Change Net Name : Old Net Name=NetR87_2 New Net Name=NetPVDD_1
+Added Member To Class: ClassName=Regulators Member=Component +15V Green
+Added Member To Class: ClassName=Regulators Member=Component PVDD Green

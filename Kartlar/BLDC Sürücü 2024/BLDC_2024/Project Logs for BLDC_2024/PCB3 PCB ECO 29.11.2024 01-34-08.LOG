@@ -1,0 +1,101 @@
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Add Component: Footprint Not Found WCAP-ATG5_D5H11
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Add Component: Footprint Not Found Wolfspeed_TO-252-2_v2_MFG
+Added Component: Designator=IC?(TO-263-5)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "LM2596S-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/lm2596s-12/texas-instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/ds/symlink/lm2596.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "926-LM2596S-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2596S-12?qs=X1J7HmVL2ZEK1FPBBSYJCA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartValue"; Value = "LM2596HV"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Added Component: Designator=U4(WPME-FDSM_SIP-3_L11.6W8.5H10.5)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SIP-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Step Down Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/173010578?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/173010578?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "173010578"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FDSM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "8.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "28V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "8V"; VariantName = "[No Variations]"
+Added Component: Designator=U5(WPME-FDSM_SIP-3_L11.6W8.5H10.5)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SIP-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Step Down Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/173010578?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/173010578?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "173010578"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FDSM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "8.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "28V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "8V"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C80-1
+Add Pin To Net: Unknown Pin: Pin C80-2
+Add Pin To Net: Unknown Pin: Pin C84-1
+Add Pin To Net: Unknown Pin: Pin C84-2
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D6-1
+Add Pin To Net: Unknown Pin: Pin D6-2
+Add Pin To Net: Unknown Pin: Pin D6-3
+Add Pin To Net: Unknown Pin: Pin D11-1
+Add Pin To Net: Unknown Pin: Pin D11-2
+Add Pin To Net: Unknown Pin: Pin D11-3
+Added Pin To Net: NetName=+45V Pin=IC?-1
+Added Pin To Net: NetName=NetD16_2 Pin=IC?-2
+Added Pin To Net: NetName=GND Pin=IC?-3
+Added Pin To Net: NetName=GND Pin=IC?-3
+Added Pin To Net: NetName=GND Pin=IC?-3
+Added Pin To Net: NetName=GND Pin=IC?-3
+Added Pin To Net: NetName=NetC85_1 Pin=IC?-4
+Added Pin To Net: NetName=GND Pin=IC?-5
+Add Pin To Net: Unknown Pin: Pin R89-1
+Add Pin To Net: Unknown Pin: Pin R89-2
+Add Pin To Net: Unknown Pin: Pin R92-1
+Add Pin To Net: Unknown Pin: Pin R92-2
+Added Pin To Net: NetName=+15V Pin=U4-1
+Added Pin To Net: NetName=GND Pin=U4-2
+Added Pin To Net: NetName=+5V Pin=U4-3
+Added Pin To Net: NetName=+15V Pin=U5-1
+Added Pin To Net: NetName=GND Pin=U5-2
+Added Pin To Net: NetName=ISO_5V Pin=U5-3
+Change Net Name : Old Net Name=NetC85_1 New Net Name=FB
+Add Class Member: Failed to add class member : Component C80 10µF 63V
+Add Class Member: Failed to add class member : Component C84 10µF 63V
+Add Class Member: Failed to add class member : Component D1 C4D02120E
+Add Class Member: Failed to add class member : Component D6 C4D02120E
+Add Class Member: Failed to add class member : Component D11 C4D02120E
+Added Member To Class: ClassName=Power Member=Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Power Member=Component IC? ACS758LCB-100B-PFF-T
+Added Member To Class: ClassName=Regulators Member=Component IC? LM2596HV
+Add Class Member: Failed to add class member : Component R89 1k Ohms
+Add Class Member: Failed to add class member : Component R92 35k Ohms
+Added Member To Class: ClassName=Regulators Member=Component U4 8-28Vin, 5Vout, 1Aout
+Added Member To Class: ClassName=Regulators Member=Component U5 8-28Vin, 5Vout, 1Aout

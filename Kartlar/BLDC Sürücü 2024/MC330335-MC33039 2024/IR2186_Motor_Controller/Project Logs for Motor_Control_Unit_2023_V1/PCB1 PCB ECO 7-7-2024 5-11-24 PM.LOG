@@ -1,0 +1,18 @@
+Added Component: Designator=C61(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=R60(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "82 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R61(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "82 Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Shunt Pin=C61-1
+Added Pin To Net: NetName=Shunt Pin=R61-1
+Added Pin To Net: NetName=Shunt Pin=R61-2
+Added Pin To Net: NetName=GND  Pin=C61-2
+Added Pin To Net: NetName=GND  Pin=R60-1
+Added Pin To Net: NetName=GND  Pin=R60-2
+Added Net: Name=GND 
+Added Member To Class: ClassName=Power Member=Component C61 100nF 16V
+Added Member To Class: ClassName=Power Member=Component R60 100 Ohms
+Added Member To Class: ClassName=Power Member=Component R61 100 Ohms

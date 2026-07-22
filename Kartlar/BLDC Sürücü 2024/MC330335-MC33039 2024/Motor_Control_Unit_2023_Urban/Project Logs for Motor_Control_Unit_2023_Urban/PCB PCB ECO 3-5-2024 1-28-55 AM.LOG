@@ -1,0 +1,100 @@
+Removed Pin From Net: NetName=+15 Pin=VR1-1
+Removed Pin From Net: NetName=VSS_1 Pin=VR1-2
+Removed Pin From Net: NetName=NetC10_2 Pin=VR1-4
+Removed Pin From Net: NetName=VSS_A Pin=VR1-6
+Removed Pin From Net: NetName=+15 Pin=VR2-1
+Removed Pin From Net: NetName=VSS_1 Pin=VR2-2
+Removed Pin From Net: NetName=NetC29_2 Pin=VR2-4
+Removed Pin From Net: NetName=VSS_B Pin=VR2-6
+Removed Pin From Net: NetName=+15 Pin=VR3-1
+Removed Pin From Net: NetName=VSS_1 Pin=VR3-2
+Removed Pin From Net: NetName=NetC44_2 Pin=VR3-4
+Removed Pin From Net: NetName=VSS_C Pin=VR3-6
+Removed Member From Class: ClassName=Power Member=VR1
+Removed Member From Class: ClassName=Power Member=VR2
+Removed Member From Class: ClassName=Power Member=VR3
+Added Component: Designator=U7(WPME-FISM_SMT-8_L12.75W10.7H6.95)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SMT-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Isolated Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/176861512?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/176861512?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "6.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "5.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isolation Voltage"; Value = "2000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "12.75mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "176861512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FISM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Power"; Value = "1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "15V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "10.7mm"; VariantName = "[No Variations]"
+Added Component: Designator=U8(WPME-FISM_SMT-8_L12.75W10.7H6.95)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SMT-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Isolated Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/176861512?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/176861512?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "6.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "5.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isolation Voltage"; Value = "2000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "12.75mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "176861512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FISM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Power"; Value = "1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "15V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "10.7mm"; VariantName = "[No Variations]"
+Added Component: Designator=U9(WPME-FISM_SMT-8_L12.75W10.7H6.95)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SMT-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Isolated Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/176861512?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/176861512?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "6.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "5.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isolation Voltage"; Value = "2000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "12.75mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "176861512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FISM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Power"; Value = "1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "15V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "10.7mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VSS_1 Pin=U7-1
+Added Pin To Net: NetName=+15 Pin=U7-2
+Added Pin To Net: NetName=NetC10_2 Pin=U7-4
+Added Pin To Net: NetName=VSS_A Pin=U7-5
+Added Pin To Net: NetName=VSS_1 Pin=U8-1
+Added Pin To Net: NetName=+15 Pin=U8-2
+Added Pin To Net: NetName=NetC29_2 Pin=U8-4
+Added Pin To Net: NetName=VSS_B Pin=U8-5
+Added Pin To Net: NetName=VSS_1 Pin=U9-1
+Added Pin To Net: NetName=+15 Pin=U9-2
+Added Pin To Net: NetName=NetC44_2 Pin=U9-4
+Added Pin To Net: NetName=VSS_C Pin=U9-5
+Added Member To Class: ClassName=Power Member=Component U7 5Vin, 15Vout
+Added Member To Class: ClassName=Power Member=Component U8 5Vin, 15Vout
+Added Member To Class: ClassName=Power Member=Component U9 5Vin, 15Vout
+Added Room: Name=Regulator

@@ -1,0 +1,20 @@
+Added Pin To Net: NetName=+48V Pin=C4-1
+Added Pin To Net: NetName=+48V Pin=C5-1
+Added Pin To Net: NetName=+48V Pin=C6-1
+Added Pin To Net: NetName=+48V Pin=C7-1
+Added Pin To Net: NetName=+48V Pin=C11-1
+Added Pin To Net: NetName=+48V Pin=C12-1
+Added Pin To Net: NetName=+48V Pin=C13-1
+Added Pin To Net: NetName=+48V Pin=C14-1
+Added Pin To Net: NetName=+48V Pin=C47-1
+Added Pin To Net: NetName=15V Pin=C51-1
+Added Pin To Net: NetName=15V Pin=C52-2
+Added Pin To Net: NetName=15V Pin=C57-2
+Added Pin To Net: NetName=15V Pin=L1-2
+Added Pin To Net: NetName=15V Pin=R45-1
+Added Pin To Net: NetName=+48V Pin=R48-2
+Added Pin To Net: NetName=15V Pin=R49-2
+Added Pin To Net: NetName=15V Pin=U9-1
+Added Pin To Net: NetName=+48V Pin=VR1-3
+Change Net Name : Old Net Name=15V New Net Name=\
+Added Room: Name=Regulator

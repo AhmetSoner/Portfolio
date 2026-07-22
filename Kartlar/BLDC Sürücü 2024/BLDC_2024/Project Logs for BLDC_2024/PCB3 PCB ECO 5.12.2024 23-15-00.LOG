@@ -1,0 +1,327 @@
+Removed Pin From Net: NetName=A_VSS_L Pin=C98-1
+Removed Pin From Net: NetName=+5V Pin=C98-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C99-1
+Removed Pin From Net: NetName=HA Pin=C99-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C100-1
+Removed Pin From Net: NetName=HB Pin=C100-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C101-1
+Removed Pin From Net: NetName=HC Pin=C101-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C102-1
+Removed Pin From Net: NetName=+15V Pin=C102-2
+Removed Pin From Net: NetName=A_VSS_L Pin=C103-1
+Removed Pin From Net: NetName=+5V Pin=C103-2
+Removed Pin From Net: NetName=+15V Pin=IC5-1
+Removed Pin From Net: NetName=A_VSS_L Pin=IC5-2
+Removed Pin From Net: NetName=+5V Pin=IC5-3
+Removed Pin From Net: NetName=A_VSS_L Pin=J1-1
+Removed Pin From Net: NetName=SPEED Pin=J1-2
+Removed Pin From Net: NetName=+5V Pin=J1-3
+Removed Pin From Net: NetName=+5V Pin=J2-1
+Removed Pin From Net: NetName=HA Pin=J2-2
+Removed Pin From Net: NetName=HB Pin=J2-3
+Removed Pin From Net: NetName=HC Pin=J2-4
+Removed Pin From Net: NetName=A_VSS_L Pin=J2-5
+Removed Pin From Net: NetName=ENABLE Pin=J3-1
+Removed Pin From Net: NetName=A_VSS_L Pin=J3-2
+Removed Pin From Net: NetName=FWD/REV Pin=J4-1
+Removed Pin From Net: NetName=A_VSS_L Pin=J4-2
+Removed Pin From Net: NetName=V_Sense Pin=P1-2
+Removed Pin From Net: NetName=C_IN_L Pin=P1-3
+Removed Pin From Net: NetName=HC Pin=P1-4
+Removed Pin From Net: NetName=C_IN_H Pin=P1-5
+Removed Pin From Net: NetName=HB Pin=P1-6
+Removed Pin From Net: NetName=A_VSS_L Pin=P1-7
+Removed Pin From Net: NetName=HA Pin=P1-8
+Removed Pin From Net: NetName=+5V Pin=P1-9
+Removed Pin From Net: NetName=A_VSS_L Pin=P1-10
+Removed Pin From Net: NetName=A_VSS_L Pin=P1-11
+Removed Pin From Net: NetName=A_VSS_L Pin=P1-12
+Removed Pin From Net: NetName=B_IN_L Pin=P1-13
+Removed Pin From Net: NetName=+5V Pin=P1-14
+Removed Pin From Net: NetName=B_IN_H Pin=P1-15
+Removed Pin From Net: NetName=+5V Pin=P1-16
+Removed Pin From Net: NetName=COUT_C Pin=P1-17
+Removed Pin From Net: NetName=SPEED Pin=P1-18
+Removed Pin From Net: NetName=COUT_B Pin=P1-19
+Removed Pin From Net: NetName=+5V Pin=P1-20
+Removed Pin From Net: NetName=COUT_A Pin=P1-21
+Removed Pin From Net: NetName=ENABLE Pin=P1-22
+Removed Pin From Net: NetName=A_IN_L Pin=P1-23
+Removed Pin From Net: NetName=A_VSS_L Pin=P1-24
+Removed Pin From Net: NetName=A_IN_H Pin=P1-25
+Removed Pin From Net: NetName=FWD/REV Pin=P1-26
+Removed Pin From Net: NetName=+5V Pin=R93-1
+Removed Pin From Net: NetName=HA Pin=R93-2
+Removed Pin From Net: NetName=+5V Pin=R94-1
+Removed Pin From Net: NetName=HB Pin=R94-2
+Removed Pin From Net: NetName=+5V Pin=R95-1
+Removed Pin From Net: NetName=HC Pin=R95-2
+Removed Pin From Net: NetName=PVDD Pin=R96-1
+Removed Pin From Net: NetName=V_Sense Pin=R96-2
+Removed Pin From Net: NetName=V_Sense Pin=R97-1
+Removed Pin From Net: NetName=A_VSS_L Pin=R97-2
+Removed Member From Class: ClassName=Connection Member=C98
+Removed Member From Class: ClassName=Connection Member=C99
+Removed Member From Class: ClassName=Connection Member=C100
+Removed Member From Class: ClassName=Connection Member=C101
+Removed Member From Class: ClassName=Connection Member=C102
+Removed Member From Class: ClassName=Connection Member=C103
+Removed Member From Class: ClassName=Connection Member=IC5
+Removed Member From Class: ClassName=Connection Member=J1
+Removed Member From Class: ClassName=Connection Member=J2
+Removed Member From Class: ClassName=Connection Member=J3
+Removed Member From Class: ClassName=Connection Member=J4
+Removed Member From Class: ClassName=Connection Member=P1
+Removed Member From Class: ClassName=Connection Member=R93
+Removed Member From Class: ClassName=Connection Member=R94
+Removed Member From Class: ClassName=Connection Member=R95
+Removed Member From Class: ClassName=Connection Member=R96
+Removed Member From Class: ClassName=Connection Member=R97
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 35V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "330nF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 25V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0603_CAP)
+Add component (AddParameter): Name = "Value"; Value = "4.7nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 35V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 35V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Add Component: Footprint Not Found LED 0603_1608 YELLOW
+Added Component: Designator=IC?(TO-220-3)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/entegre-devreler-ics/guc-entegreleri/lineer-voltaj-regulatorleri/L7806CV-DG/5861"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://cdn.ozdisan.com/ETicaret_Dosya/39226_7065362.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartValue"; Value = "L7805"; VariantName = "[No Variations]"
+Added Component: Designator=J?(3pin_100mil)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/konnektor-ve-baglanti-elemanlari/konnektor-cesitleri/pcb-konnektorler/DS1070-3MVV6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part"; Value = "DS1070 3 Pin"; VariantName = "[No Variations]"
+Added Component: Designator=J?(TB2_3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-02P-11-00AH"; VariantName = "[No Variations]"
+Added Component: Designator=J?(TB5 3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-05P-14-00AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://enoss.degson.com/upload/file/20210313/10030000179/15EDGRC-3.81-XXP-1Y-00A(H)T0-1.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=J?(TB2_3.81MM)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/konnektor-ve-baglanti-elemanlari/klemensler/gecmeli-klemensler/15EDGRC-3-81-02P-11-00AH"; VariantName = "[No Variations]"
+Added Component: Designator=J?(TB3_3.81_90C)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ozdisan.com/Product/Detail/515263/15EDGRC-3-81-03P-11-00AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://enoss.degson.com/upload/file/20210313/10030000179/15EDGRC-3.81-XXP-1Y-00A(H)T0-1.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=P?(61302621121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61302621121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61302621121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20m?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61302621121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "26"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "5.5k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "60 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "60 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=U?(SOT96-1)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NXP USA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TJA1051T/3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SO-8 NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TJA1051T/3/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TJA1051T/3/NXP+USA+Inc./view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=A_VSS_L Pin=C?-1
+Added Pin To Net: NetName=A_VSS_L Pin=C?-1
+Added Pin To Net: NetName=A_VSS_L Pin=C?-1
+Added Pin To Net: NetName=A_VSS_L Pin=C?-1
+Added Pin To Net: NetName=A_VSS_L Pin=C?-1
+Added Pin To Net: NetName=A_VSS_L Pin=C?-1
+Added Pin To Net: NetName=+5V Pin=C?-2
+Added Pin To Net: NetName=+5V Pin=C?-2
+Added Pin To Net: NetName=+15V Pin=C?-2
+Added Pin To Net: NetName=A_VSS_L Pin=C?-2
+Added Pin To Net: NetName=A_VSS_L Pin=C?-2
+Added Pin To Net: NetName=A_VSS_L Pin=C?-2
+Added Pin To Net: NetName=A_VSS_L Pin=C?-2
+Added Pin To Net: NetName=HA Pin=C?-2
+Added Pin To Net: NetName=HB Pin=C?-2
+Added Pin To Net: NetName=HC Pin=C?-2
+Add Pin To Net: Unknown Pin: Pin D?-2
+Add Pin To Net: Unknown Pin: Pin D?-2
+Added Pin To Net: NetName=+15V Pin=IC?-1
+Added Pin To Net: NetName=A_VSS_L Pin=IC?-2
+Added Pin To Net: NetName=+5V Pin=IC?-3
+Added Pin To Net: NetName=+5V Pin=J?-1
+Added Pin To Net: NetName=A_VSS_L Pin=J?-1
+Added Pin To Net: NetName=ENABLE Pin=J?-1
+Added Pin To Net: NetName=FWD/REV Pin=J?-1
+Added Pin To Net: NetName=A_VSS_L Pin=J?-2
+Added Pin To Net: NetName=A_VSS_L Pin=J?-2
+Added Pin To Net: NetName=HA Pin=J?-2
+Added Pin To Net: NetName=SPEED Pin=J?-2
+Added Pin To Net: NetName=+5V Pin=J?-3
+Added Pin To Net: NetName=A_VSS_L Pin=J?-3
+Added Pin To Net: NetName=HB Pin=J?-3
+Added Pin To Net: NetName=HC Pin=J?-4
+Added Pin To Net: NetName=A_VSS_L Pin=J?-5
+Added Pin To Net: NetName=+5V Pin=P?-1
+Added Pin To Net: NetName=V_Sense Pin=P?-2
+Added Pin To Net: NetName=C_IN_L Pin=P?-3
+Added Pin To Net: NetName=HC Pin=P?-4
+Added Pin To Net: NetName=C_IN_H Pin=P?-5
+Added Pin To Net: NetName=HB Pin=P?-6
+Added Pin To Net: NetName=A_VSS_L Pin=P?-7
+Added Pin To Net: NetName=HA Pin=P?-8
+Added Pin To Net: NetName=+3.3V Pin=P?-9
+Added Pin To Net: NetName=A_VSS_L Pin=P?-11
+Added Pin To Net: NetName=B_IN_L Pin=P?-13
+Added Pin To Net: NetName=B_IN_H Pin=P?-15
+Added Pin To Net: NetName=COUT_C Pin=P?-17
+Added Pin To Net: NetName=SPEED Pin=P?-18
+Added Pin To Net: NetName=COUT_B Pin=P?-19
+Added Pin To Net: NetName=+5V Pin=P?-20
+Added Pin To Net: NetName=COUT_A Pin=P?-21
+Added Pin To Net: NetName=ENABLE Pin=P?-22
+Added Pin To Net: NetName=A_IN_L Pin=P?-23
+Added Pin To Net: NetName=A_VSS_L Pin=P?-24
+Added Pin To Net: NetName=A_IN_H Pin=P?-25
+Added Pin To Net: NetName=FWD/REV Pin=P?-26
+Added Pin To Net: NetName=+5V Pin=R?-1
+Added Pin To Net: NetName=+5V Pin=R?-1
+Added Pin To Net: NetName=+5V Pin=R?-1
+Added Pin To Net: NetName=ENABLE Pin=R?-1
+Added Pin To Net: NetName=FWD/REV Pin=R?-1
+Added Pin To Net: NetName=PVDD Pin=R?-1
+Added Pin To Net: NetName=V_Sense Pin=R?-1
+Added Pin To Net: NetName=A_VSS_L Pin=R?-2
+Added Pin To Net: NetName=HA Pin=R?-2
+Added Pin To Net: NetName=HB Pin=R?-2
+Added Pin To Net: NetName=HC Pin=R?-2
+Added Pin To Net: NetName=V_Sense Pin=R?-2
+Added Pin To Net: NetName=A_VSS_L Pin=U?-2
+Added Pin To Net: NetName=A_VSS_L Pin=U?-8
+Added Pin To Net: NetName=+3V3 Pin=C?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=U?-5
+Added Net: Name=+3V3
+Added Pin To Net: NetName=CAN_H Pin=R?-2
+Added Pin To Net: NetName=CAN_H Pin=U?-7
+Added Net: Name=CAN_H
+Added Pin To Net: NetName=CAN_L Pin=R?-2
+Added Pin To Net: NetName=CAN_L Pin=U?-6
+Added Net: Name=CAN_L
+Added Pin To Net: NetName=CAN_RX Pin=P?-14
+Added Pin To Net: NetName=CAN_RX Pin=U?-4
+Added Net: Name=CAN_RX
+Added Pin To Net: NetName=CAN_TX Pin=P?-16
+Added Pin To Net: NetName=CAN_TX Pin=U?-1
+Added Net: Name=CAN_TX
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=NetC?_1 Pin=R?-1
+Added Pin To Net: NetName=NetC?_1 Pin=R?-1
+Added Net: Name=NetC?_1
+Add Net: Net with name "NetC?_1" already exists
+Added Pin To Net: NetName=NetD?_1 Pin=R?-2
+Added Net: Name=NetD?_1
+Add Net: Net with name "NetD?_1" already exists
+Added Pin To Net: NetName=NetJ?_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ?_1 Pin=P?-12
+Added Net: Name=NetJ?_1
+Added Pin To Net: NetName=NetJ?_2 Pin=J?-2
+Added Pin To Net: NetName=NetJ?_2 Pin=P?-10
+Added Net: Name=NetJ?_2
+Added Member To Class: ClassName=Connection Member=Component C? 2.2uF
+Added Member To Class: ClassName=Connection Member=Component C? 100nF 35V
+Added Member To Class: ClassName=Connection Member=Component C? 100nF
+Added Member To Class: ClassName=Connection Member=Component C? 100nF
+Added Member To Class: ClassName=Connection Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Connection Member=Component C? 330nF 50V
+Added Member To Class: ClassName=Connection Member=Component C? 100nF 25V
+Added Member To Class: ClassName=Connection Member=Component C? 4.7nF
+Added Member To Class: ClassName=Connection Member=Component C? 100nF 35V
+Added Member To Class: ClassName=Connection Member=Component C? 100nF 35V
+Add Class Member: Failed to add class member : Component D? Yellow
+Add Class Member: Failed to add class member : Component D? Yellow
+Added Member To Class: ClassName=Connection Member=Component IC? L7805
+Added Member To Class: ClassName=Connection Member=Component J? DS1070 3 Pin
+Added Member To Class: ClassName=Connection Member=Component J? 2P 3.81mm
+Added Member To Class: ClassName=Connection Member=Component J? 5P 3.81mm
+Added Member To Class: ClassName=Connection Member=Component J? 2P 3.81mm
+Added Member To Class: ClassName=Connection Member=Component J? 3P 3.81MM
+Added Member To Class: ClassName=Connection Member=Component P? 61302621121
+Added Member To Class: ClassName=Connection Member=Component R? 4.7K
+Added Member To Class: ClassName=Connection Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Connection Member=Component R? 100k Ohms
+Added Member To Class: ClassName=Connection Member=Component R? 5.5k Ohms
+Added Member To Class: ClassName=Connection Member=Component R? 2k2
+Added Member To Class: ClassName=Connection Member=Component R? 2k2
+Added Member To Class: ClassName=Connection Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Connection Member=Component R? 60 Ohms
+Added Member To Class: ClassName=Connection Member=Component R? 4.7K
+Added Member To Class: ClassName=Connection Member=Component R? 60 Ohms
+Added Member To Class: ClassName=Connection Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Connection Member=Component U? TJA1051T/3
+Added Rule: Name=Schematic Supply Nets

@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=GND Pin=C9-1
+Removed Pin From Net: NetName=SPEED Pin=C9-2
+Removed Pin From Net: NetName=GND Pin=C10-1
+Removed Pin From Net: NetName=SPEED Pin=C10-2
+Removed Pin From Net: NetName=GND Pin=C13-1
+Removed Pin From Net: NetName=RESET Pin=C13-2
+Change Component Footprint: Designator=C9 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=C10 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=C13 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Comment : Designator=C9 Old Comment=10nF 35V New Comment=10nF
+Change Component Comment : Designator=C10 Old Comment=10nF 35V New Comment=10nF
+Change Component Comment : Designator=C13 Old Comment=100nF 16V New Comment=100nF
+Change component parameters: Designator = "C9" ("C9"); Footprint = "0805_CAP"; UniqueID = "\BUNYTZTJ" ("\BUNYTZTJ")
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10" ("C10"); Footprint = "0805_CAP"; UniqueID = "\YQFREWGJ" ("\YQFREWGJ")
+Change component parameters (AddParameter): Name = "Value"; Value = "10nF 16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C13" ("C13"); Footprint = "0805_CAP"; UniqueID = "\GNCIKBBU" ("\GNCIKBBU")
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF 16V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SPEED Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=SPEED Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=RESET Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Room: Name=Sheet2

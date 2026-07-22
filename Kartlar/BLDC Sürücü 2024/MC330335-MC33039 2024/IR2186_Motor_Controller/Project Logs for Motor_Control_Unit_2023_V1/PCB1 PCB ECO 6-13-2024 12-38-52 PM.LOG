@@ -1,0 +1,22 @@
+Added Component: Designator=?(0805LED)
+Added Component: Designator=Q?(TO-247)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/Product/Detail/480417/IRFP4310ZPBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://cdn.ozdisan.com/ETicaret_Dosya/480417_1248700.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rate"; Value = "120A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartValue"; Value = "IRFP4310ZPbF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rate"; Value = "100V"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20K Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Shunt Pin=?-2
+Added Pin To Net: NetName=+45V Pin=R?-1
+Added Pin To Net: NetName=Net?_1 Pin=?-1
+Added Pin To Net: NetName=Net?_1 Pin=R?-2
+Added Net: Name=Net?_1
+Added Member To Class: ClassName=Regulator Member=Component ? Green
+Added Member To Class: ClassName=Power Member=Component Q? IRFP4310ZPbF
+Added Member To Class: ClassName=Regulator Member=Component R? 20K Ohms
+Added Room: Name=Power
+Added Room: Name=Regulator

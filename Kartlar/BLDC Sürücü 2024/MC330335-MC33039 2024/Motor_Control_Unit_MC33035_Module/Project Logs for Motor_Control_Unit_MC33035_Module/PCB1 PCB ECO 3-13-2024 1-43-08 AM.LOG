@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=FOR/REV Pin=IC3-11
+Removed Pin From Net: NetName=SPEED_CMD Pin=IC3-11
+Removed Pin From Net: NetName=FOR/REV Pin=R10-1
+Added Pin To Net: NetName=GND Pin=IC3-22
+Added Pin To Net: NetName=GND Pin=IC3-23
+Added Pin To Net: NetName=NetIC3_14 Pin=R10-1

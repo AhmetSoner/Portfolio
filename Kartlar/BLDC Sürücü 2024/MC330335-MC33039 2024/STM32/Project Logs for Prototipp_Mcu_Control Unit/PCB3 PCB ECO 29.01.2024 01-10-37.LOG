@@ -1,0 +1,72 @@
+Added Component: Designator=C?(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=R?(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "11k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=U?(WPME-FDSM_SIP-3_L11.6W8.5H10.5)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SIP-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Step Down Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/173010378?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/173010378?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "173010378"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FDSM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "8.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "28V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "7V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=+5 Pin=C?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+5 Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Member To Class: ClassName=Sheet2 Member=Component C? 4.7uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF 35V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF 35V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 1uF
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 2 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 5P
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 2 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 3 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 10K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 0R
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component TX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component U? 7-28Vin, 3.3Vout, 1Aout
+Added Room: Name=Sheet2

@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=C7 NewDesignator=C3
+Change Component Designator: OldDesignator=C8 NewDesignator=C10
+Change Component Designator: OldDesignator=C9 NewDesignator=C15
+Change Component Designator: OldDesignator=C10 NewDesignator=C8
+Change Component Designator: OldDesignator=C15 NewDesignator=C9
+Change Net Name : Old Net Name=NetC10_2 New Net Name=NetC8_2
+Added Room: Name=Regulator

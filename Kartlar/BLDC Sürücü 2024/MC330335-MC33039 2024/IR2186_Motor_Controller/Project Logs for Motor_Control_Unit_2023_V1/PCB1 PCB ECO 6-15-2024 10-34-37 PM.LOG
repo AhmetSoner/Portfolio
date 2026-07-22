@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=Shunt Pin=R15-2
+Removed Pin From Net: NetName=Shunt Pin=R49-2
+Added Pin To Net: NetName=SPEED Pin=J3-22
+Added Pin To Net: NetName=NetR15_2 Pin=R15-2
+Added Pin To Net: NetName=NetR15_2 Pin=R49-2
+Add Net: Net with name "+45V" already exists
+Added Pin To Net: NetName=OffSheet Pin=J3-2
+Added Net: Name=OffSheet

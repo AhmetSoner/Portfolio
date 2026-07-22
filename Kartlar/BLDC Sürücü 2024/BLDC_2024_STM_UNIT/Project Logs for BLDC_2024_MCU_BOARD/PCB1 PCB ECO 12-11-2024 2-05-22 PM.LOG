@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=Y1 Old Footprint=XTAL_CC7V-T1A-32.768KHZ-9PF-20PPM-TA-QC New Footprint=XTAL_ABM3-8.000MHZ-D2Y-T
+Change Component Comment : Designator=Y1 Old Comment=CC7V-T1A-32.768KHZ-9PF-20PPM-TA-QC New Comment=ABM3-8.000MHZ-D2Y-T
+Change component parameters: Designator = "Y1" ("Y1"); Footprint = "XTAL_CC7V-T1A-32.768KHZ-9PF-20PPM-TA-QC"; UniqueID = "\FBXQIPSG" ("\FBXQIPSG")
+Change component parameters (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ABM3-8.000MHZ-D2Y-T/Abracon+LLC/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Abracon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "ABM3-8.000MHZ-D2Y-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SMD-2 Abracon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/ABM3-8.000MHZ-D2Y-T/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ABM3-8.000MHZ-D2Y-T/Abracon+LLC/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Shunt Pin=+3.3V-2
+Removed Member From Class: ClassName=Regulator Member=+3.3V
+Removed Member From Class: ClassName=Regulator Member=R57
+Added Room: Name=Power
+Added Room: Name=Regulator

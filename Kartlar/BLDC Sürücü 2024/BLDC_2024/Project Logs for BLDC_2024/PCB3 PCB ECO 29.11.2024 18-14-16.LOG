@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PHASE_C Pin=IC?-14
+Removed Pin From Net: NetName=PHASE_C Pin=IC?-14
+Removed Pin From Net: NetName=C_VSS_H Pin=IC?-16
+Removed Pin From Net: NetName=C_VSS_H Pin=IC?-16
+Added Pin To Net: NetName=C_VSS_H Pin=IC?-4
+Added Pin To Net: NetName=PHASE_C Pin=IC?-5
+Added Pin To Net: NetName=PHASE_C Pin=IC?-5

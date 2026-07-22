@@ -1,0 +1,42 @@
+Added Component: Designator=C22(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C59(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=C60(0805_CAP)
+Add component (AddParameter): Name = "Value"; Value = "100nF 16V"; VariantName = "[No Variations]"
+Added Component: Designator=R25(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R26(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R59(0805_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C59-2
+Added Pin To Net: NetName=GND Pin=C60-1
+Added Pin To Net: NetName=5V Pin=R25-2
+Added Pin To Net: NetName=5V Pin=R26-2
+Added Pin To Net: NetName=5V Pin=R59-2
+Added Net: Name=5V
+Added Pin To Net: NetName=HA Pin=C22-1
+Added Pin To Net: NetName=HA Pin=J2-2
+Added Pin To Net: NetName=HA Pin=R25-1
+Added Net: Name=HA
+Added Pin To Net: NetName=HB Pin=C59-1
+Added Pin To Net: NetName=HB Pin=J2-3
+Added Pin To Net: NetName=HB Pin=R26-1
+Added Net: Name=HB
+Added Pin To Net: NetName=HC Pin=C60-2
+Added Pin To Net: NetName=HC Pin=J2-4
+Added Pin To Net: NetName=HC Pin=R59-1
+Added Net: Name=HC
+Added Member To Class: ClassName=Power Member=Component C22 100nF 16V
+Added Member To Class: ClassName=Power Member=Component C59 100nF 16V
+Added Member To Class: ClassName=Power Member=Component C60 100nF 16V
+Added Member To Class: ClassName=Power Member=Component R25 10K Ohms
+Added Member To Class: ClassName=Power Member=Component R26 10K Ohms
+Added Member To Class: ClassName=Power Member=Component R59 10K Ohms
+Added Room: Name=Power
+Added Room: Name=Regulator

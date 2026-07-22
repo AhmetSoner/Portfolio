@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=VSS_H Pin=R4-1
+Removed Pin From Net: NetName=Phase_A_H Pin=R4-2
+Removed Pin From Net: NetName=Phase_A_L Pin=R11-1
+Removed Pin From Net: NetName=A_VSS_L Pin=R11-2
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Component: Footprint Not Found 0805_RES
+Add Pin To Net: Unknown Pin: Pin R?-1
+Add Pin To Net: Unknown Pin: Pin R?-1
+Add Pin To Net: Unknown Pin: Pin R?-1
+Add Pin To Net: Unknown Pin: Pin R?-1
+Add Pin To Net: Unknown Pin: Pin R?-1
+Add Pin To Net: Unknown Pin: Pin R?-2
+Add Pin To Net: Unknown Pin: Pin R?-2
+Add Pin To Net: Unknown Pin: Pin R?-2
+Add Pin To Net: Unknown Pin: Pin R?-2
+Add Pin To Net: Unknown Pin: Pin R?-2
+Add Class Member: Failed to add class member : Component R? 0 Ohms
+Add Class Member: Failed to add class member : Component R? 0 Ohms
+Add Class Member: Failed to add class member : Component R? 10k Ohms
+Add Class Member: Failed to add class member : Component R? 10k Ohms
+Add Class Member: Failed to add class member : Component R? 0 Ohms

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=A_VSS_L Pin=C51-1
+Removed Pin From Net: NetName=A_VSS_L Pin=C61-2
+Removed Pin From Net: NetName=A_VSS_L Pin=P1-19
+Removed Pin From Net: NetName=A_VSS_L Pin=R71-2
+Added Pin To Net: NetName=PVDD Pin=C37-2
+Added Pin To Net: NetName=COUT_B Pin=P1-19
+Added Pin To Net: NetName=COUT_B Pin=R71-2
+Added Net: Name=COUT_B

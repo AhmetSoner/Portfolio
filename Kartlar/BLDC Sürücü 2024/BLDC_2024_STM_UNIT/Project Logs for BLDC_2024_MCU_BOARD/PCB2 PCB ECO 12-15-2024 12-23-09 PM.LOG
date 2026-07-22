@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=+3V3 Pin=R6-1
+Removed Pin From Net: NetName=ENABLE Pin=R6-2
+Removed Pin From Net: NetName=+3V3 Pin=R7-1
+Removed Pin From Net: NetName=FWD/REV Pin=R7-2
+Removed Member From Class: ClassName=Sheet1 Member=R7
+Change Component Footprint: Designator=R6 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Comment : Designator=R6 Old Comment=4.7k Ohms New Comment=4.7k
+Change component parameters: Designator = "R6" ("R6"); Footprint = "0805_RES"; UniqueID = "\NANGYUFN" ("\NANGYUFN")
+Change component parameters (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R4(0603_RES)
+Add component (AddParameter): Name = "Power"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0/10 Ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ENABLE Pin=R4-1
+Added Pin To Net: NetName=+3V3 Pin=R4-2
+Added Pin To Net: NetName=FWD/REV Pin=R6-1
+Added Pin To Net: NetName=+3V3 Pin=R6-2
+Added Member To Class: ClassName=Sheet1 Member=Component R4 4.7k
+Added Member To Class: ClassName=Sheet1 Member=Component U1 STM32F446RET6

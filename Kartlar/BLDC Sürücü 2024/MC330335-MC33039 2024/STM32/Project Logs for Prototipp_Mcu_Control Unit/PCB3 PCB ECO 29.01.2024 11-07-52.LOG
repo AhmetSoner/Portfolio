@@ -1,0 +1,58 @@
+Removed Pin From Net: NetName=3V3 Pin=C?-2
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-1
+Removed Pin From Net: NetName=3V3 Pin=R?-2
+Removed Pin From Net: NetName=3V3 Pin=R?-2
+Removed Pin From Net: NetName=3V3 Pin=R?-2
+Removed Pin From Net: NetName=3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=C?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF 35V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 1uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF 16V
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 2.2uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 100nF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 4.7uF
+Added Member To Class: ClassName=Sheet2 Member=Component C? 10nF 35V
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 2 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 5P
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 3 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component J? DS1070 2 Pin
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 82 Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 10k Ohms
+Added Member To Class: ClassName=Sheet2 Member=Component R? 10K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R? 2k2
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component RX? Green
+Added Member To Class: ClassName=Sheet2 Member=Component U? INA229
+Added Room: Name=Sheet2
