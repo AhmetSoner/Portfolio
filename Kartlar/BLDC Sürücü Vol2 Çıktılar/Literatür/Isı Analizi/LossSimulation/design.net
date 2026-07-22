@@ -1,0 +1,9 @@
+* C:\Users\ahmet\Desktop\Loss.wxsch
+*#SIMETRIX
+X$U1 U1_drain R1_P 0 U1_Tj U1_Tcase FDB0260N1007L_5P pinnames: drain gate source Tj Tcase
+V2 R2_P 0 52
+X$V1 V1_P 0 SQU_SOURCE pinnames: P N params: _V1=0 _V2=12 _FREQ=20k _DELAY=0 _DRATIOx100=50 _T_RISE=50n _T_FALL=50n _DAMP_COEF=0 _PWIDTH=24.95u _OFF_UNTIL_DELAY=0 _IDLE_IN_POP=0 _USEPHASE=0 _PHASE=0 _SHOWPARAMS=1
+R2 R2_P U1_drain 520m
+R1 R1_P V1_P 5
+ 
+

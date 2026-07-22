@@ -1,0 +1,160 @@
+
+**** 06/26/25 21:47:33 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Loss"  [ C:\Users\ahmet\Desktop\LossSimulation\powerloss-pspicefiles\schematic1\loss.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Loss.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/ahmet/Desktop/mv5_100v_std_rev1p0_pspice.txt" 
+* From [PSPICE NETLIST] section of C:\Users\ahmet\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN TEMP 0 100 1 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 1.0u
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source POWERLOSS
+V_V1         N00119 GND 52Vdc
+V_V2         N00373 GND  
++PULSE 12V 0 0 16n 12n 30u 100u
+R_R1         N00373 N00421  5 TC=0,0 
+R_R2         N00123 N00119  0.52 TC=0,0 
+X_X1         N00123 N00421 GND N01240 VOUT FDB0260N1007L_5P
+R_R3         N01240 GND  1M TC=0,0 
+V_V3         VOUT GND {Temp}
+
+**** RESUMING Loss.cir ****
+.END
+
+INFO(ORPSIM-15453): Model X_X1.xmos.ptmosi: Using BSIM VERSION 3.2
+
+Model-Specific Temperatures During Sweep  Param value = 0
+
+ **** DIODE MODEL PARAMETERS
+
+               X_X1.xmos.pbody (T_Current 0 T_Measured 25)
+
+         IS        1.518E-13  
+         VJ        7.865E-01  
+        CJO        3.515E-09  
+         RS        3.287E-04  
+        IKF        0.000E+00  
+         BV        1.076E+02  
+
+
+ **** JFET MODEL PARAMETERS
+
+               X_X1.xmos.myjfet1 (T_Current 0 T_Measured 25)
+                              X_X1.xmos.myjfet2 (T_Current 0 T_Measured 25)
+
+        VTO       -2.142E+00     -2.142E+00  
+       BETA        9.753E+02      9.753E+02  
+         IS        0.000E+00      0.000E+00  
+         PB        1.022E+00      1.022E+00  
+        CGS        0.000E+00      0.000E+00  
+        CGD        0.000E+00      0.000E+00  
+
+
+ **** MOSFET MODEL PARAMETERS
+
+               X_X1.xmos.ptmosi (T_Current 0 T_Measured 25)
+
+         UA        1.064E-08  
+         UB        7.381E-19  
+         UC       -7.453E-01  
+        VBX       -1.472E-01  
+     GAMMA1        3.725E+00  
+         K1        2.233E+00  
+         K2       -1.458E-01  
+       VTH0        4.064E+00  
+
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  GND) 94.69E+03  ( VOUT) 94.69E+03  (N00119) 94.74E+03 (N00123) 94.74E+03     
+
+(N00373) 94.70E+03 (N00421) 94.70E+03 (N01240) 94.69E+03 
+
+
+  These voltages failed to converge:
+
+    V(N00119)                 =    98.97KV  \    94.74KV
+    V(GND)                    =    98.92KV  \    94.69KV
+    V(N00373)                 =    98.93KV  \    94.70KV
+    V(N00421)                 =    98.93KV  \    94.70KV
+    V(N00123)                 =    98.97KV  \    94.74KV
+    V(N01240)                 =    98.92KV  \    94.69KV
+    V(VOUT)                   =    98.92KV  \    94.69KV
+    V(X_X1.gi)                =    98.93KV  \    94.70KV
+    V(X_X1.di)                =    98.97KV  \    94.74KV
+    V(X_X1.si)                =    98.92KV  \    94.69KV
+    V(X_X1.xmos.t1)           =    98.92KV  \    94.68KV
+    V(X_X1.xmos.t2)           =    98.92KV  \    94.68KV
+    V(X_X1.xmos.t3)           =    98.92KV  \    94.68KV
+    V(X_X1.xmos.di)           =    98.97KV  \    94.74KV
+    V(X_X1.xmos.gi)           =    98.93KV  \    94.70KV
+    V(X_X1.xmos.si)           =    98.92KV  \    94.69KV
+    V(X_X1.xmos.sh)           =    98.92KV  \    94.69KV
+    V(X_X1.xmos.d2)           =    98.97KV  \    94.74KV
+    V(X_X1.xmos.151)          =    98.92KV  \    94.69KV
+    V(X_X1.xmos.200)          =  -585.72nV  \    4.710uV
+    V(X_X1.xmos.shint)        =    98.92KV  \    94.69KV
+    V(X_X1.xmos.jf1int)       =    98.97KV  \    94.74KV
+    V(X_X1.xmos.innerj)       =    98.92KV  \    94.69KV
+    V(X_X1.xmos.d4)           =    98.92KV  \    94.69KV
+    V(X_X1.xmos.jf1mess)      =    98.97KV  \    94.74KV
+    V(X_X1.xmos.d5)           =    98.92KV  \    94.69KV
+    V(X_X1.xmos.dimess)       =    98.92KV  \    94.69KV
+    V(X_X1.xmos.dint)         =    98.92KV  \    94.69KV
+    V(X_X1.xmos.gint)         =    99.63KV  \    95.37KV
+    V(X_X1.xmos.xcgd1.gc)     =    -40.01V  \    -39.48V
+    V(X_X1.xmos.xcshield1.gc) =    -52.01V  \    -51.48V
+    V(X_X1.xmos.xcshield2.gc) =    -52.01V  \    -51.48V
+
+  These supply currents failed to converge:
+
+    I(X_X1.xmos.eta)          =         0A  \     51.53A
+    I(X_X1.xmos.ejf1)         =    -48.50A  \   -1.122KA
+    I(X_X1.xmos.edii)         =   -366.62A  \   -6.488KA
+    I(X_X1.Ldrain)            =   -10.22mA  \     1.001A
+    I(X_X1.Lsource)           =    10.52mA  \    -1.001A
+    I(V_V1)                   =    10.22mA  \    -1.001A
+    I(V_V3)                   =   484.35nA  \    -15.70A
+    I(X_X1.xmos.vidrain)      =   -10.22mA  \     1.001A
+    I(X_X1.xmos.vjf1mess)     =     48.50A  \    1.122KA
+    I(X_X1.xmos.vdimess)      =    366.62A  \    6.488KA
+
+  These devices failed to converge:
+    X_X1.xmos.gth X_X1.xmos.gjf1 X_X1.xmos.gch X_X1.xmos.jrd1 X_X1.xmos.jrd2 
+    X_X1.xmos.mptmosi 
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****

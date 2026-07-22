@@ -1,0 +1,19 @@
+[0505/125011:ERROR:connection.cc(1919)] Cookie sqlite error 8, errno 0: attempt to write a readonly database, sql: DELETE FROM cookies WHERE persistent != 1
+[0505/125011:WARNING:sqlite_persistent_cookie_store.cc(1298)] Unable to delete session cookies.
+[0505/125011:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0505/125011:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {DA9E3BB9-EC98-437F-AE48-05E16F1FC50F}\BrowserCache to C:\ProgramData\Altium\Altium Designer {DA9E3BB9-EC98-437F-AE48-05E16F1FC50F}\old_BrowserCache_000
+[0505/125011:ERROR:cache_creator.cc(129)] Unable to create cache
+[0505/125709:ERROR:dns_config_service_win.cc(750)] DNS config watch failed.
+[0506/145636:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0506/145636:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {DA9E3BB9-EC98-437F-AE48-05E16F1FC50F}\BrowserCache\GPUCache to C:\ProgramData\Altium\Altium Designer {DA9E3BB9-EC98-437F-AE48-05E16F1FC50F}\BrowserCache\old_GPUCache_000
+[0506/145636:ERROR:cache_creator.cc(129)] Unable to create cache
+[0506/145636:ERROR:shader_disk_cache.cc(589)] Shader Cache Creation failed: -2
+[0506/151111:ERROR:connection.cc(1919)] Cookie sqlite error 8, errno 0: attempt to write a readonly database, sql: DELETE FROM cookies WHERE persistent != 1
+[0506/151111:WARNING:sqlite_persistent_cookie_store.cc(1298)] Unable to delete session cookies.
+[0506/151111:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0506/151111:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {DA9E3BB9-EC98-437F-AE48-05E16F1FC50F}\BrowserCache to C:\ProgramData\Altium\Altium Designer {DA9E3BB9-EC98-437F-AE48-05E16F1FC50F}\old_BrowserCache_000
+[0506/151111:ERROR:cache_creator.cc(129)] Unable to create cache
+[0506/151802:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0506/151805:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0506/171607:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0506/171608:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.

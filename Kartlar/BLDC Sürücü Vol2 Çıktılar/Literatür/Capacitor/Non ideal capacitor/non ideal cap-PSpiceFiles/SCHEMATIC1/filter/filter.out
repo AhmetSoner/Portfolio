@@ -1,0 +1,116 @@
+
+**** 03/02/25 12:22:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-filter"  [ C:\Users\ahmet\Desktop\Non ideal capacitor\non ideal cap-PSpiceFiles\SCHEMATIC1\filter.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "filter.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ahmet\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source NON IDEAL CAP
+X_C1    N00182 N00216 SCHEMATIC1_C1 
+V_V1         N00182 0 DC 0Vdc AC 2Vac 
+R_R1         0 N00216  1k TC=0,0 
+E_U1         N00297 0 VALUE {LIMIT(V(N00216,N00297)*1E6,-15V,+15V)}
+
+.subckt SCHEMATIC1_C1 1 2  
+C_C1         1 _SR C_C1 100n  
+.model         C_C1 CAP C=1 DEV=10% TC1=15 TC2=0 VC1=40 VC2=0 
+RESR_C1         _SR _SL 1m 
+LESL_C1         _SL 2 476p   
+RRP_C1         1 2 500M
+.ends SCHEMATIC1_C1
+
+**** RESUMING filter.cir ****
+.END
+
+**** 03/02/25 12:22:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-filter"  [ C:\Users\ahmet\Desktop\Non ideal capacitor\non ideal cap-PSpiceFiles\SCHEMATIC1\filter.sim ] 
+
+
+ ****     Capacitor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_C1.C_C1       
+           C    1            
+         VC1   40            
+         TC1   15            
+
+
+**** 03/02/25 12:22:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-filter"  [ C:\Users\ahmet\Desktop\Non ideal capacitor\non ideal cap-PSpiceFiles\SCHEMATIC1\filter.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00182)    0.0000 (N00216)    0.0000 (N00297)    0.0000 (X_C1._SL)    0.0000   
+
+(X_C1._SR)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/02/25 12:22:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-filter"  [ C:\Users\ahmet\Desktop\Non ideal capacitor\non ideal cap-PSpiceFiles\SCHEMATIC1\filter.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        2.13
+  Total job time (using Solver 1)   =         .02
+

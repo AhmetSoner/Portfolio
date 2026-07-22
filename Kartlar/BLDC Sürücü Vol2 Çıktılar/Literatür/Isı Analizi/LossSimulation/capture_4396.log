@@ -1,0 +1,18 @@
+[2025-06-26T14:51:56.644+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseStateHandler::CDSPulseStateHandler] [DEBUG] - Creating CDSPulseStateHandler.
+[2025-06-26T14:51:56.645+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Param received is conf explore
+[2025-06-26T14:51:56.646+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Handle start server synchronously.
+[2025-06-26T14:51:56.646+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Sending server start event to health state handler.
+[2025-06-26T14:51:56.646+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [PulseStartEvent::PulseStartEvent] [DEBUG] - Creating pulse start event.
+[2025-06-26T14:51:56.646+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [PulseStateNoServer::handleEvent] [DEBUG] - Start event received.
+[2025-06-26T14:51:56.647+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManagerImpl::getInitJsonFileLocation] [DEBUG] - Creating json file pathC:/Users/ahmet/AppData/Local/Temp\pulse_stage_ahmet_4396\sjson
+[2025-06-26T14:51:56.647+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Launching Init Translate Server.
+[2025-06-26T14:51:56.648+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Init translate server command is c:\cadence\spb_17.4\tools/pcbdw/bin\translate.bat -parent "4396" -parentlocation "C:/Users/ahmet/AppData/Local/Temp\pulse_stage_ahmet_4396\sjson" -appname "orcad" -conf "explore"
+[2025-06-26T14:51:57.154+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPortFileReaderThread::checkFileCreated] [DEBUG] - Checking for server json file from launch.
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPortFileReaderThread::readPort] [DEBUG] - Reading server json file from launch.
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPortFileReaderThread::readPort] [DEBUG] - Reading data from server json file.
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPortFileReaderThread::readPort] [DEBUG] - Signaling server json file from launch as read.
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManagerImpl::updateData] [DEBUG] - Port file reading finished.
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManagerImpl::updateData] [DEBUG] - Server started successfully.
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManagerImpl::updateData] [ERROR] - Pulse health checkup system could not be initialized for server http://127.0.0.1:7200
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseStateHandler::setCurrentState] [DEBUG] - Setting state as started
+[2025-06-26T14:51:59.166+0300] [4396] [9656] [ahmet] [capture.exe] [172.26.153.163] [Ahmet] [CDSPulseManager::getDataValue] [DEBUG] - value is: http://127.0.0.1:7200

@@ -1,0 +1,13 @@
+DRC Rules Export File for PCB: C:\Users\a0233974\Desktop\HPD Projects\UCC2152x EVM release\SV601286G (5-19-2021) Altium files\SV601286G_PCB.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_1|Scope=Board|Minimum=80.00
+RuleKind=Clearance|RuleName=Clearance_Keepouts|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance_BoardEdge_MountingHoles|Scope=Board|Minimum=35.00
+RuleKind=Clearance|RuleName=Clearance_BoardEdge_Poly|Scope=Board|Minimum=25.00
+RuleKind=Clearance|RuleName=Clearance_BoardEdge|Scope=Board|Minimum=35.00
+RuleKind=Clearance|RuleName=Clearance_Poly|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing_ThermalPadVias|Scope=Board|Minimum=5.91
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.00

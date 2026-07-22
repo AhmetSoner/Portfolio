@@ -1,0 +1,45 @@
+Change Component Comment : Designator=ZZ4 Old Comment=For -001: Shunt #1 (SH1) should be installed in PIN 2-3 for J3 New Comment=For -001: Shunt #1 (SH1) should be installed in PIN 1-2 for J3
+Change Component Comment : Designator=ZZ5 Old Comment=For -002 and -003: Shunt #1 (SH1) should be installed in PIN 1-2 for J3 New Comment=For -002 and -003: Shunt #1 (SH1) should be installed in PIN 2-3 for J3
+Change Component Comment : Designator=ZZ6 Old Comment=Shunt #2 (SH2) should be installed in PIN 1-2 for J4 New Comment=Shunt #2 (SH2) should be installed in PIN 2-3 for J4
+Added Component: Designator=U1(DWK0014A-MFG)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "AEC Qualified"; Value = "No"; VariantName = "003"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "003"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.ti.com/lit/ds/symlink/ucc21530.pdf"; VariantName = "003"
+Add component (AddParameter): Name = "datasheet"; Value = "https://www.ti.com/lit/ds/symlink/ucc21530.pdf"; VariantName = "003"
+Add component (AddParameter): Name = "Datasheet Path"; Value = "datasheets/IC-UCC21530DWK.pdf"; VariantName = "003"
+Add component (AddParameter): Name = "Digikey Description"; Value = "IC GATE DRVR ISOLATED"; VariantName = "003"
+Add component (AddParameter): Name = "Digikey Part Number"; Value = "296-UCC21530DWK-ND"; VariantName = "003"
+Add component (AddParameter): Name = "Fall Time"; Value = "7ns"; VariantName = "003"
+Add component (AddParameter): Name = "helpURL"; Value = "https://upverter.com/upn/revision/04a3b403c38200cc/"; VariantName = "003"
+Add component (AddParameter): Name = "Lead Free"; Value = "Yes"; VariantName = "003"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "003"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "1810mW"; VariantName = "003"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "18V"; VariantName = "003"
+Add component (AddParameter): Name = "Min Supply Voltage"; Value = "3V"; VariantName = "003"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-UCC21530DWK"; VariantName = "003"
+Add component (AddParameter): Name = "Nominal Supply Current"; Value = "2mA"; VariantName = "003"
+Add component (AddParameter): Name = "Number Of Drivers"; Value = "2"; VariantName = "003"
+Add component (AddParameter): Name = "Number Of Outputs"; Value = "2"; VariantName = "003"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-40°C to +125°C"; VariantName = "003"
+Add component (AddParameter): Name = "Output Voltage"; Value = "14.7-25V"; VariantName = "003"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOIC14"; VariantName = "003"
+Add component (AddParameter): Name = "Part Number"; Value = "UCC21530DWK"; VariantName = "003"
+Add component (AddParameter): Name = "PartNumber"; Value = "UCC21530DWK"; VariantName = "003"
+Add component (AddParameter): Name = "Propagation Delay"; Value = "19ns"; VariantName = "003"
+Add component (AddParameter): Name = "Rise Time"; Value = "6ns"; VariantName = "003"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "003"
+Add component (AddParameter): Name = "SizeZ_mm"; Value = "2.65mm"; VariantName = "003"
+Add component (AddParameter): Name = "Standoff Height"; Value = "0.1mm"; VariantName = "003"
+Add component (AddParameter): Name = "TaMax_C"; Value = "+125°C"; VariantName = "003"
+Add component (AddParameter): Name = "TaMin_C"; Value = "-40°C"; VariantName = "003"
+Add component (AddParameter): Name = "TJmax_C"; Value = "+130°C"; VariantName = "003"
+Added Component: Designator=ZZ7(AssemblyNote)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ClassName"; Value = "AssemblyNote"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "CompType"; Value = "AssemblyNote"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Key"; Value = "AssemblyNote"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017-08-10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=AssemblyNote Member=Component ZZ7 Install label in silkscreen box after final wash. Text shall be 8pt font. Text shall be per Label Table in PDF schematic.
+Added Member To Class: ClassName=SV601286F_Hardware Member=Component ZZ7 Install label in silkscreen box after final wash. Text shall be 8pt font. Text shall be per Label Table in PDF schematic.
