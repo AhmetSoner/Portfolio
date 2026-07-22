@@ -1,0 +1,2335 @@
+
+**** 09/29/25 22:03:31 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\INSULATION\project-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ahmet\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\LP2985-33.LIB" 
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\AMC3330.lib" 
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\tlv6001.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500u 0 1e-6 
+.OPTIONS ADVCONV
+.OPTIONS CHGTOL= 0.1p
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT
+X_U1         N02240 0 N02573 3.3V 0 N02764 N02757 N01247 CHASIS N01247 N01903
++  CHASIS CHASIS N15218 N02240 AMC3330
+C_C2         CHASIS N01247  1u  TC=0,0 
+C_C3         CHASIS N01247  1n  TC=0,0 
+C_C4         N01247 CHASIS  100n  TC=0,0 
+C_C5         CHASIS N01903  100n  TC=0,0 
+C_C6         CHASIS N01903  1n  TC=0,0 
+C_C7         0 N02240  100n  TC=0,0 
+X_U2         N02770 N02759 3.3V 0 N02985 TLV6001
+R_R1         N02759 N02757  10k TC=0,0 
+R_R2         N02770 N02764  10k TC=0,0 
+R_R3         N02985 N02759  8.25k TC=0,0 
+V_V4         N34976 0 1.65V
+R_R5         N34976 N02770  8.25K TC=0,0 
+C_C8         0 3.3V  1u  TC=0,0 
+C_C9         0 3.3V  1n  TC=0,0 
+V_V5         N00298 0 90
+C_C10         N02985 N02759  1n  TC=0,0 
+C_C11         0 3.3V  100n  TC=0,0 
+V_V6         N28394 0 12V
+C_C12         0 N28394  1u  TC=0,0 
+C_C13         0 N28882  10n  TC=0,0 
+C_C14         0 3.3V  2.2u  TC=0,0 
+X_U3         N28394 0 N28394 N28882 3.3V LP2985-33
+X_S3    N33797 0 N25400 N00298 SCHEMATIC1_S3 
+X_S2    N34013 0 0 N25400 SCHEMATIC1_S2 
+V_V7         N33797 0 0Vdc
+V_V8         N34013 0 0Vdc
+C_C19         0 3.3V  1n  TC=0,0 
+X_U4         N37750 0 N37922 3.3V 0 N38200 N38266 N37666 0 N37666 N38024 N38112
++  N38112 N38186 N37750 AMC3330
+C_C24         0 3.3V  100n  TC=0,0 
+R_R8         N38550 N38200  10k TC=0,0 
+C_C16         0 N37666  1n  TC=0,0 
+C_C22         N38112 N38024  100n  TC=0,0 
+R_R6         N38364 N38372  16.5k TC=0,0 
+C_C17         0 N37750  100n  TC=0,0 
+C_C21         N38112 N38024  1n  TC=0,0 
+C_C18         N37666 0  100n  TC=0,0 
+X_U5         N38550 N38372 3.3V 0 N38364 TLV6001
+C_C15         0 N37666  1u  TC=0,0 
+V_V9         N38648 0 1.65V
+R_R7         N38372 N38266  10k TC=0,0 
+C_C20         0 3.3V  1u  TC=0,0 
+R_R9         N38648 N38550  16.5k TC=0,0 
+C_C23         N38364 N38372  1n  TC=0,0 
+V_V10         N38805 0 108
+R_R10         0 N39190  2.48k TC=0,0 
+R_R11         N38805 N39190  264.5k TC=0,0 
+C_C25         N38648 N38550  1n  TC=0,0 
+R_R12         CHASIS N00298  50k TC=0,0 
+R_R14         N25400 N00819  68.1k TC=0,0 
+R_R16         N00819 N15218  100 TC=0,0 
+R_R17         CHASIS N00819  120 TC=0,0 
+C_C26         CHASIS N15218  1n  TC=0,0 
+R_R18         3.3V N02573  10k TC=0,0 
+R_R19         N39190 N38186  100 TC=0,0 
+R_R20         0 N38112  100 TC=0,0 
+C_C27         N38112 N38186  1n  TC=0,0 
+R_R21         3.3V N37922  10k TC=0,0 
+R_R22         0 CHASIS  50k TC=0,0 
+
+.subckt SCHEMATIC1_S3 1 2 3 4  
+S_S3         3 4 1 2 _S3
+RS_S3         1 2 1G
+.MODEL         _S3 VSWITCH Roff=1Meg Ron=1 Voff=0 Von=3
+.ends SCHEMATIC1_S3
+
+.subckt SCHEMATIC1_S2 1 2 3 4  
+S_S2         3 4 1 2 _S2
+RS_S2         1 2 1G
+.MODEL         _S2 VSWITCH Roff=1Meg Ron=1 Voff=0 Von=3
+.ends SCHEMATIC1_S2
+
+**** RESUMING trans.cir ****
+.END
+
+**** 09/29/25 22:03:31 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\INSULATION\project-
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.Xe_n.DVN   X_U5.Xe_n.DVN   
+          IS  100.000000E-18  100.000000E-18 
+          KF   10.000000E-12   10.000000E-12 
+
+
+               X_U1.XHLDO.XD_Z2.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    1.25         
+         IBV    2.750000E-06 
+
+
+               X_U1.XHLDO.XD_Z3.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          BV    4            
+         IBV    1.000000E-06 
+         XTI    0            
+
+
+               X_U1.XHLDO.XD_D3.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+
+
+               X_U1.XHLDO.XD_D1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          RS    1            
+
+
+               X_U1.XHLDO.XDZb1.D_3_0V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    2.5          
+         IBV    5.000000E-06 
+
+
+               X_U1.XHLDO.XD1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    5.000000E-06 
+         XTI    0            
+
+
+               X_U1.XHLDO.XD_Z1.D_Z1V2 
+          IS    1.000000E-09 
+          BV    6            
+         IBV  100.000000E-09 
+
+
+               X_U1.XHLDO.XU1.D_1 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+           N     .1          
+          RS  100            
+
+
+               X_U1.XLDO.XD_Z3.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          BV    4            
+         IBV    1.000000E-06 
+         XTI    0            
+
+
+               X_U1.XLDO.XD_D3.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+
+
+               X_U1.XLDO.XD_D1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          RS    1            
+
+
+               X_U1.XLDO.XD_Z2.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    1.25         
+         IBV    2.750000E-06 
+
+
+               X_U1.XLDO.XDZb1.D_3_0V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    2.5          
+         IBV    5.000000E-06 
+
+
+               X_U1.XLDO.XD1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    5.000000E-06 
+         XTI    0            
+
+
+               X_U1.XLDO.XD_Z1.D_Z1V2 
+          IS    1.000000E-09 
+          BV    6            
+         IBV  100.000000E-09 
+
+
+               X_U1.XLDO.XU1.D_1 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+           N     .1          
+          RS  100            
+
+
+               X_U1.XAMP.XD8.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XD7.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XD6.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XD5.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XD10.D_Z5V3 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+          BV    5.3          
+         IBV    1.000000E-03 
+          RS   10            
+         XTI    0            
+
+
+               X_U1.XAMP.XD9.D_Z5V3 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+          BV    5.3          
+         IBV    1.000000E-03 
+          RS   10            
+         XTI    0            
+
+
+               X_U4.XHLDO.XD_Z2.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    1.25         
+         IBV    2.750000E-06 
+
+
+               X_U4.XHLDO.XD_Z3.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          BV    4            
+         IBV    1.000000E-06 
+         XTI    0            
+
+
+               X_U4.XHLDO.XD_D3.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+
+
+               X_U4.XHLDO.XD_D1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          RS    1            
+
+
+               X_U4.XHLDO.XDZb1.D_3_0V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    2.5          
+         IBV    5.000000E-06 
+
+
+               X_U4.XHLDO.XD1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    5.000000E-06 
+         XTI    0            
+
+
+               X_U4.XHLDO.XD_Z1.D_Z1V2 
+          IS    1.000000E-09 
+          BV    6            
+         IBV  100.000000E-09 
+
+
+               X_U4.XHLDO.XU1.D_1 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+           N     .1          
+          RS  100            
+
+
+               X_U4.XLDO.XD_Z3.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          BV    4            
+         IBV    1.000000E-06 
+         XTI    0            
+
+
+               X_U4.XLDO.XD_D3.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+
+
+               X_U4.XLDO.XD_D1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          RS    1            
+
+
+               X_U4.XLDO.XD_Z2.D_1_25V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    1.25         
+         IBV    2.750000E-06 
+
+
+               X_U4.XLDO.XDZb1.D_3_0V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+           N     .5          
+          BV    2.5          
+         IBV    5.000000E-06 
+
+
+               X_U4.XLDO.XD1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS    5.000000E-06 
+         XTI    0            
+
+
+               X_U4.XLDO.XD_Z1.D_Z1V2 
+          IS    1.000000E-09 
+          BV    6            
+         IBV  100.000000E-09 
+
+
+               X_U4.XLDO.XU1.D_1 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+           N     .1          
+          RS  100            
+
+
+               X_U4.XAMP.XD8.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XD7.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XD6.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XD5.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XD10.D_Z5V3 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-12 
+          BV    5.3          
+         IBV    1.000000E-03 
+          RS   10            
+         XTI    0            
+
+
+               X_U4.XAMP.XD9.D_Z5V3            D2              
+  T_Measured   27              27            
+   T_Current   27              27            
+          IS    1.000000E-12                    1.000000E-12 
+          BV    5.3                                          
+         IBV    1.000000E-03                                 
+          RS   10                              10            
+         XTI    0                               0            
+
+
+               X_U1.XAMP.XInput.XD10.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+           N    3            
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XInput.XD8.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XInput.XD2.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XInput.XD1.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XInput.XD10.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+           N    3            
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XInput.XD8.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XInput.XD2.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U4.XAMP.XInput.XD1.D_Liminh 
+  T_Measured   27            
+   T_Current   27            
+          IS    3.500000E-15 
+          EG     .55         
+         XTI    0            
+          AF     .1          
+
+
+               X_U1.XAMP.XInput.XBias.XD1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS   10.000000E-09 
+           N     .5          
+          RS    1            
+          EG     .55         
+         XTI    0            
+
+
+               X_U1.XAMP.XInput.XBias.XDZb1.D_4_9V 
+  T_Measured   27            
+   T_Current   27            
+          IS    1.000000E-09 
+          BV    2.9          
+         IBV    1.000000E-03 
+         XTI    0            
+
+
+               X_U4.XAMP.XInput.XBias.XD1.DD 
+  T_Measured   27            
+   T_Current   27            
+          IS   10.000000E-09 
+           N     .5          
+          RS    1            
+          EG     .55         
+         XTI    0            
+
+
+               X_U4.XAMP.XInput.XBias.XDZb1.D_4_9V            D_Lim100_05     
+  T_Measured   27              27            
+   T_Current   27              27            
+          IS    1.000000E-09                                   10.000000E-15 
+           N     .5          
+          BV    2.9                                                          
+         IBV    1.000000E-03                                                 
+          RS  100            
+          EG     .555        
+         XTI    0                                               0            
+          AF     .1          
+
+
+               D_Lim1          
+  T_Measured   27            
+   T_Current   27            
+          IS   10.000000E-15 
+          RS    1.000000E+03 
+         XTI    0            
+          AF     .1          
+
+
+**** 09/29/25 22:03:31 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\INSULATION\project-
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.XHLDO.XQ1.SWMOS 
+               PMOS            
+  T_Measured   27            
+   T_Current   27            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO   -1            
+          KP     .01         
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA  500.000000E-06 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XLDO.XQ1.SWMOS 
+               PMOS            
+  T_Measured   27            
+   T_Current   27            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO   -1            
+          KP     .01         
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA  500.000000E-06 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U4.XHLDO.XQ1.SWMOS 
+               PMOS            
+  T_Measured   27            
+   T_Current   27            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO   -1            
+          KP     .01         
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA  500.000000E-06 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U4.XLDO.XQ1.SWMOS             Q_PMOS_Out_L1   Q_NMOS_Out_L1   
+               PMOS                            PMOS            NMOS            
+  T_Measured   27                                            
+   T_Current   27                                            
+       LEVEL    1                               1               1            
+           L  100.000000E-06                   10.000000E-06   10.000000E-06 
+           W  100.000000E-06                  100.000000E-06  100.000000E-06 
+          LD   90.000000E-09   90.000000E-09 
+         VTO   -1                               -.75             .75         
+          KP     .01                          194.239300E-06  194.239300E-06 
+       GAMMA    0                               0               0            
+         PHI     .6                              .6              .6          
+      LAMBDA  500.000000E-06                     .01             .01         
+         RDS   10.000000E+06   10.000000E+06 
+         RSH    4               4            
+          IS    0                              10.000000E-15   10.000000E-15 
+          JS    0                               0               0            
+          PB     .8                              .7              .7          
+        PBSW     .8                              .7              .7          
+          CJ    0                             400.000000E-06  200.000000E-06 
+        CJSW    0                               2.400000E-09    1.200000E-09 
+        CGSO    0                             466.174400E-12  388.478700E-12 
+        CGDO    0                             466.174400E-12  388.478700E-12 
+        CGBO    0                               0               0            
+         TOX    0                               0               0            
+          XJ    0                               0               0            
+       UCRIT   10.000000E+03                   10.000000E+03   10.000000E+03 
+      DIOMOD    1                               1               1            
+         VFB    0                               0               0            
+        LETA    0                               0               0            
+        WETA    0                               0               0            
+          U0    0                               0               0            
+        TEMP    0                               0               0            
+         VDD    5                               5               5            
+       XPART    0                               0               0            
+
+
+**** 09/29/25 22:03:31 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\INSULATION\project-
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U5.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U1.XAMP.XGain.RMOD2 
+           R    1            
+         TC1  -15.000000E-06 
+
+
+               X_U4.XAMP.XGain.RMOD2 
+           R    1            
+         TC1  -15.000000E-06 
+
+
+               X_U1.XAMP.XInput.XU_2.RTemp 
+           R    1            
+         TC1   -7.000000E-03 
+
+
+               X_U1.XAMP.XInput.XU_1.RTemp 
+           R    1            
+         TC1   -7.000000E-03 
+
+
+               X_U1.XAMP.XInput.XU5.RMOD2 
+           R    1            
+         TC1    9.803922E-03 
+
+
+               X_U4.XAMP.XInput.XU_2.RTemp 
+           R    1            
+         TC1   -7.000000E-03 
+
+
+               X_U4.XAMP.XInput.XU_1.RTemp 
+           R    1            
+         TC1   -7.000000E-03 
+
+
+               X_U4.XAMP.XInput.XU5.RMOD2 
+           R    1            
+         TC1    9.803922E-03 
+
+
+**** 09/29/25 22:03:31 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\INSULATION\project-
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.BB_SW      X_U2.ESD_SW     X_U2.OL_SW      X_U2.OR_SW      
+         RON   50              50               1.000000E-03     .01         
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .7              .5              .9             1.000000E-03 
+        VOFF    0                .1              .8             0            
+
+
+               X_S3._S3        X_S2._S2        X_U5.BB_SW      X_U5.ESD_SW     
+         RON    1               1              50              50            
+        ROFF    1.000000E+06    1.000000E+06    1.000000E+09    1.000000E+09 
+         VON    3               3                .7              .5          
+        VOFF    0               0               0                .1          
+
+
+               X_U5.OL_SW      X_U5.OR_SW      
+         RON    1.000000E-03     .01         
+        ROFF    1.000000E+09    1.000000E+09 
+         VON     .9             1.000000E-03 
+        VOFF     .8             0            
+
+
+               X_U1.XAMP.S_VSWITCH_1 
+         RON  100            
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+               X_U4.XAMP.S_VSWITCH_1 
+         RON  100            
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+Starting pseudo-transient algorithm.
+
+WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increase total simulation job time.
+
+**** 09/29/25 22:03:31 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\SPB_17.4\tools\pspice\capture_samples\CoSimulationDemos\PSpiceCoSim\INSULATION\project-
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( 3.3V)    3.3267  (CHASIS)   45.0000 (N00298)   90.0000 (N00819)   45.0000     
+
+(N01247)   49.2660 (N01903)   48.1500 (N02240)    2.9000 (N02573)    3.3266     
+
+(N02757)    1.4406 (N02759)    1.5561 (N02764)    1.4408 (N02770)    1.5555     
+
+(N02985)    1.6514 (N15218)   45.0000 (N25400)   45.0000 (N28394)   12.0000     
+
+(N28882)    0.0000 (N33797)    0.0000 (N34013)    0.0000 (N34976)    1.6500     
+
+(N37666)    4.2660 (N37750)    2.9000 (N37922)    3.3266 (N38024)    3.6454     
+
+(N38112)     .4953 (N38186)    1.0032 (N38200)    1.9482 (N38266)     .9333     
+
+(N38364)    3.3169 (N38372)    1.8328 (N38550)    1.8357 (N38648)    1.6500     
+
+(N38805)  108.0000 (N39190)    1.0032 (X_U2.MID)    1.6625                      
+
+(X_U5.MID)    1.6625                  (X_U2.ESDn)    1.5561                     
+
+(X_U2.ESDp)    1.5555                 (X_U2.N001)    1.5522                     
+
+(X_U2.N002)    1.6625                 (X_U2.N003)   15.1630                     
+
+(X_U2.N004)     .0033                 (X_U2.N005)    1.6625                     
+
+(X_U2.N006)    1.6625                 (X_U2.N007)    3.3234                     
+
+(X_U2.N008)  161.6600                 (X_U2.N009)    3.3194                     
+
+(X_U2.N010)    3.3194                 (X_U2.N011)    1.6625                     
+
+(X_U2.N012)    1.6625                 (X_U2.N013)    1.6625                     
+
+(X_U2.N014)    1.6625                 (X_U2.N015)    -.0205                     
+
+(X_U2.N016)    -.0205                 (X_U2.N017)    -.0205                     
+
+(X_U2.N018)    3.5795                 (X_U2.N019)    3.5795                     
+
+(X_U2.N020)    3.5795                 (X_U2.N021)    1.7795                     
+
+(X_U2.N022)    1.6625                 (X_U2.N023)    1.6625                     
+
+(X_U2.N024)    1.6625                 (X_U2.N025)    1.6625                     
+
+(X_U2.N026)    1.6625                 (X_U2.N027)    1.6625                     
+
+(X_U2.N028)     .0066                 (X_U2.N029)     .0066                     
+
+(X_U2.N030)    1.6625                 (X_U2.N031)    1.6625                     
+
+(X_U2.N032)    1.5560                 (X_U2.N033)    1.5560                     
+
+(X_U2.N034)  -10.8380                 (X_U2.N035)    1.5560                     
+
+(X_U2.N036)    1.5561                 (X_U2.N037) -158.3400                     
+
+(X_U2.N038)    1.5555                 (X_U2.N039)    1.5561                     
+
+(X_U2.N040)    1.5561                 (X_U2.N041)    1.6625                     
+
+(X_U2.N042)    3.5267                 (X_U2.N043)    -.2000                     
+
+(X_U2.N044)    1.5561                 (X_U2.N045)    1.6741                     
+
+(X_U2.N046)    1.6514                 (X_U2.N047)    1.7795                     
+
+(X_U2.N048)   13.1000                 (X_U2.N049)    4.0582                     
+
+(X_U2.N050)   13.0890                 (X_U2.N051)    1.6739                     
+
+(X_U2.N052)   13.0890                 (X_U2.N053)    1.6514                     
+
+(X_U2.N054)    1.7795                 (X_U2.N055)    3.3267                     
+
+(X_U2.N056)    1.6625                 (X_U2.N057) 1.666E-06                     
+
+(X_U2.N058)    1.6625                 (X_U2.N059)    1.6625                     
+
+(X_U2.N060)    1.6625                 (X_U2.N061)    1.6625                     
+
+(X_U2.N062)    1.6625                 (X_U2.VCLP)    1.7795                     
+
+(X_U5.ESDn)    1.8328                 (X_U5.ESDp)    1.8357                     
+
+(X_U5.N001)    1.8409                 (X_U5.N002)    1.6625                     
+
+(X_U5.N003)   15.1630                 (X_U5.N004)     .0033                     
+
+(X_U5.N005)    1.6625                 (X_U5.N006)    1.6625                     
+
+(X_U5.N007)    3.3234                 (X_U5.N008)  161.6600                     
+
+(X_U5.N009)    3.3151                 (X_U5.N010)    3.3151                     
+
+(X_U5.N011)    1.6643                 (X_U5.N012)    1.6643                     
+
+(X_U5.N013)    1.6625                 (X_U5.N014)    1.6625                     
+
+(X_U5.N015)    2.7291                 (X_U5.N016)    2.7291                     
+
+(X_U5.N017)    2.7291                 (X_U5.N018)    6.3317                     
+
+(X_U5.N019)    6.3317                 (X_U5.N020)    6.3291                     
+
+(X_U5.N021)    6.3324                 (X_U5.N022)    1.6625                     
+
+(X_U5.N023)    1.6625                 (X_U5.N024)    1.6625                     
+
+(X_U5.N025)    1.6625                 (X_U5.N026)    1.6625                     
+
+(X_U5.N027)    1.6625                 (X_U5.N028)     .0066                     
+
+(X_U5.N029)     .0066                 (X_U5.N030)    1.6625                     
+
+(X_U5.N031)    1.6625                 (X_U5.N032)    1.8363                     
+
+(X_U5.N033)    1.8363                 (X_U5.N034)  -10.8380                     
+
+(X_U5.N035)    1.8363                 (X_U5.N036)    1.8364                     
+
+(X_U5.N037) -158.3400                 (X_U5.N038)    1.8357                     
+
+(X_U5.N039)    1.8364                 (X_U5.N040)    1.8364                     
+
+(X_U5.N041)    2.0239                 (X_U5.N042)    3.5267                     
+
+(X_U5.N043)    -.2000                 (X_U5.N044)    1.8328                     
+
+(X_U5.N045)    1.7525                 (X_U5.N046)    3.3169                     
+
+(X_U5.N047)    6.3324                 (X_U5.N048)  109.9000                     
+
+(X_U5.N049)   24.3380                 (X_U5.N050)  109.8100                     
+
+(X_U5.N051)    1.7707                 (X_U5.N052)  109.8100                     
+
+(X_U5.N053)    3.3169                 (X_U5.N054)    4.5291                     
+
+(X_U5.N055)    3.3267                 (X_U5.N056)    1.6625                     
+
+(X_U5.N057) 1.666E-06                 (X_U5.N058)    1.6625                     
+
+(X_U5.N059)    1.6625                 (X_U5.N060)    1.6625                     
+
+(X_U5.N061)    1.6651                 (X_U5.N062)    1.6651                     
+
+(X_U5.VCLP)    4.5291                 (X_U2.CLAMP)    1.7795                    
+
+(X_U2.SW_OL)    1.6625                (X_U2.VCC_B)    3.3267                    
+
+(X_U2.VEE_B) 1.664E-06                (X_U2.VIMON)    1.6741                    
+
+(X_U5.CLAMP)    6.3324                (X_U5.SW_OL)    1.6625                    
+
+(X_U5.VCC_B)    3.3267                (X_U5.VEE_B) 1.664E-06                    
+
+(X_U5.VIMON)    1.7525                (X_U2.VOUT_S)    1.6514                   
+
+(X_U2.VSENSE)    1.7795               (X_U2.Xe_n.3)    0.0000                   
+
+(X_U2.Xe_n.4)    0.0000               (X_U2.Xe_n.5)    0.0000                   
+
+(X_U2.Xe_n.6)    0.0000               (X_U2.Xe_n.7)     .8338                   
+
+(X_U2.Xe_n.8)     .8338               (X_U3.X1.des)    3.3000                   
+
+(X_U3.X1.drv)    3.3000               (X_U3.X1.egd)    1.0000                   
+
+(X_U3.X1.ref)    1.2300               (X_U3.X1.v01)    1.2300                   
+
+(X_U3.X1.v02)    3.3000               (X_U3.X1.vgd)    1.0000                   
+
+(X_U3.X1.vx1)    1.0000               (X_U3.X1.vx2)    1.0000                   
+
+(X_U3.X1.vxx)    3.3274               (X_U3.X1.vyy)    3.3274                   
+
+(X_U3.X1.vzz)    3.3267               (X_U5.VOUT_S)    3.3169                   
+
+(X_U5.VSENSE)    6.3324               (X_U5.Xe_n.3)    0.0000                   
+
+(X_U5.Xe_n.4)    0.0000               (X_U5.Xe_n.5)    0.0000                   
+
+(X_U5.Xe_n.6)    0.0000               (X_U5.Xe_n.7)     .8338                   
+
+(X_U5.Xe_n.8)     .8338               (X_U1.XAMP.45)   46.0000                  
+
+(X_U1.XAMP.46)   45.0000              (X_U1.XAMP.47)   46.0000                  
+
+(X_U1.XAMP.48)   45.0000              (X_U1.XAMP.49)   45.0000                  
+
+(X_U1.XLDO.24)    1.2500              (X_U1.XLDO.25)    1.2501                  
+
+(X_U1.XLDO.26)    2.1652              (X_U1.XLDO.28)    3.0302                  
+
+(X_U1.XLDO.30)    2.4987              (X_U1.XLDO.31)    2.4987                  
+
+(X_U2.VCC_CLP)    3.3194              (X_U2.VEE_CLP)     .0066                  
+
+(X_U2.Xi_nn.3)    0.0000              (X_U2.Xi_nn.5)    0.0000                  
+
+(X_U2.Xi_np.3)    0.0000              (X_U2.Xi_np.5)    0.0000                  
+
+(X_U3.FBK_INT)    1.2399              (X_U4.XAMP.45)    1.4953                  
+
+(X_U4.XAMP.46)     .4953              (X_U4.XAMP.47)    1.4953                  
+
+(X_U4.XAMP.48)     .4953              (X_U4.XAMP.49)     .5056                  
+
+(X_U4.XLDO.24)    1.2500              (X_U4.XLDO.25)    1.2501                  
+
+(X_U4.XLDO.26)    2.1652              (X_U4.XLDO.28)    3.0302                  
+
+(X_U4.XLDO.30)    2.4987              (X_U4.XLDO.31)    2.4987                  
+
+(X_U5.VCC_CLP)    3.3151              (X_U5.VEE_CLP)     .0066                  
+
+(X_U5.Xi_nn.3)    0.0000              (X_U5.Xi_nn.5)    0.0000                  
+
+(X_U5.Xi_np.3)    0.0000              (X_U5.Xi_np.5)    0.0000                  
+
+(X_U1.XDCDC.35)    0.0000             (X_U1.XDCDC.G1)   44.9410                 
+
+(X_U1.XHLDO.16)   46.2500             (X_U1.XHLDO.17)   46.2500                 
+
+(X_U1.XHLDO.18)   48.1670             (X_U1.XHLDO.20)   48.2000                 
+
+(X_U1.XHLDO.22)   47.4990             (X_U1.XHLDO.23)   47.4990                 
+
+(X_U2.CL_CLAMP)    1.7795             (X_U4.XDCDC.35)    0.0000                 
+
+(X_U4.XDCDC.G1)    -.0588             (X_U4.XHLDO.16)    1.7454                 
+
+(X_U4.XHLDO.17)    1.7454             (X_U4.XHLDO.18)    3.1666                 
+
+(X_U4.XHLDO.20)    3.6948             (X_U4.XHLDO.22)    2.9940                 
+
+(X_U4.XHLDO.23)    2.9940             (X_U5.CL_CLAMP)    4.5291                 
+
+(X_U1.XAMP.FSO1)   45.0000            (X_U1.XAMP.VOCM)    1.4402                
+
+(X_U4.XAMP.FSO1)     .4953            (X_U4.XAMP.VOCM)    1.4402                
+
+(X_U1.XDCDC.VOR1)   48.2130           (X_U2.CLAW_CLAMP)    1.7795               
+
+(X_U4.XDCDC.VOR1)    3.2132           (X_U5.CLAW_CLAMP)    4.5291               
+
+(X_U1.XAMP.FSO_41)   45.0000          (X_U1.XAMP.FSO_44)   45.0000              
+
+(X_U1.XAMP.INP_52) 198.5E-06          (X_U1.XDCDC.Toutp)   45.0510              
+
+(X_U1.XLDO.VF1_27)    -.9263          (X_U1.XLDO.XQ1.Si)    3.3266              
+
+(X_U1.XLDO.XU1.P1)    2.1652          (X_U4.XAMP.FSO_41)     .4953              
+
+(X_U4.XAMP.FSO_44)     .4953          (X_U4.XAMP.INP_52)    1.0154              
+
+(X_U4.XDCDC.Toutp)     .0512          (X_U4.XLDO.VF1_27)    -.9263              
+
+(X_U4.XLDO.XQ1.Si)    3.3266          (X_U4.XLDO.XU1.P1)    2.1652              
+
+(X_U1.XAMP.XU1.thr)   45.6000         (X_U1.XAMP.XU2.thr)   47.6000             
+
+(X_U1.XAMP.XU3.thr)   47.2500         (X_U1.XDCDC.DVout1)   46.0530             
+
+(X_U1.XDCDC.Out_32)   49.2660         (X_U1.XDCDC.Out_33)    2.9000             
+
+(X_U1.XDCDC.XDAB.b)    0.0000         (X_U1.XDCDC.XDAB.c)    1.0000             
+
+(X_U1.XHLDO.VF1_19)   45.0310         (X_U1.XHLDO.XQ1.Si)   49.2660             
+
+(X_U1.XHLDO.XU1.P1)   48.1670         (X_U1.XLDO.XU1.VMI)     .9643             
+
+(X_U1.XLDO.XU1.VPI)    3.2691         (X_U4.XAMP.XU1.thr)    1.0953             
+
+(X_U4.XAMP.XU2.thr)    3.0953         (X_U4.XAMP.XU3.thr)    2.7453             
+
+(X_U4.XDCDC.DVout1)    1.0529         (X_U4.XDCDC.Out_32)    4.2660             
+
+(X_U4.XDCDC.Out_33)    2.9000         (X_U4.XDCDC.XDAB.b)    0.0000             
+
+(X_U4.XDCDC.XDAB.c)    1.0000         (X_U4.XHLDO.VF1_19)     .0311             
+
+(X_U4.XHLDO.XQ1.Si)    4.2660         (X_U4.XHLDO.XU1.P1)    3.1666             
+
+(X_U4.XLDO.XU1.VMI)     .9643         (X_U4.XLDO.XU1.VPI)    3.2691             
+
+(X_U1.XAMP.NOut1_51)    1.4401        (X_U1.XAMP.NOut1_54)   45.0000            
+
+(X_U1.XAMP.POut1_50)    1.4403        (X_U1.XAMP.POut1_53)   45.0000            
+
+(X_U1.XAMP.XGain.G1)     .2438        (X_U1.XAMP.XGain.G2) 24.20E-06            
+
+(X_U1.XAMP.XU1.outi)   45.0000        (X_U1.XAMP.XU1.thro)   45.9900            
+
+(X_U1.XHLDO.XU1.VMI)   46.9040        (X_U1.XHLDO.XU1.VPI)   49.2080            
+
+(X_U1.XLDO.VACin_29)    1.2500        (X_U4.XAMP.NOut1_51)     .9325            
+
+(X_U4.XAMP.NOut1_54)     .4953        (X_U4.XAMP.POut1_50)    1.9478            
+
+(X_U4.XAMP.POut1_53)    1.0033        (X_U4.XAMP.XGain.G1)     .2438            
+
+(X_U4.XAMP.XGain.G2)     .1238        (X_U4.XAMP.XU1.outi)     .4953            
+
+(X_U4.XAMP.XU1.thro)    1.4853        (X_U4.XHLDO.XU1.VMI)    1.9037            
+
+(X_U4.XHLDO.XU1.VPI)    4.2084        (X_U4.XLDO.VACin_29)    1.2500            
+
+(X_U1.XAMP.XGain.G12)     .9995       (X_U1.XDCDC.XGamma.a)    1.0000           
+
+(X_U1.XDCDC.XGamma.b)    1.0000       (X_U1.XHLDO.VACin_21)   46.2500           
+
+(X_U4.XAMP.XGain.G12)     .9995       (X_U4.XDCDC.XGamma.a)    1.0000           
+
+(X_U4.XDCDC.XGamma.b)    1.0000       (X_U4.XHLDO.VACin_21)    1.7454           
+
+(X_U1.XAMP.XFilter.67)-3.482E-18      (X_U1.XAMP.XFilter.68)-94.51E-09          
+
+(X_U1.XAMP.XFilter.69)-37.87E-18      (X_U1.XAMP.XFilter.70)-94.51E-09          
+
+(X_U1.XAMP.XFilter.71)    3.3000      (X_U1.XAMP.XFilter.72)-3.844E-21          
+
+(X_U1.XAMP.XFilter.75)    1.4395      (X_U1.XAMP.XFilter.76)    1.4398          
+
+(X_U1.XAMP.XFilter.77)    1.4397      (X_U1.XAMP.XFilter.78)    1.4395          
+
+(X_U1.XAMP.XFilter.79)    1.4397      (X_U1.XAMP.XFilter.80)    1.4400          
+
+(X_U1.XAMP.XFilter.81)    1.4402      (X_U1.XAMP.XFilter.82)    1.4402          
+
+(X_U1.XAMP.XInput.118)   45.0000      (X_U1.XAMP.XInput.120)   46.5750          
+
+(X_U1.XAMP.XInput.121)   46.5750      (X_U1.XAMP.XInput.123)    0.0000          
+
+(X_U1.XAMP.XInput.124)    0.0000      (X_U1.XAMP.XInput.125) 29.67E-15          
+
+(X_U1.XAMP.XInput.126)-3.686E-09      (X_U1.XAMP.XInput.127)-87.51E-15          
+
+(X_U1.XAMP.XInput.128)-2.909E-18      (X_U1.XAMP.XInput.130)   48.1500          
+
+(X_U1.XAMP.XInput.VOS)-102.0E-06      (X_U1.XDCDC.XDAB.Iinp)     .0130          
+
+(X_U1.XDCDC.XDAB.Iout)     .0050      (X_U1.XDCDC.XDAB.Xb.1)    0.0000          
+
+(X_U1.XDCDC.XDAB.Xb.2)    0.0000      (X_U1.XDCDC.XDAB.Xc.1)    1.0000          
+
+(X_U1.XDCDC.XDAB.Xc.2)    1.0000      (X_U4.XAMP.XFilter.67)-3.482E-18          
+
+(X_U4.XAMP.XFilter.68)-94.51E-09      (X_U4.XAMP.XFilter.69)-37.87E-18          
+
+(X_U4.XAMP.XFilter.70)-94.51E-09      (X_U4.XAMP.XFilter.71)    3.3000          
+
+(X_U4.XAMP.XFilter.72)-3.844E-21      (X_U4.XAMP.XFilter.75)     .9321          
+
+(X_U4.XAMP.XFilter.76)     .9323      (X_U4.XAMP.XFilter.77)    1.9471          
+
+(X_U4.XAMP.XFilter.78)     .9321      (X_U4.XAMP.XFilter.79)    1.9471          
+
+(X_U4.XAMP.XFilter.80)    1.9475      (X_U4.XAMP.XFilter.81)    1.4402          
+
+(X_U4.XAMP.XFilter.82)    1.4402      (X_U4.XAMP.XInput.118)    1.0032          
+
+(X_U4.XAMP.XInput.120)    2.0703      (X_U4.XAMP.XInput.121)    2.0703          
+
+(X_U4.XAMP.XInput.123)    0.0000      (X_U4.XAMP.XInput.124)    0.0000          
+
+(X_U4.XAMP.XInput.125)-43.18E-15      (X_U4.XAMP.XInput.126)-1.919E-09          
+
+(X_U4.XAMP.XInput.127) 127.7E-15      (X_U4.XAMP.XInput.128)-2.268E-15          
+
+(X_U4.XAMP.XInput.130)    3.6453      (X_U4.XAMP.XInput.VOS)-102.0E-06          
+
+(X_U4.XDCDC.XDAB.Iinp)     .0130      (X_U4.XDCDC.XDAB.Iout)     .0050          
+
+(X_U4.XDCDC.XDAB.Xb.1)    0.0000      (X_U4.XDCDC.XDAB.Xb.2)    0.0000          
+
+(X_U4.XDCDC.XDAB.Xc.1)    1.0000      (X_U4.XDCDC.XDAB.Xc.2)    1.0000          
+
+(X_U1.XAMP.XDFilter.55) 198.5E-06     (X_U1.XAMP.XDFilter.56) 198.5E-06         
+
+(X_U1.XAMP.XDFilter.57) 198.5E-06     (X_U1.XAMP.XFilter.Vt0)     .9362         
+
+(X_U1.XAMP.XInput.Vecm) 2.051E-12     (X_U1.XAMP.XInput.VICM)   45.0000         
+
+(X_U1.XDCDC.XDAB.deriv)    0.0000     (X_U1.XDCDC.XDAB.Iinp0)     .0130         
+
+(X_U1.XDCDC.XDAB.Iout0)     .0050     (X_U4.XAMP.XDFilter.55)    1.0154         
+
+(X_U4.XAMP.XDFilter.56)    1.0154     (X_U4.XAMP.XDFilter.57)    1.0154         
+
+(X_U4.XAMP.XFilter.Vt0)     .9362     (X_U4.XAMP.XInput.Vecm)-2.540E-06         
+
+(X_U4.XAMP.XInput.VICM)     .7493     (X_U4.XDCDC.XDAB.deriv)    0.0000         
+
+(X_U4.XDCDC.XDAB.Iinp0)     .0130     (X_U4.XDCDC.XDAB.Iout0)     .0050         
+
+(X_U1.XAMP.XFilter.Bias)     .8936    (X_U1.XAMP.XFilter.Vt0p)    2.3905        
+
+(X_U1.XAMP.XInput.CMref)   45.0000    (X_U1.XDCDC.XDAB.bdummy)    0.0000        
+
+(X_U1.XDCDC.XDAB.cdummy)    1.0000    (X_U1.XDCDC.XDAB.Voutpi)   49.2660        
+
+(X_U4.XAMP.XFilter.Bias)     .8936    (X_U4.XAMP.XFilter.Vt0p)    2.3905        
+
+(X_U4.XAMP.XInput.CMref)     .4953    (X_U4.XDCDC.XDAB.bdummy)    0.0000        
+
+(X_U4.XDCDC.XDAB.cdummy)    1.0000    (X_U4.XDCDC.XDAB.Voutpi)    4.2660        
+
+(X_U1.XAMP.XFilter.VM_59)    2.2339   (X_U1.XAMP.XInput.Vcmabs)   45.5000       
+
+(X_U1.XAMP.XInput.VM_115)   46.9000   (X_U1.XAMP.XInput.XU5.40) 102.0E-06       
+
+(X_U4.XAMP.XFilter.VM_59)    2.2339   (X_U4.XAMP.XInput.Vcmabs)     .7413       
+
+(X_U4.XAMP.XInput.VM_115)    2.3953   (X_U4.XAMP.XInput.XU5.40) 102.0E-06       
+
+(X_U1.XAMP.XFilter.Neg_65)    1.4402  (X_U1.XAMP.XFilter.Neg_73)    1.4402      
+
+(X_U1.XAMP.XInput.Venoise)    0.0000  (X_U1.XAMP.XInput.XU2.thr)   47.5100      
+
+(X_U1.XAMP.XInput.XU_1.10)    1.0000  (X_U1.XAMP.XInput.XU_1.20)   -1.8883      
+
+(X_U1.XAMP.XInput.XU_2.10)    1.0000  (X_U1.XAMP.XInput.XU_2.20)   -1.8883      
+
+(X_U1.XDCDC.XDAB.Xslewi.1)     .0130  (X_U1.XDCDC.XDAB.Xslewi.2)     .0130      
+
+(X_U1.XDCDC.XDAB.Xslewo.1)     .0050  (X_U1.XDCDC.XDAB.Xslewo.2)     .0050      
+
+(X_U1.XDCDC.XGamma.XC1.tm) 767.4E-06  (X_U1.XDCDC.XGamma.XC2.tm)     .0017      
+
+(X_U4.XAMP.XFilter.Neg_65)    1.4402  (X_U4.XAMP.XFilter.Neg_73)    1.4402      
+
+(X_U4.XAMP.XInput.Venoise)    0.0000  (X_U4.XAMP.XInput.XU2.thr)    3.0053      
+
+(X_U4.XAMP.XInput.XU_1.10)    1.0000  (X_U4.XAMP.XInput.XU_1.20)   -1.8882      
+
+(X_U4.XAMP.XInput.XU_2.10)    1.0000  (X_U4.XAMP.XInput.XU_2.20)   -1.8882      
+
+(X_U4.XDCDC.XDAB.Xslewi.1)     .0130  (X_U4.XDCDC.XDAB.Xslewi.2)     .0130      
+
+(X_U4.XDCDC.XDAB.Xslewo.1)     .0050  (X_U4.XDCDC.XDAB.Xslewo.2)     .0050      
+
+(X_U4.XDCDC.XGamma.XC1.tm) 767.4E-06  (X_U4.XDCDC.XGamma.XC2.tm)     .0017      
+
+(X_U1.XAMP.XFilter.IGND_63)    0.0000 (X_U1.XAMP.XFilter.Plus_66)    1.4402     
+
+(X_U1.XAMP.XFilter.Plus_74)    1.4402 (X_U1.XAMP.XFilter.Veps_58)-94.51E-09     
+
+(X_U1.XAMP.XInput.IGND_117)   45.0000 (X_U1.XAMP.XInput.Veps_112) 3.686E-09     
+
+(X_U1.XDCDC.XDAB.f_caliber)    1.0000 (X_U1.XDCDC.XDelta_Gamma.a)    1.0000     
+
+(X_U1.XDCDC.XGamma.XC1.thr)    1.5980 (X_U1.XDCDC.XGamma.XC2.thr)    2.3000     
+
+(X_U4.XAMP.XFilter.IGND_63)    0.0000 (X_U4.XAMP.XFilter.Plus_66)    1.4402     
+
+(X_U4.XAMP.XFilter.Plus_74)    1.4402 (X_U4.XAMP.XFilter.Veps_58)-94.51E-09     
+
+(X_U4.XAMP.XInput.IGND_117)     .4953 (X_U4.XAMP.XInput.Veps_112) 1.919E-09     
+
+(X_U4.XDCDC.XDAB.f_caliber)    1.0000 (X_U4.XDCDC.XDelta_Gamma.a)    1.0000     
+
+(X_U4.XDCDC.XGamma.XC1.thr)    1.5980 (X_U4.XDCDC.XGamma.XC2.thr)    2.3000     
+
+(X_U1.XAMP.XFilter.IAVDD_64)    4.4678                                          
+
+(X_U1.XAMP.XFilter.XBias.96)    2.1362                                          
+
+(X_U1.XAMP.XFilter.XBias.97)     .9362                                          
+
+(X_U1.XAMP.XFilter.XBias.98)    2.3905                                          
+
+(X_U1.XAMP.XFilter.XBias.99)     .9362                                          
+
+(X_U1.XAMP.XInput.IAVDD_116)   50.0000                                          
+
+(X_U1.XAMP.XInput.XBias.131)   45.2090                                          
+
+(X_U1.XDCDC.XDAB.Xc.XDEL1.3)    1.0000                                          
+
+(X_U1.XDCDC.XDAB.Xc.XDEL1.4)    1.0000                                          
+
+(X_U1.XDCDC.XDAB.Xc.XDEL1.5)    1.0000                                          
+
+(X_U4.XAMP.XFilter.IAVDD_64)    4.4678                                          
+
+(X_U4.XAMP.XFilter.XBias.96)    2.1362                                          
+
+(X_U4.XAMP.XFilter.XBias.97)     .9362                                          
+
+(X_U4.XAMP.XFilter.XBias.98)    2.3905                                          
+
+(X_U4.XAMP.XFilter.XBias.99)     .9362                                          
+
+(X_U4.XAMP.XInput.IAVDD_116)    5.4953                                          
+
+(X_U4.XAMP.XInput.XBias.131)     .7041                                          
+
+(X_U4.XDCDC.XDAB.Xc.XDEL1.3)    1.0000                                          
+
+(X_U4.XDCDC.XDAB.Xc.XDEL1.4)    1.0000                                          
+
+(X_U4.XDCDC.XDAB.Xc.XDEL1.5)    1.0000                                          
+
+(X_U1.XAMP.XFilter.XBias.VT1)    1.1343                                         
+
+(X_U1.XDCDC.XDAB.ddtVoutFilt)    0.0000                                         
+
+(X_U4.XAMP.XFilter.XBias.VT1)    1.1343                                         
+
+(X_U4.XDCDC.XDAB.ddtVoutFilt)    0.0000                                         
+
+(X_U1.XDCDC.XDAB.Xf_caliber.1)    1.0000                                        
+
+(X_U1.XDCDC.XDAB.Xf_caliber.2)    1.0000                                        
+
+(X_U4.XDCDC.XDAB.Xf_caliber.1)    1.0000                                        
+
+(X_U4.XDCDC.XDAB.Xf_caliber.2)    1.0000                                        
+
+(X_U1.XAMP.XFilter.XOutputn.86)    2.3437                                       
+
+(X_U1.XAMP.XFilter.XOutputn.87)     .9366                                       
+
+(X_U1.XAMP.XFilter.XOutputn.88)     .6952                                       
+
+(X_U1.XAMP.XFilter.XOutputn.89)     .9830                                       
+
+(X_U1.XAMP.XFilter.XOutputn.90)    1.4406                                       
+
+(X_U1.XAMP.XFilter.XOutputn.91)    3.3051                                       
+
+(X_U1.XAMP.XFilter.XOutputn.92)     .0217                                       
+
+(X_U1.XAMP.XFilter.XOutputn.93)    3.7725                                       
+
+(X_U1.XAMP.XFilter.XOutputp.86)    2.3437                                       
+
+(X_U1.XAMP.XFilter.XOutputp.87)     .9366                                       
+
+(X_U1.XAMP.XFilter.XOutputp.88)     .6952                                       
+
+(X_U1.XAMP.XFilter.XOutputp.89)     .9830                                       
+
+(X_U1.XAMP.XFilter.XOutputp.90)    1.4408                                       
+
+(X_U1.XAMP.XFilter.XOutputp.91)    3.3051                                       
+
+(X_U1.XAMP.XFilter.XOutputp.92)     .0217                                       
+
+(X_U1.XAMP.XFilter.XOutputp.93)    3.7725                                       
+
+(X_U4.XAMP.XFilter.XOutputn.86)    2.3437                                       
+
+(X_U4.XAMP.XFilter.XOutputn.87)     .9391                                       
+
+(X_U4.XAMP.XFilter.XOutputn.88)     .6952                                       
+
+(X_U4.XAMP.XFilter.XOutputn.89)     .9830                                       
+
+(X_U4.XAMP.XFilter.XOutputn.90)     .9333                                       
+
+(X_U4.XAMP.XFilter.XOutputn.91)    3.3055                                       
+
+(X_U4.XAMP.XFilter.XOutputn.92)     .0221                                       
+
+(X_U4.XAMP.XFilter.XOutputn.93)    3.7725                                       
+
+(X_U4.XAMP.XFilter.XOutputp.86)    2.3437                                       
+
+(X_U4.XAMP.XFilter.XOutputp.87)     .9356                                       
+
+(X_U4.XAMP.XFilter.XOutputp.88)     .6952                                       
+
+(X_U4.XAMP.XFilter.XOutputp.89)     .9830                                       
+
+(X_U4.XAMP.XFilter.XOutputp.90)    1.9482                                       
+
+(X_U4.XAMP.XFilter.XOutputp.91)    3.3050                                       
+
+(X_U4.XAMP.XFilter.XOutputp.92)     .0215                                       
+
+(X_U4.XAMP.XFilter.XOutputp.93)    3.7725                                       
+
+(X_U1.XDCDC.XDelta_Gamma.XC1.tm)     .0014                                      
+
+(X_U4.XDCDC.XDelta_Gamma.XC1.tm)     .0014                                      
+
+(X_U1.XDCDC.XDelta_Gamma.XC1.thr)    2.2000                                     
+
+(X_U4.XDCDC.XDelta_Gamma.XC1.thr)    2.2000                                     
+
+(X_U1.XAMP.XFilter.XBias.Vocmtemp)    1.0001                                    
+
+(X_U1.XAMP.XFilter.XOutputn.VV_83)    2.2339                                    
+
+(X_U1.XAMP.XFilter.XOutputp.VV_83)    2.2339                                    
+
+(X_U1.XDCDC.XDAB.nf_caliber_dummy)    1.0000                                    
+
+(X_U4.XAMP.XFilter.XBias.Vocmtemp)    1.0001                                    
+
+(X_U4.XAMP.XFilter.XOutputn.VV_83)    2.2339                                    
+
+(X_U4.XAMP.XFilter.XOutputp.VV_83)    2.2339                                    
+
+(X_U4.XDCDC.XDAB.nf_caliber_dummy)    1.0000                                    
+
+(X_U1.XAMP.XFilter.XOutputn.VGN_85)     .9366                                   
+
+(X_U1.XAMP.XFilter.XOutputn.VGP_84)    2.3910                                   
+
+(X_U1.XAMP.XFilter.XOutputp.VGN_85)     .9366                                   
+
+(X_U1.XAMP.XFilter.XOutputp.VGP_84)    2.3910                                   
+
+(X_U4.XAMP.XFilter.XOutputn.VGN_85)     .9391                                   
+
+(X_U4.XAMP.XFilter.XOutputn.VGP_84)    2.3934                                   
+
+(X_U4.XAMP.XFilter.XOutputp.VGN_85)     .9356                                   
+
+(X_U4.XAMP.XFilter.XOutputp.VGP_84)    2.3899                                   
+
+(X_U1.XDCDC.XDAB.Xf_caliber.XDEL1.3)    1.0000                                  
+
+(X_U1.XDCDC.XDAB.Xf_caliber.XDEL1.4)    1.0000                                  
+
+(X_U1.XDCDC.XDAB.Xf_caliber.XDEL1.5)    1.0000                                  
+
+(X_U4.XDCDC.XDAB.Xf_caliber.XDEL1.3)    1.0000                                  
+
+(X_U4.XDCDC.XDAB.Xf_caliber.XDEL1.4)    1.0000                                  
+
+(X_U4.XDCDC.XDAB.Xf_caliber.XDEL1.5)    1.0000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.146E-05
+    V_V5        -9.450E-04
+    V_V6        -3.700E-02
+    V_V7         0.000E+00
+    V_V8         0.000E+00
+    V_V9         1.125E-05
+    V_V10       -4.045E-04
+    X_U2.VCM_MIN   1.863E-09
+    X_U2.VCM_MAX  -1.864E-09
+    X_U2.V4      1.155E-05
+    X_U2.V_ISCp  -1.350E-08
+    X_U2.V_ISCn   1.250E-08
+    X_U2.V_GRn   1.600E-07
+    X_U2.V_GRp  -1.600E-07
+    X_U2.V_ORp   0.000E+00
+    X_U2.V_ORn   0.000E+00
+    X_U2.V11     1.802E-09
+    X_U2.V12    -1.802E-09
+    X_U5.VCM_MIN   1.863E-09
+    X_U5.VCM_MAX  -1.864E-09
+    X_U5.V4      8.995E-05
+    X_U5.V_ISCp  -1.350E-08
+    X_U5.V_ISCn   1.250E-08
+    X_U5.V_GRn   1.600E-07
+    X_U5.V_GRp  -1.600E-07
+    X_U5.V_ORp   0.000E+00
+    X_U5.V_ORn   0.000E+00
+    X_U5.V11     3.607E-09
+    X_U5.V12     2.561E-03
+    X_U1.XHLDO.VIZ1   5.009E-06
+    X_U1.XLDO.VIZ1   5.004E-06
+    X_U3.X1.V04   3.700E-02
+    X_U4.XHLDO.VIZ1   5.006E-06
+    X_U4.XLDO.VIZ1   5.004E-06
+    X_U1.XDCDC.XDAB.Viout   4.953E-03
+    X_U1.XDCDC.XDAB.Vf_caliber_dummy   0.000E+00
+    X_U1.XAMP.XFilter.VPSref   0.000E+00
+    X_U1.XAMP.XInput.VCMref   0.000E+00
+    X_U1.XAMP.XInput.VPSref   0.000E+00
+    X_U4.XDCDC.XDAB.Viout   4.953E-03
+    X_U4.XDCDC.XDAB.Vf_caliber_dummy   0.000E+00
+    X_U4.XAMP.XFilter.VPSref   0.000E+00
+    X_U4.XAMP.XInput.VCMref   0.000E+00
+    X_U4.XAMP.XInput.VPSref   0.000E+00
+    X_U1.XAMP.XFilter.XOutputn.VAM2   8.794E-13
+    X_U1.XAMP.XFilter.XOutputn.VAM1   2.154E-03
+    X_U1.XAMP.XFilter.XOutputn.Vo21   1.549E-12
+    X_U1.XAMP.XFilter.XOutputn.Vo22   1.549E-12
+    X_U1.XAMP.XFilter.XBias.VS2   2.643E-13
+    X_U1.XAMP.XFilter.XOutputp.VAM2   7.664E-13
+    X_U1.XAMP.XFilter.XOutputp.VAM1   2.154E-03
+    X_U1.XAMP.XFilter.XOutputp.Vo21   1.549E-12
+    X_U1.XAMP.XFilter.XOutputp.Vo22   1.549E-12
+    X_U4.XAMP.XFilter.XOutputn.VAM2   8.999E-13
+    X_U4.XAMP.XFilter.XOutputn.VAM1   2.114E-03
+    X_U4.XAMP.XFilter.XOutputn.Vo21   1.549E-12
+    X_U4.XAMP.XFilter.XOutputn.Vo22   1.549E-12
+    X_U4.XAMP.XFilter.XBias.VS2   2.643E-13
+    X_U4.XAMP.XFilter.XOutputp.VAM2   8.826E-13
+    X_U4.XAMP.XFilter.XOutputp.VAM1   2.167E-03
+    X_U4.XAMP.XFilter.XOutputp.Vo21   1.549E-12
+    X_U4.XAMP.XFilter.XOutputp.Vo22   1.549E-12
+
+    TOTAL POWER DISSIPATION   5.73E-01  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  143.2E-15.
+         Time step =  522.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(X_U2.N052)              =     13.01V  \     13.30V
+    V(X_U5.N052)              =    112.38V  \    110.91V
+    V(X_U1.XDCDC.XDAB.ddtVoutFilt) =    7.451nV  \    18.51uV
+    V(X_U1.XDCDC.XDAB.deriv)  =    7.451nV  \    18.51uV
+    V(X_U1.XDCDC.XDAB.Iinp0)  =    10.26mV  \    13.47mV
+    V(X_U1.XAMP.XFilter.75)   =     1.455V  \     1.439V
+    V(X_U1.XAMP.XFilter.76)   =     1.455V  \     1.439V
+    V(X_U1.XAMP.XFilter.78)   =     1.455V  \     1.439V
+    V(X_U1.XAMP.XFilter.77)   =     1.455V  \     1.439V
+    V(X_U1.XAMP.XFilter.79)   =     1.455V  \     1.439V
+    V(X_U1.XAMP.XFilter.80)   =     1.455V  \     1.439V
+    V(X_U1.XAMP.XFilter.81)   =     1.444V  \     1.440V
+    V(X_U1.XAMP.XFilter.82)   =     1.444V  \     1.440V
+    V(X_U4.XDCDC.XDAB.ddtVoutFilt) =   465.66pV  \   -25.00uV
+    V(X_U4.XDCDC.XDAB.deriv)  =   465.66pV  \   -25.00uV
+    V(X_U4.XDCDC.XDAB.Iinp0)  =    12.83mV  \    13.11mV
+    V(X_U4.XAMP.XFilter.75)   =   926.23mV  \   930.51mV
+    V(X_U4.XAMP.XFilter.76)   =   926.42mV  \   930.70mV
+    V(X_U4.XAMP.XFilter.78)   =   926.23mV  \   930.51mV
+    V(X_U4.XAMP.XFilter.77)   =     1.941V  \     1.946V
+    V(X_U4.XAMP.XFilter.79)   =     1.941V  \     1.946V
+    V(X_U4.XAMP.XFilter.80)   =     1.942V  \     1.946V
+    V(X_U1.XDCDC.XDAB.Xslewi.1) =    10.26mV  \    13.47mV
+    V(X_U4.XDCDC.XDAB.Xslewi.1) =    12.83mV  \    13.11mV
+
+  These supply currents failed to converge:
+
+    I(X_U2.E1)                =   -12.12uA  \    50.10uA
+    I(X_U2.E2)                =    13.25pA  \   -12.36pA
+    I(X_U5.E1)                =   648.50uA  \   251.77uA
+    I(X_U5.E2)                =   -1.906nA  \   -1.756nA
+    I(X_U2.Xe_n.E3)           =   -70.38pA  \   -12.17pA
+    I(X_U3.X1.E03)            =   864.27nA  \   867.99nA
+    I(X_U5.Xe_n.E3)           =  -536.04pA  \    16.93pA
+    I(X_U1.XHLDO.XU1.EVP)     =   958.91pA  \   -88.83pA
+    I(X_U1.XLDO.XU1.EVP)      =   -47.99pA  \   -4.330pA
+    I(X_U1.XAMP.XFilter.EVCVS2) =  -130.12nA  \    8.956nA
+    I(X_U1.XAMP.XFilter.EVCVS1) =  -131.17nA  \    7.953nA
+    I(X_U1.XAMP.XFilter.Epsp) =   -28.66nA  \    1.189nA
+    I(X_U1.XAMP.XFilter.Epsn) =    28.48nA  \   -1.189nA
+    I(X_U4.XHLDO.XU1.EVP)     =    27.69pA  \    13.14pA
+    I(X_U4.XLDO.XU1.EVP)      =   -48.04pA  \    2.890pA
+    I(X_U4.XAMP.XFilter.EVCVS2) =    2.592uA  \    2.554uA
+    I(X_U4.XAMP.XFilter.EVCVS1) =   -2.483uA  \   -2.520uA
+    I(X_U4.XAMP.XFilter.Epsp) =    10.99nA  \    2.977nA
+    I(X_U4.XAMP.XFilter.Epsn) =   -10.97nA  \   -2.979nA
+    I(X_U1.XDCDC.XDAB.Xslewo.E1) =  -496.25pA  \   -10.84nA
+    I(X_U1.XAMP.XFilter.XBias.EVSOCM) =   206.63nA  \   -11.64nA
+    I(X_U1.XAMP.XFilter.XBias.EVCVS1) =    57.09nA  \   -2.428nA
+    I(X_U1.XAMP.XFilter.XBias.EGND) =    57.09nA  \   -2.428nA
+    I(X_U4.XDCDC.XDAB.Xslewo.E1) =  -489.34pA  \    13.49nA
+    I(X_U4.XAMP.XFilter.XBias.EVSOCM) =   -83.72nA  \   -24.93nA
+    I(X_U4.XAMP.XFilter.XBias.EVCVS1) =   -22.01nA  \   -6.006nA
+    I(X_U4.XAMP.XFilter.XBias.EGND) =   -22.01nA  \   -6.006nA
+    I(X_U4.XAMP.XFilter.XBias.EBMG) =    50.93pA  \    5.002pA
+    I(V_V6)                   =   -36.62mA  \   -36.99mA
+    I(V_V9)                   =    11.21uA  \    11.24uA
+    I(X_U2.V4)                =    11.50uA  \    11.77uA
+    I(X_U5.V4)                =    92.50uA  \    91.05uA
+    I(X_U1.XDCDC.XDAB.Viout)  =    3.906mA  \    5.127mA
+    I(X_U4.XDCDC.XDAB.Viout)  =    4.883mA  \    4.990mA
+    I(X_U1.XAMP.XFilter.XOutputn.VAM2) =   -17.81nA  \   -1.328nA
+    I(X_U1.XAMP.XFilter.XOutputp.VAM2) =   -28.81nA  \   -2.226nA
+    I(X_U4.XAMP.XFilter.XOutputn.VAM2) =    32.64nA  \    2.411nA
+    I(X_U4.XAMP.XFilter.XOutputp.VAM2) =    31.90nA  \    2.336nA
+    I(X_U2.H1)                =   481.93nA  \   -2.163uA
+    I(X_U5.H1)                =   -25.52uA  \   -10.99uA
+
+  These devices failed to converge:
+    X_U1.XDCDC.XDAB.EddtVoutFilt X_U4.XDCDC.XDAB.EddtVoutFilt 
+    X_U1.XDCDC.XDAB.Xslewi.G1 X_U4.XDCDC.XDAB.Xslewi.G1 
+    X_U1.XAMP.XFilter.XBias.XT4.M1 X_U4.XAMP.XFilter.XBias.XT1.M1 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( 3.3V)    3.3267  (CHASIS)   45.0000 (N00298)   90.0000 (N00819)   45.0000     
+
+(N01247)   49.2660 (N01903)   48.1500 (N02240)    2.9000 (N02573)    3.3266     
+
+(N02757)    1.4406 (N02759)    1.5561 (N02764)    1.4408 (N02770)    1.5555     
+
+(N02985)    1.6514 (N15218)   45.0000 (N25400)   45.0000 (N28394)   12.0000     
+
+(N28882)    0.0000 (N33797)    0.0000 (N34013)    0.0000 (N34976)    1.6500     
+
+(N37666)    4.2660 (N37750)    2.9000 (N37922)    3.3266 (N38024)    3.6454     
+
+(N38112)     .4953 (N38186)    1.0032 (N38200)    1.9482 (N38266)     .9333     
+
+(N38364)    3.3169 (N38372)    1.8328 (N38550)    1.8357 (N38648)    1.6500     
+
+(N38805)  108.0000 (N39190)    1.0032 (X_U2.MID)    1.6625                      
+
+(X_U5.MID)    1.6625                  (X_U2.ESDn)    1.5561                     
+
+(X_U2.ESDp)    1.5555                 (X_U2.N001)    1.5522                     
+
+(X_U2.N002)    1.6625                 (X_U2.N003)   15.1630                     
+
+(X_U2.N004)     .0033                 (X_U2.N005)    1.6625                     
+
+(X_U2.N006)    1.6625                 (X_U2.N007)    3.3234                     
+
+(X_U2.N008)  161.6600                 (X_U2.N009)    3.3194                     
+
+(X_U2.N010)    3.3194                 (X_U2.N011)    1.6625                     
+
+(X_U2.N012)    1.6625                 (X_U2.N013)    1.6625                     
+
+(X_U2.N014)    1.6625                 (X_U2.N015)    -.0205                     
+
+(X_U2.N016)    -.0205                 (X_U2.N017)    -.0205                     
+
+(X_U2.N018)    3.5795                 (X_U2.N019)    3.5795                     
+
+(X_U2.N020)    3.5795                 (X_U2.N021)    1.7795                     
+
+(X_U2.N022)    1.6625                 (X_U2.N023)    1.6625                     
+
+(X_U2.N024)    1.6625                 (X_U2.N025)    1.6625                     
+
+(X_U2.N026)    1.6625                 (X_U2.N027)    1.6625                     
+
+(X_U2.N028)     .0066                 (X_U2.N029)     .0066                     
+
+(X_U2.N030)    1.6625                 (X_U2.N031)    1.6625                     
+
+(X_U2.N032)    1.5560                 (X_U2.N033)    1.5560                     
+
+(X_U2.N034)  -10.8380                 (X_U2.N035)    1.5560                     
+
+(X_U2.N036)    1.5561                 (X_U2.N037) -158.3400                     
+
+(X_U2.N038)    1.5555                 (X_U2.N039)    1.5561                     
+
+(X_U2.N040)    1.5561                 (X_U2.N041)    1.6625                     
+
+(X_U2.N042)    3.5267                 (X_U2.N043)    -.2000                     
+
+(X_U2.N044)    1.5561                 (X_U2.N045)    1.6740                     
+
+(X_U2.N046)    1.6514                 (X_U2.N047)    1.7795                     
+
+(X_U2.N048)   13.1000                 (X_U2.N049)    4.0582                     
+
+(X_U2.N050)   13.0890                 (X_U2.N051)    1.6739                     
+
+(X_U2.N052)   13.0130                 (X_U2.N053)    1.6514                     
+
+(X_U2.N054)    1.7795                 (X_U2.N055)    3.3267                     
+
+(X_U2.N056)    1.6625                 (X_U2.N057) 1.666E-06                     
+
+(X_U2.N058)    1.6625                 (X_U2.N059)    1.6625                     
+
+(X_U2.N060)    1.6625                 (X_U2.N061)    1.6625                     
+
+(X_U2.N062)    1.6625                 (X_U2.VCLP)    1.7795                     
+
+(X_U5.ESDn)    1.8328                 (X_U5.ESDp)    1.8357                     
+
+(X_U5.N001)    1.8409                 (X_U5.N002)    1.6625                     
+
+(X_U5.N003)   15.1630                 (X_U5.N004)     .0033                     
+
+(X_U5.N005)    1.6625                 (X_U5.N006)    1.6625                     
+
+(X_U5.N007)    3.3234                 (X_U5.N008)  161.6600                     
+
+(X_U5.N009)    3.3151                 (X_U5.N010)    3.3151                     
+
+(X_U5.N011)    1.6643                 (X_U5.N012)    1.6643                     
+
+(X_U5.N013)    1.6625                 (X_U5.N014)    1.6625                     
+
+(X_U5.N015)    2.7291                 (X_U5.N016)    2.7291                     
+
+(X_U5.N017)    2.7291                 (X_U5.N018)    6.3317                     
+
+(X_U5.N019)    6.3317                 (X_U5.N020)    6.3291                     
+
+(X_U5.N021)    6.3324                 (X_U5.N022)    1.6625                     
+
+(X_U5.N023)    1.6625                 (X_U5.N024)    1.6625                     
+
+(X_U5.N025)    1.6625                 (X_U5.N026)    1.6625                     
+
+(X_U5.N027)    1.6625                 (X_U5.N028)     .0066                     
+
+(X_U5.N029)     .0066                 (X_U5.N030)    1.6625                     
+
+(X_U5.N031)    1.6625                 (X_U5.N032)    1.8363                     
+
+(X_U5.N033)    1.8363                 (X_U5.N034)  -10.8380                     
+
+(X_U5.N035)    1.8363                 (X_U5.N036)    1.8364                     
+
+(X_U5.N037) -158.3400                 (X_U5.N038)    1.8357                     
+
+(X_U5.N039)    1.8364                 (X_U5.N040)    1.8364                     
+
+(X_U5.N041)    2.0239                 (X_U5.N042)    3.5267                     
+
+(X_U5.N043)    -.2000                 (X_U5.N044)    1.8328                     
+
+(X_U5.N045)    1.7550                 (X_U5.N046)    3.3169                     
+
+(X_U5.N047)    6.3324                 (X_U5.N048)  109.9000                     
+
+(X_U5.N049)   24.3380                 (X_U5.N050)  109.8100                     
+
+(X_U5.N051)    1.7732                 (X_U5.N052)  112.3800                     
+
+(X_U5.N053)    3.3169                 (X_U5.N054)    4.5291                     
+
+(X_U5.N055)    3.3267                 (X_U5.N056)    1.6625                     
+
+(X_U5.N057) 1.666E-06                 (X_U5.N058)    1.6625                     
+
+(X_U5.N059)    1.6625                 (X_U5.N060)    1.6625                     
+
+(X_U5.N061)    1.6651                 (X_U5.N062)    1.6651                     
+
+(X_U5.VCLP)    4.5291                 (X_U2.CLAMP)    1.7795                    
+
+(X_U2.SW_OL)    1.6625                (X_U2.VCC_B)    3.3267                    
+
+(X_U2.VEE_B) 1.664E-06                (X_U2.VIMON)    1.6741                    
+
+(X_U5.CLAMP)    6.3324                (X_U5.SW_OL)    1.6625                    
+
+(X_U5.VCC_B)    3.3267                (X_U5.VEE_B) 1.664E-06                    
+
+(X_U5.VIMON)    1.7525                (X_U2.VOUT_S)    1.6514                   
+
+(X_U2.VSENSE)    1.7795               (X_U2.Xe_n.3)-13.88E-18                   
+
+(X_U2.Xe_n.4)-13.88E-18               (X_U2.Xe_n.5)    0.0000                   
+
+(X_U2.Xe_n.6)-13.88E-18               (X_U2.Xe_n.7)     .8338                   
+
+(X_U2.Xe_n.8)     .8338               (X_U3.X1.des)    3.3000                   
+
+(X_U3.X1.drv)    3.3000               (X_U3.X1.egd)    1.0000                   
+
+(X_U3.X1.ref)    1.2300               (X_U3.X1.v01)    1.2300                   
+
+(X_U3.X1.v02)    3.3000               (X_U3.X1.vgd)    1.0000                   
+
+(X_U3.X1.vx1)    1.0000               (X_U3.X1.vx2)    1.0000                   
+
+(X_U3.X1.vxx)    3.3274               (X_U3.X1.vyy)    3.3274                   
+
+(X_U3.X1.vzz)    3.3267               (X_U5.VOUT_S)    3.3169                   
+
+(X_U5.VSENSE)    6.3324               (X_U5.Xe_n.3) 13.88E-18                   
+
+(X_U5.Xe_n.4) 13.88E-18               (X_U5.Xe_n.5)    0.0000                   
+
+(X_U5.Xe_n.6) 13.88E-18               (X_U5.Xe_n.7)     .8338                   
+
+(X_U5.Xe_n.8)     .8338               (X_U1.XAMP.45)   46.0000                  
+
+(X_U1.XAMP.46)   45.0000              (X_U1.XAMP.47)   46.0000                  
+
+(X_U1.XAMP.48)   45.0000              (X_U1.XAMP.49)   45.0000                  
+
+(X_U1.XLDO.24)    1.2500              (X_U1.XLDO.25)    1.2501                  
+
+(X_U1.XLDO.26)    2.1652              (X_U1.XLDO.28)    3.0302                  
+
+(X_U1.XLDO.30)    2.4987              (X_U1.XLDO.31)    2.4987                  
+
+(X_U2.VCC_CLP)    3.3194              (X_U2.VEE_CLP)     .0066                  
+
+(X_U2.Xi_nn.3)    0.0000              (X_U2.Xi_nn.5)    0.0000                  
+
+(X_U2.Xi_np.3)    0.0000              (X_U2.Xi_np.5)    0.0000                  
+
+(X_U3.FBK_INT)    1.2399              (X_U4.XAMP.45)    1.4953                  
+
+(X_U4.XAMP.46)     .4953              (X_U4.XAMP.47)    1.4953                  
+
+(X_U4.XAMP.48)     .4953              (X_U4.XAMP.49)     .5056                  
+
+(X_U4.XLDO.24)    1.2500              (X_U4.XLDO.25)    1.2501                  
+
+(X_U4.XLDO.26)    2.1652              (X_U4.XLDO.28)    3.0302                  
+
+(X_U4.XLDO.30)    2.4987              (X_U4.XLDO.31)    2.4987                  
+
+(X_U5.VCC_CLP)    3.3151              (X_U5.VEE_CLP)     .0066                  
+
+(X_U5.Xi_nn.3)    0.0000              (X_U5.Xi_nn.5)    0.0000                  
+
+(X_U5.Xi_np.3)    0.0000              (X_U5.Xi_np.5)    0.0000                  
+
+(X_U1.XDCDC.35)    0.0000             (X_U1.XDCDC.G1)   44.9410                 
+
+(X_U1.XHLDO.16)   46.2500             (X_U1.XHLDO.17)   46.2500                 
+
+(X_U1.XHLDO.18)   48.1670             (X_U1.XHLDO.20)   48.2000                 
+
+(X_U1.XHLDO.22)   47.4990             (X_U1.XHLDO.23)   47.4990                 
+
+(X_U2.CL_CLAMP)    1.7795             (X_U4.XDCDC.35)    0.0000                 
+
+(X_U4.XDCDC.G1)    -.0588             (X_U4.XHLDO.16)    1.7454                 
+
+(X_U4.XHLDO.17)    1.7454             (X_U4.XHLDO.18)    3.1666                 
+
+(X_U4.XHLDO.20)    3.6948             (X_U4.XHLDO.22)    2.9940                 
+
+(X_U4.XHLDO.23)    2.9940             (X_U5.CL_CLAMP)    4.5291                 
+
+(X_U1.XAMP.FSO1)   45.0000            (X_U1.XAMP.VOCM)    1.4402                
+
+(X_U4.XAMP.FSO1)     .4953            (X_U4.XAMP.VOCM)    1.4402                
+
+(X_U1.XDCDC.VOR1)   48.2130           (X_U2.CLAW_CLAMP)    1.7795               
+
+(X_U4.XDCDC.VOR1)    3.2132           (X_U5.CLAW_CLAMP)    4.5291               
+
+(X_U1.XAMP.FSO_41)   45.0000          (X_U1.XAMP.FSO_44)   45.0000              
+
+(X_U1.XAMP.INP_52) 198.5E-06          (X_U1.XDCDC.Toutp)   45.0510              
+
+(X_U1.XLDO.VF1_27)    -.9263          (X_U1.XLDO.XQ1.Si)    3.3266              
+
+(X_U1.XLDO.XU1.P1)    2.1652          (X_U4.XAMP.FSO_41)     .4953              
+
+(X_U4.XAMP.FSO_44)     .4953          (X_U4.XAMP.INP_52)    1.0154              
+
+(X_U4.XDCDC.Toutp)     .0512          (X_U4.XLDO.VF1_27)    -.9263              
+
+(X_U4.XLDO.XQ1.Si)    3.3266          (X_U4.XLDO.XU1.P1)    2.1652              
+
+(X_U1.XAMP.XU1.thr)   45.6000         (X_U1.XAMP.XU2.thr)   47.6000             
+
+(X_U1.XAMP.XU3.thr)   47.2500         (X_U1.XDCDC.DVout1)   46.0530             
+
+(X_U1.XDCDC.Out_32)   49.2660         (X_U1.XDCDC.Out_33)    2.9000             
+
+(X_U1.XDCDC.XDAB.b)    0.0000         (X_U1.XDCDC.XDAB.c)    1.0000             
+
+(X_U1.XHLDO.VF1_19)   45.0310         (X_U1.XHLDO.XQ1.Si)   49.2660             
+
+(X_U1.XHLDO.XU1.P1)   48.1670         (X_U1.XLDO.XU1.VMI)     .9643             
+
+(X_U1.XLDO.XU1.VPI)    3.2691         (X_U4.XAMP.XU1.thr)    1.0953             
+
+(X_U4.XAMP.XU2.thr)    3.0953         (X_U4.XAMP.XU3.thr)    2.7453             
+
+(X_U4.XDCDC.DVout1)    1.0529         (X_U4.XDCDC.Out_32)    4.2660             
+
+(X_U4.XDCDC.Out_33)    2.9000         (X_U4.XDCDC.XDAB.b)    0.0000             
+
+(X_U4.XDCDC.XDAB.c)    1.0000         (X_U4.XHLDO.VF1_19)     .0311             
+
+(X_U4.XHLDO.XQ1.Si)    4.2660         (X_U4.XHLDO.XU1.P1)    3.1666             
+
+(X_U4.XLDO.XU1.VMI)     .9643         (X_U4.XLDO.XU1.VPI)    3.2691             
+
+(X_U1.XAMP.NOut1_51)    1.4401        (X_U1.XAMP.NOut1_54)   45.0000            
+
+(X_U1.XAMP.POut1_50)    1.4403        (X_U1.XAMP.POut1_53)   45.0000            
+
+(X_U1.XAMP.XGain.G1)     .2438        (X_U1.XAMP.XGain.G2) 24.20E-06            
+
+(X_U1.XAMP.XU1.outi)   45.0000        (X_U1.XAMP.XU1.thro)   45.9900            
+
+(X_U1.XHLDO.XU1.VMI)   46.9040        (X_U1.XHLDO.XU1.VPI)   49.2080            
+
+(X_U1.XLDO.VACin_29)    1.2500        (X_U4.XAMP.NOut1_51)     .9325            
+
+(X_U4.XAMP.NOut1_54)     .4953        (X_U4.XAMP.POut1_50)    1.9478            
+
+(X_U4.XAMP.POut1_53)    1.0033        (X_U4.XAMP.XGain.G1)     .2438            
+
+(X_U4.XAMP.XGain.G2)     .1238        (X_U4.XAMP.XU1.outi)     .4953            
+
+(X_U4.XAMP.XU1.thro)    1.4853        (X_U4.XHLDO.XU1.VMI)    1.9037            
+
+(X_U4.XHLDO.XU1.VPI)    4.2084        (X_U4.XLDO.VACin_29)    1.2500            
+
+(X_U1.XAMP.XGain.G12)     .9995       (X_U1.XDCDC.XGamma.a)    1.0000           
+
+(X_U1.XDCDC.XGamma.b)    1.0000       (X_U1.XHLDO.VACin_21)   46.2500           
+
+(X_U4.XAMP.XGain.G12)     .9995       (X_U4.XDCDC.XGamma.a)    1.0000           
+
+(X_U4.XDCDC.XGamma.b)    1.0000       (X_U4.XHLDO.VACin_21)    1.7454           
+
+(X_U1.XAMP.XFilter.67) 3.520E-15      (X_U1.XAMP.XFilter.68)-94.51E-09          
+
+(X_U1.XAMP.XFilter.69) 81.68E-18      (X_U1.XAMP.XFilter.70)-94.51E-09          
+
+(X_U1.XAMP.XFilter.71)    3.3000      (X_U1.XAMP.XFilter.72) 3.093E-15          
+
+(X_U1.XAMP.XFilter.75)    1.4547      (X_U1.XAMP.XFilter.76)    1.4550          
+
+(X_U1.XAMP.XFilter.77)    1.4549      (X_U1.XAMP.XFilter.78)    1.4547          
+
+(X_U1.XAMP.XFilter.79)    1.4549      (X_U1.XAMP.XFilter.80)    1.4552          
+
+(X_U1.XAMP.XFilter.81)    1.4440      (X_U1.XAMP.XFilter.82)    1.4440          
+
+(X_U1.XAMP.XInput.118)   45.0000      (X_U1.XAMP.XInput.120)   46.5750          
+
+(X_U1.XAMP.XInput.121)   46.5750      (X_U1.XAMP.XInput.123)    0.0000          
+
+(X_U1.XAMP.XInput.124)    0.0000      (X_U1.XAMP.XInput.125) 31.32E-15          
+
+(X_U1.XAMP.XInput.126)-3.686E-09      (X_U1.XAMP.XInput.127)-87.67E-15          
+
+(X_U1.XAMP.XInput.128)-2.909E-18      (X_U1.XAMP.XInput.130)   48.1500          
+
+(X_U1.XAMP.XInput.VOS)-102.0E-06      (X_U1.XDCDC.XDAB.Iinp)     .0130          
+
+(X_U1.XDCDC.XDAB.Iout)     .0050      (X_U1.XDCDC.XDAB.Xb.1)    0.0000          
+
+(X_U1.XDCDC.XDAB.Xb.2)    0.0000      (X_U1.XDCDC.XDAB.Xc.1)     .9999          
+
+(X_U1.XDCDC.XDAB.Xc.2)    1.0000      (X_U4.XAMP.XFilter.67) 3.520E-15          
+
+(X_U4.XAMP.XFilter.68)-94.51E-09      (X_U4.XAMP.XFilter.69) 81.68E-18          
+
+(X_U4.XAMP.XFilter.70)-94.51E-09      (X_U4.XAMP.XFilter.71)    3.3000          
+
+(X_U4.XAMP.XFilter.72) 3.093E-15      (X_U4.XAMP.XFilter.75)     .9262          
+
+(X_U4.XAMP.XFilter.76)     .9264      (X_U4.XAMP.XFilter.77)    1.9412          
+
+(X_U4.XAMP.XFilter.78)     .9262      (X_U4.XAMP.XFilter.79)    1.9412          
+
+(X_U4.XAMP.XFilter.80)    1.9416      (X_U4.XAMP.XFilter.81)    1.4387          
+
+(X_U4.XAMP.XFilter.82)    1.4387      (X_U4.XAMP.XInput.118)    1.0032          
+
+(X_U4.XAMP.XInput.120)    2.0703      (X_U4.XAMP.XInput.121)    2.0703          
+
+(X_U4.XAMP.XInput.123)    0.0000      (X_U4.XAMP.XInput.124)    0.0000          
+
+(X_U4.XAMP.XInput.125)-43.17E-15      (X_U4.XAMP.XInput.126)-1.919E-09          
+
+(X_U4.XAMP.XInput.127) 127.7E-15      (X_U4.XAMP.XInput.128)-2.268E-15          
+
+(X_U4.XAMP.XInput.130)    3.6453      (X_U4.XAMP.XInput.VOS)-102.0E-06          
+
+(X_U4.XDCDC.XDAB.Iinp)     .0130      (X_U4.XDCDC.XDAB.Iout)     .0050          
+
+(X_U4.XDCDC.XDAB.Xb.1)    0.0000      (X_U4.XDCDC.XDAB.Xb.2)    0.0000          
+
+(X_U4.XDCDC.XDAB.Xc.1)     .9999      (X_U4.XDCDC.XDAB.Xc.2)    1.0000          
+
+(X_U1.XAMP.XDFilter.55) 198.5E-06     (X_U1.XAMP.XDFilter.56) 198.5E-06         
+
+(X_U1.XAMP.XDFilter.57) 198.5E-06     (X_U1.XAMP.XFilter.Vt0)     .9362         
+
+(X_U1.XAMP.XInput.Vecm) 2.051E-12     (X_U1.XAMP.XInput.VICM)   45.0000         
+
+(X_U1.XDCDC.XDAB.deriv) 7.451E-09     (X_U1.XDCDC.XDAB.Iinp0)     .0103         
+
+(X_U1.XDCDC.XDAB.Iout0)     .0050     (X_U4.XAMP.XDFilter.55)    1.0154         
+
+(X_U4.XAMP.XDFilter.56)    1.0154     (X_U4.XAMP.XDFilter.57)    1.0154         
+
+(X_U4.XAMP.XFilter.Vt0)     .9362     (X_U4.XAMP.XInput.Vecm)-2.540E-06         
+
+(X_U4.XAMP.XInput.VICM)     .7493     (X_U4.XDCDC.XDAB.deriv) 465.7E-12         
+
+(X_U4.XDCDC.XDAB.Iinp0)     .0128     (X_U4.XDCDC.XDAB.Iout0)     .0050         
+
+(X_U1.XAMP.XFilter.Bias)     .8936    (X_U1.XAMP.XFilter.Vt0p)    2.3905        
+
+(X_U1.XAMP.XInput.CMref)   45.0000    (X_U1.XDCDC.XDAB.bdummy)    0.0000        
+
+(X_U1.XDCDC.XDAB.cdummy)    1.0000    (X_U1.XDCDC.XDAB.Voutpi)   49.2660        
+
+(X_U4.XAMP.XFilter.Bias)     .8936    (X_U4.XAMP.XFilter.Vt0p)    2.3905        
+
+(X_U4.XAMP.XInput.CMref)     .4953    (X_U4.XDCDC.XDAB.bdummy)    0.0000        
+
+(X_U4.XDCDC.XDAB.cdummy)    1.0000    (X_U4.XDCDC.XDAB.Voutpi)    4.2660        
+
+(X_U1.XAMP.XFilter.VM_59)    2.2339   (X_U1.XAMP.XInput.Vcmabs)   45.5000       
+
+(X_U1.XAMP.XInput.VM_115)   46.9000   (X_U1.XAMP.XInput.XU5.40) 102.0E-06       
+
+(X_U4.XAMP.XFilter.VM_59)    2.2339   (X_U4.XAMP.XInput.Vcmabs)     .7413       
+
+(X_U4.XAMP.XInput.VM_115)    2.3953   (X_U4.XAMP.XInput.XU5.40) 102.0E-06       
+
+(X_U1.XAMP.XFilter.Neg_65)    1.4402  (X_U1.XAMP.XFilter.Neg_73)    1.4402      
+
+(X_U1.XAMP.XInput.Venoise)    0.0000  (X_U1.XAMP.XInput.XU2.thr)   47.5100      
+
+(X_U1.XAMP.XInput.XU_1.10)    1.0000  (X_U1.XAMP.XInput.XU_1.20)   -1.8883      
+
+(X_U1.XAMP.XInput.XU_2.10)    1.0000  (X_U1.XAMP.XInput.XU_2.20)   -1.8883      
+
+(X_U1.XDCDC.XDAB.Xslewi.1)     .0103  (X_U1.XDCDC.XDAB.Xslewi.2)     .0130      
+
+(X_U1.XDCDC.XDAB.Xslewo.1)     .0050  (X_U1.XDCDC.XDAB.Xslewo.2)     .0050      
+
+(X_U1.XDCDC.XGamma.XC1.tm) 767.4E-06  (X_U1.XDCDC.XGamma.XC2.tm)     .0017      
+
+(X_U4.XAMP.XFilter.Neg_65)    1.4402  (X_U4.XAMP.XFilter.Neg_73)    1.4402      
+
+(X_U4.XAMP.XInput.Venoise)    0.0000  (X_U4.XAMP.XInput.XU2.thr)    3.0053      
+
+(X_U4.XAMP.XInput.XU_1.10)    1.0000  (X_U4.XAMP.XInput.XU_1.20)   -1.8882      
+
+(X_U4.XAMP.XInput.XU_2.10)    1.0000  (X_U4.XAMP.XInput.XU_2.20)   -1.8882      
+
+(X_U4.XDCDC.XDAB.Xslewi.1)     .0128  (X_U4.XDCDC.XDAB.Xslewi.2)     .0130      
+
+(X_U4.XDCDC.XDAB.Xslewo.1)     .0050  (X_U4.XDCDC.XDAB.Xslewo.2)     .0050      
+
+(X_U4.XDCDC.XGamma.XC1.tm) 767.4E-06  (X_U4.XDCDC.XGamma.XC2.tm)     .0017      
+
+(X_U1.XAMP.XFilter.IGND_63)    0.0000 (X_U1.XAMP.XFilter.Plus_66)    1.4402     
+
+(X_U1.XAMP.XFilter.Plus_74)    1.4402 (X_U1.XAMP.XFilter.Veps_58)-94.51E-09     
+
+(X_U1.XAMP.XInput.IGND_117)   45.0000 (X_U1.XAMP.XInput.Veps_112) 3.686E-09     
+
+(X_U1.XDCDC.XDAB.f_caliber)    1.0000 (X_U1.XDCDC.XDelta_Gamma.a)    1.0000     
+
+(X_U1.XDCDC.XGamma.XC1.thr)    1.5980 (X_U1.XDCDC.XGamma.XC2.thr)    2.3000     
+
+(X_U4.XAMP.XFilter.IGND_63)    0.0000 (X_U4.XAMP.XFilter.Plus_66)    1.4402     
+
+(X_U4.XAMP.XFilter.Plus_74)    1.4402 (X_U4.XAMP.XFilter.Veps_58)-94.51E-09     
+
+(X_U4.XAMP.XInput.IGND_117)     .4953 (X_U4.XAMP.XInput.Veps_112) 1.919E-09     
+
+(X_U4.XDCDC.XDAB.f_caliber)    1.0000 (X_U4.XDCDC.XDelta_Gamma.a)    1.0000     
+
+(X_U4.XDCDC.XGamma.XC1.thr)    1.5980 (X_U4.XDCDC.XGamma.XC2.thr)    2.3000     
+
+(X_U1.XAMP.XFilter.IAVDD_64)    4.4678                                          
+
+(X_U1.XAMP.XFilter.XBias.96)    2.1362                                          
+
+(X_U1.XAMP.XFilter.XBias.97)     .9362                                          
+
+(X_U1.XAMP.XFilter.XBias.98)    2.3905                                          
+
+(X_U1.XAMP.XFilter.XBias.99)     .9362                                          
+
+(X_U1.XAMP.XInput.IAVDD_116)   50.0000                                          
+
+(X_U1.XAMP.XInput.XBias.131)   45.2090                                          
+
+(X_U1.XDCDC.XDAB.Xc.XDEL1.3)    1.0000                                          
+
+(X_U1.XDCDC.XDAB.Xc.XDEL1.4)     .9999                                          
+
+(X_U1.XDCDC.XDAB.Xc.XDEL1.5)    1.0163                                          
+
+(X_U4.XAMP.XFilter.IAVDD_64)    4.4678                                          
+
+(X_U4.XAMP.XFilter.XBias.96)    2.1362                                          
+
+(X_U4.XAMP.XFilter.XBias.97)     .9362                                          
+
+(X_U4.XAMP.XFilter.XBias.98)    2.3905                                          
+
+(X_U4.XAMP.XFilter.XBias.99)     .9362                                          
+
+(X_U4.XAMP.XInput.IAVDD_116)    5.4953                                          
+
+(X_U4.XAMP.XInput.XBias.131)     .7041                                          
+
+(X_U4.XDCDC.XDAB.Xc.XDEL1.3)    1.0000                                          
+
+(X_U4.XDCDC.XDAB.Xc.XDEL1.4)     .9999                                          
+
+(X_U4.XDCDC.XDAB.Xc.XDEL1.5)    1.0163                                          
+
+(X_U1.XAMP.XFilter.XBias.VT1)    1.1343                                         
+
+(X_U1.XDCDC.XDAB.ddtVoutFilt) 7.451E-09                                         
+
+(X_U4.XAMP.XFilter.XBias.VT1)    1.1343                                         
+
+(X_U4.XDCDC.XDAB.ddtVoutFilt) 465.7E-12                                         
+
+(X_U1.XDCDC.XDAB.Xf_caliber.1)    1.0000                                        
+
+(X_U1.XDCDC.XDAB.Xf_caliber.2)    1.0000                                        
+
+(X_U4.XDCDC.XDAB.Xf_caliber.1)    1.0000                                        
+
+(X_U4.XDCDC.XDAB.Xf_caliber.2)    1.0000                                        
+
+(X_U1.XAMP.XFilter.XOutputn.86)    2.3437                                       
+
+(X_U1.XAMP.XFilter.XOutputn.87)     .9366                                       
+
+(X_U1.XAMP.XFilter.XOutputn.88)     .6952                                       
+
+(X_U1.XAMP.XFilter.XOutputn.89)     .9830                                       
+
+(X_U1.XAMP.XFilter.XOutputn.90)    1.4406                                       
+
+(X_U1.XAMP.XFilter.XOutputn.91)    3.3051                                       
+
+(X_U1.XAMP.XFilter.XOutputn.92)     .0217                                       
+
+(X_U1.XAMP.XFilter.XOutputn.93)    3.7725                                       
+
+(X_U1.XAMP.XFilter.XOutputp.86)    2.3437                                       
+
+(X_U1.XAMP.XFilter.XOutputp.87)     .9366                                       
+
+(X_U1.XAMP.XFilter.XOutputp.88)     .6952                                       
+
+(X_U1.XAMP.XFilter.XOutputp.89)     .9830                                       
+
+(X_U1.XAMP.XFilter.XOutputp.90)    1.4408                                       
+
+(X_U1.XAMP.XFilter.XOutputp.91)    3.3051                                       
+
+(X_U1.XAMP.XFilter.XOutputp.92)     .0217                                       
+
+(X_U1.XAMP.XFilter.XOutputp.93)    3.7725                                       
+
+(X_U4.XAMP.XFilter.XOutputn.86)    2.3437                                       
+
+(X_U4.XAMP.XFilter.XOutputn.87)     .9391                                       
+
+(X_U4.XAMP.XFilter.XOutputn.88)     .6952                                       
+
+(X_U4.XAMP.XFilter.XOutputn.89)     .9830                                       
+
+(X_U4.XAMP.XFilter.XOutputn.90)     .9333                                       
+
+(X_U4.XAMP.XFilter.XOutputn.91)    3.3055                                       
+
+(X_U4.XAMP.XFilter.XOutputn.92)     .0221                                       
+
+(X_U4.XAMP.XFilter.XOutputn.93)    3.7725                                       
+
+(X_U4.XAMP.XFilter.XOutputp.86)    2.3437                                       
+
+(X_U4.XAMP.XFilter.XOutputp.87)     .9356                                       
+
+(X_U4.XAMP.XFilter.XOutputp.88)     .6952                                       
+
+(X_U4.XAMP.XFilter.XOutputp.89)     .9830                                       
+
+(X_U4.XAMP.XFilter.XOutputp.90)    1.9482                                       
+
+(X_U4.XAMP.XFilter.XOutputp.91)    3.3050                                       
+
+(X_U4.XAMP.XFilter.XOutputp.92)     .0215                                       
+
+(X_U4.XAMP.XFilter.XOutputp.93)    3.7725                                       
+
+(X_U1.XDCDC.XDelta_Gamma.XC1.tm)     .0014                                      
+
+(X_U4.XDCDC.XDelta_Gamma.XC1.tm)     .0014                                      
+
+(X_U1.XDCDC.XDelta_Gamma.XC1.thr)    2.2000                                     
+
+(X_U4.XDCDC.XDelta_Gamma.XC1.thr)    2.2000                                     
+
+(X_U1.XAMP.XFilter.XBias.Vocmtemp)    1.0001                                    
+
+(X_U1.XAMP.XFilter.XOutputn.VV_83)    2.2339                                    
+
+(X_U1.XAMP.XFilter.XOutputp.VV_83)    2.2339                                    
+
+(X_U1.XDCDC.XDAB.nf_caliber_dummy)    1.0000                                    
+
+(X_U4.XAMP.XFilter.XBias.Vocmtemp)    1.0001                                    
+
+(X_U4.XAMP.XFilter.XOutputn.VV_83)    2.2339                                    
+
+(X_U4.XAMP.XFilter.XOutputp.VV_83)    2.2339                                    
+
+(X_U4.XDCDC.XDAB.nf_caliber_dummy)    1.0000                                    
+
+(X_U1.XAMP.XFilter.XOutputn.VGN_85)     .9366                                   
+
+(X_U1.XAMP.XFilter.XOutputn.VGP_84)    2.3910                                   
+
+(X_U1.XAMP.XFilter.XOutputp.VGN_85)     .9366                                   
+
+(X_U1.XAMP.XFilter.XOutputp.VGP_84)    2.3910                                   
+
+(X_U4.XAMP.XFilter.XOutputn.VGN_85)     .9391                                   
+
+(X_U4.XAMP.XFilter.XOutputn.VGP_84)    2.3934                                   
+
+(X_U4.XAMP.XFilter.XOutputp.VGN_85)     .9356                                   
+
+(X_U4.XAMP.XFilter.XOutputp.VGP_84)    2.3899                                   
+
+(X_U1.XDCDC.XDAB.Xf_caliber.XDEL1.3)    1.0000                                  
+
+(X_U1.XDCDC.XDAB.Xf_caliber.XDEL1.4)    1.0000                                  
+
+(X_U1.XDCDC.XDAB.Xf_caliber.XDEL1.5)    1.0000                                  
+
+(X_U4.XDCDC.XDAB.Xf_caliber.XDEL1.3)    1.0000                                  
+
+(X_U4.XDCDC.XDAB.Xf_caliber.XDEL1.4)    1.0000                                  
+
+(X_U4.XDCDC.XDAB.Xf_caliber.XDEL1.5)    1.0000           
+
+
+**** Interrupt ****

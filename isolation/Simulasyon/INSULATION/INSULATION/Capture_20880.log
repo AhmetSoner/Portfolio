@@ -1,0 +1,23 @@
+[2025-09-29T18:17:19.753+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseStateHandler::CDSPulseStateHandler] [DEBUG] - Creating CDSPulseStateHandler.
+[2025-09-29T18:17:19.754+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Param received is conf explore
+[2025-09-29T18:17:19.754+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Handle start server synchronously.
+[2025-09-29T18:17:19.754+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Sending server start event to health state handler.
+[2025-09-29T18:17:19.754+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [PulseStartEvent::PulseStartEvent] [DEBUG] - Creating pulse start event.
+[2025-09-29T18:17:19.754+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [PulseStateNoServer::handleEvent] [DEBUG] - Start event received.
+[2025-09-29T18:17:19.755+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManagerImpl::getInitJsonFileLocation] [DEBUG] - Creating json file pathC:/Users/ahmet/AppData/Local/Temp\pulse_stage_ahmet_20880\sjson
+[2025-09-29T18:17:19.755+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Launching Init Translate Server.
+[2025-09-29T18:17:19.756+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Init translate server command is C:\Cadence\SPB_17.4\tools/pcbdw/bin\translate.bat -parent "20880" -parentlocation "C:/Users/ahmet/AppData/Local/Temp\pulse_stage_ahmet_20880\sjson" -appname "orcad" -conf "explore"
+[2025-09-29T18:17:20.344+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPortFileReaderThread::checkFileCreated] [DEBUG] - Checking for server json file from launch.
+[2025-09-29T18:17:27.398+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPortFileReaderThread::readPort] [DEBUG] - Reading server json file from launch.
+[2025-09-29T18:17:27.398+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPortFileReaderThread::readPort] [DEBUG] - Reading data from server json file.
+[2025-09-29T18:17:27.398+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPortFileReaderThread::readPort] [DEBUG] - Signaling server json file from launch as read.
+[2025-09-29T18:17:27.399+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManagerImpl::updateData] [DEBUG] - Port file reading finished.
+[2025-09-29T18:17:27.399+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManagerImpl::updateData] [DEBUG] - Server started successfully.
+[2025-09-29T18:17:27.399+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManagerImpl::updateData] [ERROR] - Pulse health checkup system could not be initialized for server http://127.0.0.1:7200
+[2025-09-29T18:17:27.399+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseStateHandler::setCurrentState] [DEBUG] - Setting state as started
+[2025-09-29T18:17:27.399+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::getDataValue] [DEBUG] - value is: http://127.0.0.1:7200
+[2025-09-29T18:25:30.268+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Param received is conf explore
+[2025-09-29T18:25:30.268+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Handle start server synchronously.
+[2025-09-29T18:25:30.268+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::startSync] [DEBUG] - Sending server start event to health state handler.
+[2025-09-29T18:25:30.268+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [PulseStartEvent::PulseStartEvent] [DEBUG] - Creating pulse start event.
+[2025-09-29T18:25:30.268+0300] [20880] [20884] [ahmet] [Capture.exe] [192.168.1.34] [Ahmet] [CDSPulseManager::getDataValue] [DEBUG] - value is: http://127.0.0.1:7200

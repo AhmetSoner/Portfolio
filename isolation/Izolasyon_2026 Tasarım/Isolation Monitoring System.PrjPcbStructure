@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=Communication.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Communication.SchDoc|FileName=Connection.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=Communication.SchDoc|FileName=Regulator.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Communication.SchDoc|FileName=Sense.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Communication.SchDoc|FileName=STM32F103C8T6.SchDoc|SheetNumber=1
