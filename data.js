@@ -222,7 +222,8 @@ const PORTFOLIO_DATA = {
                   "48 V Araç Güvenliği",
                   "İzolasyon İzleme",
                   "AD8216 Fark Yükselteci",
-                  "AMC1311 İzole Ölçüm"
+                  "AMC1311 İzole Ölçüm",
+                  "team-hidroana"
             ],
             "specs": [
                   {
@@ -740,7 +741,8 @@ const PORTFOLIO_DATA = {
                   "Electric Vehicle Safety",
                   "Insulation Monitoring",
                   "AD8216 Difference Amplifier",
-                  "AMC1311 Isolated Measurement"
+                  "AMC1311 Isolated Measurement",
+                  "team-hidroana"
             ],
             "specs": [
                   {
