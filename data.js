@@ -213,53 +213,57 @@ const PORTFOLIO_DATA = {
 },
       {
             "id": "project-2",
-            "title": "Yüksek Gerilim İzolasyon İzleme Cihazı",
+            "title": "48 V Araçlar İçin İzolasyon İzleme Cihazı",
             "category": "donanim",
-            "summary": "Elektrikli araç batarya paketlerinin şasiye karşı kaçak akım tespitini yapan güvenlik modülü.",
-            "description": "Elektrikli araçlarda yüksek gerilimli batarya paketlerinin güvenliği için şasiye karşı izolasyon durumunu sürekli denetleyen sistemdir. Bataryanın pozitif (Rp) ve negatif (Rn) kutup izolasyon dirençleri hesaplanır. Ölçülen gerilimler AD8216 fark yükselteciyle yükseltilerek ADC'ye aktarılır. Sistemler arası elektriksel izolasyon AMC1311 sinyal dönüştürücü ve güvenlik röleleri ile sağlanır.",
-            "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600",
+            "summary": "Hidroana hidrojen enerjili aracının 48 V güç hattında batarya kutupları ile şasi arasındaki izolasyon direncini izlemek için geliştirilen analog ölçüm ve güvenlik kartı.",
+            "description": "Bu proje, yüksek gerilim sınıfında ele alınan bir sistem değil; 48 V seviyesinde çalışan hidrojen enerjili araç güç hattında güvenli izolasyon takibi yapmak için tasarlanmış bir izleme kartıdır. Amaç, bataryanın pozitif ve negatif terminallerinin şasiye karşı izolasyon dirençlerini ölçmek, olası kaçak yolları erken tespit etmek ve kontrol kartına sayısallaştırılabilir güvenilir bir ölçüm bilgisi aktarmaktır.",
+            "image": "isolation/izolasyon-denklemler-devre.png",
             "tags": [
-                  "Analog Donanım",
-                  "AD8216 Fark Yükselteç",
-                  "AMC1311 İzolasyon",
-                  "Güvenlik"
+                  "48 V Araç Güvenliği",
+                  "İzolasyon İzleme",
+                  "AD8216 Fark Yükselteci",
+                  "AMC1311 İzole Ölçüm"
             ],
             "specs": [
                   {
-                        "name": "Ölçüm Hassasiyeti",
-                        "value": "MΩ Seviyesinde İzleme"
+                        "name": "Çalışma Bağlamı",
+                        "value": "48 V Hidrojen Enerjili Araç Güç Hattı"
                   },
                   {
-                        "name": "Yükselteç",
-                        "value": "AD8216 Fark Yükselteci"
+                        "name": "Ölçülen Büyüklük",
+                        "value": "Rp ve Rn Şasi İzolasyon Dirençleri"
                   },
                   {
-                        "name": "Sinyal Dönüştürücü",
-                        "value": "AMC1311 Elektriksel İzolasyon"
+                        "name": "Analog Ölçüm",
+                        "value": "AD8216 Fark Yükselteci ve ADC Girişi"
                   },
                   {
-                        "name": "Güvenlik",
-                        "value": "Röle Tabanlı Hat Kesme"
+                        "name": "Elektriksel Ayrım",
+                        "value": "AMC1311, Opto İzolatör ve İzole DC-DC"
                   }
             ],
-            "overview": "Elektrikli araçlarda ve yüksek gerilimli batarya paketlerinde (48V ve üzeri) batarya kutup uçlarının şasiye karşı yalıtım direncini sürekli denetleyen kritik emniyet donanımıdır.",
-            "architecture": "Düzensiz veya simetrik yalıtım hatalarını tespit edebilmek amacıyla anahtarlamalı direnç şebekesi topolojisi kullanılır. Pozitif (Rp) ve negatif (Rn) yalıtım dirençleri dinamik olarak hesaplanır.",
+            "overview": "<p>İzolasyon takip cihazı, aracın 48 V batarya hattı ile şasi arasındaki yalıtım durumunu izlemek için tasarlandı. Batarya pozitif ucu, batarya negatif ucu ve şasi arasında istenmeyen kaçak yollar oluştuğunda hem kullanıcı güvenliği hem de elektronik sistemlerin kararlılığı etkilenebilir. Bu nedenle kart, kaçak akımı doğrudan yorumlamak yerine şasiye karşı eşdeğer izolasyon dirençlerini hesaplayan ölçülebilir bir analog model üzerine kuruldu.</p><p>Projede pozitif terminal ile şasi arasındaki izolasyon direnci Rp, negatif terminal ile şasi arasındaki izolasyon direnci ise Rn olarak ele alındı. Ölçüm devresi, bilinen dirençler ve röle ile değiştirilen iki farklı ölçüm durumu üzerinden UP1, UN1, UP2 ve UN2 gerilimlerini üretir. Bu gerilimler analog yükseltme ve izolasyon katlarından geçirilerek kontrol kartı tarafında ADC ile okunabilir hale getirilir.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"isolation/izolasyon-prensip-1.png\" alt=\"İzolasyon takip cihazı çalışma prensibi\"><figcaption>Şekil 1. İzolasyon takip cihazının temel ölçüm mantığı ve Rp/Rn hesap denklemleri.</figcaption></figure></div>",
+            "architecture": "<h4>Ölçüm Prensibi</h4><p>Devrenin temel fikri, batarya hattını şasiye göre iki farklı durumda gözlemlemektir. S rölesi açıkken pozitif ve negatif terminal tarafındaki gerilimler UP1 ve UN1 olarak ölçülür. S rölesi kapatıldığında devredeki anahtarlamalı direnç ağı değişir ve aynı terminaller için UP2 ve UN2 gerilimleri elde edilir. Bu iki ölçüm durumu, bilinmeyen Rp ve Rn değerlerini çözmek için yeterli denklem setini oluşturur.</p><p>Kaynak dokümanda Kirchhoff kanunları kullanılarak S rölesi açıkken ve kapalıyken yazılan denklemlerden Rp ve Rn formülleri elde edilir. Equations dosyasında aynı mantık daha genel bir RisoP/RisoN modeliyle ele alınır; VDC batarya gerilimini, RstP/RstN test dirençlerini, RinAMC ise AMC1311 giriş empedansını temsil eder. Bu formüller direnç seçimi, ADC gerilim aralığı ve izole amplifikatör giriş etkisini tasarım aşamasında değerlendirmek için kullanıldı.</p><div class=\"formula-block\"><code>Rp = 2R1(UN2UP1 - UN1UP2) / (2UN1UP2 - UN2UP1)</code><br><code>Rn = 2R1(UN2UP1 - UN1UP2) / (UP1UP2 + UN1UP2 - UN2UP1)</code><br><code>RisoP = -(RstN + RinAMC) * (VDC + VN - VP) / VN</code><br><code>RisoN = ((VDC / VP) - 1) * RisoP * (RstP + RinAMC) / (RisoP + RstP + RinAMC)</code></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"isolation/izolasyon-denklemler-devre.png\" alt=\"İzolasyon devresi denklemleri ve devre tasarımı\"><figcaption>Şekil 2. Röle durumlarına göre ölçüm denklemleri ve devre tasarımında kullanılan analog katlar.</figcaption></figure></div><h4>Devre Tasarımı</h4><p>Şematikte HV_POS ve HV_NEG, 48 V batarya hattının pozitif ve negatif uçlarını temsil eder. GND_i ise izolasyon kartının şasi referansıdır. Ölçülen gerilimler AD8216 fark yükselteciyle uygun seviyeye taşınır; AD8216, R19 ve R20 üzerinden gelen ölçümleri yükselterek ADC_IN+ ve ADC_IN- hatları üzerinden kontrol kartına aktarılabilecek hale getirir.</p><p>Kontrol kartı ile izolasyon kartının toprak referansları farklı olduğu için analog sinyal doğrudan taşınmaz. Bu ayrım için AMC1311 izole amplifikatör kullanılır. AMC1311 diferansiyel çıkış verdiğinden, tek uçlu sinyal oluşturmak için fark alıcı opamp katı kullanılır. Röleleri sürmek için opto izolatörler tercih edilmiştir; izolasyon ve kontrol kartı arasındaki besleme ayrımı için izole DC-DC dönüştürücü, bağlantı için ise molex yapısı kullanılmıştır.</p>",
             "subsystems": [
                   {
-                        "title": "Difference Amplifier",
-                        "desc": "AD8216 hassas fark yükselteci ile küçük gerilim değişimlerinin ölçülmesi."
+                        "title": "Anahtarlamalı Direnç Ağı",
+                        "desc": "S rölesi açık ve kapalı durumlarında farklı ölçüm noktaları oluşturarak Rp ve Rn izolasyon dirençlerinin hesaplanmasını sağlar."
                   },
                   {
-                        "title": "Galvanic Isolation",
-                        "desc": "AMC1311 izole amplifikatör ile yüksek gerilim tarafının düşük gerilim kontrol tarafından elektriksel olarak ayrılması."
+                        "title": "AD8216 Ölçüm Katı",
+                        "desc": "Pozitif ve negatif terminal tarafındaki küçük gerilim farklarını ADC seviyesine taşımak için kullanılır."
                   },
                   {
-                        "title": "Safety Relay & Cutoff",
-                        "desc": "Tehlikeli izolasyon direnci düşüşünde HV hattını fiziksel olarak kesen güvenlik rölesi."
+                        "title": "AMC1311 İzole Aktarım",
+                        "desc": "İzolasyon kartı ile kontrol kartı referanslarını ayırarak analog ölçüm bilgisinin güvenli şekilde aktarılmasını sağlar."
+                  },
+                  {
+                        "title": "Opto İzolatör ve Röle Sürme",
+                        "desc": "Ölçüm durumlarını değiştiren rölelerin kontrol tarafıyla galvanik bağı azaltılarak sürülmesini sağlar."
                   }
             ],
-            "analysis": "MΩ seviyesindeki yalıtım direnci sapmaları simüle edilmiş, yüksek gerilim gürültü bastırma testleri tamamlanmıştır.",
-            "achievements": "Elektrikli araç şasisine kaçak akım risklerini sıfıra indiren ve Uluslararası Elektroteknik Standartlarına uygun emniyet sistemi."
+            "analysis": "<h4>Simülasyon ve Doğrulama</h4><p>Devre MATLAB Simscape ortamında kurularak çalışması test edildi. Doğrulama yaklaşımı iki ana kaçak senaryo üzerinden yürütüldü: negatif terminalde 250 kOhm seviyesinde izolasyon kaçağı ve pozitif terminalde 250 kOhm seviyesinde izolasyon kaçağı. Negatif terminal kaçağı oluşturulduğunda hesaplanan izolasyon direnci yaklaşık 249.7 kOhm, pozitif terminal kaçağı oluşturulduğunda ise yaklaşık 250.5 kOhm elde edildi. Bu sonuçlar, matematiksel modelin ve anahtarlamalı ölçüm yönteminin hedeflenen kaçak direncini pratik olarak takip edebildiğini gösterdi.</p><p>Simülasyonun temel amacı, yalnızca devrenin çalıştığını göstermek değil; röle durumları, bilinen dirençler, izole ölçüm katı ve ADC'ye giden sinyal zinciri arasında tutarlı bir ilişki kurmaktı. Bu doğrulama tamamlandıktan sonra gömülü yazılım tarafında ölçüm okuma, denklem uygulama ve güvenli eşik yorumlama akışına geçilebilecek bir temel oluştu.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"isolation/izolasyon-simulasyon-pcb.png\" alt=\"İzolasyon devresi simülasyon ve PCB çalışmaları\"><figcaption>Şekil 3. MATLAB Simscape doğrulaması, kaçak senaryoları ve PCB tasarım notları.</figcaption></figure></div><h4>PCB ve İzolasyon Seviyeleri</h4><p>Kart tasarımında üç ayrı seviye gözetildi: 48 V batarya hattı, şasi referansı ve düşük gerilim kontrol tarafı. Tüm elektriksel donanımlar bu seviyelerin birbirini doğrudan etkilemeyeceği şekilde ayrıldı. Bu ayrım, aracın güç hattındaki kaçak ihtimalinin kontrol elektroniğine taşınmaması ve ölçümün kendi referansında güvenilir kalması için kritik görüldü.</p>",
+            "achievements": "<p>Bu proje sonunda 48 V hidrojen enerjili araç güç hattı için, batarya kutuplarının şasiye karşı izolasyon durumunu hesaplayabilen bir analog ölçüm mimarisi ortaya çıkarıldı. Çalışma; Kirchhoff tabanlı denklem modeli, Equations dosyasında türetilen RisoP/RisoN bağıntıları, AD8216 ölçüm katı, AMC1311 izole sinyal aktarımı, opto izolatörlü röle sürme ve Simscape doğrulamasıyla kartın tasarım kararlarını teknik olarak gerekçelendirdi.</p><div class='project-output-access'><div><span class='visual-kicker'>// SOURCE_FILES</span><strong>İzolasyon Kaynak Dosyaları</strong><p>İzolasyon PDF'i, Equations Word dosyası ve kartın çalışma prensibini anlatan PNG görselleri erişilebilir hale getirildi.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/isolation' target='_blank' rel='noopener noreferrer'>Kaynak Dosyaları Aç<i data-lucide='external-link'></i></a></div>"
       },
       {
             "id": "project-3",
@@ -727,53 +731,57 @@ const PORTFOLIO_DATA = {
 },
       {
             "id": "project-2",
-            "title": "High Voltage Insulation Monitoring Device",
+            "title": "48 V Vehicle Insulation Monitoring Device",
             "category": "donanim",
-            "summary": "Safety module detecting leakage current to chassis in electric vehicle battery packs.",
-            "description": "A system that continuously monitors the insulation status relative to the chassis for high-voltage battery pack safety in electric vehicles. The positive (Rp) and negative (Rn) insulation resistances of the battery are calculated. Measured voltages are amplified via the AD8216 difference amplifier and sent to the ADC. Electrical isolation between systems is provided via the AMC1311 signal isolator and safety relays.",
-            "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600",
+            "summary": "Analog measurement and safety board developed to monitor the insulation resistance between the 48 V power line and chassis of the Hidroana hydrogen vehicle.",
+            "description": "This project is not framed as an extremely high-voltage system; it was designed for a 48 V hydrogen vehicle power line. The goal is to monitor the insulation condition between the battery positive/negative terminals and the chassis, detect leakage paths early, and provide a reliable ADC-readable measurement to the control board.",
+            "image": "isolation/izolasyon-denklemler-devre.png",
             "tags": [
-                  "Analog Hardware",
-                  "AD8216 Diff Amp",
-                  "AMC1311 Isolation",
-                  "Safety"
+                  "48 V Vehicle Safety",
+                  "Insulation Monitoring",
+                  "AD8216 Difference Amplifier",
+                  "AMC1311 Isolated Measurement"
             ],
             "specs": [
                   {
-                        "name": "Measurement Sensitivity",
-                        "value": "Monitoring in MΩ Level"
+                        "name": "System Context",
+                        "value": "48 V Hydrogen Vehicle Power Line"
                   },
                   {
-                        "name": "Amplifier",
-                        "value": "AD8216 Difference Amplifier"
+                        "name": "Measured Quantity",
+                        "value": "Rp and Rn Chassis Insulation Resistances"
                   },
                   {
-                        "name": "Signal Isolator",
-                        "value": "AMC1311 Electrical Isolation"
+                        "name": "Analog Front-End",
+                        "value": "AD8216 Difference Amplifier and ADC Input"
                   },
                   {
-                        "name": "Safety",
-                        "value": "Relay-Based Line Cut-off"
+                        "name": "Electrical Separation",
+                        "value": "AMC1311, Opto-Isolators and Isolated DC-DC"
                   }
             ],
-            "overview": "Critical safety hardware that continuously monitors the insulation resistance of battery terminals relative to the chassis in electric vehicles and high-voltage battery packs (48V+).",
-            "architecture": "Utilizes a switched resistor network topology to detect both asymmetrical and symmetrical insulation faults. Positive (Rp) and negative (Rn) insulation resistances are dynamically calculated.",
+            "overview": "<p>The insulation monitoring device was designed to track the insulation condition between the vehicle's 48 V battery line and chassis. If unintended leakage paths occur between the positive terminal, negative terminal and chassis, both user safety and electronics reliability can be affected. Instead of interpreting leakage current directly, the board estimates equivalent chassis insulation resistances through a measurable analog model.</p><p>In the project, Rp represents the insulation resistance between the positive terminal and chassis, while Rn represents the insulation resistance between the negative terminal and chassis. The measurement circuit produces UP1, UN1, UP2 and UN2 voltages using known resistors and two relay-controlled measurement states. These voltages are amplified, isolated and transferred to the control board for ADC reading.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"isolation/izolasyon-prensip-1.png\" alt=\"Insulation monitoring principle\"><figcaption>Figure 1. Measurement principle and Rp/Rn calculation logic of the insulation monitor.</figcaption></figure></div>",
+            "architecture": "<h4>Measurement Principle</h4><p>The circuit observes the battery line relative to chassis in two different states. When the S relay is open, terminal voltages are measured as UP1 and UN1. When the S relay is closed, the switched resistor network changes and UP2/UN2 are measured. These two states provide the equation set needed to solve the unknown Rp and Rn values.</p><p>The source document derives Rp and Rn using Kirchhoff laws for the relay-open and relay-closed states. The Equations document evaluates the same problem through a generalized RisoP/RisoN model where VDC is the battery voltage, RstP/RstN are selected test resistors, and RinAMC represents the AMC1311 input resistance. These equations were used to reason about test-resistor selection, ADC voltage range and the loading effect of the isolated amplifier input.</p><div class=\"formula-block\"><code>Rp = 2R1(UN2UP1 - UN1UP2) / (2UN1UP2 - UN2UP1)</code><br><code>Rn = 2R1(UN2UP1 - UN1UP2) / (UP1UP2 + UN1UP2 - UN2UP1)</code><br><code>RisoP = -(RstN + RinAMC) * (VDC + VN - VP) / VN</code><br><code>RisoN = ((VDC / VP) - 1) * RisoP * (RstP + RinAMC) / (RisoP + RstP + RinAMC)</code></div><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"isolation/izolasyon-denklemler-devre.png\" alt=\"Insulation equations and circuit design\"><figcaption>Figure 2. Relay-state equations and analog circuit blocks used in the design.</figcaption></figure></div><h4>Circuit Design</h4><p>HV_POS and HV_NEG represent the positive and negative terminals of the 48 V battery line, while GND_i is the chassis reference of the insulation board. The measured voltages are conditioned with an AD8216 difference amplifier and transferred toward ADC_IN+ and ADC_IN-.</p><p>Because the insulation board and control board do not share the same ground reference, analog signals are transferred through an AMC1311 isolated amplifier. Since the AMC1311 provides differential outputs, a differential op-amp stage is used to create a single-ended signal. Opto-isolators drive the relays, an isolated DC-DC converter separates supplies, and molex connectors define the interface between the insulation and control boards.</p>",
             "subsystems": [
                   {
-                        "title": "Difference Amplifier",
-                        "desc": "Measurement of minute voltage differentials using the AD8216 precision difference amplifier."
+                        "title": "Switched Resistor Network",
+                        "desc": "Creates two measurement states through the S relay so Rp and Rn insulation resistances can be calculated."
                   },
                   {
-                        "title": "Galvanic Isolation",
-                        "desc": "Electrical separation of the high-voltage domain from low-voltage control circuits via AMC1311 isolated amplifiers."
+                        "title": "AD8216 Measurement Stage",
+                        "desc": "Conditions small terminal voltage differences and prepares them for ADC acquisition."
                   },
                   {
-                        "title": "Safety Relay & Cutoff",
-                        "desc": "Safety relay system that physically disconnects the HV bus upon detecting hazardous insulation resistance drops."
+                        "title": "AMC1311 Isolated Transfer",
+                        "desc": "Transfers analog measurement information while separating the insulation board and control-board references."
+                  },
+                  {
+                        "title": "Opto-Isolated Relay Drive",
+                        "desc": "Controls the relay states while reducing unwanted coupling between control and measurement domains."
                   }
             ],
-            "analysis": "Simulated insulation resistance deviations at the MΩ scale and completed high-voltage noise suppression validation tests.",
-            "achievements": "Implemented a safety system compliant with International Electrotechnical Commission standards, eliminating current leakage risks to electric vehicle chassis."
+            "analysis": "<h4>Simulation and Validation</h4><p>The circuit was modeled and tested in MATLAB Simscape. Two leakage scenarios were used for validation: a 250 kOhm insulation leakage on the negative terminal and a 250 kOhm insulation leakage on the positive terminal. The negative-terminal case produced an estimated insulation resistance of approximately 249.7 kOhm, while the positive-terminal case produced approximately 250.5 kOhm. These results show that the mathematical model and switched measurement approach can track the target leakage resistance with practical accuracy.</p><p>The purpose of the simulation was not only to show that the circuit works, but also to verify the relationship between relay states, known resistors, isolated measurement stages and ADC-ready outputs. After this validation, the next implementation step becomes embedded measurement reading, equation evaluation and threshold-based safety interpretation.</p><div class=\"project-figure-grid inline-figure-flow\"><figure class=\"project-figure-card\"><img src=\"isolation/izolasyon-simulasyon-pcb.png\" alt=\"Insulation simulation and PCB notes\"><figcaption>Figure 3. MATLAB Simscape validation, leakage scenarios and PCB-level design notes.</figcaption></figure></div><h4>PCB and Isolation Levels</h4><p>The PCB design considers three electrical levels: the 48 V battery line, chassis reference and low-voltage control side. These domains are separated so leakage behavior from the vehicle power line is not directly carried into the control electronics.</p>",
+            "achievements": "<p>The project produced an analog insulation-monitoring architecture for the 48 V Hidroana vehicle power line. It combines Kirchhoff-based equations, the RisoP/RisoN relations from the Equations document, AD8216 measurement conditioning, AMC1311 isolated signal transfer, opto-isolated relay driving and Simscape validation into a traceable circuit-design workflow.</p><div class='project-output-access'><div><span class='visual-kicker'>// SOURCE_FILES</span><strong>Insulation Source Files</strong><p>The insulation PDF, Equations Word file and PNG explanation images are available for review.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/isolation' target='_blank' rel='noopener noreferrer'>Open Source Files<i data-lucide='external-link'></i></a></div>"
       },
       {
             "id": "project-3",
