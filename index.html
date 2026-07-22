@@ -304,23 +304,24 @@
                 </div>
                 
                 <div class="contact-form-panel">
-                    <form id="hud-contact-form" onsubmit="event.preventDefault(); alert(currentLang === 'tr' ? 'Şablon Modu: İletişim formu verileri simüle edildi!' : 'Template Mode: Contact form data simulated!');">
+                    <form id="hud-contact-form">
                         <div class="input-group">
-                            <input type="text" id="form-name" required placeholder=" ">
+                            <input type="text" id="form-name" name="name" required placeholder=" ">
                             <label for="form-name"><span class="input-prefix">//</span> <span data-translate="form_name">İSİM / SOYİSİM</span></label>
                             <div class="input-glow-bar"></div>
                         </div>
                         <div class="input-group">
-                            <input type="email" id="form-email" required placeholder=" ">
+                            <input type="email" id="form-email" name="email" required placeholder=" ">
                             <label for="form-email"><span class="input-prefix">//</span> <span data-translate="form_email">E-POSTA ADRESİ</span></label>
                             <div class="input-glow-bar"></div>
                         </div>
                         <div class="input-group">
-                            <textarea id="form-message" required rows="5" placeholder=" "></textarea>
+                            <textarea id="form-message" name="message" required rows="5" placeholder=" "></textarea>
                             <label for="form-message"><span class="input-prefix">//</span> <span data-translate="form_message">MESAJINIZ</span></label>
                             <div class="input-glow-bar"></div>
                         </div>
-                        <button type="submit" class="hud-btn primary-btn form-submit-btn">
+                        <div id="form-status-msg" class="hud-form-status" style="display:none; margin-bottom: 15px; font-family: var(--font-tech); font-size: 0.9rem; padding: 10px 14px; border-radius: 4px; line-height: 1.5;"></div>
+                        <button type="submit" id="form-submit-btn" class="hud-btn primary-btn form-submit-btn">
                             <span class="btn-scan-line"></span>
                             <span data-translate="form_send">SİNYALİ GÖNDER</span> <i data-lucide="send"></i>
                         </button>
@@ -376,7 +377,7 @@
     </footer>
 
     <!-- Proje Verisi ve Ana Kontrolcü -->
-    <script src="data.js?v=65"></script>
-    <script src="app.js?v=65"></script>
+    <script src="data.js?v=300"></script>
+    <script src="app.js?v=300"></script>
 </body>
 </html>

@@ -1152,3 +1152,94 @@ function initMarginAnimation() {
 
     draw();
 }
+
+/* ==========================================================================
+   İLETİŞİM FORMU E-POSTA GÖNDERME VE UYARI SİSTEMİ (FormSubmit AJAX)
+   ========================================================================== */
+function initContactForm() {
+    const form = document.getElementById("hud-contact-form");
+    if (!form) return;
+
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const nameInput = document.getElementById("form-name");
+        const emailInput = document.getElementById("form-email");
+        const msgInput = document.getElementById("form-message");
+        const submitBtn = document.getElementById("form-submit-btn");
+        const statusBox = document.getElementById("form-status-msg");
+
+        const nameVal = nameInput ? nameInput.value.trim() : "";
+        const emailVal = emailInput ? emailInput.value.trim() : "";
+        const msgVal = msgInput ? msgInput.value.trim() : "";
+
+        if (!nameVal || !emailVal || !msgVal) return;
+
+        // UI Durumu: Gönderiliyor
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = "0.6";
+        }
+        
+        if (statusBox) {
+            statusBox.style.display = "block";
+            statusBox.style.background = "rgba(0, 240, 255, 0.08)";
+            statusBox.style.border = "1px solid rgba(0, 240, 255, 0.4)";
+            statusBox.style.color = "#00f0ff";
+            statusBox.innerHTML = currentLang === 'tr' 
+                ? 'Sinyal iletiliyor, lütfen bekleyiniz...'
+                : 'Transmitting signal, please wait...';
+        }
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/ahmetsonergulec@hotmail.com", {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    "Ad Soyad": nameVal,
+                    "E-Posta": emailVal,
+                    "Mesaj": msgVal,
+                    "_subject": "Portfolyo İletişim Mesajı: " + nameVal
+                })
+            });
+
+            if (response.ok) {
+                // Başarılı uyarısı
+                if (statusBox) {
+                    statusBox.style.background = "rgba(0, 255, 136, 0.12)";
+                    statusBox.style.border = "1px solid #00ff88";
+                    statusBox.style.color = "#00ff88";
+                    statusBox.innerHTML = currentLang === 'tr'
+                        ? '<strong>[ BAŞARILI ]</strong> Mesajınız <strong>ahmetsonergulec@hotmail.com</strong> adresine başarıyla iletildi! En kısa sürede dönüş yapılacaktır.'
+                        : '<strong>[ SUCCESS ]</strong> Your message has been successfully transmitted to <strong>ahmetsonergulec@hotmail.com</strong>!';
+                }
+                form.reset();
+            } else {
+                throw new Error("HTTP Status " + response.status);
+            }
+        } catch (err) {
+            console.error("Form submit error:", err);
+            if (statusBox) {
+                statusBox.style.background = "rgba(255, 0, 85, 0.12)";
+                statusBox.style.border = "1px solid #ff0055";
+                statusBox.style.color = "#ff0055";
+                statusBox.innerHTML = currentLang === 'tr'
+                    ? '<strong>[ HATA ]</strong> Mesaj iletilirken bir sorun oluştu. Lütfen doğrudan <strong>ahmetsonergulec@hotmail.com</strong> adresine e-posta gönderiniz.'
+                    : '<strong>[ ERROR ]</strong> Transmission failed. Please email directly to <strong>ahmetsonergulec@hotmail.com</strong>.';
+            }
+        } finally {
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = "1";
+            }
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    initContactForm();
+});
