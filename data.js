@@ -509,11 +509,6 @@ const PORTFOLIO_DATA = {
             "title": "Photo 04"
       },
       {
-            "id": "gal-05",
-            "image": "galeri/photo-05.jpg",
-            "title": "Photo 05"
-      },
-      {
             "id": "gal-06",
             "image": "galeri/photo-06.jpg",
             "title": "Photo 06"
