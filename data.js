@@ -73,7 +73,6 @@ const PORTFOLIO_DATA = {
           "Takımın temel amacı; Havacılık ve Uzay Bilimleri odağında teknolojik ve bilimsel çalışmalara yönelerek hem sektörel hem de akademik alanda özgün ve uygulanabilir fikirler geliştirmektir. Ar-Ge’den üretim safhasına kadar tüm süreçlerde bizzat yer alarak çeşitli yarışma ve projelerde yerli teknoloji üretimine katkı sunmayı hedefleyen ekip; sürekli merakı, akademik birikimi ve üretme isteğiyle ülkemizin geleceğine donanımlı mühendisler, teknik uzmanlar ve bilim insanları olarak hizmet etme vizyonunu taşımaktadır."
         ],
         contributions: [
-<<<<<<< HEAD
           "INFLOBOT projesinde sistemin 3D tasarımını ve elektronik  altyapısını geliştirme",
           "Dar/kapalı alanlarda bakım teknisyenlerine görüş ve operasyon güvenliği sağlayan sistemlerin tasarımı",
           "Yatırımcı görüşmeleriyle ticarileşme süreçlerinin yönetimi"
