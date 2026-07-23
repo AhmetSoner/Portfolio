@@ -156,14 +156,13 @@ function initPortfolioData() {
             const node = document.createElement("div");
             node.className = "timeline-node";
             
-            const isEn = currentLang === 'en';
-            const pdfFile = isEn ? 'Transkript/Transkript-Ingilizce.pdf' : 'Transkript/Transkript-Turkce.pdf';
-            const pdfText = isEn ? 'Academic Transcript' : 'Transkript Belgesi';
-
             const transcriptHtml = `
                 <div class="transcript-files">
-                    <a href="${pdfFile}" target="_blank" rel="noopener noreferrer" class="transcript-link-btn">
-                        <i data-lucide="file-text"></i> ${pdfText}
+                    <a href="Transkript/Transkript-Turkce.pdf" target="_blank" rel="noopener noreferrer" class="transcript-link-btn">
+                        <i data-lucide="file-text"></i> Transkript Belgesi (Türkçe)
+                    </a>
+                    <a href="Transkript/Transkript-Ingilizce.pdf" target="_blank" rel="noopener noreferrer" class="transcript-link-btn">
+                        <i data-lucide="file-text"></i> Academic Transcript (English)
                     </a>
                 </div>
             `;
