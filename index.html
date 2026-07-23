@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css?v=35000">
+    <link rel="stylesheet" href="style.css?v=36000">
 </head>
 <body>
     <!-- Radar Sweep Canvas Arka Planı -->
@@ -151,7 +151,7 @@
                             <span class="stat-val" data-translate="stat_lang_val">İngilizce</span>
                         </div>
                         <div class="hud-cv-wrapper">
-                            <a href="001-[Ahmet Soner]-[Güleç].pdf?v=35000" target="_blank" class="hud-btn cv-download-btn">
+                            <a href="001-[Ahmet Soner]-[Güleç].pdf?v=36000" target="_blank" class="hud-btn cv-download-btn">
                                 <span class="btn-scan-line"></span>
                                 <span data-translate="btn_cv">ÖZGEÇMİŞİ İNDİR</span> <i data-lucide="download"></i>
                             </a>
@@ -255,23 +255,23 @@
                 <h2 class="section-title" data-translate="title_gallery">GALERİ</h2>
             </div>
 
-            <div class="gallery-grid">
-                <div class="gallery-placeholder">
-                    <i data-lucide="image-plus"></i>
-                    <h3 data-translate="gallery_empty_title">FOTOĞRAFLAR YAKINDA EKLENECEK</h3>
-                    <p data-translate="gallery_empty_desc">Proje takımları, yarışmalar, sunumlar ve saha çalışmalarına ait görseller bu alanda galeri formatında gösterilecek.</p>
+            <!-- Tek Sıralı Carousel Yapısı -->
+            <div class="gallery-carousel-wrapper">
+                <button class="carousel-control-btn carousel-prev" id="gallery-carousel-prev" aria-label="Önceki Fotoğraf">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                
+                <div class="gallery-carousel-track-wrap">
+                    <div class="gallery-grid gallery-carousel-track" id="gallery-carousel-track">
+                        <!-- Dinamik galeri kartları buraya yüklenecek -->
+                    </div>
                 </div>
-                <div class="gallery-placeholder">
-                    <i data-lucide="image-plus"></i>
-                    <h3 data-translate="gallery_empty_title">FOTOĞRAFLAR YAKINDA EKLENECEK</h3>
-                    <p data-translate="gallery_empty_desc">Proje takımları, yarışmalar, sunumlar ve saha çalışmalarına ait görseller bu alanda galeri formatında gösterilecek.</p>
-                </div>
-                <div class="gallery-placeholder">
-                    <i data-lucide="image-plus"></i>
-                    <h3 data-translate="gallery_empty_title">FOTOĞRAFLAR YAKINDA EKLENECEK</h3>
-                    <p data-translate="gallery_empty_desc">Proje takımları, yarışmalar, sunumlar ve saha çalışmalarına ait görseller bu alanda galeri formatında gösterilecek.</p>
-                </div>
+
+                <button class="carousel-control-btn carousel-next" id="gallery-carousel-next" aria-label="Sonraki Fotoğraf">
+                    <i data-lucide="chevron-right"></i>
+                </button>
             </div>
+            <div class="carousel-dots-indicator" id="gallery-dots-indicator"></div>
         </section>
 
         <!-- İLETİŞİM BÖLÜMÜ -->
@@ -377,7 +377,7 @@
     </footer>
 
     <!-- Proje Verisi ve Ana Kontrolcü -->
-    <script src="data.js?v=35000"></script>
-    <script src="app.js?v=35000"></script>
+    <script src="data.js?v=36000"></script>
+    <script src="app.js?v=36000"></script>
 </body>
 </html>

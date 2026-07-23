@@ -290,6 +290,7 @@ function renderProjectTeams(teamsList) {
    ========================================================================== */
 function initRadarCanvas() {
     const canvas = document.getElementById("radar-canvas");
+    if (!canvas) return;
     const ctx = canvas.getContext("2d");
 
     let width = canvas.width = window.innerWidth;
@@ -919,6 +920,8 @@ function initSystemClock() {
     const timeDisplay = document.getElementById("system-time");
     
     function updateClock() {
+        const timeDisplay = document.getElementById("system-time");
+        if (!timeDisplay) return;
         const now = new Date();
         // UTC biçiminde saat gösterimi
         const hours = String(now.getUTCHours()).padStart(2, '0');
