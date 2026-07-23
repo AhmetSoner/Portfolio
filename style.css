@@ -656,13 +656,6 @@ section {
     gap: 8px;
 }
 
-.transcript-files {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
 .hud-stat-row {
     display: flex;
     justify-content: space-between;
@@ -2562,3 +2555,11 @@ section {
 }
 
 
+
+
+.transcript-files {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
