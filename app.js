@@ -198,6 +198,9 @@ function initPortfolioData() {
 
     // Projeleri Oluştur
     renderProjects(data.projects);
+
+    // Görsel Galeriyi Oluştur
+    renderGallery(data.gallery || []);
 }
 
 function renderProjectTeams(teamsList) {
@@ -519,6 +522,136 @@ function renderProjects(projectsList) {
     
     // Lucide ikonlarını kartlar için yükle
     lucide.createIcons();
+}
+
+/* ==========================================================================
+   4.1. DİNAMİK GALERİ VE LIGHTBOX MODAL MANTIĞI
+   ========================================================================== */
+let currentGalleryIndex = 0;
+let currentGalleryList = [];
+
+function renderGallery(galleryList) {
+    const container = document.querySelector(".gallery-grid");
+    if (!container) return;
+    container.innerHTML = "";
+
+    if (!galleryList || galleryList.length === 0) {
+        container.innerHTML = `
+            <div class="gallery-placeholder">
+                <i data-lucide="image-plus"></i>
+                <h3 data-translate="gallery_empty_title">${currentLang === 'tr' ? 'FOTOĞRAFLAR YAKINDA EKLENECEK' : 'PHOTOS WILL BE ADDED SOON'}</h3>
+                <p data-translate="gallery_empty_desc">${currentLang === 'tr' ? 'Proje takımları, yarışmalar, sunumlar ve saha çalışmalarına ait görseller bu alanda galeri formatında gösterilecek.' : 'Images from project teams, competitions, presentations, and field work will be displayed here in a gallery layout.'}</p>
+            </div>
+        `;
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+    }
+
+    galleryList.forEach((item, index) => {
+        const card = document.createElement("div");
+        card.className = "gallery-card";
+        
+        const kicker = item.category ? `// SYS_${item.category.toUpperCase()}` : '// VISUAL_ARCHIVE';
+
+        card.innerHTML = `
+            <div class="gallery-card-image-wrap">
+                <img src="${item.image}" alt="${item.title}" loading="lazy">
+                <span class="gallery-card-badge">${kicker}</span>
+                <div class="gallery-card-overlay">
+                    <i data-lucide="maximize-2"></i>
+                </div>
+            </div>
+            <div class="gallery-card-content">
+                <h3>${item.title}</h3>
+                <p>${item.desc}</p>
+            </div>
+        `;
+
+        card.addEventListener("click", () => {
+            openGalleryModal(item, galleryList, index);
+        });
+
+        container.appendChild(card);
+    });
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+}
+
+function openGalleryModal(item, fullList, index) {
+    currentGalleryList = fullList;
+    currentGalleryIndex = index;
+
+    let modal = document.getElementById("gallery-lightbox-modal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "gallery-lightbox-modal";
+        modal.className = "project-modal gallery-lightbox-modal";
+        modal.innerHTML = `
+            <div class="modal-overlay"></div>
+            <div class="modal-content gallery-lightbox-content">
+                <button class="modal-close" id="gallery-modal-close" aria-label="Close"><i data-lucide="x"></i></button>
+                <button class="lightbox-nav-btn lightbox-prev" id="gallery-modal-prev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+                <button class="lightbox-nav-btn lightbox-next" id="gallery-modal-next" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+                <div class="gallery-lightbox-body">
+                    <div class="gallery-lightbox-media">
+                        <img id="gallery-lightbox-img" src="" alt="">
+                    </div>
+                    <div class="gallery-lightbox-info">
+                        <span class="modal-tag-row" id="gallery-lightbox-badge">// VISUAL_ARCHIVE</span>
+                        <h3 id="gallery-lightbox-title"></h3>
+                        <p class="modal-description" id="gallery-lightbox-desc"></p>
+                        <div class="gallery-lightbox-counter" id="gallery-lightbox-counter">1 / 1</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        document.getElementById("gallery-modal-close").addEventListener("click", closeGalleryModal);
+        modal.querySelector(".modal-overlay").addEventListener("click", closeGalleryModal);
+        document.getElementById("gallery-modal-prev").addEventListener("click", () => navigateGallery(-1));
+        document.getElementById("gallery-modal-next").addEventListener("click", () => navigateGallery(1));
+
+        document.addEventListener("keydown", (e) => {
+            if (!modal.classList.contains("active")) return;
+            if (e.key === "Escape") closeGalleryModal();
+            if (e.key === "ArrowLeft") navigateGallery(-1);
+            if (e.key === "ArrowRight") navigateGallery(1);
+        });
+    }
+
+    updateGalleryModalContent();
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function updateGalleryModalContent() {
+    const item = currentGalleryList[currentGalleryIndex];
+    if (!item) return;
+
+    document.getElementById("gallery-lightbox-img").src = item.image;
+    document.getElementById("gallery-lightbox-img").alt = item.title;
+    document.getElementById("gallery-lightbox-title").textContent = item.title;
+    document.getElementById("gallery-lightbox-desc").textContent = item.desc;
+    document.getElementById("gallery-lightbox-badge").textContent = item.category ? `// SYS_${item.category.toUpperCase()}` : '// VISUAL_ARCHIVE';
+    document.getElementById("gallery-lightbox-counter").textContent = `${currentGalleryIndex + 1} / ${currentGalleryList.length}`;
+}
+
+function navigateGallery(direction) {
+    if (!currentGalleryList.length) return;
+    currentGalleryIndex = (currentGalleryIndex + direction + currentGalleryList.length) % currentGalleryList.length;
+    updateGalleryModalContent();
+}
+
+function closeGalleryModal() {
+    const modal = document.getElementById("gallery-lightbox-modal");
+    if (modal) {
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+    }
 }
 
 function initProjectsLogic() {

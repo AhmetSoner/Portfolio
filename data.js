@@ -487,6 +487,71 @@ const PORTFOLIO_DATA = {
             "achievements": "TUSAŞ LIFT UP 2025-2026 Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında desteklenmiş; TUSAŞ Havacılık Mühendisliği Sanayi Danışmanı Zeynel Abidin AYDOĞAN ve ESTÜ Pilotaj Akademik Danışmanı Dr. Aziz KABA kuruluna başarıyla sunulmuştur. Bildiri ve makale olarak yayınlanmış, yerli ve milli aviyonik yazılım yetkinliklerine doğrudan katkı sunmuştur."
       }
 ],
+    gallery: [
+      {
+            "id": "gal-01",
+            "image": "galeri/field-team-01.jpg",
+            "title": "Hidroana Saha & Yarışma Çalışması",
+            "desc": "Shell Eco-marathon ve TEKNOFEST yarışmaları öncesi pist hazırlıkları, araç üstü elektriksel güvenlik kontrolleri ve telemetri veri doğrulaması.",
+            "category": "saha"
+      },
+      {
+            "id": "gal-02",
+            "image": "galeri/bldc-vol1-3d.jpg",
+            "title": "48V / 50A BLDC Motor Sürücü Vol.1 (3D PCB)",
+            "desc": "STM32F446RET6 tabanlı, 2.5 kW üç fazlı motor sürücü kartının Altium Designer ortamındaki 3D bileşen ve yol yerleşim görünümü.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-03",
+            "image": "galeri/bldc-vol1-proto.jpg",
+            "title": "Motor Sürücü Prototip Kart Üretimi",
+            "desc": "Donanım testleri için üretilen ilk prototip sürücü kartı ve osiloskop ile MOSFET kapı anahtarlama sinyallerinin incelenmesi.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-04",
+            "image": "galeri/bldc-vol1-test.jpg",
+            "title": "BLDC Motor Yük ve Frekans Test Düzeneği",
+            "desc": "Prototip kontrol kartı ile nominal yük altında motor çalışma karakteristikleri ve Hall sensörü geri besleme sinyalleri doğrulaması.",
+            "category": "test"
+      },
+      {
+            "id": "gal-05",
+            "image": "galeri/bldc-vol1-thermal.jpg",
+            "title": "Termal Yönetim ve Kutu Tasarımı",
+            "desc": "12x25x25 cm ölçülerinde alüminyum soğutucu bloklu, IP korumalı ve titreşime dayanıklı donanım kutu entegrasyonu.",
+            "category": "tasarim"
+      },
+      {
+            "id": "gal-06",
+            "image": "galeri/bldc-vol2-modular.jpg",
+            "title": "Vol.2 Modüler Güç Kartı Tasarımı",
+            "desc": "4 katlı PCB mimarisi, izole UCC21520 gate sürüş hattı, optimize edilmiş DC-link kapasitör grubu ve bakır dökümlü yüksek akım yolları.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-07",
+            "image": "galeri/bldc-vol2-mcu.jpg",
+            "title": "Vol.2 Gömülü Kontrol Kartı",
+            "desc": "CAN / RS485 araç içi haberleşme arayüzleri, SPI tabanlı INA229 telemetri okuma hattı ve STM32 kontrol işlemcisi katı.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-08",
+            "image": "galeri/imd-isolation.jpg",
+            "title": "İzolasyon İzleme Cihazı (IMD) Mimarisi",
+            "desc": "48 V DC ana güç hattında galvanik izole AD8216 + AMC1311 diferansiyel okuma ve araç şasi emniyet kontrol sistemi.",
+            "category": "sistem"
+      },
+      {
+            "id": "gal-09",
+            "image": "galeri/inflobot-proto.jpg",
+            "title": "INFLOBOT Şişirilebilir MRO Robotu Prototipi",
+            "desc": "Tulpar Tharros Proje Takımı bünyesinde geliştirilen Dar Alan Tahribatsız Muayene (NDT) otonom robot sistemi prototipi.",
+            "category": "robotik"
+      }
+]
   },
   en: {
     profile: {
@@ -1003,6 +1068,71 @@ const PORTFOLIO_DATA = {
             "achievements": "Supported under TUSAŞ LIFT UP 2025-2026 Program; successfully presented to Industry Advisor Zeynel Abidin AYDOĞAN (TUSAŞ) and Academic Advisor Dr. Aziz KABA (ESTÜ Pilotage). Published as paper & proceedings, directly advancing national avionics software capabilities."
       }
 ],
+    gallery: [
+      {
+            "id": "gal-01",
+            "image": "galeri/field-team-01.jpg",
+            "title": "Hidroana Field & Competition Operations",
+            "desc": "Trackside preparations, electrical safety audits, and telemetry data verification prior to Shell Eco-marathon and TEKNOFEST competitions.",
+            "category": "saha"
+      },
+      {
+            "id": "gal-02",
+            "image": "galeri/bldc-vol1-3d.jpg",
+            "title": "48V / 50A BLDC Motor Driver Vol.1 (3D PCB)",
+            "desc": "Altium Designer 3D component and trace layout view of the STM32F446RET6-based 2.5 kW three-phase motor driver board.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-03",
+            "image": "galeri/bldc-vol1-proto.jpg",
+            "title": "Motor Driver Prototype Board Production",
+            "desc": "First prototype driver board manufactured for hardware evaluation and oscilloscope analysis of MOSFET gate switching signals.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-04",
+            "image": "galeri/bldc-vol1-test.jpg",
+            "title": "BLDC Motor Load & Frequency Test Bench",
+            "desc": "Verification of motor operating characteristics and Hall-sensor feedback signals under nominal load with prototype MCU controller.",
+            "category": "test"
+      },
+      {
+            "id": "gal-05",
+            "image": "galeri/bldc-vol1-thermal.jpg",
+            "title": "Thermal Management & Enclosure Design",
+            "desc": "IP-protected and vibration-resistant hardware enclosure integration measuring 12x25x25 cm with aluminum heat sinks.",
+            "category": "tasarim"
+      },
+      {
+            "id": "gal-06",
+            "image": "galeri/bldc-vol2-modular.jpg",
+            "title": "Vol.2 Modular Power Board Design",
+            "desc": "4-layer PCB architecture with UCC21520 isolated gate drive, optimized DC-link capacitor bank, and heavy copper poured traces.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-07",
+            "image": "galeri/bldc-vol2-mcu.jpg",
+            "title": "Vol.2 Embedded Controller Board",
+            "desc": "CAN / RS485 in-vehicle communication interfaces, SPI-based INA229 telemetry sensing, and STM32 microcontroller stage.",
+            "category": "donanim"
+      },
+      {
+            "id": "gal-08",
+            "image": "galeri/imd-isolation.jpg",
+            "title": "Insulation Monitoring Device (IMD) Architecture",
+            "desc": "Galvanically isolated AD8216 + AMC1311 differential sensing front-end and chassis safety monitor on 48 V DC vehicle power rail.",
+            "category": "sistem"
+      },
+      {
+            "id": "gal-09",
+            "image": "galeri/inflobot-proto.jpg",
+            "title": "INFLOBOT Inflatable MRO Robot Prototype",
+            "desc": "Confined-space Non-Destructive Testing (NDT) autonomous inspection robot system prototype developed at Tulpar Tharros.",
+            "category": "robotik"
+      }
+]
   }
 };
 
