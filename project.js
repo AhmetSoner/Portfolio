@@ -231,7 +231,10 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", (e) => {
             e.preventDefault();
             const selectedLang = btn.getAttribute("data-lang");
-            applySubPageLanguage(selectedLang);
+            if (selectedLang) {
+                localStorage.setItem("portfolio_lang", selectedLang);
+                window.location.reload();
+            }
         });
     });
 });

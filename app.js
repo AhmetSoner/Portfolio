@@ -75,12 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1.1. URL'den index.html ve # hash kalıntılarını temizle (Sade & Prestijli URL)
     initCleanURL();
 
-    // Dil değiştirme butonlarına olay dinleyicisi ekle
+    // Dil değiştirme butonlarına olay dinleyicisi ekle (Sayfayı temiz yenileyerek bug kalmasını engeller)
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", (e) => {
             e.preventDefault();
             const selectedLang = btn.getAttribute("data-lang");
-            applyLanguage(selectedLang);
+            if (selectedLang) {
+                localStorage.setItem("portfolio_lang", selectedLang);
+                window.location.reload();
+            }
         });
     });
 

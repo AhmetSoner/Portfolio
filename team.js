@@ -161,7 +161,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", event => {
             event.preventDefault();
-            applyTeamPageLanguage(btn.getAttribute("data-lang"));
+            const selectedLang = btn.getAttribute("data-lang");
+            if (selectedLang) {
+                localStorage.setItem("portfolio_lang", selectedLang);
+                window.location.reload();
+            }
         });
     });
 });
