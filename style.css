@@ -2554,4 +2554,34 @@ section {
     }
 }
 
+/* ==========================================================================
+   HUD PDF DOWNLOAD BUTTON STYLES
+   ========================================================================== */
+.pdf-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    font-family: var(--font-tech);
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    background: rgba(0, 240, 255, 0.06);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    border-radius: 4px;
+    transition: var(--transition);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pdf-download-btn:hover {
+    background: var(--primary);
+    color: #000;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+    transform: translateY(-2px);
+}
+
 

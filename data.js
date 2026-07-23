@@ -301,6 +301,8 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-4",
+          "pdfFile": "bird-strike/bird-strike-project-paper.pdf",
+          "pdfTitle": "Havaalanları İçin Derin Öğrenme Tabanlı Kuş Tespit ve İkaz Sistemi Raporu (PDF)",
             "title": "Havaalanları İçin Derin Öğrenme Tabanlı Kuş Tespit Sistemi (TÜBİTAK 2209-A)",
             "category": "havacilik-ai",
             "summary": "Havaalanlarında kuş çarpması riskini azaltmak için geliştirilen bu TÜBİTAK 2209-A araştırma projesinde, pist ve havaalanı çevresindeki kuş hareketlerini görüntü tabanlı olarak algılayabilecek bir derin öğrenme hattı kuruldu. YOLOv8n modeli kullanılarak kuşların görüntü içinde tespit edilmesi, tür seviyesinde sınıflandırılması ve güven değeriyle birlikte yorumlanması hedeflendi. Çalışma; veri seti hazırlama, Roboflow tabanlı etiketleme, augmentation, model eğitimi ve performans doğrulama adımlarını kapsayan uçtan uca bir yapay zeka uygulaması olarak geliştirildi. Elde edilen yaklaşım, radar tabanlı sistemlerin sağlayamadığı görsel tür bilgisiyle havaalanı erken ikaz altyapılarını destekleyebilecek bir karar destek katmanı sunmaktadır.",
@@ -815,6 +817,8 @@ const PORTFOLIO_DATA = {
       },
       {
             "id": "project-4",
+          "pdfFile": "bird-strike/bird-strike-project-paper.pdf",
+          "pdfTitle": "Deep Learning Based Bird Detection & Warning System Project Report (PDF)",
             "title": "Deep Learning Based Bird Detection System for Airports (TÜBİTAK 2209-A)",
             "category": "havacilik-ai",
             "summary": "This TÜBİTAK 2209-A research project develops an image-based deep learning pipeline to reduce bird-strike risk around airports and runway environments. Using YOLOv8n, the system aims to detect birds in camera imagery, classify them at species level, and interpret each detection with a confidence value. The work covers dataset preparation, Roboflow-based annotation, augmentation, model training, and performance validation as an end-to-end AI application. The resulting approach can support airport early warning workflows by adding visual species-level information that radar-based systems cannot provide alone.",

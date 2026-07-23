@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css?v=96">
+    <link rel="stylesheet" href="style.css?v=97">
 </head>
 <body>
     <!-- Radar Sweep Canvas Arka Planı -->
@@ -69,6 +69,15 @@
             <div class="project-application-no" id="project-application-no"></div>
             <p class="project-detail-lead" id="project-summary">Proje özeti yükleniyor...</p>
             
+            <div class="project-pdf-wrap" id="project-pdf-wrap" style="display:none; margin-top: 18px; margin-bottom: 10px;">
+                <a id="project-pdf-btn" href="#" target="_blank" class="hud-btn primary-btn pdf-download-btn">
+                    <span class="btn-scan-line"></span>
+                    <i data-lucide="file-text"></i>
+                    <span id="project-pdf-text">PROJE DOKÜMANINI İNCELE (PDF)</span>
+                    <i data-lucide="external-link"></i>
+                </a>
+            </div>
+
             <div class="project-tags-row" id="project-tags">
                 <!-- Etiketler dinamik eklenecek -->
             </div>
@@ -195,8 +204,8 @@
     </footer>
 
     <!-- JS Bağımlılıkları -->
-    <script src="data.js?v=2300"></script>
-    <script src="project.js?v=2300"></script>
-    <script src="app.js?v=2300"></script>
+    <script src="data.js?v=2400"></script>
+    <script src="project.js?v=2400"></script>
+    <script src="app.js?v=2400"></script>
 </body>
 </html>

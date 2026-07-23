@@ -53,6 +53,23 @@ function loadProjectData(lang, projectId) {
         }
     }
     document.getElementById("project-summary").textContent = proj.summary;
+
+    // PDF Doküman Butonu
+    const pdfWrap = document.getElementById("project-pdf-wrap");
+    const pdfBtn = document.getElementById("project-pdf-btn");
+    const pdfText = document.getElementById("project-pdf-text");
+    if (pdfWrap && pdfBtn) {
+        if (proj.pdfFile) {
+            pdfBtn.href = proj.pdfFile;
+            if (pdfText) {
+                pdfText.textContent = proj.pdfTitle || (lang === 'tr' ? 'PROJE DOKÜMANINI İNCELE (PDF)' : 'VIEW PROJECT DOCUMENT (PDF)');
+            }
+            pdfWrap.style.display = "block";
+        } else {
+            pdfWrap.style.display = "none";
+        }
+    }
+
     document.getElementById("project-image").src = proj.detailImage || proj.image;
     document.getElementById("project-image").alt = proj.title;
     document.getElementById("project-img-hud").textContent = `// STREAM: ${proj.id.toUpperCase()} // HIGH_RES_RENDER`;
