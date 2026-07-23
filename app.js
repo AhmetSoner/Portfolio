@@ -559,15 +559,11 @@ function renderGallery(galleryList) {
 
         card.innerHTML = `
             <div class="gallery-card-image-wrap">
-                <img src="${item.image}" alt="${item.title}" loading="lazy">
+                <img src="${item.image}" alt="${item.title || 'Fotoğraf'}" loading="lazy">
                 <span class="gallery-card-badge">${kicker}</span>
                 <div class="gallery-card-overlay">
                     <i data-lucide="maximize-2"></i>
                 </div>
-            </div>
-            <div class="gallery-card-content">
-                <h3>${item.title}</h3>
-                <p>${item.desc}</p>
             </div>
         `;
 
@@ -692,8 +688,6 @@ function openGalleryModal(item, fullList, index) {
                     </div>
                     <div class="gallery-lightbox-info">
                         <span class="modal-tag-row" id="gallery-lightbox-badge">// VISUAL_ARCHIVE</span>
-                        <h3 id="gallery-lightbox-title"></h3>
-                        <p class="modal-description" id="gallery-lightbox-desc"></p>
                         <div class="gallery-lightbox-counter" id="gallery-lightbox-counter">1 / 1</div>
                     </div>
                 </div>
@@ -725,9 +719,7 @@ function updateGalleryModalContent() {
     if (!item) return;
 
     document.getElementById("gallery-lightbox-img").src = item.image;
-    document.getElementById("gallery-lightbox-img").alt = item.title;
-    document.getElementById("gallery-lightbox-title").textContent = item.title;
-    document.getElementById("gallery-lightbox-desc").textContent = item.desc;
+    document.getElementById("gallery-lightbox-img").alt = item.title || 'Fotoğraf';
     document.getElementById("gallery-lightbox-badge").textContent = item.category ? `// SYS_${item.category.toUpperCase()}` : '// VISUAL_ARCHIVE';
     document.getElementById("gallery-lightbox-counter").textContent = `${currentGalleryIndex + 1} / ${currentGalleryList.length}`;
 }

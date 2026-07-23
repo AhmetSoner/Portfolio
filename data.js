@@ -490,647 +490,168 @@ const PORTFOLIO_DATA = {
     gallery: [
       {
             "id": "gal-01",
-            "image": "galeri/field-team-01.jpg",
-            "title": "Hidroana Saha & Yarışma Çalışması",
-            "desc": "Shell Eco-marathon ve TEKNOFEST yarışmaları öncesi pist hazırlıkları, araç üstü elektriksel güvenlik kontrolleri ve telemetri veri doğrulaması.",
-            "category": "saha"
+            "image": "galeri/photo-01.jpg",
+            "title": "Photo 01"
       },
       {
             "id": "gal-02",
-            "image": "galeri/bldc-vol1-3d.jpg",
-            "title": "48V / 50A BLDC Motor Sürücü Vol.1 (3D PCB)",
-            "desc": "STM32F446RET6 tabanlı, 2.5 kW üç fazlı motor sürücü kartının Altium Designer ortamındaki 3D bileşen ve yol yerleşim görünümü.",
-            "category": "donanim"
+            "image": "galeri/photo-02.jpg",
+            "title": "Photo 02"
       },
       {
             "id": "gal-03",
-            "image": "galeri/bldc-vol1-proto.jpg",
-            "title": "Motor Sürücü Prototip Kart Üretimi",
-            "desc": "Donanım testleri için üretilen ilk prototip sürücü kartı ve osiloskop ile MOSFET kapı anahtarlama sinyallerinin incelenmesi.",
-            "category": "donanim"
+            "image": "galeri/photo-03.jpg",
+            "title": "Photo 03"
       },
       {
             "id": "gal-04",
-            "image": "galeri/bldc-vol1-test.jpg",
-            "title": "BLDC Motor Yük ve Frekans Test Düzeneği",
-            "desc": "Prototip kontrol kartı ile nominal yük altında motor çalışma karakteristikleri ve Hall sensörü geri besleme sinyalleri doğrulaması.",
-            "category": "test"
+            "image": "galeri/photo-04.jpg",
+            "title": "Photo 04"
       },
       {
             "id": "gal-05",
-            "image": "galeri/bldc-vol1-thermal.jpg",
-            "title": "Termal Yönetim ve Kutu Tasarımı",
-            "desc": "12x25x25 cm ölçülerinde alüminyum soğutucu bloklu, IP korumalı ve titreşime dayanıklı donanım kutu entegrasyonu.",
-            "category": "tasarim"
+            "image": "galeri/photo-05.jpg",
+            "title": "Photo 05"
       },
       {
             "id": "gal-06",
-            "image": "galeri/bldc-vol2-modular.jpg",
-            "title": "Vol.2 Modüler Güç Kartı Tasarımı",
-            "desc": "4 katlı PCB mimarisi, izole UCC21520 gate sürüş hattı, optimize edilmiş DC-link kapasitör grubu ve bakır dökümlü yüksek akım yolları.",
-            "category": "donanim"
+            "image": "galeri/photo-06.jpg",
+            "title": "Photo 06"
       },
       {
             "id": "gal-07",
-            "image": "galeri/bldc-vol2-mcu.jpg",
-            "title": "Vol.2 Gömülü Kontrol Kartı",
-            "desc": "CAN / RS485 araç içi haberleşme arayüzleri, SPI tabanlı INA229 telemetri okuma hattı ve STM32 kontrol işlemcisi katı.",
-            "category": "donanim"
+            "image": "galeri/photo-07.jpg",
+            "title": "Photo 07"
       },
       {
             "id": "gal-08",
-            "image": "galeri/imd-isolation.jpg",
-            "title": "İzolasyon İzleme Cihazı (IMD) Mimarisi",
-            "desc": "48 V DC ana güç hattında galvanik izole AD8216 + AMC1311 diferansiyel okuma ve araç şasi emniyet kontrol sistemi.",
-            "category": "sistem"
+            "image": "galeri/photo-08.jpg",
+            "title": "Photo 08"
       },
       {
             "id": "gal-09",
-            "image": "galeri/inflobot-proto.jpg",
-            "title": "INFLOBOT Şişirilebilir MRO Robotu Prototipi",
-            "desc": "Tulpar Tharros Proje Takımı bünyesinde geliştirilen Dar Alan Tahribatsız Muayene (NDT) otonom robot sistemi prototipi.",
-            "category": "robotik"
-      }
-]
-  },
-  en: {
-    profile: {
-      name: "Ahmet Soner Güleç",
-      title: "Aircraft Maintenance Engineer",
-      subTitle: "Avionics Systems | Aircraft Maintenance | Electronic System and Hardware Design",
-      about: "I graduated from Eskişehir Technical University, Department of Aviation Electrical and Electronics with the title of Aircraft Maintenance Engineer / Avionics. In line with my interest in engineering and technology, I actively participate in projects that combine theoretical knowledge with practical applications. During my internship and training processes abroad, I focused on avionics system maintenance and assembly procedures of aircraft, as well as mechanical design, PCB hardware design, and simulation/analysis studies.\n\nWhile developing AI-supported aviation inspection robot projects within Tulpar Tharros, of which I am a co-founder; I took active roles in electrical-electronic subsystem design, integration, and power electronics in the Hidroana team, which produces alternative energy vehicles, obtaining ranks in national/international competitions such as TEKNOFEST and Shell Eco-marathon.\n\nIn addition, under the Aviation AI Research Society, which I founded, I managed TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and 2209-B projects focusing on autonomous systems, flight control software, and AI integration. With this theoretical background, field experience, and interdisciplinary engineering competencies, I am a determined Aircraft Maintenance Engineer walking towards the future with the goal of producing innovative and high-value-added solutions in aviation and space technologies.",
-      avatar: "Foto.jpg",
-      socials: {
-        github: "https://github.com/AhmetSoner",
-        linkedin: "https://www.linkedin.com/in/ahmet-soner-gulec",
-        email: "mailto:ahmetsonergulec@hotmail.com",
-        phone: "+90 553 715 41 69"
-      }
-    },
-    skills: [
-      { name: "MATLAB / Simulink", category: "Software & Simulation", level: 80 },
-      { name: "Python / Embedded C", category: "Software & Simulation", level: 50 },
-      { name: "PSIM", category: "Software & Simulation", level: 80 },
-      { name: "Altium Designer", category: "Hardware & Design", level: 90 },
-      { name: "LTspice / PSpice", category: "Hardware & Design", level: 90 },
-      { name: "Ansys", category: "Hardware & Design", level: 60 },
-      { name: "SolidWorks", category: "Aviation & Analysis", level: 60 },
-      { name: "COMSOL Multiphysics", category: "Aviation & Analysis", level: 60 },
-      { name: "XFLR5", category: "Aviation & Analysis", level: 50 }
-    ],
-    projectTeams: [
-      {
-        id: "team-aviation-ai",
-        name: "Aviation AI Research Society",
-        role: "Founder / Project Lead",
-        period: "2024 - Present",
-        icon: "brain-circuit",
-        logo: "HAYA/Logo.png",
-        projectIds: ["project-6", "project-4"],
-        focus: "Artificial intelligence, autonomous systems, flight control software, and avionics data modeling.",
-        overview: [
-          "Aviation AI Research Society (HAYA) was founded in 2022 as a multidisciplinary student team focused on aviation and space sciences. Its main purpose is to integrate artificial intelligence and future autonomous technologies into the aviation ecosystem and produce disciplined, applicable, and innovative solutions for sectoral problems.",
-          "HAYA aims to move beyond purely theoretical research by designing intelligent systems and transforming them into sustainable outputs that can be applied in the field. In line with this vision, the team develops deep learning algorithms and modeling approaches in critical areas such as flight safety, performance optimization, original UAV designs, autonomous systems, and sensor data analysis.",
-          "The theoretical foundations of the developed intelligent systems are tested through simulation and animation environments, then evaluated in terms of field validity and hardware applicability. Bringing together members with different knowledge and experience, the team adopts goal orientation and a strong engineering vision as core principles.",
-          "Since its foundation, HAYA has produced solutions within TÜBİTAK 2209-A, TÜBİTAK 2209-B, and scientific research project processes. With this project culture, the team has also received support through the TUSAŞ LIFT-UP Program for intelligent flight systems and continues to create added value for national aviation platforms."
-        ],
-        contributions: [
-          "Planning TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and TÜBİTAK 2209-B project workflows",
-          "Leading TFX (KAAN) aircraft flight performance data modeling and benchmark studies",
-          "Technical leadership in aviation AI projects such as TEKNOFEST FPV drone tracking and bird detection"
-        ],
-        outcomes: ["1 TÜBİTAK 2209-A", "1 TÜBİTAK 2209-B", "1 TUSAŞ LIFT-UP"],
-        outcomeDetails: [
-          {
-            title: "TUSAŞ LIFT-UP Program",
-            text: "TUSAŞ LIFT-UP is an industry-oriented program that connects undergraduate graduation and research projects with real aviation problems and gives students direct exposure to the Turkish Aerospace ecosystem. Within HAYA, the LIFT-UP project examined how performance data for modern combat aircraft platforms such as the TFX (KAAN) can be modeled with machine learning alternatives to classical lookup-table and interpolation workflows. This output showed that the team could manage a project with industrial expectations, advisor feedback, disciplined reporting, and an applicable prototype mindset."
-          },
-          {
-            title: "TÜBİTAK 2209-A Undergraduate Research Project Support",
-            text: "TÜBİTAK 2209-A supports undergraduate students in gaining research culture, defining problems through scientific methodology, and producing academic outputs under advisor guidance. For HAYA, the 2209-A process helped embed literature review, method selection, experimental planning, and academic reporting into the team culture. It became a critical step in turning aviation AI ideas into research-based outputs rather than only competition-oriented prototypes."
-          },
-          {
-            title: "TÜBİTAK 2209-B Industry-Oriented Research Project Support",
-            text: "TÜBİTAK 2209-B aims to connect student projects with industrial organizations and transform them into research outputs that address real sector needs. For HAYA, this experience encouraged the team to evaluate technical ideas through applicability, cost, validation, system integration, and industrial expectations. In that sense, 2209-B strengthened the team's ability to contribute to national aviation problems in line with the national technology initiative."
-          }
-        ]
+            "image": "galeri/photo-09.jpg",
+            "title": "Photo 09"
       },
       {
-        id: "team-tulpar-tharros",
-        name: "Tulpar Tharros Aviation Society",
-        role: "Founder",
-        period: "2023 - 2024",
-        icon: "bot",
-        logo: "TTT/LOGO.png?v=3",
-        projectIds: ["project-5"],
-        focus: "AI-supported robotic inspection systems for aviation maintenance, repair, and overhaul processes.",
-        overview: [
-          "Founded in March 2023, Tulpar Tharros Team (TTT) derives its name from \"Tulpar\", the winged horse of Turkic mythology, and \"Tharros\", a Greek term embodying courage, determination, and motivation. Composed of a multidisciplinary student team from Aircraft Airframe-Powerplant Maintenance, Aviation Electronics, and Physics, TTT fosters a proactive, adaptive, and agile working culture. Active participation of team members across all project stages ensures high flexibility and alignment in both theoretical and practical engineering solutions.",
-          "The core mission of the team is to drive technological and scientific endeavors focused on Aviation and Aerospace Sciences, delivering original and practical solutions for both industry and academia. Involved in every stage from R&D to manufacturing, the team aims to contribute to domestic technology production in competitive platforms. Driven by continuous curiosity, academic background, and an eagerness to create, TTT strives to serve the nation as equipped engineers, technical experts, and scientists."
-        ],
-        contributions: [
-          "Developed 3D body design, electrical architecture, and control software for INFLOBOT",
-          "Integrated inspection system providing visibility and operational safety in confined MRO spaces",
-          "Contributed to commercialization via technical prototyping, financial modeling, and investor pitching"
-        ],
-        outcomes: ["THY Design Hackathon 2023 Finalist", "TEKNOFEST Startup Competition 2023 Best Startup", "Take Off Istanbul"],
-        outcomeDetails: [
-          {
-            title: "THY Design Hackathon 2023 Finalist",
-            text: "Organized by Turkish Airlines, THY Design Hackathon is a prestigious competition aimed at optimizing operational aviation processes, enhancing user experience, and delivering innovative human-centered design solutions to maintenance and inspection workflows. Tulpar Tharros Team achieved finalist status in this organization with its AI-supported robotic solution designed to automate aviation inspection tasks. Throughout the competition, our project was evaluated not merely as a technical prototype or algorithm, but within the scope of demanding hangar maintenance environments, operational safety, ergonomics, technician needs, and end-to-end product feasibility."
-          },
-          {
-            title: "TEKNOFEST Startup Competition 2023 Best Startup Award",
-            text: "TEKNOFEST Startup Competition evaluates the commercialization potential, business models, market fit, and scalable sustainability of innovative projects within the national technology ecosystem. Tulpar Tharros Team was awarded the \"Best Startup\" title for developing an AI-supported soft robotic inspection system to assist maintenance technicians working in confined, hard-to-reach aircraft compartments. This achievement validated that our project is not only an academic engineering prototype, but a commercially viable venture addressing direct MRO industry challenges. The process encompassed market size analysis (TAM-SAM-SOM), unit economics and ROI estimations, customer validation, and pitch deck preparation."
-          },
-          {
-            title: "Take Off Istanbul",
-            text: "Take Off Istanbul is one of the premier international startup summits in Eastern Europe and the Middle East, bringing together global tech startups, international investors, mentors, and industrial leaders. Tulpar Tharros Team showcased its AI-supported robotic MRO solution on this global stage. Our project was rigorously reviewed from the perspective of global aviation MRO market demand, international aviation safety regulations, investor expectations, and scalable market entry strategies."
-          }
-        ]
+            "id": "gal-10",
+            "image": "galeri/photo-11.jpg",
+            "title": "Photo 10"
       },
       {
-        id: "team-hidroana",
-        name: "Hidroana Project Team",
-        role: "Electrical Unit Member",
-        period: "2022 - 2025",
-        icon: "zap",
-        logo: "Hidroana/hidro logo.png",
-        projectIds: ["project-1", "project-2", "project-3"],
-        focus: "Power electronics applications and system integration for hydrogen-powered vehicles.",
-        overview: [
-          "Founded in 2007, Hidroana is one of Turkey's pioneering student teams in alternative energy vehicles, backed by over 17 years of deeply rooted project culture at Eskişehir Technical University. Bringing together voluntary students from diverse engineering disciplines—including Electrical-Electronics, Mechanical, Materials, Chemical, and Computer Engineering—the team leads the sustainable, efficient, and widespread utilization of hydrogen energy through a disciplined R&D and task-sharing approach. Aiming to contribute to a cleaner future through concrete engineering outputs, Hidroana maintains a dynamic structure committed to high standards of excellence across national and international platforms.",
-          "In line with this vision, the team regularly participates in Shell Eco-marathon (Europe & Türkiye), one of the world's most prestigious student innovation events focused on achieving maximum efficiency with minimum energy consumption. Additionally, Hidroana has competed continuously since 2008 in the Hydromobile category of the TEKNOFEST TÜBİTAK Efficiency Challenge Electric Vehicle Races. Through these high-profile competitions, Hidroana actively promotes domestic manufacturing and value-added product development in alternative energy vehicle technologies, continuing to cultivate qualified engineering awareness within the national aerospace and automotive ecosystems."
-        ],
-        contributions: [
-          "Electrical-electronic subsystem design and integration for DORLION and MIDAS vehicles",
-          "Power electronics, digital/analog system design, and hardware optimization studies",
-          "PCB design, circuit simulation, thermal analysis, and race-site system integration"
-        ],
-        outcomes: ["2023 International Electric Vehicle Races Hydromobile Second Prize", "2023 TEKNOFEST International Electric Vehicle Races Special Jury Award", "Shell Eco-Marathon Global Finalist"],
-        outcomeDetails: [
-          {
-            title: "2023 International Electric Vehicle Races Hydromobile Second Prize",
-            text: "Organized under the execution of TÜBİTAK, the TEKNOFEST Electric Vehicle Races represent Turkey\'s most prestigious electric vehicle platform, fostering the integration of alternative energy sources, domestic manufacturing, and high-efficiency engineering solutions. Vehicles are evaluated not merely by lap times, but through rigorous technical criteria including energy efficiency per distance, battery/fuel cell management, telemetry, electrical safety compliance, and domestic manufacturing ratio. Our Hidroana team achieved Second Place in Turkey within the Hydromobile (hydrogen-powered vehicle) category. This award validates our team\'s engineering expertise in hydrogen fuel cell integration, power electronics, motor driver design, in-vehicle communication protocols, and telemetry data analysis directly on the track. Key outputs include optimized energy management algorithms for minimal consumption, high-voltage electrical architecture compliant with international safety standards, and high-efficiency sub-system integration verified by track data."
-          },
-          {
-            title: "2023 TEKNOFEST International Electric Vehicle Races Special Jury Award",
-            text: "The Special Jury Award is a prestigious recognition bestowed upon teams that demonstrate exceptional technical approach, design quality, innovative problem-solving, and engineering maturity, independent of track ranking. Receiving this award highlights that Hidroana\'s integrated engineering approach across power electronics, digital/analog design, insulation monitoring, and hydrogen infrastructure was recognized as exceptionally valuable by the jury."
-          },
-          {
-            title: "Shell Eco-Marathon Global Finalist",
-            text: "Held for over 35 years across Europe, America, and Asia, Shell Eco-marathon is the world\'s premier international innovation and efficiency event where university teams compete to cover the longest distance with the least energy. Becoming a finalist proves that the developed vehicle is not merely a concept, but has passed rigorous international Technical Inspection processes covering vehicle safety, mechanical strength, electrical isolation, telemetry, and hydrogen fuel system standards. Our Hidroana team successfully completed these demanding technical audits with our custom hydrogen vehicle, securing its place among global finalists.\n\nThis journey empowered our team to develop hydrogen technologies in accordance with international safety and efficiency norms, competing on a global scale. Key outcomes include aerodynamic and electronic optimizations maximizing fuel cell efficiency, certified system architecture meeting international safety protocols, and a global engineering vision forged alongside Europe\'s leading technical teams."
-          }
-        ]
-      }
-    ],
-    education: [
-      {
-        institution: "Eskişehir Technical University",
-        degree: "Aircraft Maintenance Engineer / Avionics",
-        duration: "September 2020 - Graduate",
-        gpa: "3.1",
-        details: "During my education, I took courses covering many disciplines:<br><br>• Gas Turbine Engines<br>• Modern Avionics Systems<br>• Microprocessors<br>• Electrical & Electronics<br>• Electrical Machines<br>• Automatic Flight Systems<br>• Navigation Systems<br>• Digital Data Transmission<br>• Electronic Display Systems<br>• Electromagnetic Environment<br>• Aircraft Aerodynamics<br>• Aircraft Structures and Systems<br>• Aircraft Materials Science<br>• Human Factors<br>• Non-Destructive Testing (NDT) Methods<br>• Communication Systems<br><br>In addition, practical experience was gained through hands-on training at the SHY-145 approved aircraft maintenance facilities within our faculty."
-      }
-    ],
-    experience: [
-      {
-        title: "Research Assistant",
-        company: "Eskişehir Technical University (Eskişehir, Turkey)",
-        duration: "October 2025 - June 2026",
-        details: "Within the İŞKUR Youth Program, I worked as a research assistant at the Aviation AI Research Laboratory established at Eskişehir Technical University. During this period, I contributed to flight control algorithm development for unmanned aerial vehicles and avionics systems, sensor data processing, flight-state interpretation, and the design of autonomous decision-making workflows.<br><br>Using MATLAB/Simulink and Python, I supported the modeling of aircraft system behavior and took part in virtual testing, verification analysis, and technical interpretation of developed control and software approaches. I also contributed to the design, validation, and integration of electronic boards supporting AI-assisted aviation applications, particularly in relation to sensors, processing units, and flight-control infrastructure."
+            "id": "gal-11",
+            "image": "galeri/photo-12.jpg",
+            "title": "Photo 11"
       },
       {
-        title: "Avionics Engineering Intern",
-        company: "Vilnius Gediminas Technical University (Vilnius, Lithuania)",
-        duration: "October 2023 - April 2024",
-        details: "In the first period, I performed various technical tasks on non-airworthy aircraft such as Cessna 310, Cessna 152 and Airbus A320. In this process, I performed disassembly, reassembly, and installation operations of main components such as wings, flight control systems, landing gear, and fuselage. I also gained experience in maintenance, repair, and operation of avionics systems. Later, I continued my hands-on training at Kyviškės Airport, which holds EASA Part-145 certification. Here, I worked on airworthy Cessna 172S and Piper PA-34 aircraft, and all works were supervised by experts with EASA Part-66 licenses. In the final period, I focused on unmanned aerial vehicle technologies and the electronic infrastructures used in these systems. I designed the mechanical structure of the quadrotor I worked on using SolidWorks; in this process, I performed calculations via XFLR5 for critical factors like weight balance. Using Altium Designer, I designed and developed brushless motor driver circuit boards. I completed the validation and performance analyses of these boards through circuit simulations in PSpice and Matlab environments. To evaluate the temperature distribution on semiconductor materials on electronic boards during flight, I performed thermal analyses using COMSOL Multiphysics software. The system I developed was structured to support basic flight control algorithms. Energy efficiency, thermal durability, and system reliability were prioritized in the design process, and all components were optimized accordingly.<div class='internship-files'><span class='internship-files-title'>Internship Files</span><a href='Staj/Internship%20Program.pdf' target='_blank'>Internship Program</a><a href='Staj/Study%20Pages-%20October%201.pdf' target='_blank'>Study Pages - October</a><a href='Staj/Study%20Pages-%20November%202.pdf' target='_blank'>Study Pages - November</a><a href='Staj/Study%20Pages-%20December%203.pdf' target='_blank'>Study Pages - December</a><a href='Staj/Study%20Pages-%20January%204.pdf' target='_blank'>Study Pages - January</a><a href='Staj/Study%20Pages-%20Laboratory%205.pdf' target='_blank'>Study Pages - Laboratory</a></div>"
-      }
-    ],
-    projects: [
-      {
-          "id": "project-1",
-          "title": "48 V / 50 A Three-Phase BLDC Motor Driver Board (Vol.1)",
-          "category": "guc-elektronigi",
-          "summary": "Vol.1 is a 48 V, 50 A, 2.5 kW three-phase BLDC motor driver board designed for an electric/hydrogen vehicle drivetrain. It combines a MOSFET bridge power stage, IRS2186 gate drivers, STM32F446RET6 control, INA229 measurement, Hall-sensor feedback, DC/DC rails, simulations, PCB layout, prototype tests, and current/temperature protection logic.",
-          "description": "This page transfers the full technical design narrative of the Vol.1 BLDC driver document into the portfolio: topology selection, component choice, parameter calculations, control algorithm, simulation work, PCB design, production tests, efficiency estimation, protection algorithms, and bill of materials.",
-          "image": "vol1/Resim33.png",
-          "tags": [
-                    "BLDC Motor Driver",
-                    "STM32F446RET6",
-                    "IRS2186",
-                    "INA229",
-                    "Altium Designer",
-                    "Proteus"
-          ],
-          "specs": [
-                    {
-                              "name": "Project / Version",
-                              "value": "Three-Phase BLDC Motor Driver Board - Vol.1"
-                    },
-                    {
-                              "name": "Power Target",
-                              "value": "2.5 kW / 48 V / 50 A nominal operation"
-                    },
-                    {
-                              "name": "Power Topology",
-                              "value": "Three-phase bridge with 12 N-channel MOSFETs"
-                    },
-                    {
-                              "name": "Controller",
-                              "value": "STM32F446RET6 ARM Cortex-M4, 180 MHz"
-                    },
-                    {
-                              "name": "Driver / Sensing",
-                              "value": "IRS2186 gate driver and INA229 measurement line"
-                    },
-                    {
-                              "name": "Design and Validation",
-                              "value": "Altium Designer PCB, Proteus simulation, oscilloscope/prototype testing"
-                    }
-          ],
-          "overview": "<p>This project page is based on the Vol.1 motor-driver technical design document. It explains the first BLDC driver version as a 48 V, high-current three-phase motor controller with STM32-based PWM control, Hall feedback, MOSFET bridge switching, and current/temperature protection.</p><h4>4.1.Devre Tasarımı</h4><strong class='method-subtitle'>4.1.1.Motor sürücü devresinin tasarım adımları</strong><br><strong class='method-subtitle'>A) Topoloji seçimi</strong><br><p>Topoloji seçiminde, yüksek güç uygulamalarına uygun ve enerji kaybını minimize ederek daha yüksek verimlilik sağlayan Üç fazlı köprü (Three-Phase Bridge) Topolojisine karar verildi. Özellikle fırçasız (brushless) üç fazlı DC motorlar için ideal olan bu topoloji, motorun her üç fazının (A fazı, B fazı, C fazı) ayrı ayrı kontrol edilmesine olanak tanır ve motorun dönüş yönünü ve hızını hassas bir şekilde ayarlamayı sağlar.</p><strong class='method-subtitle'>B) Voltaj ve Akım değerlerinin belirlenmesi</strong><br><p>Motor nominal 2500 watt olarak hesaplandığından, motor sürücüsü nominal 48 V çalışma voltajında ​​ve nominal 50 A çalışma akımında çalışacak şekilde tasarlanmıştır. Bu değer motorun ihtiyaçlarını karşılayan bir değerdir. Aynı zamanda motor sürücüsünün yaşayacağı anlık gerilim ve akım değerleri de dikkate alınmaktadır. Kart, bu değerler dikkate alındığında anlık 100A değerine dayanacak şekilde tasarlanmıştır. Kullanılan MOSFET’leri değiştirirseniz kartın kaldırabileceği güç değeri de değişecektir.</p><strong class='method-subtitle'>C) Frekans değeri</strong><br><p>Motorun istenen maksimum hızı, tepki zamanı ve hız kontrol hassasiyeti, çalışma frekansının belirlenmesinde rol oynamaktadır. Daha yüksek frekanslar genellikle daha hızlı tepki süreleri sağlar, ancak aynı zamanda güç kaybı ve ısınma gibi faktörleri de etkileyebilir. Ayrıca, motor sürücüsünün frekansı, motorun tipi, uygulama gereksinimleri, verimlilik, ısı yönetimi ve EMC faktörleri göz önünde bulundurularak dikkatlice seçilmiştir.</p><strong class='method-subtitle'>4.1.2.Tasarlanan devrenin analitik ifadesi (Evirici, kontrol kartı, vb.)</strong><br><p>Tasarlanan devrenin teorik temellerini, matematiksel modellerini ve çalışma prensiplerini “Kontrol Kartı” adı altında gerçekleştirilmiştir. Kartın tasarımı sürecinde kontrol algoritmaları, geri besleme döngüleri, çıkış sinyalleri (PWM sinyalleri), sensör verilerinin İşlenmesi ve Zamanlama ve Sinyal İşleme başlıkları altında simülasyon, analiz ve optimizasyon çalışmaları gerçekleştirilmiştir.</p><strong class='method-subtitle'>4.1.3.Malzeme seçimi (Entegre, transistör, direnç, bobin, kapasitör, vb.)</strong><br><p>Malzeme seçiminde motor sürücüsünde kullanılan gömülü bileşenlerin veri föyüne göre, pasif bileşenlerin maksimum ve minimum yükleri göz önünde bulundurularak referans gerilim ve akım bölücü gibi yerlerde kullanılan komponentlerin ise toleranslarının en düşük olacak şekilde seçilmiştir. Üretim kolaylığı ve yer tasarrufu açısından soğutucu blokların dışındaki tüm devre elemanları yüzeye monte edilen (SMD) devre elemanları olarak kullanılmaktadır.</p><strong class='method-subtitle'>A) Kondansatör</strong><br><p>Kondansatör seçiminde kullanım alanının maksimum gerilim değeri, minimum kapasite gereksinimi, çalışma sıcaklığı ve anlık olarak uğrayacağı maksimum akım dikkate alınmıştır. Kondansatörün arızalanması durumunda herhangi bir sorunla karşılaşmamak için daha küçük değerli birden fazla kondansatörün paralel bağlanmasına karar verilmiştir.</p><strong class='method-subtitle'>B) Direnç</strong><br><p>Dirençler üzerinden geçen akıma göre Watt değerleri dikkate alınmıştır. Ayrıca, referans olarak kullanılan dirençlerde düşük toleranslı olunmasına ve bilgi föyü verilerine göre uygun direnç değerinin seçilmesine karar verilmiştir.</p><strong class='method-subtitle'>C) Bobin</strong><br><p>Bobin seçimi, kullanılan DA/DA dönüştürücünün bilgi föyüne bağlı kalınarak, kullanılan bobinden geçecek maksimum akıma göre yapılmıştır. Motor sürücüsünde elektriksel gürültüyü en aza indirgemek için kullanılan bobinler için SMT teknolojisine sahip bobinler seçilmiştir.</p><strong class='method-subtitle'>D) MOSFET seçimi</strong><br><p>MOSFET seçiminde, motor sürücünün uğrayacağı maksimum gerilim ve akım değerleri dikkate alınmıştır. Ani akım artışlarına karşı emniyet katsayısı 2 olarak alınmıştır. Aynı zamanda motor sürücü verimini ve ısıyı korumak için MOSFET’ in iç direnci fiyat-performans kriterleri içerisinde olabildiğince düşük seçilmiştir.</p><strong class='method-subtitle'>E) MOSFET sürücü</strong><br><p>IRS2186 hem yüksek katmanlı hem de düşük katmanlı MOSFET'leri sürebilmesi ve 4A gibi nispeten yüksek akımlarda çalışabilmesi nedeniyle tercih edilmiştir. Çıkış sinyali olarak 6.8V ile 20V arasında değerler verebilmektedir. Piyasadaki benzer ürünlerle karşılaştırıldığında 170ns gibi normal anahtarlama süresine sahiptir.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim1.png' alt='E) MOSFET sürücü'><figcaption>Şekil 1. E) MOSFET sürücü.</figcaption></figure></div><strong class='method-subtitle'>4.1.3.6. Mikro kontrolcü</strong><br><p>STM32F446RET6 mikrodenetleyicisinin:</p><p>ARM Cortex-M4 tabanlı bir mikrodenetleyici olup yüksek işlem gücü sunması ve bu şekilde motor control algoritmalarını hızlı bir şekilde işleyebilmesi,</p><p>Çok sayıda Dalga Genişlik Modülü kanalına sahip olup motor sürücülerinde gerekli olan yüksek çözünürlüğü ve hassas sinyalleri üretme yeteneğine sahip olması,</p><p>Çok sayıda zamanlayıcı ve sayıcıya sahip olup hassas bir şekilde kontrol edilmesine olanak tanıması,</p><p>ART, SPI, I2C, CAN ve USB gibi çeşitli haberleşme protokollerini desteklemesi,</p><p>Düşük güç tüketimi sayesinde batarya ile çalışan enerji verimliliğinin önemli olduğu projelerde büyük bir avantaj sağlaması,</p><p>Özelliklerine sahip olması ile, motor sürücü devremiz için ideal bir mikrodenetleyicidir. Bu nedenle, motor kontrol uygulamasında güvenilir ve verimli bir çözüm sağlamak için tercih edilmiştir.</p><strong class='method-subtitle'>4.1.4.Parametre hesabı (Eleman değerleri)</strong><br><strong class='method-subtitle'>A) Kondansatörler</strong><br><p>Motor kontrolcü devresinde çeşitli kapasitörler bulunmaktadır.</p><strong class='method-subtitle'>1) Filtreleme Kondansatörleri</strong><br><p>Filtreleme kondansatörlerin değerlerini hesaplarken, güç kaynağından veya bir güç elektroniği devresinden gelen dalgalı voltajı düzeltmek veya istenmeyen frekans bileşenlerini azaltmaya yönelik kullanılan yüksek ve düşük bant filtre kondansatör hesaplamaları göz önünde bulundurulmuştur. Çalışılan frekans değerinde 100 nF ve 1 uF değerinde çok katmanlı seramik kondansatörler kullanılmıştır. Bu değerdeki kapasitörler, gerektiği yerde paralel bağlanıp kapasitans değeri istenilen değere yükseltilmiştir (4.7 uF, 10 uF gibi).</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim2.png' alt='1) Filtreleme Kondansatörleri'><figcaption>Şekil 2. 1) Filtreleme Kondansatörleri.</figcaption></figure></div><strong class='method-subtitle'>2) DC-Link Kondansatörleri</strong><br><p>DC tarafındaki dalgalanmaları azaltmak, DC voltajını stabilize etmek ve yüksek akım taleplerinde enerji sağlaması için kullanılmıştır. Büyük kondansatörlere ve düşük ESR (Eşdeğer Seri Direnç) değerlerine sahip olacak şekilde seçim yapılmıştır.</p><p>C: Kapasitans (Farad)</p><p>P: Sistem gücü (Watt)</p><p>dc: Dönüşüm verimi (Efficiency)</p><p>fsw: Anahtarlama frekansı (Hz)</p><p>V_{dc}: DC-Link voltajı (Volt)</p><p>Vp(max)​: DC-Link voltajının izin verilen maksimum dalgalanma miktarı (Volt)</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim3.png' alt='2) DC-Link Kondansatörleri'><figcaption>Şekil 3. 2) DC-Link Kondansatörleri.</figcaption></figure></div><p>Bu hesaplamaya bağlı kalınarak, 470 uF değerinde 8 adet (yüksek kapasitans değerleri sunması için) Alüminyum Elektrolitik kondansatör paralel bağlanılarak devrede kullanılmıştır. ESR (Equivalent Series Resistance) değerini düşürmek ve kartın uzun ömürlü olmasi icin kondansatörler parallel bağlanmıştır.</p><p>Bu hesaplama, temel bir yaklaşım sunmaktadır. Ancak, gerçek dünya uygulamalarında termal yönetim, dalgalanma akımları ve kondansatörlerin ömrü gibi faktörler de dikkate alınmalıdır. Bu nedenle, hesaplanan değerin üzerinde bir kapasitans seçilmiştir.</p><strong class='method-subtitle'>B) Bobinler</strong><br><p>Bobinin endüktans değeri, devredeki akım değişim hızına ve istenen enerji depolama kapasitesine bağlı olarak seçildi. Örneğin, bir DC/DA dönüştürücü devresinde, istenen çıkış voltajındaki dalgalanmaları azaltmak için endüktans değeri, veri föyünde bulunan üretici referans değerlerine göre seçilmiştir. Bu referans değerleri arasında nominal akım, endüktans değeri, maksimum akım sınırı gibi faktörler bulunmaktadır.</p><strong class='method-subtitle'>4.1.5.Güç modülü ve kontrol ünitesi hakkında bilgiler</strong><br><strong class='method-subtitle'>A) Kontrol ünitesi</strong><br><p>STM32 ailesine ait olan bu mikrodenetleyici, ARM Cortex-M4 çekirdeği üzerinde çalışmaktadır. Motor kontrolü uygulamalarında STM32F446RET6 kullanılırken, özellikle PID kontrol algoritmaları, hız ve konum geri beslemesi gibi karmaşık işlemleri rahatlıkla gerçekleştirilebilir. Ayrıca, Düşük güç tüketimi ile enerji verimliliği sağlaması, geniş kod ve veri depolama kapasitesi sunması ve STM32 ailesi geniş bir geliştirme ekosistemine sahip olması yönüyle bu işlemciyi seçme nedenlerimiz arasındadır.</p><div class='hud-table-wrap'><table class='hud-benchmark-table'><thead><tr><th>Feature</th><th>Value</th></tr></thead><tbody><tr><td>Microcontroller Core</td><td>ARM Cortex-M4</td></tr><tr><td>Operating Frequency</td><td>180 MHz</td></tr><tr><td>Operating Voltage</td><td>1.7 V - 3.6 V, typically 3.3 V</td></tr><tr><td>Flash Memory</td><td>512 KB</td></tr><tr><td>SRAM</td><td>128 KB</td></tr><tr><td>GPIO</td><td>114-pin family in LQFP64 package</td></tr><tr><td>Timers</td><td>11 timers</td></tr><tr><td>ADC</td><td>12-bit, 3 units, 16 channels</td></tr><tr><td>DAC</td><td>12-bit, 2 units</td></tr><tr><td>Communication Interfaces</td><td>USART, SPI, I2C, CAN, USB</td></tr><tr><td>Temperature Range</td><td>-40°C to +85°C</td></tr><tr><td>Package</td><td>LQFP64, UFQFPN64, WLCSP64</td></tr><tr><td>Power Consumption</td><td>108 μA/MHz active mode with low-power modes</td></tr></tbody></table></div><strong class='method-subtitle'>B) Güç modülü</strong><br><p>Motor sürücüde kullanılmak üzere IXTH230N10T N-Kanal MOSFET seçilmiştir. Bu MOSFET, yüksek ve sürekli anahtarlama akım değerlerine sahiptir. 200A sürekli akım altında çalışabilir iken anlık 500A tepe değerlerinde çalışabilir ve 100V gerilim değerine sahiptir. Motor kontrol aşamasında fazla güç harcama ile karşılaşılması durumunda bu MOSFET’ler dayanabilecektir. V_GS = 10V için R_DS (on) değeri 0.019 ohm olarak belirlenmiştir.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim4.png' alt='B) Güç modülü'><figcaption>Şekil 4. B) Güç modülü.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim5.png' alt='B) Güç modülü'><figcaption>Şekil 5. B) Güç modülü.</figcaption></figure></div>",
-          "architecture": "<h4>4.4.Baskılı Devre Çalışmaları</h4><p>PCB tasarımında, gelişmiş analiz ve simülasyon araçları sunması ve tasarım hatalarını minimize etme imkanı sağlaması yönüyle Altium Designer kullanılması tercih edilmiştir.</p><p>PCB Düzeni ve Şema Tasarımı</p><p>STM32 mikrodenetleyicinin güç gereksinimlerini doğru bir şekilde karşılayacak güç hatları tasarlanmıştır. Bunun yanı sıra güç ve toprak hatları mümkün olduğunca kısa ve geniş tutulmuştur. Osilatörlerin ve saat sinyallerinin. Hatları mümkün olduğunca kısa ve düzgündür. PCB tasarımında elektromanyetik uyumluluk için belirli standartlar dikkate alınmıştır. Üretim sürecini kolaylaştıracak ve maliyetleri düşürmek için standart bilesen boyutları ve montaj yönergelerine uygunluk sağlanmıştır.</p><p>PCB 2D Görünümü Gerber Dosyası</p><p>PCB 3D Görüntüsü</p><p>Katmanlı PCB'lerde, ısıyı yaymak bileşenler ve yollar nedeniyle daha zor olmaktadır. Bakır, ısıyı mükemmel bir şekilde ileten bir malzemedir. Bu yüzden Motor sürücü IC'ye iyi termal bağlantılarla yollara mümkün olduğunca fazla katı bakır dökülerek yapılmıştır. Her iki dış katmana da bakır dökerek ve bu dökmeleri çok sayıda via ile birleştirmek, ısıyı bileşenlerin kesildiği alanlarda yaymaya yardımcı olmaktadır. Motor sürücü IC'ye giren ve çıkan akım büyük olduğundan PCB yollarının genişliği dikkatlice düşünülmüştür. Yol ne kadar genişse, direnci o kadar düşüktür. Yollarda, direncin aşırı güç dağılmasına neden olacak kadar küçük olmamasına dikkat edilmiştir, çünkü bu durum yolun ısınmasına yol açabilir.</p><p>Bypass kapasitörleri ve bootstrap kapasitörü mümkün olan en yakın yerde entegrenin güç pinlerine yerleştirilmiştir ve yakınlarda büyük kapasitörler bulunmaktadır.</p><h4>4.5.Üretim Çalışmaları/Aşamaları</h4><strong class='method-subtitle'>Üretim Çalışmaları/Aşamaları</strong><br><p>Kartın tamamen üretilmesinden önce, kartın prototipi yapılıp, isterleri karşılayıp karşılamadığı test edilmiştir.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim34.jpg' alt='Üretim Çalışmaları/Aşamaları'><figcaption>Şekil 5. Üretim Çalışmaları/Aşamaları.</figcaption></figure></div><p>Daha küçük boyutta ve daha düşük güçte çalışabilecek bir prototip yaparak, aynı motorda test edilmiştir. Uzun sureli nominal koşullarda çalışmanın yanında, prototip olmasına rağmen yüksek güç tüketim aşamalarında da çalışmayı sürdürerek asil kartın sahip olduğu güvenlik marjini hesaplanmıştır.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim35.jpg' alt='Üretim Çalışmaları/Aşamaları'><figcaption>Şekil 6. Üretim Çalışmaları/Aşamaları.</figcaption></figure></div><p>Simülasyon aşamasında kaydettiğimiz verilerin aynisini, prototip kontrolcüde de elde etmeyi basardık. Bu sayede kontrolcünün nominal durumlarda MOSFET kapı açma kapama esnasında herhangi bir sorun olmadığı görülmüştür.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim36.jpg' alt='Üretim Çalışmaları/Aşamaları'><figcaption>Şekil 7. Üretim Çalışmaları/Aşamaları.</figcaption></figure></div><p>Test sonucunda, ekstrem koşullarda, MOSFET kapı kısmında bir gurultu olduğu fark edilmiştir. Fakat gurultunun, MOSFET in sahip olduğu maksimum marjinden düşük ve motorun fazlarına herhangi yanlış anahtarlama yapmadığından sadece aşırı ısınmaya yönelik soğutucu alüminyum bloklar kullanılarak sorun çözülmüştür.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim37.jpg' alt='Üretim Çalışmaları/Aşamaları'><figcaption>Şekil 8. Üretim Çalışmaları/Aşamaları.</figcaption></figure></div><p>MOSFET kısmında herhangi bir silkinti olmadan fazlara gerekli gerilimi verdiği görülmüştür. MOSFET in sahip olduğu Flyback diyotun doğru şekilde boşaltma yaptığı doğrulanmıştır.</p><strong class='method-subtitle'>Motor sürücü kutusunun gösterilmesi ve boyutları hakkında bilgi verilmesi</strong><br><p>Güç elektroniği bileşenleri yüksek güçlerde çalışmaktadır. Bu yüzden PCB tasarımında ve kutulamada termal yönetim stratejileri kullanılmıştır. Bu, ısı emiciler, soğutucular, ve uygun hava akışı sağlamak için kutu ve kart tasarımını içermektedir.</p><p>Bu koşullar dikkate alındığında kartın 12x25x25 cm boyutlarinda olmasi gerektiğine karar verilmiştir.</p><p>Kullanılan elektronik bileşenlerin güvenliği de kritik önem taşımaktadır., aşırı akım, aşırı voltaj ve kısa devre gibi durumlarda bileşenleri ve aracın diğer sistemlerini koruyacak bir kutu tasarımı yapılmıştır. Çok sayıda kablo ve bağlantı kullanıldığından. Kutu tasarımında bu kabloların yönetimi ve düzenlenmesi için uygun alan ve bağlantı noktaları sağlanmıştır. Ayrıca kutu, erişilebilir bir yerde bulunmasına ve montaj, sökme ve yeniden montaj işlemleri kolaylıkla yapılabilir olmasına dikkat edilmiştir.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim38.jpg' alt='Motor sürücü kutusunun gösterilmesi ve boyutları hakkında bilgi verilmesi'><figcaption>Şekil 9. Motor sürücü kutusunun gösterilmesi ve boyutları hakkında bilgi verilmesi.</figcaption></figure></div>",
-          "subsystems": [
-                    {
-                              "title": "Three-Phase Power Stage",
-                              "desc": "High-side and low-side MOSFET stages drive A/B/C motor phases."
-                    },
-                    {
-                              "title": "Gate Driver and Bootstrap",
-                              "desc": "IRS2186-based gate drive with bootstrap and isolated DC/DC support."
-                    },
-                    {
-                              "title": "STM32 Control Unit",
-                              "desc": "PWM generation, Hall position reading, RPM calculation, direction logic, and safe-mode decisions."
-                    },
-                    {
-                              "title": "Measurement and Protection",
-                              "desc": "INA229 current, voltage, power, and temperature monitoring with over-current/over-temperature shutdown logic."
-                    },
-                    {
-                              "title": "Power Rails",
-                              "desc": "Regulated rails from 48 V down to 45 V, 15 V, 5 V, and 3.3 V."
-                    },
-                    {
-                              "title": "PCB and Thermal Design",
-                              "desc": "Altium layout with high-current routing, copper pour, via stitching, and enclosure/thermal considerations."
-                    }
-          ],
-          "analysis": "<h4>4.6.Motor Sürücü Verimliliği</h4><strong class='method-subtitle'>Güç kaybı hesabı (En yüksek güç talebinde)</strong><br><p>Motor sürücü devresinin güç tüketimini hesaplamak için birkaç bileşenin güç tüketimini dikkate alınmıştır.</p><p>Toplamda 12 MOSFET bulunmaktadır ve her bir MOSFET'in güç kaybı, üzerinden geçen akıma ve iç direnç değerine bağlı olarak hesaplanmıştır. Bu hesaplamalar sonucunda, her bir MOSFET'in yaklaşık 47.5 watt güç kaybına neden olduğu belirlenmiştir. Toplamda 12 MOSFET bulunduğundan, MOSFET'lerin toplam güç kaybı 570 watt olarak hesaplanmıştır.</p><p>Ayrıca, her bir MOSFET sürücü devresi 80 watt güç tüketmektedir. Devrede toplamda 6 MOSFET sürücü bulunduğundan, bu sürücülerin toplam güç tüketimi 480 watt olarak belirlenmiştir.</p><p>Mikrodenetleyici olarak kullanılan STM32F446RET6'nın güç tüketimi ise 0.064 watt olarak hesaplanmıştır. Bu mikrodenetleyici, düşük güç tüketimi ve yüksek performansı ile motor kontrol uygulamaları için idealdir.</p><p>Pasif bileşenler ve diğer devre elemanlarının güç tüketimi ise yaklaşık 10 watt olarak tahmin edilmiştir. Bu bileşenler, devredeki enerji kayıplarının küçük bir kısmını oluşturur ancak yine de toplam güç tüketimi üzerinde etkisi vardır.</p><p>Sonuç olarak, motorun nominal gücü 2500 watt olarak belirlenmiş ve diğer bileşenlerin güç tüketimleri de dikkate alındığında, toplam güç tüketimi yaklaşık 3560 watt olarak hesaplanmıştır. 3560 watt, devrenin en kötü koşullardaki (maksimum) güç tüketimini yansıtmaktadır. Gerçek çalışma koşullarında, motor ve diğer bileşenler her zaman maksimum güç tüketimi ile çalışmayabilir, bu nedenle gerçek güç tüketimi daha düşük olabilir.</p><strong class='method-subtitle'>Yüzde verim değeri (Nominal güç talebinde)</strong><br><p>Motorun nominal olarak 48V ve 50A olarak tasarlandığı düşünüldüğünde, güç hesaplaması P=V.I formülü kullanılarak 2400 Watt olarak belirlenmiştir. Bu değer, motorun çalışma koşullarında sağlanan güç miktarını ifade eder. Ancak devrede kullanılan MOSFETlerin doğal bir direnci bulunmaktadır ve bu da 40 Watt gibi bir kayba yol açmaktadır. Bu kayıp yüzdesel olarak hesaplandığında, (40 / 2400) * 100 ≈ %1,67 gibi bir değere denk gelir.</p><h4>4.7.Motor Sürücü Koruması</h4><p>Motor sürücüde aşırı akım koruması ve aşırı sıcaklık koruması yapan algoritma vardır. Aşırı akım veya sıcaklık durumunda motora giden güç kesilmektedir ve sistem güvenli moda girmektedir.</p><strong class='method-subtitle'>Akım değerini ölçen algoritma</strong><br><p>Aşırı akım koruma algoritmasında INA229 entegresinden SPI haberleşme protokolü aracılığıyla akım verisi alınır. Ölçülen akım değerinin, akım sınırını geçmesi durumunda sistem güvenli moda girmektedir ve motor çalışmayı durdurmaktadır. Aşırı akım koruma algoritmasında gürültüden vb. sebeplerden dolayı anlık yanlış okunan veriler olması durumunda ise ufak bir kontrol fonksiyonu eklenmiştir.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim39.png' alt='Akım değerini ölçen algoritma'><figcaption>Şekil 1. Akım değerini ölçen algoritma.</figcaption></figure></div><strong class='method-subtitle'>Sıcaklık Değerini ölçen algoritma</strong><br><p>Aşırı sıcaklık koruması yapan algoritma, sıcaklık verilerini INA229 entegresinden alır. Sıcaklığın, güvenlik sınırını geçmesi durumunda sistem güvenli moda alınır.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim40.png' alt='Sıcaklık Değerini ölçen algoritma'><figcaption>Şekil 2. Sıcaklık Değerini ölçen algoritma.</figcaption></figure></div><strong class='method-subtitle'>Aşırı akım veya sıcaklık durumunda sistemi güvenli moda alan algoritma</strong><br><p>Bu algoritma, sistemin güvenlik moduna alındığı zaman devreye giren algoritmadır. Algoritma, temelinde 3 kısımdan oluşmaktadır. 1. bölümde motor çalışırken, sıcaklık, akım ve sistemi açık tutan “enable” tuşunun kontrolü yapılır. Bir sorun olmaması durumunda motor çalışmaya devam eder. Bir sorun olması durumunda ise algoritmanın 2. kısmına geçilir. Algoritmanın bu kısmına geçildikten sonra motor çalışmayı durdurur. 2. bölümde motora giden güç kesilir. Bu bölümde tek kontrol edilen şey pilotun pedala basıp basmadığıdır. Eğer pilot pedala basıp motoru döndürmek istiyorsa algoritma 2. bölümden çıkmaz ve motor hiçbir zaman dönmez. Pilot pedala basmaz ise algoritma 3. kısıma geçer. Bu bölümde sistemdeki tüm kontroller yapılır ve sistemde her şeyin düzgün çalıştığından emin olunur. Bir sorun olması durumunda o sorun çözülene kadar sistem güvenli modda kalmaya devam eder ve motor dönmez. Akım değerinin, sıcaklık değerinin ve sistemi başlatan “enable” tuşunun açık olması durumunda sistem güvenli moddan çıkar ve motor eskisi gibi dönmeye başlar.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim41.png' alt='Aşırı akım veya sıcaklık durumunda sistemi güvenli moda alan algoritma'><figcaption>Şekil 3. Aşırı akım veya sıcaklık durumunda sistemi güvenli moda alan algoritma.</figcaption></figure></div><h4>4.8.Bill of Materials</h4><p>The material list is simplified around the main engineering blocks rather than listing every purchase line. This makes the power switching, control, sensing, protection, and power-rail structure easier to read.</p><div class='hud-table-wrap '><table class='hud-benchmark-table'><thead><tr><th>Component Group</th><th>Use in Design</th></tr></thead><tbody><tr><td>Power switching stage</td><td>IXTH200N10T MOSFET family and three-phase bridge structure</td></tr><tr><td>Gate-drive line</td><td>IRS2186 / IRS21867S high-side and low-side drivers</td></tr><tr><td>Control unit</td><td>STM32F446RET6 ARM Cortex-M4 microcontroller</td></tr><tr><td>Sensing and protection</td><td>INA229 current, voltage, power, and temperature monitoring</td></tr><tr><td>Power rails</td><td>TL783, LM2596HV, isolated DC/DC, and 5 V / 3.3 V regulators</td></tr><tr><td>Auxiliary parts</td><td>Resistors, capacitors, inductors, connectors, LEDs, and passive filters</td></tr></tbody></table></div><p>The technical output table of the designed and prototyped motor-driver board is shown below.</p><div class='hud-table-wrap bldc-output-table'><table class='hud-benchmark-table'><thead><tr><th>Feature</th><th>Value / Description</th></tr></thead><tbody><tr><td>Switching Device</td><td>IXTH200N10T</td></tr><tr><td>Driver IC</td><td>IRS2186</td></tr><tr><td>Controller IC</td><td>STM32F446RET6</td></tr><tr><td>Control Algorithm</td><td>Closed Loop</td></tr><tr><td>Protection Circuit</td><td>80 A fuse</td></tr><tr><td>Electrical Circuit Design</td><td>https://drive.google.com/drive/folders/1wGStn39v0P4p8lhwLE1O9xsp7bxvO1Vs</td></tr><tr><td>PCB Design</td><td>https://drive.google.com/drive/folders/1wGStn39v0P4p8lhwLE1O9xsp7bxvO1Vs</td></tr><tr><td>PCB Production</td><td>The board was designed by the team, manufactured externally, and assembled by the team.</td></tr><tr><td>Software Algorithm</td><td>https://drive.google.com/file/d/1m-uZoBatOImtPA3g9t1bNuGejM1-A806/view?usp=drive_link</td></tr><tr><td>Simulation Work</td><td>https://drive.google.com/drive/folders/1daJZh62l2uDtyko0J7pKTum_-fOd2yW3</td></tr><tr><td>Experimental Work</td><td>https://drive.google.com/drive/folders/1gFA6QfE45RP-FTSr6GWQxGa0K6CliWwN</td></tr><tr><td>Size (PCB / Enclosure)</td><td>200 x 150 mm PCB, 120 x 250 x 250 cm enclosure</td></tr><tr><td>Power / Current / Voltage</td><td>2.5 kW / 48 V / 50 A</td></tr><tr><td>Efficiency</td><td>90%</td></tr></tbody></table></div>",
-          "achievements": "<p>The output of this project was not only a circuit schematic, but a testable BLDC motor-driver board. The three-phase power stage, STM32-based control algorithm, Hall feedback, current/temperature monitoring, and safe-mode logic were integrated around a 48 V, 50 A nominal operating target.</p><p>The work produced a practical power-electronics development baseline through Altium PCB design, Proteus simulations, prototype production, oscilloscope-based gate-signal validation, enclosure decisions, and thermal-management evaluation. Vol.1 became the reference board for later motor-controller revisions.</p><div class='project-output-access'><div><span class='visual-kicker'>// DESIGN_ARCHIVE</span><strong>Design Files</strong><p>The BLDC_2024, BLDC_2024_STM_UNIT, and MC330335-MC33039 2024 design folders are now available in the repository. This output archives the schematic, PCB, and control-unit design files for later revisions.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/Kartlar/BLDC%20S%C3%BCr%C3%BCc%C3%BC%202024' target='_blank' rel='noopener noreferrer'>Open Design Files<i data-lucide='external-link'></i></a></div>",
-          "detailImage": "vol1/Resim33.png",
-          "teamIds": [
-                    "team-hidroana"
-          ],
-          "scientificMerit": "<h4>4.2.Kontrol Algoritması</h4><strong class='method-subtitle'>Sürücü kontrolünün konsepti ve türü (analog/dijital kontrol, FOC, DTC, V/f kontrol, vb.)</strong><br><p>Sürücünün kontrolü STM32F446RET6 işlemcisi tarafından yapılmaktadır. İşlemci STM32CUBE IDE isimli program vasıtasıyla kodlanmıştır. STM32F446RET6’nın tercih edilmesinin sebebi 180MHz gibi yüksek bir hızda çalışmasıdır.</p><p>Algoritmaya ilk olarak, sürücülere PWM sinyalleri sağlayıp motoru döndürerek başlanmıştır. Algoritma temel anlamda motorun istenilen yönde ve hızda dönmesi, hızı ve sıcaklığı hesaplaması, yüksek akım ve sıcaklık koruması gibi gerekli güvenlik önlemlerinin alınması işlemlerini gerçekleştirmek üzere tasarlanmıştır. Kontrolcü üzerinde, akım, voltaj, sıcaklık ve güç değerlerini okumakta olan Texas Instruments’in INA229 entegresi bulunmaktadır. INA229 ile STM32F446RET6 SPI haberleşme protokolü kullanarak haberleşmektedir.</p><strong class='method-subtitle'>PWM sinyallerinin oluşturulduğu algoritma</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim6.png' alt='PWM sinyallerinin oluşturulduğu algoritma'><figcaption>Şekil 1. PWM sinyallerinin oluşturulduğu algoritma.</figcaption></figure></div><p>Bu algoritma, motorun istenilen fazlarına sinyal verilmesini sağlar. A_H,…,C_H olarak belirtilen kısımlar yüksek taraflara PWM sinyallerinin verildiği kısımlardır. Bu kısımlara 0 ile 100 arasında bir değer girilir. Bu değere görev döngüsü denmektedir. A_L,…,C_L olarak belirtilen kısımlar düşük taraflara verilen voltajı belirler. Bu kısımların 1 olması durumunda gerekli voltaj sağlanır ve anahtarlama yapılmış olur. 0 olması durumunda voltaj verilmez ve anahtarlama yapılmaz.</p><strong class='method-subtitle'>Motorun saat yönünün tersine dönmesini sağlayan algoritma</strong><br><p>Bu algoritma motorun saat yönünün tersine dönmesini sağlar. Başlangıçta yer alan fonksiyon pedaldan gelen değere göre bir görev döngüsü değeri belirler. Bu değer 0 ile 100 arasındadır ve motorun ne kadar hızlı döneceğini belirler. “motor_state” değişkeni, motorun o anki konumunu söyleyen bir değişkendir. Algoritma içerisinde motorun anlık konumuna göre A,B veya C fazlarının yüksek veya düşük taraflarına gerekli sinyal ve voltaj gönderilir. Fazlara voltaj uygulandıkça motor dönmeye başlar ve motor döndükçe “motor_state” değişkeni motorun anlık konumuna göre değişir. Bu böyle devam eder ve motor saat yönünün tersinde dönmeye başlar.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim7.png' alt='Motorun saat yönünün tersine dönmesini sağlayan algoritma'><figcaption>Şekil 2. Motorun saat yönünün tersine dönmesini sağlayan algoritma.</figcaption></figure></div><strong class='method-subtitle'>Dakikadaki devir sayısını hesaplayan algoritma</strong><br><p>Bu algoritma, sistemin başladığı andan itibaren dakikadaki devir sayısını hesaplamaktadır. Bunun için motorun konumu bilinmelidir ve motorun anlık konumu, motorda bulunan Hall sensörleri tarafından gelen bilgiler ile belirlenir. Algoritma temelde, motorun bir tam tur attığı zamanı hesaplamaktadır. Algoritmada ilk olarak motorun anlık konumu hesaplanır. Bu değer kaydedilir. Daha sonrasında zaman ilerledikçe motorun yeni konumu ile eski konumu farklı mı diye kontrol edilir. Farklı olması durumunda bu işlem böyle 6 defa devam eder. 6 defa devam etmesinin sebebi ise, motorun içinde bulunan Hall sensörlerinin verdiği değerlere göre, motorun yalnızca 6 farklı konumda bulunabileceğidir. 6. işlemin sonunda aradan geçen zaman işlemcinin saatini kullanarak hesaplanır. Süre mikro saniye cinsinden hesaplanır.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim8.png' alt='Dakikadaki devir sayısını hesaplayan algoritma'><figcaption>Şekil 3. Dakikadaki devir sayısını hesaplayan algoritma.</figcaption></figure></div><strong class='method-subtitle'>Kontrol Blok Şeması</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim9.png' alt='Kontrol Blok Şeması'><figcaption>Şekil 4. Kontrol Blok Şeması.</figcaption></figure></div><h4>4.3. Simülasyon Calışmaları</h4><strong class='method-subtitle'>Simülasyon parametreleri (örnekleme zamanı, çözünürlük zamanı, vb.)</strong><br><p>Simülasyon çalışmalarında Proteus yazılımı kullanılmış olup. Motora giden faz beslemelerinin simüle edilmiş hali aşağıdaki görselde MOSFET sürücü devre olarak yapılmıştır.</p><p>Örnekleme zamanı, simülasyonun doğruluğunu ve performansını etkileyen önemli bir parametredir. Kontrol algoritmasının çalışması için yeterince küçük bir örnekleme zamanı secilmistir.</p><p>Mikrodenetleyici tabanlı kontrol: 100 µs - 1 ms (10 kHz - 1 kHz)</p><p>Yüksek hassasiyetli kontrol: 10 µs - 100 µs (100 kHz - 10 kHz)</p><p>Çözünürlük zamanı, simülasyonun zaman adımının ne kadar küçük olacağını belirler. Daha küçük zaman adımları daha hassas sonuçlar sağlar ancak simülasyon süresini uzatır. Bu, örnekleme zamanının 10-100 katı kadar küçük bir değer seçilerek belirlenmiştir.</p><p>Yüksek çözünürlük: 1 µs - 10 µs (1 MHz - 100 kHz)</p><p>Düşük çözünürlük: 10 µs - 100 µs (100 kHz - 10 kHz)</p><p> Örnekleme Zamanı: 0.001 saniye (1ms)</p><p> Çözünürlük Zamanı: 0.0001 saniye (0.1ms)</p><p> Simülasyon Süresi: 10 saniye</p><p> Başlangıç Hızı: 0 RPM</p><p> Yük Ataleti: 0.01 kg·m²</p><p> Zaman Adımları: 0.0001 saniye (0.1ms)</p><strong class='method-subtitle'>Şematik çizim</strong><br><strong class='method-subtitle'>Half Bridge MOSFET Katmanı</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim10.png' alt='Half Bridge MOSFET Katmanı'><figcaption>Şekil 5. Half Bridge MOSFET Katmanı.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim11.png' alt='Half Bridge MOSFET Katmanı'><figcaption>Şekil 6. Half Bridge MOSFET Katmanı.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim12.png' alt='Half Bridge MOSFET Katmanı'><figcaption>Şekil 7. Half Bridge MOSFET Katmanı.</figcaption></figure></div><p>Yukarıdaki görsellerde görünen MOSFET blokları motor sürücünün güç çıkışı yani motorun üç faz besleme çıkışlarıdır. A High, B High, C High ve A Low, Low,C Low olmak üzere altı farklı çıkış vardır. Motor konumuna göre STM32F446RET6 kontrolcüsünden gerekli giriş sinyalleri alınarak MOSFET sürücülerine, ordan da MOSFET’ lere iletilir. Bu sinyallere göre MOSFET’ler iletime geçer veya iletimi keser.</p><strong class='method-subtitle'>Ana Güç Kapasitörleri</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim13.png' alt='Ana Güç Kapasitörleri'><figcaption>Şekil 8. Ana Güç Kapasitörleri.</figcaption></figure></div><p>DC-link kondansatörleri, motor sürücüsünün performansını, verimliliğini ve güvenilirliğini artırmada kritik bir rol oynar. Gerilim dalgalanmalarını azaltarak, enerji depolayarak, gerilim dengeleyerek, EMI/RFI filtreleyerek ve ısı yönetimini iyileştirerek motor sürücüsünün daha stabil, verimli ve uzun ömürlü olmasını sağlarlar.</p><strong class='method-subtitle'>+48 Vin / +45 Vout TL783</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim14.png' alt='+48 Vin / +45 Vout TL783'><figcaption>Şekil 9. +48 Vin / +45 Vout TL783.</figcaption></figure></div><p>TL783, yüksek giriş gerilimlerinden düşük çıkış gerilimlerine sabit bir şekilde regülasyon sağlamak için kullanılan güvenilir ve çok yönlü bir voltaj regülatörüdür. Geniş voltaj aralığı, ayarlanabilir çıkış gerilimi ve koruma özellikleri sayesinde kartta regülatör kısmında yer almaktadır.</p><strong class='method-subtitle'>+45 Vin / +15 Vout LM2596HV</strong><br><p>LM2596HV, yüksek giriş voltajlarını düşük çıkış voltajlarına verimli bir şekilde düşüren voltaj regülatörüdür. Geniş giriş voltaj aralığı, ayarlanabilir çıkış voltajı, yüksek çıkış akımı ve koruma özelliklerinden dolayı +15V gerilim elde etmek için bu regülatörü kullanılmıştır.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim15.png' alt='+45 Vin / +15 Vout LM2596HV'><figcaption>Şekil 10. +45 Vin / +15 Vout LM2596HV.</figcaption></figure></div><strong class='method-subtitle'>+15 Vin / +5 Vout WPME-FDSM</strong><br><p>WPME-FDSM, geniş giriş voltaj aralığı (8V- 28V) ve sabit 5V çıkış voltajı ile çeşitli elektronik uygulamalarda kullanılabilen verimli ve güvenilir bir voltaj regülatörüdür. THT montaj tekniği ve SIP-3 form faktörü sayesinde kompakt ve dayanıklı bir yapıya sahiptir. Maksimum 1A çıkış akımı sağlayarak +3.3V regülatörü için güvenli bir çalışma ortamı sunar.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim16.png' alt='+15 Vin / +5 Vout WPME-FDSM'><figcaption>Şekil 11. +15 Vin / +5 Vout WPME-FDSM.</figcaption></figure></div><strong class='method-subtitle'>+5 Vin / +3.3 Vout WPME-FDSM</strong><br><p>THT montaj tekniği ve SIP-3 form faktörü sayesinde kompakt ve dayanıklı bir yapıya sahiptir. STM32 mikrokontrolcu için gereken 3.3 V gerilim değerini mümkün olan en az gürültü ile sağlamaktadır.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim18.png' alt='+5 Vin / +3.3 Vout WPME-FDSM'><figcaption>Şekil 12. +5 Vin / +3.3 Vout WPME-FDSM.</figcaption></figure></div><strong class='method-subtitle'>Izole +15 Vin / +15 Vout B0505S-1WR3</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim19.png' alt='Izole +15 Vin / +15 Vout B0505S-1WR3'><figcaption>Şekil 13. Izole +15 Vin / +15 Vout B0505S-1WR3.</figcaption></figure></div><p>Bootstrap devresi, bir güç anahtarlama devresindeki yüksek taraf sürücüsünün (high-side driver) kapı (gate) voltajını sağlamak için kullanılmıştır. Bootstrap kondansatörü, bu devrede kullanılan ana bileşenlerden biridir ve yüksek taraf sürücüsünün çalışması için gerekli olan voltajı geçici olarak depolar. Bu kondansatör, düşük taraf anahtarlama transistörünün açık olduğu sürede şarj olur ve daha sonra yüksek taraf transistörünün kapısını sürmek için bu depolanan enerjiyi kullanır. Fakat bazı ekstrem koşullarda fazla yük çekmesi sonucunda anahtarlama elemanını sürecek kapasitör yeterli gerilimi sağlamayabilir. Bu durumu önlemek amacı ile, kondansatöre bağlı izole DA/DA dönüştürücü kullanılmasına karar verilmiştir.</p><strong class='method-subtitle'>Hall Efekt Sensörleri</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim20.png' alt='Hall Efekt Sensörleri'><figcaption>Şekil 14. Hall Efekt Sensörleri.</figcaption></figure></div><strong class='method-subtitle'>Güç ve Kullanıcı Ledleri</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim21.png' alt='Güç ve Kullanıcı Ledleri'><figcaption>Şekil 15. Güç ve Kullanıcı Ledleri.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim22.png' alt='Güç ve Kullanıcı Ledleri'><figcaption>Şekil 16. Güç ve Kullanıcı Ledleri.</figcaption></figure></div><strong class='method-subtitle'>STM32F446RET6</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim23.png' alt='STM32F446RET6'><figcaption>Şekil 17. STM32F446RET6.</figcaption></figure></div><strong class='method-subtitle'>Simülasyon adımları</strong><br><strong class='method-subtitle'>MOSFET Kapı Sinyali</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim24.jpg' alt='MOSFET Kapı Sinyali'><figcaption>Şekil 18. MOSFET Kapı Sinyali.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim25.png' alt='MOSFET Kapı Sinyali'><figcaption>Şekil 19. MOSFET Kapı Sinyali.</figcaption></figure></div><p>PWM sinyali, MOSFET'in anahtarlama döngüsünü belirler. N-kanallı MOSFET'lerde genellikle gate terminaline yüksek bir voltaj uygulanarak MOSFET açılır. Yani, ne kadar süreyle MOSFET açık (iletim durumunda) olacak ve ne kadar süreyle kapalı (kesim durumunda) olacağı, gerilimin uygulanma süresine bağlıdır.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim26.png' alt='MOSFET Kapı Sinyali'><figcaption>Şekil 20. MOSFET Kapı Sinyali.</figcaption></figure></div><strong class='method-subtitle'>48 V / 15 V Buck Converter</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim27.png' alt='48 V / 15 V Buck Converter'><figcaption>Şekil 21. 48 V / 15 V Buck Converter.</figcaption></figure></div><strong class='method-subtitle'>15 / 5V DA-DA Voltaj Düşürücü</strong><br><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol1/Resim28.png' alt='15 / 5V DA-DA Voltaj Düşürücü'><figcaption>Şekil 22. 15 / 5V DA-DA Voltaj Düşürücü.</figcaption></figure></div><p>Giriş gerilimi anahtarlama transistorünün kontrolü ile endüktöre iletilir. Bu transistor, genellikle bir PWM sinyali ile sürülerek açılıp kapanır. Anahtarlama sırasında, endüktör üzerinde bir manyetik alan oluşturulur. Bu manyetik alan, endüktörde depolanan enerjiyi temsil eder. Endüktör üzerinde depolanan manyetik enerji, anahtarlama transistorünün kapalı olduğu zamanlarda çıkış devresine aktarılır. Endüktör üzerinde oluşan manyetik alanın bozulmasıyla (anahtarlama ile), endüktörden çıkan enerji, çıkış gerilimini oluşturur.</p>"
-},
-      {
-            "id": "project-2",
-            "title": "Insulation Monitoring Device for Electric Vehicles",
-            "category": "guc-elektronigi",
-            "summary": "Developed for the 48 V DC power rail of the Hidroana hydrogen-powered vehicle, this project real-time monitors the electrical insulation resistance between battery terminals and the chassis. Built upon an Electric Bridge Switch architecture and differential measurement front-end, it accurately detects potential leakage paths and insulation degradation. Utilizing AD8216 difference amplifiers and AMC1311 galvanically isolated transmitters, the board decouples high-voltage sensing from low-voltage control electronics to ensure maximum vehicle and operational safety.",
-            "description": "This project is not framed as an extremely high-voltage system; it was designed for a 48 V hydrogen vehicle power line. The goal is to monitor the insulation condition between the battery positive/negative terminals and the chassis, detect leakage paths early, and provide a reliable ADC-readable measurement to the control board.",
-            "image": "isolation/ev-isolation-cover.jpg",
-            "tags": [
-                  "Electric Vehicle Safety",
-                  "Insulation Monitoring",
-                  "AD8216 Difference Amplifier",
-                  "AMC1311 Isolated Measurement",
-                  "team-hidroana"
-            ],
-            "specs": [
-                  {
-                        "name": "System Context",
-                        "value": "48 V Hydrogen Vehicle Power Line"
-                  },
-                  {
-                        "name": "Measured Quantity",
-                        "value": "Rp and Rn Chassis Insulation Resistances"
-                  },
-                  {
-                        "name": "Analog Front-End",
-                        "value": "AD8216 Difference Amplifier and ADC Input"
-                  },
-                  {
-                        "name": "Electrical Separation",
-                        "value": "AMC1311, Opto-Isolators and Isolated DC-DC"
-                  }
-            ],
-            "overview": "<p>The insulation monitoring device was designed to track the insulation condition between the vehicle's 48 V battery line and chassis. If unintended leakage paths occur between the positive terminal, negative terminal and chassis, both user safety and electronics reliability can be affected. Instead of interpreting leakage current directly, the board estimates equivalent chassis insulation resistances through a measurable analog model.</p><p>The reference approach behind the project uses modern isolated amplifiers and isolated switches so that the hot-side measurement can be powered from the cold side, without adding an isolated supply on the measurement side. In our case, this diagnostic idea is scaled for the 48 V Hidroana vehicle power line rather than a 400 V EV battery or a 1 kV solar string.</p><p>In the project, Rp represents the insulation resistance between the positive terminal and chassis, while Rn represents the insulation resistance between the negative terminal and chassis. The measurement circuit produces UP1, UN1, UP2 and UN2 voltages using known resistors and two relay-controlled measurement states. These voltages are amplified, isolated and transferred to the control board for ADC reading.</p>",
-            "architecture": "<h4>Technical Background and Safety Need</h4><p>The rapid adoption of electric vehicles, faster DC charging systems and distributed solar-energy designs increases the need for safe DC energy transmission. Reference designs usually explain this problem through 400 V EV batteries, higher-voltage fast-charging links and PV string inverter lines reaching up to 1 kV. In these systems, user protection requires the DC lines to remain isolated from protective earth through high-ohmic paths; when this insulation deteriorates, leakage current increases and the system becomes unsafe.</p><p>Our board is not designed for those high-voltage vehicle levels; it is adapted for the 48 V Hidroana power line. The diagnostic logic is the same: monitor whether the insulation barrier between the battery line and chassis is healthy, estimate insulation resistance, and provide the control system with a reliable measurement that can trigger a safe response if the resistance is not sufficient.</p><h4>Cold-Side Powered Isolated Measurement</h4><p>The reference approach uses a new generation of isolated amplifiers and isolated switches that enable isolated measurement without requiring an additional isolated supply on the hot side. The whole diagnostic can be powered from the cold side and added to an existing power-conversion, battery-management or charging-protocol MCU. This makes the insulation-monitoring function compact and easier to integrate into the existing control architecture.</p><h4>Method Choice: AC Injection and Electric Bridge Switch</h4><p>Two common insulation-monitoring techniques are AC current injection and electric bridge switching. In AC injection, a square-wave signal is injected into the RC path between the DC lines and protective earth through an RC filter or transformer. The impedance is then computed from the capacitor charge and discharge behavior. The advantage is that the method is less influenced by insulation capacitance, but the drawback is that reliable and accurate implementation is difficult and a bulky transformer may be needed to isolate the injection circuit from the DC lines.</p><p>The electric bridge switch method is proposed in safety standards such as IEC 61851-23. In this method, a known resistive branch is temporarily switched across the insulation barrier. In normal operation, no meaningful current flows through this branch because there is no leakage path to chassis/protective earth. If the insulation barrier deteriorates, the switched branch produces a measurable isolation voltage, allowing the fault path to be interpreted through a resistor bridge and isolated analog front-end.</p><p>Electric bridge DC insulation monitoring is straightforward and accurate. It avoids bulky transformers and dissipates only small amounts of power across the barrier during the short measurement window. The switched resistive branch must not remain active for a long time; reference guidance limits its operation to less than ten seconds because the system is intentionally loaded during measurement.</p><h4>SP/SN Switches and Resistive Branches</h4><p>The reference design names the positive-side switch SP and the negative-side switch SN. These switches connect known high-resistance divider branches between DC+ and PE/chassis or DC- and PE/chassis. RstP and RstN are high-accuracy divider branches, while RinAMC is the voltage-sensing resistor that scales the isolation voltage into the isolated amplifier input range. In our 48 V implementation, the same idea is adapted with a relay/switching network, AD8216 measurement conditioning and AMC1311 isolated transfer.</p><p>During measurement, the two resistor branches are not switched in at the same time. When SP is closed and SN is open, the positive branch is active and the isolation voltage VP is measured. When SN is closed and SP is open, the negative branch is active and VN is measured. With a healthy insulation barrier, Riso values are in the MOhm range and only a very small current flows, producing a small isolated-amplifier input signal. When the barrier deteriorates, Iiso increases and the isolated amplifier sees a higher input signal.</p><h4>Kirchhoff Equations and Insulation Resistance</h4><p>When SP is closed and SN is open, leakage current creates an isolation voltage VP on the resistive branch. Kirchhoff's voltage law gives <code>Iiso * RisoN - VDC + VP = 0</code>, therefore <code>VP = VDC - Iiso * RisoN</code>. VP is observed at the isolated amplifier input as the scaled measurement VinP, so the real isolation voltage is reconstructed with <code>VP = VinP * (RstP + RinAMC) / RinAMC</code>.</p><p>In the reverse state, SP is open and SN is closed. The DC polarity changes in the equivalent circuit and the isolation current direction becomes negative. The equations become <code>Iiso * RisoP + VDC + VN = 0</code> and <code>VN = -VDC - Iiso * RisoP</code>. VN is reconstructed from the scaled input using <code>VN = VinN * (RstN + RinAMC) / RinAMC</code>.</p><div class='formula-block'><code>Iiso * RisoN - VDC + VP = 0</code><br><code>VP = VDC - Iiso * RisoN</code><br><code>VP = VinP * (RstP + RinAMC) / RinAMC</code><br><code>Iiso * RisoP + VDC + VN = 0</code><br><code>VN = -VDC - Iiso * RisoP</code><br><code>VN = VinN * (RstN + RinAMC) / RinAMC</code></div><p>Using VP and VN from the SP and SN measurement states, the insulation resistances between the DC lines and chassis can be computed. Assuming RstP and RstN are equal to Rst, the final expressions can be written directly with VDC, VP, VN, Rst and RinAMC. The polarity at the amplifier input for the negative case is opposite to the positive-branch case, which is why a bipolar or differential isolated measurement stage is appropriate.</p><div class='formula-block'><code>RisoP = -((RinAMC + Rst) * (VDC + VN - VP)) / VN</code><br><code>RisoN = ((RinAMC + Rst) * (VDC + VN - VP)) / VP</code></div><h4>Circuit Design</h4><p>The supply source of an electric vehicle is a battery pack composed of many series-parallel battery groups. Therefore, the battery pack must maintain strong electrical insulation against the vehicle chassis. If the insulation deteriorates, leakage currents can affect both the system and the user; for this reason, the insulation between the battery pack and chassis must be monitored in real time and converted into a numerical resistance value.</p><p>HV_POS and HV_NEG represent the positive and negative terminals of the 48 V battery line, while GND_i represents the chassis. In the measurement network, R16, R17, R36, R21, R22 and R37 are 250 kOhm, 1 W resistors; R19 and R20 are 500 Ohm resistors. This resistor network makes the leakage path between the battery terminals and chassis measurable depending on relay states. RELAY_SIGNAL activates or deactivates R16. When no measurement is being performed, RELAY_POS and RELAY_NEG disconnect the battery from the measurement circuit and keep the board in a safe state.</p><p>The AD8216 is used as a 3 V/V amplifier. It amplifies the voltages collected through R19 and R20 by approximately three times and sends them to the control board through ADC_IN+ and ADC_IN-. This brings the analog measurement level into a more readable range for the microcontroller ADC, allowing the insulation resistance calculation to be performed on the control board.</p><p>Because the insulation board and control board do not share the same ground reference, analog signals are transferred through an AMC1311 isolated amplifier. Since the AMC1311 provides differential outputs, a differential op-amp stage is used to create a single-ended signal. Opto-isolators drive the relays while preserving electrical separation between the control signals and the insulation measurement side. An isolated DC-DC converter separates the supplies, and molex connectors define the interface between the insulation and control boards.</p><h4>Settling Time, Insulation Capacitance and Power Dissipation</h4><p>Under proper operation or an asymmetrical insulation fault, static capacitance from the DC lines to chassis delays the settling of the isolation voltage after the resistive branch is switched in. Therefore the firmware must wait after closing the switch before sampling the insulation voltage. Higher insulation capacitance reduces overall measurement speed.</p><p>The reference time constant is <code>tau = (RisoP || RstP) * CisoP</code>. For example, with 10 nF insulation capacitance, 68.1 kOhm RstP and 10 MOhm RisoP, the time constant is approximately 676 us. A delay of at least <code>3tau</code> after switch closure is recommended so the measured voltage reaches roughly 95 percent of its final value. Lower resistor values improve settling speed, but increase branch current and power dissipation.</p><div class='formula-block'><code>tau = (RisoP || RstP) * CisoP</code><br><code>Ist = VBus / (RstP + RinAMC)</code></div><p>For the 48 V vehicle implementation, this means the divider branch must be selected by considering measurement speed, power dissipation, maximum allowed current and ADC resolution together. The goal is to read leakage resistance reliably without unnecessarily loading the insulation barrier.</p>",
-            "subsystems": [
-                  {
-                        "title": "Switched Resistor Network",
-                        "desc": "Creates two measurement states through the S relay so Rp and Rn insulation resistances can be calculated."
-                  },
-                  {
-                        "title": "AD8216 Measurement Stage",
-                        "desc": "Conditions small terminal voltage differences and prepares them for ADC acquisition."
-                  },
-                  {
-                        "title": "AMC1311 Isolated Transfer",
-                        "desc": "Transfers analog measurement information while separating the insulation board and control-board references."
-                  },
-                  {
-                        "title": "Opto-Isolated Relay Drive",
-                        "desc": "Controls the relay states while reducing unwanted coupling between control and measurement domains."
-                  }
-            ],
-            "analysis": "<h4>Simulation and Validation</h4><p>The circuit was modeled and tested in MATLAB Simscape. Two leakage scenarios were used for validation: a 250 kOhm insulation leakage on the negative terminal and a 250 kOhm insulation leakage on the positive terminal. The negative-terminal case produced an estimated insulation resistance of approximately 249.7 kOhm, while the positive-terminal case produced approximately 250.5 kOhm. These results show that the mathematical model and switched measurement approach can track the target leakage resistance with practical accuracy.</p><p>The purpose of the simulation was not only to show that the circuit works, but also to verify the relationship between relay states, known resistors, isolated measurement stages and ADC-ready outputs. Because the switched resistor branch intentionally loads the insulation barrier during measurement, the firmware flow must keep the active measurement window short: switch, wait for settling, sample with the ADC, then open the branch again.</p><h4>PCB and Isolation Levels</h4><p>The PCB design considers three electrical levels: the 48 V battery line, chassis reference and low-voltage control side. These domains are separated so leakage behavior from the vehicle power line is not directly carried into the control electronics.</p>",
-            "achievements": "<p>The project produced an analog insulation-monitoring architecture for the 48 V Hidroana vehicle power line. It combines Kirchhoff-based equations, the RisoP/RisoN relations from the Equations document, AD8216 measurement conditioning, AMC1311 isolated signal transfer, opto-isolated relay driving and Simscape validation into a traceable circuit-design workflow.</p><div class='project-output-access'><div><span class='visual-kicker'>// SOURCE_FILES</span><strong>Insulation Source Files</strong><p>The insulation PDF, Equations Word file and PNG explanation images are available for review.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/isolation' target='_blank' rel='noopener noreferrer'>Open Source Files<i data-lucide='external-link'></i></a></div>"
+            "id": "gal-12",
+            "image": "galeri/photo-13.jpg",
+            "title": "Photo 12"
       },
       {
-            "id": "project-3",
-            "title": "48 V / 42 A Three-Phase BLDC Motor Driver Board (Vol.2)",
-            "category": "guc-elektronigi",
-            "summary": "Vol.2 is the second-generation BLDC motor driver developed for the Hidroana hydrogen vehicle drivetrain. It targets 48 V nominal supply, 2 kW output power, and 42 A operating current with a modular power board, control board, and regulator board architecture.",
-            "description": "The Vol.2 BLDC driver improves reliability, thermal behavior, EMI control, galvanic isolation, and manufacturability using FDB0260N1007L MOSFETs, UCC21520DWR isolated gate drivers, ACS758 Hall-effect current sensing, STM32F446RET6 control, CAN/RS485 communication, four-layer PCB design, and active enclosure cooling.",
-            "image": "vol2/3d-bldc-on.png",
-            "detailImage": "vol2/3d-bldc-on.png",
-            "tags": [
-                  "BLDC Motor Driver Vol.2",
-                  "UCC21520DWR",
-                  "FDB0260N1007L",
-                  "STM32F446RET6",
-                  "Altium Designer",
-                  "Hidroana"
-            ],
-            "specs": [
-                  {
-                        "name": "Project Team",
-                        "value": "Hidroana Project Team"
-                  },
-                  {
-                        "name": "Power Target",
-                        "value": "2 kW / 48 V / 42 A"
-                  },
-                  {
-                        "name": "Topology",
-                        "value": "Three-Phase Half-Bridge Inverter"
-                  },
-                  {
-                        "name": "Controller",
-                        "value": "STM32F446RET6"
-                  }
-            ],
-            "overview": "<p>The Vol.2 motor driver system was designed as a second-generation BLDC driver architecture composed of a high-current power board, a modular control board, and a regulator board. The goal was to manage motor direction, speed, current, and safety states more reliably while reducing the noise, measurement, thermal, and switching issues observed in earlier revisions.</p><p>The power board includes the MOSFET driver stage, three-phase inverter, DC bus capacitors, Hall-effect current sensors, power input terminals, and motor phase outputs. The control board uses an STM32F446RET6 microcontroller to generate PWM signals from position, voltage, and current feedback.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/blok-semasi.png' alt='Vol.2 motor driver block diagram'><figcaption>Figure 1. General block diagram of the Vol.2 motor driver system.</figcaption></figure></div>",
-            "architecture": "<h4>4.1. Circuit Design</h4><p>The driver was designed around 48 V nominal supply and 40 A continuous current for a 2 kW target. The power stage was dimensioned with transient operation in mind, including startup and sudden load conditions.</p><h4>Power Board and Topology</h4><p>The design uses a three-phase half-bridge inverter topology. This structure allows independent control of the A, B, and C motor phases and is suitable for six-step trapezoidal BLDC commutation.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/topoloji.png' alt='Three-phase half-bridge topology'><figcaption>Figure 2. Three-phase half-bridge inverter topology used in the power board.</figcaption></figure></div><h4>Switching Device and Gate Driver</h4><p>FDB0260N1007L N-channel MOSFETs were selected for their 100 V voltage rating, high current capability, low on-resistance, and D2PAK-7 package. Two MOSFETs are used in parallel at each switching position to distribute current and thermal load.</p><p>The UCC21520DWR isolated gate driver was selected for high-side/low-side drive capability, high source/sink current, programmable dead time, and robust switching behavior.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/kapi-surucu.png' alt='UCC21520DWR gate driver schematic'><figcaption>Figure 3. UCC21520DWR-based MOSFET gate driver circuit.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/r1se0512.png' alt='Isolated DC-DC driver supply'><figcaption>Figure 4. Isolated DC-DC converter used for the gate-driver supply.</figcaption></figure></div><h4>DC Bus, Decoupling, and Current Measurement</h4><p>The DC bus reduces high-frequency current ripple, limits voltage ripple, and helps suppress parasitic effects caused by high dv/dt and di/dt switching. A total of 4230 uF bulk capacitance was created using nine 470 uF capacitors.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/kuplaj-kapasitorleri.png' alt='MOSFET decoupling capacitors'><figcaption>Figure 5. Decoupling capacitors placed close to the MOSFET drain-source loop.</figcaption></figure></div><p>ACS758 Hall-effect current sensors replaced shunt-based measurement to avoid routing and Kelvin-connection issues from the previous design.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/akim-sensoru.png' alt='ACS758 current sensor circuit'><figcaption>Figure 6. ACS758 Hall-effect current sensor connection.</figcaption></figure></div><h4>Control and Communication</h4><p>The STM32F446RET6 control board reads sensor feedback and generates the PWM signals for six-step trapezoidal commutation. CAN and RS485 modules support vehicle communication and testing.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/kontrol-karti.png' alt='STM32 control board schematic'><figcaption>Figure 7. STM32F446RET6-based control board schematic.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/regulator-karti.png' alt='Regulator board schematic'><figcaption>Figure 8. Regulator board used in the Vol.2 driver system.</figcaption></figure></div>",
-            "subsystems": [],
-            "analysis": "<h4>Simulation Work</h4><p>The Vol.2 driver behavior was tested through MATLAB/Simulink and PSpice co-simulation. MATLAB modeled the motor parameters, commutation logic, and S-function-based driver code, while PSpice was used for MOSFET gate-drive, current/voltage sensing, and switching-loss checks.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/matlab-pspice-cosim.png' alt='MATLAB and PSpice co-simulation'><figcaption>Figure 9. MATLAB-PSpice co-simulation setup.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/mosfet-surucu-devresi.png' alt='MOSFET driver simulation'><figcaption>Figure 10. PSpice simulation of the MOSFET driver stage.</figcaption></figure></div><h4>PCB Design and Production</h4><p>The design was moved from a two-layer board concept to a four-layer FR4 PCB. Separating power paths, sensitive signals, and ground planes improved EMI behavior, current distribution, and thermal balance.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/3d-bldc-on.png' alt='Power board 3D front view'><figcaption>Figure 11. Altium Designer 3D front view of the power board.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/2d-bldc.png' alt='Power board 2D PCB view'><figcaption>Figure 12. 2D PCB layout of the power board.</figcaption></figure></div><p>Before soldering, the empty boards were visually and electrically checked for broken traces, short circuits, pad alignment, and continuity. After assembly, low-voltage startup tests, gate signal observations, and ripple checks were carried out.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/pcb-bldc-on.jpg' alt='Power board empty PCB'><figcaption>Figure 13. Empty power board PCB front side.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='vol2/lehimleme-3.jpg' alt='Soldered Vol.2 driver board'><figcaption>Figure 14. Vol.2 driver board after soldering.</figcaption></figure></div><h4>Optimization and Design Trials</h4><p>The design trials stored in the Vol.2 design folder show that the board did not mature through a single layout decision; it evolved through architectural separation between the power board, STM32 control unit, and regulator board. The BLDC_2024 archive represents the high-current power-board iterations, BLDC_2024_STM_UNIT represents the standalone STM32 control-unit studies, and Regulator represents the power-stability work required to feed the driver and control electronics reliably.</p><p>This separation shows that optimization was not limited to efficiency calculations. Manufacturability, testability, fault isolation, noise immunity, and thermal management were evaluated together. Separating high-current paths from control signals, treating the regulator as an independent module, and making the control board testable on its own turned the Vol.2 architecture into a more serviceable and competition-ready platform.</p><h4>Efficiency and Comparison</h4><p>Efficiency was evaluated through MOSFET conduction, switching, Coss, DC bus capacitor, isolated DC-DC, and MLCC capacitor losses. For the 2 kW output target, the theoretical efficiency was interpreted around 97.15 percent.</p><div class='hud-table-wrap bldc-output-table'><table class='hud-benchmark-table'><thead><tr><th>Feature</th><th>Vol.1</th><th>Vol.2</th></tr></thead><tbody><tr><td>Switching Device</td><td>IXTH200N10T</td><td>FDB0260N1007L</td></tr><tr><td>Driver IC</td><td>IRS21867S</td><td>UCC21520DW</td></tr><tr><td>Controller</td><td>STM32F446RET6</td><td>STM32F446RET6</td></tr><tr><td>Protection</td><td>80 A fuse</td><td>UVLO, galvanic isolation, shoot-through protection, 60 A fuse</td></tr><tr><td>PCB</td><td>2-layer FR4</td><td>4-layer FR4</td></tr><tr><td>Power</td><td>2.5 kW / 48 V / 50 A</td><td>2 kW / 48 V / 42 A</td></tr><tr><td>Efficiency</td><td>90%</td><td>97.15%</td></tr></tbody></table></div>",
-            "achievements": "<p>The Vol.2 project produced a more modular, reliable, and manufacturable motor-driver platform for the Hidroana vehicle. Separating the power, control, and regulator boards improved testability and maintainability.</p><p>The work carried Vol.1 lessons directly into the new architecture: Hall-effect current sensing, four-layer PCB design, shorter ground loops, UCC21520-based isolated gate driving, UVLO, and shoot-through protection.</p><div class='project-output-access'><div><span class='visual-kicker'>// BILL_OF_MATERIAL</span><strong>BOM List</strong><p>The bill of materials for the power board, control board, and regulator board is available with related component documentation.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/Kartlar/BLDC%20S%C3%BCr%C3%BCc%C3%BC%20Vol2%20%C3%87%C4%B1kt%C4%B1lar/BOM%20Listesi' target='_blank' rel='noopener noreferrer'>Open BOM<i data-lucide='external-link'></i></a></div><div class='project-output-access'><div><span class='visual-kicker'>// RESEARCH_ARCHIVE</span><strong>Literature</strong><p>Technical references used for gate driving, MOSFET selection, current sensing, DC-link design, EMI, thermal analysis, snubber design, and PCB layout are archived.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/Kartlar/BLDC%20S%C3%BCr%C3%BCc%C3%BC%20Vol2%20%C3%87%C4%B1kt%C4%B1lar/Literat%C3%BCr' target='_blank' rel='noopener noreferrer'>Open Literature<i data-lucide='external-link'></i></a></div><div class='project-output-access'><div><span class='visual-kicker'>// DESIGN_FILES</span><strong>Design Files</strong><p>The accessible Vol.2 design archive is included. A note is provided in the folder for large archives that exceed GitHub's single-file limit.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/Kartlar/BLDC%20S%C3%BCr%C3%BCc%C3%BC%20Vol2%20%C3%87%C4%B1kt%C4%B1lar/Tasar%C4%B1m' target='_blank' rel='noopener noreferrer'>Open Design Files<i data-lucide='external-link'></i></a></div><div class='project-output-access'><div><span class='visual-kicker'>// SIMULATION_FILES</span><strong>Simulation Files</strong><p>Clean MATLAB/Simulink and PSpice simulation sources are available for reviewing the driver, sensing, and switching-analysis workflow.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/Kartlar/BLDC%20S%C3%BCr%C3%BCc%C3%BC%20Vol2%20%C3%87%C4%B1kt%C4%B1lar/Simulasyon' target='_blank' rel='noopener noreferrer'>Open Simulation Files<i data-lucide='external-link'></i></a></div><div class='project-output-access'><div><span class='visual-kicker'>// ALGORITHM_FILES</span><strong>Algorithm Files</strong><p>The STM32 firmware project and motor-control algorithm files are archived as the software output of the Vol.2 driver.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/Kartlar/BLDC%20S%C3%BCr%C3%BCc%C3%BC%20Vol2%20%C3%87%C4%B1kt%C4%B1lar/Algoritma' target='_blank' rel='noopener noreferrer'>Open Algorithm Files<i data-lucide='external-link'></i></a></div><div class='project-output-access'><div><span class='visual-kicker'>// MOTOR_PARAMETERS</span><strong>Motor Parameters</strong><p>This document contains the BLDC motor design data used as input for MATLAB/Simulink and PSpice modeling: the 2.5 kW / 51 V target motor, 52-pole outer-rotor structure, stator and rotor geometry, winding arrangement, phase resistance, inductances, torque constant, back-EMF constant, loss terms, and efficiency values.</p></div><a class='project-output-link' href='https://github.com/AhmetSoner/Portfolio/tree/main/Kartlar/BLDC%20S%C3%BCr%C3%BCc%C3%BC%20Vol2%20%C3%87%C4%B1kt%C4%B1lar/Motor%20Parametreleri' target='_blank' rel='noopener noreferrer'>Open Motor Parameters<i data-lucide='external-link'></i></a></div>"
+            "id": "gal-13",
+            "image": "galeri/photo-14.jpg",
+            "title": "Photo 13"
       },
       {
-            "id": "project-4",
-          "pdfFile": "bird-strike/bird-strike-project-paper.pdf",
-          "pdfTitle": "Deep Learning Based Bird Detection & Warning System Project Report (PDF)",
-            "title": "Deep Learning Based Bird Detection System for Airports (TÜBİTAK 2209-A)",
-            "category": "havacilik-ai",
-            "summary": "This TÜBİTAK 2209-A research project develops an image-based deep learning pipeline to reduce bird-strike risk around airports and runway environments. Using YOLOv8n, the system aims to detect birds in camera imagery, classify them at species level, and interpret each detection with a confidence value. The work covers dataset preparation, Roboflow-based annotation, augmentation, model training, and performance validation as an end-to-end AI application. The resulting approach can support airport early warning workflows by adding visual species-level information that radar-based systems cannot provide alone.",
-            "description": "This project was developed to reduce the impact of bird strikes on flight safety, operational continuity, and maintenance costs. It designs an image-based deep learning pipeline to complement radar-based systems, which are limited in identifying bird species, color, size, count, and single-bird behavior. While the proposal targeted a YOLOv8 and MobileNetV2 integration, the thesis phase trained and evaluated a YOLOv8n model on a Roboflow-prepared dataset using precision, recall, F1, and mAP metrics.",
-            "image": "bird-detection-airport-cover.png",
-            "detailImage": "bird-detection-airport-cover.png",
-            "tags": [
-                  "YOLOv8n",
-                  "Roboflow",
-                  "Python",
-                  "Deep Learning",
-                  "TÜBİTAK 2209-A"
-            ],
-            "specs": [
-                  {
-                        "name": "Object Detection Model",
-                        "value": "YOLOv8n"
-                  },
-                  {
-                        "name": "Application Field",
-                        "value": "Airport Flight Safety"
-                  },
-                  {
-                        "name": "Timeline",
-                        "value": "10/04/2024 - 10/09/2025"
-                  },
-                  {
-                        "name": "Support Type",
-                        "value": "TÜBİTAK 2209-A Research Project"
-                  },
-                  {
-                        "name": "Project No",
-                        "value": "1919B012323737"
-                  },
-                  {
-                        "name": "Team",
-                        "value": "Onur Can DURUKAN, Hakan HAMİTOĞLU, Elif Dila GÖNEN, Ahmet Soner GÜLEÇ"
-                  }
-            ],
-            "overview": "<p>This project is a deep learning-based bird detection system developed to reduce bird-strike risk around airports and flight paths. Supported by TÜBİTAK 2209-A, the work starts from the fact that bird strikes are not only a structural and engine-damage problem, but also a major safety, operational continuity, and maintenance-cost issue. According to the proposal and thesis, bird strikes create an annual cost exceeding 1.21 billion USD for aviation, and ICAO IBIS data reported 273,343 bird-strike events between 2016 and 2021.</p><p>The core problem is that radar-based systems remain limited in expressing bird species, color, estimated size, quantity, and individual behavior. Radar has advantages in range and weather independence, but struggles with small target discrimination, single-bird tracking, and species-level risk estimation. The proposal highlights that radar tracking performance may vary around 40-80 percent for flocks and remain around 30 percent for a single bird.</p><p>Therefore, the project does not aim to simply replace radar, but to complement it with image-based deep learning outputs. The intended system detects birds from camera imagery, interprets them at species level, and can later be combined with radar distance data to create richer warning and risk-estimation logic.</p>",
-            "scientificMerit": "<p>The original value of the project is its attempt to move the bird-strike problem beyond a simple target/no-target approach and toward visual interpretation of species, location, density, and risk. The proposal frames the research question as: how can an image-based bird recognition system be developed to reduce bird strikes? It evaluates the potential of YOLOv8 and MobileNetV2 models for bird detection and species identification in relation to aviation safety.</p><p>The initial design proposed a two-stage architecture: fast bird detection with YOLOv8, followed by species classification with a lightweight classifier such as MobileNetV2 for detections above a 50 percent confidence threshold. MobileNetV2 was considered due to its low computational cost, low memory usage, embedded/mobile suitability, and fast classification capability. In the thesis implementation, considering dataset scale and real-time requirements, YOLOv8n was selected and trained as the practical core model.</p>",
-            "architecture": "<p>The system architecture consists of data collection, data cleaning, annotation, augmentation, export to YOLOv8 format, model training, inference testing, and performance evaluation. The proposal prioritized bird species around Istanbul Airport using IGA environmental studies, FAA Wildlife Strike data, and open visual sources. In the thesis implementation, the selected classes were Seagull, Stork, Eagle, Falcon, Pigeon, Owl, and Crow.</p><p>The dataset was created on Roboflow as an object detection project named Bird_Detection. Approximately 200 images per species were uploaded, organized by species, and annotated with bounding boxes. During annotation, correct class assignment, clear object boundaries, and marking all target birds in each image were treated as core quality criteria. Since incorrect labels can directly increase false positives and false negatives, data cleaning and label consistency were emphasized.</p><p>Augmentation was applied to make the dataset more robust to field conditions. Images were rotated 90 degrees clockwise and counterclockwise, with additional random rotation between -15 and +15 degrees. Brightness was increased or decreased by 25 percent to represent different lighting conditions, blur up to 1.25x simulated low-quality camera imagery, and random noise up to 5 percent simulated sensor and environmental degradation.</p><p>The improved dataset was exported from Roboflow in YOLOv8 PyTorch format. The output structure contained train, valid, and test directories, with an approximate split of 70 percent training, 20 percent validation, and 10 percent testing. This enabled the model's generalization capability to be evaluated beyond the training data.</p><p>Model training was carried out in an Anaconda environment using Ultralytics YOLOv8 and PyTorch. A Python 3.8 environment was prepared, the ultralytics package was installed, and training was launched using the Roboflow-generated data.yaml file. The selected model was the pretrained yolov8n.pt nano model; training was structured around 100 epochs and 640x640 input images. During training, epoch, loss, mAP, and time values were monitored and the outputs were used for evaluation.</p><p>After training, the model was tested through inference on sample images. The thesis reported correct predictions with confidence values of 0.95 for stork, 0.89 for seagull, 0.80 for crow, and 0.86 for falcon. These examples show that the model could distinguish multiple bird species and produce visual detection outputs that could feed an airport early warning system.</p><h4>Artificial Intelligence Approach</h4><p>From Chapter 2 onward, the thesis frames the project as an image-based AI layer that complements traditional bird-strike mitigation methods. The system aims to detect birds, identify their species, localize them in the frame, and produce confidence values that can later support an airport warning workflow.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='bird-detection-figures/fig-yolo-detection-overview.png' alt='YOLO bird detection example'><figcaption>Figure 2.1. YOLO bird detection example.</figcaption></figure></div><p>CNN-based feature extraction was used as the conceptual foundation, while YOLO was selected because it can detect object location and class in a single pass. This makes YOLOv8n a practical candidate for real-time airport perimeter monitoring, where speed and detection sensitivity must be balanced.</p><h4>Roboflow Dataset Pipeline</h4><p>Roboflow was used to organize images, manage classes, annotate birds with bounding boxes, augment the dataset, and export it in YOLOv8 PyTorch format.</p><p>The dataset was prepared to include different species, viewpoints, poses, and backgrounds. Rotation, brightness changes, blur, and noise were applied so the model could become more robust to field-like camera and lighting conditions.</p><h4>YOLOv8 Training and Inference</h4><p>The model was trained with Ultralytics YOLOv8 and PyTorch in an Anaconda environment. The pretrained YOLOv8n model was used as a lightweight baseline suitable for real-time inference.</p><div class='project-figure-grid'><figure class='project-figure-card'><img src='bird-detection-figures/fig-falcon-inference.png' alt='Falcon inference'><figcaption>Figure 2.8. Falcon prediction with 0.86 confidence.</figcaption></figure></div><p>The model was then evaluated through inference examples and performance curves, keeping the page focused on the outputs that best explain how the system works and how well it performs.</p>",
-            "subsystems": [
-                  {
-                        "title": "Data Collection and Species Prioritization",
-                        "desc": "Bird species and risk priorities were determined using Istanbul Airport context, FAA Wildlife Strike data, and open visual datasets."
-                  },
-                  {
-                        "title": "Roboflow Annotation Pipeline",
-                        "desc": "Images were annotated in Roboflow, bounding boxes were created, and dataset cleaning and augmentation steps were applied."
-                  },
-                  {
-                        "title": "YOLOv8n Detection Model",
-                        "desc": "The lightweight YOLOv8n model was trained as the real-time deep learning engine for bird object detection."
-                  },
-                  {
-                        "title": "Warning and Integration Logic",
-                        "desc": "The image-based detection output was designed to be extended into a warning system with radar distance data, camera systems, or UAV integration."
-                  }
-            ],
-            "analysis": "<p>The thesis evaluated model performance using confusion matrix, precision-confidence, recall-confidence, precision-recall, F1 curve, label distribution, and overall training result plots. The confusion matrix showed strong separation in some species and confusion in visually similar classes. For Seagull, 99 samples were classified correctly while 6 were confused with Stork. For Falcon, 29 correct classifications were reported, while 9 samples were predicted as Pigeon and 4 as Seagull. Crow achieved 28 correct predictions with only 1 misclassification, while Pigeon had 34 correct predictions with some confusion against Seagull and Falcon.</p><p>The background class was weaker, with only 7 samples correctly identified and confusion with bird classes. This indicates that airport bird detection datasets should include not only target bird images, but also strong negative examples such as empty runway, sky, terminal surroundings, grass fields, and moving backgrounds. In an airport warning system, reducing both unnecessary false alarms and missed real bird risks is operationally important.</p><p>In the precision-confidence analysis, the model produced highly accurate outputs at high confidence levels. The average curve across classes reached 100 percent precision at 0.973 confidence. Crow performed strongly at high confidence values, while Stork and Owl were weaker at low confidence values but improved as confidence increased. This shows that the warning threshold should be selected according to the operational scenario.</p><p>In the recall-confidence analysis, the model captured positive examples better at low confidence thresholds, while recall decreased as the confidence threshold increased. The average recall level across classes reached 0.97. In a safety-critical bird-strike problem, high recall is especially valuable because missing an actual bird risk can be more dangerous than producing a false alarm.</p><p>The precision-recall curve reported high average precision values of 0.931 for Crow, 0.919 for Eagle, and 0.945 for Owl. Pigeon was weaker at 0.727. The average precision-recall value across all classes was 0.875, indicating a successful baseline while also showing that visually similar species and data imbalance require further improvement.</p><p>The F1 curve reached a maximum score of 0.78 at an optimal confidence threshold around 0.449. This point represents the most balanced operating region between precision and recall. Stronger F1 behavior in classes such as Crow, Eagle, and Falcon showed that the model can be stable for several species. Threshold optimization is therefore an important tool for adapting the warning system's sensitivity to operational needs.</p><p>In the overall training results, train/box_loss decreased from about 1.4 to 0.8, train/cls_loss decreased from about 3.5 to below 1, and train/dfl_loss decreased from about 1.7 to about 1.1. Validation losses followed a similar downward trend, suggesting that the model was not simply memorizing the training set. Precision increased from about 0.3 to above 0.8, recall improved from about 0.3 to 0.75, mAP50 reached about 0.85, and the stricter mAP50-95 metric reached about 0.60.</p><p>Overall, the thesis showed that image analysis and AI can provide a feasible complementary approach to traditional bird-strike mitigation methods. The YOLO architecture produced successful target detections, and with better cameras, larger balanced datasets, radar distance integration, and threshold optimization, the system can evolve into a lighter, cheaper, lower-power, and operationally useful airport bird warning system.</p><div class='project-figure-grid'><figure class='project-figure-card'><img src='bird-detection-figures/fig-confusion-matrix.png' alt='YOLOv8 confusion matrix'><figcaption>Figure 4.1. Class-level confusion matrix.</figcaption></figure><figure class='project-figure-card'><img src='bird-detection-figures/fig-precision-confidence.png' alt='Precision-confidence curve'><figcaption>Figure 4.2. Precision versus confidence threshold.</figcaption></figure><figure class='project-figure-card'><img src='bird-detection-figures/fig-recall-confidence.png' alt='Recall-confidence curve'><figcaption>Figure 4.3. Recall versus confidence threshold.</figcaption></figure><figure class='project-figure-card'><img src='bird-detection-figures/fig-pr-curve.png' alt='Precision-recall curve'><figcaption>Figure 4.4. Precision-recall curve.</figcaption></figure><figure class='project-figure-card'><img src='bird-detection-figures/fig-f1-curve.png' alt='F1 curve'><figcaption>Figure 4.5. F1-confidence curve.</figcaption></figure></div><p>These plots show the model behavior beyond a single accuracy number. The confusion matrix reveals class-level strengths and confusions, while confidence curves show the trade-off between reducing false alarms and avoiding missed bird detections. The PR and F1 curves summarize the operating point, while the reported training metrics show decreasing losses with improving precision, recall, and mAP values.</p>",
-            "achievements": "<p>The project was supported under the TÜBİTAK 2209-A University Students Research Projects Support Program with project number 1919B012323737. In the proposal phase, the work packages covered dataset preparation, preprocessing, model training, optimization/hyperparameter tuning, and testing; in the thesis phase, this structure was turned into a practical YOLOv8n-based detection model.</p><p>The study demonstrated how image-based AI systems can complement radar-based early warning approaches in aviation safety. Personally, the project provided experience in building data pipelines, training deep learning models, interpreting performance metrics, and approaching an aviation safety problem from an engineering perspective.</p>"
+            "id": "gal-14",
+            "image": "galeri/photo-15.jpg",
+            "title": "Photo 14"
       },
       {
-          "id": "project-5",
-          "title": "INFLOBOT: AI-Supported Inflatable Soft MRO Robot",
-          "category": "robotik",
-          "summary": "INFLOBOT is an AI-supported inflatable soft robot concept developed within Tulpar Tharros for aircraft fuel-tank and confined-space inspection. It combines illumination, visual sensing, CO2-based steering channels, oxygen support, and future defect-detection logic to reduce MRO time, technician risk, and workforce loss.",
-          "description": "Developed through the Turkish Airlines & Turkish Technic Design Hackathon and TEKNOFEST Entrepreneurship process, INFLOBOT is a bio-inspired soft robotic maintenance assistant for aircraft fuel tanks and other confined aviation structures.",
-          "image": "inflobot-figures/images.jpg",
-          "detailImage": "inflobot-figures/images.jpg",
-          "teamIds": [
-                    "team-tulpar-tharros"
-          ],
-          "tags": [
-                    "Soft Robotics",
-                    "Inflatable Robot",
-                    "MRO Aviation",
-                    "TEKNOFEST",
-                    "THY Design Hackathon"
-          ],
-          "specs": [
-                    {
-                              "name": "Organization / Team",
-                              "value": "Tulpar Tharros Aviation Society"
-                    },
-                    {
-                              "name": "Support Programs",
-                              "value": "Turkish Airlines & Turkish Technic Design Hackathon 2023 and TEKNOFEST Entrepreneurship Competition"
-                    },
-                    {
-                              "name": "Industry Context",
-                              "value": "Detailed aircraft fuel-tank inspection and confined-space MRO workflows"
-                    },
-                    {
-                              "name": "My Role",
-                              "value": "Co-founder; electrical-electronic systems, system architecture, and 3D compressor support-unit design"
-                    },
-                    {
-                              "name": "Project Team",
-                              "value": "Ahmet Soner GÜLEÇ, Özgür KURT, İltemir Taha BİNALİ, Sühan Göktuğ AYDEMİR, Bahadır SARIKARAMAN"
-                    }
-          ],
-          "overview": "<p>INFLOBOT is an AI-supported inflatable soft robot concept developed within Tulpar Tharros for aircraft fuel-tank and confined-space inspection. The project frames sustainability in aviation not only as an environmental topic, but also as a way to create safer, faster, and more efficient maintenance workflows.</p><p>Technical tours, internships, and research showed that time is a key parameter affecting base maintenance, line maintenance, and inspection processes. Fuel-tank inspection, stabilizer GVI, FPB/avionics compartment inspection, and borescope inspection were analyzed as unavoidable but time-consuming processes that can be improved rather than replaced completely.</p>",
-          "scientificMerit": "<p>The main fuel-tank maintenance problems are insufficient lighting, tank size and accessibility, ventilation, mask usage, and oxygen deficiency. Additional risks include emergency evacuation under panic or hypoxia, static/electrical arc risks, mandatory pauses, and the need for technician intervention even when autonomous systems can detect faults.</p><p>For this reason, rigid fully autonomous robots were not considered sufficient. The selected approach is a bio-inspired inflatable soft robot that can extend, shorten, and steer through pressure-controlled channels while reducing contact-related damage risks.</p>",
-          "architecture": "<h4>Fuel Tank Structure and Current Method</h4><p>Aircraft fuel tanks are divided into wing-box, center and surge tank regions. Access panels, ribs and cut-outs define where technicians and inspection tools can move, which makes visual inspection a confined-space problem rather than a simple camera task.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim4.png' alt='Aircraft fuel tank layout'><figcaption>Şekil 12. Aircraft fuel tank layout and fuel transfer paths.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim3.png' alt='Fuel tank rib and cut-out structure'><figcaption>Şekil 13. Ribs, cut-outs and fuel inlet/outlet regions inside the tank.</figcaption></figure></div><p>Current inspection requires fuel drainage, electrical isolation, ventilation, PPE usage, tank entry, and external safety support. The method is necessary, but it creates long waiting periods, ergonomic difficulty, and contact risk for sensitive cables, valves and pipes.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim2.png' alt='Technician inside a fuel tank'><figcaption>Şekil 14. Technician working inside a narrow aircraft fuel tank volume.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim7.png' alt='Fuel tank maintenance setup'><figcaption>Şekil 15. Traditional tank inspection setup with lighting, air line and safety support.</figcaption></figure></div><h4>Bio-inspired Soft Robot Decision</h4><p>The selected concept is a vine/inflatable soft robot inspired by sarcomere and spine-like structures. It extends through pressure, changes direction through differentiated channels, and adapts to confined aircraft structures with lower contact risk.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim1.png' alt='INFLOBOT module summary'><figcaption>Şekil 16. INFLOBOT module logic: oxygen support, lighting, detailed inspection, mobility and emergency support.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim9.png' alt='Soft robot extension principle'><figcaption>Şekil 17. Pressure-driven extension and eversion principle of a vine robot.</figcaption></figure></div><p>The soft body does not depend on rigid wheels or tracks. Instead, internal pressure extends the body from the tip, allowing the system to pass through tight spaces with reduced surface damage risk.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim10.png' alt='Soft robot surface tests'><figcaption>Şekil 18. Soft robot behavior on difficult surfaces and narrow gaps.</figcaption></figure></div><h4>TA-8 and TS-5 Variants</h4><p>TA-8 focuses on lighting and oxygen support, while TS-5 focuses on confined-space visual inspection through extension arms, camera/lens systems, sensors and directed control.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim8.png' alt='Camera-guided soft robot'><figcaption>Şekil 19. Camera-guided soft robot motion and target/obstacle view.</figcaption></figure></div><h4>Material, Hardware and Compressor Support Unit</h4><p>The design uses flexible TPE/TPU-like material logic, camera and sensor payloads, LED/OLED lighting, safe routing, a control interface, and a compressor support unit for pressure management.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim5.png' alt='Compressor support unit top view'><figcaption>Şekil 20. Top-view 3D model of the compressor support unit.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/Resim6.png' alt='Compressor support unit exterior'><figcaption>Şekil 21. Exterior model with operator panel and air connections.</figcaption></figure></div><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/inflobot-soft-robot-animation.gif' alt='INFLOBOT animation'><figcaption>Şekil 22. Animated concept of the INFLOBOT motion logic.</figcaption></figure></div>",
-          "subsystems": [
-                    {
-                              "title": "TA-8 Support Arm",
-                              "desc": "Main soft robotic support concept for lighting, oxygen support, and steerable extension in fuel tanks."
-                    },
-                    {
-                              "title": "TS-5 Inspection Head",
-                              "desc": "Compact camera/sensor inspection concept for wing tips, FPB, avionics compartments, and tight areas."
-                    },
-                    {
-                              "title": "CO2 Steering System",
-                              "desc": "Pneumatic actuation infrastructure that extends and steers the robot through controlled pressure channels."
-                    },
-                    {
-                              "title": "Vision and AI Layer",
-                              "desc": "Camera and sensor data layer intended for future crack, corrosion, leak, and deformation detection."
-                    }
-          ],
-          "analysis": "<p>The TEKNOFEST Entrepreneurship file positioned INFLOBOT inside the growing aircraft MRO market. It cited a global MRO market of about 85 billion USD in 2022 and a 2027 projection of about 109 billion USD, with Turkey holding around 2.3 percent of the market.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/inflobot-market-mro.png' alt='MRO market chart'><figcaption>Figure 3.1. MRO market size and categories.</figcaption></figure></div><p>The project competes indirectly with breathing devices, oxygen cylinders, borescopes, and lighting equipment. INFLOBOT's value proposition is combining movement, inspection, illumination, oxygen support, and defect-detection potential in a single platform.</p><div class='project-figure-grid inline-figure-flow'><figure class='project-figure-card'><img src='inflobot-figures/inflobot-competition-table.png' alt='INFLOBOT competitor analysis'><figcaption>Figure 3.2. Competitor comparison.</figcaption></figure></div>",
-          "achievements": "<p>INFLOBOT was presented as a finalist-level solution in the Turkish Airlines & Turkish Technic Design Hackathon and developed as an entrepreneurship-oriented product file for TEKNOFEST. Personally, it combined my aviation maintenance background with electronics, 3D design, robotic systems thinking, and AI-supported inspection concepts.</p>"
-},
-      {
-            "id": "project-6",
-            "title": "Modeling and Comparing the Performance Dataset of a Combat Aircraft Using Machine Learning Methods",
-            "category": "havacilik-ai",
-            "summary": "Conducted under the Turkish Aerospace Industries (TUSAŞ) LIFT UP Program and TÜBİTAK 2209-B Industry-Oriented Research Projects Support Program (Project No: 1999B212502693 / LIFTUP-2025-2026) for the National Combat Aircraft (KAAN) avionics navigation systems; this project performs hardware latency, memory footprint, and non-linear accuracy benchmark analyses of Cubic Interpolation, XGBoost, and Tabular Transformer (FT-Transformer) models on NVIDIA Jetson Orin Nano edge deployment targets using Aircraft Flight Manual (AFM) nomogram data digitized via U-Net CNN and OCR.",
-            "description": "In this study conducted within the TUSAŞ (Turkish Aerospace Industries) LIFT UP Industry-Oriented Graduation Project Program, traditional cubic interpolation lookup table methods used for computing critical flight performance parameters (Specific Range, Altitude, Mach Number, Fuel Flow, Drag Index) in combat aircraft were benchmarked against machine learning models (XGBoost and Tabular Transformer) in terms of non-linear accuracy, inference latency, memory footprint, and CPU utilization.",
-            "image": "kaan.jpg",
-            "tags": [
-                  "TUSAŞ LIFT UP",
-                  "KAAN",
-                  "Tabular Transformer",
-                  "XGBoost",
-                  "NVIDIA Jetson Orin Nano",
-                  "U-Net / OCR"
-            ],
-            "specs": [
-                  {"name": "Host Institution / Partner", "value": "Turkish Aerospace Industries (TUSAŞ)"},
-                  {"name": "Grant Programs", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Program"},
-                  {"name": "TÜBİTAK Project No", "value": "1999B212502693"},
-                  {"name": "TUSAŞ Project Code", "value": "LIFTUP-2025-2026-AV-06"},
-                  {"name": "Industry Advisor", "value": "Zeynel Abidin AYDOĞAN (TUSAŞ - Aerospace Eng.)"},
-                  {"name": "Academic Advisor", "value": "Assoc. Prof. Dr. Aziz KABA (ESTÜ Pilotage)"},
-                  {"name": "Project Team", "value": "Ahmet Soner GÜLEÇ (Lead), Umut ÇÖRDÜK, Ufuk ÖZKAN"},
-                  {"name": "Best Models", "value": "XGBoost (Fit Score: 81.5) & FT-Transformer"},
-                  {"name": "Inference Latency (p95)", "value": "2.30 ms (XGBoost) / 3.05 ms (FT-Transformer)"},
-                  {"name": "Target Hardware", "value": "NVIDIA Jetson Orin Nano"}
-            ],
-            "overview": "\n<strong>A. GENERAL INFORMATION & EXECUTIVE SUMMARY</strong><br>\n• <strong>Lead Applicant:</strong> Ahmet Soner GÜLEÇ (Student - Eskişehir Technical University, Avionics Engineering)<br>\n• <strong>Academic Advisor:</strong> Assoc. Prof. Dr. Aziz KABA (Eskişehir Technical University - Dept. of Pilotage)<br>\n• <strong>Industry Advisor:</strong> Zeynel Abidin AYDOĞAN (TUSAŞ - Turkish Aerospace Industries, Aerospace Eng.)<br>\n• <strong>Host Institution:</strong> Turkish Aerospace Industries (TUSAŞ) / ESTÜ Avionics Research Lab<br>\n• <strong>Grant Program:</strong> TÜBİTAK 2209-B Industry-Oriented Research Projects Support Program (2025/2nd Term)<br><br>\n\n<strong>Executive Summary:</strong><br>\nThe project aims to overcome the technical dilemma between accuracy loss and excessive hardware consumption caused by traditional Lookup Table (LUT) methods in fighter aircraft avionics using hardware-efficient XGBoost and Tabular Transformer models. The novelty lies in optimizing these models simultaneously for accuracy and resource efficiency via Particle Swarm Optimization (PSO) multi-objective algorithms.<br><br>\nNomograms of the F-18 aircraft (acting as surrogate for KAAN) are processed using MATLAB (`DigitizeGraph.m`) and Python multi-variable interpolation into a comprehensive training dataset. XGBoost and FT-Transformer models are benchmarked on NVIDIA Jetson Orin Nano and Docker simulation environments across accuracy, latency, RAM, and model size.\n",
-            "scientificMerit": "\n<strong>1. SCIENTIFIC MERIT & INNOVATIVE VALUE</strong><br><br>\n\n<strong>1.1. Objectives & Goals:</strong><br>\nFighter aircraft avionics operate under strict hardware constraints (limited CPU power and memory). This project constructs multi-dimensional datasets from AFM nomograms, developing XGBoost, Tabular Transformer, and Numerical baseline models optimized via Particle Swarm Optimization (PSO) to establish the optimal balance between maximum accuracy and minimum computational load.<br><br>\n\n<strong>1.2. Innovation & Technological Value:</strong><br>\nUnlike literature focusing solely on accuracy (RMSE), this study evaluates inference latency (ms), RAM footprint (MB), and accuracy holistically. Aligned with Turkey's 2030 National Technology Initiative in Aerospace & Defense, it enhances operational agility for domestic fighter aircraft (KAAN / TF-X) while building national avionics software expertise.\n",
-            "architecture": "\n<strong>2. METHODOLOGY & SYSTEM ARCHITECTURE</strong><br><br>\n\n<strong>2.1. Graph Digitization & Tidy Data Pipeline:</strong><br>\n• <strong>MATLAB DigitizeGraph.m Algorithm:</strong> AFM nomograms are converted to grayscale and scanned column-by-column to locate exact peak pixel paths. Smoothed and calibrated to physical units (Speed, Altitude, Weight).<br>\n• <strong>Tidy Data & Master Table:</strong> Annotated with operational metadata (Altitude=10000, Weight=40000, Engine='MIL') building a 5D structured dataset (.csv) interpolated via `scipy.interpolate.griddata`. Split into 70% Train, 15% Validation, and 15% Test sets.<br><br>\n\n<strong>2.2. Numerical Reference Baseline (Cubic Spline):</strong><br>\nMulti-variable Linear Regression and 3rd-degree Cubic Splines trained to establish a baseline score ($R^2 \\ge 0.80$).<br><br>\n\n<strong>2.3. Particle Swarm Optimization (PSO) XGBoost:</strong><br>\nXGBoost hyperparameters tuned via PSO using a multi-objective cost function:<br>\n$$\text{Minimize}\\left( W_1 \\cdot \text{RMSE} + W_2 \\cdot \text{Latency (ms)} + W_3 \\cdot \text{RAM (MB)} \right)$$<br><br>\n\n<strong>2.4. Tabular Transformer (FT-Transformer):</strong><br>\nContinuous and categorical features projected via Feature Tokenizer and `[CLS]` token through Multi-Head Self-Attention layers. Hyperparameters tuned via PSO multi-objective optimization.\n",
-            "riskManagement": "\n<strong>3. RISK MANAGEMENT & CONTINGENCY PLANS</strong><br><br>\n\n<table class='hud-benchmark-table' style='width:100%; border-collapse:collapse; margin:10px 0; border:1px solid rgba(0,240,255,0.2);'>\n  <thead style='background:rgba(0,240,255,0.1); color:var(--primary); font-family:var(--font-header); font-size:0.85rem;'>\n    <tr>\n      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2); width:40%;'>Identified Risk</th>\n      <th style='padding:8px; border:1px solid rgba(0,240,255,0.2); width:60%;'>Contingency Plan (Plan B)</th>\n    </tr>\n  </thead>\n  <tbody style='font-size:0.9rem; color:var(--text-main);'>\n    <tr>\n      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>1. AFM Data Secrecy Restriction: Inability to access fighter jet data.</td>\n      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Methodology remains identical. Open-source F-16 flight dynamics or NASA DASHlink verified datasets will be utilized.</td>\n    </tr>\n    <tr>\n      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>2. Model Underperformance: Insufficient accuracy despite PSO tuning.</td>\n      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Dataset enriched via Generative Adversarial Networks (GAN) and models retrained.</td>\n    </tr>\n    <tr>\n      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1); font-weight:bold;'>3. Hardware Incompatibility / OOM: Execution crashes or RAM overflows.</td>\n      <td style='padding:8px; border:1px solid rgba(0,240,255,0.1);'>Docker containerization (<code>--memory='512m'</code>, <code>--cpus='0.5'</code>) used to virtually simulate hardware limits.</td>\n    </tr>\n  </tbody>\n</table>\n",
-            "subsystems": [
-                  {
-                        "title": "U-Net & OCR Digitization Pipeline",
-                        "desc": "Pixel-level curve segmentation via U-Net and numerical axis parsing via OCR producing master datasets within a 2% error threshold."
-                  },
-                  {
-                        "title": "Cubic Interpolation Engine",
-                        "desc": "Deterministic, explainable, and derivative-continuous 3rd-degree spline lookup table reference infrastructure."
-                  },
-                  {
-                        "title": "XGBoost Regression Model",
-                        "desc": "Primary deployment model producing top accuracy (RMSE: 0.003468, MAE: 0.001372, MAPE: 1.560%, R² > 0.99) operating at 2.30 ms p95 latency."
-                  },
-                  {
-                        "title": "FT-Transformer Deep Architecture",
-                        "desc": "Advanced tabular deep learning model projecting continuous and categorical inputs into a shared token space using Self-Attention mechanisms."
-                  },
-                  {
-                        "title": "NVIDIA Jetson Orin Nano Benchmark Suite",
-                        "desc": "Hardware-aware benchmarking measuring p50/p95 inference latency, Peak RSS RAM memory footprint, and CPU load on the NVIDIA Jetson Orin Nano target environment."
-                  }
-            ],
-            "analysis": "NVIDIA Jetson Orin Nano Target Hardware Benchmark Analysis:\n\n• XGBoost: RMSE = 0.003468, MAE = 0.001372, MAPE = 1.560% | p95 Latency = 2.30 ms | Peak RAM = 185.2 MiB | Integrated Fit Score = 81.5 (TOP SCORE)\n• FT-Transformer: RMSE = 0.003671, MAE = 0.002044, MAPE = 2.888% | p95 Latency = 3.05 ms | Model Size = 0.42 MB | Peak RAM = 482.1 MiB | Fit Score = 77.6\n• Cubic Interpolation: p95 Latency = 6.78 ms | Peak RAM = 166.5 MiB (Lowest RAM) | CPU Avg = 355% | Fit Score = 74.0",
-            "achievements": "Supported under TUSAŞ LIFT UP 2025-2026 Program; successfully presented to Industry Advisor Zeynel Abidin AYDOĞAN (TUSAŞ) and Academic Advisor Dr. Aziz KABA (ESTÜ Pilotage). Published as paper & proceedings, directly advancing national avionics software capabilities."
-      }
-],
-    gallery: [
-      {
-            "id": "gal-01",
-            "image": "galeri/field-team-01.jpg",
-            "title": "Hidroana Field & Competition Operations",
-            "desc": "Trackside preparations, electrical safety audits, and telemetry data verification prior to Shell Eco-marathon and TEKNOFEST competitions.",
-            "category": "saha"
+            "id": "gal-15",
+            "image": "galeri/photo-16.jpg",
+            "title": "Photo 15"
       },
       {
-            "id": "gal-02",
-            "image": "galeri/bldc-vol1-3d.jpg",
-            "title": "48V / 50A BLDC Motor Driver Vol.1 (3D PCB)",
-            "desc": "Altium Designer 3D component and trace layout view of the STM32F446RET6-based 2.5 kW three-phase motor driver board.",
-            "category": "donanim"
+            "id": "gal-16",
+            "image": "galeri/photo-17.jpg",
+            "title": "Photo 16"
       },
       {
-            "id": "gal-03",
-            "image": "galeri/bldc-vol1-proto.jpg",
-            "title": "Motor Driver Prototype Board Production",
-            "desc": "First prototype driver board manufactured for hardware evaluation and oscilloscope analysis of MOSFET gate switching signals.",
-            "category": "donanim"
+            "id": "gal-17",
+            "image": "galeri/photo-18.jpg",
+            "title": "Photo 17"
       },
       {
-            "id": "gal-04",
-            "image": "galeri/bldc-vol1-test.jpg",
-            "title": "BLDC Motor Load & Frequency Test Bench",
-            "desc": "Verification of motor operating characteristics and Hall-sensor feedback signals under nominal load with prototype MCU controller.",
-            "category": "test"
+            "id": "gal-18",
+            "image": "galeri/photo-19.jpg",
+            "title": "Photo 18"
       },
       {
-            "id": "gal-05",
-            "image": "galeri/bldc-vol1-thermal.jpg",
-            "title": "Thermal Management & Enclosure Design",
-            "desc": "IP-protected and vibration-resistant hardware enclosure integration measuring 12x25x25 cm with aluminum heat sinks.",
-            "category": "tasarim"
+            "id": "gal-19",
+            "image": "galeri/photo-20.jpg",
+            "title": "Photo 19"
       },
       {
-            "id": "gal-06",
-            "image": "galeri/bldc-vol2-modular.jpg",
-            "title": "Vol.2 Modular Power Board Design",
-            "desc": "4-layer PCB architecture with UCC21520 isolated gate drive, optimized DC-link capacitor bank, and heavy copper poured traces.",
-            "category": "donanim"
+            "id": "gal-20",
+            "image": "galeri/photo-21.jpg",
+            "title": "Photo 20"
       },
       {
-            "id": "gal-07",
-            "image": "galeri/bldc-vol2-mcu.jpg",
-            "title": "Vol.2 Embedded Controller Board",
-            "desc": "CAN / RS485 in-vehicle communication interfaces, SPI-based INA229 telemetry sensing, and STM32 microcontroller stage.",
-            "category": "donanim"
+            "id": "gal-21",
+            "image": "galeri/photo-22.jpg",
+            "title": "Photo 21"
       },
       {
-            "id": "gal-08",
-            "image": "galeri/imd-isolation.jpg",
-            "title": "Insulation Monitoring Device (IMD) Architecture",
-            "desc": "Galvanically isolated AD8216 + AMC1311 differential sensing front-end and chassis safety monitor on 48 V DC vehicle power rail.",
-            "category": "sistem"
+            "id": "gal-22",
+            "image": "galeri/photo-23.jpg",
+            "title": "Photo 22"
       },
       {
-            "id": "gal-09",
-            "image": "galeri/inflobot-proto.jpg",
-            "title": "INFLOBOT Inflatable MRO Robot Prototype",
-            "desc": "Confined-space Non-Destructive Testing (NDT) autonomous inspection robot system prototype developed at Tulpar Tharros.",
-            "category": "robotik"
+            "id": "gal-23",
+            "image": "galeri/photo-24.jpg",
+            "title": "Photo 23"
+      },
+      {
+            "id": "gal-24",
+            "image": "galeri/photo-25.jpg",
+            "title": "Photo 24"
+      },
+      {
+            "id": "gal-25",
+            "image": "galeri/photo-26.jpg",
+            "title": "Photo 25"
+      },
+      {
+            "id": "gal-26",
+            "image": "galeri/photo-27.jpg",
+            "title": "Photo 26"
+      },
+      {
+            "id": "gal-27",
+            "image": "galeri/photo-28.jpg",
+            "title": "Photo 27"
+      },
+      {
+            "id": "gal-28",
+            "image": "galeri/photo-29.jpg",
+            "title": "Photo 28"
+      },
+      {
+            "id": "gal-29",
+            "image": "galeri/photo-30.jpg",
+            "title": "Photo 29"
+      },
+      {
+            "id": "gal-30",
+            "image": "galeri/photo-31.jpg",
+            "title": "Photo 30"
+      },
+      {
+            "id": "gal-31",
+            "image": "galeri/photo-32.jpg",
+            "title": "Photo 31"
+      },
+      {
+            "id": "gal-32",
+            "image": "galeri/photo-33.jpg",
+            "title": "Photo 32"
+      },
+      {
+            "id": "gal-33",
+            "image": "galeri/photo-34.jpg",
+            "title": "Photo 33"
       }
 ]
   }
