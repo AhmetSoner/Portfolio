@@ -121,6 +121,7 @@ function initPortfolioData() {
     const trData = PORTFOLIO_DATA['tr'] || {};
     const currentData = PORTFOLIO_DATA[currentLang] || trData;
     const profile = currentData.profile || trData.profile || {};
+    const isEn = currentLang === 'en';
 
     // Profil Bilgileri
     if (document.getElementById("hero-name")) document.getElementById("hero-name").textContent = profile.name || "";
