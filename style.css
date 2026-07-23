@@ -1355,7 +1355,115 @@ section {
     color: var(--primary);
 }
 
-/* Dynamic Gallery System */
+/* Single-Row Gallery Carousel */
+.gallery-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.gallery-carousel-track-wrap {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 5px;
+}
+
+.gallery-carousel-track {
+    display: flex !important;
+    grid-template-columns: none !important;
+    gap: 22px;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+}
+
+.gallery-carousel-track .gallery-card {
+    flex: 0 0 calc(33.333% - 15px);
+    min-width: 290px;
+}
+
+@media (max-width: 1024px) {
+    .gallery-carousel-track .gallery-card {
+        flex: 0 0 calc(50% - 11px);
+    }
+}
+
+@media (max-width: 640px) {
+    .gallery-carousel-track .gallery-card {
+        flex: 0 0 100%;
+    }
+}
+
+/* Carousel Control Buttons (Left & Right Arrows) */
+.carousel-control-btn {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: rgba(5, 12, 24, 0.85);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
+    border-radius: 4px;
+}
+
+.carousel-control-btn:hover {
+    background: var(--primary);
+    color: var(--bg-dark);
+    box-shadow: 0 0 25px var(--primary-glow);
+    transform: scale(1.06);
+}
+
+.carousel-control-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    border-color: rgba(0, 240, 255, 0.2);
+    color: rgba(0, 240, 255, 0.3);
+    box-shadow: none;
+    transform: none;
+}
+
+.carousel-control-btn i {
+    width: 26px;
+    height: 26px;
+    stroke-width: 2.5;
+}
+
+/* Dots Indicator */
+.carousel-dots-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--primary);
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.carousel-dot.active {
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    width: 24px;
+    border-radius: 5px;
+}
+
+/* Dynamic Gallery Cards */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

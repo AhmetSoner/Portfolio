@@ -529,14 +529,18 @@ function renderProjects(projectsList) {
    ========================================================================== */
 let currentGalleryIndex = 0;
 let currentGalleryList = [];
+let currentCarouselPosition = 0;
 
 function renderGallery(galleryList) {
-    const container = document.querySelector(".gallery-grid");
-    if (!container) return;
-    container.innerHTML = "";
+    const track = document.getElementById("gallery-carousel-track");
+    const dotsContainer = document.getElementById("gallery-dots-indicator");
+
+    if (!track) return;
+    track.innerHTML = "";
+    if (dotsContainer) dotsContainer.innerHTML = "";
 
     if (!galleryList || galleryList.length === 0) {
-        container.innerHTML = `
+        track.innerHTML = `
             <div class="gallery-placeholder">
                 <i data-lucide="image-plus"></i>
                 <h3 data-translate="gallery_empty_title">${currentLang === 'tr' ? 'FOTOĞRAFLAR YAKINDA EKLENECEK' : 'PHOTOS WILL BE ADDED SOON'}</h3>
@@ -571,12 +575,100 @@ function renderGallery(galleryList) {
             openGalleryModal(item, galleryList, index);
         });
 
-        container.appendChild(card);
+        track.appendChild(card);
     });
+
+    currentCarouselPosition = 0;
+    setupGalleryCarouselControls(galleryList.length);
 
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
+}
+
+function setupGalleryCarouselControls(totalItems) {
+    const track = document.getElementById("gallery-carousel-track");
+    const prevBtn = document.getElementById("gallery-carousel-prev");
+    const nextBtn = document.getElementById("gallery-carousel-next");
+    const dotsContainer = document.getElementById("gallery-dots-indicator");
+
+    if (!track || !prevBtn || !nextBtn) return;
+
+    function getItemsPerPage() {
+        const w = window.innerWidth;
+        if (w <= 640) return 1;
+        if (w <= 1024) return 2;
+        return 3;
+    }
+
+    function maxPosition() {
+        const perPage = getItemsPerPage();
+        return Math.max(0, totalItems - perPage);
+    }
+
+    function updateCarouselState() {
+        const card = track.querySelector(".gallery-card");
+        if (!card) return;
+
+        const gap = 22;
+        const cardWidth = card.offsetWidth + gap;
+        const offset = currentCarouselPosition * cardWidth;
+
+        track.style.transform = `translateX(-${offset}px)`;
+
+        prevBtn.disabled = currentCarouselPosition <= 0;
+        nextBtn.disabled = currentCarouselPosition >= maxPosition();
+
+        if (dotsContainer) {
+            const dots = dotsContainer.querySelectorAll(".carousel-dot");
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle("active", idx === currentCarouselPosition);
+            });
+        }
+    }
+
+    if (dotsContainer) {
+        dotsContainer.innerHTML = "";
+        const pages = maxPosition() + 1;
+        for (let i = 0; i < pages; i++) {
+            const dot = document.createElement("button");
+            dot.className = `carousel-dot ${i === 0 ? 'active' : ''}`;
+            dot.setAttribute("aria-label", `Fotoğraf ${i + 1}`);
+            dot.addEventListener("click", () => {
+                currentCarouselPosition = i;
+                updateCarouselState();
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    const newPrevBtn = prevBtn.cloneNode(true);
+    const newNextBtn = nextBtn.cloneNode(true);
+    prevBtn.parentNode.replaceChild(newPrevBtn, prevBtn);
+    nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
+
+    newPrevBtn.addEventListener("click", () => {
+        if (currentCarouselPosition > 0) {
+            currentCarouselPosition--;
+            updateCarouselState();
+        }
+    });
+
+    newNextBtn.addEventListener("click", () => {
+        if (currentCarouselPosition < maxPosition()) {
+            currentCarouselPosition++;
+            updateCarouselState();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (currentCarouselPosition > maxPosition()) {
+            currentCarouselPosition = maxPosition();
+        }
+        updateCarouselState();
+    });
+
+    updateCarouselState();
 }
 
 function openGalleryModal(item, fullList, index) {
