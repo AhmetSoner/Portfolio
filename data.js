@@ -108,7 +108,7 @@ const PORTFOLIO_DATA = {
         ],
         contributions: [
           "DORLION ve MIDAS araçlarının elektrik-elektronik alt sistem tasarım ve entegrasyonu",
-          "Güç elektroniği, dijital/analog sistem tasarımı ve donanım optimizasyonu çalışmaları",
+          "Güç elektroniği, dijital/analog sistem tasarımı ve donanım optimizasyonu",
           "PCB tasarımı, devre simülasyonu, termal analiz ve yarışma saha entegrasyonu"
         ],
         outcomes: ["2023 Uluslararası Elektrikli Araç Yarışları Hidromobil İkinciliği", "2023 TEKNOFEST Uluslararası Elektrikli Araç Yarışları Özel Jüri Ödülü", "Shell Eco-Marathon Finalisti"],
