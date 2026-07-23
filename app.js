@@ -150,7 +150,7 @@ function initPortfolioData() {
             
             const isEn = currentLang === 'en';
             const pdfFile = isEn ? 'Transkript/Transkript-Ingilizce.pdf' : 'Transkript/Transkript-Turkce.pdf';
-            const pdfText = isEn ? 'Academic Transcript (PDF)' : 'Transkript Belgesi (PDF)';
+            const pdfText = isEn ? 'Academic Transcript' : 'Transkript Belgesi';
 
             const transcriptHtml = `
                 <div class="transcript-files">
