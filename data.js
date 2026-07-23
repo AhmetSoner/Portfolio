@@ -1385,7 +1385,7 @@ const UI_TRANSLATIONS = {
     stat_birth: "DATE OF BIRTH:",
     stat_birth_val: "20 September 2001",
     stat_location: "LOCATION:",
-    stat_location_val: "Kocaeli, Turkey",
+    stat_location_val: "Kocaeli, Türkiye",
     stat_lang: "FOREIGN LANG:",
     stat_lang_val: "English",
     btn_cv: "DOWNLOAD CV",
