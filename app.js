@@ -185,7 +185,6 @@ function initPortfolioData() {
             <div class="corner-b-r"></div>
             <div class="skill-meta">
                 <span class="skill-name">${skill.name}</span>
-                <span class="skill-val-pct">${skill.level}%</span>
             </div>
             <div class="skill-progress-outer">
                 <div class="skill-progress-inner" data-level="${skill.level}"></div>
