@@ -432,7 +432,9 @@ function initSoundSystem() {
             toggleBtn.innerHTML = '<i data-lucide="volume-x"></i>';
             toggleBtn.classList.remove("active");
         }
-        lucide.createIcons(); // Yeniden ikon oluştur
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons(); // Yeniden ikon oluştur
+        }
     });
 
     // Düğmelere ve kartlara hover/click sesleri ata
@@ -559,7 +561,9 @@ function renderProjects(projectsList) {
     });
     
     // Lucide ikonlarını kartlar için yükle
-    lucide.createIcons();
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
 }
 
 /* ==========================================================================
