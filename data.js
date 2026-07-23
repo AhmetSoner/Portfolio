@@ -744,7 +744,7 @@ const UI_TRANSLATIONS = {
     filter_aviation_ai: "AVIATION & AI",
     filter_robotics: "ROBOTICS & AUTOMATION",
     stat_status: "STATUS:",
-    stat_status_val: "READY FOR DUTY",
+    stat_status_val: "OPEN TO CAREER OPPORTUNITIES",
     stat_role: "ROLE:",
     stat_role_val: "AIRCRAFT MAINT. ENG.",
     stat_birth: "DATE OF BIRTH:",
