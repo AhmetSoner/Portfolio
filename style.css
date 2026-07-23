@@ -945,9 +945,7 @@ section {
 }
 
 .skill-val-pct {
-    font-family: var(--font-header);
-    font-size: 0.85rem;
-    color: var(--accent);
+    display: none !important;
 }
 
 .skill-progress-outer {
