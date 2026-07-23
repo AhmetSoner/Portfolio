@@ -34,10 +34,10 @@ function loadProjectData(lang, projectId) {
     document.getElementById("project-status-tag").textContent = `// FILE_ID: ${proj.id.toUpperCase()} // STATUS: ACTIVE_DATA`;
 
     // Kategori Rozeti
-    const catName = proj.category === 'donanim' ? (lang === 'tr' ? 'DONANIM TASARIMI' : 'HARDWARE DESIGN') : 
-                    proj.category === 'gomulu' ? (lang === 'tr' ? 'GÖMÜLÜ SİSTEMLER' : 'EMBEDDED SYSTEMS') : 
-                    proj.category === 'arge' ? (lang === 'tr' ? 'AR-GE PROJESİ' : 'R&D PROJECT') :
-                    (lang === 'tr' ? 'YAZILIM & SİMÜLASYON' : 'SOFTWARE & SIMULATION');
+    const catName = proj.category === 'guc-elektronigi' ? (lang === 'tr' ? 'GÜÇ ELEKTRONİĞİ' : 'POWER ELECTRONICS') : 
+                    proj.category === 'havacilik-ai' ? (lang === 'tr' ? 'HAVACILIK & YAPAY ZEKA' : 'AVIATION & AI') : 
+                    proj.category === 'robotik' ? (lang === 'tr' ? 'ROBOTİK & OTOMASYON' : 'ROBOTICS & AUTOMATION') :
+                    (lang === 'tr' ? 'MÜHENDİSLİK' : 'ENGINEERING');
     document.getElementById("project-category").textContent = catName;
 
     // Başlık, Özet ve Görsel
@@ -146,9 +146,9 @@ function renderRelatedProjects(lang, currentId) {
         card.className = "project-card";
         card.dataset.category = proj.category;
         
-        const catName = proj.category === 'donanim' ? (lang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
-                        proj.category === 'gomulu' ? (lang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
-                        proj.category === 'arge' ? (lang === 'tr' ? 'AR-GE' : 'R&D') :
+        const catName = proj.category === 'guc-elektronigi' ? (lang === 'tr' ? 'GÜÇ ELEKTRONİĞİ' : 'POWER ELECTRONICS') : 
+                        proj.category === 'havacilik-ai' ? (lang === 'tr' ? 'HAVACILIK & YAPAY ZEKA' : 'AVIATION & AI') : 
+                        proj.category === 'robotik' ? (lang === 'tr' ? 'ROBOTİK & OTOMASYON' : 'ROBOTICS & AUTOMATION') :
                         (lang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
 
         card.addEventListener("click", () => {

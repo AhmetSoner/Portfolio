@@ -490,10 +490,10 @@ function renderProjects(projectsList) {
             window.location.href = `project.html?id=${proj.id}`;
         });
 
-        const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
-                        proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
-                        proj.category === 'arge' ? (currentLang === 'tr' ? 'AR-GE' : 'R&D') :
-                        (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
+        const catName = proj.category === 'guc-elektronigi' ? (currentLang === 'tr' ? 'GÜÇ ELEKTRONİĞİ' : 'POWER ELECTRONICS') : 
+                        proj.category === 'havacilik-ai' ? (currentLang === 'tr' ? 'HAVACILIK & YAPAY ZEKA' : 'AVIATION & AI') : 
+                        proj.category === 'robotik' ? (currentLang === 'tr' ? 'ROBOTİK & OTOMASYON' : 'ROBOTICS & AUTOMATION') :
+                        (currentLang === 'tr' ? 'MÜHENDİSLİK' : 'ENGINEERING');
 
         card.innerHTML = `
             <div class="corner-t-l"></div>
@@ -556,10 +556,10 @@ function openProjectModal(proj) {
     
     document.getElementById("modal-img").src = proj.image;
     
-    const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
-                    proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
-                    proj.category === 'arge' ? (currentLang === 'tr' ? 'AR-GE' : 'R&D') :
-                    (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
+    const catName = proj.category === 'guc-elektronigi' ? (currentLang === 'tr' ? 'GÜÇ ELEKTRONİĞİ' : 'POWER ELECTRONICS') : 
+                    proj.category === 'havacilik-ai' ? (currentLang === 'tr' ? 'HAVACILIK & YAPAY ZEKA' : 'AVIATION & AI') : 
+                    proj.category === 'robotik' ? (currentLang === 'tr' ? 'ROBOTİK & OTOMASYON' : 'ROBOTICS & AUTOMATION') :
+                    (currentLang === 'tr' ? 'MÜHENDİSLİK' : 'ENGINEERING');
                     
     document.getElementById("modal-cat").textContent = catName;
     document.getElementById("modal-title").textContent = proj.title;
