@@ -105,13 +105,13 @@ function renderTeamProjects(lang, team) {
             window.location.href = `project.html?id=${project.id}`;
         });
 
-        const categoryName = project.category === "donanim"
-            ? (lang === "tr" ? "DONANIM" : "HARDWARE")
-            : project.category === "gomulu"
-                ? (lang === "tr" ? "GÖMÜLÜ" : "EMBEDDED")
-                : project.category === "arge"
-                    ? (lang === "tr" ? "AR-GE" : "R&D")
-                    : (lang === "tr" ? "YAZILIM" : "SOFTWARE");
+        const categoryName = project.category === "guc-elektronigi"
+            ? (lang === "tr" ? "GÜÇ ELEKTRONİĞİ" : "POWER ELECTRONICS")
+            : project.category === "havacilik-ai"
+                ? (lang === "tr" ? "HAVACILIK & YAPAY ZEKA" : "AVIATION & AI")
+                : project.category === "robotik"
+                    ? (lang === "tr" ? "ROBOTİK & OTOMASYON" : "ROBOTICS & AUTOMATION")
+                    : (lang === "tr" ? "MÜHENDİSLİK" : "ENGINEERING");
 
         card.innerHTML = `
             <div class="corner-t-l"></div>
