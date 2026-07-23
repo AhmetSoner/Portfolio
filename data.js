@@ -634,7 +634,158 @@ const PORTFOLIO_DATA = {
             "title": "Photo 31"
       }
 ]
-  }
+  },
+  en: {
+    "profile": {
+        "name": "Ahmet Soner Güleç",
+        "title": "Aircraft Maintenance Engineer",
+        "subTitle": "Avionics Systems | Aircraft Maintenance | Electronic System & Hardware Design",
+        "about": "I graduated from Eskişehir Technical University, Department of Aviation Electrical and Electronics with the title of Aircraft Maintenance Engineer / Avionics. In line with my interest in engineering and technology, I actively participate in projects that combine theoretical knowledge with practical applications. During my internship and training processes abroad, I focused on avionics system maintenance and assembly procedures of aircraft, as well as mechanical design, PCB hardware design, and simulation/analysis studies.\n\nWhile developing AI-supported aviation inspection robot projects within Tulpar Tharros, of which I am a co-founder; I took active roles in electrical-electronic subsystem design, integration, and power electronics in the Hidroana team, which produces alternative energy vehicles, obtaining ranks in national/international competitions such as TEKNOFEST and Shell Eco-marathon.\n\nIn addition, under the Aviation AI Research Society, which I founded, I managed TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and 2209-B projects focusing on autonomous systems, flight control software, and AI integration. With this theoretical background, field experience, and interdisciplinary engineering competencies, I am a determined Aircraft Maintenance Engineer walking towards the future with the goal of producing innovative and high-value-added solutions in aviation and space technologies.",
+        "avatar": "Foto.jpg",
+        "socials": {
+            "github": "https://github.com/AhmetSoner",
+            "linkedin": "https://www.linkedin.com/in/ahmet-soner-gulec",
+            "email": "mailto:ahmetsonergulec@hotmail.com",
+            "phone": "+90 553 715 41 69"
+        }
+    },
+    "skills": [
+        {
+            "name": "MATLAB / Simulink",
+            "category": "Software & Simulation",
+            "level": 80
+        },
+        {
+            "name": "Python / Embedded C",
+            "category": "Software & Simulation",
+            "level": 50
+        },
+        {
+            "name": "PSIM",
+            "category": "Software & Simulation",
+            "level": 80
+        },
+        {
+            "name": "Altium Designer",
+            "category": "Hardware & Design",
+            "level": 90
+        },
+        {
+            "name": "LTspice / PSpice",
+            "category": "Hardware & Design",
+            "level": 90
+        },
+        {
+            "name": "Ansys",
+            "category": "Hardware & Design",
+            "level": 60
+        },
+        {
+            "name": "SolidWorks",
+            "category": "Aviation & Analysis",
+            "level": 60
+        },
+        {
+            "name": "COMSOL Multiphysics",
+            "category": "Aviation & Analysis",
+            "level": 60
+        },
+        {
+            "name": "XFLR5",
+            "category": "Aviation & Analysis",
+            "level": 50
+        }
+    ],
+    "projectTeams": [
+        {
+            "id": "team-aviation-ai",
+            "name": "Aviation AI Research Society",
+            "role": "Founder & Lead Researcher",
+            "period": "2024 - Present",
+            "summary": "A research society founded to execute R&D projects combining artificial intelligence, autonomous systems, and flight control software in aviation.",
+            "details": "Under the Aviation AI Research Society (HAYA), we manage industry-oriented research projects supported by TUSAŞ LIFT UP, TÜBİTAK 2209-A, and TÜBİTAK 2209-B. Our work focuses on flight data processing, AI-assisted flight performance modeling, airport bird strike detection, and autonomous drone inspection.",
+            "logo": "team-haya-logo.jpg",
+            "cover": "team-haya-cover.jpg",
+            "members": [
+                "Ahmet Soner GÜLEÇ",
+                "Umut ÇÖRDÜK",
+                "Ufuk ÖZKAN",
+                "Onur Can DURUKAN",
+                "Hakan HAMİTOĞLU",
+                "Elif Dila GÖNEN"
+            ],
+            "achievements": [
+                "TUSAŞ LIFT UP 2025-2026 Industry-Oriented Project Support",
+                "TÜBİTAK 2209-B Industry-Oriented Research Grant",
+                "TÜBİTAK 2209-A University Student Research Grant"
+            ]
+        },
+        {
+            "id": "team-hidroana",
+            "name": "Hidroana Hydrogen Vehicle Team",
+            "role": "Electrical-Electronics Subsystem & Power Electronics Engineer",
+            "period": "2021 - 2024",
+            "summary": "An alternative energy vehicle team developing hydrogen-fueled, high-efficiency vehicles for international engineering competitions such as Shell Eco-marathon and TEKNOFEST.",
+            "details": "Responsible for 3-phase BLDC motor driver board development (Vol.1 & Vol.2), insulation monitoring device (IMD) hardware, telemetry system integration, and vehicle electrical safety inspection according to international Shell Eco-marathon Technical Inspection rules.",
+            "logo": "team-hidroana-logo.jpg",
+            "cover": "team-hidroana-cover.jpg",
+            "members": [
+                "Ahmet Soner GÜLEÇ",
+                "Hidroana Project Team Members"
+            ],
+            "achievements": [
+                "Shell Eco-marathon Global Finalist",
+                "TEKNOFEST Efficiency Challenge Hydrogen Category Ranks",
+                "Custom 48 V / 50 A BLDC Motor Driver Hardware Implementation"
+            ]
+        },
+        {
+            "id": "team-tulpar-tharros",
+            "name": "Tulpar Tharros MRO Robotics Team",
+            "role": "Co-founder & Electronics Hardware Lead",
+            "period": "2023 - Present",
+            "summary": "A technology team developing soft robotics and AI-supported autonomous inspection systems for aviation Maintenance, Repair, and Overhaul (MRO) processes.",
+            "details": "Co-founded to solve confined-space aircraft maintenance challenges (such as fuel tank NDT inspection). Developed the INFLOBOT inflatable soft robot prototype, earning awards at the THY & Turkish Technic Design Hackathon and TEKNOFEST Entrepreneurship Competition.",
+            "logo": "team-tulpar-logo.jpg",
+            "cover": "team-tulpar-cover.jpg",
+            "members": [
+                "Ahmet Soner GÜLEÇ",
+                "Özgür KURT",
+                "İltemir Taha BİNALİ",
+                "Sühan Göktuğ AYDEMİR",
+                "Bahadır SARIKARAMAN"
+            ],
+            "achievements": [
+                "Turkish Airlines & Turkish Technic Design Hackathon 2023 Finalist",
+                "TEKNOFEST Entrepreneurship Competition Finalist",
+                "Confined-space Soft Robotics MRO Prototype"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Eskişehir Technical University",
+            "degree": "Aircraft Maintenance Engineer / Avionics",
+            "duration": "September 2020 - Graduated",
+            "gpa": "3.1",
+            "details": "Main courses shaping my theoretical background and practical competencies during my undergraduate education include:<br><br>• Gas Turbine Engines<br>• Modern Avionics Systems<br>• Microprocessors<br>• Electricity and Electronics<br>• Electrical Machines<br>• Automatic Flight Control Systems<br>• Navigation Systems<br>• Digital Data Transmission<br>• Electronic Display Systems<br>• Electromagnetic Environment<br>• Aircraft Aerodynamics<br>• Aircraft Structures and Systems<br>• Aircraft Materials<br>• Human Factors<br>• Non-Destructive Testing (NDT)<br>• Communication Systems<br><br>Additionally, through practical training at the SHY-145 approved aircraft maintenance facilities within the faculty, I gained direct field experience in maintenance, repair, and inspection procedures in accordance with aviation standards."
+        }
+    ],
+    "experience": [
+        {
+            "title": "Research Assistant",
+            "company": "Eskişehir Technical University (Eskişehir, Turkey)",
+            "duration": "October 2025 - June 2026",
+            "details": "Worked as a research assistant at the Aviation AI Research Laboratory established within Eskişehir Technical University under the İŞKUR Youth Program. Conducted research on flight control algorithms, sensor data processing, flight state interpretation, and autonomous decision-making mechanisms for UAVs and avionics systems.<br><br>Contributed to aircraft flight performance modeling using MATLAB/Simulink and Python; participated in virtual flight simulation testing, verification analysis, and technical data interpretation. Additionally, engaged in PCB design, verification, and hardware integration of electronic boards to support AI-integrated avionics flight control systems."
+        },
+        {
+            "title": "Avionics Engineering Intern",
+            "company": "Vilnius Gediminas Technical University (Vilnius, Lithuania)",
+            "duration": "October 2023 - April 2024",
+            "details": "In the first period, received hands-on technical training on non-airworthy Cessna 310, Cessna 152, and Airbus A320 aircraft, actively participating in disassembly, assembly, and installation procedures of wings, fuselage, landing gear, and flight control systems. Gained practical experience in avionics maintenance and repair.<br><br>In the second period, worked on airworthy Cessna 172S and Piper PA-34 aircraft at Kyviškės Airport (EASA Part-145 certified facility) under the supervision of EASA Part-66 licensed engineers.<br><br>In the final period, focused on UAV electronics and flight hardware design. Designed a quadrotor airframe using SolidWorks, calculating weight distribution using XFLR5. Designed custom BLDC motor driver PCBs using Altium Designer, performing PSpice and MATLAB circuit simulations. Conducted thermal dissipation analysis using COMSOL Multiphysics to evaluate semiconductor thermal behavior under flight load conditions.<div class='internship-files'><span class='internship-files-title'>Internship Documents</span><a href='Staj/Internship%20Program.pdf' target='_blank'>Internship Program</a><a href='Staj/Study%20Pages-%20October%201.pdf' target='_blank'>Study Pages - October</a><a href='Staj/Study%20Pages-%20November%202.pdf' target='_blank'>Study Pages - November</a><a href='Staj/Study%20Pages-%20December%203.pdf' target='_blank'>Study Pages - December</a><a href='Staj/Study%20Pages-%20January%204.pdf' target='_blank'>Study Pages - January</a><a href='Staj/Study%20Pages-%20Laboratory%205.pdf' target='_blank'>Study Pages - Laboratory</a></div>"
+        }
+    ]
+}
 };
 
 const UI_TRANSLATIONS = {
