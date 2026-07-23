@@ -110,37 +110,41 @@ function initPortfolioData() {
         return;
     }
 
-    const data = PORTFOLIO_DATA[currentLang];
+    const trData = PORTFOLIO_DATA['tr'] || {};
+    const currentData = PORTFOLIO_DATA[currentLang] || trData;
+    const profile = currentData.profile || trData.profile || {};
 
     // Profil Bilgileri
-    document.getElementById("hero-name").textContent = data.profile.name;
-    document.getElementById("hero-title").textContent = data.profile.title;
-    document.getElementById("hero-subtitle").textContent = data.profile.subTitle;
-    document.getElementById("profile-avatar").src = data.profile.avatar;
-    document.getElementById("profile-about").innerHTML = data.profile.about.replace(/\n/g, '<br>');
+    if (document.getElementById("hero-name")) document.getElementById("hero-name").textContent = profile.name || "";
+    if (document.getElementById("hero-title")) document.getElementById("hero-title").textContent = profile.title || "";
+    if (document.getElementById("hero-subtitle")) document.getElementById("hero-subtitle").textContent = profile.subTitle || "";
+    if (document.getElementById("profile-avatar") && profile.avatar) document.getElementById("profile-avatar").src = profile.avatar;
+    if (document.getElementById("profile-about") && profile.about) document.getElementById("profile-about").innerHTML = profile.about.replace(/\n/g, '<br>');
 
     // İletişim Bilgileri
-    if (document.getElementById("profile-card-github")) {
-        document.getElementById("profile-card-github").href = data.profile.socials.github;
-    }
-    
-    if (document.getElementById("profile-card-linkedin")) {
-        document.getElementById("profile-card-linkedin").href = data.profile.socials.linkedin;
-    }
-    
-    document.getElementById("profile-email").href = data.profile.socials.email;
-    document.getElementById("profile-email").querySelector("span").textContent = data.profile.socials.email.replace("mailto:", "");
-    
-    if (document.getElementById("profile-phone")) {
-        document.getElementById("profile-phone").href = "tel:" + data.profile.socials.phone.replace(/\s+/g, "");
-        document.getElementById("profile-phone").querySelector("span").textContent = data.profile.socials.phone;
+    if (profile.socials) {
+        if (document.getElementById("profile-card-github")) {
+            document.getElementById("profile-card-github").href = profile.socials.github || "#";
+        }
+        if (document.getElementById("profile-card-linkedin")) {
+            document.getElementById("profile-card-linkedin").href = profile.socials.linkedin || "#";
+        }
+        if (document.getElementById("profile-email")) {
+            document.getElementById("profile-email").href = profile.socials.email || "#";
+            document.getElementById("profile-email").querySelector("span").textContent = (profile.socials.email || "").replace("mailto:", "");
+        }
+        if (document.getElementById("profile-phone")) {
+            document.getElementById("profile-phone").href = "tel:" + (profile.socials.phone || "").replace(/\s+/g, "");
+            document.getElementById("profile-phone").querySelector("span").textContent = profile.socials.phone || "";
+        }
     }
 
     // Eğitim Zaman Tüneli
     const eduTimeline = document.getElementById("education-timeline");
     if (eduTimeline) {
         eduTimeline.innerHTML = "";
-        data.education.forEach(edu => {
+        const educationList = currentData.education || trData.education || [];
+        educationList.forEach(edu => {
             const node = document.createElement("div");
             node.className = "timeline-node";
             
@@ -173,50 +177,60 @@ function initPortfolioData() {
 
     // Deneyim Zaman Tüneli
     const expTimeline = document.getElementById("experience-timeline");
-    expTimeline.innerHTML = "";
-    data.experience.forEach(exp => {
-        const node = document.createElement("div");
-        node.className = "timeline-node";
-        node.innerHTML = `
-            <div class="node-header">
-                <div>
-                    <h4 class="node-title">${exp.title}</h4>
-                    <span class="node-subtitle">${exp.company}</span>
+    if (expTimeline) {
+        expTimeline.innerHTML = "";
+        const experienceList = currentData.experience || trData.experience || [];
+        experienceList.forEach(exp => {
+            const node = document.createElement("div");
+            node.className = "timeline-node";
+            node.innerHTML = `
+                <div class="node-header">
+                    <div>
+                        <h4 class="node-title">${exp.title}</h4>
+                        <span class="node-subtitle">${exp.company}</span>
+                    </div>
+                    <span class="node-date">${exp.duration}</span>
                 </div>
-                <span class="node-date">${exp.duration}</span>
-            </div>
-            <p class="node-desc">${exp.details}</p>
-        `;
-        expTimeline.appendChild(node);
-    });
+                <div class="node-desc">${exp.details}</div>
+            `;
+            expTimeline.appendChild(node);
+        });
+    }
 
     // Yetenekler Listesi
     const skillsContainer = document.getElementById("skills-container");
-    skillsContainer.innerHTML = "";
-    data.skills.forEach(skill => {
-        const card = document.createElement("div");
-        card.className = "skill-card";
-        card.innerHTML = `
-            <div class="corner-t-l"></div>
-            <div class="corner-b-r"></div>
-            <div class="skill-meta">
-                <span class="skill-name">${skill.name}</span>
-            </div>
-            <div class="skill-progress-outer">
-                <div class="skill-progress-inner" data-level="${skill.level}"></div>
-            </div>
-        `;
-        skillsContainer.appendChild(card);
-    });
+    if (skillsContainer) {
+        skillsContainer.innerHTML = "";
+        const skillsList = currentData.skills || trData.skills || [];
+        skillsList.forEach(skill => {
+            const card = document.createElement("div");
+            card.className = "skill-card";
+            card.innerHTML = `
+                <div class="corner-t-l"></div>
+                <div class="corner-b-r"></div>
+                <div class="skill-meta">
+                    <span class="skill-name">${skill.name}</span>
+                </div>
+                <div class="skill-progress-outer">
+                    <div class="skill-progress-inner" data-level="${skill.level}"></div>
+                </div>
+            `;
+            skillsContainer.appendChild(card);
+        });
+    }
 
     // Proje Takımları
-    renderProjectTeams(data.projectTeams || []);
+    renderProjectTeams(currentData.projectTeams || trData.projectTeams || []);
 
     // Projeleri Oluştur
-    renderProjects(data.projects);
+    renderProjects(currentData.projects || trData.projects || []);
 
     // Görsel Galeriyi Oluştur
-    renderGallery(data.gallery || []);
+    renderGallery(currentData.gallery || trData.gallery || []);
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
 }
 
 function renderProjectTeams(teamsList) {
