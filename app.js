@@ -21,6 +21,11 @@ function applyLanguage(lang) {
         }
     });
 
+    // CV / Resume indirme bağlantısını aktif dile göre güncelle
+    document.querySelectorAll(".cv-download-btn").forEach(btn => {
+        btn.href = (lang === 'en') ? 'Resume/Resume-Ingilizce.pdf' : 'Resume/Resume-Turkce.pdf';
+    });
+
     // Dil seçici butonların aktiflik durumunu güncelle
     document.querySelectorAll(".lang-btn").forEach(btn => {
         if (btn.getAttribute("data-lang") === lang) {
