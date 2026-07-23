@@ -21,6 +21,11 @@ function applyLanguage(lang) {
         }
     });
 
+    // CV / Resume indirme bağlantısını aktif dile göre güncelle
+    document.querySelectorAll(".cv-download-btn").forEach(btn => {
+        btn.href = (lang === 'en') ? 'Resume/Resume-Ingilizce.pdf' : 'Resume/Resume-Turkce.pdf';
+    });
+
     // Dil seçici butonların aktiflik durumunu güncelle
     document.querySelectorAll(".lang-btn").forEach(btn => {
         if (btn.getAttribute("data-lang") === lang) {
@@ -70,12 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1.1. URL'den index.html ve # hash kalıntılarını temizle (Sade & Prestijli URL)
     initCleanURL();
 
-    // Dil değiştirme butonlarına olay dinleyicisi ekle
+    // Dil değiştirme butonlarına olay dinleyicisi ekle (Sayfayı temiz yenileyerek bug kalmasını engeller)
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", (e) => {
             e.preventDefault();
             const selectedLang = btn.getAttribute("data-lang");
-            applyLanguage(selectedLang);
+            if (selectedLang) {
+                localStorage.setItem("portfolio_lang", selectedLang);
+                window.location.reload();
+            }
         });
     });
 
@@ -110,95 +118,127 @@ function initPortfolioData() {
         return;
     }
 
-    const data = PORTFOLIO_DATA[currentLang];
+    const trData = PORTFOLIO_DATA['tr'] || {};
+    const currentData = PORTFOLIO_DATA[currentLang] || trData;
+    const profile = currentData.profile || trData.profile || {};
 
     // Profil Bilgileri
-    document.getElementById("hero-name").textContent = data.profile.name;
-    document.getElementById("hero-title").textContent = data.profile.title;
-    document.getElementById("hero-subtitle").textContent = data.profile.subTitle;
-    document.getElementById("profile-avatar").src = data.profile.avatar;
-    document.getElementById("profile-about").innerHTML = data.profile.about.replace(/\n/g, '<br>');
+    if (document.getElementById("hero-name")) document.getElementById("hero-name").textContent = profile.name || "";
+    if (document.getElementById("hero-title")) document.getElementById("hero-title").textContent = profile.title || "";
+    if (document.getElementById("hero-subtitle")) document.getElementById("hero-subtitle").textContent = profile.subTitle || "";
+    if (document.getElementById("profile-avatar") && profile.avatar) document.getElementById("profile-avatar").src = profile.avatar;
+    if (document.getElementById("profile-about") && profile.about) document.getElementById("profile-about").innerHTML = profile.about.replace(/\n/g, '<br>');
 
     // İletişim Bilgileri
-    if (document.getElementById("profile-card-github")) {
-        document.getElementById("profile-card-github").href = data.profile.socials.github;
-    }
-    
-    if (document.getElementById("profile-card-linkedin")) {
-        document.getElementById("profile-card-linkedin").href = data.profile.socials.linkedin;
-    }
-    
-    document.getElementById("profile-email").href = data.profile.socials.email;
-    document.getElementById("profile-email").querySelector("span").textContent = data.profile.socials.email.replace("mailto:", "");
-    
-    if (document.getElementById("profile-phone")) {
-        document.getElementById("profile-phone").href = "tel:" + data.profile.socials.phone.replace(/\s+/g, "");
-        document.getElementById("profile-phone").querySelector("span").textContent = data.profile.socials.phone;
+    if (profile.socials) {
+        if (document.getElementById("profile-card-github")) {
+            document.getElementById("profile-card-github").href = profile.socials.github || "#";
+        }
+        if (document.getElementById("profile-card-linkedin")) {
+            document.getElementById("profile-card-linkedin").href = profile.socials.linkedin || "#";
+        }
+        if (document.getElementById("profile-email")) {
+            document.getElementById("profile-email").href = profile.socials.email || "#";
+            document.getElementById("profile-email").querySelector("span").textContent = (profile.socials.email || "").replace("mailto:", "");
+        }
+        if (document.getElementById("profile-phone")) {
+            document.getElementById("profile-phone").href = "tel:" + (profile.socials.phone || "").replace(/\s+/g, "");
+            document.getElementById("profile-phone").querySelector("span").textContent = profile.socials.phone || "";
+        }
     }
 
     // Eğitim Zaman Tüneli
     const eduTimeline = document.getElementById("education-timeline");
-    eduTimeline.innerHTML = "";
-    data.education.forEach(edu => {
-        const node = document.createElement("div");
-        node.className = "timeline-node";
-        node.innerHTML = `
-            <div class="node-header">
-                <div>
-                    <h4 class="node-title">${edu.institution}</h4>
-                    <span class="node-subtitle">${edu.degree} ${edu.gpa ? `<span class="node-gpa">GPA: ${edu.gpa}</span>` : ''}</span>
+    if (eduTimeline) {
+        eduTimeline.innerHTML = "";
+        const educationList = currentData.education || trData.education || [];
+        educationList.forEach(edu => {
+            const node = document.createElement("div");
+            node.className = "timeline-node";
+            
+            const isEn = currentLang === 'en';
+            const pdfFile = isEn ? 'Transkript/Transkript-Ingilizce.pdf' : 'Transkript/Transkript-Turkce.pdf';
+            const pdfText = isEn ? 'Academic Transcript' : 'Transkript Belgesi';
+
+            const transcriptHtml = `
+                <div class="transcript-files">
+                    <a href="${pdfFile}" target="_blank" rel="noopener noreferrer" class="transcript-link-btn">
+                        <i data-lucide="file-text"></i> ${pdfText}
+                    </a>
                 </div>
-                <span class="node-date">${edu.duration}</span>
-            </div>
-            <p class="node-desc">${edu.details}</p>
-        `;
-        eduTimeline.appendChild(node);
-    });
+            `;
+
+            node.innerHTML = `
+                <div class="node-header">
+                    <div>
+                        <h4 class="node-title">${isEn ? 'Eskişehir Technical University' : edu.institution}</h4>
+                        <span class="node-subtitle">${isEn ? 'Aircraft Maintenance Engineer / Avionics' : edu.degree} ${edu.gpa ? `<span class="node-gpa">GPA: ${edu.gpa}</span>` : ''}</span>
+                    </div>
+                    <span class="node-date">${isEn ? 'September 2020 - Graduated' : edu.duration}</span>
+                </div>
+                <div class="node-desc">${edu.details}</div>
+                ${transcriptHtml}
+            `;
+            eduTimeline.appendChild(node);
+        });
+    }
 
     // Deneyim Zaman Tüneli
     const expTimeline = document.getElementById("experience-timeline");
-    expTimeline.innerHTML = "";
-    data.experience.forEach(exp => {
-        const node = document.createElement("div");
-        node.className = "timeline-node";
-        node.innerHTML = `
-            <div class="node-header">
-                <div>
-                    <h4 class="node-title">${exp.title}</h4>
-                    <span class="node-subtitle">${exp.company}</span>
+    if (expTimeline) {
+        expTimeline.innerHTML = "";
+        const experienceList = currentData.experience || trData.experience || [];
+        experienceList.forEach(exp => {
+            const node = document.createElement("div");
+            node.className = "timeline-node";
+            node.innerHTML = `
+                <div class="node-header">
+                    <div>
+                        <h4 class="node-title">${exp.title}</h4>
+                        <span class="node-subtitle">${exp.company}</span>
+                    </div>
+                    <span class="node-date">${exp.duration}</span>
                 </div>
-                <span class="node-date">${exp.duration}</span>
-            </div>
-            <p class="node-desc">${exp.details}</p>
-        `;
-        expTimeline.appendChild(node);
-    });
+                <div class="node-desc">${exp.details}</div>
+            `;
+            expTimeline.appendChild(node);
+        });
+    }
 
     // Yetenekler Listesi
     const skillsContainer = document.getElementById("skills-container");
-    skillsContainer.innerHTML = "";
-    data.skills.forEach(skill => {
-        const card = document.createElement("div");
-        card.className = "skill-card";
-        card.innerHTML = `
-            <div class="corner-t-l"></div>
-            <div class="corner-b-r"></div>
-            <div class="skill-meta">
-                <span class="skill-name">${skill.name}</span>
-                <span class="skill-val-pct">${skill.level}%</span>
-            </div>
-            <div class="skill-progress-outer">
-                <div class="skill-progress-inner" data-level="${skill.level}"></div>
-            </div>
-        `;
-        skillsContainer.appendChild(card);
-    });
+    if (skillsContainer) {
+        skillsContainer.innerHTML = "";
+        const skillsList = currentData.skills || trData.skills || [];
+        skillsList.forEach(skill => {
+            const card = document.createElement("div");
+            card.className = "skill-card";
+            card.innerHTML = `
+                <div class="corner-t-l"></div>
+                <div class="corner-b-r"></div>
+                <div class="skill-meta">
+                    <span class="skill-name">${skill.name}</span>
+                </div>
+                <div class="skill-progress-outer">
+                    <div class="skill-progress-inner" data-level="${skill.level}"></div>
+                </div>
+            `;
+            skillsContainer.appendChild(card);
+        });
+    }
 
     // Proje Takımları
-    renderProjectTeams(data.projectTeams || []);
+    renderProjectTeams(currentData.projectTeams || trData.projectTeams || []);
 
     // Projeleri Oluştur
-    renderProjects(data.projects);
+    renderProjects(currentData.projects || trData.projects || []);
+
+    // Görsel Galeriyi Oluştur
+    renderGallery(currentData.gallery || trData.gallery || []);
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
 }
 
 function renderProjectTeams(teamsList) {
@@ -490,10 +530,10 @@ function renderProjects(projectsList) {
             window.location.href = `project.html?id=${proj.id}`;
         });
 
-        const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
-                        proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
-                        proj.category === 'arge' ? (currentLang === 'tr' ? 'AR-GE' : 'R&D') :
-                        (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
+        const catName = proj.category === 'guc-elektronigi' ? (currentLang === 'tr' ? 'GÜÇ ELEKTRONİĞİ' : 'POWER ELECTRONICS') : 
+                        proj.category === 'havacilik-ai' ? (currentLang === 'tr' ? 'HAVACILIK & YAPAY ZEKA' : 'AVIATION & AI') : 
+                        proj.category === 'robotik' ? (currentLang === 'tr' ? 'ROBOTİK & OTOMASYON' : 'ROBOTICS & AUTOMATION') :
+                        (currentLang === 'tr' ? 'MÜHENDİSLİK' : 'ENGINEERING');
 
         card.innerHTML = `
             <div class="corner-t-l"></div>
@@ -520,6 +560,220 @@ function renderProjects(projectsList) {
     
     // Lucide ikonlarını kartlar için yükle
     lucide.createIcons();
+}
+
+/* ==========================================================================
+   4.1. DİNAMİK GALERİ VE LIGHTBOX MODAL MANTIĞI
+   ========================================================================== */
+let currentGalleryIndex = 0;
+let currentGalleryList = [];
+let currentCarouselPosition = 0;
+
+function renderGallery(galleryList) {
+    const track = document.getElementById("gallery-carousel-track");
+    const dotsContainer = document.getElementById("gallery-dots-indicator");
+
+    if (!track) return;
+    track.innerHTML = "";
+    if (dotsContainer) dotsContainer.innerHTML = "";
+
+    if (!galleryList || galleryList.length === 0) {
+        track.innerHTML = `
+            <div class="gallery-placeholder">
+                <i data-lucide="image-plus"></i>
+                <h3 data-translate="gallery_empty_title">${currentLang === 'tr' ? 'FOTOĞRAFLAR YAKINDA EKLENECEK' : 'PHOTOS WILL BE ADDED SOON'}</h3>
+                <p data-translate="gallery_empty_desc">${currentLang === 'tr' ? 'Proje takımları, yarışmalar, sunumlar ve saha çalışmalarına ait görseller bu alanda galeri formatında gösterilecek.' : 'Images from project teams, competitions, presentations, and field work will be displayed here in a gallery layout.'}</p>
+            </div>
+        `;
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+    }
+
+    galleryList.forEach((item, index) => {
+        const card = document.createElement("div");
+        card.className = "gallery-card";
+        
+        const kicker = item.category ? `// SYS_${item.category.toUpperCase()}` : '// VISUAL_ARCHIVE';
+
+        card.innerHTML = `
+            <div class="gallery-card-image-wrap">
+                <img src="${item.image}" alt="${item.title || 'Fotoğraf'}" loading="lazy">
+                <span class="gallery-card-badge">${kicker}</span>
+                <div class="gallery-card-overlay">
+                    <i data-lucide="maximize-2"></i>
+                </div>
+            </div>
+        `;
+
+        card.addEventListener("click", () => {
+            openGalleryModal(item, galleryList, index);
+        });
+
+        track.appendChild(card);
+    });
+
+    currentCarouselPosition = 0;
+    setupGalleryCarouselControls(galleryList.length);
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+}
+
+function setupGalleryCarouselControls(totalItems) {
+    const track = document.getElementById("gallery-carousel-track");
+    const prevBtn = document.getElementById("gallery-carousel-prev");
+    const nextBtn = document.getElementById("gallery-carousel-next");
+    const dotsContainer = document.getElementById("gallery-dots-indicator");
+
+    if (!track || !prevBtn || !nextBtn) return;
+
+    function getItemsPerPage() {
+        const w = window.innerWidth;
+        if (w <= 640) return 1;
+        if (w <= 1024) return 2;
+        return 3;
+    }
+
+    function maxPosition() {
+        const perPage = getItemsPerPage();
+        return Math.max(0, totalItems - perPage);
+    }
+
+    function updateCarouselState() {
+        const card = track.querySelector(".gallery-card");
+        if (!card) return;
+
+        const gap = 22;
+        const cardWidth = card.offsetWidth + gap;
+        const offset = currentCarouselPosition * cardWidth;
+
+        track.style.transform = `translateX(-${offset}px)`;
+
+        prevBtn.disabled = currentCarouselPosition <= 0;
+        nextBtn.disabled = currentCarouselPosition >= maxPosition();
+
+        if (dotsContainer) {
+            const dots = dotsContainer.querySelectorAll(".carousel-dot");
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle("active", idx === currentCarouselPosition);
+            });
+        }
+    }
+
+    if (dotsContainer) {
+        dotsContainer.innerHTML = "";
+        const pages = maxPosition() + 1;
+        for (let i = 0; i < pages; i++) {
+            const dot = document.createElement("button");
+            dot.className = `carousel-dot ${i === 0 ? 'active' : ''}`;
+            dot.setAttribute("aria-label", `Fotoğraf ${i + 1}`);
+            dot.addEventListener("click", () => {
+                currentCarouselPosition = i;
+                updateCarouselState();
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    const newPrevBtn = prevBtn.cloneNode(true);
+    const newNextBtn = nextBtn.cloneNode(true);
+    prevBtn.parentNode.replaceChild(newPrevBtn, prevBtn);
+    nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
+
+    newPrevBtn.addEventListener("click", () => {
+        if (currentCarouselPosition > 0) {
+            currentCarouselPosition--;
+            updateCarouselState();
+        }
+    });
+
+    newNextBtn.addEventListener("click", () => {
+        if (currentCarouselPosition < maxPosition()) {
+            currentCarouselPosition++;
+            updateCarouselState();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (currentCarouselPosition > maxPosition()) {
+            currentCarouselPosition = maxPosition();
+        }
+        updateCarouselState();
+    });
+
+    updateCarouselState();
+}
+
+function openGalleryModal(item, fullList, index) {
+    currentGalleryList = fullList;
+    currentGalleryIndex = index;
+
+    let modal = document.getElementById("gallery-lightbox-modal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "gallery-lightbox-modal";
+        modal.className = "project-modal gallery-lightbox-modal";
+        modal.innerHTML = `
+            <div class="modal-overlay"></div>
+            <div class="modal-content gallery-lightbox-content">
+                <button class="modal-close" id="gallery-modal-close" aria-label="Close"><i data-lucide="x"></i></button>
+                <button class="lightbox-nav-btn lightbox-prev" id="gallery-modal-prev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+                <button class="lightbox-nav-btn lightbox-next" id="gallery-modal-next" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+                <div class="gallery-lightbox-body">
+                    <div class="gallery-lightbox-media">
+                        <img id="gallery-lightbox-img" src="" alt="">
+                    </div>
+                    <div class="gallery-lightbox-info">
+                        <span class="modal-tag-row" id="gallery-lightbox-badge">// VISUAL_ARCHIVE</span>
+                        <div class="gallery-lightbox-counter" id="gallery-lightbox-counter">1 / 1</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        document.getElementById("gallery-modal-close").addEventListener("click", closeGalleryModal);
+        modal.querySelector(".modal-overlay").addEventListener("click", closeGalleryModal);
+        document.getElementById("gallery-modal-prev").addEventListener("click", () => navigateGallery(-1));
+        document.getElementById("gallery-modal-next").addEventListener("click", () => navigateGallery(1));
+
+        document.addEventListener("keydown", (e) => {
+            if (!modal.classList.contains("active")) return;
+            if (e.key === "Escape") closeGalleryModal();
+            if (e.key === "ArrowLeft") navigateGallery(-1);
+            if (e.key === "ArrowRight") navigateGallery(1);
+        });
+    }
+
+    updateGalleryModalContent();
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function updateGalleryModalContent() {
+    const item = currentGalleryList[currentGalleryIndex];
+    if (!item) return;
+
+    document.getElementById("gallery-lightbox-img").src = item.image;
+    document.getElementById("gallery-lightbox-img").alt = item.title || 'Fotoğraf';
+    document.getElementById("gallery-lightbox-badge").textContent = item.category ? `// SYS_${item.category.toUpperCase()}` : '// VISUAL_ARCHIVE';
+    document.getElementById("gallery-lightbox-counter").textContent = `${currentGalleryIndex + 1} / ${currentGalleryList.length}`;
+}
+
+function navigateGallery(direction) {
+    if (!currentGalleryList.length) return;
+    currentGalleryIndex = (currentGalleryIndex + direction + currentGalleryList.length) % currentGalleryList.length;
+    updateGalleryModalContent();
+}
+
+function closeGalleryModal() {
+    const modal = document.getElementById("gallery-lightbox-modal");
+    if (modal) {
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+    }
 }
 
 function initProjectsLogic() {
@@ -556,10 +810,10 @@ function openProjectModal(proj) {
     
     document.getElementById("modal-img").src = proj.image;
     
-    const catName = proj.category === 'donanim' ? (currentLang === 'tr' ? 'DONANIM' : 'HARDWARE') : 
-                    proj.category === 'gomulu' ? (currentLang === 'tr' ? 'GÖMÜLÜ' : 'EMBEDDED') : 
-                    proj.category === 'arge' ? (currentLang === 'tr' ? 'AR-GE' : 'R&D') :
-                    (currentLang === 'tr' ? 'YAZILIM' : 'SOFTWARE');
+    const catName = proj.category === 'guc-elektronigi' ? (currentLang === 'tr' ? 'GÜÇ ELEKTRONİĞİ' : 'POWER ELECTRONICS') : 
+                    proj.category === 'havacilik-ai' ? (currentLang === 'tr' ? 'HAVACILIK & YAPAY ZEKA' : 'AVIATION & AI') : 
+                    proj.category === 'robotik' ? (currentLang === 'tr' ? 'ROBOTİK & OTOMASYON' : 'ROBOTICS & AUTOMATION') :
+                    (currentLang === 'tr' ? 'MÜHENDİSLİK' : 'ENGINEERING');
                     
     document.getElementById("modal-cat").textContent = catName;
     document.getElementById("modal-title").textContent = proj.title;
