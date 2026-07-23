@@ -138,22 +138,38 @@ function initPortfolioData() {
 
     // Eğitim Zaman Tüneli
     const eduTimeline = document.getElementById("education-timeline");
-    eduTimeline.innerHTML = "";
-    data.education.forEach(edu => {
-        const node = document.createElement("div");
-        node.className = "timeline-node";
-        node.innerHTML = `
-            <div class="node-header">
-                <div>
-                    <h4 class="node-title">${edu.institution}</h4>
-                    <span class="node-subtitle">${edu.degree} ${edu.gpa ? `<span class="node-gpa">GPA: ${edu.gpa}</span>` : ''}</span>
+    if (eduTimeline) {
+        eduTimeline.innerHTML = "";
+        data.education.forEach(edu => {
+            const node = document.createElement("div");
+            node.className = "timeline-node";
+            
+            const isEn = currentLang === 'en';
+            const pdfFile = isEn ? 'transkript/Transkript-Ingilizce.pdf' : 'transkript/Transkript-Turkce.pdf';
+            const pdfText = isEn ? 'Official Academic Transcript (PDF)' : 'Resmi Transkript Belgesi (PDF)';
+
+            const transcriptHtml = `
+                <div class="transcript-files">
+                    <a href="${pdfFile}" target="_blank" rel="noopener noreferrer" class="transcript-link-btn">
+                        <i data-lucide="file-text"></i> ${pdfText}
+                    </a>
                 </div>
-                <span class="node-date">${edu.duration}</span>
-            </div>
-            <p class="node-desc">${edu.details}</p>
-        `;
-        eduTimeline.appendChild(node);
-    });
+            `;
+
+            node.innerHTML = `
+                <div class="node-header">
+                    <div>
+                        <h4 class="node-title">${isEn ? 'Eskişehir Technical University' : edu.institution}</h4>
+                        <span class="node-subtitle">${isEn ? 'Aircraft Maintenance Engineer / Avionics' : edu.degree} ${edu.gpa ? `<span class="node-gpa">GPA: ${edu.gpa}</span>` : ''}</span>
+                    </div>
+                    <span class="node-date">${isEn ? 'September 2020 - Graduated' : edu.duration}</span>
+                </div>
+                <div class="node-desc">${edu.details}</div>
+                ${transcriptHtml}
+            `;
+            eduTimeline.appendChild(node);
+        });
+    }
 
     // Deneyim Zaman Tüneli
     const expTimeline = document.getElementById("experience-timeline");
