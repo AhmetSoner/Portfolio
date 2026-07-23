@@ -1303,7 +1303,7 @@ const UI_TRANSLATIONS = {
     tag_contact: "SYS_08 // OPEN_CHANNEL",
     title_contact: "İLETİŞİM",
     contact_send_signal: "",
-    contact_desc: "Aviyonik sistemler, gömülü donanım tasarımı, PCB geliştirme ve otonom sistem geliştirme alanlarında yürütülecek iş birlikleri, kariyer teklifleri veya proje bazlı görüşmeler için aşağıda belirtilen iletişim kanalları aracılığıyla ya da form üzerinden tarafıma ulaşabilirsiniz. Her türlü profesyonel başvuru değerlendirmeye alınacaktır.",
+    contact_desc: "Aviyonik sistemler, gömülü donanım tasarımı, PCB geliştirme ve otonom sistem geliştirme alanlarında yürütülecek iş birlikleri, kariyer teklifleri veya proje bazlı görüşmeler için aşağıda belirtilen iletişim kanalları aracılığıyla ya da form üzerinden tarafıma ulaşabilirsiniz.",
     filter_all: "HEPSİ",
     filter_power_electronics: "GÜÇ ELEKTRONİĞİ",
     filter_aviation_ai: "HAVACILIK & YAPAY ZEKA",
