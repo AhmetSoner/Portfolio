@@ -69,6 +69,14 @@ function initCleanURL() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    // PC/Mobil tespiti ve gövde sınıfı ekleme (is-mobile/is-desktop)
+    const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (window.innerWidth < 1024);
+    if (isMobile) {
+        document.body.classList.add('is-mobile');
+    } else {
+        document.body.classList.add('is-desktop');
+    }
+
     // 1. Dil sistemini başlat (Bu otomatik olarak initPortfolioData'yı çağıracaktır)
     applyLanguage(currentLang);
 
@@ -382,8 +390,12 @@ function initRadarCanvas() {
 
             if (t.alpha > 0) {
                 ctx.fillStyle = `rgba(0, 240, 255, ${t.alpha})`;
-                ctx.shadowColor = "rgba(0, 240, 255, 0.8)";
-                ctx.shadowBlur = 15;
+                if (!document.body.classList.contains('is-mobile')) {
+                    ctx.shadowColor = "rgba(0, 240, 255, 0.8)";
+                    ctx.shadowBlur = 15;
+                } else {
+                    ctx.shadowBlur = 0;
+                }
                 ctx.beginPath();
                 ctx.arc(t.x, t.y, t.size, 0, Math.PI * 2);
                 ctx.fill();
@@ -1237,6 +1249,9 @@ function initAestheticAnimation() {
    8. SOL / SAĞ KENAR PLEXUS ANİMASYONU (BAĞIMSIZ CANVAS + FARE ETKİLEŞİMİ)
    ========================================================================== */
 function initMarginAnimation() {
+    if (window.innerWidth < 1200 || (document.body && document.body.classList.contains('is-mobile'))) {
+        return; // Mobil ve tabletlerde CPU/Pil tasarrufu için animasyonu çalıştırma
+    }
     const canvas = document.getElementById("margin-canvas");
     if (!canvas) return;
     const ctx = canvas.getContext("2d");

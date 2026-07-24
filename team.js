@@ -156,6 +156,14 @@ function applyTeamPageLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    // PC/Mobil tespiti ve gövde sınıfı ekleme (is-mobile/is-desktop)
+    const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (window.innerWidth < 1024);
+    if (isMobile) {
+        document.body.classList.add('is-mobile');
+    } else {
+        document.body.classList.add('is-desktop');
+    }
+
     applyTeamPageLanguage(currentTeamLang);
 
     document.querySelectorAll(".lang-btn").forEach(btn => {
