@@ -2289,29 +2289,35 @@ section {
         border-bottom: none;
         border-left: none;
         border-right: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 5px;
         z-index: 9999;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+    }
+
+    .hud-nav::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
     }
     
     .nav-links {
         display: flex !important;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
-        width: 100%;
+        width: max-content;
         height: 100%;
-        gap: 0;
-        padding: 0;
+        gap: 25px;
+        padding: 0 20px;
         margin: 0;
+        list-style: none;
     }
     
     .nav-links li {
-        flex: 1;
+        flex: 0 0 auto;
         text-align: center;
-        height: auto;
+        height: 100%;
         display: block;
     }
     
@@ -2320,16 +2326,16 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;
-        padding: 5px 0;
-        font-size: 0.65rem;
-        letter-spacing: 0.02em;
+        height: 100%;
+        padding: 0 5px;
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
     }
     
     .nav-links a .nav-num {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
         display: block;
-        margin-bottom: 1px;
+        margin-bottom: 2px;
     }
 
     .projects-grid {
