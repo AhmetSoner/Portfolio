@@ -640,7 +640,7 @@ gallery: [
     profile: {
       name: "Ahmet Soner Güleç",
       title: "Aircraft Maintenance Engineer",
-      subTitle: "Aviyonik Sistemler | Hava Aracı Bakımı | Elektronik Sistem ve Donanım Tasarımı",
+      subTitle: "Avionics Systems | Aircraft Maintenance | Electronic System and Hardware Design",
       about: "I graduated from Eskişehir Technical University, Department of Aviation Electrics and Electronics, with the title of Aircraft Maintenance Engineer / Avionics. In line with my goal of integrating theoretical knowledge with practical engineering applications, I gained extensive experience in aircraft avionics system maintenance and assembly procedures, as well as mechanical design, PCB hardware design, and simulation/analysis studies during my internships and training processes abroad.\n\nWith my project-oriented working discipline, I developed an AI-assisted aviation inspection robot within the Tulpar Tharros Project Team, of which I am the founder. In the Hidroana team, which designs alternative energy vehicles, I undertook electrical-electronic subsystem integration and power electronics processes, achieving rankings in national and international competitions such as TEKNOFEST and Shell Eco-marathon. Furthermore, under the Aviation AI Research Society (HAYA), which I founded, I continue to generate innovative solutions in aerospace technologies by managing TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and 2209-B projects focused on autonomous systems, flight control software, and AI integration.",
       avatar: "Foto.jpg",
       socials: {
