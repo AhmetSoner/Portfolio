@@ -868,6 +868,8 @@ section {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 8px;
+    gap: 10px 15px;
+    flex-wrap: wrap;
 }
 
 .node-title {
@@ -897,6 +899,8 @@ section {
     border: 1px solid rgba(0, 240, 255, 0.2);
     padding: 3px 8px;
     border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .node-desc {
