@@ -2672,6 +2672,40 @@ section {
     text-align: center;
 }
 
+/* Muharip Hava Araçları Projesi (Project 6) - Her satırda tek fotoğraf */
+.project-figure-grid:has(img[src*="lift-up-"]),
+.project-figure-grid:has(img[src*="word-article-fig-"]) {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    width: min(100%, 760px);
+    margin: 18px auto 28px;
+}
+
+.project-figure-grid:has(img[src*="lift-up-"]) .project-figure-card,
+.project-figure-grid:has(img[src*="word-article-fig-"]) .project-figure-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.project-figure-grid:has(img[src*="lift-up-"]) .project-figure-card img,
+.project-figure-grid:has(img[src*="word-article-fig-"]) .project-figure-card img {
+    width: auto;
+    max-width: 100%;
+    max-height: 520px;
+    margin: 0 auto;
+    object-fit: contain;
+    display: block;
+}
+
+.project-figure-grid:has(img[src*="lift-up-"]) .project-figure-card figcaption,
+.project-figure-grid:has(img[src*="word-article-fig-"]) .project-figure-card figcaption {
+    max-width: 720px;
+    margin: 8px auto 0;
+    padding: 0 4px;
+    text-align: center;
+}
+
 .figure-detail-text {
     width: 100%;
     margin: -8px auto 22px;
