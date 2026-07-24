@@ -2259,6 +2259,12 @@ section {
         gap: 50px; /* Shorter gap between sections */
     }
 
+    .scroll-reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
     .section-title-wrap {
         margin-bottom: 30px;
         padding-left: 15px;
@@ -2337,6 +2343,19 @@ section {
     
     .hero-content h2 {
         font-size: 1.1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 12px !important;
+        align-items: center !important;
+    }
+
+    .hero-actions .hud-btn {
+        width: 100% !important;
+        max-width: 300px !important;
+        box-sizing: border-box;
     }
 
     .aesthetic-panel {
