@@ -982,9 +982,15 @@ section {
 .skill-card {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
-    padding: 20px;
+    padding: 22px 15px;
     position: relative;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .skill-card:hover {
@@ -995,15 +1001,25 @@ section {
 
 .skill-meta {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 12px;
+    width: 100%;
 }
 
 .skill-name {
     font-family: var(--font-header);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+    font-weight: 600;
     color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.skill-card:hover .skill-name {
+    color: var(--primary);
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 .skill-val-pct {
