@@ -216,11 +216,8 @@ function initPortfolioData() {
             card.innerHTML = `
                 <div class="corner-t-l"></div>
                 <div class="corner-b-r"></div>
-                <div class="skill-meta">
+                <div class="skill-meta" style="margin-bottom: 0;">
                     <span class="skill-name">${skill.name}</span>
-                </div>
-                <div class="skill-progress-outer">
-                    <div class="skill-progress-inner" data-level="${skill.level}"></div>
                 </div>
             `;
             skillsContainer.appendChild(card);
