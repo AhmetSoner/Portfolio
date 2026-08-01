@@ -607,12 +607,9 @@ function renderGallery(galleryList) {
         const card = document.createElement("div");
         card.className = "gallery-card";
         
-        const kicker = item.category ? `// SYS_${item.category.toUpperCase()}` : '// VISUAL_ARCHIVE';
-
         card.innerHTML = `
             <div class="gallery-card-image-wrap">
                 <img src="${item.image}" alt="${item.title || 'Fotoğraf'}" loading="lazy">
-                <span class="gallery-card-badge">${kicker}</span>
                 <div class="gallery-card-overlay">
                     <i data-lucide="maximize-2"></i>
                 </div>
@@ -739,7 +736,7 @@ function openGalleryModal(item, fullList, index) {
                         <img id="gallery-lightbox-img" src="" alt="">
                     </div>
                     <div class="gallery-lightbox-info">
-                        <span class="modal-tag-row" id="gallery-lightbox-badge">// VISUAL_ARCHIVE</span>
+                        <span class="modal-tag-row" id="gallery-lightbox-badge"></span>
                         <div class="gallery-lightbox-counter" id="gallery-lightbox-counter">1 / 1</div>
                     </div>
                 </div>
@@ -772,7 +769,11 @@ function updateGalleryModalContent() {
 
     document.getElementById("gallery-lightbox-img").src = item.image;
     document.getElementById("gallery-lightbox-img").alt = item.title || 'Fotoğraf';
-    document.getElementById("gallery-lightbox-badge").textContent = item.category ? `// SYS_${item.category.toUpperCase()}` : '// VISUAL_ARCHIVE';
+    const lightboxBadge = document.getElementById("gallery-lightbox-badge");
+    if (lightboxBadge) {
+        lightboxBadge.textContent = item.category ? `// SYS_${item.category.toUpperCase()}` : '';
+        lightboxBadge.style.display = item.category ? '' : 'none';
+    }
     document.getElementById("gallery-lightbox-counter").textContent = `${currentGalleryIndex + 1} / ${currentGalleryList.length}`;
 }
 
