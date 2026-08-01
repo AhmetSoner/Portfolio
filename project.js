@@ -67,6 +67,8 @@ function loadProjectData(lang, projectId) {
         tagsContainer.appendChild(span);
     });
 
+    renderProjectSnapshot(lang, proj);
+
     // Teknik Özellikler Tablosu
     const specsTable = document.getElementById("project-specs-table");
     specsTable.innerHTML = "";
@@ -103,6 +105,7 @@ function loadProjectData(lang, projectId) {
 
     document.getElementById("project-analysis").innerHTML = proj.analysis || "";
     document.getElementById("project-achievements").innerHTML = proj.achievements || "";
+    enhanceProjectImages();
 
     // Alt Sistemler Kartları (Subsystems Grid)
     const blockSubsystems = document.getElementById("block-subsystems");
@@ -132,6 +135,65 @@ function loadProjectData(lang, projectId) {
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
+}
+
+function renderProjectSnapshot(lang, proj) {
+    const summaryGrid = document.getElementById("project-summary-grid");
+    const contributionCard = document.getElementById("project-contribution-card");
+    const contributionList = document.getElementById("project-contribution-list");
+    if (!summaryGrid || !contributionCard || !contributionList) return;
+
+    const specs = Array.isArray(proj.specs) ? proj.specs : [];
+    const pickSpec = (patterns) => {
+        const item = specs.find(spec => patterns.some(pattern => spec.name.toLowerCase().includes(pattern)));
+        return item ? item.value : "";
+    };
+
+    const labels = lang === "tr"
+        ? {
+            problem: "Problem",
+            method: "Yöntem",
+            stack: "Teknoloji",
+            output: "Çıktı"
+        }
+        : {
+            problem: "Problem",
+            method: "Method",
+            stack: "Technology",
+            output: "Output"
+        };
+
+    const summary = proj.technicalSummary || {};
+    const fallbackMethod = pickSpec(["topoloji", "mimari", "tasarım", "program", "model", "technology", "design", "validation"]);
+    const fallbackOutput = pickSpec(["hedef", "çıktı", "güç", "donanım", "target", "power", "output"]);
+    const fallbackStack = (proj.tags || []).slice(0, 4).join(" / ");
+
+    const items = [
+        { label: labels.problem, value: summary.problem || proj.summary },
+        { label: labels.method, value: summary.method || fallbackMethod || proj.description || proj.summary },
+        { label: labels.stack, value: summary.stack || fallbackStack },
+        { label: labels.output, value: summary.output || fallbackOutput || proj.title }
+    ];
+
+    summaryGrid.innerHTML = items
+        .map(item => `<div class="summary-metric"><span>${item.label}</span><p>${item.value}</p></div>`)
+        .join("");
+
+    const contributions = proj.myContribution || [];
+    if (contributions.length > 0) {
+        contributionCard.style.display = "block";
+        contributionList.innerHTML = contributions.map(item => `<li>${item}</li>`).join("");
+    } else {
+        contributionCard.style.display = "none";
+        contributionList.innerHTML = "";
+    }
+}
+
+function enhanceProjectImages() {
+    document.querySelectorAll(".project-rich-content img, .related-projects-section img").forEach(img => {
+        img.loading = "lazy";
+        img.decoding = "async";
+    });
 }
 
 function renderRelatedProjects(lang, currentId) {

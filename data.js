@@ -1747,4 +1747,196 @@ Based on these findings, model selection should not be reduced to a single metri
   });
 })();
 
+(function enrichProjectSnapshotsAndContributions() {
+  const enrichment = {
+    tr: {
+      "project-1": {
+        technicalSummary: {
+          problem: "Hidrojen enerjili aracın 48 V güç hattında üç fazlı BLDC motorun güvenli, ölçülebilir ve yüksek akım altında kararlı sürülmesi gerekiyordu.",
+          method: "Üç fazlı köprü topolojisi, STM32 tabanlı PWM kontrolü, Hall sensörü geri beslemesi, kapı sürücü katı, akım/gerilim izleme ve koruma mantığı birlikte tasarlandı.",
+          stack: "Altium Designer, STM32F446RET6, IRS2186, INA229, Proteus, osiloskop testleri",
+          output: "48 V / 50 A nominal hedefe göre tasarlanmış, prototiplenmiş ve Vol.2 revizyonuna teknik temel oluşturan BLDC motor sürücü kartı."
+        },
+        myContribution: [
+          "Güç katı topolojisi, MOSFET/gate-driver seçimi, DC-link kapasite hesabı ve koruma yaklaşımının teknik kararlarında aktif rol aldım.",
+          "Altium Designer üzerinde şema ve PCB tasarım sürecini yürüttüm; güç yolları, ölçüm hatları ve kontrol birimi entegrasyonunu tasarladım.",
+          "Simülasyon, prototip doğrulama, osiloskopla gate sinyali inceleme, malzeme listesi ve teknik raporlama süreçlerini bütünleştirdim."
+        ]
+      },
+      "project-2": {
+        technicalSummary: {
+          problem: "48 V elektrikli araç güç hattında batarya kutupları ile şasi arasında oluşabilecek izolasyon zayıflamasının sayısal olarak izlenmesi gerekiyordu.",
+          method: "Röle kontrollü direnç ağı, analog ölçüm katı, izole sinyal aktarımı ve Kirchhoff tabanlı denklem modeliyle RisoP/RisoN hesaplama yaklaşımı kuruldu.",
+          stack: "AD8216, AMC1311, optoizolatörler, izole DC-DC, MATLAB Simscape, PCB tasarım dosyaları",
+          output: "48 V araç mimarisine uyarlanmış izolasyon izleme devresi, denklem seti, simülasyon doğrulaması ve erişilebilir kaynak dosyaları."
+        },
+        myContribution: [
+          "İzolasyon ölçüm prensibini 48 V araç hattına uyarladım ve kaçak direnç hesabı için matematiksel modeli kurdum.",
+          "Analog ölçüm, izolasyon, röle sürme ve kontrol kartı arayüzü bloklarını devre seviyesinde değerlendirdim.",
+          "Simscape testleri, denklem doğrulaması, görsel teknik anlatım ve kaynak dosyalarının portföyde erişilebilir hale getirilmesini hazırladım."
+        ]
+      },
+      "project-3": {
+        technicalSummary: {
+          problem: "Vol.1 sürücüden öğrenilen sınırlamaları gideren, daha modüler, güvenilir ve yarışma şartlarına uygun ikinci nesil BLDC sürücü kartı gerekiyordu.",
+          method: "Güç kartı, STM32 kontrol kartı ve regülatör kartı ayrıştırıldı; izole UCC21520 gate sürüşü, Hall akım sensörü, 4 katlı PCB ve koruma mantığı kullanıldı.",
+          stack: "Altium Designer, STM32F446RET6, UCC21520, ACS758, MATLAB/Simulink, PSpice",
+          output: "48 V / 42 A hedefli, modüler güç-kontrol-regülatör mimarisine sahip Vol.2 BLDC sürücü platformu."
+        },
+        myContribution: [
+          "Vol.1 deneyimlerini analiz ederek Vol.2 mimarisinde güç kartı, kontrol kartı ve regülatör kartının modüler ayrımını kurguladım.",
+          "Gate sürüş, bootstrap, akım ölçümü, DC-link, koruma ve 4 katlı PCB yerleşimi kararlarını simülasyon sonuçlarıyla değerlendirdim.",
+          "BOM, literatür, simülasyon, algoritma ve motor parametreleri dosyalarını proje çıktısı olarak düzenledim; büyük tasarım arşivleri için erişim notunu hazırladım."
+        ]
+      },
+      "project-4": {
+        technicalSummary: {
+          problem: "Havaalanlarında kuş çarpması riskini azaltmak için kamera görüntülerinden kuş varlığı ve tür bilgisini hızlı biçimde çıkaran bir sistem ihtiyacı vardı.",
+          method: "Roboflow üzerinde veri seti hazırlandı, görüntüler etiketlendi ve artırıldı; YOLOv8n modeliyle tür bazlı nesne tespiti eğitildi ve test edildi.",
+          stack: "YOLOv8n, Roboflow, Python, Ultralytics, PyTorch, Anaconda",
+          output: "TÜBİTAK 2209-A kapsamında geliştirilen, kuş tespiti ve tür sınıflandırmasına yönelik derin öğrenme tabanlı erken uyarı prototipi."
+        },
+        myContribution: [
+          "Problem tanımı, literatür sentezi ve havaalanı emniyeti bağlamında yapay zeka tabanlı yaklaşımın kurgulanmasına katkı verdim.",
+          "Veri seti hazırlama, etiketleme kalitesi, augmentasyon stratejisi ve YOLOv8n eğitim akışının portföy anlatımını teknik olarak yapılandırdım.",
+          "Model sonuçlarını tür bazlı güven değerleri, saha uygulanabilirliği ve radar destekli gelecek sistem fikri açısından yorumladım."
+        ]
+      },
+      "project-5": {
+        technicalSummary: {
+          problem: "Yakıt tankı ve dar bakım hacimlerinde aydınlatma, erişim, oksijen desteği, güvenlik ve görsel muayene süreçleri teknisyen için zaman ve risk oluşturuyordu.",
+          method: "Vine/inflatable soft robot yaklaşımıyla uzayabilen, yönlenebilen, aydınlatma ve hava desteği sağlayan yarı otonom bakım yardımcısı konsepti geliştirildi.",
+          stack: "Soft robotics, pnömatik sistem, 3B tasarım, kamera/sensör konsepti, MRO süreç analizi",
+          output: "Tulpar Tharros kapsamında geliştirilen INFLOBOT ürün konsepti; hackathon finalistliği ve girişimcilik dosyasıyla ürünleşme seviyesine taşındı."
+        },
+        myContribution: [
+          "Yakıt tankı bakım problemi, saha kısıtları ve teknisyen ihtiyaçlarını sistem gereksinimlerine dönüştürme sürecinde aktif rol aldım.",
+          "3B kompresör destek ünitesi, basınçlı akış, aydınlatma, kamera/sensör yerleşimi ve soft robot hareket mantığını sistem mimarisi olarak ele aldım.",
+          "Ürünleşme, rakip analizi, MRO pazar yorumu, teknik sunum ve girişimcilik dosyası anlatımının bütünlüğünü oluşturdum."
+        ]
+      },
+      "project-6": {
+        technicalSummary: {
+          problem: "Muharip hava araçlarında uçuş performans değerleri geleneksel LUT/interpolasyon yaklaşımıyla hesaplanırken doğruluk, bellek ve gecikme arasında mühendislik ödünleşimi oluşuyordu.",
+          method: "AFM nomogramları U-Net/OCR destekli dijitasyon hattıyla veri setine dönüştürüldü; kübik spline, XGBoost ve FT-Transformer aynı benchmark protokolünde karşılaştırıldı.",
+          stack: "Python, MATLAB, U-Net, OCR, XGBoost, FT-Transformer, NVIDIA Jetson Orin Nano",
+          output: "54.620 satırlık yapısal veri seti, model kıyas raporu, edge benchmark sonuçları ve Specific Range Studio arayüz çıktısı."
+        },
+        myContribution: [
+          "Proje lideri olarak veri hattı mimarisi, model kıyas protokolü, benchmark kriterleri ve raporlama bütünlüğünü yönettim.",
+          "Nomogram dijitasyonu, master veri seti üretimi, XGBoost/FT-Transformer karşılaştırması ve Jetson Orin Nano hedef ortam yorumlarını teknik olarak bütünleştirdim.",
+          "TUSAŞ LIFT UP ve TÜBİTAK 2209-B süreçlerinde sanayi/akademik danışman iletişimi, çıktı sunumu ve makale formatındaki proje anlatımını hazırladım."
+        ]
+      }
+    },
+    en: {
+      "project-1": {
+        summary: "A first-generation 48 V / 50 A three-phase BLDC motor driver board developed for the powertrain of a hydrogen-powered vehicle. The design combines an STM32F446RET6 control unit, MOSFET half-bridge stages, IRS2186 gate drivers, INA229 measurement circuitry, Hall sensor feedback, multi-stage DC/DC supplies, and current/thermal protection logic.",
+        technicalSummary: {
+          problem: "The hydrogen-powered vehicle required a stable and measurable BLDC motor drive solution capable of operating safely on a 48 V high-current power line.",
+          method: "A three-phase bridge topology, STM32-based PWM control, Hall sensor feedback, gate-driver stages, current/voltage monitoring, and protection logic were designed as a complete system.",
+          stack: "Altium Designer, STM32F446RET6, IRS2186, INA229, Proteus, oscilloscope validation",
+          output: "A prototyped 48 V / 50 A BLDC motor driver board that became the engineering baseline for the Vol.2 revision."
+        },
+        myContribution: [
+          "Contributed to the power-stage topology, MOSFET/gate-driver selection, DC-link capacitor sizing, and protection strategy.",
+          "Designed the schematic and PCB workflow in Altium Designer, including power paths, sensing lines, and control-unit integration.",
+          "Integrated simulation, prototype validation, oscilloscope-based gate-signal checks, bill of materials, and technical documentation."
+        ]
+      },
+      "project-2": {
+        summary: "A 48 V insulation monitoring circuit designed to estimate insulation resistance between the battery terminals and vehicle chassis. The project combines relay-switched measurement states, analog sensing, isolated signal transfer, and Kirchhoff-based resistance equations validated in MATLAB Simscape.",
+        technicalSummary: {
+          problem: "The vehicle needed a way to monitor insulation degradation between the 48 V battery line and the chassis before leakage paths could create safety or reliability risks.",
+          method: "A relay-controlled resistor network, analog measurement stage, isolated signal path, and Kirchhoff-based RisoP/RisoN calculation model were developed.",
+          stack: "AD8216, AMC1311, opto-isolators, isolated DC-DC, MATLAB Simscape, PCB design files",
+          output: "A 48 V insulation monitoring architecture with equations, simulation validation, design files, and accessible source documentation."
+        },
+        myContribution: [
+          "Adapted the insulation monitoring principle to the 48 V vehicle power architecture and built the leakage-resistance calculation model.",
+          "Evaluated the analog sensing, isolation, relay-driving, and control-board interface blocks at circuit level.",
+          "Prepared the Simscape validation, equation interpretation, technical visuals, and source-file access structure for the portfolio."
+        ]
+      },
+      "project-3": {
+        summary: "A second-generation 48 V / 42 A BLDC motor driver platform developed from Vol.1 design lessons. The architecture separates the power board, STM32 control board, and regulator board, while introducing isolated UCC21520 gate driving, Hall-effect current sensing, four-layer PCB design, and stronger protection logic.",
+        technicalSummary: {
+          problem: "A more modular, reliable, and competition-ready second-generation BLDC driver was needed to address limitations observed in the Vol.1 board.",
+          method: "The power board, STM32 control board, and regulator board were separated; isolated UCC21520 gate driving, Hall current sensing, a four-layer PCB, and protection logic were introduced.",
+          stack: "Altium Designer, STM32F446RET6, UCC21520, ACS758, MATLAB/Simulink, PSpice",
+          output: "A 48 V / 42 A modular BLDC driver platform built around separate power, control, and regulator boards."
+        },
+        myContribution: [
+          "Analyzed Vol.1 lessons and shaped the Vol.2 architecture around separate power, control, and regulator boards.",
+          "Evaluated gate-drive, bootstrap, current sensing, DC-link, protection, and four-layer PCB decisions through simulation results.",
+          "Organized BOM, literature, simulation, algorithm, and motor-parameter files as project outputs, with a clear note for oversized design archives."
+        ]
+      },
+      "project-4": {
+        summary: "A TÜBİTAK 2209-A research project developing a YOLOv8n-based real-time bird detection and species recognition approach for airport safety. The system is designed to support bird-strike risk reduction by extracting visual detections, species labels, and confidence scores from camera imagery.",
+        technicalSummary: {
+          problem: "Airport operations require richer visual information about birds than radar alone can provide, especially for species-level risk interpretation.",
+          method: "A Roboflow dataset was prepared, labeled, augmented, exported in YOLOv8 format, and used to train/test a YOLOv8n object detection model.",
+          stack: "YOLOv8n, Roboflow, Python, Ultralytics, PyTorch, Anaconda",
+          output: "A deep learning prototype for image-based bird detection and species classification under the TÜBİTAK 2209-A program."
+        },
+        myContribution: [
+          "Contributed to problem framing, literature synthesis, and the AI-based approach for airport wildlife safety.",
+          "Structured the data preparation, labeling quality, augmentation strategy, and YOLOv8n training workflow for the portfolio narrative.",
+          "Interpreted model outputs in terms of species confidence, field applicability, and future radar-assisted warning systems."
+        ]
+      },
+      "project-5": {
+        summary: "An AI-assisted inflatable soft robotics concept for aircraft fuel tanks and other confined maintenance spaces. INFLOBOT targets safer MRO operations by improving lighting, reachability, oxygen support, visual inspection, and sensor-based defect detection in environments where conventional inspection is slow and risky.",
+        technicalSummary: {
+          problem: "Fuel tanks and confined maintenance areas create time loss and safety risks due to limited lighting, access, oxygen support, and visual inspection capability.",
+          method: "A vine/inflatable soft robot concept was developed to provide extendable motion, directional control, lighting, air support, and semi-autonomous inspection assistance.",
+          stack: "Soft robotics, pneumatic actuation, 3D design, camera/sensor concept, MRO process analysis",
+          output: "An INFLOBOT product concept developed under Tulpar Tharros, matured through hackathon finalist work and an entrepreneurship file."
+        },
+        myContribution: [
+          "Translated fuel-tank maintenance constraints and technician needs into system-level requirements.",
+          "Worked on the 3D compressor support unit, pressurized-flow logic, lighting, camera/sensor placement, and soft-robot movement architecture.",
+          "Built the productization narrative, competitor analysis, MRO market interpretation, technical presentation, and entrepreneurship-file structure."
+        ]
+      },
+      "project-6": {
+        summary: "An industry-oriented TUSAŞ LIFT UP and TÜBİTAK 2209-B research project comparing interpolation, XGBoost, and FT-Transformer models for fighter-aircraft flight performance data. Public F-18 AFM nomograms were digitized into a structured dataset and evaluated with accuracy, latency, memory footprint, and embedded deployment criteria.",
+        technicalSummary: {
+          problem: "Fighter-aircraft performance calculations based on LUT/interpolation methods create an engineering trade-off between accuracy, memory usage, and inference latency.",
+          method: "AFM nomograms were converted into a dataset using a U-Net/OCR-assisted digitization pipeline; cubic spline, XGBoost, and FT-Transformer were compared under a shared benchmark protocol.",
+          stack: "Python, MATLAB, U-Net, OCR, XGBoost, FT-Transformer, NVIDIA Jetson Orin Nano",
+          output: "A 54,620-row structured dataset, model comparison report, edge benchmark results, and the Specific Range Studio interface."
+        },
+        myContribution: [
+          "Led the project by coordinating the data pipeline architecture, model comparison protocol, benchmark criteria, and reporting structure.",
+          "Integrated nomogram digitization, master dataset generation, XGBoost/FT-Transformer comparison, and NVIDIA Jetson Orin Nano target-environment interpretation.",
+          "Prepared the TUSAŞ LIFT UP and TÜBİTAK 2209-B deliverables, advisor-facing presentations, and article-style technical narrative."
+        ]
+      }
+    }
+  };
+
+  Object.assign(UI_TRANSLATIONS.tr, {
+    heading_fast_summary: "// TEKNİK ÖZET",
+    heading_my_contribution: "// BENİM KATKIM"
+  });
+
+  Object.assign(UI_TRANSLATIONS.en, {
+    heading_fast_summary: "// TECHNICAL SNAPSHOT",
+    heading_my_contribution: "// MY CONTRIBUTION",
+    heading_overview: "// 01. PROJECT OVERVIEW",
+    heading_achievements: "// 05. PROJECT OUTPUTS"
+  });
+
+  Object.entries(enrichment).forEach(([lang, projectMap]) => {
+    Object.entries(projectMap).forEach(([projectId, fields]) => {
+      const project = PORTFOLIO_DATA[lang]?.projects?.find(item => item.id === projectId);
+      if (project) {
+        Object.assign(project, fields);
+      }
+    });
+  });
+})();
+
 

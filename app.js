@@ -553,7 +553,7 @@ function renderProjects(projectsList) {
             <div class="corner-b-l"></div>
             <div class="corner-b-r"></div>
             <div class="project-img-wrap">
-                <img src="${proj.image}" alt="${proj.title}" loading="lazy">
+                <img src="${proj.image}" alt="${proj.title}" loading="lazy" decoding="async">
                 <div class="project-overlay-hud">// SYS_${catName}</div>
             </div>
             <div class="project-body">
@@ -609,7 +609,7 @@ function renderGallery(galleryList) {
         
         card.innerHTML = `
             <div class="gallery-card-image-wrap">
-                <img src="${item.image}" alt="${item.title || 'Fotoğraf'}" loading="lazy">
+                <img src="${item.image}" alt="${item.title || 'Fotoğraf'}" loading="lazy" decoding="async">
                 <div class="gallery-card-overlay">
                     <i data-lucide="maximize-2"></i>
                 </div>
