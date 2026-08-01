@@ -1926,7 +1926,17 @@ Based on these findings, model selection should not be reduced to a single metri
     heading_fast_summary: "// TECHNICAL SNAPSHOT",
     heading_my_contribution: "// MY CONTRIBUTION",
     heading_overview: "// 01. PROJECT OVERVIEW",
-    heading_achievements: "// 05. PROJECT OUTPUTS"
+    heading_architecture: "// 02. METHOD AND SYSTEM ARCHITECTURE",
+    heading_subsystems: "// 03. SUBSYSTEMS AND IMPLEMENTATION COMPONENTS",
+    heading_analysis: "// 04. TESTING, SIMULATION AND VERIFICATION",
+    heading_achievements: "// 05. PROJECT OUTPUTS",
+    heading_scientific_merit: "// 02. SCIENTIFIC MERIT AND TECHNICAL NOVELTY",
+    heading_risk_management: "// 05. TECHNICAL RISKS AND DESIGN DECISIONS",
+    heading_section_nav: "// CONTENT MAP"
+  });
+
+  Object.assign(UI_TRANSLATIONS.tr, {
+    heading_section_nav: "// İÇERİK HARİTASI"
   });
 
   Object.entries(enrichment).forEach(([lang, projectMap]) => {
@@ -1935,6 +1945,44 @@ Based on these findings, model selection should not be reduced to a single metri
       if (project) {
         Object.assign(project, fields);
       }
+    });
+  });
+
+  const toneReplacements = [
+    [/not just/g, "not only"],
+    [/working logic/g, "operating principle"],
+    [/In the project,/g, "In this project,"],
+    [/In the thesis,/g, "In the thesis study,"],
+    [/In the project proposal,/g, "In the project proposal,"],
+    [/The fundamental problem with the study/g, "The core technical problem addressed by the study"],
+    [/This project is a/g, "This project presents a"],
+    [/This output serves as/g, "This output functions as"],
+    [/was carried out/g, "was conducted"],
+    [/were carried out/g, "were conducted"],
+    [/was utilized/g, "was used"],
+    [/were utilized/g, "were used"],
+    [/is utilized/g, "is used"],
+    [/are utilized/g, "are used"],
+    [/the reason .*? is evident here; because/gi, "the rationale is clear: because"]
+  ];
+
+  const polishEnglishProjectCopy = (html) => {
+    if (typeof html !== "string") return html;
+    return toneReplacements.reduce((text, [pattern, replacement]) => text.replace(pattern, replacement), html);
+  };
+
+  PORTFOLIO_DATA.en.projects.forEach(project => {
+    [
+      "summary",
+      "description",
+      "overview",
+      "scientificMerit",
+      "architecture",
+      "riskManagement",
+      "analysis",
+      "achievements"
+    ].forEach(key => {
+      project[key] = polishEnglishProjectCopy(project[key]);
     });
   });
 })();

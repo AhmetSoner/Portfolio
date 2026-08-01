@@ -128,6 +128,8 @@ function loadProjectData(lang, projectId) {
         blockSubsystems.style.display = "none";
     }
 
+    renderProjectSectionNav(lang);
+
     // Diğer Projeler Kartları (Related Projects)
     renderRelatedProjects(lang, proj.id);
 
@@ -196,6 +198,56 @@ function enhanceProjectImages() {
     });
 }
 
+function renderProjectSectionNav(lang) {
+    const nav = document.getElementById("project-section-nav");
+    const links = document.getElementById("project-section-nav-links");
+    if (!nav || !links) return;
+
+    const labels = lang === "tr"
+        ? {
+            "block-overview": "Proje Özeti",
+            "block-scientific-merit": "Bilimsel Nitelik",
+            "block-architecture": "Yöntem ve Mimari",
+            "block-subsystems": "Alt Sistemler",
+            "block-risk-management": "Teknik Kararlar",
+            "block-analysis": "Test ve Doğrulama",
+            "block-achievements": "Proje Çıktıları"
+        }
+        : {
+            "block-overview": "Overview",
+            "block-scientific-merit": "Scientific Merit",
+            "block-architecture": "Method & Architecture",
+            "block-subsystems": "Subsystems",
+            "block-risk-management": "Design Decisions",
+            "block-analysis": "Testing & Verification",
+            "block-achievements": "Project Outputs"
+        };
+
+    const sectionIds = [
+        "block-overview",
+        "block-scientific-merit",
+        "block-architecture",
+        "block-subsystems",
+        "block-risk-management",
+        "block-analysis",
+        "block-achievements"
+    ];
+
+    const visibleSections = sectionIds
+        .map(id => document.getElementById(id))
+        .filter(section => {
+            if (!section || section.style.display === "none") return false;
+            const content = section.querySelector(".block-text, .subsystems-grid");
+            return content && content.textContent.trim().length > 0;
+        });
+
+    links.innerHTML = visibleSections
+        .map(section => `<a href="#${section.id}">${labels[section.id]}</a>`)
+        .join("");
+
+    nav.style.display = visibleSections.length > 1 ? "block" : "none";
+}
+
 function renderRelatedProjects(lang, currentId) {
     const container = document.getElementById("related-projects-container");
     if (!container) return;
@@ -223,7 +275,7 @@ function renderRelatedProjects(lang, currentId) {
             <div class="corner-b-l"></div>
             <div class="corner-b-r"></div>
             <div class="project-img-wrap">
-                <img src="${proj.image}" alt="${proj.title}" loading="lazy">
+                <img src="${proj.image}" alt="${proj.title}" loading="lazy" decoding="async">
                 <div class="project-overlay-hud">// SYS_${catName}</div>
             </div>
             <div class="project-body">
