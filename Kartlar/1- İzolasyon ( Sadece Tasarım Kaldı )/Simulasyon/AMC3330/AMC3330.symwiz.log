@@ -1,0 +1,31 @@
+STATUS: PSpice Model Import Wizard for "Capture" (24.1.0.d001)
+STATUS:  
+   INFO: LIB driven flow
+   INFO: Input File: C:\Users\ahmet\Desktop\Sistemler\Ýzolasyon\Simulasyon\AMC3330\AMC3330.lib
+   INFO: Output File: C:\Users\ahmet\Desktop\Sistemler\Ýzolasyon\Simulasyon\AMC3330\AMC3330.OLB
+STATUS:  
+STATUS: Identifying matching symbols automatically...started at Thursday, September 11, 2025 14:02:30
+STATUS:  
+   INFO: Symbol "D_LIM1T" created for model "D_LIM1T".
+   INFO: Symbol "Q_NMOS" created for model "Q_NMOS".
+   INFO: Symbol "Q_PMOS" created for model "Q_PMOS".
+   INFO: Symbol "Q_NMOS_OUT_L1" created for model "Q_NMOS_OUT_L1".
+   INFO: Symbol "Q_NMOS_OUT" created for model "Q_NMOS_OUT".
+   INFO: Symbol "Q_PMOS_OUT_L1" created for model "Q_PMOS_OUT_L1".
+   INFO: Symbol "Q_PMOS_OUT" created for model "Q_PMOS_OUT".
+   INFO: Symbol "D_LIM1" created for model "D_LIM1".
+   INFO: Symbol "D_LIM100" created for model "D_LIM100".
+   INFO: Symbol "D_LIM1005" created for model "D_LIM1005".
+   INFO: Symbol "D_LIM100_05" created for model "D_LIM100_05".
+   INFO: Symbol "D_LIM10" created for model "D_LIM10".
+   INFO: Symbol "D_LIM2" created for model "D_LIM2".
+   INFO: Symbol "D_LIM3" created for model "D_LIM3".
+   INFO: Symbol "D_LIM4" created for model "D_LIM4".
+   INFO: Symbol "D1" created for model "D1".
+   INFO: Symbol "DZ_14V" created for model "DZ_14V".
+   INFO: Symbol "DZ_80V" created for model "DZ_80V".
+   INFO: Symbol "D2" created for model "D2".
+STATUS:  
+STATUS: Completed identifying matching symbols automatically...at Thursday, September 11, 2025 14:02:31
+STATUS:  
+STATUS: 0 Error messages, 0 Warning messages
