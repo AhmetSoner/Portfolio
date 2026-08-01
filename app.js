@@ -137,6 +137,7 @@ function initPortfolioData() {
     if (document.getElementById("hero-subtitle")) document.getElementById("hero-subtitle").textContent = profile.subTitle || "";
     if (document.getElementById("profile-avatar") && profile.avatar) document.getElementById("profile-avatar").src = profile.avatar;
     if (document.getElementById("profile-about") && profile.about) document.getElementById("profile-about").innerHTML = profile.about.replace(/\n/g, '<br>');
+    renderEngineeringSummary(profile.engineeringSummary || trData.profile?.engineeringSummary);
 
     // İletişim Bilgileri
     if (profile.socials) {
@@ -243,6 +244,47 @@ function initPortfolioData() {
 
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
+    }
+}
+
+function renderEngineeringSummary(summary) {
+    if (!summary) return;
+
+    const intro = document.getElementById("engineering-summary-intro");
+    const label = document.getElementById("engineering-roadmap-label");
+    const track = document.getElementById("engineering-roadmap-track");
+    const strengthsTitle = document.getElementById("engineering-strengths-title");
+    const growthTitle = document.getElementById("engineering-growth-title");
+    const strengthsList = document.getElementById("engineering-strengths");
+    const growthList = document.getElementById("engineering-growth");
+
+    if (intro) intro.textContent = summary.intro || "";
+    if (label) label.textContent = summary.timelineLabel || "";
+
+    if (track) {
+        const timeline = summary.timeline || [];
+        track.innerHTML = "";
+        timeline.forEach((item, index) => {
+            const node = document.createElement("div");
+            node.className = "roadmap-node";
+            if (index === timeline.length - 1) node.classList.add("target-node");
+            node.innerHTML = `
+                <span class="roadmap-node-title">${item.title}</span>
+                <span class="roadmap-node-phase">${item.phase}</span>
+            `;
+            track.appendChild(node);
+        });
+    }
+
+    if (strengthsTitle) strengthsTitle.textContent = summary.strengthsTitle || "";
+    if (growthTitle) growthTitle.textContent = summary.growthTitle || "";
+
+    if (strengthsList) {
+        strengthsList.innerHTML = (summary.strengths || []).map(item => `<li>${item}</li>`).join("");
+    }
+
+    if (growthList) {
+        growthList.innerHTML = (summary.growth || []).map(item => `<li>${item}</li>`).join("");
     }
 }
 

@@ -11,6 +11,33 @@ const PORTFOLIO_DATA = {
         linkedin: "https://www.linkedin.com/in/ahmet-soner-gulec",
         email: "mailto:ahmetsonergulec@hotmail.com",
         phone: "+90 553 715 41 69"
+      },
+      engineeringSummary: {
+        intro: "Mühendislik yolculuğum; aviyonik sistemler, güç elektroniği, yapay zeka ve saha odaklı Ar-Ge projeleri etrafında şekillendi. Teorik bilgiyi; PCB tasarımı, simülasyon, gömülü sistemler ve takım projeleriyle uygulanabilir çıktılara dönüştürmeye odaklanıyorum.",
+        timelineLabel: "Mühendislik Yol Haritası",
+        timeline: [
+          { title: "Havacılık Merakı", phase: "Başlangıç" },
+          { title: "Aviyonik Eğitim", phase: "ESTÜ" },
+          { title: "Uçak Bakım Stajı", phase: "Litvanya" },
+          { title: "PCB & Güç Elektroniği", phase: "Hidroana" },
+          { title: "Yapay Zeka Araştırmaları", phase: "HAYA" },
+          { title: "Sanayi Odaklı Ar-Ge", phase: "TUSAŞ LIFT UP" },
+          { title: "Aviyonik / Gömülü Sistemler", phase: "Kariyer Hedefi" }
+        ],
+        strengthsTitle: "Güçlü Yönler",
+        strengths: [
+          "Güç elektroniği ve PCB tasarımını sistem seviyesinde ele alabilirim.",
+          "Aviyonik ve hava aracı bakım arka planım sayesinde teorik tasarımı saha gerçekliğiyle ilişkilendirebilirim.",
+          "Yapay zeka, veri işleme ve model kıyaslama süreçlerini mühendislik problemi olarak yorumlayabilirim.",
+          "Takım kurma, proje liderliği, teknik raporlama ve sunum süreçlerinde aktif sorumluluk alırım."
+        ],
+        growthTitle: "Geliştirmeye Devam Ettiğim Alanlar",
+        growth: [
+          "Gömülü yazılım ve gerçek zamanlı kontrol uygulamalarında daha derin sistem deneyimi kazanmak.",
+          "Güç elektroniği tasarımlarında EMI/EMC, termal dayanım ve saha test süreçlerini ileri seviyeye taşımak.",
+          "Teknik İngilizce yazım ve uluslararası sunum standardını güçlendirmek.",
+          "Yapay zeka modellerini edge donanımlarda daha verimli çalıştırmak."
+        ]
       }
     },
     skills: [
@@ -648,6 +675,33 @@ gallery: [
         linkedin: "https://www.linkedin.com/in/ahmet-soner-gulec",
         email: "mailto:ahmetsonergulec@hotmail.com",
         phone: "+90 553 715 41 69"
+      },
+      engineeringSummary: {
+        intro: "My engineering path has been shaped around avionics, power electronics, artificial intelligence, and field-oriented R&D projects. I focus on turning theoretical knowledge into applicable engineering outputs through PCB design, simulation, embedded systems, and team-based technical projects.",
+        timelineLabel: "Engineering Roadmap",
+        timeline: [
+          { title: "Aviation Interest", phase: "Starting Point" },
+          { title: "Avionics Education", phase: "ESTU" },
+          { title: "Aircraft Maintenance Internship", phase: "Lithuania" },
+          { title: "PCB & Power Electronics", phase: "Hidroana" },
+          { title: "AI Research", phase: "HAYA" },
+          { title: "Industry-Oriented R&D", phase: "TUSAŞ LIFT UP" },
+          { title: "Avionics / Embedded Systems", phase: "Career Target" }
+        ],
+        strengthsTitle: "Strengths",
+        strengths: [
+          "I can approach power electronics and PCB design at system level.",
+          "My avionics and aircraft maintenance background helps me connect theoretical design decisions with field realities.",
+          "I can interpret AI, data processing, and model benchmarking workflows as engineering problems rather than isolated software tasks.",
+          "I take active responsibility in team formation, project leadership, technical reporting, and presentation processes."
+        ],
+        growthTitle: "Areas I Continue to Improve",
+        growth: [
+          "Deepening my experience in embedded software and real-time control applications.",
+          "Advancing EMI/EMC, thermal reliability, and field-test maturity in power electronics designs.",
+          "Improving technical English writing and international presentation standards.",
+          "Optimizing AI models for more efficient deployment on edge hardware."
+        ]
       }
     },
     skills: [
@@ -1292,6 +1346,8 @@ const UI_TRANSLATIONS = {
     hero_btn_contact: "BAĞLANTI KUR",
     tag_about: "SYS_02 // SEARCH_PROFILE",
     title_about: "HAKKIMDA",
+    tag_engineering_summary: "SYS_01B // PROFILE_VECTOR",
+    title_engineering_summary: "KISA MÜHENDİSLİK PROFİLİ",
     tag_experience: "SYS_03 // HISTORY_LOG",
     title_experience: "EĞİTİM & DENEYİM",
     col_education: "EĞİTİM",
@@ -1363,6 +1419,8 @@ const UI_TRANSLATIONS = {
     hero_btn_contact: "GET IN TOUCH",
     tag_about: "SYS_02 // SEARCH_PROFILE",
     title_about: "ABOUT ME",
+    tag_engineering_summary: "SYS_01B // PROFILE_VECTOR",
+    title_engineering_summary: "ENGINEERING SUMMARY",
     tag_experience: "SYS_03 // HISTORY_LOG",
     title_experience: "EDUCATION & EXPERIENCE",
     col_education: "EDUCATION",
