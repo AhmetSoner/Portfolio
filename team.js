@@ -19,7 +19,6 @@ function loadTeamData(lang, teamId) {
     if (!team) return;
 
     document.title = `${team.name} // Ahmet Soner Güleç`;
-    document.getElementById("telemetry-id").textContent = `// TEAM_FILE: ${team.id.toUpperCase()}`;
     document.getElementById("team-title").textContent = team.name;
     document.getElementById("team-role").textContent = team.role;
     document.getElementById("team-period").textContent = team.period;
