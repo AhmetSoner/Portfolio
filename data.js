@@ -26,17 +26,17 @@ const PORTFOLIO_DATA = {
         ],
         strengthsTitle: "Güçlü Yönler",
         strengths: [
-          "Liderlik almayı ve projeyi fikir aşamasından teknik çıktıya kadar takip etmeyi severim.",
-          "Tasarlamayı, üretmeyi, parçaları bir araya getirmeyi ve çalışan bir sistem ortaya çıkarmayı severim.",
-          "Aviyonik, uçak bakım ve saha deneyimim sayesinde teknik kararları gerçek kullanım koşullarıyla ilişkilendirebilirim.",
-          "Güç elektroniği, PCB tasarımı, yapay zeka ve raporlama süreçlerini tek bir proje bütünlüğü içinde ele alabilirim."
+          "Proje sahipliği ve ekip koordinasyonu konusunda güçlü bir çalışma disiplinine sahibim; fikir aşamasından prototip, rapor ve sunulabilir çıktıya kadar süreci bütünsel olarak yönetebilirim.",
+          "Tasarım, üretim ve entegrasyon süreçlerinde uygulamalı çalışmayı önemserim; bir sistemi yalnızca teorik olarak değil, çalışan ve test edilebilir bir çıktıya dönüşecek şekilde ele alırım.",
+          "Aviyonik, uçak bakım, güç elektroniği ve yapay zeka alanlarındaki deneyimlerim sayesinde farklı disiplinleri ortak bir teknik hedef etrafında birleştirebilirim.",
+          "Saha koşullarını, güvenilirlik beklentilerini ve uygulanabilirlik gereksinimlerini tasarım kararlarına dahil ederek mühendislik problemlerine sistem seviyesinde yaklaşırım."
         ],
         growthTitle: "Geliştirmeye Devam Ettiğim Alanlar",
         growth: [
-          "Gömülü yazılım tarafında gerçek zamanlı kontrol, haberleşme protokolleri ve donanım-yazılım entegrasyonu üzerine kendimi geliştirmeye devam ediyorum.",
-          "Yapay zeka modellerinde veri hattı kurma, model optimizasyonu ve edge donanımda verimli çıkarım alma tarafında daha derinleşiyorum.",
-          "Güç elektroniği tasarımlarında EMI/EMC, termal dayanım, koruma devreleri ve saha test süreçlerini daha ileri seviyeye taşımayı hedefliyorum.",
-          "Projeleri yalnızca teknik rapor olarak değil; arayüz, prototip, kaynak dosya ve sunulabilir çıktı haline getirme pratiğimi güçlendiriyorum."
+          "Gömülü yazılım alanında gerçek zamanlı kontrol, haberleşme protokolleri, hata yönetimi ve donanım-yazılım entegrasyonu konularında yetkinliğimi artırmaya devam ediyorum.",
+          "Yapay zeka modelleri tarafında veri hazırlama, model seçimi, performans optimizasyonu, yorumlanabilirlik ve edge donanımlarda verimli çıkarım alma konularında derinleşiyorum.",
+          "Güç elektroniği ve PCB tasarımında EMI/EMC, termal yönetim, koruma devreleri, üretilebilirlik ve test doğrulama süreçlerini daha ileri seviyeye taşımayı hedefliyorum.",
+          "Teknik çıktıları daha anlaşılır, sürdürülebilir ve yeniden kullanılabilir hale getirmek için dokümantasyon, arayüz tasarımı, kaynak dosya yönetimi ve proje sunumu pratiğimi geliştiriyorum."
         ]
       }
     },
@@ -690,17 +690,17 @@ gallery: [
         ],
         strengthsTitle: "Strengths",
         strengths: [
-          "I like taking ownership and carrying a project from an idea to a concrete technical output.",
-          "I like to design, build, and assemble systems until the individual parts become something that works.",
-          "My avionics, aircraft maintenance, and field experience help me connect technical decisions with real operating conditions.",
-          "I can bring power electronics, PCB design, AI workflows, documentation, and presentation into a single project narrative."
+          "I have a strong sense of project ownership and team coordination, with the ability to carry an idea from concept development to prototype, documentation, and presentable output.",
+          "I value hands-on design, fabrication, and integration; I approach systems with the goal of making them functional, testable, and technically defensible.",
+          "My experience across avionics, aircraft maintenance, power electronics, and artificial intelligence helps me connect multiple disciplines around a shared technical objective.",
+          "I approach engineering problems at system level by considering field conditions, reliability expectations, and implementation constraints during design decisions."
         ],
         growthTitle: "Areas I Continue to Improve",
         growth: [
-          "I continue to improve in embedded software, especially real-time control, communication protocols, and hardware-software integration.",
-          "I am deepening my work on AI model pipelines, optimization, and efficient inference on edge hardware.",
-          "I aim to advance EMI/EMC, thermal reliability, protection circuitry, and field-test maturity in power electronics designs.",
-          "I am strengthening my ability to turn projects into interfaces, prototypes, source archives, and presentable engineering outputs."
+          "I continue to improve my embedded software skills in real-time control, communication protocols, fault handling, and hardware-software integration.",
+          "I am deepening my work on AI models, especially data preparation, model selection, performance optimization, interpretability, and efficient inference on edge hardware.",
+          "In power electronics and PCB design, I aim to advance my capabilities in EMI/EMC, thermal management, protection circuitry, manufacturability, and test validation.",
+          "I am improving how I package technical outputs through documentation, interface design, source-file organization, and clear project presentation."
         ]
       }
     },
