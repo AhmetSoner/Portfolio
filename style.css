@@ -67,7 +67,7 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-main);
     font-family: var(--font-body);
-    font-size: 1.04rem;
+    font-size: 1.15rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     line-height: 1.6;
@@ -199,9 +199,9 @@ body {
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    width: min(82vw, 960px);
-    max-width: 960px;
-    height: 58px;
+    width: min(86vw, 1040px);
+    max-width: 1040px;
+    height: 70px;
     background-color: var(--bg-panel);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid var(--border-color);
@@ -210,8 +210,8 @@ body {
     display: flex;
     justify-content: center; /* Elemanlar ortalandı */
     align-items: center;
-    gap: 22px; /* Logo, linkler ve butonlar arasındaki boşluk eşitlendi */
-    padding: 0 24px;
+    gap: 30px; /* Logo, linkler ve butonlar arasındaki boşluk eşitlendi */
+    padding: 0 30px;
     z-index: 999;
 }
 
@@ -237,7 +237,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 22px;
+    gap: 30px;
     height: 100%;
 }
 
@@ -252,11 +252,11 @@ body {
     color: var(--text-muted);
     text-decoration: none;
     font-family: var(--font-header);
-    font-size: 0.74rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     position: relative;
-    padding: 0 7px;
+    padding: 0 10px;
     transition: var(--transition);
 }
 
@@ -287,7 +287,7 @@ body {
 
 .nav-num {
     color: var(--text-muted);
-    font-size: 0.62rem;
+    font-size: 0.7rem;
     margin-right: 5px;
     font-weight: 400;
 }
@@ -316,9 +316,9 @@ body {
    ========================================================================== */
 
 .main-container {
-    max-width: 980px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 150px 48px 88px;
+    padding: 145px 42px 80px;
     display: flex;
     flex-direction: column;
     gap: 145px;
@@ -382,7 +382,7 @@ section {
 
 .section-title {
     font-family: var(--font-header);
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: #fff;
     letter-spacing: 0.1em;
@@ -644,7 +644,7 @@ section {
     max-width: 980px;
     margin: 0 auto 30px;
     color: var(--text-main);
-    font-size: 0.96rem;
+    font-size: 1.06rem;
     line-height: 1.75;
     text-align: center;
 }
@@ -987,7 +987,7 @@ section {
 
 .about-paragraph {
     color: var(--text-main);
-    font-size: 0.94rem;
+    font-size: 1.02rem;
     line-height: 1.86;
     margin-bottom: 30px;
 }
@@ -1613,9 +1613,9 @@ section {
 .filter-controls {
     display: flex;
     align-items: center;
-    gap: 7px;
-    margin-bottom: 36px;
-    padding: 5px;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding: 6px;
     background: rgba(5, 12, 24, 0.6);
     border: 1px solid rgba(0, 240, 255, 0.12);
     width: fit-content;
@@ -1628,9 +1628,9 @@ section {
     border: 1px solid transparent;
     cursor: pointer;
     font-family: var(--font-header);
-    font-size: 0.68rem;
+    font-size: 0.78rem;
     letter-spacing: 0.1em;
-    padding: 7px 14px;
+    padding: 8px 18px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -2005,8 +2005,8 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
 }
 
 .project-card {
@@ -2027,7 +2027,7 @@ section {
 }
 
 .project-img-wrap {
-    height: 230px;
+    height: 200px;
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid rgba(0, 240, 255, 0.15);
@@ -2060,7 +2060,7 @@ section {
 }
 
 .project-body {
-    padding: 22px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -2068,16 +2068,16 @@ section {
 
 .project-body h3 {
     font-family: var(--font-header);
-    font-size: 1.02rem;
+    font-size: 1.15rem;
     color: #fff;
     margin-bottom: 10px;
     line-height: 1.3;
 }
 
 .project-summary {
-    font-size: 0.86rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
-    line-height: 1.58;
+    line-height: 1.5;
     margin-bottom: 20px;
     flex-grow: 1;
     text-align: justify;
@@ -2788,7 +2788,7 @@ section {
 }
 
 .project-detail-title {
-    font-size: 1.88rem;
+    font-size: 2.05rem;
     margin-bottom: 15px;
     line-height: 1.25;
 }
@@ -2809,7 +2809,7 @@ section {
 }
 
 .project-detail-lead {
-    font-size: 0.96rem;
+    font-size: 1.04rem;
     color: var(--text-main);
     line-height: 1.78;
     margin-bottom: 20px;
@@ -3079,7 +3079,7 @@ section {
 
 .block-text {
     color: var(--text-main);
-    font-size: 0.92rem;
+    font-size: 0.98rem;
     line-height: 1.82;
     text-align: justify;
 }
