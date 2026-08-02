@@ -687,18 +687,6 @@ section {
     align-items: stretch;
 }
 
-.roadmap-track::before {
-    content: "";
-    position: absolute;
-    left: calc((100% / var(--node-count, 7)) / 2);
-    right: calc((100% / var(--node-count, 7)) / 2);
-    top: 50%;
-    height: 2px;
-    background: linear-gradient(90deg, rgba(0, 240, 255, 0.12), rgba(0, 240, 255, 0.75), rgba(0, 240, 255, 0.12));
-    box-shadow: 0 0 14px rgba(0, 240, 255, 0.16);
-    z-index: 0;
-}
-
 .roadmap-node {
     position: relative;
     z-index: 1;
@@ -717,16 +705,32 @@ section {
     content: "";
     position: absolute;
     top: 50%;
-    left: -11px;
+    left: -12px;
     transform: translateY(-50%);
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     border: 1px solid var(--primary);
     background: var(--bg-dark);
-    box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
 }
 
 .roadmap-node:first-child::before {
+    display: none;
+}
+
+.roadmap-node::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    width: 14px;
+    height: 2px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.92), rgba(0, 240, 255, 0.32));
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.32);
+}
+
+.roadmap-node:last-child::after {
     display: none;
 }
 
