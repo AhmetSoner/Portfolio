@@ -26,7 +26,7 @@ const PORTFOLIO_DATA = {
         ],
         strengthsTitle: "Güçlü Yönler",
         strengths: [
-          "Proje sahipliği ve ekip koordinasyonu konusunda güçlü bir çalışma disiplinine sahibim; fikir aşamasından prototip, rapor ve sunulabilir çıktıya kadar süreci bütünsel olarak yönetebilirim.",
+          "Ekip yönetimi ve koordinasyonu konusunda güçlü bir çalışma disiplinine sahibim; fikir aşamasından prototip, rapor ve sunulabilir çıktıya kadar süreci bütünsel olarak yönetebilirim.",
           "Tasarım, üretim ve entegrasyon süreçlerinde uygulamalı çalışmayı önemserim; bir sistemi yalnızca teorik olarak değil, çalışan ve test edilebilir bir çıktıya dönüşecek şekilde ele alırım.",
           "Aviyonik, uçak bakım, güç elektroniği ve yapay zeka alanlarındaki deneyimlerim sayesinde farklı disiplinleri ortak bir teknik hedef etrafında birleştirebilirim.",
           "Saha koşullarını, güvenilirlik beklentilerini ve uygulanabilirlik gereksinimlerini tasarım kararlarına dahil ederek mühendislik problemlerine sistem seviyesinde yaklaşırım."
@@ -34,8 +34,7 @@ const PORTFOLIO_DATA = {
         growthTitle: "Geliştirmeye Devam Ettiğim Alanlar",
         growth: [
           "Gömülü yazılım alanında gerçek zamanlı kontrol, haberleşme protokolleri, hata yönetimi ve donanım-yazılım entegrasyonu konularında yetkinliğimi artırmaya devam ediyorum.",
-          "Yapay zeka modelleri tarafında veri hazırlama, model seçimi, performans optimizasyonu, yorumlanabilirlik ve edge donanımlarda verimli çıkarım alma konularında derinleşiyorum.",
-          "Güç elektroniği ve PCB tasarımında EMI/EMC, termal yönetim, koruma devreleri, üretilebilirlik ve test doğrulama süreçlerini daha ileri seviyeye taşımayı hedefliyorum.",
+          "Yapay zeka modelleri tarafında veri hazırlama, model seçimi, performans optimizasyonu, yorumlanabilirlik ve edge donanımlarda verimli çıkarım alma konularında yetkinliğimi geliştiriyorum.",
           "Teknik çıktıları daha anlaşılır, sürdürülebilir ve yeniden kullanılabilir hale getirmek için dokümantasyon, arayüz tasarımı, kaynak dosya yönetimi ve proje sunumu pratiğimi geliştiriyorum."
         ]
       }
@@ -690,7 +689,7 @@ gallery: [
         ],
         strengthsTitle: "Strengths",
         strengths: [
-          "I have a strong sense of project ownership and team coordination, with the ability to carry an idea from concept development to prototype, documentation, and presentable output.",
+          "I have a strong discipline in team management and coordination, with the ability to carry an idea from concept development to prototype, documentation, and presentable output.",
           "I value hands-on design, fabrication, and integration; I approach systems with the goal of making them functional, testable, and technically defensible.",
           "My experience across avionics, aircraft maintenance, power electronics, and artificial intelligence helps me connect multiple disciplines around a shared technical objective.",
           "I approach engineering problems at system level by considering field conditions, reliability expectations, and implementation constraints during design decisions."
@@ -698,8 +697,7 @@ gallery: [
         growthTitle: "Areas I Continue to Improve",
         growth: [
           "I continue to improve my embedded software skills in real-time control, communication protocols, fault handling, and hardware-software integration.",
-          "I am deepening my work on AI models, especially data preparation, model selection, performance optimization, interpretability, and efficient inference on edge hardware.",
-          "In power electronics and PCB design, I aim to advance my capabilities in EMI/EMC, thermal management, protection circuitry, manufacturability, and test validation.",
+          "I continue to strengthen my capabilities in AI models, especially data preparation, model selection, performance optimization, interpretability, and efficient inference on edge hardware.",
           "I am improving how I package technical outputs through documentation, interface design, source-file organization, and clear project presentation."
         ]
       }
