@@ -151,18 +151,17 @@ function initContactCopyButtons() {
 }
 
 function showContactCopyFeedback(button) {
-    const label = button.querySelector("span");
-    if (!label) return;
-
     const translations = (typeof UI_TRANSLATIONS !== "undefined" && UI_TRANSLATIONS[currentLang]) ? UI_TRANSLATIONS[currentLang] : {};
-    const defaultText = translations.copy_button || "Kopyala";
     const copiedText = translations.copied_button || "Kopyalandı";
-    label.textContent = copiedText;
+    const defaultTitle = translations.copy_button || "Kopyala";
+    button.setAttribute("title", copiedText);
+    button.setAttribute("aria-label", copiedText);
     button.classList.add("copied");
 
     window.clearTimeout(button.copyResetTimer);
     button.copyResetTimer = window.setTimeout(() => {
-        label.textContent = defaultText;
+        button.setAttribute("title", defaultTitle);
+        button.setAttribute("aria-label", defaultTitle);
         button.classList.remove("copied");
     }, 1400);
 }

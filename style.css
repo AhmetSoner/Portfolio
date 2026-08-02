@@ -826,12 +826,12 @@ section {
     }
 
     .contact-link-row {
-        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-columns: minmax(0, 1fr) 40px;
         gap: 10px;
     }
 
     .contact-copy-btn {
-        width: auto;
+        width: 40px;
     }
 
     .summary-lists-grid {
@@ -2160,10 +2160,10 @@ section {
 
 .contact-link-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
+    grid-template-columns: minmax(0, 1fr) 40px;
+    gap: 12px;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid rgba(0, 240, 255, 0.12);
     background: rgba(0, 240, 255, 0.035);
 }
@@ -2171,12 +2171,12 @@ section {
 .contact-links-list a {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     min-width: 0;
     color: var(--text-main);
     text-decoration: none;
     transition: var(--transition);
-    font-size: 0.76rem;
+    font-size: 0.82rem;
 }
 
 .contact-links-list a span {
@@ -2201,10 +2201,11 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
-    min-width: 82px;
-    min-height: 36px;
-    padding: 0 10px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
     border: 1px solid rgba(57, 255, 20, 0.42);
     background: rgba(57, 255, 20, 0.08);
     color: var(--accent);
@@ -2215,8 +2216,8 @@ section {
 }
 
 .contact-copy-btn i {
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     color: var(--accent);
 }
 
