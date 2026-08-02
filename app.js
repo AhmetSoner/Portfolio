@@ -115,7 +115,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 8. Sol/Sağ Kenar Plexus Animasyonu (Bağımsız Canvas)
     initMarginAnimation();
+
+    // 9. İletişim kopyalama butonları
+    initContactCopyButtons();
 });
+
+function initContactCopyButtons() {
+    document.querySelectorAll(".contact-copy-btn").forEach(button => {
+        button.addEventListener("click", async () => {
+            const targetId = button.getAttribute("data-copy-target");
+            const target = targetId ? document.getElementById(targetId) : null;
+            const value = target?.querySelector("span")?.textContent?.trim();
+            if (!value) return;
+
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(value);
+                } else {
+                    const tempInput = document.createElement("textarea");
+                    tempInput.value = value;
+                    tempInput.setAttribute("readonly", "");
+                    tempInput.style.position = "fixed";
+                    tempInput.style.opacity = "0";
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(tempInput);
+                }
+                showContactCopyFeedback(button);
+            } catch (error) {
+                console.warn("Kopyalama başarısız:", error);
+            }
+        });
+    });
+}
+
+function showContactCopyFeedback(button) {
+    const label = button.querySelector("span");
+    if (!label) return;
+
+    const translations = (typeof UI_TRANSLATIONS !== "undefined" && UI_TRANSLATIONS[currentLang]) ? UI_TRANSLATIONS[currentLang] : {};
+    const defaultText = translations.copy_button || "Kopyala";
+    const copiedText = translations.copied_button || "Kopyalandı";
+    label.textContent = copiedText;
+    button.classList.add("copied");
+
+    window.clearTimeout(button.copyResetTimer);
+    button.copyResetTimer = window.setTimeout(() => {
+        label.textContent = defaultText;
+        button.classList.remove("copied");
+    }, 1400);
+}
 
 /* ==========================================================================
    1. PORTFOLYO VERİ DOLDURMA (DATA BINDING)

@@ -825,6 +825,15 @@ section {
         scrollbar-width: thin;
     }
 
+    .contact-link-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contact-copy-btn {
+        width: 100%;
+    }
+
     .summary-lists-grid {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -2149,6 +2158,16 @@ section {
     gap: 20px;
 }
 
+.contact-link-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid rgba(0, 240, 255, 0.12);
+    background: rgba(0, 240, 255, 0.035);
+}
+
 .contact-links-list a {
     display: flex;
     align-items: center;
@@ -2168,6 +2187,34 @@ section {
     color: var(--primary);
     width: 20px;
     height: 20px;
+}
+
+.contact-copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 112px;
+    min-height: 42px;
+    border: 1px solid rgba(57, 255, 20, 0.42);
+    background: rgba(57, 255, 20, 0.08);
+    color: var(--accent);
+    font-family: var(--font-tech);
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-copy-btn i {
+    width: 17px;
+    height: 17px;
+    color: var(--accent);
+}
+
+.contact-copy-btn:hover,
+.contact-copy-btn.copied {
+    background: rgba(57, 255, 20, 0.16);
+    box-shadow: 0 0 18px rgba(57, 255, 20, 0.12);
 }
 
 .contact-form-panel {
