@@ -650,24 +650,12 @@ section {
 }
 
 .engineering-roadmap {
-    display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 22px;
-    align-items: center;
-    margin: 18px 0 44px;
-}
-
-.roadmap-label {
-    color: #ffffff;
-    font-family: var(--font-header);
-    font-size: 0.92rem;
-    line-height: 1.35;
-    text-transform: uppercase;
+    margin: 22px 0 52px;
 }
 
 .roadmap-stack {
     position: relative;
-    padding-top: 38px;
+    padding-top: 42px;
 }
 
 .roadmap-marker {
@@ -694,44 +682,48 @@ section {
 .roadmap-track {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(7, minmax(112px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(7, minmax(132px, 1fr));
+    gap: 14px;
     align-items: stretch;
 }
 
 .roadmap-track::before {
     content: "";
     position: absolute;
-    left: 3%;
-    right: 3%;
-    top: 31px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.65), transparent);
+    left: calc((100% / var(--node-count, 7)) / 2);
+    right: calc((100% / var(--node-count, 7)) / 2);
+    top: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.12), rgba(0, 240, 255, 0.75), rgba(0, 240, 255, 0.12));
+    box-shadow: 0 0 14px rgba(0, 240, 255, 0.16);
     z-index: 0;
 }
 
 .roadmap-node {
     position: relative;
     z-index: 1;
-    min-height: 82px;
-    padding: 12px 10px;
+    min-height: 106px;
+    padding: 16px 14px;
     border: 1px solid rgba(0, 240, 255, 0.28);
-    background: rgba(0, 240, 255, 0.08);
+    background: linear-gradient(180deg, rgba(0, 240, 255, 0.12), rgba(0, 240, 255, 0.045));
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
+    box-shadow: 0 0 0 1px rgba(0, 240, 255, 0.025), inset 0 0 18px rgba(0, 240, 255, 0.035);
 }
 
 .roadmap-node::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: -7px;
-    width: 8px;
-    height: 8px;
+    top: 50%;
+    left: -11px;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
     border: 1px solid var(--primary);
     background: var(--bg-dark);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
 }
 
 .roadmap-node:first-child::before {
@@ -741,7 +733,7 @@ section {
 .roadmap-node-title {
     color: #ffffff;
     font-family: var(--font-header);
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     line-height: 1.3;
 }
 
@@ -755,7 +747,7 @@ section {
 .roadmap-node.target-node {
     border-color: rgba(57, 255, 20, 0.7);
     background: rgba(57, 255, 20, 0.11);
-    box-shadow: 0 0 18px rgba(57, 255, 20, 0.08);
+    box-shadow: 0 0 22px rgba(57, 255, 20, 0.12), inset 0 0 18px rgba(57, 255, 20, 0.04);
 }
 
 .summary-lists-grid {
@@ -811,11 +803,6 @@ section {
         font-size: 1rem;
     }
 
-    .engineering-roadmap {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
     .roadmap-stack {
         padding-top: 0;
     }
@@ -828,7 +815,7 @@ section {
     }
 
     .roadmap-track {
-        grid-template-columns: repeat(7, minmax(145px, 1fr));
+        grid-template-columns: repeat(7, minmax(160px, 1fr));
         overflow-x: auto;
         padding-bottom: 6px;
         scrollbar-width: thin;

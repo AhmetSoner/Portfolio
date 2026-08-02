@@ -251,7 +251,6 @@ function renderEngineeringSummary(summary) {
     if (!summary) return;
 
     const intro = document.getElementById("engineering-summary-intro");
-    const label = document.getElementById("engineering-roadmap-label");
     const track = document.getElementById("engineering-roadmap-track");
     const marker = document.getElementById("roadmap-marker");
     const strengthsTitle = document.getElementById("engineering-strengths-title");
@@ -260,8 +259,6 @@ function renderEngineeringSummary(summary) {
     const growthList = document.getElementById("engineering-growth");
 
     if (intro) intro.textContent = summary.intro || "";
-    if (label) label.textContent = summary.timelineLabel || "";
-
     if (marker) marker.textContent = summary.currentMarker || "";
 
     if (track) {

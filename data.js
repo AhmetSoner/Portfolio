@@ -14,7 +14,6 @@ const PORTFOLIO_DATA = {
       },
       engineeringSummary: {
         intro: "Aviyonik sistemler, uçak bakım süreçleri, güç elektroniği, PCB tasarımı, yapay zeka, gömülü sistemler ve saha odaklı Ar-Ge projelerinde çalıştım. Bu alanlarda hem teknik derinliğimi artırmaya hem de ortaya çıkan bilgiyi uygulanabilir proje çıktısına dönüştürmeye devam ediyorum.",
-        timelineLabel: "Bulunduğum Proje Takımları",
         currentMarker: "Ben buradayım",
         timeline: [
           { title: "Havacılık Merakı", phase: "Başlangıç" },
@@ -27,17 +26,17 @@ const PORTFOLIO_DATA = {
         ],
         strengthsTitle: "Güçlü Yönler",
         strengths: [
-          "Güç elektroniği ve PCB tasarımını sistem seviyesinde ele alabilirim.",
-          "Aviyonik ve hava aracı bakım arka planım sayesinde teorik tasarımı saha gerçekliğiyle ilişkilendirebilirim.",
-          "Yapay zeka, veri işleme ve model kıyaslama süreçlerini teknik problem olarak yorumlayabilirim.",
-          "Takım kurma, proje liderliği, teknik raporlama ve sunum süreçlerinde aktif sorumluluk alırım."
+          "Liderlik almayı ve projeyi fikir aşamasından teknik çıktıya kadar takip etmeyi severim.",
+          "Tasarlamayı, üretmeyi, parçaları bir araya getirmeyi ve çalışan bir sistem ortaya çıkarmayı severim.",
+          "Aviyonik, uçak bakım ve saha deneyimim sayesinde teknik kararları gerçek kullanım koşullarıyla ilişkilendirebilirim.",
+          "Güç elektroniği, PCB tasarımı, yapay zeka ve raporlama süreçlerini tek bir proje bütünlüğü içinde ele alabilirim."
         ],
         growthTitle: "Geliştirmeye Devam Ettiğim Alanlar",
         growth: [
-          "Gömülü yazılım ve gerçek zamanlı kontrol uygulamalarında daha derin sistem deneyimi kazanmak.",
-          "Güç elektroniği tasarımlarında EMI/EMC, termal dayanım ve saha test süreçlerini ileri seviyeye taşımak.",
-          "Teknik İngilizce yazım ve uluslararası sunum standardını güçlendirmek.",
-          "Yapay zeka modellerini edge donanımlarda daha verimli çalıştırmak."
+          "Gömülü yazılım tarafında gerçek zamanlı kontrol, haberleşme protokolleri ve donanım-yazılım entegrasyonu üzerine kendimi geliştirmeye devam ediyorum.",
+          "Yapay zeka modellerinde veri hattı kurma, model optimizasyonu ve edge donanımda verimli çıkarım alma tarafında daha derinleşiyorum.",
+          "Güç elektroniği tasarımlarında EMI/EMC, termal dayanım, koruma devreleri ve saha test süreçlerini daha ileri seviyeye taşımayı hedefliyorum.",
+          "Projeleri yalnızca teknik rapor olarak değil; arayüz, prototip, kaynak dosya ve sunulabilir çıktı haline getirme pratiğimi güçlendiriyorum."
         ]
       }
     },
@@ -679,7 +678,6 @@ gallery: [
       },
       engineeringSummary: {
         intro: "I have worked across avionics systems, aircraft maintenance processes, power electronics, PCB design, artificial intelligence, embedded systems, and field-oriented R&D projects. I continue to develop myself in these areas while focusing on turning technical knowledge into applicable project outputs.",
-        timelineLabel: "Project Teams and Roles",
         currentMarker: "I am here",
         timeline: [
           { title: "Aviation Interest", phase: "Starting Point" },
@@ -692,17 +690,17 @@ gallery: [
         ],
         strengthsTitle: "Strengths",
         strengths: [
-          "I can approach power electronics and PCB design at system level.",
-          "My avionics and aircraft maintenance background helps me connect theoretical design decisions with field realities.",
-          "I can interpret AI, data processing, and model benchmarking workflows as technical problems.",
-          "I take active responsibility in team formation, project leadership, technical reporting, and presentation processes."
+          "I like taking ownership and carrying a project from an idea to a concrete technical output.",
+          "I like to design, build, and assemble systems until the individual parts become something that works.",
+          "My avionics, aircraft maintenance, and field experience help me connect technical decisions with real operating conditions.",
+          "I can bring power electronics, PCB design, AI workflows, documentation, and presentation into a single project narrative."
         ],
         growthTitle: "Areas I Continue to Improve",
         growth: [
-          "Deepening my experience in embedded software and real-time control applications.",
-          "Advancing EMI/EMC, thermal reliability, and field-test maturity in power electronics designs.",
-          "Improving technical English writing and international presentation standards.",
-          "Optimizing AI models for more efficient deployment on edge hardware."
+          "I continue to improve in embedded software, especially real-time control, communication protocols, and hardware-software integration.",
+          "I am deepening my work on AI model pipelines, optimization, and efficient inference on edge hardware.",
+          "I aim to advance EMI/EMC, thermal reliability, protection circuitry, and field-test maturity in power electronics designs.",
+          "I am strengthening my ability to turn projects into interfaces, prototypes, source archives, and presentable engineering outputs."
         ]
       }
     },
