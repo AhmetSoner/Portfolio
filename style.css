@@ -1410,7 +1410,7 @@ section {
     line-height: 1.35;
 }
 
-.team-action-hint {
+.project-team-card .team-action-hint {
     width: fit-content;
     margin-top: 8px;
     padding: 9px 12px;
