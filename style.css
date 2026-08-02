@@ -682,8 +682,8 @@ section {
 .roadmap-track {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(7, minmax(132px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 12px;
     align-items: stretch;
 }
 
@@ -691,7 +691,7 @@ section {
     position: relative;
     z-index: 1;
     min-height: 106px;
-    padding: 16px 14px;
+    padding: 14px 10px;
     border: 1px solid rgba(0, 240, 255, 0.28);
     background: linear-gradient(180deg, rgba(0, 240, 255, 0.12), rgba(0, 240, 255, 0.045));
     display: flex;
@@ -707,10 +707,10 @@ section {
     content: "";
     position: absolute;
     top: 50%;
-    left: -12px;
+    left: -11px;
     transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     border: 1px solid var(--primary);
     background: var(--bg-dark);
     box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
@@ -724,8 +724,8 @@ section {
     content: "";
     position: absolute;
     top: 50%;
-    right: -14px;
-    width: 14px;
+    right: -12px;
+    width: 12px;
     height: 2px;
     transform: translateY(-50%);
     background: linear-gradient(90deg, rgba(0, 240, 255, 0.92), rgba(0, 240, 255, 0.32));
@@ -739,14 +739,14 @@ section {
 .roadmap-node-title {
     color: #ffffff;
     font-family: var(--font-header);
-    font-size: 0.84rem;
+    font-size: clamp(0.72rem, 0.82vw, 0.84rem);
     line-height: 1.3;
 }
 
 .roadmap-node-phase {
     color: var(--accent);
     font-family: var(--font-tech);
-    font-size: 0.72rem;
+    font-size: clamp(0.62rem, 0.7vw, 0.72rem);
     line-height: 1.25;
 }
 
@@ -2037,6 +2037,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 58%;
     transition: transform 0.5s ease;
 }
 
