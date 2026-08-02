@@ -35,6 +35,7 @@ const PORTFOLIO_DATA = {
         growth: [
           "Gömülü yazılım alanında gerçek zamanlı kontrol, haberleşme protokolleri, hata yönetimi ve donanım-yazılım entegrasyonu konularında yetkinliğimi artırmaya devam ediyorum.",
           "Yapay zeka modelleri tarafında veri hazırlama, model seçimi, performans optimizasyonu, yorumlanabilirlik ve edge donanımlarda verimli çıkarım alma konularında yetkinliğimi geliştiriyorum.",
+          "3D teknolojileri ve mekanik tasarım alanında; katı modelleme, prototipleme, parça yerleşimi, ağırlık dengesi ve üretilebilirlik odaklı tasarım kararları üzerine kendimi geliştirmeye devam ediyorum.",
           "Teknik çıktıları daha anlaşılır, sürdürülebilir ve yeniden kullanılabilir hale getirmek için dokümantasyon, arayüz tasarımı, kaynak dosya yönetimi ve proje sunumu pratiğimi geliştiriyorum."
         ]
       }
@@ -699,6 +700,7 @@ gallery: [
         growth: [
           "I continue to improve my embedded software skills in real-time control, communication protocols, fault handling, and hardware-software integration.",
           "I continue to strengthen my capabilities in AI models, especially data preparation, model selection, performance optimization, interpretability, and efficient inference on edge hardware.",
+          "I am also developing my skills in 3D technologies and mechanical design, including solid modeling, prototyping, component placement, weight balance, and manufacturability-oriented design decisions.",
           "I am improving how I package technical outputs through documentation, interface design, source-file organization, and clear project presentation."
         ]
       }
