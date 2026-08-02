@@ -826,12 +826,12 @@ section {
     }
 
     .contact-link-row {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr) auto;
         gap: 10px;
     }
 
     .contact-copy-btn {
-        width: 100%;
+        width: auto;
     }
 
     .summary-lists-grid {
@@ -2161,9 +2161,9 @@ section {
 .contact-link-row {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid rgba(0, 240, 255, 0.12);
     background: rgba(0, 240, 255, 0.035);
 }
@@ -2171,11 +2171,18 @@ section {
 .contact-links-list a {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+    min-width: 0;
     color: var(--text-main);
     text-decoration: none;
     transition: var(--transition);
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+.contact-links-list a span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    line-height: 1.45;
 }
 
 .contact-links-list a:hover {
@@ -2187,27 +2194,29 @@ section {
     color: var(--primary);
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
 }
 
 .contact-copy-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    min-width: 112px;
-    min-height: 42px;
+    gap: 6px;
+    min-width: 82px;
+    min-height: 36px;
+    padding: 0 10px;
     border: 1px solid rgba(57, 255, 20, 0.42);
     background: rgba(57, 255, 20, 0.08);
     color: var(--accent);
     font-family: var(--font-tech);
-    font-size: 0.82rem;
+    font-size: 0.72rem;
     cursor: pointer;
     transition: var(--transition);
 }
 
 .contact-copy-btn i {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     color: var(--accent);
 }
 
