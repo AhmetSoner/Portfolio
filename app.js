@@ -271,13 +271,17 @@ function initPortfolioData() {
         skillsList.forEach(skill => {
             const card = document.createElement("div");
             card.className = "skill-card";
-            const skillLogo = getSkillLogo(skill.name);
+            const skillLogos = getSkillLogos(skill.name);
             card.innerHTML = `
                 <div class="corner-t-l"></div>
                 <div class="corner-b-r"></div>
                 <div class="skill-meta" style="margin-bottom: 0;">
-                    <span class="skill-logo-badge ${skillLogo.className}" aria-hidden="true">
-                        <img src="${skillLogo.src}" alt="" loading="lazy">
+                    <span class="skill-logo-group" aria-hidden="true">
+                        ${skillLogos.map(logo => `
+                            <span class="skill-logo-badge ${logo.className}">
+                                <img src="${logo.src}" alt="" loading="lazy">
+                            </span>
+                        `).join("")}
                     </span>
                     <span class="skill-name">${skill.name}</span>
                 </div>
@@ -300,24 +304,30 @@ function initPortfolioData() {
     }
 }
 
-function getSkillLogo(skillName = "") {
+function getSkillLogos(skillName = "") {
     const name = skillName.toLowerCase();
     const logoMap = [
-        { match: "matlab", src: "assets/skills/matlab-simulink.svg", className: "logo-matlab" },
-        { match: "python", src: "assets/skills/python-c.svg", className: "logo-python" },
-        { match: "psim", src: "assets/skills/psim.svg", className: "logo-psim" },
-        { match: "altium", src: "assets/skills/altium.svg", className: "logo-altium" },
-        { match: "ltspice", src: "assets/skills/ltspice-pspice.svg", className: "logo-ltspice" },
-        { match: "ansys", src: "assets/skills/ansys.svg", className: "logo-ansys" },
-        { match: "solidworks", src: "assets/skills/solidworks.svg", className: "logo-solidworks" },
-        { match: "comsol", src: "assets/skills/comsol.svg", className: "logo-comsol" },
-        { match: "xflr5", src: "assets/skills/xflr5.svg", className: "logo-xflr5" }
+        { match: "matlab", src: "assets/skills/matlab.jpg", className: "logo-matlab" },
+        { match: "simulink", src: "assets/skills/matlab.jpg", className: "logo-matlab" },
+        { match: "python", src: "assets/skills/python.webp", className: "logo-python" },
+        { match: "gömülü", src: "assets/skills/python.webp", className: "logo-python" },
+        { match: "embedded", src: "assets/skills/python.webp", className: "logo-python" },
+        { match: "psim", src: "assets/skills/PSIM.png", className: "logo-psim" },
+        { match: "altium", src: "assets/skills/Altium Designer.png", className: "logo-altium" },
+        { match: "ltspice", src: "assets/skills/LTSPİCE.webp", className: "logo-ltspice" },
+        { match: "pspice", src: "assets/skills/ORCAD.png", className: "logo-orcad" },
+        { match: "ansys", src: "assets/skills/ansys.png", className: "logo-ansys" },
+        { match: "solidworks", src: "assets/skills/solidworks.png", className: "logo-solidworks" },
+        { match: "comsol", src: "assets/skills/comsol.jpg", className: "logo-comsol" },
+        { match: "xflr5", src: "assets/skills/XFLR5.png", className: "logo-xflr5" }
     ];
 
-    return logoMap.find(item => name.includes(item.match)) || {
-        src: "assets/skills/psim.svg",
-        className: "logo-default"
-    };
+    const matches = logoMap.filter(item => name.includes(item.match));
+    const uniqueMatches = matches.filter((item, index, list) =>
+        list.findIndex(candidate => candidate.src === item.src) === index
+    );
+
+    return uniqueMatches.length ? uniqueMatches : [{ src: "assets/skills/PSIM.png", className: "logo-default" }];
 }
 
 function renderEngineeringSummary(summary) {

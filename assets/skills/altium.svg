@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Altium Designer">
-  <rect width="64" height="64" rx="10" fill="#101827"/>
-  <path d="M32 9 55 50H44l-4-8H24l-4 8H9L32 9Z" fill="#a02020"/>
-  <path d="M32 24 27 34h10l-5-10Z" fill="#ff6b4a"/>
-  <path d="M24 42h16" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-</svg>

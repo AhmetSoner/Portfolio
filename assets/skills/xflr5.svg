@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="XFLR5">
-  <rect width="64" height="64" rx="10" fill="#101827"/>
-  <path d="M8 39c15-16 34-21 50-12-14 3-26 9-38 22l-12-10Z" fill="#39ff14" opacity=".85"/>
-  <path d="M18 42c10-11 23-17 38-19" fill="none" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
-  <text x="17" y="57" fill="#d1dbed" font-family="Arial, sans-serif" font-size="10" font-weight="700">XFLR5</text>
-</svg>

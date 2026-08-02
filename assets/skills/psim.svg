@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PSIM">
-  <rect width="64" height="64" rx="10" fill="#101827"/>
-  <path d="M12 38h10l5-18 9 28 6-20h10" fill="none" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="10" y="12" width="44" height="40" rx="5" fill="none" stroke="#39ff14" stroke-width="2" opacity=".65"/>
-  <text x="17" y="57" fill="#d1dbed" font-family="Arial, sans-serif" font-size="9" font-weight="700">PSIM</text>
-</svg>
