@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Embedded C">
-  <rect width="64" height="64" rx="10" fill="#07111f"/>
-  <path d="M32 8 53 20v24L32 56 11 44V20L32 8Z" fill="none" stroke="#00f0ff" stroke-width="3"/>
-  <path d="M39 25c-2-3-5-5-9-5-7 0-12 5-12 12s5 12 12 12c4 0 8-2 10-6" fill="none" stroke="#39ff14" stroke-width="5" stroke-linecap="round"/>
-  <path d="M44 20v24M50 26v12" stroke="#d1dbed" stroke-width="3" stroke-linecap="round" opacity=".85"/>
-</svg>

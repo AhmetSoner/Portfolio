@@ -42,7 +42,6 @@ const PORTFOLIO_DATA = {
     skills: [
       { name: "MATLAB / Simulink", category: "Yazılım & Simülasyon", level: 80 },
       { name: "Python", category: "Yazılım & Simülasyon", level: 50 },
-      { name: "Gömülü C", category: "Yazılım & Simülasyon", level: 50 },
       { name: "PSIM", category: "Yazılım & Simülasyon", level: 80 },
       { name: "Altium Designer", category: "Donanım & Tasarım", level: 90 },
       { name: "LTspice", category: "Donanım & Tasarım", level: 90 },
@@ -707,7 +706,6 @@ gallery: [
     skills: [
       { name: "MATLAB / Simulink", category: "Software & Simulation", level: 80 },
       { name: "Python", category: "Software & Simulation", level: 50 },
-      { name: "Embedded C", category: "Software & Simulation", level: 50 },
       { name: "PSIM", category: "Software & Simulation", level: 80 },
       { name: "Altium Designer", category: "Hardware & Design", level: 90 },
       { name: "LTspice", category: "Hardware & Design", level: 90 },
