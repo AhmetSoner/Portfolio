@@ -2176,12 +2176,12 @@ section {
     color: var(--text-main);
     text-decoration: none;
     transition: var(--transition);
-    font-size: 0.9rem;
+    font-size: 0.76rem;
 }
 
 .contact-links-list a span {
     min-width: 0;
-    overflow-wrap: anywhere;
+    white-space: nowrap;
     line-height: 1.45;
 }
 
