@@ -271,10 +271,14 @@ function initPortfolioData() {
         skillsList.forEach(skill => {
             const card = document.createElement("div");
             card.className = "skill-card";
+            const skillLogo = getSkillLogo(skill.name);
             card.innerHTML = `
                 <div class="corner-t-l"></div>
                 <div class="corner-b-r"></div>
                 <div class="skill-meta" style="margin-bottom: 0;">
+                    <span class="skill-logo-badge ${skillLogo.className}" aria-hidden="true">
+                        <img src="${skillLogo.src}" alt="" loading="lazy">
+                    </span>
                     <span class="skill-name">${skill.name}</span>
                 </div>
             `;
@@ -294,6 +298,26 @@ function initPortfolioData() {
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
+}
+
+function getSkillLogo(skillName = "") {
+    const name = skillName.toLowerCase();
+    const logoMap = [
+        { match: "matlab", src: "assets/skills/matlab-simulink.svg", className: "logo-matlab" },
+        { match: "python", src: "assets/skills/python-c.svg", className: "logo-python" },
+        { match: "psim", src: "assets/skills/psim.svg", className: "logo-psim" },
+        { match: "altium", src: "assets/skills/altium.svg", className: "logo-altium" },
+        { match: "ltspice", src: "assets/skills/ltspice-pspice.svg", className: "logo-ltspice" },
+        { match: "ansys", src: "assets/skills/ansys.svg", className: "logo-ansys" },
+        { match: "solidworks", src: "assets/skills/solidworks.svg", className: "logo-solidworks" },
+        { match: "comsol", src: "assets/skills/comsol.svg", className: "logo-comsol" },
+        { match: "xflr5", src: "assets/skills/xflr5.svg", className: "logo-xflr5" }
+    ];
+
+    return logoMap.find(item => name.includes(item.match)) || {
+        src: "assets/skills/psim.svg",
+        className: "logo-default"
+    };
 }
 
 function renderEngineeringSummary(summary) {

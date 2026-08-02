@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LTspice PSpice">
+  <rect width="64" height="64" rx="10" fill="#101827"/>
+  <path d="M11 38h9l4-12 7 23 5-17h17" fill="none" stroke="#8fb6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 15h28M18 22h18" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+  <text x="15" y="57" fill="#d1dbed" font-family="Arial, sans-serif" font-size="9" font-weight="700">SPICE</text>
+</svg>
