@@ -253,6 +253,7 @@ function renderEngineeringSummary(summary) {
     const intro = document.getElementById("engineering-summary-intro");
     const label = document.getElementById("engineering-roadmap-label");
     const track = document.getElementById("engineering-roadmap-track");
+    const marker = document.getElementById("roadmap-marker");
     const strengthsTitle = document.getElementById("engineering-strengths-title");
     const growthTitle = document.getElementById("engineering-growth-title");
     const strengthsList = document.getElementById("engineering-strengths");
@@ -261,19 +262,27 @@ function renderEngineeringSummary(summary) {
     if (intro) intro.textContent = summary.intro || "";
     if (label) label.textContent = summary.timelineLabel || "";
 
+    if (marker) marker.textContent = summary.currentMarker || "";
+
     if (track) {
         const timeline = summary.timeline || [];
         track.innerHTML = "";
         timeline.forEach((item, index) => {
             const node = document.createElement("div");
             node.className = "roadmap-node";
-            if (index === timeline.length - 1) node.classList.add("target-node");
+            if (item.current || index === timeline.length - 1) node.classList.add("target-node");
             node.innerHTML = `
                 <span class="roadmap-node-title">${item.title}</span>
                 <span class="roadmap-node-phase">${item.phase}</span>
             `;
             track.appendChild(node);
         });
+
+        const currentIndex = Math.max(0, timeline.findIndex(item => item.current));
+        const markerIndex = currentIndex >= 0 ? currentIndex : Math.max(0, timeline.length - 1);
+        const roadmapStack = track.closest(".roadmap-stack") || track;
+        roadmapStack.style.setProperty("--current-index", markerIndex);
+        roadmapStack.style.setProperty("--node-count", Math.max(1, timeline.length));
     }
 
     if (strengthsTitle) strengthsTitle.textContent = summary.strengthsTitle || "";
