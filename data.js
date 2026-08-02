@@ -14,7 +14,7 @@ const PORTFOLIO_DATA = {
       },
       engineeringSummary: {
         intro: "Aviyonik sistemler, uçak bakım süreçleri, güç elektroniği, PCB tasarımı, yapay zeka, gömülü sistemler ve saha odaklı Ar-Ge projelerinde çalıştım. Bu alanlarda hem teknik derinliğimi artırmaya hem de ortaya çıkan bilgiyi uygulanabilir proje çıktısına dönüştürmeye devam ediyorum.",
-        currentMarker: "Ben buradayım",
+        currentMarker: "Buradayım",
         timeline: [
           { title: "Havacılık Merakı", phase: "Başlangıç" },
           { title: "Uçak Bakım Mühendisi Eğitimi", phase: "ESTÜ" },
