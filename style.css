@@ -199,8 +199,8 @@ body {
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1080px;
+    width: min(86vw, 1040px);
+    max-width: 1040px;
     height: 70px;
     background-color: var(--bg-panel);
     backdrop-filter: blur(10px);
@@ -316,16 +316,16 @@ body {
    ========================================================================== */
 
 .main-container {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 120px 20px 60px 20px;
+    padding: 145px 42px 80px;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 145px;
 }
 
 section {
-    padding-top: 40px;
+    padding-top: 56px;
     position: relative;
 }
 
@@ -365,7 +365,7 @@ section {
 
 /* Section Title Stylings */
 .section-title-wrap {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     position: relative;
     border-left: 4px solid var(--primary);
     padding-left: 20px;
@@ -848,8 +848,8 @@ section {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 40px;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 34px;
     align-items: start;
 }
 
@@ -974,7 +974,7 @@ section {
 .about-text-panel {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
-    padding: 40px;
+    padding: 42px 44px;
     position: relative;
 }
 
@@ -987,8 +987,8 @@ section {
 
 .about-paragraph {
     color: var(--text-main);
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.02rem;
+    line-height: 1.86;
     margin-bottom: 30px;
 }
 
@@ -2748,8 +2748,9 @@ section {
 }
 
 .project-detail-container {
-    padding-top: 20px;
-    padding-bottom: 80px;
+    max-width: 1060px;
+    padding-top: 34px;
+    padding-bottom: 96px;
 }
 
 .team-detail-container {
@@ -2786,7 +2787,7 @@ section {
 }
 
 .project-detail-title {
-    font-size: 2.2rem;
+    font-size: 2.05rem;
     margin-bottom: 15px;
     line-height: 1.25;
 }
@@ -2807,11 +2808,11 @@ section {
 }
 
 .project-detail-lead {
-    font-size: 1.15rem;
+    font-size: 1.04rem;
     color: var(--text-main);
-    line-height: 1.6;
+    line-height: 1.78;
     margin-bottom: 20px;
-    max-width: 1180px;
+    max-width: 960px;
     text-align: justify;
 }
 
@@ -3045,14 +3046,14 @@ section {
 .project-rich-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 60px;
+    gap: 36px;
+    margin-bottom: 72px;
 }
 
 .detail-block {
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
-    padding: 30px;
+    padding: 34px 38px;
     position: relative;
     scroll-margin-top: 112px;
     content-visibility: auto;
@@ -3077,8 +3078,8 @@ section {
 
 .block-text {
     color: var(--text-main);
-    font-size: 1.02rem;
-    line-height: 1.7;
+    font-size: 0.98rem;
+    line-height: 1.82;
     text-align: justify;
 }
 
