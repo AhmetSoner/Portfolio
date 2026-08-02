@@ -930,17 +930,24 @@ section {
 }
 
 .hud-stat-row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
     font-size: 0.85rem;
 }
 
 .stat-lbl {
     color: var(--text-muted);
+    white-space: nowrap;
 }
 
 .stat-val {
     font-weight: 700;
+    min-width: 0;
+    text-align: right;
+    overflow-wrap: anywhere;
+    line-height: 1.35;
 }
 
 .active-status {
@@ -1382,16 +1389,19 @@ section {
 }
 
 .team-outcomes {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 8px;
-    min-height: 66px;
-    align-content: flex-start;
-    align-items: flex-start;
+    min-height: 112px;
+    align-content: start;
 }
 
 .team-outcomes span {
-    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    width: 100%;
+    padding: 6px 10px;
     border: 1px solid rgba(57, 255, 20, 0.22);
     color: var(--accent);
     background: rgba(57, 255, 20, 0.045);
@@ -1401,7 +1411,11 @@ section {
 }
 
 .team-action-hint {
-    margin-top: 12px;
+    width: fit-content;
+    margin-top: 18px;
+    padding: 9px 12px;
+    border: 1px solid rgba(0, 240, 255, 0.28);
+    background: rgba(0, 240, 255, 0.045);
 }
 
 .team-detail-meta {
