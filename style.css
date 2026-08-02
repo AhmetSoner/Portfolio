@@ -2809,6 +2809,7 @@ section {
     max-width: 1060px;
     padding-top: 34px;
     padding-bottom: 96px;
+    gap: 0;
 }
 
 .team-detail-container {
