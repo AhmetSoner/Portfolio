@@ -823,8 +823,26 @@ section {
     .roadmap-track {
         grid-template-columns: repeat(7, minmax(160px, 1fr));
         overflow-x: auto;
+        padding-top: 42px;
         padding-bottom: 6px;
         scrollbar-width: thin;
+    }
+
+    .roadmap-node .roadmap-marker {
+        position: absolute;
+        top: -42px;
+        right: 10px;
+        left: auto;
+        display: block;
+        transform: none;
+        margin: 0;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .roadmap-node .roadmap-marker::after {
+        height: 24px;
+        margin: 5px auto 0;
     }
 
     .contact-link-row {
@@ -2743,6 +2761,7 @@ section {
     .gallery-carousel-track .gallery-card {
         flex: 0 0 100%;
         min-width: 0;
+        max-width: 100%;
     }
 
     .gallery-card-image-wrap {
@@ -2843,6 +2862,20 @@ section {
     }
 
     .roadmap-marker::after {
+        margin-left: auto;
+        margin-right: 34px;
+    }
+
+    .roadmap-track {
+        padding-top: 48px;
+    }
+
+    .roadmap-node .roadmap-marker {
+        top: -48px;
+        right: 14px;
+    }
+
+    .roadmap-node .roadmap-marker::after {
         margin-left: auto;
         margin-right: 34px;
     }

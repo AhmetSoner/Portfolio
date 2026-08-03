@@ -361,6 +361,7 @@ function renderEngineeringSummary(summary) {
         const roadmapStack = track.closest(".roadmap-stack") || track;
         roadmapStack.style.setProperty("--current-index", markerIndex);
         roadmapStack.style.setProperty("--node-count", Math.max(1, timeline.length));
+        updateRoadmapMarkerPlacement();
     }
 
     if (strengthsTitle) strengthsTitle.textContent = summary.strengthsTitle || "";
@@ -372,6 +373,22 @@ function renderEngineeringSummary(summary) {
 
     if (growthList) {
         growthList.innerHTML = (summary.growth || []).map(item => `<li>${item}</li>`).join("");
+    }
+}
+
+function updateRoadmapMarkerPlacement() {
+    const marker = document.getElementById("roadmap-marker");
+    const track = document.getElementById("engineering-roadmap-track");
+    if (!marker || !track) return;
+
+    const roadmapStack = track.closest(".roadmap-stack");
+    const targetNode = track.querySelector(".roadmap-node.target-node:last-child") || track.querySelector(".roadmap-node:last-child");
+    const isMobileRoadmap = window.innerWidth <= 900;
+
+    if (isMobileRoadmap && targetNode && marker.parentElement !== targetNode) {
+        targetNode.appendChild(marker);
+    } else if (!isMobileRoadmap && roadmapStack && marker.parentElement !== roadmapStack) {
+        roadmapStack.insertBefore(marker, track);
     }
 }
 
@@ -784,7 +801,7 @@ function setupGalleryCarouselControls(totalItems) {
         const card = track.querySelector(".gallery-card");
         if (!card) return;
 
-        const gap = 22;
+        const gap = parseFloat(window.getComputedStyle(track).columnGap || window.getComputedStyle(track).gap) || 0;
         const cardWidth = card.offsetWidth + gap;
         const offset = currentCarouselPosition * cardWidth;
 
@@ -839,6 +856,7 @@ function setupGalleryCarouselControls(totalItems) {
         if (currentCarouselPosition > maxPosition()) {
             currentCarouselPosition = maxPosition();
         }
+        updateRoadmapMarkerPlacement();
         updateCarouselState();
     });
 
