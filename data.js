@@ -193,7 +193,10 @@ const PORTFOLIO_DATA = {
                     "BLDC Motor Sürücü",
                     "48 V / 50 A",
                     "STM32 Kontrol",
-                    "Altium PCB"
+                    "IRS2186 Gate Driver",
+                    "INA229 Ölçüm",
+                    "Altium Designer",
+                    "MATLAB / Proteus"
           ],
           "specs": [
                     {
@@ -245,7 +248,10 @@ const PORTFOLIO_DATA = {
                     "48 V DC Bara",
                     "İzolasyon İzleme",
                     "İzole Ölçüm",
-                    "MATLAB Simscape"
+                    "AD8216",
+                    "AMC1311",
+                    "MATLAB Simscape",
+                    "STM32 ADC"
           ],
             "specs": [
                   {
@@ -302,7 +308,10 @@ const PORTFOLIO_DATA = {
                     "BLDC Motor Sürücü Vol.2",
                     "48 V / 42 A",
                     "UCC21520 Gate Driver",
-                    "4 Katmanlı PCB"
+                    "ACS758 Akım Sensörü",
+                    "Altium Designer",
+                    "MATLAB / Simulink",
+                    "PSpice"
           ],
             "specs": [
                   {
@@ -344,7 +353,10 @@ const PORTFOLIO_DATA = {
                     "Havaalanı Kuş Riski",
                     "YOLOv8n",
                     "Roboflow Veri Seti",
-                    "Derin Öğrenme"
+                    "Python",
+                    "Ultralytics",
+                    "Derin Öğrenme",
+                    "Precision / Recall"
           ],
             "specs": [
                   {
@@ -413,7 +425,10 @@ const PORTFOLIO_DATA = {
                     "TEKNOFEST Girişim",
                     "Soft Robotics",
                     "Inflatable Robot",
-                    "MRO Aviation"
+                    "MRO Aviation",
+                    "Yakıt Tankı Muayenesi",
+                    "3B Kompresör Tasarımı",
+                    "Sensör / Kamera"
           ],
           "specs": [
                     {
@@ -475,7 +490,10 @@ const PORTFOLIO_DATA = {
                   "KAAN",
                   "AFM Nomogram Digitization",
                   "U-Net / OCR",
-                  "XGBoost / FT-Transformer"
+                  "XGBoost",
+                  "FT-Transformer",
+                  "Cubic Spline Baseline",
+                  "NVIDIA Jetson Orin Nano"
           ],
             "specs": [
                   {"name": "Kurum / Sanayi Ortağı", "value": "Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ)"},
@@ -861,7 +879,10 @@ gallery: [
                     "BLDC Motor Driver",
                     "48 V / 50 A",
                     "STM32 Control",
-                    "Altium PCB"
+                    "IRS2186 Gate Driver",
+                    "INA229 Sensing",
+                    "Altium Designer",
+                    "MATLAB / Proteus"
             ],
           "specs": [
                     {
@@ -913,7 +934,10 @@ gallery: [
                     "48 V DC Bus",
                     "Isolation Monitoring",
                     "Isolated Measurement",
-                    "MATLAB Simscape"
+                    "AD8216",
+                    "AMC1311",
+                    "MATLAB Simscape",
+                    "STM32 ADC"
             ],
             "specs": [
                   {
@@ -971,7 +995,10 @@ gallery: [
                     "BLDC Motor Driver Vol.2",
                     "48 V / 42 A",
                     "UCC21520 Gate Driver",
-                    "4-Layer PCB"
+                    "ACS758 Current Sensor",
+                    "Altium Designer",
+                    "MATLAB / Simulink",
+                    "PSpice"
             ],
             "specs": [
                   {
@@ -1014,7 +1041,10 @@ gallery: [
                     "Airport Bird Strike",
                     "YOLOv8n",
                     "Roboflow Dataset",
-                    "Deep Learning"
+                    "Python",
+                    "Ultralytics",
+                    "Deep Learning",
+                    "Precision / Recall"
             ],
             "specs": [
                   {
@@ -1084,7 +1114,10 @@ gallery: [
                     "TEKNOFEST Startup",
                     "Soft Robotics",
                     "Inflatable Robot",
-                    "MRO Aviation"
+                    "MRO Aviation",
+                    "Fuel Tank Inspection",
+                    "3D Compressor Design",
+                    "Sensor / Camera"
             ],
             "specs": [
                   {
@@ -1147,7 +1180,10 @@ gallery: [
                   "Fighter Aircraft Performance",
                   "XGBoost Regressor",
                   "FT-Transformer",
-                  "Embedded Benchmark"
+                  "AFM Nomogram Digitization",
+                  "U-Net / OCR",
+                  "Cubic Spline Baseline",
+                  "NVIDIA Jetson Orin Nano"
             ],
             "specs": [
                   {"name": "Institution / Industrial Partner", "value": "Turkish Aerospace Industries (TUSAŞ)"},
