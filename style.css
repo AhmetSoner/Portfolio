@@ -3244,20 +3244,21 @@ section {
     object-fit: contain;
 }
 
-.project-figure-grid:has(img[src*="bird-detection-figures"]) {
+.project-figure-grid:has(img[src*="bird-detection/figures"]) {
     grid-template-columns: 1fr;
     gap: 22px;
     width: min(100%, 760px);
     margin: 18px auto 28px;
+    justify-items: center;
 }
 
-.project-figure-grid:has(img[src*="bird-detection-figures"]) .project-figure-card {
+.project-figure-grid:has(img[src*="bird-detection/figures"]) .project-figure-card {
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
 }
 
-.project-figure-grid:has(img[src*="bird-detection-figures"]) .project-figure-card img {
+.project-figure-grid:has(img[src*="bird-detection/figures"]) .project-figure-card img {
     width: auto;
     max-width: 100%;
     max-height: 520px;
@@ -3265,7 +3266,7 @@ section {
     object-fit: contain;
 }
 
-.project-figure-grid:has(img[src*="bird-detection-figures"]) .project-figure-card figcaption {
+.project-figure-grid:has(img[src*="bird-detection/figures"]) .project-figure-card figcaption {
     max-width: 720px;
     margin: 8px auto 0;
     padding: 0 4px;
