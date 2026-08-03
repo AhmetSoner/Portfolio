@@ -13,7 +13,7 @@ const PORTFOLIO_DATA = {
         phone: "+90 553 715 41 69"
       },
       engineeringSummary: {
-        intro: "Aviyonik sistemler, uçak bakım süreçleri, güç elektroniği, PCB tasarımı, yapay zeka, gömülü sistemler ve saha odaklı Ar-Ge projelerinde çalıştım. Bu alanlarda hem teknik derinliğimi artırmaya hem de ortaya çıkan bilgiyi uygulanabilir proje çıktısına dönüştürmeye devam ediyorum.",
+        intro: "Aviyonik sistemler, uçak bakım süreçleri, güç elektroniği, PCB tasarımı, yapay zeka ve gömülü sistemler üzerine çalışıyorum. Öğrendiklerimi sahada karşılığı olan, uygulanabilir proje çıktılarına dönüştürmeye odaklanıyorum.",
         currentMarker: "Buradayım",
         timeline: [
           { title: "Havacılık Merakı", phase: "Başlangıç" },
