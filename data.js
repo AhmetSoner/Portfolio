@@ -188,12 +188,12 @@ const PORTFOLIO_DATA = {
           "description": "Vol.1 motor sürücü çalışması, üç fazlı BLDC motorun hız, yön, akım ve sıcaklık geri beslemeleriyle güvenli biçimde sürülmesi için tasarlanan güç kartını açıklar. Word teknik tasarım dosyasındaki topoloji seçimi, 48 V / 50 A güç hedefi, MOSFET ve gate-driver seçimi, DC-link kondansatör hesabı, STM32 tabanlı kontrol algoritması, Proteus simülasyonları, Altium PCB çalışmaları, prototip testleri, verim hesabı, koruma algoritmaları ve malzeme listesi bu sayfaya aktarılmıştır.",
           "image": "assets/projects/bldc-vol1/figures/Resim33.png",
           "tags": [
+                    "Hidroana",
+                    "TEKNOFEST Efficiency Challenge",
                     "BLDC Motor Sürücü",
-                    "STM32F446RET6",
-                    "IRS2186",
-                    "INA229",
-                    "Altium Designer",
-                    "Proteus"
+                    "48 V / 50 A",
+                    "STM32 Kontrol",
+                    "Altium PCB"
           ],
           "specs": [
                     {
@@ -239,13 +239,14 @@ const PORTFOLIO_DATA = {
             "summary": "Bu proje, Hidroana hidrojen enerjili aracının 48 V DC ana güç hattında batarya kutupları ile şasi arasındaki elektriksel izolasyon direncini gerçek zamanlı izlemek amacıyla geliştirilmiştir. Sistem, asimetrik ve simetrik kaçak durumlarını tespit edebilen anahtarlamalı direnç köprüsü (Electric Bridge Switch) ve izole ölçüm mimarisine dayanır. AD8216 fark yükselteci ve AMC1311 izole aktarım entegreleri sayesinde yüksek gerilim tarafı ile kontrol elektroniği arasında tam galvanik izolasyon sağlanarak araç ve kullanıcı güvenliği üst seviyeye taşınmıştır.",
             "description": "Bu proje, yüksek gerilim sınıfında ele alınan bir sistem değil; 48 V seviyesinde çalışan hidrojen enerjili araç güç hattında güvenli izolasyon takibi yapmak için tasarlanmış bir izleme kartıdır. Amaç, bataryanın pozitif ve negatif terminallerinin şasiye karşı izolasyon dirençlerini ölçmek, olası kaçak yolları erken tespit etmek ve kontrol kartına sayısallaştırılabilir güvenilir bir ölçüm bilgisi aktarmaktır.",
             "image": "assets/projects/isolation/figures/ev-isolation-cover.jpg",
-            "tags": [
-                  "48 V Araç Güvenliği",
-                  "İzolasyon İzleme",
-                  "AD8216 Fark Yükselteci",
-                  "AMC1311 İzole Ölçüm",
-                  "team-hidroana"
-            ],
+          "tags": [
+                    "Hidroana",
+                    "Elektrikli Araç Güvenliği",
+                    "48 V DC Bara",
+                    "İzolasyon İzleme",
+                    "İzole Ölçüm",
+                    "MATLAB Simscape"
+          ],
             "specs": [
                   {
                         "name": "Çalışma Bağlamı",
@@ -295,14 +296,14 @@ const PORTFOLIO_DATA = {
             "description": "Vol.2 sürücü çalışması, önceki Vol.1 kartta elde edilen saha ve test deneyimlerinin ardından güvenilirlik, termal yönetim, EMI davranışı, galvanik izolasyon ve üretilebilirlik açısından yeniden ele alınan üç fazlı BLDC motor kontrol sistemidir. Tasarımda FDB0260N1007L MOSFET, UCC21520DWR izole gate driver, ACS758 Hall etkili akım sensörü, STM32F446RET6 kontrol birimi, CAN/RS485 haberleşme, dört katmanlı PCB ve aktif soğutmalı kutulama birlikte değerlendirilmiştir.",
             "image": "assets/projects/bldc-vol2/figures/3d-bldc-on.png",
             "detailImage": "assets/projects/bldc-vol2/figures/3d-bldc-on.png",
-            "tags": [
-                  "BLDC Motor Sürücü Vol.2",
-                  "UCC21520DWR",
-                  "FDB0260N1007L",
-                  "STM32F446RET6",
-                  "Altium Designer",
-                  "Hidroana"
-            ],
+          "tags": [
+                    "Hidroana",
+                    "TEKNOFEST Efficiency Challenge",
+                    "BLDC Motor Sürücü Vol.2",
+                    "48 V / 42 A",
+                    "UCC21520 Gate Driver",
+                    "4 Katmanlı PCB"
+          ],
             "specs": [
                   {
                         "name": "Proje Takımı",
@@ -337,13 +338,14 @@ const PORTFOLIO_DATA = {
             "description": "Kuş çarpmalarının uçuş emniyeti, operasyon sürekliliği ve bakım maliyetleri üzerindeki etkisini azaltmak amacıyla geliştirilen bu çalışmada, radar tabanlı sistemlerin tür, renk, boyut ve tekil kuş takibi konusundaki sınırlamalarını tamamlayacak görüntü tabanlı bir derin öğrenme hattı tasarlanmıştır. Proje önerisi YOLOv8 ve MobileNetV2 entegrasyonunu hedeflerken, tez çalışmasında Roboflow ile hazırlanan veri seti üzerinde YOLOv8n modeli eğitilmiş, performans çıktıları precision, recall, F1 ve mAP metrikleriyle değerlendirilmiştir.",
             "image": "assets/projects/bird-detection/bird-detection-airport-cover.png",
             "detailImage": "assets/projects/bird-detection/bird-detection-airport-cover.png",
-            "tags": [
-                  "YOLOv8n",
-                  "Roboflow",
-                  "Python",
-                  "Derin Öğrenme",
-                  "TÜBİTAK 2209-A"
-            ],
+          "tags": [
+                    "HAYA",
+                    "TÜBİTAK 2209-A",
+                    "Havaalanı Kuş Riski",
+                    "YOLOv8n",
+                    "Roboflow Veri Seti",
+                    "Derin Öğrenme"
+          ],
             "specs": [
                   {
                         "name": "Nesne Tespit Modeli",
@@ -406,11 +408,12 @@ const PORTFOLIO_DATA = {
                     "team-tulpar-tharros"
           ],
           "tags": [
+                    "Tulpar Tharros",
+                    "THY Design Hackathon",
+                    "TEKNOFEST Girişim",
                     "Soft Robotics",
                     "Inflatable Robot",
-                    "MRO Aviation",
-                    "Teknofest",
-                    "THY Design Hackathon"
+                    "MRO Aviation"
           ],
           "specs": [
                     {
@@ -466,14 +469,14 @@ const PORTFOLIO_DATA = {
             "description": "TUSAŞ (Türk Havacılık ve Uzay Sanayii A.Ş.) LIFT UP Sanayi Odaklı Lisans Bitirme Projeleri Programı kapsamında yürütülen bu çalışmada, muharip hava araçlarında kritik uçuş performans parametrelerinin (Özgül Menzil, İrtifa, Mach Sayısı, Yakıt Akışı, Sürükleme İndeksi vb.) hesaplanmasında kullanılan geleneksel kübik interpolasyon arama tablosu yöntemi ile yapay zeka modelleri (XGBoost ve Tabular Transformer) doğrusal olmayan davranışlar, çıkarım hızı, bellek ayak izi ve işlemci yükü açısından karşılaştırılmıştır.",
             "image": "assets/projects/lift-up/kaan.jpg",
             "detailImage": "assets/projects/lift-up/kaan.jpg",
-            "tags": [
+          "tags": [
                   "TUSAŞ LIFT UP",
+                  "TÜBİTAK 2209-B",
                   "KAAN",
-                  "Tabular Transformer",
-                  "XGBoost",
-                  "NVIDIA Jetson Orin Nano",
-                  "U-Net / OCR"
-            ],
+                  "AFM Nomogram Digitization",
+                  "U-Net / OCR",
+                  "XGBoost / FT-Transformer"
+          ],
             "specs": [
                   {"name": "Kurum / Sanayi Ortağı", "value": "Türk Havacılık ve Uzay Sanayii A.Ş. (TUSAŞ)"},
                   {"name": "Destek Programları", "value": "TUSAŞ LIFT UP & TÜBİTAK 2209-B Programı"},
@@ -852,14 +855,14 @@ gallery: [
           "summary": "Vol.1 BLDC motor driver board developed for a hydrogen-powered vehicle powertrain system; it is an STM32F446RET6-based power electronics design targeting three-phase motor control at 48 V DC bus, 50 A nominal current, and 2.5 kW power level. The board is designed with MOSFET half-bridge stages, IRS2186 gate drivers, INA229 measurement line, Hall sensor feedback, multi-stage DC/DC supply architecture, and current/temperature safe mode algorithms.",
           "description": "Vol.1 motor driver study explains the power board designed to run a three-phase BLDC motor safely with speed, direction, current, and temperature feedback. Topology selection, 48 V / 50 A power target, MOSFET and gate-driver selection, DC-link capacitor calculation, STM32-based control algorithm, Proteus simulations, Altium PCB studies, prototype tests, efficiency calculations, protection algorithms, and bill of materials from the technical design document have been transferred to this page.",
           "image": "assets/projects/bldc-vol1/figures/Resim33.png",
-          "tags": [
+            "tags": [
+                    "Hidroana",
+                    "TEKNOFEST Efficiency Challenge",
                     "BLDC Motor Driver",
-                    "STM32F446RET6",
-                    "IRS2186",
-                    "INA229",
-                    "Altium Designer",
-                    "Proteus"
-          ],
+                    "48 V / 50 A",
+                    "STM32 Control",
+                    "Altium PCB"
+            ],
           "specs": [
                     {
                               "name": "Project / Version",
@@ -905,11 +908,12 @@ gallery: [
             "description": "Monitoring battery isolation in electric vehicles is critical to prevent high voltage (HV) from damaging the vehicle chassis and users. This study describes the design, simulation, and software algorithms of an isolation monitoring device. Operating principles of the switched resistor network, differences between symmetric and asymmetric leakage, differences between active and passive monitoring, AD8216 and AMC1311 signal conditioning, STM32 MCU integration, opto-isolated relay drive circuits, and test validation results are explained.",
             "image": "assets/projects/isolation/figures/ev-isolation-cover.jpg",
             "tags": [
-                  "48 V Vehicle Safety",
-                  "Isolation Monitoring",
-                  "AD8216 Diff Amp",
-                  "AMC1311 Isolated Measurement",
-                  "team-hidroana"
+                    "Hidroana",
+                    "Electric Vehicle Safety",
+                    "48 V DC Bus",
+                    "Isolation Monitoring",
+                    "Isolated Measurement",
+                    "MATLAB Simscape"
             ],
             "specs": [
                   {
@@ -962,12 +966,12 @@ gallery: [
             "image": "assets/projects/bldc-vol2/figures/3d-bldc-on.png",
             "detailImage": "assets/projects/bldc-vol2/figures/3d-bldc-on.png",
             "tags": [
-                  "BLDC Motor Driver Vol.2",
-                  "UCC21520DWR",
-                  "FDB0260N1007L",
-                  "STM32F446RET6",
-                  "Altium Designer",
-                  "Hidroana"
+                    "Hidroana",
+                    "TEKNOFEST Efficiency Challenge",
+                    "BLDC Motor Driver Vol.2",
+                    "48 V / 42 A",
+                    "UCC21520 Gate Driver",
+                    "4-Layer PCB"
             ],
             "specs": [
                   {
@@ -1005,11 +1009,12 @@ gallery: [
             "image": "assets/projects/bird-detection/bird-detection-airport-cover.png",
             "detailImage": "assets/projects/bird-detection/bird-detection-airport-cover.png",
             "tags": [
-                  "YOLOv8n",
-                  "Roboflow",
-                  "Python",
-                  "Deep Learning",
-                  "TÜBİTAK 2209-A"
+                    "HAYA",
+                    "TÜBİTAK 2209-A",
+                    "Airport Bird Strike",
+                    "YOLOv8n",
+                    "Roboflow Dataset",
+                    "Deep Learning"
             ],
             "specs": [
                   {
@@ -1074,11 +1079,12 @@ gallery: [
                   "team-tulpar-tharros"
             ],
             "tags": [
-                  "Soft Robotics",
-                  "Inflatable Robot",
-                  "MRO Aviation",
-                  "Teknofest",
-                  "THY Design Hackathon"
+                    "Tulpar Tharros",
+                    "THY Design Hackathon",
+                    "TEKNOFEST Startup",
+                    "Soft Robotics",
+                    "Inflatable Robot",
+                    "MRO Aviation"
             ],
             "specs": [
                   {
