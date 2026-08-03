@@ -2725,6 +2725,129 @@ section {
     }
 }
 
+@media (max-width: 640px) {
+    .gallery-carousel-wrapper {
+        gap: 6px;
+        align-items: center;
+    }
+
+    .gallery-carousel-track-wrap {
+        min-width: 0;
+        padding: 6px 0;
+    }
+
+    .gallery-carousel-track {
+        gap: 0;
+    }
+
+    .gallery-carousel-track .gallery-card {
+        flex: 0 0 100%;
+        min-width: 0;
+    }
+
+    .gallery-card-image-wrap {
+        height: min(70vh, 520px);
+        min-height: 360px;
+    }
+
+    .gallery-card-image-wrap img {
+        object-fit: contain;
+    }
+
+    .carousel-control-btn {
+        width: 34px;
+        min-width: 34px;
+        height: 42px;
+        border-radius: 3px;
+    }
+
+    .carousel-control-btn i {
+        width: 18px;
+        height: 18px;
+        stroke-width: 2.4;
+    }
+
+    .carousel-dots-indicator {
+        gap: 7px;
+        margin-top: 14px;
+        padding: 0 2px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: none;
+    }
+
+    .carousel-dots-indicator::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carousel-dot {
+        flex: 0 0 auto;
+        width: 7px;
+        height: 7px;
+    }
+
+    .carousel-dot.active {
+        width: 18px;
+    }
+
+    .contact-link-row {
+        grid-template-columns: minmax(0, 1fr) 34px;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .contact-links-list a {
+        gap: 8px;
+        min-width: 0;
+        overflow: hidden;
+        font-size: clamp(0.62rem, 2.65vw, 0.76rem);
+    }
+
+    .contact-links-list a span {
+        display: block;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .contact-links-list i {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contact-copy-btn {
+        width: 34px;
+        min-width: 34px;
+        height: 34px;
+        min-height: 34px;
+    }
+
+    .contact-copy-btn i {
+        width: 17px;
+        height: 17px;
+    }
+
+    .roadmap-stack {
+        padding-top: 44px;
+    }
+
+    .roadmap-marker {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        transform: none;
+        margin: 0;
+        text-align: right;
+    }
+
+    .roadmap-marker::after {
+        margin-left: auto;
+        margin-right: 34px;
+    }
+}
+
 /* Dil Seçici (TR - ENG) Arayüz Stilleri */
 .lang-selector {
     display: inline-flex;
