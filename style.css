@@ -3325,6 +3325,11 @@ section {
     letter-spacing: 0.02em;
 }
 
+.section-lead-title {
+    margin-top: 24px;
+    font-size: clamp(1rem, 1.45vw, 1.18rem);
+}
+
 .overview-subtitle {
     display: inline-block;
     margin: 14px 0 4px;
@@ -3375,17 +3380,51 @@ section {
     background: transparent;
 }
 
-.bldc-output-table .hud-benchmark-table {
-    border-color: rgba(255, 52, 52, 0.72);
+.hud-table-wrap {
+    width: 100%;
+    margin: 18px 0 28px;
+    overflow-x: auto;
 }
 
-.bldc-output-table .hud-benchmark-table th {
-    background: #c90000;
-    color: #fff;
+.hud-benchmark-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 240, 255, 0.36);
+    background: rgba(1, 15, 28, 0.62);
+    color: var(--text-main);
+}
+
+.hud-benchmark-table th,
+.hud-benchmark-table td {
+    padding: 12px 14px;
+    border: 1px solid rgba(0, 240, 255, 0.18);
+    vertical-align: top;
+    text-align: left;
+}
+
+.hud-benchmark-table th {
+    background: rgba(0, 240, 255, 0.14);
+    color: var(--primary);
+    font-family: var(--font-header);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.hud-benchmark-table tbody tr:nth-child(even) {
+    background: rgba(0, 240, 255, 0.035);
+}
+
+.hud-benchmark-table tbody tr:hover {
+    background: rgba(0, 240, 255, 0.065);
+}
+
+.bldc-output-table .hud-benchmark-table {
+    border-color: rgba(0, 240, 255, 0.42);
 }
 
 .bldc-output-table .hud-benchmark-table td {
-    border-color: rgba(255, 52, 52, 0.58);
+    border-color: rgba(0, 240, 255, 0.2);
 }
 
 #block-subsystems .block-title {

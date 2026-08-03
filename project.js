@@ -155,13 +155,13 @@ function renderProjectSnapshot(lang, proj) {
         ? {
             problem: "Problem",
             method: "Yöntem",
-            stack: "Teknoloji",
+            stack: "Kullanılan Uygulamalar",
             output: "Çıktı"
         }
         : {
             problem: "Problem",
             method: "Method",
-            stack: "Technology",
+            stack: "Tools Used",
             output: "Output"
         };
 
