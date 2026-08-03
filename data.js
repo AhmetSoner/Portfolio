@@ -1550,19 +1550,19 @@ const UI_TRANSLATIONS = {
       overview: `
 <p>Muharip hava araçlarında uçuş performans büyüklükleri, görev bilgisayarı ve aviyonik yazılım içinde çoğunlukla arama tabloları ve interpolasyon yöntemleri ile temsil edilir. Bu yaklaşım deterministik ve açıklanabilir olsa da tablo çözünürlüğü, bellek maliyeti ve ara noktalardaki doğrusal olmayan davranışlar nedeniyle sınırlıdır. Projenin çıkış noktası tam olarak bu ikilemdi: <strong>yüksek doğruluk</strong>, <strong>düşük gecikme</strong> ve <strong>kısıtlı donanımda çalışabilirlik</strong> aynı anda sağlanabilir mi?</p>
 <p>Bu soru özellikle Specific Range gibi operasyonel kararları etkileyen performans değerlerinde önemlidir. Çünkü model yalnızca masaüstü ortamında iyi sonuç vermemeli; aynı zamanda aviyonik sistemlerde beklenen hızlı yanıt, düşük bellek kullanımı ve açıklanabilir karar gerekçesi beklentilerine de yaklaşmalıdır. Bu nedenle çalışma, klasik LUT/interpolasyon mantığını tamamen yok saymak yerine onu referans aile olarak koruyup, XGBoost ve FT-Transformer gibi öğrenen modellerle birlikte değerlendiren karşılaştırmalı bir sistem olarak tasarlandı.</p>
-<h4>Giriş ve Problem Alanı</h4>
+<strong class='method-subtitle'>Giriş ve Problem Alanı</strong><br>
 <p>Havacılık endüstrisi yüksek teknoloji yoğunluğu, stratejik etkisi ve ekonomik büyüklüğü nedeniyle modern dünyanın en kritik sektörlerinden biridir. Savunma havacılığı ise uzun geliştirme döngüleri, yüksek Ar-Ge maliyetleri ve görev kritik sistem isterleriyle öne zarar. Muharip hava araçlarında görev başarısı yalnızca aerodinamik kabiliyetlere değil; farklı irtifa, hız, ağırlık, sürükleme ve motor konfigürasyonu koşullarındaki uçuş performans parametrelerini doğru hesaplayabilen aviyonik yazılımlara da bağlıdır.</p>
 <p>Bu hesaplamalar geleneksel olarak arama tabloları ve çok değişkenli interpolasyon yöntemleriyle yapılır. Arama tabloları deterministik, izlenebilir ve mühendislik açısından açıklanabilir olmaları nedeniyle avantajlıdır; ancak değişken sayısı arttıkça tablo çözünürlüğü ve bellek maliyeti büyür. Tablo seyrekleştiğinde ise özellikle doğrusal olmayan uçuş bölgelerinde interpolasyon hatası artabilir. Bu nedenle çalışmada, klasik referans yaklaşım korunarak XGBoost ve Tabular Transformer modellerinin aynı veri seti üzerinde doğruluk ve donanım maliyeti bakımından nasıl davrandığı araştırılmıştır.</p>
-<h4>Araştırma Kapsamı ve Rolüm</h4>
+<strong class='method-subtitle'>Araştırma Kapsamı ve Rolüm</strong><br>
 <p>Çalışma TUSAŞ LIFT UP Sanayi Odaklı Lisans Bitirme Projeleri Programı ve TÜBİTAK 2209-B Sanayi Odaklı Araştırma Projeleri desteğiyle yürütüldü. KAAN hedef platformu için doğrudan gizli/veri erişimi yerine, yöntem geliştirme ve doğrulama amacıyla F-18 uçuş el kitabı/performans nomogramları vekil veri kaynağı olarak ele alındı. Proje lideri olarak veri dijitasyonu, modelleme protokolünün kurulması, XGBoost ve FT-Transformer kıyas akışının tasarlanması, NVIDIA Jetson Orin Nano hedef ortam profilinin yorumlanması, teknik raporların hazırlanması ve sanayi/akademik danışman sunumlarının bütünleştirilmesinde aktif rol aldım.</p>
 `,
       scientificMerit: `
 <p>Bu çalışmanın özgün yönü, uçuş performans tahminini yalnızca "hangi model daha doğru?" sorusuyla ele almamasıdır. Aviyonik sistemlerde doğruluk tek başına yeterli değildir; modelin çalıştığı donanımda ne kadar bellek tükettiği, tekil tahmin gecikmesi, model artifact boyutu ve CPU davranışı da karar kriteridir. Bu nedenle karşılaştırma; RMSE, MAE, MAPE ve R² yanında model boyutu, tahmini gecikme ve RAM ayak iziyle birlikte kuruldu.</p>
-<h4>Neden Klasik Yöntem Yetmeyebilir?</h4>
+<strong class='method-subtitle'>Neden Klasik Yöntem Yetmeyebilir?</strong><br>
 <p>Arama tablosu ve interpolasyon yaklaşımı, doğrulanmış veriyi ayrık düğüm noktalarında saklar. Tablo büyüdükçe bellek maliyeti artar; tablo seyrekleştiğinde ise doğrusal olmayan bölgelerde hata büyüyebilir. Özellikle altitude, gross weight, drag index, Mach ve fuel flow değişkenlerinin birlikte etkileştiği performans yüzeylerinde bu etki daha belirgin hale gelir.</p>
-<h4>Neden XGBoost?</h4>
+<strong class='method-subtitle'>Neden XGBoost?</strong><br>
 <p>XGBoost, tabular mühendislik verilerinde güçlü bir baseline olarak seçildi. Ağaç tabanlı gradyan artırma yaklaşımı, düşük çıkarım maliyetiyle doğrusal olmayan ilişkileri yakalayabilir. Proje aratfactlarında XGBoost test kümesinde RMSE 0.002592, MAE 0.001089 ve R² 0.999280 değerlerine ulaştı; bu da onu edge inference için en dengeli aday yaptı.</p>
-<h4>Neden FT-Transformer?</h4>
+<strong class='method-subtitle'>Neden FT-Transformer?</strong><br>
 <p>FT-Transformer, sayısal ve kategorik değişkenleri ortak token uzayında temsil ederek değişkenler arası bağlamsal ilişkileri self-attention ile öğrenir. Bu model, yalnızca tek tek kolon etkilerini değil; örneğin irtifa-Mach-ağırlık-yakıt akışı birlikteliğinin specific range üzerindeki etkisini modelleyebilecek araştırma değeri yüksek bir mimari olarak konumlandırıldı.</p>
 `,
       riskManagement: `
@@ -1601,7 +1601,7 @@ const UI_TRANSLATIONS = {
       ],
       architecture: `
 <p>Bu bölüm, projede ham uçuş performans dokümanından çalışan tahmin arayüzüne kadar kurulan hattı açıklar. Mimarimiz veri kaynağı, dijitasyon, veri standardizasyonu, referans hesaplama ve öğrenen model katmanları olarak ayrılmıştır.</p>
-<h4>Nomogram Dijitasyonu ve Veri Seti Oluşturma</h4>
+<strong class='method-subtitle'>Nomogram Dijitasyonu ve Veri Seti Oluşturma</strong><br>
 <p>F-18 Hava Aracı Uçuş El Kitabı performans grafikleri ana veri kaynağı olarak kullanıldı. Projede bu görselin amacı, KAAN benzeri platformlarda gizli performans verilerine erişmeden açık kaynaklı bir vekil platform üzerinden veri üretim ve modelleme hattını kanıtlamaktır.</p>
 <div class="project-figure-grid">
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-10.png" alt="F-18 özgül menzil nomogramı"><figcaption>Şekil 1. F-18 özgül menzil nomogramı.</figcaption></figure>
@@ -1613,7 +1613,7 @@ const UI_TRANSLATIONS = {
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-13.png" alt="Master veri seti örneği"><figcaption>Şekil 4. Master veri seti örnek satırları.</figcaption></figure>
 </div>
 <p>Ayrıştırılan eğriler üzerinde örnekleme yapılır, piksel koordinatları eksen kalibrasyonu ile Mach, irtifa, brüt ağırlık ve drag index gibi fiziksel değişkenlere dönüştürülerek tidy data prensibine göre Master Tablo oluşturulur.</p>
-<h4>Modelleme Yöntemleri ve FT-Transformer</h4>
+<strong class='method-subtitle'>Modelleme Yöntemleri ve FT-Transformer</strong><br>
 <p>Kübik spline interpolasyon, deterministik ve açıklanabilir referans yöntem olarak kullanılmıştır. XGBoost ise gradyan artırmalı karar ağaçlarıyla hızlı çıkarım ve yüksek doğruluk sağlar. İleri araştırma mimarisi olan FT-Transformer ise self-attention mekanizması koşan tabular derin öğrenme modelidir.</p>
 <div class="project-figure-grid">
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-15.png" alt="FT-Transformer genel akışı"><figcaption>Şekil 5. FT-Transformer genel akışı.</figcaption></figure>
@@ -1623,7 +1623,7 @@ const UI_TRANSLATIONS = {
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-17.png" alt="Kategorik ve sürekli değişkenlerin birlikte işlendiği mimari"><figcaption>Şekil 7. Kategorik ve sürekli değişkenlerin birlikte işlendiği Transformer mimarisi.</figcaption></figure>
 </div>
 <p>Feature tokenizer, sayısal ve kategorik girdileri ortak token temsillerine dönüştürür; transformer encoder bu tokenlar arasındaki ilişkileri self-attention ile öğrenir; çıktı başlığı ise özgül menzil tahminini üretir.</p>
-<h4>Model Değerlendirme ve Hedef Ortam Karşılaştırması</h4>
+<strong class='method-subtitle'>Model Değerlendirme ve Hedef Ortam Karşılaştırması</strong><br>
 <p>Modeller yalnızca tahmin doğruluğuyla değil, düşük kaynaklı hedef ortamda çalışabilirlikleriyle de değerlendirilmiştir. Karşılaştırmada hata metrikleri ile birlikte çıkarım gecikmesi, tepe bellek kullanımı ve CPU yükü dikkate alınmıştır.</p>
 <div class="project-figure-grid">
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-18.png" alt="Benchmark metrik açıklamaları"><figcaption>Şekil 8. Benchmark metriklerinin anlamı.</figcaption></figure>
@@ -1698,19 +1698,19 @@ const UI_TRANSLATIONS = {
       overview: `
 <p>In combat aircraft, flight performance metrics are mostly represented via lookup tables and interpolation methods within the mission computer and avionics software. Although this approach is deterministic and explainable, it is limited by table resolution, memory cost, and nonlinear behavior at intermediate points. The starting point of the project was precisely this trade-off: Can <strong>high accuracy</strong>, <strong>low latency</strong>, and <strong>constrained hardware execution</strong> be achieved simultaneously?</p>
 <p>This question is particularly important for performance values that influence operational decisions, such as Specific Range. Because the model must not only yield good results in a desktop environment but also approach avionics system expectations for fast response, low memory usage, and explainable decision reasoning. Therefore, rather than ignoring the classical LUT/interpolation logic completely, this study was designed as a comparative system that preserves it as a reference family while evaluating it alongside learning models such as XGBoost and FT-Transformer.</p>
-<h4>Introduction and Problem Domain</h4>
+<strong class='method-subtitle'>Introduction and Problem Domain</strong><br>
 <p>The aerospace industry is one of the most critical sectors of the modern world due to its high technology density, strategic impact, and economic size. Defense aviation stands out with long development cycles, high R&D costs, and mission-critical system requirements. Mission success in combat aircraft depends not only on aerodynamic capabilities, but also on avionics software that can accurately compute flight performance parameters under different altitude, speed, weight, drag, and engine configuration conditions.</p>
 <p>These computations are traditionally performed using lookup tables and multivariate interpolation methods. Lookup tables are advantageous because they are deterministic, traceable, and engineering-explainable; however, as the number of variables increases, table resolution and memory cost grow. When the table becomes sparse, interpolation errors can increase, especially in nonlinear flight regimes. Therefore, in this study, the classical reference approach was preserved, and the behavior of XGBoost and Tabular Transformer models was investigated on the same dataset in terms of accuracy and hardware cost.</p>
-<h4>Research Scope and My Role</h4>
+<strong class='method-subtitle'>Research Scope and My Role</strong><br>
 <p>The study was conducted under the support of TUSAŞ LIFT UP Industry-Oriented Graduation Projects Program and TÜBİTAK 2209-B Industry-Oriented Research Projects Support Program. For method development and validation, F-18 flight manual/performance nomograms were used as a surrogate data source instead of direct confidential data access for the KAAN target platform. As the project lead, I took an active role in data digitization, establishing the modeling protocol, designing the XGBoost and FT-Transformer comparison workflow, interpreting the NVIDIA Jetson Orin Nano target environment profile, preparing technical reports, and integrating industry/academic advisor presentations.</p>
 `,
       scientificMerit: `
 <p>The novel aspect of this study is that it does not address flight performance prediction solely with the question "which model is more accurate?". In avionics systems, accuracy alone is not sufficient; how much memory the model consumes on the hardware it runs on, single prediction latency, model artifact size, and CPU behavior are also decision criteria. Therefore, the comparison was established using model size, estimated latency, and RAM footprint alongside RMSE, MAE, MAPE, and R².</p>
 <h4>Why Traditional Methods May Fall Short</h4>
 <p>The lookup table and interpolation approach stores validated data at discrete grid points. As the table grows, the memory cost increases; when the table becomes sparse, the error in nonlinear regions can increase. This effect becomes more pronounced on performance surfaces where altitude, gross weight, drag index, Mach, and fuel flow variables interact.</p>
-<h4>Why XGBoost?</h4>
+<strong class='method-subtitle'>Why XGBoost?</strong><br>
 <p>XGBoost was chosen as a strong baseline for tabular engineering data. The tree-based gradient boosting approach can capture nonlinear relationships with low inference costs. In the project artifacts, XGBoost reached RMSE 0.002592, MAE 0.001089, and R² 0.999280 on the test set, making it the most balanced candidate for edge inference.</p>
-<h4>Why FT-Transformer?</h4>
+<strong class='method-subtitle'>Why FT-Transformer?</strong><br>
 <p>FT-Transformer represents numerical and categorical variables in a shared token space and learns contextual relationships between variables via self-attention. This model was positioned as a high-research-value architecture capable of modeling not just individual column effects, but, for example, the joint effect of altitude-Mach-weight-fuel flow on the specific range.</p>
 `,
       riskManagement: `
@@ -1749,7 +1749,7 @@ const UI_TRANSLATIONS = {
       ],
       architecture: `
 <p>This section describes the pipeline established in the project from the raw flight performance document to the working prediction interface. Our architecture is divided into data source, digitization, data standardization, reference calculation, and learning model layers.</p>
-<h4>Nomogram Digitization and Dataset Construction</h4>
+<strong class='method-subtitle'>Nomogram Digitization and Dataset Construction</strong><br>
 <p>F-18 Aircraft Flight Manual performance charts were used as the primary data source. In this project, the purpose of this image is to validate the data generation and modeling pipeline on a public surrogate platform without accessing confidential performance data for KAAN-like platforms.</p>
 <div class="project-figure-grid">
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-10.png" alt="F-18 specific range nomogram"><figcaption>Figure 1. F-18 specific range nomogram.</figcaption></figure>
@@ -1761,7 +1761,7 @@ const UI_TRANSLATIONS = {
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-13.png" alt="Master dataset sample"><figcaption>Figure 4. Sample rows from the master dataset.</figcaption></figure>
 </div>
 <p>Sampling is performed on the isolated curves, and pixel coordinates are converted into physical variables such as Mach, altitude, gross weight, and drag index through axis calibration, forming the Master Table according to tidy data principles.</p>
-<h4>Modeling Methods and FT-Transformer</h4>
+<strong class='method-subtitle'>Modeling Methods and FT-Transformer</strong><br>
 <p>Cubic spline interpolation was used as the deterministic and explainable reference method. XGBoost provides fast inference and high accuracy with gradient boosted decision trees. The FT-Transformer, which is an advanced research architecture, is a tabular deep learning model running self-attention mechanisms.</p>
 <div class="project-figure-grid">
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-15.png" alt="FT-Transformer general flow"><figcaption>Figure 5. FT-Transformer general flow.</figcaption></figure>
@@ -1771,7 +1771,7 @@ const UI_TRANSLATIONS = {
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-17.png" alt="Architecture processing categorical and continuous variables together"><figcaption>Figure 7. Transformer architecture processing categorical and continuous variables together.</figcaption></figure>
 </div>
 <p>The feature tokenizer converts raw numerical and categorical inputs into token representations; the transformer encoder learns relationships between these tokens via self-attention; and the prediction head produces the specific range prediction.</p>
-<h4>Model Evaluation and Target Environment Comparison</h4>
+<strong class='method-subtitle'>Model Evaluation and Target Environment Comparison</strong><br>
 <p>Models were evaluated not only by prediction accuracy, but also by their deployability to low-resource target environments. Along with error metrics, inference latency, peak memory usage, and CPU load were considered in the comparison.</p>
 <div class="project-figure-grid">
   <figure class="project-figure-card"><img src="assets/projects/lift-up/article/word-article-fig-18.png" alt="Benchmark metrics descriptions"><figcaption>Figure 8. Description of benchmark metrics.</figcaption></figure>
@@ -1919,6 +1919,7 @@ Based on these findings, model selection should not be reduced to a single metri
         myContribution: [
           "Proje lideri olarak veri hattı mimarisi, model kıyas protokolü, benchmark kriterleri ve raporlama bütünlüğünü yönettim.",
           "Nomogram dijitasyonu, master veri seti üretimi, XGBoost/FT-Transformer karşılaştırması ve Jetson Orin Nano hedef ortam yorumlarını teknik olarak bütünleştirdim.",
+          "Veri temizleme, model eğitim/karşılaştırma akışları, benchmark çıktılarının işlenmesi ve Specific Range Studio arayüzüne temel oluşturan yazılım tarafında kod geliştirme sorumluluğu aldım.",
           "TUSAŞ LIFT UP ve TÜBİTAK 2209-B süreçlerinde sanayi/akademik danışman iletişimi, çıktı sunumu ve makale formatındaki proje anlatımını hazırladım."
         ]
       }
@@ -2005,6 +2006,7 @@ Based on these findings, model selection should not be reduced to a single metri
         myContribution: [
           "Led the project by coordinating the data pipeline architecture, model comparison protocol, benchmark criteria, and reporting structure.",
           "Integrated nomogram digitization, master dataset generation, XGBoost/FT-Transformer comparison, and NVIDIA Jetson Orin Nano target-environment interpretation.",
+          "Contributed directly to coding the data-cleaning, model training/comparison, benchmark processing, and software workflow that supported the Specific Range Studio interface.",
           "Prepared the TUSAŞ LIFT UP and TÜBİTAK 2209-B deliverables, advisor-facing presentations, and article-style technical narrative."
         ]
       }
