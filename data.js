@@ -1861,7 +1861,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "48 V elektrikli araç güç hattında batarya kutupları ile şasi arasında oluşabilecek izolasyon zayıflamasının sayısal olarak izlenmesi gerekiyordu.",
           method: "Röle kontrollü direnç ağı, analog ölçüm katı, izole sinyal aktarımı ve Kirchhoff tabanlı denklem modeliyle RisoP/RisoN hesaplama yaklaşımı kuruldu.",
-          stack: "AD8216, AMC1311, optoizolatörler, izole DC-DC, MATLAB Simscape, PCB tasarım dosyaları",
+          stack: "Altium Designer, MATLAB Simscape",
           output: "48 V araç mimarisine uyarlanmış izolasyon izleme devresi, denklem seti, simülasyon doğrulaması ve erişilebilir kaynak dosyaları."
         },
         myContribution: [
@@ -1874,7 +1874,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "Vol.1 sürücüden öğrenilen sınırlamaları gideren, daha modüler, güvenilir ve yarışma şartlarına uygun ikinci nesil BLDC sürücü kartı gerekiyordu.",
           method: "Güç kartı, STM32 kontrol kartı ve regülatör kartı ayrıştırıldı; izole UCC21520 gate sürüşü, Hall akım sensörü, 4 katlı PCB ve koruma mantığı kullanıldı.",
-          stack: "Altium Designer, STM32F446RET6, UCC21520, ACS758, MATLAB/Simulink, PSpice",
+          stack: "Altium Designer, MATLAB/Simulink, PSpice",
           output: "48 V / 42 A hedefli, modüler güç-kontrol-regülatör mimarisine sahip Vol.2 BLDC sürücü platformu."
         },
         myContribution: [
@@ -1887,7 +1887,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "Havaalanlarında kuş çarpması riskini azaltmak için kamera görüntülerinden kuş varlığı ve tür bilgisini hızlı biçimde çıkaran bir sistem ihtiyacı vardı.",
           method: "Roboflow üzerinde veri seti hazırlandı, görüntüler etiketlendi ve artırıldı; YOLOv8n modeliyle tür bazlı nesne tespiti eğitildi ve test edildi.",
-          stack: "YOLOv8n, Roboflow, Python, Ultralytics, PyTorch, Anaconda",
+          stack: "Python, Roboflow, Anaconda",
           output: "TÜBİTAK 2209-A kapsamında geliştirilen, kuş tespiti ve tür sınıflandırmasına yönelik derin öğrenme tabanlı erken uyarı prototipi."
         },
         myContribution: [
@@ -1900,7 +1900,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "Yakıt tankı ve dar bakım hacimlerinde aydınlatma, erişim, oksijen desteği, güvenlik ve görsel muayene süreçleri teknisyen için zaman ve risk oluşturuyordu.",
           method: "Vine/inflatable soft robot yaklaşımıyla uzayabilen, yönlenebilen, aydınlatma ve hava desteği sağlayan yarı otonom bakım yardımcısı konsepti geliştirildi.",
-          stack: "Soft robotics, pnömatik sistem, 3B tasarım, kamera/sensör konsepti, MRO süreç analizi",
+          stack: "SolidWorks, 3B tasarım araçları",
           output: "Tulpar Tharros kapsamında geliştirilen INFLOBOT ürün konsepti; hackathon finalistliği ve girişimcilik dosyasıyla ürünleşme seviyesine taşındı."
         },
         myContribution: [
@@ -1913,7 +1913,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "Muharip hava araçlarında uçuş performans değerleri geleneksel LUT/interpolasyon yaklaşımıyla hesaplanırken doğruluk, bellek ve gecikme arasında mühendislik ödünleşimi oluşuyordu.",
           method: "AFM nomogramları U-Net/OCR destekli dijitasyon hattıyla veri setine dönüştürüldü; kübik spline, XGBoost ve FT-Transformer aynı benchmark protokolünde karşılaştırıldı.",
-          stack: "Python, MATLAB, U-Net, OCR, XGBoost, FT-Transformer, NVIDIA Jetson Orin Nano",
+          stack: "Python, MATLAB",
           output: "54.620 satırlık yapısal veri seti, model kıyas raporu, edge benchmark sonuçları ve Specific Range Studio arayüz çıktısı."
         },
         myContribution: [
@@ -1943,7 +1943,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "The vehicle needed a way to monitor insulation degradation between the 48 V battery line and the chassis before leakage paths could create safety or reliability risks.",
           method: "A relay-controlled resistor network, analog measurement stage, isolated signal path, and Kirchhoff-based RisoP/RisoN calculation model were developed.",
-          stack: "AD8216, AMC1311, opto-isolators, isolated DC-DC, MATLAB Simscape, PCB design files",
+          stack: "Altium Designer, MATLAB Simscape",
           output: "A 48 V insulation monitoring architecture with equations, simulation validation, design files, and accessible source documentation."
         },
         myContribution: [
@@ -1957,7 +1957,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "A more modular, reliable, and competition-ready second-generation BLDC driver was needed to address limitations observed in the Vol.1 board.",
           method: "The power board, STM32 control board, and regulator board were separated; isolated UCC21520 gate driving, Hall current sensing, a four-layer PCB, and protection logic were introduced.",
-          stack: "Altium Designer, STM32F446RET6, UCC21520, ACS758, MATLAB/Simulink, PSpice",
+          stack: "Altium Designer, MATLAB/Simulink, PSpice",
           output: "A 48 V / 42 A modular BLDC driver platform built around separate power, control, and regulator boards."
         },
         myContribution: [
@@ -1971,7 +1971,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "Airport operations require richer visual information about birds than radar alone can provide, especially for species-level risk interpretation.",
           method: "A Roboflow dataset was prepared, labeled, augmented, exported in YOLOv8 format, and used to train/test a YOLOv8n object detection model.",
-          stack: "YOLOv8n, Roboflow, Python, Ultralytics, PyTorch, Anaconda",
+          stack: "Python, Roboflow, Anaconda",
           output: "A deep learning prototype for image-based bird detection and species classification under the TÜBİTAK 2209-A program."
         },
         myContribution: [
@@ -1985,7 +1985,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "Fuel tanks and confined maintenance areas create time loss and safety risks due to limited lighting, access, oxygen support, and visual inspection capability.",
           method: "A vine/inflatable soft robot concept was developed to provide extendable motion, directional control, lighting, air support, and semi-autonomous inspection assistance.",
-          stack: "Soft robotics, pneumatic actuation, 3D design, camera/sensor concept, MRO process analysis",
+          stack: "SolidWorks, 3D design tools",
           output: "An INFLOBOT product concept developed under Tulpar Tharros, matured through hackathon finalist work and an entrepreneurship file."
         },
         myContribution: [
@@ -1999,7 +1999,7 @@ Based on these findings, model selection should not be reduced to a single metri
         technicalSummary: {
           problem: "Fighter-aircraft performance calculations based on LUT/interpolation methods create an engineering trade-off between accuracy, memory usage, and inference latency.",
           method: "AFM nomograms were converted into a dataset using a U-Net/OCR-assisted digitization pipeline; cubic spline, XGBoost, and FT-Transformer were compared under a shared benchmark protocol.",
-          stack: "Python, MATLAB, U-Net, OCR, XGBoost, FT-Transformer, NVIDIA Jetson Orin Nano",
+          stack: "Python, MATLAB",
           output: "A 54,620-row structured dataset, model comparison report, edge benchmark results, and the Specific Range Studio interface."
         },
         myContribution: [
