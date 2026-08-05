@@ -21,7 +21,7 @@ const PORTFOLIO_DATA = {
           { title: "Hidroana Elektrik Birimi Üyesi", phase: "2022 - 2025" },
           { title: "Tulpar Tharros Kurucu", phase: "2023 - 2024" },
           { title: "HAYA Kurucu", phase: "2022 - Devam" },
-          { title: "Araştırma Görevlisi", phase: "ESTÜ" },
+          { title: "Araştırmacı", phase: "ESTÜ" },
           { title: "Uçak Bakım Mühendisi", phase: "Kariyer Hedefi", current: true }
         ],
         strengthsTitle: "Güçlü Yönler",
@@ -167,7 +167,7 @@ const PORTFOLIO_DATA = {
     ],
     experience: [
       {
-        title: "Araştırma Görevlisi",
+        title: "Araştırmacı",
         company: "Eskişehir Teknik Üniversitesi (Eskişehir, Türkiye)",
         duration: "Ekim 2025 - Haziran 2026",
         details: "İŞKUR Gençlik Programı kapsamında, Eskişehir Teknik Üniversitesi bünyesinde kurulan Havacılıkta Yapay Zeka Araştırmaları Laboratuvarı'nda araştırma görevlisi olarak çalıştım. Bu süreçte insansız hava araçları ve aviyonik sistemler için uçuş kontrol algoritmaları geliştirme, sensör verilerinin işlenmesi ve otonom karar verme mekanizmalarının kurgulanması üzerine çalışmalar yürüttüm.<br><br>MATLAB/Simulink ve Python ortamlarını kullanarak hava aracı sistem davranışlarının modellenmesine katkı sağladım; geliştirilen yazılım ve kontrol yaklaşımlarının sanal ortamda test edilmesi, doğrulama analizlerinin yapılması ve sonuçların teknik olarak yorumlanması süreçlerinde yer aldım. Ayrıca yapay zeka destekli havacılık uygulamalarını destekleyebilecek elektronik kartların tasarım, doğrulama ve entegrasyon süreçlerinde görev alarak sensör, işlemci ve uçuş kontrol altyapılarının birlikte çalışmasına yönelik donanım geliştirme çalışmalarına katkı sundum."
@@ -695,7 +695,7 @@ gallery: [
           { title: "Hidroana Electrical Unit Member", phase: "2022 - 2025" },
           { title: "Tulpar Tharros Founder", phase: "2023 - 2024" },
           { title: "HAYA Founder", phase: "2022 - Present" },
-          { title: "Research Assistant", phase: "ESTU" },
+          { title: "Researcher", phase: "ESTU" },
           { title: "Aircraft Maintenance Engineer", phase: "Career Target", current: true }
         ],
         strengthsTitle: "Strengths",
@@ -841,7 +841,7 @@ gallery: [
     ],
     experience: [
       {
-        title: "Research Assistant",
+        title: "Researcher",
         company: "Eskişehir Technical University (Eskişehir, Turkey)",
         duration: "October 2025 - June 2026",
         details: "Within the scope of the İŞKUR Youth Program, I worked as a research assistant in the Aviation Artificial Intelligence Research Laboratory established under Eskişehir Technical University. During this period, I conducted studies on developing flight control algorithms for unmanned aerial vehicles and avionics systems, processing sensor data, interpreting flight states, and constructing autonomous decision-making mechanisms.<br><br>I contributed to the modeling of aircraft system behaviors using MATLAB/Simulink and Python environments. I participated in testing the developed software and control approaches in virtual environments, performing validation analyses, and technically interpreting the results. Furthermore, I contributed to hardware development efforts for the co-operation of sensors, processors, and flight control infrastructures by taking part in the design, validation, and integration processes of electronic boards that can support AI-assisted aviation applications."
