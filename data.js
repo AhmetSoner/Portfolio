@@ -2,9 +2,9 @@ const PORTFOLIO_DATA = {
   tr: {
     profile: {
       name: "Ahmet Soner Güleç",
-      title: "Uçak Bakım Mühendisi",
+      title: "Havacılık Elektrik ve Elektroniği",
       subTitle: "Aviyonik Sistemler | Hava Aracı Bakımı | Elektronik Sistem ve Donanım Tasarımı",
-      about: "Eskişehir Teknik Üniversitesi Havacılık Elektrik ve Elektronik Bölümü’nden Uçak Bakım Mühendisi / Aviyonik unvanıyla mezun oldum. Teorik bilgiyi pratik mühendislik uygulamalarıyla birleştirme hedefim doğrultusunda; yurt dışı staj ve eğitim süreçlerimde hava araçlarının aviyonik sistem bakımı ve montaj prosedürlerinin yanı sıra mekanik tasarım, PCB donanım tasarımı ve simülasyon/analiz çalışmaları üzerine kapsamlı deneyim kazandım.\n\n Proje odaklı çalışma disiplinimle, kurucusu olduğum Tulpar Tharros Proje Takımı bünyesinde yapay zeka destekli havacılık muayene robotunu geliştirdim. Alternatif enerjili araçlar tasarlayan Hidroana ekibinde elektrik-elektronik alt sistem entegrasyonu ve güç elektroniği süreçlerini üstlenerek TEKNOFEST ve Shell Eco-marathon gibi ulusal ve uluslararası yarışmalarda dereceler elde ettim. Ayrıca kurucusu olduğum Havacılıkta Yapay Zeka Araştırmaları Topluluğu (HAYA) çatısı altında; otonom sistemler, uçuş kontrol yazılımları ve yapay zeka entegrasyonuna odaklanan TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve 2209-B projelerini yöneterek havacılık ve uzay teknolojilerinde yenilikçi çözümler üretmeye devam ediyorum.",
+      about: "Eskişehir Teknik Üniversitesi Havacılık Elektrik ve Elektronik Bölümü’nden Havacılık Elektrik ve Elektroniği / Aviyonik alanında mezun oldum. Teorik bilgiyi pratik mühendislik uygulamalarıyla birleştirme hedefim doğrultusunda; yurt dışı staj ve eğitim süreçlerimde hava araçlarının aviyonik sistem bakımı ve montaj prosedürlerinin yanı sıra mekanik tasarım, PCB donanım tasarımı ve simülasyon/analiz çalışmaları üzerine kapsamlı deneyim kazandım.\n\n Proje odaklı çalışma disiplinimle, kurucusu olduğum Tulpar Tharros Proje Takımı bünyesinde yapay zeka destekli havacılık muayene robotunu geliştirdim. Alternatif enerjili araçlar tasarlayan Hidroana ekibinde elektrik-elektronik alt sistem entegrasyonu ve güç elektroniği süreçlerini üstlenerek TEKNOFEST ve Shell Eco-marathon gibi ulusal ve uluslararası yarışmalarda dereceler elde ettim. Ayrıca kurucusu olduğum Havacılıkta Yapay Zeka Araştırmaları Topluluğu (HAYA) çatısı altında; otonom sistemler, uçuş kontrol yazılımları ve yapay zeka entegrasyonuna odaklanan TUSAŞ LIFT-UP, TÜBİTAK 2209-A ve 2209-B projelerini yöneterek havacılık ve uzay teknolojilerinde yenilikçi çözümler üretmeye devam ediyorum.",
       avatar: "assets/profile/Foto.jpg",
       socials: {
         github: "https://github.com/AhmetSoner",
@@ -17,12 +17,12 @@ const PORTFOLIO_DATA = {
         currentMarker: "Buradayım",
         timeline: [
           { title: "Havacılık Merakı", phase: "Başlangıç" },
-          { title: "Uçak Bakım Mühendisi Eğitimi", phase: "ESTÜ" },
+          { title: "Havacılık Elektrik ve Elektroniği Eğitimi", phase: "ESTÜ" },
           { title: "Hidroana Elektrik Birimi Üyesi", phase: "2022 - 2025" },
           { title: "Tulpar Tharros Kurucu", phase: "2023 - 2024" },
           { title: "HAYA Kurucu", phase: "2022 - Devam" },
           { title: "Araştırmacı", phase: "ESTÜ" },
-          { title: "Uçak Bakım Mühendisi", phase: "Kariyer Hedefi", current: true }
+          { title: "Havacılık Elektrik ve Elektroniği", phase: "Kariyer Hedefi", current: true }
         ],
         strengthsTitle: "Güçlü Yönler",
         strengths: [
@@ -159,7 +159,7 @@ const PORTFOLIO_DATA = {
     education: [
       {
         institution: "Eskişehir Teknik Üniversitesi",
-        degree: "Uçak Bakım Mühendisi / Aviyonik",
+        degree: "Havacılık Elektrik ve Elektroniği / Aviyonik",
         duration: "Eylül 2020 - Mezun",
         gpa: "3.1",
         details: "Lisans eğitimim dahilinde teorik altyapımı ve pratik becerilerimi şekillendiren başlıca dersler şunlardır:<br><br>• Gaz Türbinli Motorlar<br>• Modern Aviyonik Sistemler<br>• Microişlemciler<br>• Elektrik ve Elektronik<br>• Elektrik Makineleri<br>• Otomatik Uçuş Sistemleri<br>• Seyrüsefer Sistemleri<br>• Sayısal Veri İletimi<br>• Elektronik Gösterge Sistemleri<br>• Elektromanyetik Çevre<br>• Uçak Aerodinamiği<br>• Uçak Yapıları ve Sistemleri<br>• Uçak Malzeme Bilgisi<br>• İnsan Faktörleri<br>• Tahribatsız Muayene Yöntemleri (NDT)<br>• Haberleşme Sistemleri<br><br>Ayrıca, fakülte bünyesindeki SHY-145 onaylı uçak bakım tesislerinde gerçekleştirdiğim uygulamalı eğitimler sayesinde; havacılık standartlarına uygun bakım, onarım ve kontrol süreçlerinde doğrudan saha deneyimi elde ettim."
@@ -676,9 +676,9 @@ gallery: [
   en: {
     profile: {
       name: "Ahmet Soner Güleç",
-      title: "Aircraft Maintenance Engineer",
-      subTitle: "Avionics Systems | Aircraft Maintenance | Electronic System and Hardware Design",
-      about: "I graduated from Eskişehir Technical University, Department of Aviation Electrics and Electronics, with the title of Aircraft Maintenance Engineer / Avionics. In line with my goal of integrating theoretical knowledge with practical engineering applications, I gained extensive experience in aircraft avionics system maintenance and assembly procedures, as well as mechanical design, PCB hardware design, and simulation/analysis studies during my internships and training processes abroad.\n\nWith my project-oriented working discipline, I developed an AI-assisted aviation inspection robot within the Tulpar Tharros Project Team, of which I am the founder. In the Hidroana team, which designs alternative energy vehicles, I undertook electrical-electronic subsystem integration and power electronics processes, achieving rankings in national and international competitions such as TEKNOFEST and Shell Eco-marathon. Furthermore, under the Aviation AI Research Society (HAYA), which I founded, I continue to generate innovative solutions in aerospace technologies by managing TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and 2209-B projects focused on autonomous systems, flight control software, and AI integration.",
+      title: "Aviation Electrics and Electronics",
+      subTitle: "Avionics Systems | Aviation Electrics and Electronics | Electronic System and Hardware Design",
+      about: "I graduated from Eskişehir Technical University, Department of Aviation Electrics and Electronics, in Aviation Electrics and Electronics / Avionics. In line with my goal of integrating theoretical knowledge with practical engineering applications, I gained extensive experience in aircraft avionics system maintenance and assembly procedures, as well as mechanical design, PCB hardware design, and simulation/analysis studies during my internships and training processes abroad.\n\nWith my project-oriented working discipline, I developed an AI-assisted aviation inspection robot within the Tulpar Tharros Project Team, of which I am the founder. In the Hidroana team, which designs alternative energy vehicles, I undertook electrical-electronic subsystem integration and power electronics processes, achieving rankings in national and international competitions such as TEKNOFEST and Shell Eco-marathon. Furthermore, under the Aviation AI Research Society (HAYA), which I founded, I continue to generate innovative solutions in aerospace technologies by managing TUSAŞ LIFT-UP, TÜBİTAK 2209-A, and 2209-B projects focused on autonomous systems, flight control software, and AI integration.",
       avatar: "assets/profile/Foto.jpg",
       socials: {
         github: "https://github.com/AhmetSoner",
@@ -691,12 +691,12 @@ gallery: [
         currentMarker: "I am here",
         timeline: [
           { title: "Aviation Interest", phase: "Starting Point" },
-          { title: "Aircraft Maintenance Engineer Education", phase: "ESTU" },
+          { title: "Aviation Electrics and Electronics Education", phase: "ESTU" },
           { title: "Hidroana Electrical Unit Member", phase: "2022 - 2025" },
           { title: "Tulpar Tharros Founder", phase: "2023 - 2024" },
           { title: "HAYA Founder", phase: "2022 - Present" },
           { title: "Researcher", phase: "ESTU" },
-          { title: "Aircraft Maintenance Engineer", phase: "Career Target", current: true }
+          { title: "Aviation Electrics and Electronics", phase: "Career Target", current: true }
         ],
         strengthsTitle: "Strengths",
         strengths: [
@@ -833,7 +833,7 @@ gallery: [
     education: [
       {
         institution: "Eskişehir Technical University",
-        degree: "Aircraft Maintenance Engineer / Aviyonik",
+        degree: "Aviation Electrics and Electronics / Avionics",
         duration: "September 2020 - Graduated",
         gpa: "3.1",
         details: "The main courses that shaped my theoretical background and practical skills within my undergraduate education are as follows:<br><br>• Gas Turbine Engines<br>• Modern Avionics Systems<br>• Microprocessors<br>• Electricity and Electronics<br>• Electrical Machines<br>• Automatic Flight Control Systems<br>• Navigation Systems<br>• Digital Data Transmission<br>• Electronic Display Systems<br>• Electromagnetic Environment<br>• Aircraft Aerodynamics<br>• Aircraft Structures and Systems<br>• Aircraft Materials Science<br>• Human Factors<br>• Non-Destructive Testing Methods (NDT)<br>• Communication Systems<br><br>In addition, thanks to the practical training I performed at the SHY-145 approved aircraft maintenance facilities within the faculty, I obtained direct field experience in maintenance, repair, and inspection processes in accordance with aviation standards."
@@ -1401,7 +1401,7 @@ const UI_TRANSLATIONS = {
     stat_status: "DURUM:",
     stat_status_val: "KARİYER FIRSATLARINA AÇIK",
     stat_role: "ROL:",
-    stat_role_val: "UÇAK BAKIM MÜH.",
+    stat_role_val: "HAVACILIK ELEKTRİK VE ELEKTRONİĞİ",
     stat_birth: "DOĞUM TARİHİ:",
     stat_birth_val: "20 Eylül 2001",
     stat_location: "LOKASYON:",

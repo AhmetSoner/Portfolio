@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    AVIATION HUD PORTFOLIO MAIN CONTROLLER (app.js)
    ========================================================================== */
 
@@ -230,7 +230,7 @@ function initPortfolioData() {
                 <div class="node-header">
                     <div>
                         <h4 class="node-title">${isEn ? 'Eskişehir Technical University' : edu.institution}</h4>
-                        <span class="node-subtitle">${isEn ? 'Aircraft Maintenance Engineer / Avionics' : edu.degree} ${edu.gpa ? `<span class="node-gpa">GPA: ${edu.gpa}</span>` : ''}</span>
+                        <span class="node-subtitle">${isEn ? 'Aviation Electrics and Electronics / Avionics' : edu.degree} ${edu.gpa ? `<span class="node-gpa">GPA: ${edu.gpa}</span>` : ''}</span>
                     </div>
                     <span class="node-date">${isEn ? 'September 2020 - Graduated' : edu.duration}</span>
                 </div>
