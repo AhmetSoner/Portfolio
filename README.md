@@ -11,7 +11,7 @@ Bu repository, Ahmet Soner Güleç'e ait kişisel mühendislik portföy sitesini
 - `app.js`, `project.js`, `team.js`: Sayfa davranışları, dil seçimi ve dinamik içerik yükleme kodları.
 - `style.css`: Sitenin HUD / havacılık temalı görsel tasarım dosyası.
 - `assets/`: Sitede aktif kullanılan görseller, ikonlar ve proje medya dosyaları.
-- `Kartlar/`, `Staj/`, `Sertifikalar/`, `Resume/`, `Transkript/`: Portföyde erişilebilir hale getirilen teknik çıktı, belge ve kaynak klasörleri.
+- `Kartlar/`, `Staj/`, `Sertifikalar/`, `Resume/`: Portföyde erişilebilir hale getirilen teknik çıktı, belge ve kaynak klasörleri.
 
 ## Öne Çıkan Bölümler
 

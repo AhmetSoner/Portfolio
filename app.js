@@ -214,17 +214,6 @@ function initPortfolioData() {
         educationList.forEach(edu => {
             const node = document.createElement("div");
             node.className = "timeline-node";
-            
-            const pdfFile = isEn ? 'Transkript/Transkript-Ingilizce.pdf' : 'Transkript/Transkript-Turkce.pdf';
-            const pdfText = isEn ? 'Academic Transcript' : 'Transkript Belgesi';
-
-            const transcriptHtml = `
-                <div class="transcript-files">
-                    <a href="${pdfFile}" target="_blank" rel="noopener noreferrer" class="transcript-link-btn">
-                        <i data-lucide="file-text"></i> ${pdfText}
-                    </a>
-                </div>
-            `;
 
             node.innerHTML = `
                 <div class="node-header">
@@ -235,7 +224,6 @@ function initPortfolioData() {
                     <span class="node-date">${isEn ? 'September 2020 - Graduated' : edu.duration}</span>
                 </div>
                 <div class="node-desc">${edu.details}</div>
-                ${transcriptHtml}
             `;
             eduTimeline.appendChild(node);
         });
